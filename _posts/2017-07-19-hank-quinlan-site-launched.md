@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "super456, Launches Site"
+title: "super456, my simple blog"
 date: 2017-07-19
 ---
 
