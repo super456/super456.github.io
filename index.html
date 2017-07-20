@@ -1,45 +1,13 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>hey, This is my simple blog!</title>
-    <!--注意文件节哀路径前要添加“/”，不然在github识别不出来  -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-</head>
-
-<body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/cv">CV</a></li>
-            <li><a href="/blog">Blog</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        
----
-layout: default
-title: super456
+<!--使用Jekyll系统的自我意识功能  
+每当你提交一个指定文件的时间layout: default在上面，
+jekyll会奇迹般地通过更换生成完整的HTML文档{{ content }}中_layouts/default.html与承诺文件的内容。
+-->
+--- 
+layout: default 
+title: super456 
 ---
 <div class="blurb">
-	<h1>Hi there, I'm dushiwu!</h1>
-	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
-        
-        <div class="blurb">
-            <h1>Hi there，Welcome To My Blog. I'm dushiwu!</h1>
-            <p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-        </div>
-        <!-- /.blurb -->
-    </div>
-    <!-- /.container -->
-    <footer>
-        <ul>
-            <li><a href="mailto:1061996681@qq.com">email</a></li>
-            <li><a href="https://github.com/super456">github.com/super456</a></li>
-        </ul>
-    </footer>
-</body>
-
-</html>
+    <h1>Hi there, I'm dushiwu!</h1>
+    <p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
+</div>
+<!-- /.blurb -->
