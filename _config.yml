@@ -11,7 +11,7 @@ background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 #所以超链接默认地址 
-url:                https://super456.github.io/temblog
+url:                https://super456.github.io
 
 # Jekyll
 permalink:          /:title/
