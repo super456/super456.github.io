@@ -1,7 +1,9 @@
 # Site navigation links左侧导航栏显示标签主题
-- title: 我的项目
+- title: 项目系统
   url: /projects/
 
+- title: 个人日志
+  url: /posts/
 
-- title: 模板官网
-  url: https://taylantatli.github.io/Moon/
+# - title: 模板官网
+#   url: https://taylantatli.github.io/Moon/
