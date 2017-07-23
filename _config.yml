@@ -2,6 +2,7 @@
 title:              "Follow my heart-世武呦"
 # 主页面签名
 bio:                '在岁月的长河里边寻找一种度过时光的乐趣'
+# 在左边用户标签窗口显示
 description:        "创造属于自己的世界"
 reading_time:       true
 words_per_minute:   200
@@ -9,13 +10,12 @@ logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-# 
-# url:                https://super456.github.io/temblog
-url:                 
+#所以超链接默认地址 
+url:                https://super456.github.io/temblog
 
 # Jekyll
-# permalink:          /:title/
-permalink: /blog/:year/:month/:day/:title
+permalink:          /:title/
+# permalink:          /blog/:year/:month/:day/:title
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -29,8 +29,8 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
-# Comments
-disqus_shortname:   taylantatli
+# Comments注意开启评论功能
+# disqus_shortname:   taylantatli
 
 # Social
 # if you don't have any of social below, comment the line.
@@ -41,7 +41,7 @@ disqus_shortname:   taylantatli
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
+email:                1061996681@qq.com
 # twitter:            username
 # facebook:           username
 github-url:         super456
@@ -59,7 +59,7 @@ github-url:         super456
 #youtube:           username
 #youtube-channel:   channel
 #soundcloud:        username
-weibo:             @猿来缘往
+weibo:              superdu456
 #flickr:            username
 #codepen:           username
 #keybase:           username

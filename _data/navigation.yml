@@ -1,4 +1,7 @@
-# Site navigation links
-
-- title: Projects
+# Site navigation links左侧导航栏显示标签主题
+- title: 我的项目
   url: /projects/
+
+
+- title: 模板官网
+  url: https://taylantatli.github.io/Moon/
