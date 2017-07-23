@@ -12,7 +12,7 @@
 						<h4>{{ site.title }}</h4>
 						<p>{{ site.description }}</p>
 					</li>
-					<li><a href="{{ site.url }}/about/"><span class="btn btn-inverse">了解我更多</span></a></li>
+					<li><a href="{{ site.url }}/about/"><span class="btn btn-inverse">了解博主</span></a></li>
 					{% if site.email %}<li>
                         <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-envelope-square"></i> Email</a>
                     </li>{% endif %}
@@ -91,7 +91,7 @@
 				<a href="#">博文</a>
 				<ul class="dl-submenu">
 					<li><a href="{{ site.url }}/posts/">全部博文</a></li>
-					<li><a href="{{ site.url }}/tags/">全部标签</a></li>
+					<li><a href="{{ site.url }}/tags/">分类博文</a></li>
 				</ul>
 			</li>
 			{% for link in site.data.navigation %}
