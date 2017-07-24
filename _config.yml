@@ -16,7 +16,9 @@ url:                https://super456.github.io
 # Jekyll
 permalink:          /:title/
 # permalink:          /blog/:year/:month/:day/:title
+# markdown默认转换器
 markdown:           kramdown
+# 语法高亮设置
 highlighter:        rouge
 kramdown:
   auto_ids:         true
@@ -29,7 +31,7 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
-# Comments注意开启评论功能
+# Comments注意开启评论功能，添加我的账号名
 disqus_shortname:   super456
 
 # Social
@@ -79,6 +81,13 @@ jekyll-mentions:
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
 
+
+
 #我自己添加的
+
+# 这句话解决了github连接问题
 github: [metadata]
+# 添加页面默认编码格式
 encoding: utf-8
+# 添加markdown默认解析器
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
