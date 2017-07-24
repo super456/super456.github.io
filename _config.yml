@@ -30,7 +30,7 @@ sass:
   style:            compressed
 
 # Comments注意开启评论功能
-# disqus_shortname:   taylantatli
+disqus_shortname:   super456
 
 # Social
 # if you don't have any of social below, comment the line.
