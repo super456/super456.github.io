@@ -14,8 +14,8 @@ locale:             en_US
 url:                https://super456.github.io
 
 # Jekyll
-permalink:          /:title/
-# permalink:          /blog/:year/:month/:day/:title
+# permalink:          /:title/
+permalink:          /:year/:month/:day/:title
 # markdown默认转换器
 markdown:           kramdown
 # 语法高亮设置
