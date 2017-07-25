@@ -20,13 +20,16 @@ permalink:          /:title/
 markdown:           kramdown
 # 语法高亮设置
 highlighter:        rouge
+# kramdown引擎配置
 kramdown:
   auto_ids:         true
   footnote_nr:      1
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
+  # markdown数学语法格式是否开启
 mathjax:            true
+# css语法格式
 sass:
   sass_dir:         _sass
   style:            compressed
@@ -43,16 +46,21 @@ disqus_shortname:   super456
   #ad-client:
   #ad-slot:
 #bing-verify:
+# 主页显示的我的社交账号链接
 email:                1061996681@qq.com
-# twitter:            username
+twitter:            superdu456
 # facebook:           username
 github-url:         super456
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
+# 商务人脉平台
 #xing:              username
 # instagram:          username
+# 全球音乐库平台
 #lastfm:            username
+# 博客网站
 #tumblr:            username
+# 一个写作平台
 #medium:            '@username'
 #pinterest:         username
 #foursquare:        username
