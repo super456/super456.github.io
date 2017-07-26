@@ -1,20 +1,30 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 创造属于自己的世界
+keywords: Du Shiwu, 杜世武
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+于千万人之中遇见你所要遇见的人，
 
-仰慕「优雅编码的艺术」。
+于千万年之中，时间的无涯的荒野里，
 
-坚信熟能生巧，努力改变人生。
+没有早一步，也没有晚一步，刚巧赶上了，
 
-## 联系
+那也没有别的话可说，惟有轻轻地问一声：
+
+“噢，你也在这里吗？”
+
+—— 张爱玲 《爱》
+
+>年轻的时候就能找到自己喜欢并且干一辈子的事情是多么幸福多么令人羡慕啊。
+
+我，一个不负流年，不负自己的前端程序员。我一直在Coding...
+
+## 联系Me
 
 {% for website in site.data.social %}
 * {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
