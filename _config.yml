@@ -9,12 +9,14 @@ date_format: "ordinal"
 title: "猿来缘往"
 # 个性签名
 subtitle: "在岁月的长河里寻找一种度过时光的乐趣"
+# 在博客订阅显示
 description: "世武的个人博客"
 # keywords: 猿来缘往, Du Shiwu, 杜世武
 # 网站图标
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
+# 显示在我的开源仓库数量设置
 side_bar_repo_limit: 5
 
 # ---------------- #
@@ -63,7 +65,9 @@ subscribe_rss: /feed.xml
 markdown: kramdown
 kramdown:
     input: GFM
+# 代码高亮设置
 highlighter: rouge
+# 分页显示数量设置
 paginate: 8
 lsi: false
 quiet: false
