@@ -17,13 +17,11 @@
                 <a href="{{ nav.href }}" title="{{ nav.label }}" target="{{ nav.target | default: _self }}">{{ nav.label }}</a>
             </li>
             {% endfor %}
-            <li><a href="{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;">订阅博文</span></a></li>
-            <li><a href="{{ site.github.repository_url }}" target="_blank" aria-label="view source code">
-            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
-        </a></li>
-
+            <li><a href="{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;">订阅</span></a></li>
         </ul>
-
+         <a href="{{ site.github.repository_url }}" target="_blank" aria-label="view source code">
+            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+        </a> 
     </div>
 </footer>
 <!-- / footer -->
