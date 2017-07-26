@@ -1,10 +1,8 @@
-source "https://rubygems.org"
-
-gem "jekyll", "~> 3.2.1"
-gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem 'jekyll-mentions'
-gem 'jekyll-feed'
-
+source 'https://rubygems.org'
 gem 'github-pages', group: :jekyll_plugins
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+group :jekyll_plugins do
+   gem "jekyll-feed", "~> 0.6"
+end
+
+

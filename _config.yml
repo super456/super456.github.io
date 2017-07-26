@@ -1,101 +1,121 @@
-# Site
-title:              "Follow my heart-世武呦"
-# 主页面签名
-bio:                '在岁月的长河里边寻找一种度过时光的乐趣'
-# 在左边用户标签窗口显示
-description:        "创造属于自己的世界-前端程序员"
-reading_time:       true
-words_per_minute:   200
-logo:               'assets/img/logo.png'
-background:         'assets/img/placeholder-big.jpg'
-tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             en_US
-#所以超链接默认地址 
-url:                https://super456.github.io
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+# 网站默认根地址
+baseurl:  
+url:  https://super456.github.io/tem-blog-two
+date_format: "ordinal"
+# 网站标题
+title: "猿来缘往"
+# 个性签名
+subtitle: "在岁月的长河里寻找一种度过时光的乐趣"
+description: "世武的个人博客"
+# keywords: 猿来缘往, Du Shiwu, 杜世武
+# 网站图标
+favicon: /favicon.ico
+timezone: Asia/Shanghai
+encoding: "utf-8"
+side_bar_repo_limit: 5
 
-# Jekyll
-# permalink:          /:title/
-permalink:          /:year/:month/:day/:title
-# markdown默认转换器
-markdown:           kramdown
-# 语法高亮设置
-highlighter:        rouge
-# kramdown引擎配置
+# ---------------- #
+#      Author      #
+# ---------------- #
+# 底部页脚展示名字
+author: 杜世武
+# organization: url
+# organization_url: url
+github_username: super456
+location: Guangzhou, China
+email: 1061996681@qq.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /categories/
+    label: 分类
+
+  -
+    href: /wiki/
+    label: 维基
+
+  -
+    href: /links/
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
 kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-  # markdown数学语法格式是否开启
-mathjax:            true
-# css语法格式
-sass:
-  sass_dir:         _sass
-  style:            compressed
-
-# Comments注意开启评论功能，添加我的账号名
-disqus_shortname:   super456
-
-# Social
-# if you don't have any of social below, comment the line.
-#google:
-  #plus:            #username
-  #analytics:
-  #verify:
-  #ad-client:
-  #ad-slot:
-#bing-verify:
-# 主页显示的我的社交账号链接
-email:                1061996681@qq.com
-twitter:            superdu456
-# facebook:           username
-github-url:         super456
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-# 商务人脉平台
-#xing:              username
-# instagram:          username
-# 全球音乐库平台
-#lastfm:            username
-# 博客网站
-#tumblr:            username
-# 一个写作平台
-#medium:            '@username'
-#pinterest:         username
-#foursquare:        username
-# steam:              username
-#dribbble:          username
-#youtube:           username
-#youtube-channel:   channel
-#soundcloud:        username
-weibo:              superdu456
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
-
-# Gems
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
 gems:
-  - jekyll-mentions
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-gist
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
 
-jekyll-mentions:
-    base_url: https://github.com
+repository:  super456/tem-blog-two
 
-# Exclude list转换时排除某些文件、文件夹
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, netease_gentie, gitment
+comments_provider: gitment
+# https://disqus.com
+disqus:
+   username: super456
+# https://gentie.163.com   网易云跟帖
+# netease_gentie:
+#     productKey: 560ed243b708465d82d5a0a5f3b83da1
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: super456
+    repo: blog-comments
+    oauth:
+        client_id: ef96c2da698852e79799
+        client_secret: 34be242b665379a6c85da40d53c51ef4deab076f
 
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : true
 
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+# 谷歌分析工具
+google:
+analytics_id: UA-103230964-1
 
-#我自己添加的
+#我自己加的
+gist:
+  noscript: false
 
-# 这句话解决了github连接问题
 github: [metadata]
-# 添加页面默认编码格式
-encoding: utf-8
-# 添加markdown默认解析器
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
