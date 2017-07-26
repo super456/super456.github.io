@@ -1,27 +1,24 @@
+# 关于页面的联系内容代码
 - sitename: GitHub
-  name: mzlogin
-  url: https://github.com/mzlogin
+  name: super456
+  url: https://github.com/super456
 
 - sitename: 掘金
-  name: mzlogin
-  url: http://gold.xitu.io/user/570ddaeb2e958a005c63b2da
-
-- sitename: LinkedIn
-  name: mazhuang
-  url: https://www.linkedin.com/in/mazhuang
+  name: 猿来缘往
+  url: https://juejin.im/user/587d88392f301e00579f75b5
 
 - sitename: 博客
-  name: 码志
-  url: http://mazhuang.org
+  name: 猿来缘往
+  url: http://super456.github.io
 
 - sitename: 微博
-  name: mzlogin
-  url: http://weibo.com/mzlogin
+  name: 猿来缘往
+  url: http://weibo.com/superdu456
 
 - sitename: 知乎
-  name: mzlogin
-  url: http://www.zhihu.com/people/mzlogin
+  name: 猿来缘往
+  url: https://www.zhihu.com/people/super456/activities
 
-- sitename: 豆瓣
-  name: 壮哥不胖
-  url: http://www.douban.com/people/freedim
+- sitename: 简书
+  name: 猿来缘往
+  url: http://www.jianshu.com/u/948b30c8498c
