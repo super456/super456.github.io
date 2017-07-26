@@ -11,9 +11,6 @@
                 <a href="javascript:window.scrollTo(0,0)" style="border-radius:10px;background-color:#c0c0c0; width:100px; height:100px;">返回顶部</a>
             </li>
         </ul>
-        <a href="{{ site.github.repository_url }}" target="_blank" aria-label="view source code">
-            <span class="right mega-octicon octicon-mark-github" title="GitHub"></span>
-        </a>
         <ul class="site-footer-links mobile-hidden">
             {% for nav in site.navs %}
             <li>
@@ -21,6 +18,10 @@
             </li>
             {% endfor %}
             <li><a href="{{ site.subscribe_rss }}"><span class="octicon octicon-rss" style="color:orange;">订阅博文</span></a></li>
+            <li><a href="{{ site.github.repository_url }}" target="_blank" aria-label="view source code">
+            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+        </a></li>
+
         </ul>
 
     </div>
@@ -31,9 +32,9 @@
 <script src="/assets/js/prism.js"></script>
 <link rel="stylesheet" href="/assets/css/globals/prism.css">
 <script>
-    jQuery(document).ready(function($) {
+    jQuery(document).ready(function ($) {
         // geopattern
-        $('.geopattern').each(function() {
+        $('.geopattern').each(function () {
             $(this).geopattern($(this).data('pattern-id'));
         });
         // hljs.initHighlightingOnLoad();
@@ -42,9 +43,9 @@
 {% if site.google.analytics_id %}
 <div style="display:none">
     <script>
-        (function(i, s, o, g, r, a, m) {
+        (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
+            i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
