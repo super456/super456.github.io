@@ -10,7 +10,7 @@ title: "猿来缘往"
 # 个性签名
 subtitle: "在岁月的长河里寻找一种度过时光的乐趣"
 # 在博客订阅显示
-description: "世武的个人博客"
+description: "世武的个人博客记录"
 # keywords: 猿来缘往, Du Shiwu, 杜世武
 # 网站图标
 favicon: /favicon.ico
@@ -23,7 +23,7 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 # 底部页脚展示名字
-author: 杜世武
+author: 世武呦
 # organization: url
 # organization_url: url
 github_username: super456
