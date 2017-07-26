@@ -3,7 +3,7 @@
 # ---------------- #
 # 网站默认根地址
 baseurl:  
-url:  https://super456.github.io/tem-blog-two
+url:  https://super456.github.io
 date_format: "ordinal"
 # 网站标题
 title: "猿来缘往"
@@ -83,7 +83,7 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository:  super456/tem-blog-two
+repository:  super456/super456.github.io
 
 # ---------------- #
 #      Comments    #
@@ -112,7 +112,7 @@ lazy_load_disqus : true
 # ---------------- #
 # 谷歌分析工具
 google:
-analytics_id: UA-103230964-1
+analytics_id: UA-103090780-1
 
 #我自己加的
 gist:
