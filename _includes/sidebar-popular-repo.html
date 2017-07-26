@@ -1,6 +1,7 @@
-<h3>My Popular Repositories</h3>
+<!--右侧竖排：我的github流行开源仓库  -->
+<h3>我的Github开源项目</h3>
 {% if site.github.public_repositories != null %}
-{% assign repos = site.github.public_repositories | sort: "stargazers_count" | reverse%}
+{% assign repos = site.github.public_repositories | sort: "stargazers_count" | reverse %}
 {% for repo in repos | limit: site.side_bar_repo_limit %}
 <a href="{{ repo.html_url }}" target="_blank" class="card text-center">
     <div class="thumbnail">
