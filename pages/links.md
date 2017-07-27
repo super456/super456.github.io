@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 安利牛人博客
+title: 安利一些博客给你
 description: 推荐的博客链接
-keywords: 友情链接
+keywords: 友情链接, 安利, 推荐
 comments: true
 menu: 链接
 permalink: /links/
