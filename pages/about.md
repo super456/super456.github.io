@@ -8,6 +8,7 @@ menu: 关于
 permalink: /about/
 ---
 
+## It's me
 于千万人之中遇见你所要遇见的人，
 
 于千万年之中，时间的无涯的荒野里，
@@ -24,13 +25,13 @@ permalink: /about/
 
 我，一个不负流年，不负自己的前端程序员。我一直在Coding...
 
-## 联系Me
+## Contact me
 
 {% for website in site.data.social %}
 * {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
 {% endfor %}
 
-## 编程技术关键字搜索
+## 全站关键字搜索
 
 {% for category in site.data.skills %}
 #### {{ category.name }}
