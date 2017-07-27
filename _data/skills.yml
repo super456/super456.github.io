@@ -1,20 +1,33 @@
 # 关于界面的技能关键搜索代码
-- name: Software Engineer Keywords
+- name: 基本前端编程技术开发
   keywords:
-      - Java
-      - C++
-      - Python
-      - Design Patterns
+      - HTML
+      - HTML5
+      - CSS/CSS3
+      - JavaScript
+      - Ajax
+      - JQuery
 
-- name: Mobile Developer Keywords
+- name: 前端工具/编辑器/版本控制器学习
   keywords:
-      - Android
-      - Reverse Engineering
+      - Google-Dev-Tools
+      - Firefox-Firebug
+      - Sublime Text
+      - Atom
+      - Visual Studio Code
+      - Git
+      - GitHub
+      - GitHub For Window
+      - PS
+      - IT-MOOC
 
-- name: Windows Developer Keywords
+- name: 项目实战示例及我的大学生活
   keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
+      - HTML/HTML5/CSS/CSS3实战
+      - JavaScript项目示例
+      - 前端多页面项目模板
+      - 前端片面功能模板
+      - 我的大学
+      - IT语录
+      - 前端学习资源整理
+      - 学点文学
