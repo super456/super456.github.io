@@ -103,6 +103,7 @@ disqus:
 # netease_gentie:
 #     productKey: 560ed243b708465d82d5a0a5f3b83da1
 # https://imsun.net/posts/gitment-introduction/
+# 默认使用登录github身份认证的评论系统，评论内容在blog-comments仓库项目的issues
 gitment:
     owner: super456
     repo: blog-comments
