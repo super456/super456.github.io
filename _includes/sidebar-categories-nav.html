@@ -3,9 +3,11 @@
 <div id="blog-categories">
   <ul class="list-group">
     {% assign sorted_categories = site.categories | sort %}
+    <!--循环输出分类标签名字  -->
     {% for category in sorted_categories %}
     <li class="list-group-item">
     <a href="#{{ category[0] }}">{{ category | first }}</a>
+    <!--博文标签类的数量  -->
     <span class="badge">{{ category[1].size }}</span>
     </li>
     {% endfor %}
