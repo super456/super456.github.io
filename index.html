@@ -31,6 +31,7 @@ comments: false
     </div>
 </section>
 <!-- /.banner -->
+<!--首页博文代码设置  -->
 <section class="container content">
     <div class="columns">
         <div class="column two-thirds" >
@@ -45,7 +46,7 @@ comments: false
                     </p>
                     <p class="repo-list-meta">
                         <span class="meta-info">
-                          <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
+                          <span class="octicon octicon-calendar"></span> {{ post.date | date_to_long_string }}
                         </span>
                         {% for cat in post.categories %}
                         <span class="meta-info">
@@ -59,10 +60,12 @@ comments: false
             </ol>
         </div>
         <div class="column one-third">
+            <!--右侧竖排导航栏显示设置  -->
             {% include sidebar-search.html %}
             {% include sidebar-popular-repo.html %}
         </div>
     </div>
+    <!--分页设置  -->
     <div class="pagination text-align">
       <div class="btn-group">
         {% if paginator.previous_page %}
