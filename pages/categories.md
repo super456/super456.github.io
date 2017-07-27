@@ -1,12 +1,14 @@
 ---
 layout: categories
-title: Categories
-description: 我的分类文章库
-keywords: 分类
+title: 分类
+description: 我的分类博文库
+keywords: 分类, 博文分类, categories
 comments: false
 menu: 分类
 permalink: /categories/
 ---
+
+>主要是技术博文分类，指明标签，简单明了，容易选择
 
 <section class="container posts-content">
 {% assign sorted_categories = site.categories | sort %}
