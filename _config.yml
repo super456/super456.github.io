@@ -85,9 +85,9 @@ gems:
     - jemoji
 #     - jekyll-mentions
 collections:
-    wiki:
+    essays:
         output: true
-        permalink: /wiki/:path/
+        permalink: /essays/:path/
 
 repository:  super456/super456.github.io
 
