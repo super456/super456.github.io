@@ -12,9 +12,11 @@ permalink: /categories/
 
 <section class="container posts-content">
 {% assign sorted_categories = site.categories | sort %}
+<!--循环输出博文标签  -->
 {% for category in sorted_categories %}
 <h3>{{ category | first }}</h3>
 <ol class="posts-list" id="{{ category[0] }}">
+<!--循环输出标签内的博文  -->
 {% for post in category.last %}
 <li class="posts-list-item">
 <!-- <span class="posts-list-meta">{{ post.date | date:"%Y-%m-%d" }}</span> -->
