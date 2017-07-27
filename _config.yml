@@ -59,6 +59,7 @@ navs:
 # ---------------- #
 #       RSS        #
 # ---------------- #
+# 博文RSS订阅配置
 subscribe_rss: /feed.xml
 
 # ---------------- #
@@ -84,6 +85,7 @@ gems:
     - jekyll-feed
     - jemoji
 #     - jekyll-mentions
+# 收集器内容配置
 collections:
     essays:
         output: true
