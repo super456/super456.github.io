@@ -122,5 +122,5 @@ analytics_id: UA-103090780-1
 #我自己加的
 gist:
   noscript: false
-
+# gems: ['jekyll-github-metadata']
 github: [metadata]
