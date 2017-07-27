@@ -30,7 +30,7 @@ permalink: /about/
 * {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
 {% endfor %}
 
-## 技术关键字
+## 编程技术关键字搜索
 
 {% for category in site.data.skills %}
 ### {{ category.name }}
