@@ -122,6 +122,7 @@ analytics_id: UA-103090780-1
 #我自己加的
 gist:
   noscript: false
+  # 2017-07-27注释掉这些后，github存储库元数据显示啦，贼开心
 # gems: ['jekyll-github-metadata']
 # github: [metadata]
 
