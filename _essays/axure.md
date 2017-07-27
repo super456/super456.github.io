@@ -1,5 +1,5 @@
 ---
-layout: wiki
+layout: essays
 title: Axure
 categories: tools
 description: Axure RP 快捷键和使用技巧
