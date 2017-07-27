@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+
+<!--博文页面排版代码设置  -->
 <section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15, ''}}">
 <div class="container">
   <div class="columns">
@@ -10,7 +12,8 @@ layout: default
         <div class="collection-info">
           {% if page.date %}
           <span class="meta-info">
-            <span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d" }}
+            <!-- <span class="octicon octicon-calendar"></span> {{ page.date | date: "%Y/%m/%d" }} -->
+            <span class="octicon octicon-calendar"></span> {{ page.date | date_to_long_string }}            
           </span>
           {% endif %}
           {% for cat in page.categories %}
