@@ -33,7 +33,7 @@ permalink: /about/
 ## 编程技术关键字搜索
 
 {% for category in site.data.skills %}
-### {{ category.name }}
+#### {{ category.name }}
 <div class="btn-inline">
 {% for keyword in category.keywords %}
 <button class="btn btn-outline" type="button">{{ keyword }}</button>
