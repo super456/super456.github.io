@@ -4,7 +4,7 @@ title: 安利一些博客给你
 description: 推荐的博客链接
 keywords: 友情链接, 安利, 推荐
 comments: true
-menu: 链接
+menu: 友链
 permalink: /links/
 ---
 
