@@ -33,6 +33,7 @@ layout: default
     {{ content }}
     </article>
     <div class="share">
+      <!--分享插件  -->
       {% include sns-share.html %}
     </div>
     <div class="comment">
@@ -40,9 +41,12 @@ layout: default
     </div>
   </div>
   <div class="column one-fourth">
+    <!--搜索框  -->
     {% include sidebar-search.html %}
-    {% include sidebar-qrcode.html %}
+    <!--页面目录结构  -->
     {% include sidebar-post-nav.html %}
+    <!--推荐的公众号  -->
+    {% include sidebar-qrcode.html %}
   </div>
 </div>
 </section>
