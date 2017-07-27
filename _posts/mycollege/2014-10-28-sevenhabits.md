@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 习惯成就高效能
-categories: Blog
+categories: mycollege
 description: 对高效能人士的七个习惯的学习笔记。
 keywords: 高效能, 七个习惯
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我所理解的生活
-categories: Blog
+categories: mycollege
 description: 我自己对生活的理解，认识上有改变就更新在这里。
 keywords: 自我认识, 改进
 ---
