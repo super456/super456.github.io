@@ -122,21 +122,21 @@
 
 
   
-  <meta name="keywords" content="js,JS,JavaScript" />
+  <meta name="keywords" content="JavaScript, js, 基础, 搞混" />
 
 
-<meta name="description" content="学习js基础第六章节对象第二节。">
-<meta name="keywords" content="js,JS,JavaScript">
+<meta name="description" content="学习JavaScript也有一段时间了，但是总有一些基础知识点容易搞混或者忘记，所以当自己回顾这些这些知识点的时候会模糊不清，又要重新看一遍资料，为了以后方便，所以这里记录一下，也是为了更深入的理解透彻。">
+<meta name="keywords" content="JavaScript, js, 基础, 搞混">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【js基础】对象（二）">
-<meta property="og:url" content="https://super456.github.io/2017/09/24/2017-09-24-study-js7-object-data/index.html">
+<meta property="og:title" content="一些容易忽视的JS基础知识">
+<meta property="og:url" content="https://super456.github.io/2018/03/22/2018-03-17-return-js-base/index.html">
 <meta property="og:site_name" content="猿来独往">
-<meta property="og:description" content="学习js基础第六章节对象第二节。">
+<meta property="og:description" content="学习JavaScript也有一段时间了，但是总有一些基础知识点容易搞混或者忘记，所以当自己回顾这些这些知识点的时候会模糊不清，又要重新看一遍资料，为了以后方便，所以这里记录一下，也是为了更深入的理解透彻。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-12T16:01:33.226Z">
+<meta property="og:updated_time" content="2018-03-23T10:16:43.820Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【js基础】对象（二）">
-<meta name="twitter:description" content="学习js基础第六章节对象第二节。">
+<meta name="twitter:title" content="一些容易忽视的JS基础知识">
+<meta name="twitter:description" content="学习JavaScript也有一段时间了，但是总有一些基础知识点容易搞混或者忘记，所以当自己回顾这些这些知识点的时候会模糊不清，又要重新看一遍资料，为了以后方便，所以这里记录一下，也是为了更深入的理解透彻。">
 
 
 
@@ -145,7 +145,7 @@
 
 
 
-  <link rel="canonical" href="https://super456.github.io/2017/09/24/2017-09-24-study-js7-object-data/"/>
+  <link rel="canonical" href="https://super456.github.io/2018/03/22/2018-03-17-return-js-base/"/>
 
 
 
@@ -154,7 +154,7 @@
     sidebar: "",
   };
 </script>
-  <title>【js基础】对象（二） | 猿来独往</title>
+  <title>一些容易忽视的JS基础知识 | 猿来独往</title>
   
 
 
@@ -350,7 +350,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://super456.github.io/2017/09/24/2017-09-24-study-js7-object-data/">
+    <link itemprop="mainEntityOfPage" href="https://super456.github.io/2018/03/22/2018-03-17-return-js-base/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="猿来独往">
@@ -367,7 +367,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【js基础】对象（二）</h1>
+          <h1 class="post-title" itemprop="name headline">一些容易忽视的JS基础知识</h1>
         
 
         <div class="post-meta">
@@ -379,7 +379,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-24T00:00:00+08:00">2017-09-24</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-22T18:18:25+08:00">2018-03-22</time>
             
 
             
@@ -428,7 +428,7 @@
           
 
           
-              <div class="post-description">学习js基础第六章节对象第二节。</div>
+              <div class="post-description">学习JavaScript也有一段时间了，但是总有一些基础知识点容易搞混或者忘记，所以当自己回顾这些这些知识点的时候会模糊不清，又要重新看一遍资料，为了以后方便，所以这里记录一下，也是为了更深入的理解透彻。</div>
           
 
         </div>
@@ -444,337 +444,78 @@
       
 
       
-        <p>重新温故学习JavaScript基础知识点，记录自己的学习过程，学习js基础第六章节对象第二节对象分类-内建对象-数据封装对象。</p>
-<h2 id="对象分类"><a href="#对象分类" class="headerlink" title="对象分类"></a>对象分类</h2><h3 id="一-、内建对象"><a href="#一-、内建对象" class="headerlink" title="(一)、内建对象"></a>(一)、内建对象</h3><h4 id="一-、数据封装对象"><a href="#一-、数据封装对象" class="headerlink" title="(一)、数据封装对象"></a>(一)、数据封装对象</h4><ol>
-<li><p>Object对象</p>
-<p>(1)定义：Object是Javascript中所有对象的父级对象，我们创建的所有对象都继承于此，包括内建对象</p>
-<p>(2)语法：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第一种：</span></span><br><span class="line"><span class="keyword">new</span> <span class="built_in">Object</span>([value]);</span><br><span class="line"> <span class="comment">//第二种：</span></span><br><span class="line">&#123;<span class="attr">name</span>:value,<span class="attr">name</span>:value...&#125;;</span><br></pre></td></tr></table></figure>
-<p>(3)描述：Object 构造函数为给定的值创建一个对象包装。如果给定值是  <code>null or undefined</code>，将会创建并返回一个空对象，否则，将返回一个与给定值对应类型的对象。当以非构造函数形式被调用时，Object 等同于 <code>new Object()</code>。</p>
-<p>(4)属性：<code>Object.prototype</code>：可以为所有Object类型的对象添加属性</p>
-<p>(5)方法</p>
-<p>(5-1) <code>Object.create()</code>:指定原型对象和属性创建一个对象。</p>
-<p>语法：<code>Object.create(proto,[propertiesObject]);</code></p>
-<p>参数：<code>proto</code>:一个对象，作为新创建对象的原型，<code>propertiesObject</code>:一个对象值，可以包含若干个属性，属性名称为新建对象的属性名，属性值为那个属性的属性描述对象。</p>
-<p>(5-2) <code>Object.defineProperty()</code>:给对象添加/修改一个属性并指定该属性的配置</p>
-<p>语法：<code>Object.defineProperty(obj,prop,descriptor);</code></p>
-<p>参数：<code>obj</code>：需要定义的对象，<code>prop</code>：需要定义或修改的属性名，<code>descriptor</code>：属性定义或修改的属性的描述</p>
-<p><strong>描述：</strong></p>
-<p><em>该方法允许精确添加或修改对象的属性。正常的属性添加通过赋值来创建并显示在属性枚举中（for…in 循环 或 Object.keys 方法）， 这种方式添加的属性值可能被改变，也可能会被 删除。该方法允许改变这些额外细节的默认设置。</em></p>
-<p><em>对象里目前存在的属性描述符有两种主要形式：数据描述符和存取描述符。数据描述符是一个拥有可写或不可写值的属性。存取描述符是由一对 getter-setter 函数功能来描述的属性。描述符必须是两种形式之一；</em></p>
-<p><strong>数据描述符和存取描述符均具有以下可选键值：</strong></p>
-<p>|   属性  |   作用  |<br>|———–|————|<br>|configureable|当且仅当这个属性描述符值为 true 时，该属性可能会改变，也可能会被从相应的对象删除。默认为 false。|<br>|enumerable| 当且仅当该属性出现在相应的对象枚举属性中。默认为 false。|<br>|value|与属性有关的值。可以是任何有效的Javascript值。默认为undefined|<br>|writable|当且仅当可能用赋值运算符改变与属性相关的值。默认为false|</p>
-<p><strong>存取描述同时具有以下可选键值：</strong></p>
-<p>|   属性  |   作用  |<br>|———–|————|<br>|get|一个给属性提供getter的方法，如果没有getter则为undefined。方法将返回作用属性的值，默认为undefined|<br>|set|一个给属性提供setter的方法，如果没有setter则为undefined。该方法将受到作为唯一参数的新值分配给属性。默认为undefined|</p>
-<p><strong>注意：</strong>这些选项不一定是自身属性，如果是继承来的也要考虑。为了确认保留这些默认值，你可能要在这之前冻结 <code>Object.prototype</code>，明确指定所有的选项，或者将 <code>__proto__ =null;</code>属性指向空。</p>
-<p>(5-2-1)可选键值对应作用表：</p>
+        <h2 id="（一）、函数"><a href="#（一）、函数" class="headerlink" title="（一）、函数"></a>（一）、函数</h2><ol>
+<li><p>使用未声明的变量时，它将自动被视为全局变量，即便你在函数中首次使用它亦如此。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">playTurn</span>(<span class="params">player,location</span>)</span>&#123;</span><br><span class="line"><span class="comment">//    使用变量points前，我们忘了关键字var声明它，因此它被自动视为全局变量</span></span><br><span class="line">   points=<span class="number">0</span>;</span><br><span class="line">   <span class="keyword">if</span>(location==<span class="number">1</span>)&#123;</span><br><span class="line">       points=points+<span class="number">100</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> points;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果局部变量与全局变量同名，它将“遮住”全局变量。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> beanCounter=<span class="number">10</span>;<span class="comment">//全局变量</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getNumberOfItems</span>(<span class="params">ordertype</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> beanCounter=<span class="number">0</span>;<span class="comment">//局部变量</span></span><br><span class="line">    <span class="keyword">if</span>(ordertype==<span class="string">"order"</span>)&#123;</span><br><span class="line">     <span class="comment">//</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> beanCounter;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>因此每次调用函数使用的是局部变量beanCounter时，都会遮住全局变量，但是全局变量和局部变量不会相互影响：如果你修改其中的一个，对另一个不会有任何影响，它们是彼此独立的变量。</p>
+</li>
+<li><p>如果形参与全局变量同名，它会遮住全局变量。</p>
+</li>
+<li><p>函数声明和函数表达式区别：</p>
+<ul>
+<li><p>使用函数声明时，函数将在执行代码前创建；而使用函数表达式时，函数将在运行阶段执行代码时创建。（简单的说浏览器执行代码分两遍时，第一遍分析所有的函数声明，并定义函数声明创建的函数，第二遍浏览器从上到下顺序执行代码，并定义函数表达式创建的函数。）</p>
+</li>
+<li><p>使用函数声明时，将创建一个与函数同名的变量，并让它指向函数；而使用函数表达式时，通常不给函数指定名称，因此你要么在代码中将函数赋给一个变量，要么以其他方式使用函数表达式。</p>
+</li>
+</ul>
+</li>
+<li><p>函数用法：可以将函数赋给变量；可以将函数传递给函数；可以从函数返回函数。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">//可以将函数传递给函数</span></span><br><span class="line"><span class="comment">//定义一个对象变量</span></span><br><span class="line">      <span class="keyword">var</span> passengers = [&#123;</span><br><span class="line">       name: <span class="string">"dudu"</span>,</span><br><span class="line">       paid: <span class="literal">true</span>,</span><br><span class="line">       ticket: <span class="string">"firstclass"</span></span><br><span class="line">   &#125;, &#123;</span><br><span class="line">       name: <span class="string">"jane"</span>,</span><br><span class="line">       paid: <span class="literal">true</span>,</span><br><span class="line">       ticket: <span class="string">"coach"</span></span><br><span class="line">   &#125;, &#123;</span><br><span class="line">       name: <span class="string">"Sue"</span>,</span><br><span class="line">       paid: <span class="literal">false</span>,</span><br><span class="line">       ticket: <span class="string">"firstclass"</span></span><br><span class="line">   &#125;, &#123;</span><br><span class="line">       name: <span class="string">"Fujia"</span>,</span><br><span class="line">       paid: <span class="literal">true</span>,</span><br><span class="line">       ticket: <span class="string">"caoach"</span></span><br><span class="line">   &#125;];</span><br><span class="line">   <span class="comment">//创建一个传递函数，参数一个是对象一个是函数</span></span><br><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">processPassengers</span>(<span class="params">passengers, testFunction</span>) </span>&#123;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passengers.length; i++) &#123;</span><br><span class="line">           <span class="keyword">if</span> (testFunction(passengers[i].name)) &#123;</span><br><span class="line">               <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//创建需要作为参数传递的函数</span></span><br><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">checkNoFlyList</span>(<span class="params">passenger</span>) </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> (passenger.name === <span class="string">"dudu"</span>);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   <span class="comment">// 向函数传递函数</span></span><br><span class="line">   <span class="keyword">var</span> allCanFly = processPassengers(passengers, checkNoFlyList);<span class="comment">//第一个参数是对象，第二个参数是函数</span></span><br><span class="line">   <span class="keyword">if</span> (allCanFly) &#123;</span><br><span class="line">       alert(<span class="string">"这架飞机不能起飞，因为有乘客在禁飞名单里面"</span>);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//可以从函数返回函数</span></span><br><span class="line"><span class="comment">//定义一个对象变量</span></span><br><span class="line">   <span class="keyword">var</span> passengers = [&#123;</span><br><span class="line">         name: <span class="string">"dudu"</span>,</span><br><span class="line">         paid: <span class="literal">true</span>,</span><br><span class="line">         ticket: <span class="string">"firstclass"</span></span><br><span class="line">     &#125;, &#123;</span><br><span class="line">         name: <span class="string">"jane"</span>,</span><br><span class="line">         paid: <span class="literal">true</span>,</span><br><span class="line">         ticket: <span class="string">"coach"</span></span><br><span class="line">     &#125;, &#123;</span><br><span class="line">         name: <span class="string">"Sue"</span>,</span><br><span class="line">         paid: <span class="literal">false</span>,</span><br><span class="line">         ticket: <span class="string">"firstclass"</span></span><br><span class="line">     &#125;, &#123;</span><br><span class="line">         name: <span class="string">"Fujia"</span>,</span><br><span class="line">         paid: <span class="literal">true</span>,</span><br><span class="line">         ticket: <span class="string">"caoach"</span></span><br><span class="line">     &#125;];</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">createDrinkOrder</span>(<span class="params">passenger</span>) </span>&#123;</span><br><span class="line">         <span class="keyword">var</span> orderFunction;<span class="comment">//创建一个变量用于存储要返回的函数</span></span><br><span class="line">         <span class="keyword">if</span> (passenger.ticket === <span class="string">"firstclass"</span>) &#123;</span><br><span class="line">             orderFunction = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;<span class="comment">//定义返回的函数代码</span></span><br><span class="line">                 alert(<span class="string">"Would you like a cocktail or wine?"</span>);</span><br><span class="line">             &#125;;</span><br><span class="line">         &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">             orderFunction = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;<span class="comment">//定义返回的函数代码</span></span><br><span class="line">                 alert(<span class="string">"Your choice is cola or water."</span>);</span><br><span class="line">             &#125;;</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">return</span> orderFunction;<span class="comment">//返回创建的函数</span></span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">serveCustomer</span>(<span class="params">passenger</span>) </span>&#123;</span><br><span class="line">         <span class="keyword">var</span> getDrinkOrderFunction = createDrinkOrder(passenger);<span class="comment">//注意这里是将返回的函数赋给变量引用</span></span><br><span class="line">         getDrinkOrderFunction();<span class="comment">//引用变量指向返回的函数</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">servePassengers</span>(<span class="params">passengers</span>) </span>&#123;</span><br><span class="line">         <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passengers.length; i++) &#123;</span><br><span class="line">             serveCustomer(passengers[i]);</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     servePassengers(passengers);</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>   (5-3) <code>Object.defineProperties()</code>:在一个对象上添加或修改一个或者多个自有属性，并返回该对象。</p>
-<p>   语法：<code>Object.defineProperities(obj,props);</code></p>
-<p>   参数：<code>obj</code>:将要被添加属性或修改属性的对象，<code>props</code>:该对象的一个或多个键值对定义了将要为对象添加或修改的属性的具体配置</p>
-<p>   (5-4) <code>Object.keys()</code>:方法会返回一个由给定对象的所有可枚举自身属性的属性名组成的数组，数组中属性名的排列顺序和使用for-in循环遍历该对象时返回的顺序一致(两者的主要区别是for-in还会遍历除一个对象从其原型链上继承到得可枚举的属性)</p>
-<p>   语法：<code>Object.keys(obj);</code></p>
-<p>   参数：返回该对象的所有可枚举自身属性的属性名</p>
-<p>   <strong>描述：</strong><code>Object.keys</code>返回一个所有元素为字符串的数组，其元素来自于从给定的对象上面可直接枚举的属性。这些属性的顺序与手动遍历该对象属性时的一致。如果你想获取一个对象的所有属性,，甚至包括不可枚举的，可以通过<code>Object.getOwnPropertyNames()</code>实现</p>
-<p>   (5-5) <code>Object.getOwnPropertyNames()</code>:返回一个由指定对象的所有自身属性的属性名（包括不可枚举属性）组成的数组</p>
-<p>   语法：<code>Object.getOwnPropertyNames(obj);</code></p>
-<p>   参数：<code>obj</code>:要查看的对象</p>
-<p>   <strong>描述：</strong><code>Object.getOwnPropertyNames</code> 返回一个数组，该数组对元素是 obj 自身拥有的枚举或不可枚举属性名称字符串。数组中枚举属性的顺序与通过 for…in loop（或 Object.keys)）迭代该对象属性时一致。 数组中不可枚举属性的顺序未定义。</p>
-<p>   (5-6) <code>Object.getOwnPropertyDescriptor()</code>：返回指定对象上一个自有属性对应的属性描述符。(自有属性指的是直接赋予该对象的属性，不需要从原型链上进行查找的属性）)</p>
-<p>   语法：<code>Object.getOwnPropertyDescriptor(obj,prop);</code></p>
-<p>   参数：<code>obj</code>:在该对象上查看属性，<code>prop</code>:一个属性名称，该属性的属性描述被返回</p>
-<p>   返回值：如果指定的属性存在于对象上，则返回其属性描述符（property descriptor），否则返回 undefined</p>
-<p>   <strong>描述：</strong>该方法允许对一个属性的描述进行检索。在 Javascript 中， 属性 由一个字符串类型的“名字”（name）和一个“属性描述符”（property descriptor）对象构成。一个属性描述符是一个记录。</p>
-<p>   (5-7) <code>Object.getPrototypeOf()</code>:返回指定对象的原型(也就是该对象内部属性[[Prototype]]的值)</p>
-<p>   语法：<code>Object.getPrototypeOf(obj);</code></p>
-<p>   参数：要返回的对象</p>
-<p>   <strong>描述：</strong>如果参数不是一个对象类型，将跑出TypeError异常</p>
-<p>   (5-8) <code>Object.freeze()</code>:冻结一个对象。冻结对象是指那些不能添加新的属性，不能修改已有属性的值，不能删除已有属性，以及不能修改已有属性的可枚举性、可配置性、可写性的对象。也就是说这个对象永远不能改变的。</p>
-<p>   语法：<code>Object.freeze(obj);</code></p>
-<p>   参数：<code>obj</code>:要被冻结的对象</p>
-<p>   <strong>描述：</strong>冻结对象的所有自身属性都不可能以任何方式被修改。任何尝试修改该对象的操作都会失败，可能是静默失败，也可能会抛出异常（严格模式中）。数据属性的值不可更改，访问器属性（有getter和setter）也同样（但由于是函数调用，给人的错觉是还是可以修改这个属性）。如果一个属性的值是个对象，则这个对象中的属性是可以修改的，除非它也是个冻结对象。</p>
-<p>   (5-9) <code>Object.isFrozen()</code>:判断对象是否已经被冻结</p>
-<p>   语法：<code>Object.isFrozen(obj);</code></p>
-<p>   参数：<code>obj</code>:被检测的对象</p>
-<p>   <strong>描述：</strong>一个对象是冻结的（frozen）是指它不可扩展，所有属性都是不可配置的（non-configurable），且所有数据属性（data properties）都是不可写的（non-writable）。数据属性是值那些没有取值器（getter）或赋值器（setter）的属性。</p>
-<p>   (5-10) <code>Object.preventExtensions()</code>:阻止对象扩展</p>
-<p>   语法：<code>Object.preventExtensions(obj);</code></p>
-<p>   参数：<code>obj</code>:将要变得不可扩展的对象</p>
-<p>   描述：如果一个对象可以添加新的属性，则这个对象是可扩展的。preventExtensions 可以让这个对象变的不可扩展，也就是不能再有新的属性。需要注意的是不可扩展的对象的属性通常仍然可以被删除。尝试给一个不可扩展对象添加新属性的操作将会失败，不过可能是静默失败，也可能会抛出 TypeError 异常（严格模式）。</p>
-<p>   (5-11) <code>Object.isExtensible()</code>:检测一个对象是否可扩展(是否可以在它上面添加新的属性)</p>
-<p>   语法：<code>Object.isExtensible(obj);</code></p>
-<p>   参数：<code>obj</code>：需要检测的对象</p>
-<p>   <strong>描述：</strong>默认情况下，对象是可扩展的：即可以为他们添加新的属性。以及它们的 <code>__proto__</code>属性可以被更改。<code>Object.preventExtensions</code>，<code>Object.seal</code> 或 <code>Object.freeze</code> 方法都可以标记一个对象为不可扩展（<code>non-extensible</code>）。</p>
-<p>   (5-12) <code>Object.seal()</code>:可以让一个对象密封，并返回被密封之后的对象。密封对象是指那些不能添加新的属性、不能删除已有属性，以及不能修改已有属性的可枚举性、可配置性、可写性，但可能可以修改已有属性的值的对象</p>
-<p>   语法：<code>Object.seal(obj);</code></p>
-<p>   参数：<code>obj</code>:要被密封的对象</p>
-<p>   <strong>描述：</strong>通常情况下，一个对象是可扩展的（可以添加新的属性）。密封一个对象会让这个对象变的不能添加新属性，且所有已有属性会变的不可配置。属性不可配置的效果就是属性变的不可删除，以及一个数据属性不能被重新定义成为访问器属性，或者反之。但属性的值仍然可以修改。尝试删除一个密封对象的属性或者将某个密封对象的属性从数据属性转换成访问器属性，结果会静默失败或抛出TypeError 异常（严格模式）。不会影响从原型链上继承的属性。但 <code>__proto__ (  )</code>属性的值也会不能修改。</p>
-<p>   (5-13) <code>Object.isSealed()</code>:检测一个对象是否被密封sealed</p>
-<p>   语法：<code>Object.isSealed(obj);</code></p>
-<p>   参数：<code>obj</code>:要被检测的对象</p>
-<p>   <strong>描述：</strong>如果这个对象是密封的，则返回 true，否则返回 false。密封对象是指那些不可 扩展 的，且所有自身属性都不可配置的（non-configurable）对象。</p>
-<ol>
-<li><p><code>Object.prototype</code></p>
-<p>(1)JavaScript语言的所有对象都是由Object衍生的对象。</p>
-<p>(2)所有对象都继承了<code>Object.prototype</code>的方法和属性，尽管它们可能被覆盖。</p>
-<p>(3)属性：<code>Object.prototype.constructor</code>:返回一个指向创建了该对象原型的函数引用。</p>
-<p><strong>注意：</strong>该属性的值是那个函数本身，而不是一个包含函数名称的字符串。对于原始值（如1，true 或 “test”），该属性为只读。所有对象都会从它的原型上继承一个 constructor 属性。</p>
-<p>(4)方法</p>
-<p>(4-1) <code>Object.prototype.hasOwnProperty()</code>:检测某个对象是否含有指定的自身属性。</p>
-<p>语法：<code>obj.hasOwnProperty(prop);</code></p>
-<p>参数：要检测的属性名称。</p>
-<p><strong>描述：</strong>所有继承了 <code>Object.prototype</code> 的对象都会从原型链上继承到 hasOwnProperty 方法。这个方法可以用来检测一个对象是否含有特定的自身属性，和 in 运算符不同，该方法会忽略掉那些从原型链上继承到的属性。</p>
-<p>(4-2) <code>Object.prototype.isPrototypeOf()</code>:检测一个对象是否存在于另一个对象的原型链上。</p>
-<p>语法：<code>prototype.isPrototypeOf(object);</code></p>
-<p>参数：<code>prototype</code>:检测该对象是否在参数object的原型链上。<code>object</code>:在该对象的原型链上搜寻。</p>
-<p><strong>描述：</strong><code>isPrototypeOf</code>方法允许你检测一个对象是否存在于另一个对象的原型链上。</p>
-<p>(4-3) <code>Object.prototype.propertyIsEnumerable()</code>:检测指定的属性名是否是当前对象可枚举的自身属性。</p>
-<p>语法：<code>obj.propertyIsEnumerable(prop);</code></p>
-<p>参数：<code>prop</code>:需要检测的属性名。</p>
-<p><strong>描述：</strong>每个对象都有 <code>propertyIsEnumerable</code> 方法。该方法可以判断出指定的属性是否是自身的可枚举属性，也就是说该属性是否可以通过 for…in 循环等遍历到。有些属性虽然可以通过 for…in 循环遍历到，但因为它们不是自身属性，而是从原型链上继承的属性,所以该方法也会返回false。如果对象没有指定的属性，该方法返回 false。</p>
-<p>(4-4) <code>Object.prototype.toString()</code>:返回一个代表该对象的字符串。</p>
-<p>语法：<code>object.toString();</code></p>
-<p>描述：当对象需要转换为字符串时，会调用它的<code>toString()</code>方法.默认情况下，每个对象都会从Object上继承到<code>toString()</code>方法，如果这个方法没有被这个对象自身或者更接近的上层原型上的同名方法覆盖(遮蔽)，则调用该对象的<code>toString()</code>方法时会返回”<code>[object type]</code>“，这里的字符串type表示了一个对象类型。</p>
-<p>(4-5) <code>Object.prototype.valueOf()</code>:返回的诗this值，即对象本身。</p>
-<p>语法：<code>object.valueOf();</code></p>
-<p>返回值：在其他类型的对象中，<code>valueOf</code>有可能返回一个不同的值。</p>
+<h2 id="（二）、对象"><a href="#（二）、对象" class="headerlink" title="（二）、对象"></a>（二）、对象</h2><ol>
+<li><p>可以随时增删属性： <code>fido.dogYears=35;</code>就新增对象fido的一个属性dogYears，并赋值为35 , <code>delete fido.dogYears;</code>删除了一个对象fido的属性dogYears，如果成功删除了属性，delete表达式将返回true，仅当属性无法删除时，delete才返回false。如果对象属于浏览器而受到保护，即便你要删除的属性在对象中不存在，delete也将返回true。</p>
 </li>
-<li><p>Number对象</p>
-<p>定义：Number JavaScript 对象是一个允许你处理数字值的包装对象。Number 对象使用<code>Number()</code> 构造器创建。</p>
-<p>语法：<code>new Number(value);</code></p>
-<p>描述：如果参数无法被转换为数字，则返回 NaN。在非构造器上下文中 (如：没有 new 操作符)，Number 能被用来执行类型转换。</p>
-<p>属性：</p>
-<p>|   属性  |   作用  |<br>|———–|————|<br>|MAX_VALUE|最大的正数|<br>|MIN_VALUE|最小的正数|<br>|NaN|特殊的非数字值|<br>|NEGATIVE_INFINITY|特殊的负无穷大值，在溢出时返回|<br>|POSITIVE_INFINITY|特殊的正无穷大值，在溢出时返回|<br>|prototype|Number对象上允许的额外属性|</p>
-<p>方法:</p>
-<p>|   方法  |   作用  |<br>|———–|————|<br>|<code>toFixed()</code>|返回一个字符串，以定点数的形式来表示某一个数字，并进行四舍五入|<br>|<code>toExponential()</code>|返回一个字符串，以指数形式来表示某一数字|<br>|<code>toPrecision()</code>|返回一个字符串，既可以是指数型，也可以是小数型|</p>
+<li><p>对象变量存储的不是对象本身，而是指向对象的引用，因此对象变量也被称为引用变量。</p>
 </li>
-<li><p>Boolean对象</p>
-<p>定义：Boolean对象是一个包装了布尔值的对象</p>
-<p>语法：<code>new Boolean([value]);</code></p>
-<p><strong>描述：</strong>如果Boolean构造函数的参数不是一个布尔值,则该参数会被转换成一个布尔值.如果参数是 0, -0, null, false, NaN, undefined, 或者空字符串 (“”),生成的Boolean对象的值为false。其他任何值,包括任何对象或者字符串”false”, 都会创建一个值为true的Boolean对象.</p>
-<p><strong>注意：</strong>原始的布尔值和Boolean对象是不一样的。任何值为 undefined 或者 null的对象, 包括值为false的Boolean对象, 在条件语句中,其值都将作为true来判断。不要通过新建Boolean对象的方法将一个非布尔值转换成布尔值。直接使用Boolean函数即可。</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x=<span class="built_in">Boolean</span>(exp);<span class="comment">//这样使用</span></span><br><span class="line"><span class="keyword">var</span> x=<span class="keyword">new</span> <span class="built_in">Boolean</span>(exp);<span class="comment">//不要这样使用</span></span><br></pre></td></tr></table></figure>
-<p>如过你用一个对象作为Boolean对象的初始化值,则即使该对象是个值为false的Boolean对象,生成的Boolean对象的值也是true。不要在该使用Boolean原始值的地方使用<br>Boolean对象。</p>
+<li><p>向函数传递对象时，函数获得的是指向该对象的引用的副本，而不是对象本身的副本。因此，如果在函数中修改属性的值，修改的将是原始对象的值。</p>
 </li>
-<li><p>String对象</p>
-<p>定义：<code>new String(s)</code>构造函数，<code>function String(s)</code>转换函数</p>
-<p>参数：存储到一个String对象中或转换为一个原始字符串的值</p>
-<p>描述：当使用new操作符将String()作为一个构造函数使用时，它将返回一个String对象，内容为字符串s或s的字符串表示。当不带new操作符调用String()构造函数时，只是简单地将s转换为原始字符串并返回转换后的值</p>
-<p>属性：length，得到字符串的长度</p>
-<p>方法</p>
-<p>String.charAt(n)</p>
-<pre><code>    描述
-        取得一个字符串中的第n个字符
-    参数
-        希望返回的字符在字符串string中的索引
-    返回值
-        字符串string的第n个字符
-    注意
-        返回字符串中的第n个字符
-        字符串的起始点为0
-        如果不再字符串长度之内返回空字符串
-String.charCodeAt(n)
-    描述
-        取得字符串中第n个字符的编码
-    参数
-        返回编码字符的索引
-    返回值
-        string中第n个字符的Unicode编码。返回的值为一个16位的整数，值在0~5535之间
-    注意
-        如果n为负数或大于等于字符串的长度，则返回NaN
-String.fromCharCode(c1,c2,...)
-    描述
-        从字符编码创建一个字符串
-    参数
-        指定待创建字符串中的字符的Unicode编码，一个或多个整数
-    返回值
-        一个新的字符串，内容为指定编码对应的字符
-    注意
-        这是一个静态方法，是String()构造函数的一个属性，而不是String对象的方法
-String.concat(value,...)
-    描述
-        连接字符串
-    参数
-        一个或多个待连接的字符串
-    返回值
-        返回连接之后的字符串
-    注意
-        和+作用一样，连接字符串的
-String.indexOf(substring[,start])
-    描述
-        搜索一个字符串
-    参数
-        在string中搜索的字符串
-        一个可选的整数参数start。指定string中起始点。
-    返回值
-        在字符串string中start位置之后，substring第一次出现的位置，如果没找到返回-1
-    注意
-        String.indexOf()搜索指定的字符串，从前到后搜索
-        找到返回字符串第一次出现的位置
-        没找到返回-1
-        搜索的字符串按照字符串整体搜索
-String.lastIndexOf(substring[,start])
-    描述
-        从后面搜索
-    参数
-        一个可选的整数参数start。指定string中起始点。
-        在string中搜索的字符串
-    返回值
-        返回字符串最后一次出现的位置
-String.localeCompare(target)
-    描述
-        使用本地特定的顺序比较两个字符串
-    参数
-        要与string使用区分地区设置的方式比较的字符串
-    返回值
-        string&lt;target,比0小的数
-        string&gt;target,比0大的数
-        string=target，返回0
-    注意
-        当使用&gt;或者&lt;操作符比较字符串的时候，是按照字符的Unicode编码进行比较的，不考虑本地的顺序，这种方式不准确
-        使用localeCompare()提供了一个根据默认的本地排序来比较字符串的方法，这个函数利用底层的操作系统提供的排序进行
-String.match(regexp)
-    描述
-        找到一个或多个正则表达式匹配结果
-    参数
-        一个指定要匹配的模式的RegExp对象。如果如果这个参数不是一个RegExp对象，则它将先被传入RegExp()构造函数，后转换为RegExp对象
-    返回
-        一个包含撇皮结果的数组
-String.repalce(regexp,replacement)
-    描述
-        替换匹配给定正则表达式的一个或多个子串
-    参数
-        指定了要替换的模式的RegExp对象。如果这个参数是一个字符串，它将用作一个要搜索的直接量文本模式；它将不会先转化为RegExp对象
-        replacement为替换文本的字符串，或者一个函数，用在替换时对应的替换文本
-    返回值
-        返回替换之后的内容
-String.search(regexp)
-    描述
-        根据一个正则表达式查找
-    参数
-        一个RegExp对象，指定要在字符串string中查找的模式。如果这个参数不是一个RegExp，它将先传入RegExp()构造函数，后转换为一个RegExp对象
-    返回
-        string中第一个匹配regexp的子串的开始位置，如果没有找到匹配则返回-1
-String.slice(start,end)
-    描述
-        截取字符串
-    参数
-        start起始点
-        end结束的位置
-    返回值
-        返回截取之后的字符串
-String.substr(start,length)
-    描述
-        截取字符串
-    参数
-        start起始点
-        length截取字符串的长度
-    返回值
-        返回截取之后的字符串
-String.substring(from,to)
-    描述
-        截取字符串
-    参数
-        起始点
-        结束点
-    返回值
-        返回截取之后的字符串
-String.split(delimiter,limit)
-    描述
-        将一个字符串切分为一个由字符串组成的数组
-    参数
-        delimiter分隔符
-        limit指定已返回数组的最大长度。如果指定，则最多返回数量为这个数字的子串。如果没有指定，则将切分整个字符串，无论结果数组有多长
-    返回值
-        返回拆分之后的数组
-String.toLowerCase()
-    描述
-        返回小写之后的字符串
-    返回值
-        返回小写之后的字符串
-String.toUperCase()
-    描述
-        返回大写之后的字符串
-    返回值
-        返回大写之后的字符串
-String.toLocaleLowerCase()
-    描述
-        返回小写之后的字符串
-    返回值
-        返回小写之后的字符串
-String.toLocaleUpperCase()
-    描述
-        返回大写之后的字符串
-    返回值
-        返回大写之后的字符串
-String.toString()
-    描述
-        返回对象的字符串
-    返回值
-        返回字符串
-String.trim()
-    描述
-        去掉字符串两端的空白字符
-    返回
-        返回去除字符串两端空白的字符串
-String.valueOf()
-    描述
-        返回对应的字符串
-    返回值
-        返回String的原始字符串值
-String.link(url)
-    描述
-        link() 方法创建一个 &lt;a&gt; HTML 元素，用该字符串作为超链接的显示文本，参数作为指向另一个 URL 的超链接。
-    参数
-        任何能够指定 a 标签的 href 属性的字符串；它应当是有效的 URL（相对或绝对），任何 &amp; 字符将会被转义为 &amp;amp;，任何 &quot; 字符将会被转义为 &amp;quot;。
-    返回
-        返回创建好的链接
-String.anchor(name)
-    描述
-        用anchor方法差un关键一个&lt;&lt;a&gt;HTML锚元素
-    参数
-        超链接的name属性
-    返回值
-        返回创建的锚点元素
-</code></pre><p> Array对象<br> Function对象</p>
-<pre><code>定义
-    JavaScript中的Function对象，就是我们常说的函数对象。在JS中，所有的函数也是以对象的形式存在的。
-语法
-    充当Function对象的构造函数使用，用于结合new关键字构造一个新的Function对象。
-        new Function( [ argName1 [, argName1 [, argNameN... [, funcBody ]]]] )
-    当作普通函数使用，其行为与用法一(使用new关键字)完全一致，相当于用法一省略了new关键字。
-        Function( [ argName1 [, argName1 [, argNameN... [, funcBody ]]]] )
-返回值
-    Function()的返回值是Function类型，返回一个函数对象
-注意
-    多数时候，你无需显示地通过new关键字来构造一个Function对象，因为在JavaScript中，你可以直接以function关键字形式声明函数
-    JavaScript在调用Function()构造函数时编译由该构造函数创建的对象。虽然它使您的脚本在运行时重新定义函数的情况下具有更大的灵活性，但它也会减慢代码的执行速度。为了避免减慢脚本速度，应尽可能少地使用Function()构造函数。建议优先考虑以function关键字的形式声明函数。
-    Function()会把传入的最后一个参数作为函数定义的执行代码，之前的所有参数均依次作为函数定义的参数。
-    如果没有指定任何参数，则表示该函数没有定义参数列表，函数的执行代码也为空
-    如果只指定了一个参数，则该参数将被视作函数的执行代码。如果你想定义一个参数、执行代码为空，请传入两个参数，第二个参数为空字符串即可：new Function(&quot;argName1&quot;, &quot;&quot;)。
-属性
-    arguments
-        返回该函数执行时内置的arguments对象。
-    caller
-        返回调用当前函数的函数。
-    constructor
-        返回创建该对象的构造函数。
-    length
-        返回函数定义的参数个数。
-方法
-    call()
-        调用当前Function对象，可同时改变函数内的this指针引用，函数参数一个个分别传入。
-    apply()
-        调用当前Function对象，可同时改变函数内的this指针引用，函数参数以数组或arguments对象的形式传入。
-    toString()
-        返回定义该Function对象的字符串。
-    valueOf()
-        返回Function对象本身。
-</code></pre></li>
+<li><p>调用对象的方法时，关键字this指向其方法被调用的对象。要在对象的方法中访问对象的属性，必须使用句点表示法，但使用关键字this而不是对象名。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fiat=&#123;</span><br><span class="line">    make:<span class="string">"Fiat"</span>,</span><br><span class="line">    started:<span class="literal">false</span>,</span><br><span class="line">    start:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.started=<span class="literal">true</span>;</span><br><span class="line">    &#125;,</span><br><span class="line">    stop:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.started=<span class="literal">false</span>;</span><br><span class="line">    &#125;,</span><br><span class="line">    drive:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">this</span>.started)&#123;</span><br><span class="line">            alert(<span class="string">"Zoom Zoom"</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            alert(<span class="string">"You need to start the engine first."</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>需要创建大量类似的对象时，适合使用构造函数。注意<code>new</code>和<code>this</code>的使用。</p>
+</li>
 </ol>
-<h2 id="参考文献："><a href="#参考文献：" class="headerlink" title="参考文献："></a>参考文献：</h2><ul>
-<li>麦子学院——King老师xmind文件</li>
+<h2 id="（三）、类型"><a href="#（三）、类型" class="headerlink" title="（三）、类型"></a>（三）、类型</h2><ol>
+<li><p><code>undefined</code>类型:</p>
+<ul>
+<li>没有return语句的函数返回的值。</li>
+<li>未赋值的变量的值。</li>
+<li>稀疏数组中不存在的数组元素的值。</li>
+<li>已删除的属性的值。</li>
+<li>创建对象时没有赋给属性的值。</li>
+</ul>
+</li>
+<li><p><code>null</code>表示对象不存在，跟<code>undefined</code>的区别是：在应该提供一个对象，但无法创建或找到时，将提供<code>null</code>；在变量未初始化、对象没有指定属性或数组没有指定元素时，将返回<code>undefined</code>。</p>
+</li>
+<li><p><code>NaN</code>表示无法用数字表示的数值结果，但它的类型仍是数字，注意：<code>NaN!=NaN</code>。判断一个数是不是<code>NaN</code>，使用<code>isNaN()</code>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> test=<span class="number">0</span>/<span class="number">0</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> test);<span class="comment">//number</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在JavaScript中总共有5个假值：<code>undefined</code>，<code>null</code>，<code>0</code>，<code>&quot;&quot;</code>和<code>false</code>；其他值都是真值。</p>
+</li>
+</ol>
+<h2 id="（四）、闭包"><a href="#（四）、闭包" class="headerlink" title="（四）、闭包"></a>（四）、闭包</h2><ol>
+<li><p>闭包：名词，指的是函数和引用环境。包含自由变量的函数与为所有这些自由变量提供了变量绑定的环境一起，被称为闭包。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">makeCounter</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> count = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">Counter</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        count = count + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> Counter;<span class="comment">//这是一个闭包</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> doCount = makeCounter();<span class="comment">//调用函数试，获得的是一个闭包：一个函数及其环境</span></span><br><span class="line"><span class="built_in">console</span>.log(doCount());</span><br><span class="line"><span class="built_in">console</span>.log(doCount());</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="（五）、原型"><a href="#（五）、原型" class="headerlink" title="（五）、原型"></a>（五）、原型</h2><ol>
+<li><p>原型：对象可以从其他对象那里继承属性和行为。更具体地说，js使用原型式继承，其中其行为被继承的对象称为原型（对象继承另一个对象后，就可以访问其多有的方法和属性）。</p>
+</li>
+<li><p>给构造函数的原型添加属性后，使用这个构造函数创建的实例都将继承这些属性。即便是以前创建的实例也不例外。</p>
+</li>
+<li><p>使用自定义的原型对象时，务必将原型的属性<code>constructor</code>设置为相应的构造函数，以保持一致。</p>
+</li>
+<li><p>要调用函数并指定函数体中<code>this</code>指向的对象，可调用其方法<code>call()</code>；</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个构造函数    </span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Dog</span>(<span class="params">name, breed, weight</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">this</span>.breed = breed;</span><br><span class="line">        <span class="keyword">this</span>.weight = weight;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//给构造函数原型添加属性</span></span><br><span class="line">    Dog.prototype.species = <span class="string">"Canine"</span>;</span><br><span class="line">    <span class="comment">//给构造函数原型添加方法</span></span><br><span class="line">    Dog.prototype.bark = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.weight &gt; <span class="number">25</span>) &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.name + <span class="string">"Says Woof"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.name + <span class="string">"says Yip"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    Dog.prototype.run = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Run"</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">    Dog.prototype.wag = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"wag"</span>);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//定义一个继承Dog构造函数的新的构造函数</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">ShowDog</span>(<span class="params">name, breed, weight, handler</span>) </span>&#123;</span><br><span class="line">        <span class="comment">// this.name = name;</span></span><br><span class="line">        <span class="comment">// this.breed = breed;</span></span><br><span class="line">        <span class="comment">// this.weight = weight;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// Dog(name, breed, weight);  后面调用Dog原型属性会返回undefined</span></span><br><span class="line"></span><br><span class="line">        Dog.call(<span class="keyword">this</span>, name, breed, weight);<span class="comment">//注意这里要使用this</span></span><br><span class="line">        <span class="keyword">this</span>.handler = handler;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">    <span class="comment">//ShowDog.prototype = new Dog();</span></span><br><span class="line">    ShowDog.prototype.constructor = ShowDog;<span class="comment">//设置构造函数ShowDog的原型指向自己本身</span></span><br><span class="line">    ShowDog.prototype.league = <span class="string">"Webville"</span>;</span><br><span class="line">    ShowDog.prototype.stack = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Stack"</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">    ShowDog.prototype.bait = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Bait"</span>);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    ShowDog.prototype.gait = <span class="function"><span class="keyword">function</span>(<span class="params">kind</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(kind + <span class="string">"ing"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    ShowDog.prototype.groom = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Groom"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> scotty = <span class="keyword">new</span> ShowDog(<span class="string">"Scotty"</span>, <span class="string">"Scottish Terrish"</span>, <span class="number">15</span>, <span class="string">"Cookie"</span>);</span><br><span class="line">    <span class="built_in">console</span>.log(scotty.name); <span class="comment">//undefined，原因是showDog中使用的是：        Dog(name, breed, weight);</span></span><br><span class="line">    scotty.stack();</span><br><span class="line">    scotty.bark();</span><br><span class="line">    <span class="built_in">console</span>.log(scotty.league);</span><br><span class="line">    <span class="built_in">console</span>.log(scotty.species);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"scotty constructor is:"</span> + scotty.constructor); <span class="comment">//showDog</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>《Head First JavaScript 程序设计》</li>
 </ul>
 
       
@@ -806,12 +547,12 @@ String.anchor(name)
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2017/09/24/2017-09-24-study-js7-object-data/">【js基础】对象（二）</a></p>
+  <p><span>本文标题:</span><a href="/2018/03/22/2018-03-17-return-js-base/">一些容易忽视的JS基础知识</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 猿来独往 的个人博客">猿来独往</a></p>
-  <p><span>发布时间:</span>2017年09月24日 - 00:09</p>
-  <p><span>最后更新:</span>2018年03月13日 - 00:03</p>
-  <p><span>原始链接:</span><a href="/2017/09/24/2017-09-24-study-js7-object-data/" title="【js基础】对象（二）">https://super456.github.io/2017/09/24/2017-09-24-study-js7-object-data/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://super456.github.io/2017/09/24/2017-09-24-study-js7-object-data/"  aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2018年03月22日 - 18:03</p>
+  <p><span>最后更新:</span>2018年03月23日 - 18:03</p>
+  <p><span>原始链接:</span><a href="/2018/03/22/2018-03-17-return-js-base/" title="一些容易忽视的JS基础知识">https://super456.github.io/2018/03/22/2018-03-17-return-js-base/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://super456.github.io/2018/03/22/2018-03-17-return-js-base/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用，欢迎引用推荐他人</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -885,8 +626,8 @@ String.anchor(name)
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/24/2017-09-24-study-js6-object-base/" rel="next" title="【js基础】对象（一）">
-                <i class="fa fa-chevron-left"></i> 【js基础】对象（一）
+              <a href="/2018/02/24/2018-02-24-simple-use-vs-code/" rel="next" title="如何简单的使用VScode编程工具">
+                <i class="fa fa-chevron-left"></i> 如何简单的使用VScode编程工具
               </a>
             
           </div>
@@ -894,10 +635,6 @@ String.anchor(name)
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/07/2017-10-07-national-day-parttime-jobs/" rel="prev" title="国庆兼职——我们的故事">
-                国庆兼职——我们的故事 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -1149,7 +886,7 @@ String.anchor(name)
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#对象分类"><span class="nav-number">1.</span> <span class="nav-text">对象分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-、内建对象"><span class="nav-number">1.1.</span> <span class="nav-text">(一)、内建对象</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一-、数据封装对象"><span class="nav-number">1.1.1.</span> <span class="nav-text">(一)、数据封装对象</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献："><span class="nav-number">2.</span> <span class="nav-text">参考文献：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#（一）、函数"><span class="nav-number">1.</span> <span class="nav-text">（一）、函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#（二）、对象"><span class="nav-number">2.</span> <span class="nav-text">（二）、对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#（三）、类型"><span class="nav-number">3.</span> <span class="nav-text">（三）、类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#（四）、闭包"><span class="nav-number">4.</span> <span class="nav-text">（四）、闭包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#（五）、原型"><span class="nav-number">5.</span> <span class="nav-text">（五）、原型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">6.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
             
 
           </div>
