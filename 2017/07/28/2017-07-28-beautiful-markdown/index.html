@@ -122,21 +122,21 @@
 
 
   
-  <meta name="keywords" content="JavaScript, js, 基础, 搞混" />
+  <meta name="keywords" content="markdown" />
 
 
-<meta name="description" content="学习JavaScript也有一段时间了，但是总有一些基础知识点容易搞混或者忘记，所以当自己回顾这些这些知识点的时候会模糊不清，又要重新看一遍资料，为了以后方便，所以这里记录一下，也是为了更深入的理解透彻。">
-<meta name="keywords" content="JavaScript, js, 基础, 搞混">
+<meta name="description" content="学习常用的语法格式，简单、快速的编写一篇美观的文章。">
+<meta name="keywords" content="markdown">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一些容易忽视的JS基础知识">
-<meta property="og:url" content="https://super456.github.io/2018/03/22/2018-03-17-return-js-base/index.html">
+<meta property="og:title" content="常用的 Markdown 语法格式来编写文章">
+<meta property="og:url" content="https://super456.github.io/2017/07/28/2017-07-28-beautiful-markdown/index.html">
 <meta property="og:site_name" content="猿来独往">
-<meta property="og:description" content="学习JavaScript也有一段时间了，但是总有一些基础知识点容易搞混或者忘记，所以当自己回顾这些这些知识点的时候会模糊不清，又要重新看一遍资料，为了以后方便，所以这里记录一下，也是为了更深入的理解透彻。">
+<meta property="og:description" content="学习常用的语法格式，简单、快速的编写一篇美观的文章。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-23T10:16:43.820Z">
+<meta property="og:updated_time" content="2018-03-23T10:56:47.060Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一些容易忽视的JS基础知识">
-<meta name="twitter:description" content="学习JavaScript也有一段时间了，但是总有一些基础知识点容易搞混或者忘记，所以当自己回顾这些这些知识点的时候会模糊不清，又要重新看一遍资料，为了以后方便，所以这里记录一下，也是为了更深入的理解透彻。">
+<meta name="twitter:title" content="常用的 Markdown 语法格式来编写文章">
+<meta name="twitter:description" content="学习常用的语法格式，简单、快速的编写一篇美观的文章。">
 
 
 
@@ -145,7 +145,7 @@
 
 
 
-  <link rel="canonical" href="https://super456.github.io/2018/03/22/2018-03-17-return-js-base/"/>
+  <link rel="canonical" href="https://super456.github.io/2017/07/28/2017-07-28-beautiful-markdown/"/>
 
 
 
@@ -154,7 +154,7 @@
     sidebar: "",
   };
 </script>
-  <title>一些容易忽视的JS基础知识 | 猿来独往</title>
+  <title>常用的 Markdown 语法格式来编写文章 | 猿来独往</title>
   
 
 
@@ -350,7 +350,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://super456.github.io/2018/03/22/2018-03-17-return-js-base/">
+    <link itemprop="mainEntityOfPage" href="https://super456.github.io/2017/07/28/2017-07-28-beautiful-markdown/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="猿来独往">
@@ -367,7 +367,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">一些容易忽视的JS基础知识</h1>
+          <h1 class="post-title" itemprop="name headline">常用的 Markdown 语法格式来编写文章</h1>
         
 
         <div class="post-meta">
@@ -379,7 +379,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-22T18:18:25+08:00">2018-03-22</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-28T00:00:00+08:00">2017-07-28</time>
             
 
             
@@ -400,7 +400,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端基础/" itemprop="url" rel="index"><span itemprop="name">前端基础</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/编程工具/" itemprop="url" rel="index"><span itemprop="name">编程工具</span></a></span>
 
                 
                 
@@ -428,7 +428,7 @@
           
 
           
-              <div class="post-description">学习JavaScript也有一段时间了，但是总有一些基础知识点容易搞混或者忘记，所以当自己回顾这些这些知识点的时候会模糊不清，又要重新看一遍资料，为了以后方便，所以这里记录一下，也是为了更深入的理解透彻。</div>
+              <div class="post-description">学习常用的语法格式，简单、快速的编写一篇美观的文章。</div>
           
 
         </div>
@@ -444,78 +444,129 @@
       
 
       
-        <h2 id="（一）、函数"><a href="#（一）、函数" class="headerlink" title="（一）、函数"></a>（一）、函数</h2><ol>
-<li><p>使用未声明的变量时，它将自动被视为全局变量，即便你在函数中首次使用它亦如此。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">playTurn</span>(<span class="params">player,location</span>)</span>&#123;</span><br><span class="line"><span class="comment">//    使用变量points前，我们忘了关键字var声明它，因此它被自动视为全局变量</span></span><br><span class="line">   points=<span class="number">0</span>;</span><br><span class="line">   <span class="keyword">if</span>(location==<span class="number">1</span>)&#123;</span><br><span class="line">       points=points+<span class="number">100</span>;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">return</span> points;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="Markdown-编写文章攻略"><a href="#Markdown-编写文章攻略" class="headerlink" title="Markdown 编写文章攻略"></a>Markdown 编写文章攻略</h1><p><strong>注：本教程需要一点对markdown语法格式的了解，什么都不知道的，请直接看<a href="http://www.jianshu.com/p/q81RER" target="_blank" rel="noopener">献给写作者的 Markdown 新手指南</a>的参考资料，再来看本文，会更好的去学习。</strong></p>
+<h2 id="基本排版格式"><a href="#基本排版格式" class="headerlink" title="基本排版格式"></a>基本排版格式</h2><h3 id="一-目录编辑"><a href="#一-目录编辑" class="headerlink" title="(一) 目录编辑"></a>(一) 目录编辑</h3><ol>
+<li><p>导航目录链接制作,一般使用二级、三级标题格式(需要解析)</p>
+<p>第一种方式获取标题：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">* </span>TOC</span><br><span class="line">&#123;:toc&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>如果局部变量与全局变量同名，它将“遮住”全局变量。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> beanCounter=<span class="number">10</span>;<span class="comment">//全局变量</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getNumberOfItems</span>(<span class="params">ordertype</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> beanCounter=<span class="number">0</span>;<span class="comment">//局部变量</span></span><br><span class="line">    <span class="keyword">if</span>(ordertype==<span class="string">"order"</span>)&#123;</span><br><span class="line">     <span class="comment">//</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> beanCounter;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>因此每次调用函数使用的是局部变量beanCounter时，都会遮住全局变量，但是全局变量和局部变量不会相互影响：如果你修改其中的一个，对另一个不会有任何影响，它们是彼此独立的变量。</p>
+<li><p>小标题无序目录(注意空格)</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">* </span>目录一</span><br><span class="line"><span class="bullet">* </span>目录二</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>如果形参与全局变量同名，它会遮住全局变量。</p>
+<li><p>小标题有序目录(注意空格)</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>目录一</span><br><span class="line"><span class="bullet">2. </span>目录二</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>函数声明和函数表达式区别：</p>
-<ul>
-<li><p>使用函数声明时，函数将在执行代码前创建；而使用函数表达式时，函数将在运行阶段执行代码时创建。（简单的说浏览器执行代码分两遍时，第一遍分析所有的函数声明，并定义函数声明创建的函数，第二遍浏览器从上到下顺序执行代码，并定义函数表达式创建的函数。）</p>
+<li><p>锚点链接(注意英文字符)</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">目录</span>](<span class="link">#目录</span>)</span><br><span class="line">[<span class="string">Fork 指南</span>](<span class="link">#fork-指南</span>)</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>使用函数声明时，将创建一个与函数同名的变量，并让它指向函数；而使用函数表达式时，通常不给函数指定名称，因此你要么在代码中将函数赋给一个变量，要么以其他方式使用函数表达式。</p>
-</li>
+</ol>
+<h3 id="二-链接表示"><a href="#二-链接表示" class="headerlink" title="(二) 链接表示"></a>(二) 链接表示</h3><ol>
+<li>基本插入链接表示：<ul>
+<li>网址链接：<code>[猿来独往](https://super456.github.io)</code></li>
+<li>本地图片链接(最好使用图床网站获取图片url)： <code>![](/images/wiki/eclipse-need-java6.png)</code></li>
+<li>待定链接：<code>[这个链接跳转不了](#)</code></li>
 </ul>
 </li>
-<li><p>函数用法：可以将函数赋给变量；可以将函数传递给函数；可以从函数返回函数。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">//可以将函数传递给函数</span></span><br><span class="line"><span class="comment">//定义一个对象变量</span></span><br><span class="line">      <span class="keyword">var</span> passengers = [&#123;</span><br><span class="line">       name: <span class="string">"dudu"</span>,</span><br><span class="line">       paid: <span class="literal">true</span>,</span><br><span class="line">       ticket: <span class="string">"firstclass"</span></span><br><span class="line">   &#125;, &#123;</span><br><span class="line">       name: <span class="string">"jane"</span>,</span><br><span class="line">       paid: <span class="literal">true</span>,</span><br><span class="line">       ticket: <span class="string">"coach"</span></span><br><span class="line">   &#125;, &#123;</span><br><span class="line">       name: <span class="string">"Sue"</span>,</span><br><span class="line">       paid: <span class="literal">false</span>,</span><br><span class="line">       ticket: <span class="string">"firstclass"</span></span><br><span class="line">   &#125;, &#123;</span><br><span class="line">       name: <span class="string">"Fujia"</span>,</span><br><span class="line">       paid: <span class="literal">true</span>,</span><br><span class="line">       ticket: <span class="string">"caoach"</span></span><br><span class="line">   &#125;];</span><br><span class="line">   <span class="comment">//创建一个传递函数，参数一个是对象一个是函数</span></span><br><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">processPassengers</span>(<span class="params">passengers, testFunction</span>) </span>&#123;</span><br><span class="line">       <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passengers.length; i++) &#123;</span><br><span class="line">           <span class="keyword">if</span> (testFunction(passengers[i].name)) &#123;</span><br><span class="line">               <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//创建需要作为参数传递的函数</span></span><br><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">checkNoFlyList</span>(<span class="params">passenger</span>) </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> (passenger.name === <span class="string">"dudu"</span>);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   <span class="comment">// 向函数传递函数</span></span><br><span class="line">   <span class="keyword">var</span> allCanFly = processPassengers(passengers, checkNoFlyList);<span class="comment">//第一个参数是对象，第二个参数是函数</span></span><br><span class="line">   <span class="keyword">if</span> (allCanFly) &#123;</span><br><span class="line">       alert(<span class="string">"这架飞机不能起飞，因为有乘客在禁飞名单里面"</span>);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//可以从函数返回函数</span></span><br><span class="line"><span class="comment">//定义一个对象变量</span></span><br><span class="line">   <span class="keyword">var</span> passengers = [&#123;</span><br><span class="line">         name: <span class="string">"dudu"</span>,</span><br><span class="line">         paid: <span class="literal">true</span>,</span><br><span class="line">         ticket: <span class="string">"firstclass"</span></span><br><span class="line">     &#125;, &#123;</span><br><span class="line">         name: <span class="string">"jane"</span>,</span><br><span class="line">         paid: <span class="literal">true</span>,</span><br><span class="line">         ticket: <span class="string">"coach"</span></span><br><span class="line">     &#125;, &#123;</span><br><span class="line">         name: <span class="string">"Sue"</span>,</span><br><span class="line">         paid: <span class="literal">false</span>,</span><br><span class="line">         ticket: <span class="string">"firstclass"</span></span><br><span class="line">     &#125;, &#123;</span><br><span class="line">         name: <span class="string">"Fujia"</span>,</span><br><span class="line">         paid: <span class="literal">true</span>,</span><br><span class="line">         ticket: <span class="string">"caoach"</span></span><br><span class="line">     &#125;];</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">createDrinkOrder</span>(<span class="params">passenger</span>) </span>&#123;</span><br><span class="line">         <span class="keyword">var</span> orderFunction;<span class="comment">//创建一个变量用于存储要返回的函数</span></span><br><span class="line">         <span class="keyword">if</span> (passenger.ticket === <span class="string">"firstclass"</span>) &#123;</span><br><span class="line">             orderFunction = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;<span class="comment">//定义返回的函数代码</span></span><br><span class="line">                 alert(<span class="string">"Would you like a cocktail or wine?"</span>);</span><br><span class="line">             &#125;;</span><br><span class="line">         &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">             orderFunction = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;<span class="comment">//定义返回的函数代码</span></span><br><span class="line">                 alert(<span class="string">"Your choice is cola or water."</span>);</span><br><span class="line">             &#125;;</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">return</span> orderFunction;<span class="comment">//返回创建的函数</span></span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">serveCustomer</span>(<span class="params">passenger</span>) </span>&#123;</span><br><span class="line">         <span class="keyword">var</span> getDrinkOrderFunction = createDrinkOrder(passenger);<span class="comment">//注意这里是将返回的函数赋给变量引用</span></span><br><span class="line">         getDrinkOrderFunction();<span class="comment">//引用变量指向返回的函数</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">function</span> <span class="title">servePassengers</span>(<span class="params">passengers</span>) </span>&#123;</span><br><span class="line">         <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; passengers.length; i++) &#123;</span><br><span class="line">             serveCustomer(passengers[i]);</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     servePassengers(passengers);</span><br></pre></td></tr></table></figure>
+</ol>
+<ol>
+<li><p>统一的的链接跳转方式(为了排版好看一点)：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">参考：[<span class="string">mpv keybindings</span>][<span class="symbol">0</span>]</span><br><span class="line">参考：[<span class="string">OPTIONS</span>][<span class="symbol">1</span>]</span><br><span class="line">参考：[<span class="string">MPV使用小记</span>][<span class="symbol">2</span>]</span><br><span class="line"></span><br><span class="line">[<span class="symbol">0</span>]: <span class="link">https://github.com/mpv-player/mpv/blob/master/etc/input.conf</span></span><br><span class="line">[<span class="symbol">1</span>]: <span class="link">https://github.com/mpv-player/mpv/blob/master/DOCS/man/options.rst</span></span><br><span class="line">[<span class="symbol">2</span>]: <span class="link">https://segmentfault.com/a/1190000004533079</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>快捷插入网址链接表示形式：<code>&lt;http://example.com&gt;</code></p>
 </li>
 </ol>
-<h2 id="（二）、对象"><a href="#（二）、对象" class="headerlink" title="（二）、对象"></a>（二）、对象</h2><ol>
-<li><p>可以随时增删属性： <code>fido.dogYears=35;</code>就新增对象fido的一个属性dogYears，并赋值为35 , <code>delete fido.dogYears;</code>删除了一个对象fido的属性dogYears，如果成功删除了属性，delete表达式将返回true，仅当属性无法删除时，delete才返回false。如果对象属于浏览器而受到保护，即便你要删除的属性在对象中不存在，delete也将返回true。</p>
-</li>
-<li><p>对象变量存储的不是对象本身，而是指向对象的引用，因此对象变量也被称为引用变量。</p>
-</li>
-<li><p>向函数传递对象时，函数获得的是指向该对象的引用的副本，而不是对象本身的副本。因此，如果在函数中修改属性的值，修改的将是原始对象的值。</p>
-</li>
-<li><p>调用对象的方法时，关键字this指向其方法被调用的对象。要在对象的方法中访问对象的属性，必须使用句点表示法，但使用关键字this而不是对象名。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fiat=&#123;</span><br><span class="line">    make:<span class="string">"Fiat"</span>,</span><br><span class="line">    started:<span class="literal">false</span>,</span><br><span class="line">    start:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.started=<span class="literal">true</span>;</span><br><span class="line">    &#125;,</span><br><span class="line">    stop:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.started=<span class="literal">false</span>;</span><br><span class="line">    &#125;,</span><br><span class="line">    drive:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">this</span>.started)&#123;</span><br><span class="line">            alert(<span class="string">"Zoom Zoom"</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            alert(<span class="string">"You need to start the engine first."</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>需要创建大量类似的对象时，适合使用构造函数。注意<code>new</code>和<code>this</code>的使用。</p>
+<h3 id="三-表格排版"><a href="#三-表格排版" class="headerlink" title="(三) 表格排版"></a>(三) 表格排版</h3><ol>
+<li><p>表格排版参考(注意空行)</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 功能     | 快捷键 for win  | 快捷键 for mac |</span><br><span class="line">|:---------|:---------------|:---------------|</span><br><span class="line">| Project  | M-1            | Cmd-1          |</span><br><span class="line">| Terminal | M-F12          | M-F12          |</span><br><span class="line">| Editor   | Esc            | Esc            |</span><br></pre></td></tr></table></figure>
+<p>效果展示：</p>
+<p>| 功能|快捷键 for win | 快捷键 for mac |<br>|:——–:|:——-:|:———-:|<br>| Project | M-1| Cmd-1  |<br>| Terminal| M-F12 | M-F12  |<br>| Editor  | Esc  | Esc    |</p>
 </li>
 </ol>
-<h2 id="（三）、类型"><a href="#（三）、类型" class="headerlink" title="（三）、类型"></a>（三）、类型</h2><ol>
-<li><p><code>undefined</code>类型:</p>
+<p>   <strong>注意：</strong><code>:---------</code> 表示文字居左显示，<code>:---------:</code> 表示文字居中显示，<code>---------:</code> 表示文字居右显示。</p>
+<h3 id="四-文字处理"><a href="#四-文字处理" class="headerlink" title="(四) 文字处理"></a>(四) 文字处理</h3><ol>
+<li><p>分割线</p>
 <ul>
-<li>没有return语句的函数返回的值。</li>
-<li>未赋值的变量的值。</li>
-<li>稀疏数组中不存在的数组元素的值。</li>
-<li>已删除的属性的值。</li>
-<li>创建对象时没有赋给属性的值。</li>
+<li>第一种方式：<code>-----</code></li>
+<li>第二种方式：<code>***</code></li>
 </ul>
+<p>效果展示：</p>
+<hr>
 </li>
-<li><p><code>null</code>表示对象不存在，跟<code>undefined</code>的区别是：在应该提供一个对象，但无法创建或找到时，将提供<code>null</code>；在变量未初始化、对象没有指定属性或数组没有指定元素时，将返回<code>undefined</code>。</p>
+<li><p>删除线：<code>~~删除线~~</code> ，效果展示：<del>删除线</del></p>
 </li>
-<li><p><code>NaN</code>表示无法用数字表示的数值结果，但它的类型仍是数字，注意：<code>NaN!=NaN</code>。判断一个数是不是<code>NaN</code>，使用<code>isNaN()</code>。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> test=<span class="number">0</span>/<span class="number">0</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> test);<span class="comment">//number</span></span><br></pre></td></tr></table></figure>
+<li><p>斜体：<code>*斜体*</code> ，效果展示：<em>斜体</em></p>
 </li>
-<li><p>在JavaScript中总共有5个假值：<code>undefined</code>，<code>null</code>，<code>0</code>，<code>&quot;&quot;</code>和<code>false</code>；其他值都是真值。</p>
-</li>
-</ol>
-<h2 id="（四）、闭包"><a href="#（四）、闭包" class="headerlink" title="（四）、闭包"></a>（四）、闭包</h2><ol>
-<li><p>闭包：名词，指的是函数和引用环境。包含自由变量的函数与为所有这些自由变量提供了变量绑定的环境一起，被称为闭包。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">   <span class="function"><span class="keyword">function</span> <span class="title">makeCounter</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> count = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">Counter</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        count = count + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> Counter;<span class="comment">//这是一个闭包</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> doCount = makeCounter();<span class="comment">//调用函数试，获得的是一个闭包：一个函数及其环境</span></span><br><span class="line"><span class="built_in">console</span>.log(doCount());</span><br><span class="line"><span class="built_in">console</span>.log(doCount());</span><br></pre></td></tr></table></figure>
+<li><p>表情插入(需要解析)</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">:camel:</span><br><span class="line">:blush:</span><br><span class="line">:smile:</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/" target="_blank" rel="noopener">表情语法专属官网</a></p>
 </li>
 </ol>
-<h2 id="（五）、原型"><a href="#（五）、原型" class="headerlink" title="（五）、原型"></a>（五）、原型</h2><ol>
-<li><p>原型：对象可以从其他对象那里继承属性和行为。更具体地说，js使用原型式继承，其中其行为被继承的对象称为原型（对象继承另一个对象后，就可以访问其多有的方法和属性）。</p>
+<ol>
+<li><p>脚注提醒(需要解析)</p>
+<p>This is a text with footnote[^1].</p>
+<p>[^1]: Here is the footnote 1 definition.</p>
 </li>
-<li><p>给构造函数的原型添加属性后，使用这个构造函数创建的实例都将继承这些属性。即便是以前创建的实例也不例外。</p>
+</ol>
+<ol>
+<li>键盘键显示(需要解析)： <code>&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt;</code></li>
+</ol>
+<p>   效果展示：<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></p>
+<ol>
+<li><p>电子邮箱输入：<code>&lt;1111111111@qq.com&gt;</code> ，效果展示：<a href="mailto:&#x31;&#49;&#x31;&#49;&#x31;&#x31;&#x31;&#x31;&#x31;&#49;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;" target="_blank" rel="noopener">&#x31;&#49;&#x31;&#49;&#x31;&#x31;&#x31;&#x31;&#x31;&#49;&#x40;&#x71;&#113;&#x2e;&#99;&#x6f;&#x6d;</a></p>
 </li>
-<li><p>使用自定义的原型对象时，务必将原型的属性<code>constructor</code>设置为相应的构造函数，以保持一致。</p>
+<li><p>代办列表: 表示列表是否勾选状态</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>[ ] 不勾选</span><br><span class="line"><span class="bullet">- </span>[x] 勾选</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>要调用函数并指定函数体中<code>this</code>指向的对象，可调用其方法<code>call()</code>；</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个构造函数    </span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Dog</span>(<span class="params">name, breed, weight</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">this</span>.breed = breed;</span><br><span class="line">        <span class="keyword">this</span>.weight = weight;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//给构造函数原型添加属性</span></span><br><span class="line">    Dog.prototype.species = <span class="string">"Canine"</span>;</span><br><span class="line">    <span class="comment">//给构造函数原型添加方法</span></span><br><span class="line">    Dog.prototype.bark = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.weight &gt; <span class="number">25</span>) &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.name + <span class="string">"Says Woof"</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.name + <span class="string">"says Yip"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    Dog.prototype.run = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Run"</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">    Dog.prototype.wag = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"wag"</span>);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//定义一个继承Dog构造函数的新的构造函数</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">ShowDog</span>(<span class="params">name, breed, weight, handler</span>) </span>&#123;</span><br><span class="line">        <span class="comment">// this.name = name;</span></span><br><span class="line">        <span class="comment">// this.breed = breed;</span></span><br><span class="line">        <span class="comment">// this.weight = weight;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// Dog(name, breed, weight);  后面调用Dog原型属性会返回undefined</span></span><br><span class="line"></span><br><span class="line">        Dog.call(<span class="keyword">this</span>, name, breed, weight);<span class="comment">//注意这里要使用this</span></span><br><span class="line">        <span class="keyword">this</span>.handler = handler;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">    <span class="comment">//ShowDog.prototype = new Dog();</span></span><br><span class="line">    ShowDog.prototype.constructor = ShowDog;<span class="comment">//设置构造函数ShowDog的原型指向自己本身</span></span><br><span class="line">    ShowDog.prototype.league = <span class="string">"Webville"</span>;</span><br><span class="line">    ShowDog.prototype.stack = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Stack"</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">    ShowDog.prototype.bait = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Bait"</span>);</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    ShowDog.prototype.gait = <span class="function"><span class="keyword">function</span>(<span class="params">kind</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(kind + <span class="string">"ing"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    ShowDog.prototype.groom = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Groom"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> scotty = <span class="keyword">new</span> ShowDog(<span class="string">"Scotty"</span>, <span class="string">"Scottish Terrish"</span>, <span class="number">15</span>, <span class="string">"Cookie"</span>);</span><br><span class="line">    <span class="built_in">console</span>.log(scotty.name); <span class="comment">//undefined，原因是showDog中使用的是：        Dog(name, breed, weight);</span></span><br><span class="line">    scotty.stack();</span><br><span class="line">    scotty.bark();</span><br><span class="line">    <span class="built_in">console</span>.log(scotty.league);</span><br><span class="line">    <span class="built_in">console</span>.log(scotty.species);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"scotty constructor is:"</span> + scotty.constructor); <span class="comment">//showDog</span></span><br></pre></td></tr></table></figure>
+<li><p>上下标(需要解析)</p>
+<p>\^表示上标, _表示下标。如果上下标的内容多于一个字符，要用{}把这些内容括起来当成一个整体。上下标是可以嵌套的，也可以同时使用。 例如：</p>
+<p><code>x^{y^z}=(1+{\rm e}^x)^{-2xy^w}</code> ，效果展示：</p>
+<p>x^{y^z}=(1+{\rm e}^x)^{-2xy^w}</p>
+</li>
+</ol>
+<ol>
+<li><p>添加下划线： <code>php\_gd2.dll</code> ，效果展示： php_gd2.dll</p>
+</li>
+<li><p>笔记本和标签(部分编辑器支持)： <code>@(示例笔记本)[标签1|标签2|标签3]</code> 。</p>
+</li>
+</ol>
+<h3 id="五-引用"><a href="#五-引用" class="headerlink" title="(五) 引用"></a>(五) 引用</h3><ol>
+<li><p>区块引用可以嵌套，只要根据层次加上不同数量的 &gt; ：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 这是第一级引用。</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; &gt; 这是第二级引用。</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; 现在回到第一级引用。</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：</p>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; ## 这是一个标题。</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; 1. 这是第一行列表项。</span></span><br><span class="line"><span class="quote">&gt; 2. 这是第二行列表项。</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; 给出一些例子代码：</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; return shell_exec("echo $input | $markdown_script");</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果要在列表项目内放进引用，那 &gt; 就需要缩进：</p>
+</li>
+</ol>
+   <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">*  </span>Coding.net有以下主要功能:</span><br><span class="line"></span><br><span class="line"> &gt; 代码托管平台</span><br><span class="line"> &gt; 在线运行环境    </span><br><span class="line"> &gt; 代码质量监控    </span><br><span class="line"> &gt; 项目管理平台</span><br></pre></td></tr></table></figure>
+<h3 id="六-简单的图形"><a href="#六-简单的图形" class="headerlink" title="(六) 简单的图形"></a>(六) 简单的图形</h3><ol>
+<li>代码图形</li>
+</ol>
+   <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">+-------------+                    +-------------+</span><br><span class="line">|             |        ...         |             |</span><br><span class="line">+-------------+                    +-------------+</span><br><span class="line">|             |                    |             |</span><br><span class="line">+-------------+                    +-------------+</span><br><span class="line">| format str1 | &lt;-- esp            | format str2 | &lt;-- esp</span><br><span class="line">+-------------+                    +-------------+</span><br><span class="line">| double low  |                    |     int     |</span><br><span class="line">+-------------+                    +-------------+</span><br><span class="line">| double high |                    | double high |</span><br><span class="line">+-------------+  main stack frame  +-------------+</span><br><span class="line">|     ...     |                    |     ...     |</span><br><span class="line">+-------------+                    +-------------+</span><br><span class="line">|             |                    |             |</span><br><span class="line">+-------------+                    +-------------+</span><br><span class="line">|   (%ebp)    | &lt;-- ebp            |   (%ebp)    | &lt;-- ebp</span><br><span class="line">+-------------+                    +-------------+</span><br></pre></td></tr></table></figure>
+<ol>
+<li>构建文件夹图形</li>
+</ol>
+   <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">app/src/main</span><br><span class="line">├─assets</span><br><span class="line">├─java</span><br><span class="line">│  ├─android</span><br><span class="line">│  │  └─content</span><br><span class="line">│  │      └─pm</span><br><span class="line">│  └─org</span><br><span class="line">│      └─mazhuang</span><br><span class="line">│          └─easycleaner</span><br><span class="line">└─res</span><br><span class="line">   ├─drawable</span><br><span class="line">   ├─layout</span><br><span class="line">   ├─menu</span><br><span class="line">   ...</span><br></pre></td></tr></table></figure>
+<h3 id="七-代码语法"><a href="#七-代码语法" class="headerlink" title="(七) 代码语法"></a>(七) 代码语法</h3><ol>
+<li><p>单行代码语法： 两个`，中间输入内容</p>
+</li>
+<li><p>多行代码语法(注意前后空行)：第一行输入三个 ` 然后最后一行再输入三个</p>
+</li>
+<li><p>简单的语法高亮</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b <span class="built_in">test</span> 5234ab</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">print</span> <span class="string">'Hello, World!'</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>代码高亮语言标识符支持的语法</p>
+<p>支持的有javascript（js）、cpp、makefile、vbnet、xml、c、java、cl、vim、sh、yaml、markdown(显示原语法格式)、html、vb、python等等</p>
 </li>
 </ol>
 <h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
-<li>《Head First JavaScript 程序设计》</li>
+<li>(1)、<a href="http://mazhuang.org/wiki/chinese-copywriting-guidelines/" target="_blank" rel="noopener">中文文案排版指北（简体中文版）</a></li>
+<li>(2)、<a href="http://www.jianshu.com/p/q81RER" target="_blank" rel="noopener">献给写作者的 Markdown 新手指南</a></li>
+<li>(3)、<a href="https://coding.net/help/doc/project/markdown.html#section-2" target="_blank" rel="noopener">Markdown语法介绍</a></li>
+<li>(4)、<a href="http://www.appinn.com/markdown/" target="_blank" rel="noopener">Markdown 语法说明 (简体中文版)</a></li>
+<li>(5)、<a href="https://maxiang.io/" target="_blank" rel="noopener">马克飞象-在线编辑器</a></li>
 </ul>
 
       
@@ -547,12 +598,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/03/22/2018-03-17-return-js-base/">一些容易忽视的JS基础知识</a></p>
+  <p><span>本文标题:</span><a href="/2017/07/28/2017-07-28-beautiful-markdown/">常用的 Markdown 语法格式来编写文章</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 猿来独往 的个人博客">猿来独往</a></p>
-  <p><span>发布时间:</span>2018年03月22日 - 18:03</p>
+  <p><span>发布时间:</span>2017年07月28日 - 00:07</p>
   <p><span>最后更新:</span>2018年03月23日 - 18:03</p>
-  <p><span>原始链接:</span><a href="/2018/03/22/2018-03-17-return-js-base/" title="一些容易忽视的JS基础知识">https://super456.github.io/2018/03/22/2018-03-17-return-js-base/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://super456.github.io/2018/03/22/2018-03-17-return-js-base/"  aria-label="复制成功！"></i></span>
+  <p><span>原始链接:</span><a href="/2017/07/28/2017-07-28-beautiful-markdown/" title="常用的 Markdown 语法格式来编写文章">https://super456.github.io/2017/07/28/2017-07-28-beautiful-markdown/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://super456.github.io/2017/07/28/2017-07-28-beautiful-markdown/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用，欢迎引用推荐他人</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -613,7 +664,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/JavaScript/" rel="tag"><i class="fa fa-tag"></i> JavaScript</a>
+            <a href="/tags/Markdown/" rel="tag"><i class="fa fa-tag"></i> Markdown</a>
           
         </div>
       
@@ -626,8 +677,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/24/2018-02-24-simple-use-vs-code/" rel="next" title="如何简单的使用VScode编程工具">
-                <i class="fa fa-chevron-left"></i> 如何简单的使用VScode编程工具
+              <a href="/2017/07/27/2017-07-27-some-impressions/" rel="next" title="生活这件小事，烦请费思量">
+                <i class="fa fa-chevron-left"></i> 生活这件小事，烦请费思量
               </a>
             
           </div>
@@ -635,6 +686,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/28/2017-07-28-emotion-manage/" rel="prev" title="情绪管理的建议">
+                情绪管理的建议 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -717,7 +772,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">34</span>
+                    <span class="site-state-item-count">35</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -886,7 +941,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#（一）、函数"><span class="nav-number">1.</span> <span class="nav-text">（一）、函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#（二）、对象"><span class="nav-number">2.</span> <span class="nav-text">（二）、对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#（三）、类型"><span class="nav-number">3.</span> <span class="nav-text">（三）、类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#（四）、闭包"><span class="nav-number">4.</span> <span class="nav-text">（四）、闭包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#（五）、原型"><span class="nav-number">5.</span> <span class="nav-text">（五）、原型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">6.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Markdown-编写文章攻略"><span class="nav-number">1.</span> <span class="nav-text">Markdown 编写文章攻略</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本排版格式"><span class="nav-number">1.1.</span> <span class="nav-text">基本排版格式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-目录编辑"><span class="nav-number">1.1.1.</span> <span class="nav-text">(一) 目录编辑</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二-链接表示"><span class="nav-number">1.1.2.</span> <span class="nav-text">(二) 链接表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三-表格排版"><span class="nav-number">1.1.3.</span> <span class="nav-text">(三) 表格排版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四-文字处理"><span class="nav-number">1.1.4.</span> <span class="nav-text">(四) 文字处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五-引用"><span class="nav-number">1.1.5.</span> <span class="nav-text">(五) 引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六-简单的图形"><span class="nav-number">1.1.6.</span> <span class="nav-text">(六) 简单的图形</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七-代码语法"><span class="nav-number">1.1.7.</span> <span class="nav-text">(七) 代码语法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">1.2.</span> <span class="nav-text">参考文献</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -940,7 +995,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共41.4k字</span>
+  <span class="post-count">博客全站共42.6k字</span>
 </div>
 
         
