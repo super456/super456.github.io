@@ -24,6 +24,12 @@ const blogTheme = getThemeConfig({
   // 默认开启pagefind离线的全文搜索支持（如使用其它的可以设置为false）
   // 如果npx pagefind 时间过长，可以手动将其安装为项目依赖 pnpm add pagefind
   // search: false,
+  search: {
+    btnPlaceholder: '搜索',
+    placeholder: '请输入搜索关键词',
+    emptyText: '暂无数据',
+    heading: '总共: {{searchResult}} 个搜索结果'
+  },
 
   // 主题色修改
   themeColor: 'el-blue',

@@ -33,11 +33,11 @@ export default defineConfig({
       text: '最近更新于'
     },
     // 编辑当前页面的链接
-    // editLink: {
-    //   pattern:
-    //     'xxx/:path',
-    //   text: '去 GitHub 上编辑内容'
-    // },
+    editLink: {
+      pattern:
+        'https://github.com/super456/super456.github.io/tree/main/docs/:path',
+      text: '去 GitHub 上编辑内容'
+    },
     nav: [
       { text: '首页', link: '/' },
       { text: '前端进击',
