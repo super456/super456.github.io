@@ -1,0 +1,63 @@
+name: 纵倾童鞋博客自动部署
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+  # 允许你从 Actions 选项卡手动运行此工作流程
+  # workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
+
+# 只允许同时进行一次部署，跳过正在运行和最新队列之间的运行队列
+# 但是，不要取消正在进行的运行，因为我们希望允许这些生产部署完成
+# concurrency:
+#   group: pages
+#   cancel-in-progress: false
+
+env:
+  TZ: Asia/Shenzhen
+
+# 构建工作
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [latest]
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Node.js 版本：${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        # cache: pnpm
+
+    - name: 安装 pnpm
+      run: npm install pnpm -g
+
+    - name: 安装依赖
+      run: pnpm install
+
+    - name: 打包
+      run: pnpm run build
+
+    - name: 构建 pagefind 索引
+      run: npx pagefind --source docs/.vitepress/dist
+
+    - name: 部署到 Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        repository-name: super456/super456.github.io
+        clean: true
+        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        branch: action-pages
+        folder: docs/.vitepress/dist
