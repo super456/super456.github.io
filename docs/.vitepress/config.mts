@@ -75,10 +75,16 @@ export default defineConfig({
         ]
       },
       { text: '前端导航', link: '/posts/navigator/' },
+      { text: '工具指南', link: '/posts/tools/' },
       { text: '朝花夕拾', link: '/posts/read-book/' },
       { text: '夜航西飞', link: '/posts/random-thought/' },
       { text: '关于作者', link: '/posts/about/' }
     ],
+    darkModeSwitchLabel: '外观',
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇',
+    },
     socialLinks: [
       {
         icon: 'github',
