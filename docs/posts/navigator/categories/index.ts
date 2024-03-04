@@ -15,7 +15,8 @@ import study from './study'
 import community from './community'
 import fish from './fish'
 import interesting from './interesting'
-// import blogs from './blogs'
+import blogs from './blogs'
+import weekly from './weekly'
 // import HTML from './HTML'
 
 export const NAV_DATA: NavData[] = [
@@ -25,14 +26,16 @@ export const NAV_DATA: NavData[] = [
   React,
   JavaScript,
   CSS,
-  applet,
   Node,
-  VisualData,
+  blogs,
+  weekly,
+  study,
   packaging,
+  community,
+  applet,
+  VisualData,
   siteGenerator,
   iconLibrary,
-  study,
-  community,
   interesting,
   fish,
 ]
