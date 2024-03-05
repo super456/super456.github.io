@@ -17,7 +17,7 @@ export default   {
     {
       icon: 'https://cn.vuejs.org/logo.svg',
       title: 'Vue Router',
-      desc: 'Vue.js 的官方路由\n为 Vue.js 提供富有表现力、可配置的、方便的路由',
+      desc: 'Vue.js 的官方路由，为 Vue.js 提供富有表现力、可配置的、方便的路由',
       link: 'https://router.vuejs.org/zh'
     },
     {
@@ -67,6 +67,12 @@ export default   {
       title: 'NutUI',
       desc: '京东风格的轻量级移动端组件库',
       link: 'https://nutui.jd.com'
+    },
+    {
+      icon: 'https://www.naiveui.com/assets/naivelogo-XQ1U1Js8.svg',
+      title: 'Naïve UI',
+      desc: '一个 Vue 3 组件库，比较完整，主题可调，使用 TypeScript，快有点意思',
+      link: 'https://www.naiveui.com/zh-CN/os-theme'
     }
   ]
 }

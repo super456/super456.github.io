@@ -5,6 +5,7 @@ export default {
     {
       icon: 'https://miro.medium.com/v2/resize:fill:88:88/0*gXNjh86g-yiSa8qJ.png',
       title: 'Fresh Frontend Links',
+      desc: '前端文摘速递，总结上一周前端新鲜事儿',
       link: 'https://frontender-ua.medium.com/'
     },
     {

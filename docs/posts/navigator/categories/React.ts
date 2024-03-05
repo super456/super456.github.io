@@ -73,6 +73,18 @@ export default {
       title: 'ahooks',
       desc: '一套高质量可靠的 React Hooks 库',
       link: 'https://ahooks.js.org/zh-CN'
+    },
+    {
+      icon: 'https://mui.com/static/favicon.ico',
+      title: 'Material UI',
+      desc: '基于 Google Material Design 设计语言的 React 组件库',
+      link: 'https://mui.com/'
+    },
+    {
+      icon: 'https://mantine.dev/favicon.svg',
+      title: 'Mantine UI',
+      desc: '一套功能齐全的 React 组件库',
+      link: 'https://mantine.dev/'
     }
   ]
 }

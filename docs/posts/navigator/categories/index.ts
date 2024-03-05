@@ -5,6 +5,7 @@ import React from './React'
 import Vue from './Vue'
 import JavaScript from './JavaScript'
 import CSS from './CSS'
+// import HTML from './HTML'
 import applet from './applet'
 import Node from './Node'
 import VisualData from './VisualData'
@@ -17,7 +18,8 @@ import fish from './fish'
 import interesting from './interesting'
 import blogs from './blogs'
 import weekly from './weekly'
-// import HTML from './HTML'
+// import wxopen from './wxopen'
+import crossPlatform from './crossPlatform'
 
 export const NAV_DATA: NavData[] = [
   common,
@@ -25,14 +27,17 @@ export const NAV_DATA: NavData[] = [
   Vue,
   React,
   JavaScript,
+  // HTML,
   CSS,
   Node,
   blogs,
+  // wxopen,
   weekly,
   study,
   packaging,
   community,
   applet,
+  crossPlatform,
   VisualData,
   siteGenerator,
   iconLibrary,

@@ -27,6 +27,12 @@ export default {
       link: 'https://www.midjourney.com'
     },
     {
+      icon: 'https://stablediffusionweb.com/images/logo.png',
+      title: 'Stable Diffusion Online',
+      desc: '绘画',
+      link: 'https://stablediffusionweb.com/'
+    },
+    {
       icon: 'https://global-uploads.webflow.com/59deb588800ae30001ec19c9/5d4891e0e260e3c1bc37b100_beautiful%20ai%20favicon%20%20blue%20square.png',
       title: 'Beautiful.ai',
       desc: 'PPT',

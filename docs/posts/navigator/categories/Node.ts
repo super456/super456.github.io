@@ -9,6 +9,24 @@ export default {
       link: 'https://nodejs.org/zh-cn'
     },
     {
+      icon: 'https://docs.npmjs.com/favicon-32x32.png',
+      title: 'npm',
+      desc: 'JavaScript 的包管理和分发工具',
+      link: 'https://docs.npmjs.com/cli/v10'
+    },
+    {
+      icon: 'https://yarn.nodejs.cn/favicon.ico',
+      title: 'yarn',
+      desc: '快速、可靠、安全的依赖管理',
+      link: 'https://yarn.nodejs.cn/'
+    },
+    {
+      icon: 'https://pnpm.io/zh/img/favicon.png',
+      title: 'pnpm',
+      desc: '快速的、节省磁盘空间的包管理工具',
+      link: 'https://pnpm.io/zh'
+    },
+    {
       icon: 'https://expressjs.com/images/favicon.png',
       title: 'Express',
       desc: '基于 Node.js 平台，快速、开放、极简的 Web 开发框架',

@@ -31,6 +31,12 @@ export default {
       title: 'Json 中文网',
       desc: 'JSON 在线解析及格式化验证',
       link: 'https://www.json.cn'
+    },
+    {
+      icon: 'https://carbon.now.sh/favicon.ico',
+      title: 'Carbon',
+      desc: '代码图片生成',
+      link: 'https://carbon.now.sh/'
     }
   ]
 }

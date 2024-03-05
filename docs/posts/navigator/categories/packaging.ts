@@ -15,7 +15,7 @@ export default {
       link: 'https://cn.vitejs.dev'
     },
     {
-      icon: 'https://www.rollupjs.com/img/favicon.png',
+      icon: '/icons/rollup.png',
       title: 'Rollup',
       desc: 'Rollup 是一个 JavaScript 模块打包器',
       link: 'https://www.rollupjs.com'
