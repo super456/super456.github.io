@@ -15,9 +15,9 @@ import { NAV_DATA } from './categories'
 # 前端导航
 
 :::tip
-**感谢[茂茂物语](https://notes.fe-mm.com/nav)提供模版借鉴**
-
-持续更新中🚀...
+持续更新中🎉🚀...
 :::
 
 <MNavLinks v-for="{title, items} in NAV_DATA" :title="title" :items="items"/>
+---
+**感谢[茂茂物语](https://notes.fe-mm.com/nav)提供支持🌹**
