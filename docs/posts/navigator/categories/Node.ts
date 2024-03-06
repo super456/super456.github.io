@@ -6,7 +6,7 @@ export default {
       icon: '/icons/nodejs.svg',
       title: 'Node.js',
       desc: 'Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境',
-      link: 'https://nodejs.org/zh-cn'
+      link: 'https://nodejs.org/en'
     },
     {
       icon: 'https://docs.npmjs.com/favicon-32x32.png',

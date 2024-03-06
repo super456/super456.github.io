@@ -47,15 +47,15 @@ export default defineConfig({
             items: [
               {
                 text: 'HTML',
-                link: '/posts/growth-record/html/'
+                link: '/posts/growth-record/base/html/'
               },
               {
                 text: 'CSS',
-                link: '/posts/growth-record/css/'
+                link: '/posts/growth-record/base/css/'
               },
               {
                 text: 'JavaScript',
-                link: '/posts/growth-record/javascript/'
+                link: '/posts/growth-record/base/javascript/'
               }
             ]
           },
@@ -64,11 +64,79 @@ export default defineConfig({
             items: [
               {
                 text: 'Vue',
-                link: '/posts/growth-record/vue/'
+                link: '/posts/growth-record/frame/vue/'
               },
               {
                 text: 'React',
-                link: '/posts/growth-record/react/'
+                link: '/posts/growth-record/frame/react/'
+              },
+              {
+                text: 'Node',
+                link: '/posts/growth-record/frame/node/'
+              },
+            ]
+          },
+          {
+            text: '工程化',
+            items: [
+              {
+                text: '现代化构建',
+                link: '/posts/growth-record/engineering/tools'
+              },
+              {
+                text: '性能优化',
+                link: '/posts/growth-record/engineering/performance/'
+              },
+            ]
+          },
+          {
+            text: '计算机基础',
+            items: [
+              {
+                text: '数据结构与算法',
+                link: '/posts/growth-record/computer/algorithm/'
+              },
+              {
+                text: '计算机网络',
+                link: '/posts/growth-record/computer/network/'
+              },
+              {
+                text: '浏览器',
+                link: '/posts/growth-record/computer/browser/'
+              },
+            ]
+          },
+          {
+            text: '跨平台',
+            items: [
+              {
+                text: '小程序开发',
+                link: '/posts/growth-record/platform/applet/'
+              },
+              {
+                text: 'App 开发',
+                link: '/posts/growth-record/platform/app/'
+              },
+              {
+                text: 'H5 开发',
+                link: '/posts/growth-record/platform/h5/'
+              },
+            ]
+          },
+          {
+            text: '其他',
+            items: [
+              {
+                text: '软技能',
+                link: '/posts/growth-record/other/softSkills/'
+              },
+              {
+                text: '产品业务',
+                link: '/posts/growth-record/other/productBusiness/'
+              },
+              {
+                text: 'UI 设计交互',
+                link: '/posts/growth-record/other/design/'
               },
             ]
           }
