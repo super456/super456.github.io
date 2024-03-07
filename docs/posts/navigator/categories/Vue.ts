@@ -69,6 +69,12 @@ export default   {
       link: 'https://nutui.jd.com'
     },
     {
+      icon: 'https://varlet.gitee.io/varlet-ui/varlet_icon.png',
+      title: 'Varlet',
+      desc: '基于 Vue3 开发的 Material 风格移动端组件库',
+      link: 'https://varlet.gitee.io/varlet-ui/#/zh-CN/index'
+    },
+    {
       icon: 'https://www.naiveui.com/assets/naivelogo-XQ1U1Js8.svg',
       title: 'Naïve UI',
       desc: '一个 Vue 3 组件库，比较完整，主题可调，使用 TypeScript，快有点意思',

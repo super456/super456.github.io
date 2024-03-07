@@ -19,6 +19,12 @@ export default {
       title: 'ES6 入门教程',
       desc: '阮一峰的网络日志',
       link: 'http://es6.ruanyifeng.com'
+    },
+    {
+      icon: 'https://cn.history.js.org/favicon.ico',
+      title: 'JavaScript 二十年',
+      desc: '详细记载和解读了自 1995 年语言诞生到 2015 年 ES6 规范制定为止，共计 20 年的 JavaScript 语言演化历程',
+      link: 'https://cn.history.js.org/'
     }
   ]
 }
