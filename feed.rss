@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Sun, 10 Mar 2024 03:57:10 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 10 Mar 2024 15:51:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -14,6 +14,24 @@
             <link>https://super456.github.io</link>
         </image>
         <copyright>Copyright (c) 2024-present, 纵倾童鞋</copyright>
+        <item>
+            <title><![CDATA[前端进击]]></title>
+            <link>https://super456.github.io/posts/growth-record/base/html/</link>
+            <guid>https://super456.github.io/posts/growth-record/base/html/</guid>
+            <pubDate>Sun, 10 Mar 2024 15:50:14 GMT</pubDate>
+            <description><![CDATA[文章说明]]></description>
+            <content:encoded><![CDATA[<h1 id="前端进击" tabindex="-1">前端进击 <a class="header-anchor" href="#前端进击" aria-label="Permalink to &quot;前端进击&quot;">&ZeroWidthSpace;</a></h1>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[语义化标签]]></title>
+            <link>https://super456.github.io/posts/growth-record/base/html/semantic-label.html</link>
+            <guid>https://super456.github.io/posts/growth-record/base/html/semantic-label.html</guid>
+            <pubDate>Sun, 10 Mar 2024 15:50:14 GMT</pubDate>
+            <description><![CDATA[语义化标签描述信息]]></description>
+            <content:encoded><![CDATA[<h1 id="语义化标签" tabindex="-1">语义化标签 <a class="header-anchor" href="#语义化标签" aria-label="Permalink to &quot;语义化标签&quot;">&ZeroWidthSpace;</a></h1>
+]]></content:encoded>
+        </item>
         <item>
             <link>https://super456.github.io/posts/growth-record/engineering/</link>
             <guid>https://super456.github.io/posts/growth-record/engineering/</guid>
@@ -27,11 +45,6 @@
         <item>
             <link>https://super456.github.io/posts/growth-record/base/css/</link>
             <guid>https://super456.github.io/posts/growth-record/base/css/</guid>
-            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
-        </item>
-        <item>
-            <link>https://super456.github.io/posts/growth-record/base/html/</link>
-            <guid>https://super456.github.io/posts/growth-record/base/html/</guid>
             <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
         </item>
         <item>
