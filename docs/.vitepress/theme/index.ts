@@ -2,6 +2,7 @@ import { h } from 'vue'
 import { EnhanceAppContext, useData } from 'vitepress'
 import BlogTheme from '@sugarat/theme'
 import { inBrowser } from 'vitepress'
+import googleAnalytics from 'vitepress-plugin-google-analytics'
 import busuanzi from 'busuanzi.pure.js'
 import MNavLinks from './components/MNavLinks.vue'
 import LayoutBottom from './components/LayoutBottom.vue'
@@ -30,6 +31,11 @@ export default {
   enhanceApp({ app, router }: EnhanceAppContext) {
     // 添加全局组件注册
     app.component('MNavLinks', MNavLinks)
+
+    // 添加谷歌分析
+    googleAnalytics({
+      id: 'G-TYD5MCZ577', // 跟踪 ID
+    })
 
     // 添加不蒜子浏览统计
     if (inBrowser) {
