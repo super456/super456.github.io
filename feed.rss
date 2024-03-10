@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>纵倾童鞋</title>
+        <link>https://super456.github.io</link>
+        <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
+        <lastBuildDate>Sun, 10 Mar 2024 03:57:10 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh-cn</language>
+        <image>
+            <title>纵倾童鞋</title>
+            <url>https://super456.github.io/logo.jpg</url>
+            <link>https://super456.github.io</link>
+        </image>
+        <copyright>Copyright (c) 2024-present, 纵倾童鞋</copyright>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/engineering/</link>
+            <guid>https://super456.github.io/posts/growth-record/engineering/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/platform/</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/base/css/</link>
+            <guid>https://super456.github.io/posts/growth-record/base/css/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/base/html/</link>
+            <guid>https://super456.github.io/posts/growth-record/base/html/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/base/javascript/</link>
+            <guid>https://super456.github.io/posts/growth-record/base/javascript/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/computer/algorithm/</link>
+            <guid>https://super456.github.io/posts/growth-record/computer/algorithm/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/computer/browser/</link>
+            <guid>https://super456.github.io/posts/growth-record/computer/browser/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/computer/network/</link>
+            <guid>https://super456.github.io/posts/growth-record/computer/network/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/engineering/performance/</link>
+            <guid>https://super456.github.io/posts/growth-record/engineering/performance/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/engineering/tools/</link>
+            <guid>https://super456.github.io/posts/growth-record/engineering/tools/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/frame/node/</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/node/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/frame/react/</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/react/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/other/design/</link>
+            <guid>https://super456.github.io/posts/growth-record/other/design/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/other/productBusiness/</link>
+            <guid>https://super456.github.io/posts/growth-record/other/productBusiness/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/other/softSkills/</link>
+            <guid>https://super456.github.io/posts/growth-record/other/softSkills/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/platform/app/</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/app/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/platform/applet/</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/applet/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/platform/h5/</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/h5/</guid>
+            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[前端导航]]></title>
+            <link>https://super456.github.io/posts/navigator/</link>
+            <guid>https://super456.github.io/posts/navigator/</guid>
+            <pubDate>Tue, 05 Mar 2024 23:49:49 GMT</pubDate>
+            <description><![CDATA[关于前端开发的导航及工具推荐]]></description>
+            <content:encoded><![CDATA[<h1 id="前端导航" tabindex="-1">前端导航 <a class="header-anchor" href="#前端导航" aria-label="Permalink to &quot;前端导航&quot;">&ZeroWidthSpace;</a></h1>
+<div class="tip custom-block"><p class="custom-block-title">TIP</p>
+<p>持续更新中🎉🚀...</p>
+</div>
+<MNavLinks v-for="{title, items} in NAV_DATA" :title="title" :items="items"/><hr>
+<p><strong>感谢<a href="https://notes.fe-mm.com/nav" target="_blank" rel="noreferrer">茂茂物语</a>提供支持🌹</strong></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[关于我]]></title>
+            <link>https://super456.github.io/posts/about/</link>
+            <guid>https://super456.github.io/posts/about/</guid>
+            <pubDate>Sun, 03 Mar 2024 15:11:23 GMT</pubDate>
+            <description><![CDATA[一个名不见经传的前端小菜鸡，喜欢写点前端代码，偶尔写点博客。]]></description>
+            <content:encoded><![CDATA[<h1 id="关于我" tabindex="-1">关于我 <a class="header-anchor" href="#关于我" aria-label="Permalink to &quot;关于我&quot;">&ZeroWidthSpace;</a></h1>
+<div class="tip custom-block"><p class="custom-block-title">张爱玲 《爱》</p>
+<p>于千万人之中遇见你所要遇见的人，<br>
+于千万年之中，时间的无涯的荒野里，<br>
+没有早一步，也没有晚一步，刚巧赶上了，<br>
+那也没有别的话可说，惟有轻轻地问一声：<br>
+“噢，你也在这里吗？”</p>
+</div>
+<h2 id="🙋🏻‍♂️-我与清风共明月-皆是人间一过客" tabindex="-1">🙋🏻‍♂️ 我与清风共明月，皆是人间一过客 <a class="header-anchor" href="#🙋🏻‍♂️-我与清风共明月-皆是人间一过客" aria-label="Permalink to &quot;🙋🏻‍♂️ 我与清风共明月，皆是人间一过客&quot;">&ZeroWidthSpace;</a></h2>
+<p>👋 哈喽，很高兴遇见你 🥳，我是<strong>纵倾</strong>，麻烦认识一下 😁<br>
+🏡 | 家乡：广东 梅州（客家人）<br>
+🏠 | 现居：广东 深圳<br>
+💼 | 工作：前端开发工程师<br>
+🏫 | 大学：某不知名大学，计算机科学与技术专业<br>
+我，一个才疏学浅，文笔拙劣的前端开发程序员。但对于写作和分享的热爱，会坚持创作与分享，哪怕哪一句话或一个词可以帮助到别人，都是没有白费的。</p>
+<p>功不唐捐、玉汝于成。道阻且长，行之将至。希望我可以温暖到你，期待你的关注和鼓励。在未来的日子里我们能相互陪伴，一起加油，遇见那个值得自己期待的未来💪🏻</p>
+<h2 id="💪🏻-编程渐难终不悔-为己赢得成功泪" tabindex="-1">💪🏻 编程渐难终不悔，为己赢得成功泪 <a class="header-anchor" href="#💪🏻-编程渐难终不悔-为己赢得成功泪" aria-label="Permalink to &quot;💪🏻 编程渐难终不悔，为己赢得成功泪&quot;">&ZeroWidthSpace;</a></h2>
+<p>我一直坚信学习的技巧是动手，学习的灵魂是坚持，学习的态度是务实，学习的快乐是分享。从学习编程技术开始，一直摸爬滚打，四处碰壁的勇敢前行着，我没有编程的天赋，没有超乎常人的智商，没有前辈指导，一路学习过来，大部分都是心酸的过程，但是我无怨无悔，我知道自己没有别人聪明，也没有别人条件好。只能靠自己拼搏，靠自己无畏的前行。我就想在自己喜欢的领域，创造属于自己的小世界。我不怕辛苦，习惯了一个人的孤独，但有时候，真的会很烦， 没办法，想找到志同道合的人一起奋斗，真的、真的很难。但是，我相信自己，每天不断的学习，一定会成为前端大神，一定会在 IT 行业中有所作为，别忘了，我是有梦想的人！</p>
+<p>很喜欢的一句话：</p>
+<blockquote>
+<p>年轻的时候就能找到自己喜欢并且干一辈子的事情，是多么幸福，多么令人羡慕啊</p>
+</blockquote>
+<h2 id="🌈-总有人间一两风-填我十万八千梦" tabindex="-1">🌈 总有人间一两风，填我十万八千梦 <a class="header-anchor" href="#🌈-总有人间一两风-填我十万八千梦" aria-label="Permalink to &quot;🌈 总有人间一两风，填我十万八千梦&quot;">&ZeroWidthSpace;</a></h2>
+<p>第一次搭建自己的博客网站，是我大三下暑假时候。使用的是 Jekyll + GitHub Pages 搭建的，那个时候只是为了尝鲜及有一个自己博客网站玩玩，并没有持续的投入维护。之后第二版博客也是在 GitHub 上搭建自己的 Hexo Next 博客，因为百度的原因，所以两个博客网站都有更新。目的是记录、总结自己的学习过程，分享、帮助像我一样学习前端及其他编程技术的学习建议参考，互相学习、一起进步，欢迎指正</p>
+<p>不管未来怎么样，我想要成为前端高级开发工程师。为了这个梦想，而努力奋斗的少年！
+唯愿一路风清，且行且珍惜。我一直在 👨🏻‍💻Coding…</p>
+<h2 id="🌹-感君意气无所惜-一为歌行歌主客" tabindex="-1">🌹 感君意气无所惜，一为歌行歌主客 <a class="header-anchor" href="#🌹-感君意气无所惜-一为歌行歌主客" aria-label="Permalink to &quot;🌹 感君意气无所惜，一为歌行歌主客&quot;">&ZeroWidthSpace;</a></h2>
+<p>感谢你阅读我的文章，希望你能有所收获</p>
+<p><em>愿，我们都在努力，向着光的方向！</em> ☀️</p>
+<hr>
+<p><strong>注：有些内容是我大三暑假写的一个简短的自我介绍，哈哈哈，有被那个时候的自己感动到，所以想留着，想想曾经那个年少的自己，也想给后来的自己一个参考呢</strong></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[工具指南]]></title>
+            <link>https://super456.github.io/posts/tools/</link>
+            <guid>https://super456.github.io/posts/tools/</guid>
+            <pubDate>Sun, 03 Mar 2024 14:29:37 GMT</pubDate>
+            <description><![CDATA[工具使用及技巧]]></description>
+            <content:encoded><![CDATA[<h1 id="工具指南" tabindex="-1">工具指南 <a class="header-anchor" href="#工具指南" aria-label="Permalink to &quot;工具指南&quot;">&ZeroWidthSpace;</a></h1>
+]]></content:encoded>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/growth-record/</link>
+            <guid>https://super456.github.io/posts/growth-record/</guid>
+            <pubDate>Wed, 28 Feb 2024 14:23:28 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/random-thought/</link>
+            <guid>https://super456.github.io/posts/random-thought/</guid>
+            <pubDate>Wed, 28 Feb 2024 14:23:28 GMT</pubDate>
+        </item>
+        <item>
+            <link>https://super456.github.io/posts/read-book/</link>
+            <guid>https://super456.github.io/posts/read-book/</guid>
+            <pubDate>Wed, 28 Feb 2024 14:23:28 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
