@@ -2,23 +2,23 @@
 import { getThemeConfig } from '@sugarat/theme/node'
 
 // 开启RSS支持（RSS配置）
-// import type { Theme } from '@sugarat/theme'
+import type { Theme } from '@sugarat/theme'
 
-// const baseUrl = 'xxx'
-// const RSS: Theme.RSSOptions = {
-//   title: '纵倾童鞋',
-//   baseUrl,
-//   copyright: 'Copyright (c) 2024-present, 纵倾童鞋',
-//   description: '何以解忧，唯有热爱（前端技术分享）',
-//   language: 'zh-cn',
-//   image: 'xxx',
-//   favicon: 'xxx',
-// }
+const baseUrl = 'https://super456.github.io'
+const RSS: Theme.RSSOptions = {
+  title: '纵倾童鞋',
+  baseUrl,
+  copyright: 'Copyright (c) 2024-present, 纵倾童鞋',
+  description: '纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容',
+  language: 'zh-cn',
+  image: 'https://super456.github.io/logo.jpg',
+  favicon: 'https://super456.github.io/favicon.ico',
+}
 
 // 所有配置项，详见文档: https://theme.sugarat.top/
 const blogTheme = getThemeConfig({
   // 开启RSS支持
-  // RSS,
+  RSS,
 
   // 搜索
   // 默认开启pagefind离线的全文搜索支持（如使用其它的可以设置为false）

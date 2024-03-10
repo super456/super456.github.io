@@ -10,7 +10,7 @@ export default defineConfig({
   extends: blogTheme,
   lang: 'zh-cn',
   title: '纵倾童鞋',
-  description: '纵倾童鞋的前端技术博客',
+  description: '分享前端技术知识、阅读思考、生活心得等内容',
   // 详见：https://vitepress.dev/zh/reference/site-config#head
   head: [
     // 配置网站的图标（显示在浏览器的 tab 上）
