@@ -45,15 +45,16 @@ const blogTheme = getThemeConfig({
     empty: '暂无精选内容'
   },
 
-  // 推荐文章
-  recommend: {
-    title: '🔍 相关文章',
-    nextText: '换一组',
-    pageSize: 6,
-    empty: '暂无相关文章',
-    style: 'sidebar',
-    sort: 'date'
-  },
+  // 左侧栏推荐文章
+  recommend: false,
+  // recommend: {
+  //   title: '🔍 相关文章',
+  //   nextText: '换一组',
+  //   pageSize: 6,
+  //   empty: '暂无相关文章',
+  //   style: 'sidebar',
+  //   sort: 'date'
+  // },
 
   // 评论设置
   comment: {
@@ -67,17 +68,10 @@ const blogTheme = getThemeConfig({
   friend: [
     {
       nickname: '粥里有勺糖',
-      des: '你的指尖用于改变世界的力量',
+      des: '你的指尖，拥有改变世界的力量',
       avatar:
         'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
       url: 'https://sugarat.top',
-    },
-    {
-      nickname: 'Vitepress',
-      des: 'Vite & Vue Powered Static Site Generator',
-      avatar:
-        'https://vitepress.dev/vitepress-logo-large.webp',
-      url: 'https://vitepress.dev/',
     },
   ],
 
