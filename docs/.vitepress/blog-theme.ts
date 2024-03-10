@@ -81,10 +81,10 @@ const blogTheme = getThemeConfig({
     },
   ],
 
-  // 页脚
-  footer: {
+  // 页脚，注意⚠️：已弃用
+  // footer: {
     // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
-    copyright: 'MIT License | 纵倾童鞋',
+    // copyright: 'MIT License | 纵倾童鞋',
     // icpRecord: {
     //   name: 'xxx',
     //   link: 'https://beian.miit.gov.cn/'
@@ -93,7 +93,7 @@ const blogTheme = getThemeConfig({
     //   name: '公网安备xxxxx',
     //   link: 'https://www.beian.gov.cn/portal/index.do'
     // },
-  },
+  // },
 })
 
 export { blogTheme }

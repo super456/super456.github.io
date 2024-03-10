@@ -22,6 +22,9 @@ devDependencies:
   '@mdit-vue/shared':
     specifier: ^2.0.0
     version: 2.0.0
+  busuanzi.pure.js:
+    specifier: ^1.0.3
+    version: 1.0.3
   sass:
     specifier: ^1.64.1
     version: 1.71.1
@@ -925,6 +928,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       fill-range: 7.0.1
+
+  /busuanzi.pure.js@1.0.3:
+    resolution: {integrity: sha512-tPULdyx+8NNb9geZYDpktKmHAYx9f2LEOBaHyWCaM7iPEMIa/43KgYAUluuU7YG9UFSOFpj4dO7Nj2Vlu3V9Rg==}
+    dev: true
 
   /character-entities@2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}

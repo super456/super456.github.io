@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@mdit-vue/shared": "^2.0.0",
+    "busuanzi.pure.js": "^1.0.3",
     "sass": "^1.64.1",
     "typescript": "^5.1.6",
     "vitepress": "1.0.0-rc.40"
