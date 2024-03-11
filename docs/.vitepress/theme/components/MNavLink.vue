@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { withBase } from 'vitepress'
 import { slugify } from '@mdit-vue/shared'
 
-import { NavLink } from './types'
+import type { NavLink } from './types'
 
 const props = defineProps<{
   noIcon?: boolean
@@ -15,21 +15,22 @@ const props = defineProps<{
 }>()
 
 const formatTitle = computed(() => {
-  if (!props.title) {
+  if (!props.title)
     return ''
-  }
+
   return slugify(props.title)
 })
 
 const svg = computed(() => {
-  if (typeof props.icon === 'object') return props.icon.svg
+  if (typeof props.icon === 'object')
+    return props.icon.svg
   return ''
 })
 
 const formatBadge = computed(() => {
-  if (typeof props.badge === 'string') {
+  if (typeof props.badge === 'string')
     return { text: props.badge, type: 'info' }
-  }
+
   return props.badge
 })
 </script>
@@ -39,13 +40,13 @@ const formatBadge = computed(() => {
     <article class="box" :class="{ 'has-badge': formatBadge }">
       <div class="box-header">
         <template v-if="!noIcon">
-          <div v-if="svg" class="icon" v-html="svg"></div>
+          <div v-if="svg" class="icon" v-html="svg" />
           <div v-else-if="icon && typeof icon === 'string'" class="icon">
             <img
               :src="withBase(icon)"
               :alt="title"
               onerror="this.parentElement.style.display='none'"
-            />
+            >
           </div>
         </template>
         <h5 v-if="title" :id="formatTitle" class="title" :class="{ 'no-icon': noIcon }">

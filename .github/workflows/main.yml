@@ -31,33 +31,33 @@ jobs:
         node-version: [latest]
 
     steps:
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Node.js 版本：${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Node.js 版本：${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
         # cache: pnpm
 
-    - name: 安装 pnpm
-      run: npm install pnpm -g
+      - name: 安装 pnpm
+        run: npm install pnpm -g
 
-    - name: 安装依赖
-      run: pnpm install
+      - name: 安装依赖
+        run: pnpm install
 
-    - name: 打包
-      run: pnpm run build
+      - name: 打包
+        run: pnpm run build
 
-    - name: 构建 pagefind 索引
-      run: npx pagefind --source docs/.vitepress/dist
+      - name: 构建 pagefind 索引
+        run: npx pagefind --source docs/.vitepress/dist
 
-    - name: 部署到 Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        repository-name: super456/super456.github.io
-        clean: true
-        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
-        branch: action-pages
-        folder: docs/.vitepress/dist
+      - name: 部署到 Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          repository-name: super456/super456.github.io
+          clean: true
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          branch: action-pages
+          folder: docs/.vitepress/dist

@@ -28,7 +28,7 @@ const blogTheme = getThemeConfig({
     btnPlaceholder: '搜索',
     placeholder: '请输入搜索关键词',
     emptyText: '暂无数据',
-    heading: '总共: {{searchResult}} 个搜索结果'
+    heading: '总共: {{searchResult}} 个搜索结果',
   },
 
   // 主题色修改
@@ -42,7 +42,7 @@ const blogTheme = getThemeConfig({
     title: '🔥 精选文章',
     nextText: '换一组',
     pageSize: 6,
-    empty: '暂无精选内容'
+    empty: '暂无精选内容',
   },
 
   // 左侧栏推荐文章
@@ -77,16 +77,16 @@ const blogTheme = getThemeConfig({
 
   // 页脚，注意⚠️：已弃用
   // footer: {
-    // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
-    // copyright: 'MIT License | 纵倾童鞋',
-    // icpRecord: {
-    //   name: 'xxx',
-    //   link: 'https://beian.miit.gov.cn/'
-    // },
-    // securityRecord: {
-    //   name: '公网安备xxxxx',
-    //   link: 'https://www.beian.gov.cn/portal/index.do'
-    // },
+  // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
+  // copyright: 'MIT License | 纵倾童鞋',
+  // icpRecord: {
+  //   name: 'xxx',
+  //   link: 'https://beian.miit.gov.cn/'
+  // },
+  // securityRecord: {
+  //   name: '公网安备xxxxx',
+  //   link: 'https://www.beian.gov.cn/portal/index.do'
+  // },
   // },
 })
 

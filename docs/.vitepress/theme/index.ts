@@ -1,7 +1,7 @@
 import { h } from 'vue'
-import { EnhanceAppContext, useData } from 'vitepress'
+import type { EnhanceAppContext } from 'vitepress'
+import { inBrowser, useData } from 'vitepress'
 import BlogTheme from '@sugarat/theme'
-import { inBrowser } from 'vitepress'
 import googleAnalytics from 'vitepress-plugin-google-analytics'
 import busuanzi from 'busuanzi.pure.js'
 import MNavLinks from './components/MNavLinks.vue'
@@ -20,12 +20,11 @@ export default {
     // 获取 frontmatter
     const { frontmatter } = useData()
     // 添加自定义 class
-    if (frontmatter.value?.layoutClass) {
+    if (frontmatter.value?.layoutClass)
       props.class = frontmatter.value.layoutClass
-    }
 
     return h(BlogTheme.Layout, props, {
-      'layout-bottom': () => h(LayoutBottom)
+      'layout-bottom': () => h(LayoutBottom),
     })
   },
   enhanceApp({ app, router }: EnhanceAppContext) {
@@ -43,6 +42,5 @@ export default {
         busuanzi.fetch()
       }
     }
-  }
+  },
 }
-

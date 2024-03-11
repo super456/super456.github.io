@@ -6,7 +6,7 @@ export default {
       icon: '',
       title: '',
       desc: '',
-      link: ''
+      link: '',
     },
-  ]
+  ],
 }

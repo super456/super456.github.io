@@ -19,10 +19,10 @@ const formatTitle = computed(() => {
 <template>
   <h2 v-if="title" :id="formatTitle" tabindex="-1">
     {{ title }}
-    <a class="header-anchor" :href="`#${formatTitle}`" aria-hidden="true"></a>
+    <a class="header-anchor" :href="`#${formatTitle}`" aria-hidden="true" />
   </h2>
   <div class="m-nav-links">
-    <MNavLink v-for="item in items" :noIcon="noIcon" v-bind="item" />
+    <MNavLink v-for="item in items" :key="item.link" :no-icon="noIcon" v-bind="item" />
   </div>
 </template>
 

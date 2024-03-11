@@ -4,9 +4,9 @@ export interface NavLink {
   badge?:
     | string
     | {
-        text?: string
-        type?: 'info' | 'tip' | 'warning' | 'danger'
-      }
+      text?: string
+      type?: 'info' | 'tip' | 'warning' | 'danger'
+    }
   /** 站点名称 */
   title: string
   /** 站点名称 */

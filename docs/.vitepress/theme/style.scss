@@ -14,3 +14,9 @@
   //   rgba(var(--bg-gradient-home), 0) 150%
   // );
 }
+
+@media (min-width: 1440px) {
+  aside.VPSidebar {
+    padding-left: max(32px, calc((100% - (var(--vp-layout-max-width) - 64px)) / 2)) !important;
+  }
+}

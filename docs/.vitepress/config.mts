@@ -16,13 +16,13 @@ export default defineConfig({
   // 详见：https://vitepress.dev/zh/reference/site-config#head
   head: [
     // 配置网站的图标（显示在浏览器的 tab 上）
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
   ],
   themeConfig: {
     // 展示 2,3 级标题在目录中
     outline: {
       level: [2, 3],
-      label: '目录'
+      label: '目录',
     },
     // 默认文案修改
     returnToTopLabel: '回到顶部',
@@ -32,13 +32,13 @@ export default defineConfig({
     // 设置logo
     logo: '/logo.jpg',
     lastUpdated: {
-      text: '最近更新于'
+      text: '最近更新于',
     },
     // 编辑当前页面的链接
     editLink: {
       pattern:
         'https://github.com/super456/super456.github.io/tree/main/docs/:path',
-      text: '去 GitHub 上编辑内容'
+      text: '去 GitHub 上编辑内容',
     },
     nav,
     sidebar,
@@ -50,8 +50,8 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/super456/super456.github.io'
-      }
+        link: 'https://github.com/super456/super456.github.io',
+      },
     ],
-  }
+  },
 })
