@@ -29,8 +29,14 @@ export default {
     {
       icon: 'https://sugarat.top/logo.png',
       title: '粥里有勺糖',
-      desc: '你的指尖,拥有改变世界的力量',
+      desc: '你的指尖，拥有改变世界的力量',
       link: 'https://sugarat.top/',
+    },
+    {
+      icon: 'https://xiaolincoding.com/icon.webp',
+      title: '小林coding',
+      desc: '图解计算机网络、操作系统、计算机组成、数据库，让天下没有难懂的八股文！',
+      link: 'https://xiaolincoding.com/',
     },
   ],
 }
