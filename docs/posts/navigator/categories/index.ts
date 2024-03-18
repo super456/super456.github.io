@@ -54,3 +54,17 @@ export const NAV_DATA: NavData[] = [
   github,
   fish,
 ]
+
+/** 计算收录内容统计 */
+export function getNavDataCount() {
+  const navCountInfo = {
+    total: 0,
+    categoryNum: NAV_DATA.length,
+  }
+
+  NAV_DATA.forEach((nav) => {
+    navCountInfo.total += nav.items.length
+  })
+
+  return navCountInfo
+}

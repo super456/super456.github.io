@@ -8,13 +8,16 @@ layoutClass: m-nav-layout
 ---
 
 <script setup>
-import { NAV_DATA } from './categories'
+import { NAV_DATA, getNavDataCount } from './categories'
+const navCountInfo = getNavDataCount()
 </script>
 <style src="./index.scss"></style>
 
 # 前端导航
 
 :::tip
+共收录资源：分类 {{ navCountInfo.categoryNum }} 个、内容 {{ navCountInfo.total }} 个
+
 持续更新中🎉🚀...
 :::
 
