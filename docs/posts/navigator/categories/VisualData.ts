@@ -32,5 +32,11 @@ export default {
       desc: 'JavaScript 3d 库',
       link: 'https://threejs.org',
     },
+    {
+      icon: 'https://www.makeapie.cn/favicon.ico',
+      title: '可视化社区',
+      desc: 'makeapie echarts社区图表可视化案例',
+      link: 'https://www.makeapie.cn/echarts',
+    },
   ],
 }

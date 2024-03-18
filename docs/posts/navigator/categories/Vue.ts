@@ -80,5 +80,17 @@ export default {
       desc: '一个 Vue 3 组件库，比较完整，主题可调，使用 TypeScript，快有点意思',
       link: 'https://www.naiveui.com/zh-CN/os-theme',
     },
+    {
+      icon: 'https://vue-devui.github.io/assets/logo.svg',
+      title: 'Vue DevUI',
+      desc: '一个基于 DevUI Design 的 Vue3 组件库',
+      link: 'https://vue-devui.github.io/',
+    },
+    {
+      icon: 'https://fantastic-admin.github.io/logo.png',
+      title: 'Fantastic-admin',
+      desc: '一款开箱即用的 Vue 中后台管理系统框架，支持多款 UI 组件库，兼容PC、移动端。vue-admin, vue-element-admin, vue后台, 后台系统, 后台框架, 管理后台, 管理系统',
+      link: 'https://fantastic-admin.github.io/',
+    },
   ],
 }

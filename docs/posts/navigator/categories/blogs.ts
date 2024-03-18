@@ -38,5 +38,23 @@ export default {
       desc: '图解计算机网络、操作系统、计算机组成、数据库，让天下没有难懂的八股文！',
       link: 'https://xiaolincoding.com/',
     },
+    {
+      icon: 'https://www.inode.club/small.png',
+      title: '程序员成长指北',
+      desc: '专注 Node.js 技术栈分享，从 前端 到 Node.js 再到 后端数据库，祝您成为优秀的高级 Node.js 全栈工程师',
+      link: 'https://www.inode.club/',
+    },
+    {
+      icon: 'https://lxchuan12.gitee.io/logo.jpg',
+      title: '若川的博客',
+      desc: '专注前端技术分享',
+      link: 'https://lxchuan12.gitee.io/',
+    },
+    {
+      icon: 'https://shanyue.tech/favicon.ico',
+      title: '山月行',
+      desc: '关于平常工作中在前端，后端以及运维中遇到问题的一些文章总结。以后也会做系列文章进行输出，如前端高级进阶系列，个人服务器指南系列',
+      link: 'https://shanyue.tech/',
+    },
   ],
 }

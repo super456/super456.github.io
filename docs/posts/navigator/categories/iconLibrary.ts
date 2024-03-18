@@ -56,5 +56,11 @@ export default {
       desc: '可以在 GitHub 中使用的 emoji 表情',
       link: 'https://www.webfx.com/tools/emoji-cheat-sheet/',
     },
+    {
+      icon: 'https://emojipedia.org/images/apple-touch-icon-57x57.png',
+      title: '📙 Emojipedia',
+      desc: '😃 Home of Emoji Meanings 💁👌🎍😍',
+      link: 'https://emojipedia.org/',
+    },
   ],
 }

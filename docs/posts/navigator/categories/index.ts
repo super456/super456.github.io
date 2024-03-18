@@ -22,10 +22,17 @@ import weekly from './weekly'
 
 // import wxopen from './wxopen'
 import crossPlatform from './crossPlatform'
+import sameCategories from './sameCategories'
+import interview from './interview'
+import system from './system'
+import github from './github'
 
 export const NAV_DATA: NavData[] = [
   common,
   AI,
+  sameCategories,
+  interview,
+  system,
   Vue,
   React,
   JavaScript,
@@ -44,5 +51,6 @@ export const NAV_DATA: NavData[] = [
   siteGenerator,
   iconLibrary,
   interesting,
+  github,
   fish,
 ]

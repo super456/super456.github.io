@@ -46,5 +46,17 @@ export default {
       desc: '中文互联网高质量的问答社区和创作者聚集的原创内容平台',
       link: 'https://juejin.cn',
     },
+    {
+      title: 'Kelen',
+      icon: 'https://www.kelen.cc/public/favicon.ico',
+      desc: '致力于分享开发技术和经验',
+      link: 'https://www.kelen.cc/',
+    },
+    {
+      title: '司南社区',
+      icon: 'https://media.sinan.fun/favicon/home.svg',
+      desc: '专注优质信息源整理和分享（Github 每日趋势）',
+      link: 'https://sinan.fun/',
+    },
   ],
 }
