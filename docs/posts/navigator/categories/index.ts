@@ -1,5 +1,6 @@
 import type { NavData } from './types'
-import common from './common'
+
+// import common from './common'
 import AI from './AI'
 import React from './React'
 import Vue from './Vue'
@@ -26,9 +27,10 @@ import sameCategories from './sameCategories'
 import interview from './interview'
 import system from './system'
 import github from './github'
+import devTools from './devTools'
 
 export const NAV_DATA: NavData[] = [
-  common,
+  // common,
   AI,
   sameCategories,
   interview,
@@ -44,6 +46,7 @@ export const NAV_DATA: NavData[] = [
   weekly,
   study,
   packaging,
+  devTools,
   community,
   applet,
   crossPlatform,

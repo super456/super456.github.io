@@ -63,16 +63,10 @@ export default {
       link: 'https://www.suno.ai/',
     },
     {
-      icon: 'https://img.alicdn.com/imgextra/i1/O1CN01BN6Jtc1lCfJNviV7H_!!6000000004783-2-tps-134-133.png',
-      title: '通义灵码',
-      desc: '阿里云通义灵码，你的智能编码助手，为开发者提供行级和函数级代码续写、单元测试生成、代码注释生成、研发智能问答等能力，助你高质高效地完成编码工作',
-      link: 'https://tongyi.aliyun.com/lingma',
-    },
-    {
-      icon: 'https://g.alicdn.com/idst-fe/mind-meeting-assistant2/0.0.198/favicon.png',
-      title: '通义听悟',
-      desc: '阿里云通义听悟是聚焦音视频内容的工作学习AI助手，依托大模型，帮助用户记录、整理和分析音视频内容，体验用大模型做音视频笔记、整理会议记录。',
-      link: 'https://tingwu.aliyun.com/',
+      icon: 'https://acd-assets.alicdn.com/acd_work/tongyi-portal/favicon.png',
+      title: '通义系列官网',
+      desc: '通义官网，致力于实现类人智慧的通用智能，强烈推荐：通义灵码、通义听悟、通义前文',
+      link: 'https://tongyi.aliyun.com/',
     },
     {
       icon: 'https://comate.baidu.com/images/favicon.ico',

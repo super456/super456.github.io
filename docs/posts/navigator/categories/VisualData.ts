@@ -38,5 +38,17 @@ export default {
       desc: 'makeapie echarts社区图表可视化案例',
       link: 'https://www.makeapie.cn/echarts',
     },
+    {
+      icon: 'https://exp-gemini.lusion.co/favicon.ico',
+      title: '汽车 WebGL Demo',
+      desc: '一个基于 WebGL 的汽车 Demo',
+      link: 'https://exp-gemini.lusion.co/style',
+    },
+    {
+      icon: 'https://gamemcu.com/su7/favicon.ico',
+      title: '小米 SU7 汽车 WebGL Demo',
+      desc: '一个基于 WebGL 的汽车 Demo',
+      link: 'https://gamemcu.com/su7/',
+    },
   ],
 }

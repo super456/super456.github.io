@@ -9,18 +9,6 @@ export default {
       link: 'https://qwerty.fe-mm.com',
     },
     {
-      icon: 'https://npmtrends.com/images/logos/npm_trends_logo.png',
-      title: 'npm trends',
-      desc: '比较 npm package 的大小、下载数据、github 数据等',
-      link: 'https://npmtrends.com/',
-    },
-    {
-      icon: 'https://npm.devtool.tech/logo.svg',
-      title: 'npm 库在线运行',
-      desc: '在浏览器控制台中在线运行调试与测试 npm 中的库',
-      link: 'https://npm.devtool.tech/',
-    },
-    {
       icon: 'https://transform.tools/static/favicon.png',
       title: 'Transform',
       desc: '一个支持多语言的在线转换器',
@@ -43,6 +31,12 @@ export default {
       title: 'Shields.io',
       desc: '制作简洁、一致、易读的徽章',
       link: 'https://shields.io/',
+    },
+    {
+      icon: 'https://carbon.now.sh/favicon.ico',
+      title: 'Carbon',
+      desc: '代码图片生成',
+      link: 'https://carbon.now.sh/',
     },
   ],
 }

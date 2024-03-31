@@ -16,9 +16,11 @@ const navCountInfo = getNavDataCount()
 # 前端导航
 
 :::tip
-共收录资源：分类 {{ navCountInfo.categoryNum }} 个、内容 {{ navCountInfo.total }} 个
+共收录资源：分类<strong> {{ navCountInfo.categoryNum }} </strong>个、内容<strong> {{ navCountInfo.total }} </strong>个
 
 持续更新中🎉🚀...
+
+欢迎给我提 [ISSUE](https://github.com/super456/super456.github.io/issues) 添加资源内容🌺
 :::
 
 <MNavLinks v-for="{title, items} in NAV_DATA" :title="title" :items="items"/>
