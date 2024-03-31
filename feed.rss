@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Wed, 27 Mar 2024 03:07:33 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 31 Mar 2024 15:49:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -18,12 +18,13 @@
             <title><![CDATA[前端导航]]></title>
             <link>https://super456.github.io/posts/navigator/</link>
             <guid>https://super456.github.io/posts/navigator/</guid>
-            <pubDate>Mon, 18 Mar 2024 16:08:58 GMT</pubDate>
+            <pubDate>Sun, 31 Mar 2024 15:48:06 GMT</pubDate>
             <description><![CDATA[关于前端开发的导航及工具推荐]]></description>
             <content:encoded><![CDATA[<h1 id="前端导航" tabindex="-1">前端导航 <a class="header-anchor" href="#前端导航" aria-label="Permalink to &quot;前端导航&quot;">&ZeroWidthSpace;</a></h1>
 <div class="tip custom-block"><p class="custom-block-title">TIP</p>
-<p>共收录资源：分类 {{ navCountInfo.categoryNum }} 个、内容 {{ navCountInfo.total }} 个</p>
+<p>共收录资源：分类<strong> {{ navCountInfo.categoryNum }} </strong>个、内容<strong> {{ navCountInfo.total }} </strong>个</p>
 <p>持续更新中🎉🚀...</p>
+<p>欢迎给我提 <a href="https://github.com/super456/super456.github.io/issues" target="_blank" rel="noreferrer">ISSUE</a> 添加资源内容🌺</p>
 </div>
 <MNavLinks v-for="{title, items} in NAV_DATA" :title="title" :items="items"/><hr>
 <p><strong>感谢<a href="https://notes.fe-mm.com/nav" target="_blank" rel="noreferrer">茂茂物语</a>提供支持🌹</strong></p>
