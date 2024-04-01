@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
-    "@sugarat/theme": "^0.2.24",
+    "@sugarat/theme": "^0.2.30",
     "element-plus": "^2.5.3",
     "vue": "3.4.15"
   },
@@ -28,7 +28,7 @@
     "eslint": "^8.57.0",
     "sass": "^1.64.1",
     "typescript": "^5.1.6",
-    "vitepress": "1.0.0-rc.40",
+    "vitepress": "1.0.2",
     "vitepress-plugin-google-analytics": "^1.0.2"
   }
 }
