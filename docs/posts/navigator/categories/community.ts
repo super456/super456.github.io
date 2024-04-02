@@ -58,5 +58,11 @@ export default {
       desc: '专注优质信息源整理和分享（Github 每日趋势）',
       link: 'https://sinan.fun/',
     },
+    {
+      title: '鱼皮编程导航',
+      icon: 'https://www.code-nav.cn/favicon.ico',
+      desc: '编程导航,做您编程路上的导航员,最专业的程序员导航,一站式编程资源搜索,发现优质编程学习资源,提高编程学习效率,公众号编程导航',
+      link: 'https://www.code-nav.cn/',
+    },
   ],
 }

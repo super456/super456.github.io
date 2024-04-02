@@ -11,13 +11,19 @@ export default {
     {
       icon: 'https://cn.vitejs.dev/logo.svg',
       title: 'Vite 中文文档',
-      desc: '下一代前端工具链',
+      desc: '下一代的前端工具链，为开发提供极速响应',
       link: 'https://cn.vitejs.dev',
+    },
+    {
+      icon: 'https://rolldown.rs/lightning-down.svg',
+      title: 'Rolldown',
+      desc: 'Fast Rust-based bundler for JavaScript',
+      link: 'https://rolldown.rs/',
     },
     {
       icon: '/icons/rollup.png',
       title: 'Rollup',
-      desc: 'Rollup 是一个 JavaScript 模块打包器',
+      desc: '一个用于 JavaScript 的模块打包工具，它将小的代码片段编译成更大、更复杂的代码，例如库或应用程序',
       link: 'https://www.rollupjs.com',
     },
     {
