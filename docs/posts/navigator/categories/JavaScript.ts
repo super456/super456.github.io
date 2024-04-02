@@ -3,6 +3,12 @@ export default {
   title: 'JavaScript',
   items: [
     {
+      icon: 'https://zh.javascript.info/img/favicon/favicon.png',
+      title: '现代 JavaScript 教程',
+      desc: '以最新的 JavaScript 标准为基准。通过简单但足够详细的内容，为你讲解从基础到高阶的 JavaScript 相关知识',
+      link: 'https://zh.javascript.info/',
+    },
+    {
       icon: 'https://svelte.dev/svelte-logo-horizontal.svg',
       title: 'Svelte',
       desc: '将声明性组件转换为精准高效更新 DOM 的 JavaScript 代码',

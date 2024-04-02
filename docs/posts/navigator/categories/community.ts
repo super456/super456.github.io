@@ -64,5 +64,11 @@ export default {
       desc: '编程导航,做您编程路上的导航员,最专业的程序员导航,一站式编程资源搜索,发现优质编程学习资源,提高编程学习效率,公众号编程导航',
       link: 'https://www.code-nav.cn/',
     },
+    {
+      title: 'GitHub Users Global Ranking',
+      icon: 'https://github.githubassets.com/favicon.ico',
+      desc: 'GitHub Users Global Ranking',
+      link: 'https://wangchujiang.com/github-rank/index.html',
+    },
   ],
 }

@@ -38,5 +38,11 @@ export default {
       desc: '代码图片生成',
       link: 'https://carbon.now.sh/',
     },
+    {
+      icon: 'https://www.codecopy.cn/favicon.ico',
+      title: '代码小抄',
+      desc: '简单易用的代码分享工具',
+      link: 'https://www.codecopy.cn/',
+    },
   ],
 }

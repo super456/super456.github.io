@@ -9,6 +9,12 @@ export default {
       link: 'https://q.shanyue.tech/',
     },
     {
+      icon: 'https://codetop.cc/logo.jpg',
+      title: 'CodeTop 面试题目总结',
+      desc: 'CodeTop 用于汇总互联网大厂高频面试题，帮助大家更有针对性地刷 Leetcode',
+      link: 'https://codetop.cc/home',
+    },
+    {
       icon: 'https://masoneast.github.io/favicon.ico',
       title: 'Cool Resume 简历制作',
       desc: '只有2%的简历能通过第一轮。跻身前2%',

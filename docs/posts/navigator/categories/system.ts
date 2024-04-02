@@ -20,5 +20,11 @@ export default {
       icon: 'https://gw.alicdn.com/tfs/TB1lFaCklfH8KJjy1XbXXbLdXXa-32-32.png',
       desc: '前端技能体系介绍',
     },
+    {
+      title: 'JavaScript 框架语法特性对比',
+      link: 'https://component-party.jason-liang.com/',
+      icon: 'https://component-party.jason-liang.com/popper.svg',
+      desc: 'Web component JS frameworks overview by their syntax and features: Vue 2, Vue 3, React, Svelte, SolidJS, Qwik, Angular, Lit, Ember, Alpine, Aurelia 1',
+    },
   ],
 }
