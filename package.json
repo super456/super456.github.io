@@ -2,9 +2,21 @@
   "name": "zongqing-blog",
   "type": "module",
   "version": "0.0.1",
-  "private": true,
-  "author": "纵倾童鞋",
+  "private": false,
+  "author": "super456(纵倾童鞋)",
   "license": "MIT",
+  "homepage": "https://github.com/super456/super456.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/super456/super456.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/super456/super456.github.io/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8"
+  },
   "scripts": {
     "dev": "vitepress dev docs --port 5188",
     "build": "vitepress build docs",
