@@ -3,6 +3,12 @@ export default {
   title: '有趣工具',
   items: [
     {
+      title: 'Quick Reference',
+      desc: '为开发人员分享快速参考备忘清单【速查表】',
+      link: 'https://wangchujiang.com/reference/index.html',
+      icon: '/icons/quick-reference.svg',
+    },
+    {
       icon: 'https://qwerty.fe-mm.com/apple-touch-icon.png',
       title: 'Qwerty Learner',
       desc: '为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件',

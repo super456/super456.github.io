@@ -9,10 +9,10 @@ export default {
       link: 'https://q.shanyue.tech/',
     },
     {
-      icon: 'https://codetop.cc/logo.jpg',
-      title: 'CodeTop 面试题目总结',
-      desc: 'CodeTop 用于汇总互联网大厂高频面试题，帮助大家更有针对性地刷 Leetcode',
-      link: 'https://codetop.cc/home',
+      icon: 'https://static.nowcoder.com/fe/file/images/nowpick/web/www-favicon.ico',
+      title: '牛客',
+      desc: '求职之前，先上牛客，就业找工作一站解决。互联网IT技术/产品/运营/硬件/汽车机械制造/金融/财务管理/审计/银行/市场营销/地产/快消/管培生等等专业技能学习/备考/求职神器，在线进行企业校招实习笔试面试真题模拟考试练习，全面提升求职竞争力，找到好工作，拿到好offer。_牛客网_牛客在手,offer不愁',
+      link: 'https://www.nowcoder.com/',
     },
     {
       icon: 'https://masoneast.github.io/favicon.ico',

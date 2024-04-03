@@ -28,12 +28,12 @@ import interview from './interview'
 import system from './system'
 import github from './github'
 import devTools from './devTools'
+import algorithm from './algorithm'
 
 export const NAV_DATA: NavData[] = [
   // common,
   AI,
   sameCategories,
-  interview,
   system,
   Vue,
   React,
@@ -41,6 +41,8 @@ export const NAV_DATA: NavData[] = [
   // HTML,
   CSS,
   Node,
+  interview,
+  algorithm,
   blogs,
   // wxopen,
   weekly,
