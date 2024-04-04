@@ -6,8 +6,7 @@ import React from './React'
 import Vue from './Vue'
 import JavaScript from './JavaScript'
 import CSS from './CSS'
-
-// import HTML from './HTML'
+import HTML from './HTML'
 import applet from './applet'
 import Node from './Node'
 import VisualData from './VisualData'
@@ -29,22 +28,23 @@ import system from './system'
 import github from './github'
 import devTools from './devTools'
 import algorithm from './algorithm'
+import team from './team'
 
 export const NAV_DATA: NavData[] = [
   // common,
   AI,
-  sameCategories,
-  system,
   Vue,
   React,
   JavaScript,
-  // HTML,
+  HTML,
   CSS,
   Node,
+  system,
   interview,
   algorithm,
   blogs,
   // wxopen,
+  team,
   weekly,
   study,
   packaging,
@@ -57,6 +57,7 @@ export const NAV_DATA: NavData[] = [
   iconLibrary,
   interesting,
   github,
+  sameCategories,
   fish,
 ]
 

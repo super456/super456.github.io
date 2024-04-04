@@ -3,16 +3,46 @@ export default {
   title: 'JavaScript',
   items: [
     {
+      icon: 'https://svelte.dev/favicon.png',
+      title: 'Svelte',
+      desc: '将声明性组件转换为精准高效更新 DOM 的 JavaScript 代码',
+      link: 'https://svelte.dev',
+    },
+    {
+      icon: 'https://svelte.dev/favicon.png',
+      title: 'SvelteKit',
+      desc: '一个围绕 Svelte 构建，为 Svelte 应用添加了一些关键功能：如路由、布局和服务器端渲染，并使前端开发变得异常简单',
+      link: 'https://kit.svelte.dev/',
+    },
+    {
+      icon: 'https://www.solidjs.com/img/favicons/favicon-32x32.png',
+      title: 'Solid',
+      desc: '一个用于构建用户界面，简单高效、性能卓越的JavaScript库',
+      link: 'https://www.solidjs.com/',
+    },
+    {
+      icon: 'https://qwik.dev/favicons/favicon.svg',
+      title: 'Qwik',
+      desc: '一个 Web 框架，可以为任何规模或复杂程度的 Web 应用程序提供即时加载',
+      link: 'https://qwik.dev/',
+    },
+    {
+      icon: 'https://astro.build/favicon.svg',
+      title: 'Astro',
+      desc: '最适合构建像博客、营销网站、电子商务网站这样的以内容驱动的网站的 Web 框架。Astro 以开创了一种新的前端架构而闻名，与其他框架相比它减少了 JavaScript 的开销和复杂性。如果你需要一个加载速度快、具有良好 SEO 的网站',
+      link: 'https://astro.build/',
+    },
+    {
+      icon: 'https://angular.io/assets/images/favicons/favicon.ico',
+      title: 'Angular',
+      desc: 'Angular lets you start small and supports you as your team and apps grow.',
+      link: 'https://angular.io/',
+    },
+    {
       icon: 'https://zh.javascript.info/img/favicon/favicon.png',
       title: '现代 JavaScript 教程',
       desc: '以最新的 JavaScript 标准为基准。通过简单但足够详细的内容，为你讲解从基础到高阶的 JavaScript 相关知识',
       link: 'https://zh.javascript.info/',
-    },
-    {
-      icon: 'https://svelte.dev/svelte-logo-horizontal.svg',
-      title: 'Svelte',
-      desc: '将声明性组件转换为精准高效更新 DOM 的 JavaScript 代码',
-      link: 'https://svelte.dev',
     },
     {
       icon: '/icons/jquery.svg',
@@ -23,7 +53,7 @@ export default {
     {
       icon: '/icons/es6.svg',
       title: 'ES6 入门教程',
-      desc: '阮一峰的网络日志',
+      desc: '全面介绍 ECMAScript 6 新引入的语法特性',
       link: 'http://es6.ruanyifeng.com',
     },
     {
@@ -43,6 +73,12 @@ export default {
       title: 'TypeScript 教程',
       desc: 'TypeScript 开源教程，介绍基本概念和用法，面向初学者',
       link: 'https://wangdoc.com/typescript/',
+    },
+    {
+      icon: 'https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae',
+      title: '官方 TypeScript 教程',
+      desc: 'TypeScript 是具有类型语法的 JavaScript',
+      link: 'https://www.typescriptlang.org/zh/',
     },
   ],
 }

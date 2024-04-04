@@ -34,8 +34,8 @@ export default {
     },
     {
       icon: 'https://www.makeapie.cn/favicon.ico',
-      title: '可视化社区',
-      desc: 'makeapie echarts社区图表可视化案例',
+      title: 'makeapie echarts社区图表可视化案例',
+      desc: 'makeapie echarts图表可视化案例, 分享你的可视化作品',
       link: 'https://www.makeapie.cn/echarts',
     },
     {
@@ -49,6 +49,30 @@ export default {
       title: '小米 SU7 汽车 WebGL Demo',
       desc: '一个基于 WebGL 的汽车 Demo',
       link: 'https://gamemcu.com/su7/',
+    },
+    {
+      title: 'isqqw',
+      desc: 'ECharts图表集,EChartsDemo集,echarts gallery,Make A Pie,分享你的可视化作品isqqw.com',
+      icon: 'https://www.isqqw.com/favicon.ico',
+      link: 'https://www.isqqw.com/',
+    },
+    {
+      title: 'Made A Pie',
+      desc: 'echarts图表制作，Make A Pie，Made A Pie，echarts案例分享，echarts教程分享',
+      icon: 'https://madeapie.com/favicon.ico',
+      link: 'https://madeapie.com/#/',
+    },
+    {
+      title: 'PPChart',
+      desc: '让图表更简单。PPChart 提供 Echarts 收录、图表制作等服务',
+      icon: 'https://www.ppchart.com/favicon.ico',
+      link: 'https://www.ppchart.com/#/',
+    },
+    {
+      title: '分享你我',
+      desc: 'ECharts Demo集,Echarts 案例,echarts 作品集,echarts gallery社区,Make A Pie,分享你的可视化作品',
+      icon: 'http://chart.majh.top/favicon.ico',
+      link: 'http://chart.majh.top/',
     },
   ],
 }

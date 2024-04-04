@@ -1,6 +1,6 @@
 /** 推荐博主 */
 export default {
-  title: '博客',
+  title: '个人博客',
   items: [
     {
       icon: 'https://avatars.githubusercontent.com/u/11247099?v=4',
@@ -19,6 +19,16 @@ export default {
       title: '张鑫旭',
       desc: '专注 Web 前端偏前领域，著有《CSS世界》《CSS选择器世界》《CSS新世界》',
       link: 'https://www.zhangxinxu.com/',
+    },
+    {
+      title: 'ChokCoco',
+      desc: '国服第一切图仔，专注 CSS 领域',
+      link: 'https://www.cnblogs.com/coco1s',
+    },
+    {
+      title: 'Randy Lu',
+      desc: '做这个博客的原因是我喜欢写作和思考，我希望把我的思考和经验分享给所有人',
+      link: 'https://lutaonan.com/',
     },
     {
       icon: 'https://notes.fe-mm.com/logo.png',
@@ -55,6 +65,12 @@ export default {
       title: '山月行',
       desc: '关于平常工作中在前端，后端以及运维中遇到问题的一些文章总结。以后也会做系列文章进行输出，如前端高级进阶系列，个人服务器指南系列',
       link: 'https://shanyue.tech/',
+    },
+    {
+      title: 'Stefan Judis Web Development',
+      desc: 'I love building things for the web. And I love writing sharing things about the web.',
+      icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%A7%A2</text></svg>',
+      link: 'https://www.stefanjudis.com/',
     },
   ],
 }

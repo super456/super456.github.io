@@ -27,6 +27,12 @@ export default {
       link: 'https://unocss.dev/',
     },
     {
+      icon: 'https://cn.windicss.org/assets/logo.svg',
+      title: 'Windi CSS',
+      desc: '下一代工具类 CSS 框架',
+      link: 'https://cn.windicss.org/',
+    },
+    {
       icon: '/icons/you-need-to-know-css.ico',
       title: 'You-need-to-know-css',
       desc: 'Web 开发者应该掌握的 CSS Tricks',

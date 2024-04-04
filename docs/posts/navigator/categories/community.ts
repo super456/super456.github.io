@@ -17,6 +17,12 @@ export default {
       link: 'https://stackoverflow.com',
     },
     {
+      title: 'DEV Community',
+      icon: 'https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png',
+      desc: 'A constructive and inclusive social network for software developers. With you every step of your journey.',
+      link: 'https://dev.to/',
+    },
+    {
       title: '稀土掘金',
       icon: 'https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/favicons/apple-touch-icon.png',
       desc: '面向全球中文开发者的技术内容分享与交流平台',
@@ -47,6 +53,18 @@ export default {
       link: 'https://juejin.cn',
     },
     {
+      title: 'gitee',
+      icon: 'https://gitee.com/favicon.ico',
+      desc: 'Gitee.com（码云） 是 OSCHINA.NET 推出的代码托管平台，支持 Git 和 SVN，提供免费的私有仓库托管。目前已有超过 1200 万的开发者选择 Gitee。',
+      link: 'https://gitee.com/',
+    },
+    {
+      title: 'OSCHINA',
+      icon: 'https://static.oschina.net/new-osc/img/favicon.ico',
+      desc: 'OSCHINA.NET 是目前领先的中文开源技术社区。我们传播开源的理念，推广开源项目，为 IT 开发者提供了一个发现、使用、并交流开源技术的平台',
+      link: 'https://www.oschina.net/',
+    },
+    {
       title: 'Kelen',
       icon: 'https://www.kelen.cc/public/favicon.ico',
       desc: '致力于分享开发技术和经验',
@@ -69,6 +87,12 @@ export default {
       icon: 'https://github.githubassets.com/favicon.ico',
       desc: 'GitHub Users Global Ranking',
       link: 'https://wangchujiang.com/github-rank/index.html',
+    },
+    {
+      title: 'Best of JS',
+      desc: 'A place to find the best open source projects related to the web platform:JS, HTML, CSS, but also TypeScript, Node.js, Deno, Bun...',
+      icon: 'https://bestofjs.org/favicon.ico',
+      link: 'https://bestofjs.org/',
     },
   ],
 }

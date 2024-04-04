@@ -9,6 +9,12 @@ export default {
       link: 'https://zh-hans.reactjs.org',
     },
     {
+      icon: 'https://react-typescript-cheatsheet.netlify.app/img/icon.png',
+      title: 'React TypeScript Cheatsheets',
+      desc: 'Cheatsheets for experienced React developers getting started with TypeScript',
+      link: 'https://react-typescript-cheatsheet.netlify.app/',
+    },
+    {
       icon: 'https://reactrouter.com/favicon-light.png',
       title: 'React Router',
       desc: 'React 的声明式路由',

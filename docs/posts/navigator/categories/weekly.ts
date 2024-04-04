@@ -1,6 +1,6 @@
-/** 周刊相关 */
+/** 技术周刊相关 */
 export default {
-  title: '周刊',
+  title: '技术周刊',
   items: [
     {
       icon: 'https://miro.medium.com/v2/resize:fill:88:88/0*gXNjh86g-yiSa8qJ.png',
@@ -13,6 +13,18 @@ export default {
       title: '阮一峰的网络日志',
       desc: '这里记录每周值得分享的科技内容，周五发布',
       link: 'https://www.ruanyifeng.com/blog/weekly/',
+    },
+    {
+      title: 'Node Weekly',
+      desc: 'Node 归档周刊',
+      icon: 'https://nodeweekly.com/favicon.png',
+      link: 'https://nodeweekly.com/issues',
+    },
+    {
+      title: 'JavaScript Weekly',
+      desc: 'JavaScript 归档周刊',
+      icon: 'https://nodeweekly.com/favicon.png',
+      link: 'https://javascriptweekly.com/issues',
     },
     {
       icon: 'https://img.alicdn.com/imgextra/i3/O1CN01uKTVpD1UK8BCxFBwo_!!6000000002498-2-tps-500-500.png',
@@ -31,6 +43,12 @@ export default {
       title: '前端食堂',
       desc: '周周尝鲜，人工筛选前端圈每周最新资讯',
       link: 'https://hungryturbo.zhubai.love/',
+    },
+    {
+      title: '早早鸟日刊',
+      desc: '前端早早聊大会出品',
+      icon: 'https://mdn.alipayobjects.com/huamei_0prmtq/afts/img/A*vMxOQIh4KBMAAAAAAAAAAAAADvuFAQ/original',
+      link: 'https://www.yuque.com/zaotalk/worm',
     },
   ],
 }

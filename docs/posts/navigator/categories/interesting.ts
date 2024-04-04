@@ -50,5 +50,29 @@ export default {
       desc: '简单易用的代码分享工具',
       link: 'https://www.codecopy.cn/',
     },
+    {
+      title: 'publint',
+      desc: 'Lint if a package is published right',
+      icon: 'https://publint.dev/favicon.ico',
+      link: 'https://publint.dev/',
+    },
+    {
+      title: 'npm-start: download statistics for NPM packages',
+      desc: 'npm-stat can generate download charts for any package on npm.',
+      icon: 'https://npm-stat.com/favicon.ico',
+      link: 'https://npm-stat.com/',
+    },
+    {
+      title: 'pkg-size',
+      desc: 'Find the true size of an npm package',
+      icon: 'https://pkg-size.dev/favicon.svg',
+      link: 'https://pkg-size.dev/',
+    },
+    {
+      title: 'GZIP compression Test',
+      desc: 'Test if Gzip or Brotli is working on your website. Brotli is a better, and newer compression method compared to Gzip.',
+      icon: 'https://www.giftofspeed.com/assets/images/favicon.png',
+      link: 'https://www.giftofspeed.com/gzip-test/',
+    },
   ],
 }

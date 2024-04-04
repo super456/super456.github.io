@@ -1,11 +1,11 @@
 /** 编译 & 构建 & 打包工具相关 */
 export default {
-  title: '打包工具',
+  title: '构建工具',
   items: [
     {
       icon: 'https://www.webpackjs.com/icon_180x180.png',
-      title: 'Webpack 中文网',
-      desc: '一个用于现代 JavaScript 应用程序的静态模块打包工具',
+      title: 'webpack 中文网',
+      desc: '一个模块打包器。它的主要目标是将 JavaScript 文件打包在一起，打包后的文件用于在浏览器中使用，但它也能够胜任转换、打包或包裹任何资源。',
       link: 'https://www.webpackjs.com',
     },
     {
@@ -25,6 +25,12 @@ export default {
       title: 'Rollup',
       desc: '一个用于 JavaScript 的模块打包工具，它将小的代码片段编译成更大、更复杂的代码，例如库或应用程序',
       link: 'https://www.rollupjs.com',
+    },
+    {
+      icon: 'https://lf3-static.bytednsdoc.com/obj/eden-cn/rjhwzy/ljhwZthlaukjlkulzlp/favicon-1714.png',
+      title: 'Rspack',
+      desc: '基于 Rust 的高性能 Web 构建工具',
+      link: 'https://www.rspack.dev/zh/',
     },
     {
       icon: 'https://turbo.build/images/favicon-dark/apple-touch-icon.png',

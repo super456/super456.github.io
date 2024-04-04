@@ -1,6 +1,6 @@
-/** Node.js 技术相关 */
+/** Node.js & 运行时 & 包管理器 相关 */
 export default {
-  title: 'Node',
+  title: 'Node & 运行时',
   items: [
     {
       icon: '/icons/nodejs.svg',
@@ -49,6 +49,18 @@ export default {
       title: 'Nest.js 中文文档',
       desc: '用于构建高效且可伸缩的服务端应用程序的渐进式 Node.js 框架',
       link: 'https://docs.nestjs.cn',
+    },
+    {
+      icon: 'https://docs.deno.com/img/logo.svg',
+      title: 'Deno',
+      desc: 'Reference documentation for the Deno runtime and Deno Deploy',
+      link: 'https://docs.deno.com/',
+    },
+    {
+      icon: 'https://bun.sh/logo-square.jpg',
+      title: 'Bun',
+      desc: 'Bundle, install, and run JavaScript & TypeScript — all in Bun. Bun is a new JavaScript runtime with a native bundler, transpiler, task runner, and npm client built-in.',
+      link: 'https://bun.sh/',
     },
   ],
 }
