@@ -94,5 +94,11 @@ export default {
       icon: 'https://bestofjs.org/favicon.ico',
       link: 'https://bestofjs.org/',
     },
+    {
+      title: 'HelloGitHub',
+      desc: '分享 GitHub 上有趣、入门级的开源项目',
+      icon: 'https://img.hellogithub.com/logo/logo.png',
+      link: 'https://hellogithub.com/',
+    },
   ],
 }

@@ -84,7 +84,7 @@ export default {
       icon: 'https://mui.com/static/favicon.ico',
       title: 'Material UI',
       desc: '基于 Google Material Design 设计语言的 React 组件库',
-      link: 'https://mui.com/',
+      link: 'https://mui.com/material-ui/',
     },
     {
       icon: 'https://mantine.dev/favicon.svg',
@@ -97,6 +97,12 @@ export default {
       desc: '由抖音前端与 UED 团队维护，易于定制的现代化设计系统，帮助设计师与开发者打造高质量产品。 ',
       icon: 'https://lf9-static.semi.design/obj/semi-tos/images/favicon.ico',
       link: 'https://semi.design/zh-CN/',
+    },
+    {
+      title: 'Chakra UI',
+      desc: 'Simple, Modular and Accessible UI Components for your React Applications. Built with Styled System',
+      icon: 'https://chakra-ui.com/favicon.png',
+      link: 'https://chakra-ui.com/',
     },
   ],
 }
