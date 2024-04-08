@@ -3,6 +3,11 @@ export default {
   title: '资源聚合平台',
   items: [
     {
+      title: '前端导航 | 程序员poetry',
+      desc: '前端导航 | 专为前端开发、设计、产品、自媒体人员打造，最全面的网址导航！',
+      link: 'https://nav.poetries.top/',
+    },
+    {
       icon: 'https://wangchujiang.com/FED/img/favicon.ico',
       title: '前端导航网',
       desc: '前端网址导航是为国内前端界的朋友们倾力打造的前端资源聚合平台，前端博客导航、CSS/JS/HTML资源教程、设计资源等内容。',
