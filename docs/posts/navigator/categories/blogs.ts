@@ -49,6 +49,12 @@ export default {
       link: 'https://wangtunan.github.io/blog/',
     },
     {
+      title: '前端充电宝',
+      desc: '视野所及，唯有前端',
+      icon: 'https://cdn.nlark.com/yuque/0/2022/png/1500604/1641785019489-avatar/f0c57a90-7ba8-43a7-9361-7fa8eb5bb6b6.png?x-oss-process=image%2Fresize%2Cm_fill%2Cw_328%2Ch_328%2Fformat%2Cpng',
+      link: 'https://www.yuque.com/cuggz',
+    },
+    {
       icon: 'https://xiaolincoding.com/icon.webp',
       title: '小林coding',
       desc: '图解计算机网络、操作系统、计算机组成、数据库，让天下没有难懂的八股文！',
