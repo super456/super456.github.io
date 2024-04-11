@@ -15,6 +15,17 @@ export default {
       link: 'https://www.nowcoder.com/',
     },
     {
+      title: '前端面试内卷仓库',
+      desc: '主打手写代码专题',
+      link: 'https://github.com/wangtunan/involution',
+    },
+    {
+      title: '汪图南——前端面试之道',
+      desc: '基础面试题',
+      icon: 'https://wangtunan.github.io/blog/icon.png',
+      link: 'https://wangtunan.github.io/blog/interview/',
+    },
+    {
       icon: 'https://masoneast.github.io/favicon.ico',
       title: 'Cool Resume 简历制作',
       desc: '只有2%的简历能通过第一轮。跻身前2%',

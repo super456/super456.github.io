@@ -3,6 +3,12 @@ export default {
   title: 'AI 工具',
   items: [
     {
+      title: 'WaytoAGI-通往AGI之路，最好的 AI 知识库和工具站',
+      desc: '最大最全面的 AI 知识库，汇聚上千个人工智能网站和工具，汇集最新的 AI 工具、GPT 应用和行业资讯。无论您是AI爱好者、研究者还是开发者，WaytoAGI助力您在通往AGI的旅途中开启智能创新的未来。',
+      icon: 'https://www.waytoagi.com/favicon.ico',
+      link: 'https://www.waytoagi.com/',
+    },
+    {
       icon: '/icons/chatgpt.png',
       title: 'ChatGPT',
       desc: 'AI 聊天对话',

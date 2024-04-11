@@ -43,6 +43,12 @@ export default {
       link: 'https://sugarat.top/',
     },
     {
+      title: '汪图南的个人博客',
+      desc: '专注写作前端博客，记录日常所得',
+      icon: 'https://wangtunan.github.io/blog/icon.png',
+      link: 'https://wangtunan.github.io/blog/',
+    },
+    {
       icon: 'https://xiaolincoding.com/icon.webp',
       title: '小林coding',
       desc: '图解计算机网络、操作系统、计算机组成、数据库，让天下没有难懂的八股文！',
