@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Thu, 11 Apr 2024 16:32:08 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 13 Apr 2024 15:46:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -14,6 +14,39 @@
             <link>https://super456.github.io</link>
         </image>
         <copyright>Copyright (c) 2024-present, 纵倾童鞋</copyright>
+        <item>
+            <title><![CDATA[朝花夕拾]]></title>
+            <link>https://super456.github.io/posts/read-book/</link>
+            <guid>https://super456.github.io/posts/read-book/</guid>
+            <pubDate>Sat, 13 Apr 2024 15:45:45 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="朝花夕拾" tabindex="-1">朝花夕拾 <a class="header-anchor" href="#朝花夕拾" aria-label="Permalink to &quot;朝花夕拾&quot;">&ZeroWidthSpace;</a></h1>
+<p>记录自己所看过的书 📚 <br />
+记录阅读思考的点滴 🤔 <br />
+记录漫长岁月的乐趣 😄 <br /></p>
+<ul>
+<li>喜欢阅读，因为阅读可以让我们不断超越自己的偏见，走出自己的狭隘</li>
+<li>喜欢阅读，因为可以见天地、观众生、寻吾身 💪🏻</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[第 40 本《我想偶尔停一会儿》]]></title>
+            <link>https://super456.github.io/posts/read-book/2024/40th.html</link>
+            <guid>https://super456.github.io/posts/read-book/2024/40th.html</guid>
+            <pubDate>Thu, 04 Apr 2024 20:00:00 GMT</pubDate>
+            <description><![CDATA[《我想偶尔停一会儿》是一部治愈系绘本故事集，作者由宾用画笔记录了很多日常的故事和生活的细节。 这本书让我们看到了很多城市青年的缩影，他从一个刚走出校园的穷小子慢慢进化成职场精英，然后成为数万网友追捧的绘本作家；他身边有温暖的父母、仗义的老友、幽默的同事，以及，粘人的猫咪；他偶尔摆烂，偶尔精致生活，他经历过失恋的痛苦，也懂得了如何向风中告别……]]></description>
+            <content:encoded><![CDATA[<h1 id="第-40-本《我想偶尔停一会儿》" tabindex="-1">第 40 本《我想偶尔停一会儿》 <a class="header-anchor" href="#第-40-本《我想偶尔停一会儿》" aria-label="Permalink to &quot;第 40 本《我想偶尔停一会儿》&quot;">&ZeroWidthSpace;</a></h1>
+<CustomImage src="../static/2024/40th.webp" /><h2 id="简介" tabindex="-1">简介 <a class="header-anchor" href="#简介" aria-label="Permalink to &quot;简介&quot;">&ZeroWidthSpace;</a></h2>
+<p>《我想偶尔停一会儿》是一部治愈系绘本故事集，作者由宾用画笔记录了很多日常的故事和生活的细节。
+这本书让我们看到了很多城市青年的缩影，他从一个刚走出校园的穷小子慢慢进化成职场精英，然后成为数万网友追捧的绘本作家；他身边有温暖的父母、仗义的老友、幽默的同事，以及，粘人的猫咪；他偶尔摆烂，偶尔精致生活，他经历过失恋的痛苦，也懂得了如何向风中告别……
+这些生活里看似最平凡不过的故事和经历，却是我们每一个人在努力生活的证明。由宾用他的画笔记录着属于我们每一个人的日常，酸甜苦辣尽在其中，让大家都能在作品中看到自己。
+★ 作者说：“这本书里，画的都是一些日常琐碎的记录。我很珍惜这些灵感碎片，并很庆幸自己把它们捕捉到了。”
+☆ 如果你在生活的路上跑累了，不妨偶尔停一会儿，或者画一画，这是由宾积蓄能量的新方式，也是他正在享受的生活的闲暇。这样的日常，同时属于你和我。
+★ 64个治愈故事，336页诚意制作，全彩设计，90克艺术纸印刷，裸背锁线装帧，随书附赠猫咪和小玩意儿贴纸各一张。</p>
+<h2 id="感悟" tabindex="-1">感悟 <a class="header-anchor" href="#感悟" aria-label="Permalink to &quot;感悟&quot;">&ZeroWidthSpace;</a></h2>
+<p>有被作者感动到，忙忙碌碌，柴米油盐，无论工作还是生活，太累了的话，就停一下吧。我们一直想要成为自己理想中的样子，却一直活成自己讨厌的样子。有时候，停下来看看，休息一会，多欣赏路边的风景，做自己喜欢的事，没有那么多的烦恼。原来我看不懂的不是这个世界，而是自己，你想活出怎样的人生？答案在心里，不虚此生，请尽兴而行😁</p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[前端导航]]></title>
             <link>https://super456.github.io/posts/navigator/</link>
@@ -194,11 +227,6 @@
         <item>
             <link>https://super456.github.io/posts/random-thought/</link>
             <guid>https://super456.github.io/posts/random-thought/</guid>
-            <pubDate>Wed, 28 Feb 2024 14:23:28 GMT</pubDate>
-        </item>
-        <item>
-            <link>https://super456.github.io/posts/read-book/</link>
-            <guid>https://super456.github.io/posts/read-book/</guid>
             <pubDate>Wed, 28 Feb 2024 14:23:28 GMT</pubDate>
         </item>
     </channel>
