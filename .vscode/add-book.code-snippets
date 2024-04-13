@@ -1,0 +1,24 @@
+{
+	"创建阅读配置模版": {
+		"prefix": "book",
+		"body": [
+			"---",
+			"title: 文章标题(string)",
+			"description: 描述文章信息(string)",
+			"# date: 单独设置发布时间，默认使用 Git 最后文件修改时间(date|false)",
+      "cover: ../static/2024/xxth.webp",
+			"tags:",
+			" - 2024",
+			" - 阅读",
+			"categories:",
+			" - 朝花夕拾",
+			"---",
+			"# 这个是文章标题一定要写，不然标题信息不展示",
+			"\n",
+			"## 简介",
+			"\n",
+			"## 感悟",
+		],
+		"description": "创建阅读配置模版"
+	}
+}
