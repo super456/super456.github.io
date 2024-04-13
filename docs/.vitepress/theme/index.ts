@@ -5,6 +5,7 @@ import BlogTheme from '@sugarat/theme'
 import googleAnalytics from 'vitepress-plugin-google-analytics'
 import busuanzi from 'busuanzi.pure.js'
 import MNavLinks from './components/MNavLinks.vue'
+import CustomImage from './components/CustomImage.vue'
 import LayoutBottom from './components/LayoutBottom.vue'
 
 // 自定义样式重载
@@ -30,6 +31,7 @@ export default {
   enhanceApp({ app, router }: EnhanceAppContext) {
     // 添加全局组件注册
     app.component('MNavLinks', MNavLinks)
+    app.component(CustomImage.name as string, CustomImage)
 
     // 添加谷歌分析
     googleAnalytics({
