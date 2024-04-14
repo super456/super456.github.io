@@ -50,5 +50,11 @@ export default {
       desc: '各种页面常见布局 + 知名网站实例分析 + 相关阅读推荐',
       link: 'https://sweet-kk.github.io/css-layout/',
     },
+    {
+      title: 'Color Palettes for Designers and Artists - Color Hunt',
+      desc: 'Discover the newest hand-picked color palettes of Color Hunt. Get color inspiration for your design and art projects.',
+      icon: 'https://colorhunt.co/img/colorhunt-favicon.svg?2',
+      link: 'https://colorhunt.co/',
+    },
   ],
 }

@@ -79,6 +79,11 @@ export default {
       link: 'https://shanyue.tech/',
     },
     {
+      title: 'Sunny\'s blog',
+      desc: '前端历险记',
+      link: 'https://sunny-117.github.io/blog/',
+    },
+    {
       title: 'Stefan Judis Web Development',
       desc: 'I love building things for the web. And I love writing sharing things about the web.',
       icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%A7%A2</text></svg>',

@@ -80,5 +80,29 @@ export default {
       desc: '由百度基于文心大模型研发的编程辅助工具，可提供自动代码生成、单元测试生成、注释生成以及智能问答等功能。支持上百种编程语言，旨在帮助开发者大幅提升编码效率。使用Comate，让编程更加高效和便捷。',
       link: 'https://comate.baidu.com/',
     },
+    {
+      title: 'AI帮个忙 | 多功能AI小帮手',
+      desc: 'AI帮个忙是打工人的多功能小帮手，有多个AI写作和图片工具，可以用AI生成小红书文案，文章，PPT大纲等，支持改写，润色,续写,扩写',
+      icon: 'https://aibang.run/favicon-32x32.png',
+      link: 'https://aibang.run/',
+    },
+    {
+      title: '一起用AI | AI副业搞钱套路集合站点',
+      desc: '一起用AI 智能化搞副业赚钱 | AI副业搞钱套路集合站点',
+      icon: 'https://17yongai.com/wp-content/uploads/2023/02/logo.png',
+      link: 'https://17yongai.com/',
+    },
+    {
+      title: '秘塔写作猫',
+      desc: '写作猫是新一代交互式中英文写作辅助平台，集智能文本纠错、改写润色、自动续写、智能配图为一体。',
+      icon: 'https://metaso.cn/favicon.ico',
+      link: 'https://xiezuocat.com/',
+    },
+    {
+      title: 'AgentGPT',
+      desc: 'Assemble, configure, and deploy autonomous AI Agents in your browser.',
+      icon: 'https://agentgpt.reworkd.ai/favicon.svg',
+      link: 'https://agentgpt.reworkd.ai/zh',
+    },
   ],
 }

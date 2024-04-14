@@ -25,5 +25,11 @@ export default {
       icon: 'https://www.gstatic.com/devrel-devsite/prod/vdff1e83c9bc1af90871ad39a4afed3d4347394671ac5f3c005d4578bbf41edc2/chrome/images/favicon.png',
       link: 'https://developer.chrome.com/blog?hl=zh-cn',
     },
+    {
+      title: '百度前端技术学园',
+      desc: '面向所有自驱成长，终身学习，热爱生活的人，打造的Web前端技术学习园地',
+      icon: 'https://ife.baidu.com/assets/img/ife.ico',
+      link: 'https://ife.baidu.com/',
+    },
   ],
 }
