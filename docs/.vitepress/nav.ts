@@ -38,6 +38,23 @@ export default [
       ],
     },
     {
+      text: '跨平台',
+      items: [
+        {
+          text: '小程序',
+          link: '/posts/growth-record/platform/applet/',
+        },
+        {
+          text: 'App',
+          link: '/posts/growth-record/platform/app/',
+        },
+        {
+          text: 'H5',
+          link: '/posts/growth-record/platform/h5/',
+        },
+      ],
+    },
+    {
       text: '工程化',
       items: [
         {
@@ -68,27 +85,14 @@ export default [
       ],
     },
     {
-      text: '跨平台',
-      items: [
-        {
-          text: '小程序',
-          link: '/posts/growth-record/platform/applet/',
-        },
-        {
-          text: 'App',
-          link: '/posts/growth-record/platform/app/',
-        },
-        {
-          text: 'H5',
-          link: '/posts/growth-record/platform/h5/',
-        },
-      ],
-    },
-    {
       text: '其他',
       items: [
         {
-          text: '软技能',
+          text: '工具指南',
+          link: '/posts/growth-record/other/toolGuide/',
+        },
+        {
+          text: '技术复盘',
           link: '/posts/growth-record/other/softSkills/',
         },
         {
@@ -103,7 +107,6 @@ export default [
     },
   ] },
   { text: '前端导航', link: '/posts/navigator/' },
-  { text: '工具指南', link: '/posts/tools/' },
   { text: '朝花夕拾', link: '/posts/read-book/' },
   { text: '夜航西飞', link: '/posts/random-thought/' },
   { text: '关于作者', link: '/posts/about/' },
