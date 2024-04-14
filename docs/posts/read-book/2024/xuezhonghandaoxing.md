@@ -1,7 +1,7 @@
 ---
 title: 第 40 本《雪中悍刀行》
 description: '该小说讲述一个关于庙堂权争与刀剑交错的时代，一个暗潮涌动粉墨登场的江湖。'
-# date: 单独设置发布时间，默认使用 Git 最后文件修改时间(date|false)
+date: 2024-01-26 20:00:00
 cover: /read-book/2024/xuezhonghandaoxing.webp
 tags:
  - 2024
