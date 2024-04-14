@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Sun, 14 Apr 2024 12:16:06 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 14 Apr 2024 12:40:40 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -6668,11 +6668,11 @@ Yolk
             <enclosure url="https://super456.github.io/read-book/2023/javascriptgaojichengxusheji4.webp" length="0" type="image/webp"/>
         </item>
         <item>
-            <title><![CDATA[好青年 21 天训练营 7 期总结]]></title>
+            <title><![CDATA[参加 7 期训练营总结]]></title>
             <link>https://super456.github.io/posts/random-thought/2023/camp-7-summary.html</link>
             <guid>https://super456.github.io/posts/random-thought/2023/camp-7-summary.html</guid>
             <pubDate>Tue, 14 Mar 2023 20:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 id="好青年-21-天训练营-7-期总结" tabindex="-1">好青年 21 天训练营 7 期总结 <a class="header-anchor" href="#好青年-21-天训练营-7-期总结" aria-label="Permalink to &quot;好青年 21 天训练营 7 期总结&quot;">&ZeroWidthSpace;</a></h1>
+            <content:encoded><![CDATA[<h1 id="参加-7-期训练营总结" tabindex="-1">参加 7 期训练营总结 <a class="header-anchor" href="#参加-7-期训练营总结" aria-label="Permalink to &quot;参加 7 期训练营总结&quot;">&ZeroWidthSpace;</a></h1>
 <p>训练营的小伙伴们，大家晚上好呀，我是纵倾，见字如面，当看到这段文字的时候，我已经准备离开这个大家庭了</p>
 <p>在训练营的感受：回头看，从第 7 期加入至今第 13 期了，已经经历了 7 期，差不多 7 个月的陪伴成长，时间不长不短，有收获也有感动，在我的生命中熠熠生辉，格外亮眼。一开始参加训练营的初衷是培养自己的自律性，看看自己做一件事能够坚持多久和记录自己这段时间心路历程的变化，好为自己成长复盘和下一阶段规划提供帮助。至于打卡任务只是衡量的标准，可以随意变化的，所以并我不是为了打卡任务才进入训练营的。总体来说，训练营是超出我的预期的，有组织者，有监管的人，有存在感，能够被认可，能够找到打卡的归属感，最重要的是有一群可爱、温暖、有趣的伙伴，彼此关心、包容，互相监督、共同成长。缘分总是这么奇妙，把我们聚在一起，分享生活与工作的喜怒哀乐，分享彼此之间的美好世界。我很幸运能够在这遇见你们，一定是上天最好的安排。特别是在这个群认识了很多小伙伴，也私加了十几个人，一定是优秀的你们，吸引成为我朋友的原因，我的荣幸，倍感欣慰</p>
 <p>在训练营的成长：回顾自己的所有打卡记录及总结思考，收获最大的是，不是坚持 7 点早起，花多少时间学习了；不是看了多少本书，写了多少阅读笔记；不是做了多少道算法题，输出了多少算法题解；不是背了多少个单词，学习了多少英文语句；也不是做了多少次茶话会的主题分享以及茶话会听别人分享上，成长收获了有多少。这些都是次要的，并不是我主要的成长。经过我这段时间的思考总结，最大的成长就是思维方式的转变，底层逻辑是方法论与结构化思考表达。当我做一件事的时候：怎么去有条理、结构化的思考、怎么去实现以及如何做的更好、驱动力在哪里、如何思考清晰的表达出来、如何控制自己，简单地说离认清自己更近了一步。这也许是对我自己培养起来的自律性最好的解释。也是真正意义上可以做到对自己负责了，可能这就是我收获最大的成长吧</p>
@@ -6830,6 +6830,388 @@ Yolk
             <enclosure url="https://super456.github.io/read-book/2023/shuinengjujieyizhikuailedexiaogoune.webp" length="0" type="image/webp"/>
         </item>
         <item>
+            <title><![CDATA[第十一期训练营茶话会分享]]></title>
+            <link>https://super456.github.io/posts/random-thought/2023/camp-11th-share.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2023/camp-11th-share.html</guid>
+            <pubDate>Sat, 07 Jan 2023 20:00:00 GMT</pubDate>
+            <description><![CDATA[# 第十一期训练营茶话会分享
+<a name="iqtYI"></a>
+# 我是如何做年中 / 年终述职准备的
+<a name="yj4Cs"></a>
+## 前言
+第 11 期第 5 次参加第 3 次分享<br />背景：因为公司有这样的规章制度在 **6 月底** 和 **12 月底** 的时候会有半年的述职复盘要求以及绩效考评（**影响第二年的升职加薪和年终奖**）<br />说明：经历过几次述职之后的一些感悟收获分享出来，拿我自己的真实案例进行讲解，但因人而异，每个公司，每个人具体情况具体分析，**我的分享只当参考就好了哈**<br />述职形式：线上 / 线下：**20 分钟讲述** + **10 分钟答疑**，4 ~ 7 个评委（直属领导、一二级部门领导、旁系领导等）<br />注意 📢：**我是偏技术侧进行准备的主题分享，团队 / 部门管理者侧会有一些不一样哈，而且可能不全面，不一定适用所有人，看个人和公司情况的**
+
+因为时间来不及，有点遗憾本文章没有整理成 slidev 形式进行分享 **：**
+
+- **antfu 主题分享文档（参考学习）：**
+
+[GitHub - antfu/talks: Slides & code for my talks](https://github.com/antfu/talks)
+
+- slidev 工具：
+
+[https://github.com/slidevjs/slidev](https://github.com/slidevjs/slidev)
+<a name="EIUGf"></a>
+## 分享内容
+<a name="OeYPZ"></a>
+### 分享大纲
+
+1. OKR 自评
+   - 超出预期
+   - 低于预期
+2. 重点产出回顾
+   - 重点项目
+   - 价值观自评
+   - 其他
+3. 经验与教训
+   - 做的好的
+   - 待提升的
+4. 下半年 / 明年工作计划
+   - 下半年 / 年度工作目标
+   - 重点工作计划
+5. 我的总结
+   - 述职前、中、后建议
+<a name="w5ZbY"></a>
+### OKR 自评
+
+1. 重点阐述自己**超出预期的部分**，最好有实际情况说明（有具体数据指标说明是最好的），
+   1. 定义“超出预期部分”关键点建议：
+      - 高于原计划**产出价值**的；
+      - 原计划没有涉及到但是做的**更多**了；
+      - 重点讲述效果，不要讲太多太久，最好留在【重点产出回顾】进行详细说明，**因为超出预期部分是自己的加分项，要好好利用起来，给评委一个好印象**（就像面试过程中，肯定希望多表现自己擅长的技能的）；
+   2. 举例：
+      1. 性能优化：原本我只优化某一个模块的东西，做完发现其他模块甚至底层打包部署等都有类似的问题，就顺便一起优化了，优化前后对比是怎么样的，数据说明，详细内容可以在【重点产出回顾】进行说明，这里**重点讲述效果**怎么样；
+      2. 技术改造升级或重构：因为业务调整或迭代升级关系，原来的技术方案不太行（开发体验不好、迭代和维护成本很高），自己在开发过程中发现这些问题，并结合业务做技术侧升级改造或重构大部分代码提升 xxx 等效果，说白了降本增效了这样；
+      3. 团队建设贡献：发现团队缺少开发文档、核心业务文档（如果复杂一点的更好，比如 h5 跳小程序 /公众号授权、登录、鉴权、支付流程体系、封装 SDK 等等之类的）补充完善了都可以讲、项目组件库维护升级 / 公共组件编写了大量测试用例，增加了项目稳定性和开发体验，减少了多少 bug 等等；
+
+2. **低于预期部分**简单说明情况，不要讲的太多太久：
+   1. 特殊原因，一句话带过；
+   2. 因为个人原因，说明具体原由，要有说服力，比如因为临时加了紧急项目需求，导致原定开发工期评估调整不足，后面又紧急修复处理线上问题等原因，不得已转测滞后，上线滞后进行说明等；
+3. 符合预期部分，不太建议讲，**除非有特殊的产出价值可以简单说一下（业务价值或技术价值都可以）**：
+   - 举例：
+      - 自己优化了一些页面动画效果，过渡流畅，用户体验相比之前好很多，收到了客户的赞许等等可以进行说明；
+      - 在开发体验上做了很多提升，收到了很多同事的反馈表扬等；
+
+总结建议：
+
+- 千万不要照着 OKR 所有内容读一遍，没有意义，评委们其实早就看过你的 OKR 了；
+- OKR 最好要有实现结果的备注，比如这个 OR 完成情况（时间节点、上线情况、业绩效果等）及特殊情况说明原因等佐证；
+<a name="qk6kn"></a>
+### 重点产出回顾
+> 从公司实际业务角度出发，突出项目重点产出及落地结果呈现，解决业务痛点和实际问题。
+
+**这部分内容重中之重，至少要占整个述职时间的一半以上**
+
+1. 重点项目 ❗️：
+- **要事不过三**，最好不要写超过 3 个项目讲述，不要写太多太杂，挑重点的、有亮点的讲，比较大型的项目，需求内容描述不要写的太少，要有突出重点，不要就一两行文字说明完事，很容易让评委误解以为很简单的东西，当然也不是写的越多越好，能够**突出难度和亮点即可**；
+- 描写的项目顺序最好是按照时间线排序由近到远，标注好上线时间结点；
+- 每一项内容说明，最好有**需求背景、技术难点、业绩效果、复盘**进行说明，但要单讲做了什么项目功能而已：
+   - 不建议讲太细的功能点，比如这个需求做了具体哪个模块，这个模块是干嘛的做了哪些事情，可以导出列表数据等等这些，最好是自己根据需求背景和客户使用情况进行一套流程的说明；
+   - 技术难点可以多说一些，比如遇到了哪些比较难得问题，怎么解决的，然后有文档记录给团队分享出来，防止别人踩坑；
+   - 业绩效果，实际业务需求上线后的效果（收益情况，上线后多少用户使用，大部分产品经理都知道的），最后如果有客户的正面反馈证据最好贴上，比如客户夸赞截图、感谢信等；
+   - 复盘是指自己的做了这个项目的总结：技术难点情况、遇到的一些坑，怎么解决的，或者优化前后对比学到了什么，或者一些协作方面提升，比如通过文档记录、工具对接提升需求理解和降低团队开发盲点等等，生产事故不建议讲，除非答疑环节有评委提及在进行总结说明情况就好；
+- 如果产出价值很大的（业务价值或技术价值）时间允许可以用** STAR 法则**讲解清楚更能体现做事的全链路情况，让领导知道你解决问题的方法论和收益情况也是不错的，从而认可你的能力或者觉得你的能力超出当前的职级；
+   - 举例：**成果对比、成果截图**进行说明
+
+| 指标 | 修改前系统 | 修改后系统 |
+| ]]></description>
+            <content:encoded><![CDATA[<h1 id="第十一期训练营茶话会分享" tabindex="-1">第十一期训练营茶话会分享 <a class="header-anchor" href="#第十一期训练营茶话会分享" aria-label="Permalink to &quot;第十一期训练营茶话会分享&quot;">&ZeroWidthSpace;</a></h1>
+<p><a name="iqtYI"></a></p>
+<h1 id="我是如何做年中-年终述职准备的" tabindex="-1">我是如何做年中 / 年终述职准备的 <a class="header-anchor" href="#我是如何做年中-年终述职准备的" aria-label="Permalink to &quot;我是如何做年中 / 年终述职准备的&quot;">&ZeroWidthSpace;</a></h1>
+<p><a name="yj4Cs"></a></p>
+<h2 id="前言" tabindex="-1">前言 <a class="header-anchor" href="#前言" aria-label="Permalink to &quot;前言&quot;">&ZeroWidthSpace;</a></h2>
+<p>第 11 期第 5 次参加第 3 次分享<br />背景：因为公司有这样的规章制度在 <strong>6 月底</strong> 和 <strong>12 月底</strong> 的时候会有半年的述职复盘要求以及绩效考评（<strong>影响第二年的升职加薪和年终奖</strong>）<br />说明：经历过几次述职之后的一些感悟收获分享出来，拿我自己的真实案例进行讲解，但因人而异，每个公司，每个人具体情况具体分析，<strong>我的分享只当参考就好了哈</strong><br />述职形式：线上 / 线下：<strong>20 分钟讲述</strong> + <strong>10 分钟答疑</strong>，4 ~ 7 个评委（直属领导、一二级部门领导、旁系领导等）<br />注意 📢：<strong>我是偏技术侧进行准备的主题分享，团队 / 部门管理者侧会有一些不一样哈，而且可能不全面，不一定适用所有人，看个人和公司情况的</strong></p>
+<p>因为时间来不及，有点遗憾本文章没有整理成 slidev 形式进行分享 <strong>：</strong></p>
+<ul>
+<li><strong>antfu 主题分享文档（参考学习）：</strong></li>
+</ul>
+<p><a href="https://github.com/antfu/talks" target="_blank" rel="noreferrer">GitHub - antfu/talks: Slides &amp; code for my talks</a></p>
+<ul>
+<li>slidev 工具：</li>
+</ul>
+<p><a href="https://github.com/slidevjs/slidev" target="_blank" rel="noreferrer">https://github.com/slidevjs/slidev</a>
+<a name="EIUGf"></a></p>
+<h2 id="分享内容" tabindex="-1">分享内容 <a class="header-anchor" href="#分享内容" aria-label="Permalink to &quot;分享内容&quot;">&ZeroWidthSpace;</a></h2>
+<p><a name="OeYPZ"></a></p>
+<h3 id="分享大纲" tabindex="-1">分享大纲 <a class="header-anchor" href="#分享大纲" aria-label="Permalink to &quot;分享大纲&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>OKR 自评
+<ul>
+<li>超出预期</li>
+<li>低于预期</li>
+</ul>
+</li>
+<li>重点产出回顾
+<ul>
+<li>重点项目</li>
+<li>价值观自评</li>
+<li>其他</li>
+</ul>
+</li>
+<li>经验与教训
+<ul>
+<li>做的好的</li>
+<li>待提升的</li>
+</ul>
+</li>
+<li>下半年 / 明年工作计划
+<ul>
+<li>下半年 / 年度工作目标</li>
+<li>重点工作计划</li>
+</ul>
+</li>
+<li>我的总结
+<ul>
+<li>述职前、中、后建议
+<a name="w5ZbY"></a></li>
+</ul>
+</li>
+</ol>
+<h3 id="okr-自评" tabindex="-1">OKR 自评 <a class="header-anchor" href="#okr-自评" aria-label="Permalink to &quot;OKR 自评&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>
+<p>重点阐述自己<strong>超出预期的部分</strong>，最好有实际情况说明（有具体数据指标说明是最好的），</p>
+<ol>
+<li>定义“超出预期部分”关键点建议：
+<ul>
+<li>高于原计划<strong>产出价值</strong>的；</li>
+<li>原计划没有涉及到但是做的<strong>更多</strong>了；</li>
+<li>重点讲述效果，不要讲太多太久，最好留在【重点产出回顾】进行详细说明，<strong>因为超出预期部分是自己的加分项，要好好利用起来，给评委一个好印象</strong>（就像面试过程中，肯定希望多表现自己擅长的技能的）；</li>
+</ul>
+</li>
+<li>举例：
+<ol>
+<li>性能优化：原本我只优化某一个模块的东西，做完发现其他模块甚至底层打包部署等都有类似的问题，就顺便一起优化了，优化前后对比是怎么样的，数据说明，详细内容可以在【重点产出回顾】进行说明，这里<strong>重点讲述效果</strong>怎么样；</li>
+<li>技术改造升级或重构：因为业务调整或迭代升级关系，原来的技术方案不太行（开发体验不好、迭代和维护成本很高），自己在开发过程中发现这些问题，并结合业务做技术侧升级改造或重构大部分代码提升 xxx 等效果，说白了降本增效了这样；</li>
+<li>团队建设贡献：发现团队缺少开发文档、核心业务文档（如果复杂一点的更好，比如 h5 跳小程序 /公众号授权、登录、鉴权、支付流程体系、封装 SDK 等等之类的）补充完善了都可以讲、项目组件库维护升级 / 公共组件编写了大量测试用例，增加了项目稳定性和开发体验，减少了多少 bug 等等；</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>低于预期部分</strong>简单说明情况，不要讲的太多太久：</p>
+<ol>
+<li>特殊原因，一句话带过；</li>
+<li>因为个人原因，说明具体原由，要有说服力，比如因为临时加了紧急项目需求，导致原定开发工期评估调整不足，后面又紧急修复处理线上问题等原因，不得已转测滞后，上线滞后进行说明等；</li>
+</ol>
+</li>
+<li>
+<p>符合预期部分，不太建议讲，<strong>除非有特殊的产出价值可以简单说一下（业务价值或技术价值都可以）</strong>：</p>
+<ul>
+<li>举例：
+<ul>
+<li>自己优化了一些页面动画效果，过渡流畅，用户体验相比之前好很多，收到了客户的赞许等等可以进行说明；</li>
+<li>在开发体验上做了很多提升，收到了很多同事的反馈表扬等；</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>总结建议：</p>
+<ul>
+<li>千万不要照着 OKR 所有内容读一遍，没有意义，评委们其实早就看过你的 OKR 了；</li>
+<li>OKR 最好要有实现结果的备注，比如这个 OR 完成情况（时间节点、上线情况、业绩效果等）及特殊情况说明原因等佐证；
+<a name="qk6kn"></a></li>
+</ul>
+<h3 id="重点产出回顾" tabindex="-1">重点产出回顾 <a class="header-anchor" href="#重点产出回顾" aria-label="Permalink to &quot;重点产出回顾&quot;">&ZeroWidthSpace;</a></h3>
+<blockquote>
+<p>从公司实际业务角度出发，突出项目重点产出及落地结果呈现，解决业务痛点和实际问题。</p>
+</blockquote>
+<p><strong>这部分内容重中之重，至少要占整个述职时间的一半以上</strong></p>
+<ol>
+<li>重点项目 ❗️：</li>
+</ol>
+<ul>
+<li><strong>要事不过三</strong>，最好不要写超过 3 个项目讲述，不要写太多太杂，挑重点的、有亮点的讲，比较大型的项目，需求内容描述不要写的太少，要有突出重点，不要就一两行文字说明完事，很容易让评委误解以为很简单的东西，当然也不是写的越多越好，能够<strong>突出难度和亮点即可</strong>；</li>
+<li>描写的项目顺序最好是按照时间线排序由近到远，标注好上线时间结点；</li>
+<li>每一项内容说明，最好有<strong>需求背景、技术难点、业绩效果、复盘</strong>进行说明，但要单讲做了什么项目功能而已：
+<ul>
+<li>不建议讲太细的功能点，比如这个需求做了具体哪个模块，这个模块是干嘛的做了哪些事情，可以导出列表数据等等这些，最好是自己根据需求背景和客户使用情况进行一套流程的说明；</li>
+<li>技术难点可以多说一些，比如遇到了哪些比较难得问题，怎么解决的，然后有文档记录给团队分享出来，防止别人踩坑；</li>
+<li>业绩效果，实际业务需求上线后的效果（收益情况，上线后多少用户使用，大部分产品经理都知道的），最后如果有客户的正面反馈证据最好贴上，比如客户夸赞截图、感谢信等；</li>
+<li>复盘是指自己的做了这个项目的总结：技术难点情况、遇到的一些坑，怎么解决的，或者优化前后对比学到了什么，或者一些协作方面提升，比如通过文档记录、工具对接提升需求理解和降低团队开发盲点等等，生产事故不建议讲，除非答疑环节有评委提及在进行总结说明情况就好；</li>
+</ul>
+</li>
+<li>如果产出价值很大的（业务价值或技术价值）时间允许可以用** STAR 法则**讲解清楚更能体现做事的全链路情况，让领导知道你解决问题的方法论和收益情况也是不错的，从而认可你的能力或者觉得你的能力超出当前的职级；
+<ul>
+<li>举例：<strong>成果对比、成果截图</strong>进行说明</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>修改前系统</th>
+<th>修改后系统</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>代码行数</td>
+<td>20000 行</td>
+<td>5000 行</td>
+</tr>
+<tr>
+<td>业务扩展性</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>技术扩展性</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>技术可维护性（开发体验）</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>未来规划</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>难点</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>千万不要写很空虚的词语（<strong>夸大、空谈、没有落地实施细节</strong>等），很可能评委会不喜欢，就好像面试简历写精通一样：
+<ul>
+<li>举例：网上抄的一些互联网黑话，或讲要打通跨部门沟通效率、提升自己的战略定位，要搞抓手和闭环什么东西等；</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>价值观自评</li>
+</ol>
+<p>每个公司不一样，因人而异，给大家参考，主要是写结合工作中具体事项举例自身积极践行价值观的表现，举一例说明，【<strong>求真务实</strong>】原则很关键，分享 👇🏻 是汤圆姐姐很好的解读：<br /><img src="https://cdn.nlark.com/yuque/0/2023/png/245110/1673070191539-fdc5887e-823f-4d57-a061-6d40a2185a2b.png#averageHue=%232a2a2a&amp;clientId=udb431e58-b913-4&amp;from=paste&amp;height=930&amp;id=u1a28c39d&amp;originHeight=930&amp;originWidth=1138&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=156707&amp;status=done&amp;style=none&amp;taskId=ucd5f4d6a-c18b-451c-8a36-077843b9772&amp;title=&amp;width=1138" alt="image.png"></p>
+<ol start="3">
+<li>其他</li>
+</ol>
+<p>如果有非工作业务的产出也可以写上去，但是讲的时候不能讲太久占用太多时间，挑重点的提一下就好了，<strong>可以作为一个加分项，但不是必须项，最好突出工作之外给团队做的贡献的东西，而大部分只做工作分内事的人相比会非常有优势</strong>（就好像面试简历有写开源项目一样，也是一个亮点）<br />填写建议：</p>
+<ul>
+<li>团队贡献：技术文档（一些开发指南文档建设、解决技术难点总结分享、业务核心流程梳理文档等等）、带新人（最好要有文档输出）、内部主题分享、解决业务开发发现痛点（自己发现或别人发现的都可以）等；</li>
+<li>跨部门或公司层面的贡献：主题分享（不管是业务侧还是技术侧都可以写上去）、代表公司安排参加大会、处理公司安排的事项（比如春秋招笔试题等）、当面试官等等；</li>
+<li><strong>以上有实际产出的存档说明最好</strong>，比如主题分享完的资料、有文档链接的要贴上、效果截图的贴上，作为证据说明；</li>
+</ul>
+<p>总结建议：</p>
+<ul>
+<li>可以把半年内做的事情按照项目、时间结点顺序分类整理写出来，然后根据项目需求的难易程度、项目亮点进行取舍摘取出来，不要笼笼统统写一大堆，听的人和看得人都累；</li>
+<li>建议项目描写是按照业务线来整理，不太建议按照项目框架多端分类来整理，比如 A 业务线按照时间节点做了那几个重点需求，而不是写管理后台、小程序、H5 等等做了哪些重点需求；</li>
+<li><strong>重点讲业务价值和技术价值方面的产出（业务价值 &gt; 技术价值：业务孵化技术，技术赋能业务，技术只是工具而已）；</strong></li>
+</ul>
+<p><strong>分享一下汤圆姐姐对于这一块的评价，后续大家可以借鉴一下：</strong><br /><img src="https://cdn.nlark.com/yuque/0/2023/png/245110/1673090959198-376f550a-c323-4fb1-9887-33cf597ea8be.png#averageHue=%23373737&amp;clientId=u31789d43-1d14-4&amp;from=paste&amp;height=1014&amp;id=u2e4c187a&amp;originHeight=1014&amp;originWidth=1304&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=351362&amp;status=done&amp;style=none&amp;taskId=u409e2674-c87b-4eb0-9545-f438bfdb40c&amp;title=&amp;width=1304" alt="image.png">
+<a name="KeVV3"></a></p>
+<h3 id="经验与教训" tabindex="-1">经验与教训 <a class="header-anchor" href="#经验与教训" aria-label="Permalink to &quot;经验与教训&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>👍🏻 做得好的</li>
+</ol>
+<ul>
+<li>建议写 3 ~ 5 个，但不需要全部都讲，一般时间没那么多，挑 2-3 个重点讲解即可；</li>
+<li>结合实际工作场景针对自己学习到的做总结，最好有实际的案例结果展示：
+<ul>
+<li>举例：学习到了线上排查复杂问题的流程总结，提高解决问题的效率：截图说明，使用了哪些工具<strong>快速</strong>定位问题，然后怎么复现问题、怎么快速解决问题</li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li>💪🏻 待提升的</li>
+</ol>
+<ul>
+<li>建议写 3 ~ 5 个，但不需要全部都讲，一般时间没那么多，挑 2-3 个重点讲解即可；</li>
+<li>千万不要写让人觉得自己不能胜任工作的一些内容，比如感觉需求或遇到技术问题太难了，自己目前能力没达到，后续需要多学习加强才行之类的话；</li>
+<li>重点写自己做好之后，还能做的更好的部分方面怎么去提升，比如对于需求理解，从技术调研，技术方案确定，再到实现过程结果，自己发现了哪些问题：比如偏向体系化的知识点很多，发现自己某部分掌握不是很全和有深度，需要加强某方面的学习程度，或者技术选型时候，Demo 项目没有考虑到某一复杂点的场景，这一块需要后续加强补充的；</li>
+</ul>
+<p>总结建议：</p>
+<ul>
+<li>结合实际工作场景案例进行说明，最好有实际结果证据进行说明（截图、文档链接等）；</li>
+<li>不太建议讲个人学习技能的相关的事情，比如学习 React 之后没有做好什么，发现没学好什么，或者学习什么书籍没学完之类的，后面要加强自身学习动力和干劲之类的话；
+<a name="hcQF1"></a></li>
+</ul>
+<h3 id="下半年-明年工作计划" tabindex="-1">下半年 / 明年工作计划 <a class="header-anchor" href="#下半年-明年工作计划" aria-label="Permalink to &quot;下半年 / 明年工作计划&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>下半年或明年工作目标</li>
+</ol>
+<ul>
+<li>建议写 3 ~ 5 个，但不需要全部都讲，一般时间没那么多，挑 2-3 个重点讲解即可；</li>
+<li>最好跟直属领导、对应的产品经理确认自己的未来的工作有哪些，或者说大方向有哪些，然后再明确写出来，不要靠自己瞎想猜测乱写，如果写的不切合实际会被评委说的，不要留下不好的印象；</li>
+<li><strong>往大方面项目业务需求写，不要写芝麻大小的事情</strong>；</li>
+<li>不要写跟自己无关的事情，比如别个同事负责的业务，自己没参与过也写上去了，盲猜后续会参与到，除非确定会参与到；</li>
+<li><strong>如果可以的话，适当写一些团队贡献的事情，比如申请专利、主题分享等</strong>；</li>
+</ul>
+<ol start="2">
+<li>重点工作计划</li>
+</ol>
+<ul>
+<li>建议写 3 ~ 5 个，但不需要全部都讲，一般时间没那么多，挑 2-3 个重点讲解即可；</li>
+<li>针对 👆🏻 工作内容挑重点的写，铺排写细致一点的工作内容，就跟 OKR 目标一样：
+<ul>
+<li>举例：上面 👆🏻 写到了项目框架升级，提高项目稳定性，提高开发体验等：
+<ul>
+<li>框架 Vue 版本升级；</li>
+<li>组件库版本升级；</li>
+<li>插件依赖库升级；</li>
+<li>团队开发指南升级等；</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>总结建议：</p>
+<ul>
+<li>要以实际情况出发，或未来自己能做的更好的项目需求方向，不要用太泛或太虚的相关词语，比如打造升级产品进入行业前十什么的；</li>
+<li>最好跟直属领导和相关产品经理沟通确认；
+<a name="FDcoM"></a></li>
+</ul>
+<h3 id="我的总结" tabindex="-1">我的总结 <a class="header-anchor" href="#我的总结" aria-label="Permalink to &quot;我的总结&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>述职前准备：
+<ol>
+<li>平时要有写工作记录的习惯及总结，是非常受益的（<strong>多总结思考也是一种进步</strong>），不至于写汇报类工作的时候手忙脚乱查各种记录：比如日报、周报、月报不管公司有没有要求都可以写（我个人习惯是比较喜欢写日报，我飞书文档有【<strong>Every Day Counts</strong>】<strong>每一天都很重要和工作备忘录（工作事宜相关的注意事项）</strong>，目前记录有半年以上了，写每天开始工作前的 TO DO LIST，记录问题难点，比较有意思的事情吧，下班前做一个总结记录：就是哪些做完了，哪些没有做完，因为什么原因，解决的问题比较有意思的难点也会记录一下等等，有时候也会把花销最多的事项工时记录上去，比如开会花了 2 个小时，解决一个线上 bug 处理了 1 个小时等等这样）：</li>
+</ol>
+</li>
+</ol>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/245110/1673068772393-d66b28c4-1a91-4dfe-83de-ce3e3bf61593.png#averageHue=%23fefefe&amp;clientId=udb431e58-b913-4&amp;from=paste&amp;height=589&amp;id=u202db004&amp;originHeight=1380&amp;originWidth=450&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=193301&amp;status=done&amp;style=none&amp;taskId=u4d0a900d-cf8a-4e33-b067-6ac860d266c&amp;title=&amp;width=192" alt="image.png"></p>
+<p>这个 👇🏻 是汤圆姐姐的每日工作记录：<img src="https://cdn.nlark.com/yuque/0/2023/png/245110/1673091037703-b6da950e-6969-450b-aab5-e43c88063530.png#averageHue=%23f3f1f0&amp;clientId=u31789d43-1d14-4&amp;from=paste&amp;height=47&amp;id=uea33e8f0&amp;originHeight=47&amp;originWidth=1745&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=8472&amp;status=done&amp;style=none&amp;taskId=u2d745956-029d-41a0-a7b7-9c6e6107b5a&amp;title=&amp;width=1745" alt="image.png"></p>
+<ol start="2">
+<li>最好要有图片、表格、指标数据结合说明，最好多画一些流程图、架构图、业务图，表格数据前后对比等，不要整篇下来基本都是纯文字，哪怕贴出上线后产品实际图也行（可以<strong>参考语雀或飞书的模板库案例</strong>，非常多详细的案例，很容易模仿做出一个来的）：</li>
+</ol>
+<p><img src="https://cdn.nlark.com/yuque/0/2023/png/245110/1673082608307-58e59b14-2f43-4404-87e7-e2346e62686c.png#averageHue=%2397c7a3&amp;clientId=udb431e58-b913-4&amp;from=paste&amp;height=1390&amp;id=u5087db6f&amp;originHeight=1390&amp;originWidth=2302&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=317411&amp;status=done&amp;style=none&amp;taskId=u3dcfc6b4-b1fc-4f31-a312-411e3a6c010&amp;title=&amp;width=2302" alt="image.png"></p>
+<ol start="3">
+<li>OKR 和重点产出回顾不建议写的太少，内容太少看起来很空虚，可能会让人觉得做的少；</li>
+<li>可以提前准备答疑环节领导可能会问的问题，未雨绸缪总比不知所措的好（就像面试前准备一样，面试的公司技术栈情况及自己要准备的技能和知识点要有一个了解的）；</li>
+<li>如果可以的话，可以借鉴看看别人写的好的地方和看相关产品的述职报告写的什么，然后借鉴相关内容数据指标等；</li>
+<li>重点讲述部分：<strong>至少一半时间要花在【重点产出回顾】上，这个很重要；</strong></li>
+<li>如果可以的话，可以演练一下，不至于述职的时候时间不够、部分内容讲的太长、紧张等导致述职时候节奏出错（比如东讲一块，西讲一块，然后又回过头来讲等），<strong>尽可能的重视起来，多花点时间准备，毕竟真的很影响个人在公司的发展</strong>；</li>
+<li>跟直属领导或相关的评委领导保持好的关系：不是阿谀奉承，平时工作交集表现一点，多交流，哪怕吹水也是可以的；还有多注意自己的言行举止在公司；直属领导一般答疑都会发言（话语权还是很重要的），说一些对你的工作进行肯定认可话（表现好的地方），如果没有那就是你的个人问题要多反思自己了，一般都是恩威并施；</li>
+<li>根据评委<strong>投其所好（可选，是否准备看个人）</strong>：领导的习惯作风，对症下药，但不要太刻意准备；</li>
+<li>述职中注意：
+<ol>
+<li>注意讲述时间，内容多就挑重点的讲：看准备的内容，如果写的很多，类似几千字长篇大论，就是写的不能再简洁了，那就讲的时候，挑重点内容讲，不要一字不差的照念就行，<strong>因为述职前评委会先看一遍接下来要述职人的资料的</strong>；</li>
+<li>最好不要提及跟自己无关的同事或同事的不好，不要说 xxx 同事做的多好，我很佩服他什么的，跟着他学到了很多东西；没有必要，只会衬托别人和自己不太好的一面；也不要说同事做的太不好的地方，比如这个 xxx 同事能力不行，代码写的贼差，我不想接手他写的代码，或产品、UI 能力好差之类的话，如果真的想说，有也只能说是建议角度，发现一些问题，怎么改善，怎么样可以做的更好，自己做了哪些提醒或建议改善了怎么样；</li>
+</ol>
+</li>
+<li>述职后复盘：
+<ol>
+<li>记录答疑领导的建议及改善方法；</li>
+<li>回顾自己述职过程中哪些做的好的，哪些做的不好的；</li>
+<li>乐观心态对待自己和后面发生的事，不管结果好坏都是一时的，胜不骄，败不馁；保持积极向上的心态准没错；</li>
+</ol>
+</li>
+</ol>
+<p><strong>注意</strong> ⚠️：本次分享纯做给大家做参考，没有特殊的强制要求一定要按照我说的做哈，如果我的分享内容有那么一丁点对你有益，那么说明我的分享就是有价值的，我也会继续加油创作和给大家做主题分享 😄</p>
+<p>最后送给大家一句话：<strong>你不是工作没有挑战，而是缺少自我要求 😅</strong> <br />
+祝愿大家新的一年 <strong>：🌸 工作顺利、步步高升、事业有成 🌼</strong></p>
+<h2 id="原茶话会分享音频" tabindex="-1">原茶话会分享音频 <a class="header-anchor" href="#原茶话会分享音频" aria-label="Permalink to &quot;原茶话会分享音频&quot;">&ZeroWidthSpace;</a></h2>
+<p><a href="https://www.yuque.com/yayu/nice-people/share11#H3Izz" target="_blank" rel="noreferrer">语雀文档</a></p>
+]]></content:encoded>
+            <enclosure url="https://cdn.nlark.com/yuque/0/2023/png/245110/1673070191539-fdc5887e-823f-4d57-a061-6d40a2185a2b.png#averageHue=%232a2a2a&clientId=udb431e58-b913-4&from=paste&height=930&id=u1a28c39d&originHeight=930&originWidth=1138&originalType=binary&ratio=1&rotation=0&showTitle=false&size=156707&status=done&style=none&taskId=ucd5f4d6a-c18b-451c-8a36-077843b9772&title=&width=1138" length="0" type="image/png"/>
+        </item>
+        <item>
             <title><![CDATA[第 5 本《漫画科普：比知识有趣的冷知识（1-3 册）》]]></title>
             <link>https://super456.github.io/posts/read-book/2022/manhuakepu.html</link>
             <guid>https://super456.github.io/posts/read-book/2022/manhuakepu.html</guid>
@@ -6873,6 +7255,279 @@ Yolk
 <p>待补充点评🚀...，值得二刷学习</p>
 ]]></content:encoded>
             <enclosure url="https://super456.github.io/read-book/2022/beitaoyandeyongqi.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[第十期训练营茶话会分享]]></title>
+            <link>https://super456.github.io/posts/random-thought/2022/camp-10th-share.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2022/camp-10th-share.html</guid>
+            <pubDate>Sat, 03 Dec 2022 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="第十期训练营茶话会分享" tabindex="-1">第十期训练营茶话会分享 <a class="header-anchor" href="#第十期训练营茶话会分享" aria-label="Permalink to &quot;第十期训练营茶话会分享&quot;">&ZeroWidthSpace;</a></h1>
+<p><a name="rXPLx"></a></p>
+<h2 id="前言" tabindex="-1">前言 <a class="header-anchor" href="#前言" aria-label="Permalink to &quot;前言&quot;">&ZeroWidthSpace;</a></h2>
+<p>第 10 期第 4 次参加第 2 次分享<br />为啥聊这个话题，证据：<br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064729042-ad1afb3e-00ce-4c54-97aa-16beb85f7034.png#averageHue=%232a2929&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=140&amp;id=uf3a04606&amp;originHeight=140&amp;originWidth=692&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=26211&amp;status=done&amp;style=none&amp;taskId=ufb0564e6-46cf-4f6a-85cc-ad3008aa9bd&amp;title=&amp;width=692" alt="image.png"><br />聊聊我眼中的汤圆姐姐和她是如何影响我的（纯属个人见解、管中窥豹吧，有理解错误或表达不好、词不达意的地方，大家谅解，尤其是汤圆姐姐，海涵啊，哈哈哈 😄）</p>
+<p>写完这篇文档，感受：<br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670074276904-07953729-095c-425b-8c32-26657165de66.png#averageHue=%23ece8e3&amp;clientId=ucb7badd4-8473-4&amp;from=paste&amp;height=152&amp;id=u509d3300&amp;originHeight=152&amp;originWidth=606&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=20530&amp;status=done&amp;style=none&amp;taskId=u7f434726-6ff3-421c-b045-af9cb46e15d&amp;title=&amp;width=606" alt="image.png"><br />然后我明白了：人类的本质是复读机有了更深刻的理解<br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064668337-834f1408-0f8d-49e3-be39-172764cc9af3.png#averageHue=%23acada7&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=300&amp;id=u6202421c&amp;originHeight=300&amp;originWidth=535&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=105002&amp;status=done&amp;style=none&amp;taskId=ufcdca5ac-610c-4a7d-8a83-fcad4d61809&amp;title=&amp;width=535" alt="image.png"></p>
+<p><a name="D2ijw"></a></p>
+<h2 id="我眼中的汤圆姐姐" tabindex="-1">我眼中的汤圆姐姐 <a class="header-anchor" href="#我眼中的汤圆姐姐" aria-label="Permalink to &quot;我眼中的汤圆姐姐&quot;">&ZeroWidthSpace;</a></h2>
+<p>前期跟姐姐互动比较少吧，后期会比较多一点，其实我是很 open  &amp; 开明的一个人，我也很喜欢这样的一个群可以交流，可以找到很多乐趣和看看别人的世界是什么样子的</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064914458-a1d44491-73b0-492a-b63d-ed38212a8923.png#averageHue=%23b5c7d3&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=2556&amp;id=u18c0bb95&amp;originHeight=2556&amp;originWidth=1179&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=6343848&amp;status=done&amp;style=none&amp;taskId=ub7bd87da-12b1-45be-918b-092d82b494d&amp;title=&amp;width=1179" alt="image.png"><br />会画画、会弹古筝、会手工制作、人长得好看，有故事（故事是真的多），说话又好听（文化底蕴十足，信手拈来的感觉，特别是会写诗）——最主要是<strong>芳龄富婆</strong></p>
+<ul>
+<li>知性绝佳（知书达理、温文尔雅、博学多才）的美女</li>
+<li>温柔细腻的情感姐姐</li>
+<li>雷厉风行、敢爱敢恨的潇洒姐姐</li>
+<li>职场高手 &amp; 摸鱼高手 （百科全书，啥都懂）</li>
+</ul>
+<p>还有一个，我很喜欢姐姐的个性签名，因为我也很喜欢这个成语：<br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670068234669-eda612a7-0088-470e-b8e6-0458aa6e0acc.png#averageHue=%23e0e1d5&amp;clientId=u1c1c6521-c5d5-4&amp;from=paste&amp;height=416&amp;id=uf32a2013&amp;originHeight=416&amp;originWidth=750&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=24115&amp;status=done&amp;style=none&amp;taskId=u844d027e-c776-4fdc-b561-5b45fba7826&amp;title=&amp;width=750" alt="image.png"><br />表面意思是：指不露锋芒，与世无争的消极处事态度，也比喻同流合污<br />我的理解：是一种处事态度，一种人生修行。正如有一句话所说：“一个人最大的成功，在于能和自己好好相处”<br />以上总结一句话：<strong>我见众生皆草木，唯有见你是青山</strong>
+<a name="xkORp"></a></p>
+<h2 id="她是如何影响我的" tabindex="-1">她是如何影响我的 <a class="header-anchor" href="#她是如何影响我的" aria-label="Permalink to &quot;她是如何影响我的&quot;">&ZeroWidthSpace;</a></h2>
+<p>21 天学到了啥<br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670058323307-df98b42d-229a-496f-a5c3-5affe17cafc3.png#averageHue=%232a2928&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=150&amp;id=u37df2803&amp;originHeight=150&amp;originWidth=754&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=38332&amp;status=done&amp;style=none&amp;taskId=u4ebe7ee3-3302-4f7d-b4ee-0c4b3c9ce2f&amp;title=&amp;width=754" alt="image.png"></p>
+<div class="warning custom-block"><p class="custom-block-title">WARNING</p>
+<p>注意 📢：部分截图内容多条聊天记录顺着理解、读不通，可以尝试倒序来</p>
+</div>
+<p><a name="IUw3v"></a></p>
+<h3 id="关于爱情" tabindex="-1">关于爱情 <a class="header-anchor" href="#关于爱情" aria-label="Permalink to &quot;关于爱情&quot;">&ZeroWidthSpace;</a></h3>
+<p><a name="y7pZu"></a></p>
+<h4 id="话题" tabindex="-1">话题 <a class="header-anchor" href="#话题" aria-label="Permalink to &quot;话题&quot;">&ZeroWidthSpace;</a></h4>
+<ul>
+<li>心里那个他/她</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670036650645-601cdc0a-627e-4c6d-bd7a-1303b55b9994.png#averageHue=%232a2a2a&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=400&amp;id=u36af7f07&amp;originHeight=400&amp;originWidth=766&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=112810&amp;status=done&amp;style=none&amp;taskId=u618ade47-ef38-4057-b3df-2080a052f9e&amp;title=&amp;width=766" alt="image.png"></p>
+<ul>
+<li>经营双方关系</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670036432849-a294c2c0-2fd0-4bbb-b796-2d79f844d646.png#averageHue=%232d2d2d&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=344&amp;id=u392ce707&amp;originHeight=344&amp;originWidth=770&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=109973&amp;status=done&amp;style=none&amp;taskId=u582017dc-46ca-41e6-acd3-c892a85ef4e&amp;title=&amp;width=770" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670063907048-73b79916-3d3a-41ed-973c-e6a3dcca895d.png#averageHue=%23434343&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=452&amp;id=u7f114c46&amp;originHeight=452&amp;originWidth=1174&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=193635&amp;status=done&amp;style=none&amp;taskId=ucb972a15-a8d5-4a98-b34c-c34e235d309&amp;title=&amp;width=1174" alt="image.png"></p>
+<ul>
+<li>对于喜欢的人</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670036364464-1e247da9-58d5-451f-95c4-c51688404afd.png#averageHue=%23313131&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=648&amp;id=ub701bc7b&amp;originHeight=648&amp;originWidth=784&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=209135&amp;status=done&amp;style=none&amp;taskId=u11d051d6-ece8-4d60-b1b5-649a888408b&amp;title=&amp;width=784" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670043800215-9c1606ed-4c26-441b-a195-49a2608584f2.png#averageHue=%23292929&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=246&amp;id=ubfdb1f3d&amp;originHeight=246&amp;originWidth=750&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=61752&amp;status=done&amp;style=none&amp;taskId=u2185bf14-e132-4ad1-8f3a-417e5009198&amp;title=&amp;width=750" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670043902473-26fbf93d-920d-4f7c-adba-df622c6ae645.png#averageHue=%23242323&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=658&amp;id=ub033c9eb&amp;originHeight=658&amp;originWidth=730&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=156736&amp;status=done&amp;style=none&amp;taskId=ua0f35ab3-da4e-4d41-9ca3-886b18cbe5c&amp;title=&amp;width=730" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670044008805-76753339-0453-412e-80e8-6066e7d51db0.png#averageHue=%232c2c2c&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=182&amp;id=ub18eccb5&amp;originHeight=182&amp;originWidth=1186&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=48129&amp;status=done&amp;style=none&amp;taskId=uaaf55a13-fe0b-4f76-a0c8-1e56b5a7ab5&amp;title=&amp;width=1186" alt="image.png"></p>
+<ul>
+<li>
+<p>求而不得是常态。有些糖，长久吃不到，就再也不想吃了</p>
+</li>
+<li>
+<p>明知不可为而为之，这种勇气不是每个人都有，也不是每个年龄段都有</p>
+</li>
+<li>
+<p>恋爱脑</p>
+</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670058007478-740cf571-516d-4863-8b93-0901c565e9bc.png#averageHue=%232c2c2c&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=182&amp;id=ucc517d55&amp;originHeight=182&amp;originWidth=1174&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=45113&amp;status=done&amp;style=none&amp;taskId=uf706ee60-9cb4-4949-8079-6176ed687db&amp;title=&amp;width=1174" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670058082333-7ecefa3e-4235-4e82-8381-75221234d79f.png#averageHue=%232a2a29&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=148&amp;id=ue79dbfea&amp;originHeight=148&amp;originWidth=544&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=26583&amp;status=done&amp;style=none&amp;taskId=uc635d4d1-729f-4522-aa89-e07af45575b&amp;title=&amp;width=544" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670058785068-b7f7e059-feae-4938-acfa-b67e888b6da5.png#averageHue=%23313130&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=190&amp;id=uf347a58b&amp;originHeight=190&amp;originWidth=1182&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=58157&amp;status=done&amp;style=none&amp;taskId=u2f708ace-010c-4eb7-bef3-5992559ed39&amp;title=&amp;width=1182" alt="image.png"></p>
+<ul>
+<li>关于情话</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670061613128-1b56aef7-56bf-4e20-8cb0-7b70dbb6150e.png#averageHue=%232b2b2b&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=186&amp;id=ue1f9a6d4&amp;originHeight=186&amp;originWidth=1178&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=42274&amp;status=done&amp;style=none&amp;taskId=u0871d25d-2047-439d-b454-7701546ae62&amp;title=&amp;width=1178" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670061629818-b8e893fb-8c6f-4ff2-a730-28f9ca1efa77.png#averageHue=%232a2929&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=142&amp;id=ubefb5c07&amp;originHeight=142&amp;originWidth=652&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=28150&amp;status=done&amp;style=none&amp;taskId=u140c6f45-574e-460b-9b3d-98e7966f62d&amp;title=&amp;width=652" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670061663490-6922f822-dc9c-439d-ba4b-838a89eb1d88.png#averageHue=%232d2d2d&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=180&amp;id=u3ad9ff24&amp;originHeight=180&amp;originWidth=1174&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=47447&amp;status=done&amp;style=none&amp;taskId=u48074f28-5e35-45e8-a790-4df0881bd87&amp;title=&amp;width=1174" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670061690428-e1b21d93-b9df-4d02-b6d7-cbd0f9fe7c7a.png#averageHue=%23272726&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=148&amp;id=ube013ebc&amp;originHeight=148&amp;originWidth=764&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=36969&amp;status=done&amp;style=none&amp;taskId=u1ad30d95-0842-4c84-be63-45c48a51e82&amp;title=&amp;width=764" alt="image.png"></p>
+<ul>
+<li>关于遗憾</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670061947154-2e6a9fa3-6114-4f33-ac9f-cd9c4beb8c28.png#averageHue=%23414141&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=564&amp;id=u1f6fe3b7&amp;originHeight=564&amp;originWidth=1170&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=246342&amp;status=done&amp;style=none&amp;taskId=u1566fa15-3c51-4923-a824-657ea0baaab&amp;title=&amp;width=1170" alt="image.png"></p>
+<p><strong>讨论</strong>：</p>
+<ul>
+<li>如何理解女朋友工作忙？</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670044039164-60221339-62e9-4b36-b2eb-3a062e402fd2.png#averageHue=%232a2a2a&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=194&amp;id=u90cfa898&amp;originHeight=194&amp;originWidth=1190&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=45039&amp;status=done&amp;style=none&amp;taskId=ua338869a-b701-4cd3-afb6-006bc55736b&amp;title=&amp;width=1190" alt="image.png"><br />看对方能不能给我信任感或者说安全感，这东西不是只有女生对男生才有的，男生也希望有，</p>
+<ul>
+<li>如何平衡生活</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670056571727-2be4ae76-be76-4211-9e0a-f7356368488b.png#averageHue=%23282828&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=196&amp;id=u5258d7cc&amp;originHeight=196&amp;originWidth=738&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=56082&amp;status=done&amp;style=none&amp;taskId=u01c87bd6-9508-4188-8d66-6c41aeafa54&amp;title=&amp;width=738" alt="image.png"></p>
+<p>曾经一个女生问我，我们两个在一起时候，如果都不说话，你会尴尬吗？</p>
+<ul>
+<li>我：会的，因为感觉不知所措，啥都不干总感觉怪怪的</li>
+<li>她：不会</li>
+<li>我：为啥呀？</li>
+</ul>
+<p>后面答案我都忘记了</p>
+<p>慢慢的慢慢的我才懂的，这个也许就是心安吧，如果一个人已经将你融入她的生活的时候，或者只要你在她身边她就感觉特别踏实的时候，这个人应该爱你很深吧
+<a name="qdbSc"></a></p>
+<h4 id="小结" tabindex="-1">小结 <a class="header-anchor" href="#小结" aria-label="Permalink to &quot;小结&quot;">&ZeroWidthSpace;</a></h4>
+<ul>
+<li>秋哥分享：</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670043627005-e6116cfb-2a27-4ec1-99b2-0b04ed83770d.png#averageHue=%23f5f5d5&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=69&amp;id=u0533e253&amp;originHeight=69&amp;originWidth=967&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=4588&amp;status=done&amp;style=none&amp;taskId=ucb8e76d0-aa3d-436d-b52a-3bcbefe0196&amp;title=&amp;width=967" alt="image.png"><br />我的总结：</p>
+<ul>
+<li>时间 ⏰ 和金钱 💰 缺一不可</li>
+<li>可能你遇到的人都比较现实，都是在试探，都是在权衡利弊，那些热烈的，勇敢的，专一的，你恐怕再也很难遇到</li>
+<li>“在失去的所有人中，我最怀念的是自己”</li>
+<li>聊聊我对感情看法</li>
+<li>我的感情史</li>
+</ul>
+<p>汤圆姐姐是不是单身这个问题？总感觉不像单身的人<br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670043168616-5490a924-7d5b-48aa-be3f-6a2223ff8717.png#averageHue=%23222222&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=282&amp;id=u2f591f42&amp;originHeight=282&amp;originWidth=732&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=66020&amp;status=done&amp;style=none&amp;taskId=u8b7ce7b2-219e-4f27-9c3b-b7ae7de14b8&amp;title=&amp;width=732" alt="image.png">
+<a name="y2FV2"></a></p>
+<h3 id="关于成长" tabindex="-1">关于成长 <a class="header-anchor" href="#关于成长" aria-label="Permalink to &quot;关于成长&quot;">&ZeroWidthSpace;</a></h3>
+<p><a name="K9mpF"></a></p>
+<h4 id="话题-1" tabindex="-1">话题 <a class="header-anchor" href="#话题-1" aria-label="Permalink to &quot;话题&quot;">&ZeroWidthSpace;</a></h4>
+<ul>
+<li>大多数巨大的转变都是靠我们用数百个微不足道、甚至难以察觉的一小步积累而来的</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670035920084-e4808d96-c1c1-4835-a9bb-03676aa24c60.png#averageHue=%23343538&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=259&amp;id=e1TXl&amp;originHeight=259&amp;originWidth=838&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=60685&amp;status=done&amp;style=none&amp;taskId=u5711c2b0-e95c-4d21-83b9-84d8bbdcd03&amp;title=&amp;width=838" alt="image.png"></p>
+<ul>
+<li>关于瓶颈</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670035585739-c1a6c632-873b-4003-a89d-01996bc5021f.png#averageHue=%231b1a1a&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=584&amp;id=uca414d20&amp;originHeight=584&amp;originWidth=758&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=110562&amp;status=done&amp;style=none&amp;taskId=u4a81a0cf-ee09-41e4-bee1-9840251f15f&amp;title=&amp;width=758" alt="image.png"></p>
+<ul>
+<li>关于坚持</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670056771189-20210b92-0ccc-4334-b5f7-a29a589e7aef.png#averageHue=%23303030&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=406&amp;id=u72e35cb8&amp;originHeight=406&amp;originWidth=712&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=118283&amp;status=done&amp;style=none&amp;taskId=u1f0842d6-0eac-427f-aa25-ba2e60641bb&amp;title=&amp;width=712" alt="image.png"></p>
+<ul>
+<li>方向很重要，但不是全部，有时候体验过程、享受过程也很美好</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670058807194-284252bd-9116-4d9a-b567-08259d6512f4.png#averageHue=%23353535&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=226&amp;id=ud40e1f96&amp;originHeight=226&amp;originWidth=1178&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=67576&amp;status=done&amp;style=none&amp;taskId=u06b6deef-6a5b-40dc-8ef1-2261cc49721&amp;title=&amp;width=1178" alt="image.png"></p>
+<ul>
+<li>延迟满足感、长期主义</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670058875701-9d46d472-3eb8-409f-8581-1b4dde376c06.png#averageHue=%232a2a29&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=142&amp;id=ud5a95017&amp;originHeight=142&amp;originWidth=966&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=33650&amp;status=done&amp;style=none&amp;taskId=uf4c8065c-e24d-4cb8-8774-3be97432ef6&amp;title=&amp;width=966" alt="image.png"></p>
+<ul>
+<li>把精力放在自己擅长的事情上</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670059309701-ccf9a9ef-8690-4f7b-9a10-7e5f8b835dd7.png#averageHue=%233e3e3e&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=742&amp;id=u31a98bc6&amp;originHeight=742&amp;originWidth=1194&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=314709&amp;status=done&amp;style=none&amp;taskId=u089bb5ab-4627-46a6-b73c-86b6b1b37a3&amp;title=&amp;width=1194" alt="image.png"></p>
+<ul>
+<li>关于团队目标</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670061372309-85d4a700-3cfc-4103-8e5f-74b0b669dd8e.png#averageHue=%23424242&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=514&amp;id=u0f40abb4&amp;originHeight=514&amp;originWidth=1182&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=233050&amp;status=done&amp;style=none&amp;taskId=u752fece2-e1d8-49f3-bc0b-a9ca0a716ef&amp;title=&amp;width=1182" alt="image.png"></p>
+<ul>
+<li>人的一生有三次成长</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670061418742-5e4c913f-15a8-4641-893f-a3b963cfddd9.png#averageHue=%233c3c3c&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=602&amp;id=uf20a8ec3&amp;originHeight=602&amp;originWidth=1184&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=353646&amp;status=done&amp;style=none&amp;taskId=ud45ec196-6376-4203-92d1-f9b3e55ec30&amp;title=&amp;width=1184" alt="image.png"></p>
+<ul>
+<li>关于做事</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670062363593-a6dd8e06-94a7-4800-bfa8-8640d299a665.png#averageHue=%233e3e3e&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=398&amp;id=u57059943&amp;originHeight=398&amp;originWidth=1184&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=168122&amp;status=done&amp;style=none&amp;taskId=u1c640fab-7c02-431a-a95f-db0705a6681&amp;title=&amp;width=1184" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670062483255-99886b09-7b55-4990-920a-e4b10d310256.png#averageHue=%23282827&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=618&amp;id=u60874304&amp;originHeight=618&amp;originWidth=1208&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=161480&amp;status=done&amp;style=none&amp;taskId=uff967215-92c8-4c0a-b6cd-6b164ebc7cd&amp;title=&amp;width=1208" alt="image.png"></p>
+<ul>
+<li>关于读书</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670063241514-77c6d1a6-42e1-442b-8913-ba6f4b2da310.png#averageHue=%23494949&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=1116&amp;id=ua2aa0289&amp;originHeight=1116&amp;originWidth=1186&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=566271&amp;status=done&amp;style=none&amp;taskId=u44f8fe55-74da-40bd-8abd-7aecd8697e5&amp;title=&amp;width=1186" alt="image.png"></p>
+<ul>
+<li>关于为人</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670063441400-f249c82d-85cc-416f-aa04-83e017748d28.png#averageHue=%232a2a2a&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=136&amp;id=u6a13edf1&amp;originHeight=136&amp;originWidth=818&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=28821&amp;status=done&amp;style=none&amp;taskId=u7fd256d9-d820-4b2c-aea1-7d8756d0a10&amp;title=&amp;width=818" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670063450750-bcd7008b-a3fa-49e8-a82a-a2318ba1ce26.png#averageHue=%232a2a29&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=140&amp;id=u240a4b39&amp;originHeight=140&amp;originWidth=1034&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=34822&amp;status=done&amp;style=none&amp;taskId=ubd6542dd-0556-4804-bd41-8b0139b64b0&amp;title=&amp;width=1034" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670063480503-8196d847-c17b-48ee-9cb6-8f0dabfbb5bd.png#averageHue=%23272726&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=156&amp;id=u8ff891c2&amp;originHeight=156&amp;originWidth=600&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=27564&amp;status=done&amp;style=none&amp;taskId=u4b9b2ef4-5c3a-44c4-aab5-41be5767939&amp;title=&amp;width=600" alt="image.png"></p>
+<p><a name="P2hva"></a></p>
+<h4 id="小结-1" tabindex="-1">小结 <a class="header-anchor" href="#小结-1" aria-label="Permalink to &quot;小结&quot;">&ZeroWidthSpace;</a></h4>
+<ul>
+<li>泰戈尔说：顺境也好，逆境也好，人生就是一场对种种困难无尽无休的斗争，一场以寡敌众的战斗。我们都是生活的长跑者，怀揣梦想，步履铿锵，结伴而行</li>
+<li>遇事不决，可问春风，春风不语，既随本心</li>
+<li>猪猪分享给我的：</li>
+</ul>
+<div class="info custom-block"><p class="custom-block-title">INFO</p>
+<p>人生就是如此的波澜万丈，永远不知道将来会发生什么。即会有令人羡慕的幸运降临，也会遭遇始料未及的失败和考验。然而，决定人生的并非好远或厄运。越是艰难困苦，越不能丧失美好的希望；而在成功时，不可忘记感谢之心、谦虚之心；保持积极向上的姿态，从自己当下能做的事开始，聚精会神，全力以赴。人只要有这种心态，任何时候都可以重振旗鼓。<br />——稻盛和夫</p>
+</div>
+<ul>
+<li>脱口秀大赛冠军呼兰的那种人生态度：不顾一切，冲上去，赢一次。我们活一辈子，总得在某个方面，痛痛快快做成一件事吧</li>
+</ul>
+<div class="info custom-block"><p class="custom-block-title">INFO</p>
+<p>没有人可以永远站在顶峰，即使你可以做到居安思危、未雨绸缪，但是你身边全部都是和你当年一样充满野心充满激情和渴望的年轻人，他们把你的长处和短处放在显微镜下去研究以你为镖靶，你说你守天下难不难。</p>
+<p>人生当中成功只是一时的，失败才是主旋律，但是如何面对失败却把人分成不同样子，有的人会被失败击垮有的人会爬起来继续前进，我想真正的成熟应该不是追求与完美而是直面自己的缺陷，这才是生活的本质。</p>
+<p>罗曼罗兰说过的这个世上只有一种正真的英雄主义，那就是认清生活的真相并且仍然热爱它！</p>
+</div>
+<p><a name="OEiF4"></a></p>
+<h3 id="关于朋友" tabindex="-1">关于朋友 <a class="header-anchor" href="#关于朋友" aria-label="Permalink to &quot;关于朋友&quot;">&ZeroWidthSpace;</a></h3>
+<p><a name="P1OKf"></a></p>
+<h4 id="话题-2" tabindex="-1">话题 <a class="header-anchor" href="#话题-2" aria-label="Permalink to &quot;话题&quot;">&ZeroWidthSpace;</a></h4>
+<ul>
+<li>人格魅力：</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670037490918-4d11aa4b-a33b-4feb-b40c-d737e0962a3c.png#averageHue=%232c2c2c&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=848&amp;id=uf1418509&amp;originHeight=848&amp;originWidth=732&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=228159&amp;status=done&amp;style=none&amp;taskId=u2fb81e79-a216-435d-a01f-ba1e9b050cd&amp;title=&amp;width=732" alt="image.png"></p>
+<ul>
+<li>给人印象：</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670037557654-8b899970-53a3-4546-8a25-26d92243ca24.png#averageHue=%231f1f1e&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=144&amp;id=ufdf30611&amp;originHeight=144&amp;originWidth=730&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=32847&amp;status=done&amp;style=none&amp;taskId=u110e071a-3d64-46d1-b287-daed9925028&amp;title=&amp;width=730" alt="image.png"></p>
+<ul>
+<li>如何衡量开玩笑的度：</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670040540498-218e40bc-823f-4636-8778-1d6fc72879ab.png#averageHue=%23272726&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=768&amp;id=u7ea30f21&amp;originHeight=768&amp;originWidth=746&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=192340&amp;status=done&amp;style=none&amp;taskId=u652c79fe-13ce-4d44-96ce-7bd3d023997&amp;title=&amp;width=746" alt="image.png"></p>
+<ul>
+<li>小朋友记忆：</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670041274032-4100cd2c-0774-476b-a8ef-1f0bdc9377b5.png#averageHue=%232f2f2f&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=404&amp;id=u7e2ef702&amp;originHeight=404&amp;originWidth=718&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=112502&amp;status=done&amp;style=none&amp;taskId=ud56b65cd-cd8c-4822-9229-7870f78dfd6&amp;title=&amp;width=718" alt="image.png"><br />如果跟一群相处的好的朋友在一起，可以放下自由和约束，不用怕行为处事得罪人，哪怕得罪了也可以道个歉，一笑泯恩仇。喜欢这样状态的自己，而不是戴着面具做人，不是真实的自己，当然因为身不由己或者我们都忘记那个内心最真实的自己是什么样子了</p>
+<ul>
+<li>如何看待脾气好的人</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670057898548-582bc4df-4cc9-47d8-852d-1a13dbc78071.png#averageHue=%23262525&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=252&amp;id=u7818d6d9&amp;originHeight=252&amp;originWidth=1176&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=53885&amp;status=done&amp;style=none&amp;taskId=udee39f27-2fc8-4de8-ac00-04000b5b723&amp;title=&amp;width=1176" alt="image.png"></p>
+<ul>
+<li>关于夸羽哥</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670062002524-1f0b81f1-973e-4080-916f-7f128d8dc43f.png#averageHue=%232b2a2a&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=138&amp;id=uba112bac&amp;originHeight=138&amp;originWidth=876&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=32335&amp;status=done&amp;style=none&amp;taskId=ue818579c-73bd-4024-aeb2-b662e53f852&amp;title=&amp;width=876" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670063053810-46559589-b379-4723-9982-a6847e8b493a.png#averageHue=%23272727&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=150&amp;id=ufe97c976&amp;originHeight=150&amp;originWidth=852&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=32921&amp;status=done&amp;style=none&amp;taskId=udea23187-333e-41d8-8bc7-b2af9d5bb4b&amp;title=&amp;width=852" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670063516043-d1eb8ace-4f87-4886-ba5b-ae618b404f56.png#averageHue=%23292828&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=144&amp;id=u0f840913&amp;originHeight=144&amp;originWidth=910&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=32387&amp;status=done&amp;style=none&amp;taskId=ubf45ccfd-349f-4056-9a4a-73a662e692b&amp;title=&amp;width=910" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670063536404-00b17d15-78fa-49df-80a4-3e3ae7a6c4a7.png#averageHue=%232c2b2b&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=136&amp;id=u4d5dee39&amp;originHeight=136&amp;originWidth=578&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=24545&amp;status=done&amp;style=none&amp;taskId=u89a806d8-f4e1-4f02-aa18-f357ae72b18&amp;title=&amp;width=578" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064051561-ca2036e0-15b9-4ad6-9007-8f8df8124e98.png#averageHue=%23292929&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=146&amp;id=uead17667&amp;originHeight=146&amp;originWidth=1040&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=37334&amp;status=done&amp;style=none&amp;taskId=u1667ef9d-cac5-43a4-8364-f521e64a8fa&amp;title=&amp;width=1040" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064100046-7fb86884-6f50-48fe-aa47-27845ac5f1e4.png#averageHue=%233e3e3e&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=386&amp;id=uac6e547f&amp;originHeight=386&amp;originWidth=1176&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=157865&amp;status=done&amp;style=none&amp;taskId=uc14c8b19-b8e7-4b58-a077-57473c3e3c9&amp;title=&amp;width=1176" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064253650-2d4746d5-8143-4ae2-8ad8-afb0ec121f95.png#averageHue=%23272727&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=198&amp;id=u63e51fc5&amp;originHeight=198&amp;originWidth=1192&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=55127&amp;status=done&amp;style=none&amp;taskId=u42e765bb-6519-469f-9e89-4b8fcee48bd&amp;title=&amp;width=1192" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064352580-804d6030-12b6-4976-87e6-12419dd2e9c4.png#averageHue=%231e1d1c&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=398&amp;id=u20e61468&amp;originHeight=398&amp;originWidth=576&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=91055&amp;status=done&amp;style=none&amp;taskId=uab2ffd50-1076-4ec7-a39a-27afcdd16ef&amp;title=&amp;width=576" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064376975-cc273689-e3f9-4ef9-9168-f939d6f1f518.png#averageHue=%232a2929&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=148&amp;id=u325bf6a4&amp;originHeight=148&amp;originWidth=1188&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=40385&amp;status=done&amp;style=none&amp;taskId=ub80cdef4-c1e7-45e7-bbe1-4d46272b995&amp;title=&amp;width=1188" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064392536-83426fe2-2bde-4d46-b503-0fe6ebf4fa9a.png#averageHue=%232a2929&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=146&amp;id=uf707e2d1&amp;originHeight=146&amp;originWidth=788&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=31621&amp;status=done&amp;style=none&amp;taskId=u76b6018b-bc99-4536-89b9-64538e3d910&amp;title=&amp;width=788" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064411004-a5a3bd28-5eee-4dca-97bd-560a915c86c0.png#averageHue=%232f2f2e&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=130&amp;id=u7b76b203&amp;originHeight=130&amp;originWidth=888&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=32212&amp;status=done&amp;style=none&amp;taskId=u92d69e3c-c21a-4e6f-8be6-0a70d6a53e9&amp;title=&amp;width=888" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064438004-201a3fb3-a716-4c64-a6c8-eb1f3c46cc5a.png#averageHue=%232b2a2a&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=140&amp;id=uca4796a9&amp;originHeight=140&amp;originWidth=778&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=29660&amp;status=done&amp;style=none&amp;taskId=u7dcdea3a-8625-4e25-a4ac-6db676b1da8&amp;title=&amp;width=778" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064471577-550f9496-7a65-4548-ae2b-1b934eeffc0a.png#averageHue=%23282827&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=186&amp;id=ua4abb79b&amp;originHeight=186&amp;originWidth=1210&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=52706&amp;status=done&amp;style=none&amp;taskId=u19f98a0d-a84d-41ac-abef-4bac881947a&amp;title=&amp;width=1210" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064505826-6d98cf7c-c057-4b89-8c1e-a633a82b4187.png#averageHue=%23262524&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=590&amp;id=ud3df1bf1&amp;originHeight=590&amp;originWidth=624&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=101440&amp;status=done&amp;style=none&amp;taskId=ucaaafd72-3921-465e-b761-9021a3e2b34&amp;title=&amp;width=624" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064529509-77a5cab6-d376-4acb-9957-b9c55d1102d4.png#averageHue=%232a2a29&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=152&amp;id=ub63073a1&amp;originHeight=152&amp;originWidth=662&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=28047&amp;status=done&amp;style=none&amp;taskId=u72b10f7d-1270-467e-85f1-61dd7f25fda&amp;title=&amp;width=662" alt="image.png"></p>
+<p>夸秃头的：<br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670063106175-d84e022e-8545-4a02-957f-1f2610019e70.png#averageHue=%23252524&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=152&amp;id=uae372fbe&amp;originHeight=152&amp;originWidth=580&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=29285&amp;status=done&amp;style=none&amp;taskId=u6ba0da7c-9421-4d9e-bade-591b367bbae&amp;title=&amp;width=580" alt="image.png"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670063359382-efab8f69-4a34-463e-bf13-f63c5268bf3c.png#averageHue=%23292828&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=142&amp;id=u4fc5addd&amp;originHeight=142&amp;originWidth=1158&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=36688&amp;status=done&amp;style=none&amp;taskId=u4b7925b7-b5ad-411e-8e70-50c3641759a&amp;title=&amp;width=1158" alt="image.png"></p>
+<ul>
+<li>关于道歉</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670062161034-8ec0d118-6660-45dc-9a6c-84faea29404b.png#averageHue=%23272727&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=234&amp;id=u302317d3&amp;originHeight=234&amp;originWidth=848&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=58131&amp;status=done&amp;style=none&amp;taskId=u6efd5c6c-a5a3-42ae-b37d-e3bf8491729&amp;title=&amp;width=848" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670062221879-699437d4-4a27-488e-81b5-a575880c00c1.png#averageHue=%232e2d2d&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=176&amp;id=u50ec829b&amp;originHeight=176&amp;originWidth=1186&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=49732&amp;status=done&amp;style=none&amp;taskId=ub42be1f1-1d6a-4a4f-a973-de323e48a76&amp;title=&amp;width=1186" alt="image.png">
+<a name="cGIWH"></a></p>
+<h4 id="小结-2" tabindex="-1">小结 <a class="header-anchor" href="#小结-2" aria-label="Permalink to &quot;小结&quot;">&ZeroWidthSpace;</a></h4>
+<ul>
+<li>聊聊我想成为的什么样的人
+<a name="F03dC"></a></li>
+</ul>
+<h3 id="关于职场" tabindex="-1">关于职场 <a class="header-anchor" href="#关于职场" aria-label="Permalink to &quot;关于职场&quot;">&ZeroWidthSpace;</a></h3>
+<p>非常认同汤圆讲到的一句话：<strong>讲这个职场问题，是想大家能够从不同角度去思考问题</strong></p>
+<p><a name="gOPZg"></a></p>
+<h4 id="话题-3" tabindex="-1">话题 <a class="header-anchor" href="#话题-3" aria-label="Permalink to &quot;话题&quot;">&ZeroWidthSpace;</a></h4>
+<ul>
+<li>职场关系如何处理</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670037664254-7ea1d155-8092-4840-9a25-5a4af382cf62.png#averageHue=%231e1d1d&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=388&amp;id=uf4e6bdff&amp;originHeight=388&amp;originWidth=736&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=88481&amp;status=done&amp;style=none&amp;taskId=ucfd250c4-f929-41cc-a4c8-bb7eacaa206&amp;title=&amp;width=736" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670060523341-8d7e8599-5123-4707-a18f-03984057799e.png#averageHue=%23333333&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=232&amp;id=u8ee41370&amp;originHeight=232&amp;originWidth=1182&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=75381&amp;status=done&amp;style=none&amp;taskId=u6527e164-4ebb-4646-89e3-416fc5fbeeb&amp;title=&amp;width=1182" alt="image.png"></p>
+<ul>
+<li>职场情景模拟：年度总结跟领导汇报怎么写</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670037822681-9e927a19-ffb2-4a0c-8774-3dc09edba00d.png#averageHue=%23292828&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=928&amp;id=u7ab56171&amp;originHeight=928&amp;originWidth=738&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=247642&amp;status=done&amp;style=none&amp;taskId=u9ae3958d-5f72-498e-b4a0-7a8e391bd16&amp;title=&amp;width=738" alt="image.png"></p>
+<ul>
+<li>职场情景模拟：领导层会议复盘让你发言</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670038190872-fc6a9596-9017-43d9-9b82-e5feaf919fd3.png#averageHue=%232a2a2a&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=1201&amp;id=ue60b172f&amp;originHeight=1214&amp;originWidth=738&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=330391&amp;status=done&amp;style=none&amp;taskId=u30cac11a-be61-46fc-979b-bf9427cefa8&amp;title=&amp;width=730" alt="image.png"><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670038264773-d0787cfc-c7e5-4f2e-8b05-425943f9b934.png#averageHue=%232d2d2d&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=570&amp;id=ud7387937&amp;originHeight=572&amp;originWidth=734&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=170899&amp;status=done&amp;style=none&amp;taskId=u3cb2d579-59dc-489a-9b56-db49fbf10c9&amp;title=&amp;width=731" alt="image.png"></p>
+<ul>
+<li>职场情景模拟：饭局领导支开你</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670038762086-8b2c4081-7b1c-4338-afd1-14e53a72da9c.png#averageHue=%23252525&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=982&amp;id=uf3b9dccf&amp;originHeight=982&amp;originWidth=740&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=244696&amp;status=done&amp;style=none&amp;taskId=ue9f05f0e-ef9d-4ae2-9e4f-d13efc14be3&amp;title=&amp;width=740" alt="image.png"></p>
+<ul>
+<li>职场情景模拟：领导落下杯子在你工位上</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670039438189-0f3d7efd-0cc7-466f-8234-3ee0d04b49d7.png#averageHue=%232f2f2e&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=1092&amp;id=u83aa52b4&amp;originHeight=1092&amp;originWidth=756&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=322506&amp;status=done&amp;style=none&amp;taskId=u05f907e4-1cf5-41f6-8b1b-62ca37a0bfe&amp;title=&amp;width=756" alt="image.png"></p>
+<ul>
+<li>关于工作</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670059188617-85decade-b084-456e-845a-c9a993c3b372.png#averageHue=%232a2a2a&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=640&amp;id=u7e361c63&amp;originHeight=640&amp;originWidth=1186&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=185209&amp;status=done&amp;style=none&amp;taskId=ud00c39b3-947c-4c6a-9c1b-c938631772e&amp;title=&amp;width=1186" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670059671070-206e5b51-afbb-4f29-a5e9-dbd01e45112f.png#averageHue=%23292929&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=194&amp;id=udd1d986c&amp;originHeight=194&amp;originWidth=1184&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=42317&amp;status=done&amp;style=none&amp;taskId=udea6131d-33ed-4d06-bcc0-1b8362fecd1&amp;title=&amp;width=1184" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670059725538-c61a1b7b-b9e6-4565-bfed-5126ef6b7d9a.png#averageHue=%23353535&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=274&amp;id=u2cb7b75f&amp;originHeight=274&amp;originWidth=1182&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=91628&amp;status=done&amp;style=none&amp;taskId=u103fa44f-a8fb-41bc-bc40-a1b1ebd7c4b&amp;title=&amp;width=1182" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670062546696-07cb88a1-0a8f-4241-9076-a7d204a2641a.png#averageHue=%23313131&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=220&amp;id=u76e8d2d7&amp;originHeight=220&amp;originWidth=1178&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=97104&amp;status=done&amp;style=none&amp;taskId=u2a55e4d8-c60a-4128-87f5-6e105ad5cdd&amp;title=&amp;width=1178" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670063643988-ec343ec2-91c3-44a4-88e1-cb95d45dd9ca.png#averageHue=%23323232&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=238&amp;id=u68ced94d&amp;originHeight=238&amp;originWidth=1204&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=77890&amp;status=done&amp;style=none&amp;taskId=u07a77c7d-10d2-4171-ad75-225e85c7af9&amp;title=&amp;width=1204" alt="image.png"></p>
+<ul>
+<li>关于职场交朋友</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670062294315-2847d888-1e98-4cf2-84a4-4e7cc5456f42.png#averageHue=%23434342&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=556&amp;id=u7b75e93e&amp;originHeight=556&amp;originWidth=1200&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=252746&amp;status=done&amp;style=none&amp;taskId=u28d1d52a-8669-4e75-b24c-87cc074d84d&amp;title=&amp;width=1200" alt="image.png"></p>
+<ul>
+<li>关于做事经历</li>
+</ul>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670062963595-d9188b87-bec1-4e6d-900c-0c87f66862d5.png#averageHue=%23454545&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=762&amp;id=u3ea20881&amp;originHeight=762&amp;originWidth=1186&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=359681&amp;status=done&amp;style=none&amp;taskId=ub23717bd-4afb-40a1-9cef-41b7a9f5a2c&amp;title=&amp;width=1186" alt="image.png">
+<a name="w6tCK"></a></p>
+<h4 id="小结-3" tabindex="-1">小结 <a class="header-anchor" href="#小结-3" aria-label="Permalink to &quot;小结&quot;">&ZeroWidthSpace;</a></h4>
+<p>...</p>
+<p>两个点：</p>
+<ul>
+<li>跟对人永远比做对事重要</li>
+<li>大悟之人，知世故而不世故</li>
+</ul>
+<p><a name="SVkR1"></a></p>
+<h2 id="最后我想说" tabindex="-1">最后我想说 <a class="header-anchor" href="#最后我想说" aria-label="Permalink to &quot;最后我想说&quot;">&ZeroWidthSpace;</a></h2>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670076401534-1b219595-754e-4eaf-bc0a-4a1d22d74c53.png#averageHue=%23e6cb8c&amp;clientId=u3bd1c600-123a-4&amp;from=paste&amp;height=510&amp;id=udeb55c85&amp;originHeight=510&amp;originWidth=1234&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=186185&amp;status=done&amp;style=none&amp;taskId=u2b89ecee-7d0f-4da3-994e-350c64750df&amp;title=&amp;width=1234" alt="image.png"></p>
+<ul>
+<li>得学会摸鱼，不然会错过很多话题讨论，哈哈哈，很有意思的</li>
+<li>玉伯：历史总是在经历时苦逼不堪，但在回忆时激荡不已</li>
+<li>一无是处、人间清醒</li>
+</ul>
+<p>认识到自己的无知，认识到自己的渺小，然后保持清醒的头脑，向前冲</p>
+<p>臭不要脸的我，毛遂自荐一下我的语雀数字花园，虽然很多还没怎么写，但我已经规划好要怎么写了，而且我是将 21 天社群作为我的第一批读者用户，给自己 3 个月的时间全力以赴维护好语雀内容<br /><a href="https://www.yuque.com/super456?view=doc_embed" target="_blank" rel="noreferrer">纵倾童鞋🐯</a></p>
+<p>借用姐姐的话结束本次分享：<br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670056703166-1a40af80-5cd5-4645-8c89-01d07001b843.png#averageHue=%232a2a29&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=184&amp;id=u84a8841d&amp;originHeight=184&amp;originWidth=1196&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=63004&amp;status=done&amp;style=none&amp;taskId=u121eab1a-2eff-470b-81f4-12381e3e9b3&amp;title=&amp;width=1196" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670062631193-449d7fea-0ac1-4341-ad83-15196851c420.png#averageHue=%232b2a2a&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=368&amp;id=uab43ccd0&amp;originHeight=368&amp;originWidth=530&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=60442&amp;status=done&amp;style=none&amp;taskId=ubd446248-cf68-4ef9-9b1d-4c6a701bfba&amp;title=&amp;width=530" alt="image.png"></p>
+<p>也许接下来的某一天我们正如姐姐所说会难受吧<br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670057138347-8a1630f0-7d03-4955-b7d1-149bfb6ec125.png#averageHue=%23292828&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=150&amp;id=ub8eb4fb4&amp;originHeight=150&amp;originWidth=860&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=34183&amp;status=done&amp;style=none&amp;taskId=u93772c79-ed2e-492a-8ad6-9896e5c00a5&amp;title=&amp;width=860" alt="image.png"><br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670061499200-211e148f-0452-408f-beab-1636afea76c6.png#averageHue=%23302f2f&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=186&amp;id=ube9fd88b&amp;originHeight=186&amp;originWidth=1176&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=60789&amp;status=done&amp;style=none&amp;taskId=uaf8423a4-c864-4a30-b661-d87658b5d3d&amp;title=&amp;width=1176" alt="image.png"></p>
+<p>期待这句话是真的<br /><img src="https://cdn.nlark.com/yuque/0/2022/png/245110/1670058188603-0e7f5379-37bf-4550-aba4-d53197714d02.png#averageHue=%232a2929&amp;clientId=u46e8d9ee-889a-4&amp;from=paste&amp;height=142&amp;id=u8347ed6f&amp;originHeight=142&amp;originWidth=1130&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;size=36822&amp;status=done&amp;style=none&amp;taskId=u3fefc6b4-fa82-4ea5-9192-2d6aedb09ac&amp;title=&amp;width=1130" alt="image.png"></p>
+<p>姐姐的语雀主页，冲啊关注起来~😘<br /><a href="https://www.yuque.com/yuqueyonghudydw3w?view=doc_embed" target="_blank" rel="noreferrer">汤圆想躺平</a>
+<a name="mz0FR"></a></p>
+<h2 id="群友相关文档" tabindex="-1">群友相关文档 <a class="header-anchor" href="#群友相关文档" aria-label="Permalink to &quot;群友相关文档&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>小七</li>
+</ul>
+<p><a href="https://www.yuque.com/ggbdpq/nice-people/tangyuan?view=doc_embed" target="_blank" rel="noreferrer">汤圆的习惯养成打卡</a><br /><a href="https://www.yuque.com/ggbdpq/nice-people/important-events?view=doc_embed" target="_blank" rel="noreferrer">好青年社群</a></p>
+<ul>
+<li>猪猪</li>
+</ul>
+<p><a href="https://www.yuque.com/zhuzhu-lr3z5/magic_pinkpiggy/lc0p7nw7qkckq8zv?view=doc_embed" target="_blank" rel="noreferrer">汤圆老师 —— 每天一颗善存片</a><br /><a href="https://www.yuque.com/zhuzhu-lr3z5/magic_pinkpiggy/kb8rkaskgfbxe4zk?view=doc_embed" target="_blank" rel="noreferrer">“关于我要成为什么样的人”</a></p>
+<h2 id="原茶话会分享音频" tabindex="-1">原茶话会分享音频 <a class="header-anchor" href="#原茶话会分享音频" aria-label="Permalink to &quot;原茶话会分享音频&quot;">&ZeroWidthSpace;</a></h2>
+<p><a href="https://www.yuque.com/yayu/nice-people/share10#iybix" target="_blank" rel="noreferrer">语雀文档</a></p>
+]]></content:encoded>
+            <enclosure url="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064729042-ad1afb3e-00ce-4c54-97aa-16beb85f7034.png#averageHue=%232a2929&clientId=u46e8d9ee-889a-4&from=paste&height=140&id=uf3a04606&originHeight=140&originWidth=692&originalType=binary&ratio=1&rotation=0&showTitle=false&size=26211&status=done&style=none&taskId=ufb0564e6-46cf-4f6a-85cc-ad3008aa9bd&title=&width=692" length="0" type="image/png"/>
         </item>
         <item>
             <title><![CDATA[第 11 本《福格行为模型》]]></title>
