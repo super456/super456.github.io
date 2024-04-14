@@ -24,7 +24,7 @@ function zhaohuaxishiSidebarGuide() {
   return [
     {
       text: '2024 年',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '第 48 本《我想偶尔停一会儿》', link: '/2024/woxiangouertingyihuier' },
         { text: '第 47 本《牧羊少年奇幻之旅》', link: '/2024/muyangshaonianqihuanzhilu' },
@@ -40,13 +40,13 @@ function zhaohuaxishiSidebarGuide() {
         { text: '第 37 本《半小时漫画中国史 0》', link: '/2024/banxiaoshimanhuazhongguoshi0' },
         { text: '第 36 本《第一次活，请多指教》', link: '/2024/diyicihuoqingduozhijiao' },
         { text: '第 35 本《我在北京送快递》', link: '/2024/wozaibeijingsongkuaidi' },
+        { text: '第 34 本《人间值得》', link: '/2024/renjianzhide' },
       ],
     },
     {
       text: '2023 年',
-      collapsed: false,
+      collapsed: true,
       items: [
-        { text: '第 34 本《人间值得》', link: '/2023/renjianzhide' },
         { text: '第 33 本《快乐一天是一天》', link: '/2023/kuaileyitianshiyitian' },
         { text: '第 32 本《带壳的牡蛎是大人的心脏》', link: '/2023/daikedemulishidarendexinzang' },
         { text: '第 31 本《就是想看你笑的样子》', link: '/2023/jiushixiangkannixiaodeyangzi' },
