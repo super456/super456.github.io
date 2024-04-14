@@ -1,0 +1,20 @@
+{
+	"创建夜航西飞配置模版": {
+		"prefix": "yehangxifei",
+		"body": [
+			"---",
+			"title: 文章标题(string)",
+			"description: 描述文章信息(string)",
+			"# date: 单独设置发布时间，默认使用 Git 最后文件修改时间(date|false)",
+      "cover: /random-thought/2024/xxth.webp",
+			"tags:",
+			" - 2024",
+			" - 生活与工作",
+			"categories:",
+			" - 夜航西飞",
+			"---",
+			"# 这个是文章标题一定要写，不然标题信息不展示"
+		],
+		"description": "创建夜航西飞配置模版"
+	}
+}
