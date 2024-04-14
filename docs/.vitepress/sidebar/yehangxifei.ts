@@ -12,7 +12,9 @@ export default function yehangxifeiSidebarGuide() {
       text: '好青年 21 天训练营',
       collapsed: true,
       items: [
-        { text: '参加 7 期总结', link: '/2023/camp-7-summary' },
+        { text: '参加 7 期训练营总结', link: '/2023/camp-7-summary' },
+        { text: '第十一期训练营茶话会分享', link: '/2023/camp-11th-share' },
+        { text: '第十期训练营茶话会分享', link: '/2022/camp-10th-share' },
         { text: '第七期训练营茶话会分享', link: '/2022/camp-7th-share' },
         { text: '第七期训练营总结', link: '/2022/camp-7th-summary' },
       ],
