@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Sat, 13 Apr 2024 16:45:24 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 14 Apr 2024 00:17:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -14,6 +14,20 @@
             <link>https://super456.github.io</link>
         </image>
         <copyright>Copyright (c) 2024-present, 纵倾童鞋</copyright>
+        <item>
+            <title><![CDATA[第 32 本《雪中悍刀行》]]></title>
+            <link>https://super456.github.io/posts/read-book/2024/32th.html</link>
+            <guid>https://super456.github.io/posts/read-book/2024/32th.html</guid>
+            <pubDate>Sun, 14 Apr 2024 00:16:24 GMT</pubDate>
+            <description><![CDATA[该小说讲述一个关于庙堂权争与刀剑交错的时代，一个暗潮涌动粉墨登场的江湖。]]></description>
+            <content:encoded><![CDATA[<h1 id="第-32-本《雪中悍刀行》" tabindex="-1">第 32 本《雪中悍刀行》 <a class="header-anchor" href="#第-32-本《雪中悍刀行》" aria-label="Permalink to &quot;第 32 本《雪中悍刀行》&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="简介" tabindex="-1">简介 <a class="header-anchor" href="#简介" aria-label="Permalink to &quot;简介&quot;">&ZeroWidthSpace;</a></h2>
+<p>该小说讲述一个关于庙堂权争与刀剑交错的时代，一个暗潮涌动粉墨登场的江湖。</p>
+<h2 id="感悟" tabindex="-1">感悟 <a class="header-anchor" href="#感悟" aria-label="Permalink to &quot;感悟&quot;">&ZeroWidthSpace;</a></h2>
+<p>24 年 1 月 26 日开始阅读...</p>
+]]></content:encoded>
+            <enclosure url="https://super456.github.io/read-book/2024/32th.webp" length="0" type="image/webp"/>
+        </item>
         <item>
             <title><![CDATA[第 39 本《牧羊少年奇幻之旅》]]></title>
             <link>https://super456.github.io/posts/read-book/2024/39th.html</link>
@@ -46,7 +60,7 @@
 <li>生活对追随自己天命的人很慷慨。</li>
 </ul>
 ]]></content:encoded>
-            <enclosure url="https://super456.github.io/static/2024/39th.webp" length="0" type="image/webp"/>
+            <enclosure url="https://super456.github.io/read-book/2024/39th.webp" length="0" type="image/webp"/>
         </item>
         <item>
             <title><![CDATA[朝花夕拾]]></title>
@@ -69,20 +83,6 @@
             <pubDate>Sat, 13 Apr 2024 16:44:20 GMT</pubDate>
         </item>
         <item>
-            <title><![CDATA[第 32 本《雪中悍刀行》]]></title>
-            <link>https://super456.github.io/posts/read-book/2024/32th.html</link>
-            <guid>https://super456.github.io/posts/read-book/2024/32th.html</guid>
-            <pubDate>Sat, 13 Apr 2024 16:44:20 GMT</pubDate>
-            <description><![CDATA[该小说讲述一个关于庙堂权争与刀剑交错的时代，一个暗潮涌动粉墨登场的江湖。]]></description>
-            <content:encoded><![CDATA[<h1 id="第-32-本《雪中悍刀行》" tabindex="-1">第 32 本《雪中悍刀行》 <a class="header-anchor" href="#第-32-本《雪中悍刀行》" aria-label="Permalink to &quot;第 32 本《雪中悍刀行》&quot;">&ZeroWidthSpace;</a></h1>
-<h2 id="简介" tabindex="-1">简介 <a class="header-anchor" href="#简介" aria-label="Permalink to &quot;简介&quot;">&ZeroWidthSpace;</a></h2>
-<p>该小说讲述一个关于庙堂权争与刀剑交错的时代，一个暗潮涌动粉墨登场的江湖。</p>
-<h2 id="感悟" tabindex="-1">感悟 <a class="header-anchor" href="#感悟" aria-label="Permalink to &quot;感悟&quot;">&ZeroWidthSpace;</a></h2>
-<p>24 年 1 月 26 日开始阅读...</p>
-]]></content:encoded>
-            <enclosure url="https://super456.github.io/static/2024/32th.webp" length="0" type="image/webp"/>
-        </item>
-        <item>
             <title><![CDATA[第 40 本《我想偶尔停一会儿》]]></title>
             <link>https://super456.github.io/posts/read-book/2024/40th.html</link>
             <guid>https://super456.github.io/posts/read-book/2024/40th.html</guid>
@@ -99,7 +99,7 @@
 <h2 id="感悟" tabindex="-1">感悟 <a class="header-anchor" href="#感悟" aria-label="Permalink to &quot;感悟&quot;">&ZeroWidthSpace;</a></h2>
 <p>有被作者感动到，忙忙碌碌，柴米油盐，无论工作还是生活，太累了的话，就停一下吧。我们一直想要成为自己理想中的样子，却一直活成自己讨厌的样子。有时候，停下来看看，休息一会，多欣赏路边的风景，做自己喜欢的事，没有那么多的烦恼。原来我看不懂的不是这个世界，而是自己，你想活出怎样的人生？答案在心里，不虚此生，请尽兴而行😁</p>
 ]]></content:encoded>
-            <enclosure url="https://super456.github.io/static/2024/40th.webp" length="0" type="image/webp"/>
+            <enclosure url="https://super456.github.io/read-book/2024/40th.webp" length="0" type="image/webp"/>
         </item>
         <item>
             <title><![CDATA[前端导航]]></title>
@@ -289,7 +289,7 @@
 <h2 id="感悟" tabindex="-1">感悟 <a class="header-anchor" href="#感悟" aria-label="Permalink to &quot;感悟&quot;">&ZeroWidthSpace;</a></h2>
 <p>看到了作者40岁谈男朋友到42岁生下女儿👧🏻，一家人👪甜甜美美，充满陪伴和自己做美食的幸福感不言而喻呀。感受到另一半对自己的，对这个家庭的付出是多么重要，特别对于一个男人👨🏻来说，需要更努力的做好经营这个家庭呢</p>
 ]]></content:encoded>
-            <enclosure url="https://super456.github.io/static/2024/37th.webp" length="0" type="image/webp"/>
+            <enclosure url="https://super456.github.io/read-book/2024/37th.webp" length="0" type="image/webp"/>
         </item>
         <item>
             <title><![CDATA[第 38 本《悉达多》]]></title>
@@ -313,7 +313,7 @@
 <p>总之，让我感受最深的就是“在我们人生的进度条上都会经历一段迷茫又慌乱的时期，认清是一个过程，或早或晚，认清所处的世界不难，认清内心的自己才是一辈子的课题吧。”和“你的心灵就是整个世界，然而，真正的自我究竟在哪里？”所以，我们是否应该努力认识自己，探求自我内心世界的快感呢？
 当然，也可以像悉达多说的那样：“我曾质疑很多东西，可现在我只需要用爱来看待世间一切事物。”</p>
 ]]></content:encoded>
-            <enclosure url="https://super456.github.io/static/2024/38th.webp" length="0" type="image/webp"/>
+            <enclosure url="https://super456.github.io/read-book/2024/38th.webp" length="0" type="image/webp"/>
         </item>
         <item>
             <link>https://super456.github.io/posts/growth-record/</link>
@@ -338,7 +338,7 @@
 <h2 id="感悟" tabindex="-1">感悟 <a class="header-anchor" href="#感悟" aria-label="Permalink to &quot;感悟&quot;">&ZeroWidthSpace;</a></h2>
 <p>没有那么多大道理鸡汤，但也会让你积极向上，享受人生，让自己微笑如花灿烂</p>
 ]]></content:encoded>
-            <enclosure url="https://super456.github.io/static/2024/36th.webp" length="0" type="image/webp"/>
+            <enclosure url="https://super456.github.io/read-book/2024/36th.webp" length="0" type="image/webp"/>
         </item>
         <item>
             <title><![CDATA[第 35 本《胖虎下山》]]></title>
@@ -355,7 +355,7 @@
 <h2 id="感悟" tabindex="-1">感悟 <a class="header-anchor" href="#感悟" aria-label="Permalink to &quot;感悟&quot;">&ZeroWidthSpace;</a></h2>
 <p>胖虎萌虎，万物皆可胖虎，可可爱爱的，哈哈哈😁</p>
 ]]></content:encoded>
-            <enclosure url="https://super456.github.io/static/2024/35th.webp" length="0" type="image/webp"/>
+            <enclosure url="https://super456.github.io/read-book/2024/35th.webp" length="0" type="image/webp"/>
         </item>
         <item>
             <title><![CDATA[第 34 本《程序员的 README》]]></title>
@@ -376,7 +376,7 @@
 <p>还有其他方面也是很不错的，比如测试方面相关知识、设计文档撰写、代码评审、软件交付等等章节都非常详细，对于我这个工作几年的人，都还有很多不懂的或者没有遵守相关编写代码规则去做，有点惭愧，哈哈哈
 总体来说，还是很不错的程序员指南，新人和老手阅读都会有受益，但可能新人阅读会受益更大吧，还有就是保持持续学习💪🏻</p>
 ]]></content:encoded>
-            <enclosure url="https://super456.github.io/static/2024/34th.webp" length="0" type="image/webp"/>
+            <enclosure url="https://super456.github.io/read-book/2024/34th.webp" length="0" type="image/webp"/>
         </item>
         <item>
             <title><![CDATA[第 33 本《没事，一起都会好起来的》]]></title>
@@ -392,7 +392,7 @@ Jedit 并不总是只描绘幻想中的世界。我们日常生活中的碎片�
 <h2 id="感悟" tabindex="-1">感悟 <a class="header-anchor" href="#感悟" aria-label="Permalink to &quot;感悟&quot;">&ZeroWidthSpace;</a></h2>
 <p>2 月 4 日开始阅读并读完。好美的插画，感觉就是自己另一个世界的映射，可以保存下来欣赏。配上柔暖的文案，画面感像让你躺在云朵上一样舒服、轻松、享受当下。适合疲惫、心情不悦、不如意的时候阅读。也许这就是不开心只是让你活着，开心可以让你活得更好吧😁</p>
 ]]></content:encoded>
-            <enclosure url="https://super456.github.io/static/2024/33th.webp" length="0" type="image/webp"/>
+            <enclosure url="https://super456.github.io/read-book/2024/33th.webp" length="0" type="image/webp"/>
         </item>
     </channel>
 </rss>
