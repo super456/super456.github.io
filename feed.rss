@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Sun, 14 Apr 2024 09:33:50 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 14 Apr 2024 12:16:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -14,6 +14,25 @@
             <link>https://super456.github.io</link>
         </image>
         <copyright>Copyright (c) 2024-present, 纵倾童鞋</copyright>
+        <item>
+            <title><![CDATA[夜航西飞]]></title>
+            <link>https://super456.github.io/posts/random-thought/</link>
+            <guid>https://super456.github.io/posts/random-thought/</guid>
+            <pubDate>Sun, 14 Apr 2024 16:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="夜航西飞" tabindex="-1">夜航西飞 <a class="header-anchor" href="#夜航西飞" aria-label="Permalink to &quot;夜航西飞&quot;">&ZeroWidthSpace;</a></h1>
+<p>专栏名字来源我很喜欢的《夜航西飞》这本书，希望我能跟作者一样拥有无畏精神和对生活的热爱。“未来藏在迷雾之中，隔着距离，叫人看来胆怯。但当你踏足其中，就会云开雾散”。我热爱我现在的生活，也很愿意去探索新的事物，步履铿锵，吭哧吭哧埋头干，向前冲咯~</p>
+<p>主要记录这一路走来，自己生活的真相和工作的心得体会，想着未来某一天回头看，会觉得怎么看待当初的自己，会心一笑，感慨万千呢？还是当时只道是寻常吧？</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[我失业了]]></title>
+            <link>https://super456.github.io/posts/random-thought/2024/lose-job.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2024/lose-job.html</guid>
+            <pubDate>Sun, 14 Apr 2024 12:14:53 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="我失业了" tabindex="-1">我失业了 <a class="header-anchor" href="#我失业了" aria-label="Permalink to &quot;我失业了&quot;">&ZeroWidthSpace;</a></h1>
+<p>聊聊我失业后的一些经历和感受，待更新🚀...</p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[第 47 本《牧羊少年奇幻之旅》]]></title>
             <link>https://super456.github.io/posts/read-book/2024/muyangshaonianqihuanzhilu.html</link>
@@ -876,11 +895,6 @@
         <item>
             <link>https://super456.github.io/posts/growth-record/</link>
             <guid>https://super456.github.io/posts/growth-record/</guid>
-            <pubDate>Wed, 28 Feb 2024 14:23:28 GMT</pubDate>
-        </item>
-        <item>
-            <link>https://super456.github.io/posts/random-thought/</link>
-            <guid>https://super456.github.io/posts/random-thought/</guid>
             <pubDate>Wed, 28 Feb 2024 14:23:28 GMT</pubDate>
         </item>
         <item>
@@ -6654,6 +6668,20 @@ Yolk
             <enclosure url="https://super456.github.io/read-book/2023/javascriptgaojichengxusheji4.webp" length="0" type="image/webp"/>
         </item>
         <item>
+            <title><![CDATA[好青年 21 天训练营 7 期总结]]></title>
+            <link>https://super456.github.io/posts/random-thought/2023/camp-7-summary.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2023/camp-7-summary.html</guid>
+            <pubDate>Tue, 14 Mar 2023 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="好青年-21-天训练营-7-期总结" tabindex="-1">好青年 21 天训练营 7 期总结 <a class="header-anchor" href="#好青年-21-天训练营-7-期总结" aria-label="Permalink to &quot;好青年 21 天训练营 7 期总结&quot;">&ZeroWidthSpace;</a></h1>
+<p>训练营的小伙伴们，大家晚上好呀，我是纵倾，见字如面，当看到这段文字的时候，我已经准备离开这个大家庭了</p>
+<p>在训练营的感受：回头看，从第 7 期加入至今第 13 期了，已经经历了 7 期，差不多 7 个月的陪伴成长，时间不长不短，有收获也有感动，在我的生命中熠熠生辉，格外亮眼。一开始参加训练营的初衷是培养自己的自律性，看看自己做一件事能够坚持多久和记录自己这段时间心路历程的变化，好为自己成长复盘和下一阶段规划提供帮助。至于打卡任务只是衡量的标准，可以随意变化的，所以并我不是为了打卡任务才进入训练营的。总体来说，训练营是超出我的预期的，有组织者，有监管的人，有存在感，能够被认可，能够找到打卡的归属感，最重要的是有一群可爱、温暖、有趣的伙伴，彼此关心、包容，互相监督、共同成长。缘分总是这么奇妙，把我们聚在一起，分享生活与工作的喜怒哀乐，分享彼此之间的美好世界。我很幸运能够在这遇见你们，一定是上天最好的安排。特别是在这个群认识了很多小伙伴，也私加了十几个人，一定是优秀的你们，吸引成为我朋友的原因，我的荣幸，倍感欣慰</p>
+<p>在训练营的成长：回顾自己的所有打卡记录及总结思考，收获最大的是，不是坚持 7 点早起，花多少时间学习了；不是看了多少本书，写了多少阅读笔记；不是做了多少道算法题，输出了多少算法题解；不是背了多少个单词，学习了多少英文语句；也不是做了多少次茶话会的主题分享以及茶话会听别人分享上，成长收获了有多少。这些都是次要的，并不是我主要的成长。经过我这段时间的思考总结，最大的成长就是思维方式的转变，底层逻辑是方法论与结构化思考表达。当我做一件事的时候：怎么去有条理、结构化的思考、怎么去实现以及如何做的更好、驱动力在哪里、如何思考清晰的表达出来、如何控制自己，简单地说离认清自己更近了一步。这也许是对我自己培养起来的自律性最好的解释。也是真正意义上可以做到对自己负责了，可能这就是我收获最大的成长吧</p>
+<p>在训练营当组长的感受：当组长的原因，一方面，我是想帮助别人，但我真没那么伟大，要对每个人负责或者对一部分人负责，每个人的时间和精力都是有限的，我只能最大发挥我个人的价值，能帮一点是一点，哪怕让一小部分人能够得到帮助，能够收获不一样的成长，那么我觉得我的付出也是值得的；另一方面，我想影响有影响力的人，让这一部分小伙伴可以像我一样，勇敢的站出来帮助别人，形成团结互助的氛围，这样，可以有更多的人在群里发光发热，照亮别人，带来更多的温暖</p>
+<p>之所以选择暂别：今年过完年至今我是迷茫的，我迷茫的不是自己的工作和生活，我从来不担心自己的职业规划和生活方式的问题；而是思考人生的下一个阶段，我该怎么走的更有意义和价值，如何吭哧吭哧做事，一步一个脚印 👣 往前走。我想，等我心中有一个答案的时候，自然而然，就是我该出现的时候了。所以我其实还在训练营，只是肉体离开了，但灵魂没有呀。期待我的回归哈，因为在训练营我还有好多事没有完成呢</p>
+<p>好啦~唠叨了这么久，该说再见啦 👋🏻👋🏻👋🏻，希望我们都能基于训练营这个平台，也要学会利用这个平台，相辅相成，才能实现共赢。即使少了“儿时竟觉星可摘，抬头不见少年郎。”的心气，但也要有“悟已往之不谏，知来者之可追，实迷途其未远，觉今是而昨非。”的豁达和追求美好的心境。愿我们温暖纯良，不舍爱与自由，加油大家 💪🏻💪🏻💪🏻</p>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[第 14 本《谁能拒接一只快乐的小狗呢》]]></title>
             <link>https://super456.github.io/posts/read-book/2023/shuinengjujieyizhikuailedexiaogoune.html</link>
             <guid>https://super456.github.io/posts/read-book/2023/shuinengjujieyizhikuailedexiaogoune.html</guid>
@@ -6932,6 +6960,62 @@ Yolk
             <enclosure url="https://super456.github.io/read-book/2022/renzhiqudong.webp" length="0" type="image/webp"/>
         </item>
         <item>
+            <title><![CDATA[第七期训练营茶话会分享]]></title>
+            <link>https://super456.github.io/posts/random-thought/2022/camp-7th-share.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2022/camp-7th-share.html</guid>
+            <pubDate>Sun, 25 Sep 2022 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="第七期训练营茶话会分享" tabindex="-1">第七期训练营茶话会分享 <a class="header-anchor" href="#第七期训练营茶话会分享" aria-label="Permalink to &quot;第七期训练营茶话会分享&quot;">&ZeroWidthSpace;</a></h1>
+<p>2022 年 9 月 25 号，首次参加 21 天训练营茶话会分享（可惜😭当时没有录屏，缺少音频分享出来了），分享内容如下：</p>
+<h2 id="自我介绍" tabindex="-1">自我介绍 <a class="header-anchor" href="#自我介绍" aria-label="Permalink to &quot;自我介绍&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>19 年科班毕业</li>
+<li>深圳某中厂</li>
+<li>爱折腾技术，技术栈以：Vue/多端开发/Node 为主</li>
+<li>准备学摄影，喜欢看风景（每年一次旅游）</li>
+<li>周末喜欢看书（计划每个月看一本书）</li>
+</ul>
+<h2 id="关于训练营" tabindex="-1">关于训练营 <a class="header-anchor" href="#关于训练营" aria-label="Permalink to &quot;关于训练营&quot;">&ZeroWidthSpace;</a></h2>
+<p>参加了两期：8月份和 9 月份</p>
+<h4 id="收获" tabindex="-1">收获 <a class="header-anchor" href="#收获" aria-label="Permalink to &quot;收获&quot;">&ZeroWidthSpace;</a></h4>
+<ol>
+<li>良好的学习氛围：</li>
+</ol>
+<ul>
+<li>有组织</li>
+<li>有互动</li>
+<li>不止为了打卡</li>
+</ul>
+<ol start="2">
+<li>阅读和写作：</li>
+</ol>
+<ul>
+<li>
+<p>第七期：<a href="https://www.zhihu.com/question/22355368/answer/2536811740?utm_campaign=shareopn&amp;utm_content=group2_Answer&amp;utm_medium=social&amp;utm_oi=46320467312640&amp;utm_psn=1539039746155761664&amp;utm_source=wechat_session&amp;s_r=0" target="_blank" rel="noreferrer">每天练习写作，应该写什么来练习</a>说到：“每天练习写作的真正目的，是为了摆脱对灵感的过渡依赖，让灵感成为写作的锦上添花，而不是雪中送炭”</p>
+</li>
+<li>
+<p>第八期：《认知驱动》第四章第二节：<a href="https://www.yuque.com/super456/qoriag/frmn7b#Z7yTN" target="_blank" rel="noreferrer">写下来：我们都低估了“写下来”的力量</a>阅读笔记</p>
+</li>
+</ul>
+<ol start="3">
+<li>有更多的时间做自己想做的事情，不止学习</li>
+</ol>
+<h4 id="建议" tabindex="-1">建议 <a class="header-anchor" href="#建议" aria-label="Permalink to &quot;建议&quot;">&ZeroWidthSpace;</a></h4>
+<ul>
+<li>希望大家融入进来，当然不只为了打卡</li>
+<li>可以不定期组织线上或线下活动，可以有某个主题分享或讨论会（比如谈谈写作、成长、技术、学习方法、生活等）</li>
+<li>价值输出，成为一个有价值的人，成就更美好的自己</li>
+</ul>
+<h2 id="关于自身成长" tabindex="-1">关于自身成长 <a class="header-anchor" href="#关于自身成长" aria-label="Permalink to &quot;关于自身成长&quot;">&ZeroWidthSpace;</a></h2>
+<p>分享自身的职业成长路线</p>
+<ol>
+<li>建立自己的技术体系：让时间为你证明</li>
+</ol>
+<CustomImage src="/random-thought/2022/jishutixi.webp" /><ol start="2">
+<li>分享羽哥之前说的一句话：</li>
+</ol>
+<CustomImage src="/random-thought/2022/yugeduihua.webp" />]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[第 4 本《跃迁：成为高手的技术》]]></title>
             <link>https://super456.github.io/posts/read-book/2022/yueqian.html</link>
             <guid>https://super456.github.io/posts/read-book/2022/yueqian.html</guid>
@@ -6982,6 +7066,19 @@ Yolk
 </blockquote>
 ]]></content:encoded>
             <enclosure url="https://super456.github.io/read-book/2022/yueqian.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[第七期训练营总结]]></title>
+            <link>https://super456.github.io/posts/random-thought/2022/camp-7th-summary.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2022/camp-7th-summary.html</guid>
+            <pubDate>Sun, 28 Aug 2022 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="第七期训练营总结" tabindex="-1">第七期训练营总结 <a class="header-anchor" href="#第七期训练营总结" aria-label="Permalink to &quot;第七期训练营总结&quot;">&ZeroWidthSpace;</a></h1>
+<p>21 天训练营大概感悟😄：</p>
+<p>1、大概统计了一下，21 天阅读笔记写了 2w 字左右，虽然大部分是水文，但都是即兴发挥的思考，主要是培养自己写作能力和感觉，跟羽哥之前发过知乎一篇文章【每天练习写作，应该写什么来练习】说到，每天练习写作的真正目的，是为了摆脱对灵感的过渡依赖，让灵感成为写作的锦上添花，而不是雪中送炭。这句话深有感悟，这也是我一开始为啥要坚持写阅读笔记的原因。</p>
+<p>工作久了，越来越觉得，从书中学，在事上练，跟高人聊是多么的重要，不仅是认知的开阔和升级，更是能力上的跨越。</p>
+<p>2、早起打卡完成学习林不渡的 TS 专栏 11 篇和其他比较杂的技术没有统计，真的收获非常多的学习成果。如果没有加入训练营我只能靠晚上早下班学习，大部分时间很短且加班情况下更懒的学习，周末也只是忙里偷闲，现在反而会更自律的学习，周末反而更珍惜学习的时间</p>
+<p>21 天只是个形式，这个形式可能对于很多人来说会结束，但对于我来说，保持习惯坚持下去，并没有结束，我还是会坚持打卡，不是为了形式，是为了自己💪🏻</p>
+]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[第 8 本《能力陷阱》]]></title>
