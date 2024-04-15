@@ -84,6 +84,18 @@ export default {
       link: 'https://sunny-117.github.io/blog/',
     },
     {
+      title: 'WindrunnerMax',
+      desc: '前端基础 个人博客 学习笔记',
+      icon: 'https://blog.touchczy.top/favicon.ico',
+      link: 'https://blog.touchczy.top/#/',
+    },
+    {
+      title: '小丞前端日记',
+      desc: '小丞同学的博客，致力于分享高质量的 React,JS 相关博文',
+      icon: 'https://linjuncheng.cn/avatar.jpg',
+      link: 'https://linjuncheng.cn/',
+    },
+    {
       title: 'Stefan Judis Web Development',
       desc: 'I love building things for the web. And I love writing sharing things about the web.',
       icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%A7%A2</text></svg>',
