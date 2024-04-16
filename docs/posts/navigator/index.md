@@ -16,6 +16,8 @@ const navCountInfo = getNavDataCount()
 # 前端导航
 
 :::tip
+收集我所用过且觉得有用的前端资源，为了方便后续查找使用，特此分类整理
+
 共收录资源：分类<strong> {{ navCountInfo.categoryNum }} </strong>个、内容<strong> {{ navCountInfo.total }} </strong>个
 
 持续更新中🎉🚀...
