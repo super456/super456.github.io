@@ -9,6 +9,12 @@ export default {
       desc: '自 2005 年起记录 Web 技术，包括 CSS、HTML 和 JavaScript',
     },
     {
+      title: 'Developer Roadmaps',
+      desc: 'Community driven roadmaps, articles and guides for developers to grow in their career.',
+      icon: 'https://roadmap.sh/manifest/favicon.ico',
+      link: 'https://roadmap.sh/',
+    },
+    {
       title: '前端知识图谱',
       link: 'https://f2e.tech/mindmap',
       icon: 'https://gw.alicdn.com/tfs/TB1lFaCklfH8KJjy1XbXXbLdXXa-32-32.png',

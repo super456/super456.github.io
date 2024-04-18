@@ -96,6 +96,12 @@ export default {
       link: 'https://linjuncheng.cn/',
     },
     {
+      title: 'Web Worker 播客',
+      desc: '几个前端程序员闲聊的音频播客节目',
+      icon: 'https://webworker.tech/img/logo-650.png',
+      link: 'https://webworker.tech/',
+    },
+    {
       title: 'Stefan Judis Web Development',
       desc: 'I love building things for the web. And I love writing sharing things about the web.',
       icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%A7%A2</text></svg>',

@@ -25,5 +25,11 @@ export default {
       icon: 'https://webstack.cc/assets/images/favicon.png',
       link: 'https://webstack.cc/cn/index.html',
     },
+    {
+      title: '前端森林',
+      desc: '前端酷站 尽收眼底',
+      icon: 'https://fesites.netlify.app/favicon.svg',
+      link: 'https://fesites.netlify.app/',
+    },
   ],
 }

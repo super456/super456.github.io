@@ -100,5 +100,17 @@ export default {
       icon: 'https://img.hellogithub.com/logo/logo.png',
       link: 'https://hellogithub.com/',
     },
+    {
+      title: 'CSS-Tricks - Tips, Tricks, and Techniques on using Cascading Style Sheets.',
+      desc: 'Daily articles about CSS, HTML, JavaScript, and all things related to web design and development.',
+      icon: 'https://css-tricks.com/favicon.ico',
+      link: 'https://css-tricks.com/',
+    },
+    {
+      title: 'Smashing Magazine — For Web Designers And Developers',
+      desc: 'Magazine on CSS, JavaScript, front-end, accessibility, UX and design. For developers, designers and front-end engineers.',
+      icon: 'https://www.smashingmagazine.com/images/favicon/favicon.svg',
+      link: 'https://www.smashingmagazine.com/',
+    },
   ],
 }
