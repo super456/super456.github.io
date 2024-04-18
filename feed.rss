@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Wed, 17 Apr 2024 23:36:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Apr 2024 14:57:01 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -88,15 +88,6 @@
             <content:encoded><![CDATA[<h1 id="夜航西飞" tabindex="-1">夜航西飞 <a class="header-anchor" href="#夜航西飞" aria-label="Permalink to &quot;夜航西飞&quot;">&ZeroWidthSpace;</a></h1>
 <p>专栏名字来源我很喜欢的《夜航西飞》这本书，希望我能跟作者一样拥有无畏精神和对生活的热爱。“未来藏在迷雾之中，隔着距离，叫人看来胆怯。但当你踏足其中，就会云开雾散”。我热爱我现在的生活，也很愿意去探索新的事物，步履铿锵，吭哧吭哧埋头干，向前冲咯~</p>
 <p>主要记录这一路走来，自己生活的真相和工作的心得体会，想着未来某一天回头看，会觉得怎么看待当初的自己，会心一笑，感慨万千呢？还是当时只道是寻常吧？</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[前端进击]]></title>
-            <link>https://super456.github.io/posts/growth-record/</link>
-            <guid>https://super456.github.io/posts/growth-record/</guid>
-            <pubDate>Sun, 14 Apr 2024 15:00:23 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 id="前端进击" tabindex="-1">前端进击 <a class="header-anchor" href="#前端进击" aria-label="Permalink to &quot;前端进击&quot;">&ZeroWidthSpace;</a></h1>
-<p>前端之路，学习成长点滴，待更新🚀...</p>
 ]]></content:encoded>
         </item>
         <item>
@@ -938,6 +929,22 @@
 </blockquote>
 ]]></content:encoded>
             <enclosure url="https://super456.github.io/read-book/2024/xidaduo.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[前端进击]]></title>
+            <link>https://super456.github.io/posts/growth-record/</link>
+            <guid>https://super456.github.io/posts/growth-record/</guid>
+            <pubDate>Fri, 01 Mar 2024 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="前端进击" tabindex="-1">前端进击 <a class="header-anchor" href="#前端进击" aria-label="Permalink to &quot;前端进击&quot;">&ZeroWidthSpace;</a></h1>
+<blockquote>
+<p>君子敬其在己者，而不慕其在天者，是以日进也</p>
+</blockquote>
+<p>2018 年 7 月 24 号，大三暑假开始前端开发上岗实习，一路跌跌撞撞学习前端，收获良多。但始终没有成为自己心中仰慕的前端大神，所以决定继续学习，并记录下来。分享前端之路技术点滴，希望可以给有志者一些帮助和温暖，也给自己一些鼓励，从最简单的开始，慢慢成长。因为我始终相信自己：</p>
+<blockquote>
+<p>无人扶我青云志，我自踏雪至山巅</p>
+</blockquote>
+<p>加油吧，少年💪🏻🌻</p>
+]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[第 44 本《今天我请客，想请你快乐》]]></title>
