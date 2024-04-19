@@ -3,6 +3,12 @@ export default {
   title: 'JavaScript',
   items: [
     {
+      title: 'ECMAScript® 2025 Language Specification',
+      desc: 'TC39',
+      icon: 'https://tc39.es/ecma262/img/favicon.ico',
+      link: 'https://tc39.es/ecma262/',
+    },
+    {
       icon: 'https://svelte.dev/favicon.png',
       title: 'Svelte',
       desc: '将声明性组件转换为精准高效更新 DOM 的 JavaScript 代码',

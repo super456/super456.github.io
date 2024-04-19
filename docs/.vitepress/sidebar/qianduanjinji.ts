@@ -15,6 +15,9 @@ export default function qianduanjinjiSidebarGuide() {
       items: [
         // { text: '什么是 CSS', link: '/base/css/what-is-css' },
         { text: 'CSS 实战手册学习', link: '/base/css/practical-manual' },
+        { text: 'CSS-BEM-书写规范', link: '/base/css/bem-rule' },
+        { text: '绝对定位元素布局遮挡问题', link: '/base/css/absolute-element-shelter' },
+        { text: '两个模块列自适应', link: '/base/css/tow-block-adaptive' },
       ],
     },
     {

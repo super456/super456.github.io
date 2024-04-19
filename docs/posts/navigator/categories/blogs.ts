@@ -3,27 +3,33 @@ export default {
   title: '个人博客',
   items: [
     {
-      icon: 'https://avatars.githubusercontent.com/u/11247099?v=4',
       title: 'Anthony Fu',
       desc: 'Vue, Vite, Nuxt 核心团队成员 | VueUse, Slidev, Vitest, UnoCSS 作者',
+      icon: 'https://avatars.githubusercontent.com/u/11247099?v=4',
       link: 'https://antfu.me/posts',
     },
     {
-      icon: '/icons/mqyqingfeng.jpeg',
       title: '讶羽博客',
       desc: '四个系列：JavaScript 深入系列、JavaScript 专题系列、ES6 系列、React 系列',
+      icon: '/icons/mqyqingfeng.jpeg',
       link: 'https://github.com/mqyqingfeng/Blog',
     },
     {
-      icon: '/icons/zxx_240_0818.jpg',
       title: '张鑫旭',
       desc: '专注 Web 前端偏前领域，著有《CSS世界》《CSS选择器世界》《CSS新世界》',
+      icon: '/icons/zxx_240_0818.jpg',
       link: 'https://www.zhangxinxu.com/',
     },
     {
       title: 'ChokCoco',
       desc: '国服第一切图仔，专注 CSS 领域',
       link: 'https://www.cnblogs.com/coco1s',
+    },
+    {
+      title: '峰华前端工程师- 让你学会前端开发',
+      desc: 'html, css, javascript, react, vue 前端教程，以及 B站视频教程合集和配套文本、系统教程、编程博客和前端资源导航。致力于帮助你以最直观、最快速的方式学会前端开发。',
+      icon: 'https://zxuqian.cn/img/logo.webp',
+      link: 'https://zxuqian.cn/',
     },
     {
       title: 'Randy Lu',
@@ -53,18 +59,6 @@ export default {
       desc: '视野所及，唯有前端',
       icon: 'https://cdn.nlark.com/yuque/0/2022/png/1500604/1641785019489-avatar/f0c57a90-7ba8-43a7-9361-7fa8eb5bb6b6.png?x-oss-process=image%2Fresize%2Cm_fill%2Cw_328%2Ch_328%2Fformat%2Cpng',
       link: 'https://www.yuque.com/cuggz',
-    },
-    {
-      icon: 'https://xiaolincoding.com/icon.webp',
-      title: '小林coding',
-      desc: '图解计算机网络、操作系统、计算机组成、数据库，让天下没有难懂的八股文！',
-      link: 'https://xiaolincoding.com/',
-    },
-    {
-      icon: 'https://www.inode.club/small.png',
-      title: '程序员成长指北',
-      desc: '专注 Node.js 技术栈分享，从 前端 到 Node.js 再到 后端数据库，祝您成为优秀的高级 Node.js 全栈工程师',
-      link: 'https://www.inode.club/',
     },
     {
       icon: 'https://lxchuan12.gitee.io/logo.jpg',
@@ -100,6 +94,18 @@ export default {
       desc: '几个前端程序员闲聊的音频播客节目',
       icon: 'https://webworker.tech/img/logo-650.png',
       link: 'https://webworker.tech/',
+    },
+    {
+      icon: 'https://xiaolincoding.com/icon.webp',
+      title: '小林coding',
+      desc: '图解计算机网络、操作系统、计算机组成、数据库，让天下没有难懂的八股文！',
+      link: 'https://xiaolincoding.com/',
+    },
+    {
+      icon: 'https://www.inode.club/small.png',
+      title: '程序员成长指北',
+      desc: '专注 Node.js 技术栈分享，从 前端 到 Node.js 再到 后端数据库，祝您成为优秀的高级 Node.js 全栈工程师',
+      link: 'https://www.inode.club/',
     },
     {
       title: 'Stefan Judis Web Development',

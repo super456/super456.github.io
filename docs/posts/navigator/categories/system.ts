@@ -3,6 +3,12 @@ export default {
   title: '前端体系',
   items: [
     {
+      title: 'W3C',
+      desc: 'The World Wide Web Consortium (W3C) develops standards and guidelines to help everyone build a web based on the principles of accessibility, internationalization, privacy and security.',
+      icon: 'https://www.w3.org/favicon.ico',
+      link: 'https://www.w3.org/',
+    },
+    {
       title: 'MDN Web Docs',
       link: 'https://developer.mozilla.org/zh-CN/',
       icon: 'https://developer.mozilla.org/favicon-48x48.cbbd161b.png',
@@ -31,6 +37,17 @@ export default {
       desc: '计算机自学指南',
       icon: 'https://csdiy.wiki/images/favicon.ico',
       link: 'https://csdiy.wiki/',
+    },
+    {
+      title: '50 Projects in 50 Days - HTML/CSS and JavaScript',
+      desc: '新人挑战 50 天 50 个项目，使用 HTML/CSS/JavaScript',
+      link: 'https://github.com/bradtraversy/50projects50days',
+    },
+    {
+      title: 'Learn CSS, HTML and JavaScript by Playing Coding Games',
+      desc: 'NO MORE boring coding videos, courses and articles. Learn code in more fun, fast and effective way by playing coding games!',
+      icon: 'https://codingfantasy.com/favicon.ico',
+      link: 'https://codingfantasy.com/',
     },
   ],
 }
