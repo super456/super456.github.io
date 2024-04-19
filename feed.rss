@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Fri, 19 Apr 2024 01:13:12 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Apr 2024 02:51:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -15,20 +15,12 @@
         </image>
         <copyright>Copyright (c) 2024-present, 纵倾童鞋</copyright>
         <item>
-            <title><![CDATA[前端导航]]></title>
-            <link>https://super456.github.io/posts/navigator/</link>
-            <guid>https://super456.github.io/posts/navigator/</guid>
-            <pubDate>Fri, 19 Apr 2024 01:12:09 GMT</pubDate>
-            <description><![CDATA[关于前端开发的导航及工具推荐]]></description>
-            <content:encoded><![CDATA[<h1 id="前端导航" tabindex="-1">前端导航 <a class="header-anchor" href="#前端导航" aria-label="Permalink to &quot;前端导航&quot;">&ZeroWidthSpace;</a></h1>
-<div class="tip custom-block"><p class="custom-block-title">TIP</p>
-<p>收集我所用过且觉得好用的前端资源，为了方便后续查找使用，特此分类整理</p>
-<p>共收录资源：分类<strong> {{ navCountInfo.categoryNum }} </strong>个、内容<strong> {{ navCountInfo.total }} </strong>个</p>
-<p>持续更新中🎉🚀...</p>
-<p>欢迎给我提 <a href="https://github.com/super456/super456.github.io/issues" target="_blank" rel="noreferrer">ISSUE</a> 添加资源内容🌺</p>
-</div>
-<MNavLinks v-for="{title, items} in NAV_DATA" :title="title" :items="items"/><hr>
-<p><strong>感谢<a href="https://notes.fe-mm.com/nav" target="_blank" rel="noreferrer">茂茂物语</a>提供支持🌹</strong></p>
+            <title><![CDATA[前端工程化]]></title>
+            <link>https://super456.github.io/posts/growth-record/engineering/</link>
+            <guid>https://super456.github.io/posts/growth-record/engineering/</guid>
+            <pubDate>Fri, 19 Apr 2024 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="前端工程化" tabindex="-1">前端工程化 <a class="header-anchor" href="#前端工程化" aria-label="Permalink to &quot;前端工程化&quot;">&ZeroWidthSpace;</a></h1>
+<p>待更新🚀...</p>
 ]]></content:encoded>
         </item>
         <item>
@@ -590,11 +582,6 @@
             <enclosure url="https://super456.github.io/read-book/2024/woxiangouertingyihuier.webp" length="0" type="image/webp"/>
         </item>
         <item>
-            <link>https://super456.github.io/posts/growth-record/engineering/</link>
-            <guid>https://super456.github.io/posts/growth-record/engineering/</guid>
-            <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
-        </item>
-        <item>
             <link>https://super456.github.io/posts/growth-record/platform/</link>
             <guid>https://super456.github.io/posts/growth-record/platform/</guid>
             <pubDate>Wed, 06 Mar 2024 16:15:51 GMT</pubDate>
@@ -944,6 +931,23 @@
 <p>成长永远不是一种结果，而是一种累积效应，更是一种习惯</p>
 </blockquote>
 <p>加油吧，少年💪🏻🌻</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[前端导航]]></title>
+            <link>https://super456.github.io/posts/navigator/</link>
+            <guid>https://super456.github.io/posts/navigator/</guid>
+            <pubDate>Fri, 01 Mar 2024 20:00:00 GMT</pubDate>
+            <description><![CDATA[关于前端开发的导航及工具推荐]]></description>
+            <content:encoded><![CDATA[<h1 id="前端导航" tabindex="-1">前端导航 <a class="header-anchor" href="#前端导航" aria-label="Permalink to &quot;前端导航&quot;">&ZeroWidthSpace;</a></h1>
+<div class="tip custom-block"><p class="custom-block-title">TIP</p>
+<p>收集我所用过且觉得好用的前端资源，为了方便后续查找使用，特此分类整理</p>
+<p>共收录资源：分类<strong> {{ navCountInfo.categoryNum }} </strong>个、内容<strong> {{ navCountInfo.total }} </strong>个</p>
+<p>持续更新中🎉🚀...</p>
+<p>欢迎给我提 <a href="https://github.com/super456/super456.github.io/issues" target="_blank" rel="noreferrer">ISSUE</a> 添加资源内容🌺</p>
+</div>
+<MNavLinks v-for="{title, items} in NAV_DATA" :title="title" :items="items"/><hr>
+<p><strong>感谢<a href="https://notes.fe-mm.com/nav" target="_blank" rel="noreferrer">茂茂物语</a>提供支持🌹</strong></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -8639,6 +8643,459 @@ ip:端口号
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[脚手架及 CLI 工具使用]]></title>
+            <link>https://super456.github.io/posts/growth-record/other/toolGuide/scaffold-cli.html</link>
+            <guid>https://super456.github.io/posts/growth-record/other/toolGuide/scaffold-cli.html</guid>
+            <pubDate>Mon, 02 May 2022 20:00:00 GMT</pubDate>
+            <description><![CDATA[# 脚手架及 CLI 工具使用
+## 一、概念简介
+> 脚手架是为了保证各施工过程顺利进行而搭设的工作平台。——百度百科
+
+Vue CLI 官方解释：
+> Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统。Vue CLI 致力于将 Vue 生态中的工具基础标准化。它确保了各种构建工具能够基于智能的默认配置即可平稳衔接，这样你可以专注在撰写应用上，而不必花好几天去纠结配置的问题。与此同时，它也为每个工具提供了调整配置的灵活性，无需 eject。
+
+简单来说，脚手架就是为了减少重复性工作而做的工具。
+## 二、CLI 基本组成
+基本会用到的一些插件：
+
+| **序号** | **插件名** | **作用** |
+| ]]></description>
+            <content:encoded><![CDATA[<h1 id="脚手架及-cli-工具使用" tabindex="-1">脚手架及 CLI 工具使用 <a class="header-anchor" href="#脚手架及-cli-工具使用" aria-label="Permalink to &quot;脚手架及 CLI 工具使用&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="一、概念简介" tabindex="-1">一、概念简介 <a class="header-anchor" href="#一、概念简介" aria-label="Permalink to &quot;一、概念简介&quot;">&ZeroWidthSpace;</a></h2>
+<blockquote>
+<p>脚手架是为了保证各施工过程顺利进行而搭设的工作平台。——百度百科</p>
+</blockquote>
+<p>Vue CLI 官方解释：</p>
+<blockquote>
+<p>Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统。Vue CLI 致力于将 Vue 生态中的工具基础标准化。它确保了各种构建工具能够基于智能的默认配置即可平稳衔接，这样你可以专注在撰写应用上，而不必花好几天去纠结配置的问题。与此同时，它也为每个工具提供了调整配置的灵活性，无需 eject。</p>
+</blockquote>
+<p>简单来说，脚手架就是为了减少重复性工作而做的工具。</p>
+<h2 id="二、cli-基本组成" tabindex="-1">二、CLI 基本组成 <a class="header-anchor" href="#二、cli-基本组成" aria-label="Permalink to &quot;二、CLI 基本组成&quot;">&ZeroWidthSpace;</a></h2>
+<p>基本会用到的一些插件：</p>
+<table>
+<thead>
+<tr>
+<th><strong>序号</strong></th>
+<th><strong>插件名</strong></th>
+<th><strong>作用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>commander</td>
+<td>解析参数</td>
+</tr>
+<tr>
+<td>2</td>
+<td>inquirer</td>
+<td>交互式命令作用</td>
+</tr>
+<tr>
+<td>3</td>
+<td>download-git-report</td>
+<td>在官网上下载模板</td>
+</tr>
+<tr>
+<td>4</td>
+<td>chalk</td>
+<td>在命令行增加色彩</td>
+</tr>
+<tr>
+<td>5</td>
+<td>metalsmith</td>
+<td>读取文件，实现模板渲染</td>
+</tr>
+<tr>
+<td>6</td>
+<td>consoledate</td>
+<td>统一的模板引擎（比如：对 ejs 的解析）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="三、cli-工具使用" tabindex="-1">三、CLI 工具使用 <a class="header-anchor" href="#三、cli-工具使用" aria-label="Permalink to &quot;三、CLI 工具使用&quot;">&ZeroWidthSpace;</a></h2>
+<p>命令行界面，Command-Line Interface 的缩写。</p>
+<h4 id="_3-1-第三方搭建工具" tabindex="-1">3.1 第三方搭建工具 <a class="header-anchor" href="#_3-1-第三方搭建工具" aria-label="Permalink to &quot;3.1 第三方搭建工具&quot;">&ZeroWidthSpace;</a></h4>
+<p>原生自行搭建脚手架必备工具：
+<a href="https://github.com/tj/commander.js#readme" target="_blank" rel="noreferrer">tj/commander.js</a></p>
+<p>集成搭建脚手架工具，开箱即用：
+<a href="https://yeoman.io/" target="_blank" rel="noreferrer">The web’s scaffolding tool for modern webapps | Yeoman</a></p>
+<h4 id="_3-2-yeoman-搭建-cli" tabindex="-1">3.2 Yeoman 搭建 CLI <a class="header-anchor" href="#_3-2-yeoman-搭建-cli" aria-label="Permalink to &quot;3.2 Yeoman 搭建 CLI&quot;">&ZeroWidthSpace;</a></h4>
+<p>搭建一个简单的脚手架工具。</p>
+<ol>
+<li>
+<p>安装包工具：<code>npm install -g generator-generator yo</code> （安装 generator-generator 包文件及 yo 命令行工具）；</p>
+</li>
+<li>
+<p>初始化项目：<code>yo generator</code> 根据需要配置相关信息或者默认就行，注意创建的 generator name 前缀必须要 <code>generator-</code> 使用这个模板的时候不需要输入这个前缀，如 generator-template；</p>
+</li>
+<li>
+<p>生成重要的文件目录：</p>
+</li>
+</ol>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia01.webp' /><ol start="4">
+<li>将需要 CLI 生成的默认文件放入 <code>_generators/app/templates_</code> 文件夹下：</li>
+</ol>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia02.webp' /><ol start="5">
+<li>本地全局使用这个模板操作：<code>npm link</code> ，相当于将全局的 node_modules 做了个映射到了这项目模板这里，注意需要在这个模板文件夹根目录执行：</li>
+</ol>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia03.webp' /><ol start="6">
+<li>测试使用自己生成的模板，离开这个模板目录文件，随便进入另一个目录，输入：<code>yo template</code> （之前我创建的 generator name 填写的是：generator-template）：</li>
+</ol>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia04.webp' /><ol start="7">
+<li>发布到远程 npm 上：</li>
+</ol>
+<h4 id="_3-3-使用原生搭建-cli" tabindex="-1">3.3 使用原生搭建 CLI <a class="header-anchor" href="#_3-3-使用原生搭建-cli" aria-label="Permalink to &quot;3.3 使用原生搭建 CLI&quot;">&ZeroWidthSpace;</a></h4>
+<ol>
+<li>
+<p>新建一个文件夹目录，并创建一个项目，初始化项目：<code>npm init -y</code> ；</p>
+</li>
+<li>
+<p>在根目录新建一个bin目录，然后在该目录下新建一个 <code>www.js</code> 文件，在 <code>package.json</code> 中，新建个对象 <code>bin</code> ，对象值写个脚手架名字并指向 <code>bin</code> 目录下的 <code>www.js</code> 文件：</p>
+</li>
+</ol>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia05.webp' /><ol start="3">
+<li>在根目录执行：<code>npm link</code> ：</li>
+</ol>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia06.webp' /><ol start="4">
+<li>在 <code>www.js</code> 文件输入以下内容，再使用第二步定义的脚手架名字控制台输入：</li>
+</ol>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia07.webp' /><p>这行代码 <code>#!/usr/bin/env node</code> 指定这个脚本的解释程序是 node 环境，不懂可以查看这篇文章 <a href="https://blog.csdn.net/liangtaox8/article/details/100039274" target="_blank" rel="noreferrer">#!/usr/bin/env node 到底是什么</a></p>
+<ol>
+<li>利用 commander 来解析用户的参数：</li>
+</ol>
+<p>（1）安装 commander 插件：<code>npm i commander</code> ;</p>
+<p>（2）查看用户选择传递过来的参数：</p>
+<ul>
+<li>
+<p>对 <code>bin/www.js</code> 文件添加以下代码：<code>require('../src/main')</code> ;</p>
+</li>
+<li>
+<p>根目录新建一个 src 文件夹，该文件夹下新建 <code>main.js</code>  和 <code>constants.js</code> 文件，并添加指定代码：</p>
+</li>
+</ul>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// constants.js</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">version</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'../package.json'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">module</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">exports</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    version</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// main.js</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> program</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'commander'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(process.argv)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">version</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'./constants.js'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">program.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">version</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(version).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">parse</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(process.argv)</span></span></code></pre>
+</div><p>上述代码做了以下事情：从 <code>package.json</code> 里拿到当前版本号，解析用户传递的参数。</p>
+<ul>
+<li>运行脚手架名字会看到执行结果：</li>
+</ul>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia08.png' /><ol>
+<li>创建一个 create 的命令，在 main.js 文件下修改为以下代码：</li>
+</ol>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// main.js</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> program</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'commander'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">version</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'./constants.js'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">program.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">command</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'create'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'c'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">description</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'create a project'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">action</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'done'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 解析用户传递的参数</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">program.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">version</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(version).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">parse</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(process.argv)</span></span></code></pre>
+</div><p>上述代码执行的是：通过命令 command 创建了一个 create 的命令，别名 c ，操作的内容时打印 done，当我们运行脚手架名字加 create 时会输出以下内容：</p>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia09.webp' /><p>通常情况下，需要的命令一定不止 create 一个，这样的话，就需要对命令进行封装了，在 <code>main.js</code> 文件添加一下代码：</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 定义映射对象</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> mapActions</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  create: {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    alias: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'c'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    description: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'create a project'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    examples: [</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      'super456-cli create &#x3C;project-name>'</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    ]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  },</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  config: {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    alias: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'c'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    description: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'config project variable'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    examples: [</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      'super456-cli config set &#x3C;k> &#x3C;v>'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      'super456-cli config get &#x3C;k>'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    ]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  },</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">  '*'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    alias: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'c'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    description: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'command not found'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    examples: []</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 循环映射对象</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">Reflect.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">ownKeys</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(mapActions).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">forEach</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">action</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  program</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    .</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">command</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(action)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    .</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(mapActions[action].alias)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    .</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">description</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(mapActions[action].description)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    .</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">action</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">      // console.log('done')</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (action </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">===</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '*'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(mapActions[action].description)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">else</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(action)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    })</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span></code></pre>
+</div><ol>
+<li>为了代码的层次化结构更加清晰，action 里面的所有操作， 需要拆分到独立的 JS 文件中，使每个函数文件独立完成自己需要完成的事情。</li>
+</ol>
+<p>新建 <code>src/create.js</code> 文件，文件内容如下：</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">module</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">exports</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">projectName</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'create'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, projectName)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>修改 <code>src/main.js</code> 为以下内容：</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// main.js</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> program</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'commander'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> path</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'path'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">version</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'./constants.js'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 定义映射对象</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> mapActions</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  create: {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    alias: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'c'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    description: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'create a project'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    examples: [</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      'super456-cli create &#x3C;project-name>'</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    ]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  },</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  config: {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    alias: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'c'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    description: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'config project variable'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    examples: [</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      'super456-cli config set &#x3C;k> &#x3C;v>'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      'super456-cli config get &#x3C;k>'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    ]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  },</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">  '*'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    alias: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'c'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    description: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'command not found'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    examples: []</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 循环映射对象</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">Reflect.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">ownKeys</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(mapActions).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">forEach</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">action</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  program.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">command</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(action).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">alias</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(mapActions[action].alias).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">description</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(mapActions[action].description).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">action</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (action </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">===</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '*'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(mapActions[action].description)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">else</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'process.argv'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, process.argv)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(path.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">resolve</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(__dirname, action))(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">...</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">process.argv.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">slice</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">3</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">))</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  })</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 解析用户传递的参数</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">program.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">version</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(version).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">parse</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(process.argv)</span></span></code></pre>
+</div><p>此时执行 <code>super456-cli create projectName</code> 控制台打印的结果：</p>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia10.webp' /><ol start="8">
+<li>监听 help 事件，在 main.js 文件中的循环映射对象之后，解析用户传递的参数之前，添加以下内容：</li>
+</ol>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 监听用户的help事件</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">program.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">on</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'--help'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  Reflect.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">ownKeys</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(mapActions).</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">forEach</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">action</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    mapActions[action].examples.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">forEach</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">example</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'  '</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> +</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> example)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    })</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  })</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span></code></pre>
+</div><p>输入脚手架名字加帮助指令：<code>super456-cli --help</code>，控制台输出如下：</p>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia11.webp' /><ol>
+<li>从 GitHub 上拉取自己的仓库代码，完善 <code>src/create.js</code> 文件代码如下：</li>
+</ol>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> axios</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'axios'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 获取项目列表</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fetchRepoList</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> axios.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">get</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'https://api.github.com/users/super456/repos'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">module</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">exports</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">projectName</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // console.log('create', projectName)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> repos </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fetchRepoList</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  repos </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> repos.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">map</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">((</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">item</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> item.name)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(repos)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>控制台输入创建项目命令如下：</p>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia12.webp' /><ol start="10">
+<li>需要用到 ora 和 Inquirer 插件，ora 的作用是 Loading 效果（安装：<code>npm i ora</code>），Inquirer 的作用是和用户进行交互式命令（安装：<code>npm i inquirer</code>），在 <code>src/create.js</code> 文件添加以下代码：</li>
+</ol>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> axios</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'axios'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> ora</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'ora'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> Inquirer</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'inquirer'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 获取项目列表</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fetchRepoList</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> axios.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">get</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'https://api.github.com/users/super456/repos'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">module</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">exports</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">projectName</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // console.log('create', projectName)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> repos </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fetchRepoList</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  repos </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> repos.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">map</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">((</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">item</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> item.name)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(repos)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 封装loading效果</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> waitFnloading</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">fn</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">message</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">...</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">args</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> spinner</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ora</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(message)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  spinner.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">start</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> result</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fn</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">...</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">args)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  spinner.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">succeed</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> result</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//根据github接口，获取项目的tag信息</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fetchTagList</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> axios.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">get</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'https://api.github.com/repos/super456/vue-cli2.x-demo/tags'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> data;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 使用Inquirer实现交互式命令</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">module</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">exports</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">projectName</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> repos </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> waitFnloading</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(fetchRepoList, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'fetching template'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)()</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  repos </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> repos.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">map</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">((</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">item</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> item.name)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    repo</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> Inquirer.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">prompt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'repo'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    type: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'list'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    message: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'please choise a template to create project'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    choices: repos</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  })</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> tags </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> waitFnloading</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(fetchTagList, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'fetching tags'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)(repo)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    tag</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> Inquirer.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">prompt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'tag'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    type: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'list'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    message: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'please choise a tag'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    choices: tags</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  })</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  tags </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> tags.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">map</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">item</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> item.name)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'tags'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, tags)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>在控制台输入命令创建项目效果（GIF）：</p>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia.gif' /><ol>
+<li>使用 download-git-repo 下载，作用是使用这个插件，下载仓库文件，并保存到本地的临时文件夹内：</li>
+</ol>
+<p>（1）修改 <code>src/constants.js</code> 文件内容：</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 选择下载模板的目录</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> downloadDirectory</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> `${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">process</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">env</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">[</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">process</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">platform</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> ===</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'darwin'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> ?</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'HOME'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> :</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'USERPROFILE'</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">]</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}/.template`</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">module</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">exports</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    downloadDirectory</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>（2）修改 <code>src/create.js</code> 文件内容：</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> axios</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'axios'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> ora</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'ora'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> Inquirer</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'inquirer'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">promisify</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'util'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> downloadGitRepo </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'download-git-repo'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 使用download-git-repo插件下载仓库的文件，并保存到本地的临时文件夹内。</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">downloadGitRepo </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> promisify</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(downloadGitRepo)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">downloadDirectory</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'./constants'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 把下载好的文件复制到当前文件夹</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> path</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'path'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ncp </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'ncp'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">ncp </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> promisify</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(ncp)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 获取GitHub自己的公开项目列表</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fetchRepoList</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> axios.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">get</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'https://api.github.com/users/super456/repos'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 封装loading效果</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> waitFnloading</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">fn</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">message</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">...</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">args</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> spinner</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ora</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(message)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  spinner.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">start</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> result</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fn</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">...</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">args)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  spinner.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">succeed</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> result</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//根据github接口，获取项目的tag信息</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> fetchTagList</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> axios.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">get</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'https://api.github.com/repos/super456/vue-cli2.x-demo/tags'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> data</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 封装拉取项目的代码</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> download</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">repo</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">tag</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> api </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> `super456/${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">repo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}`</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (tag) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    api </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> `#${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">tag</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}`</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> dest</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> `${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">downloadDirectory</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}/${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">repo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}`</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> // 当前文件到本地电脑的目录：/Users/edz/.template/vue-cli2.x-demo（最后一个字段是仓库名，也可以自行定义）</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  await</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> downloadGitRepo</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(api, dest)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> dest</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 使用Inquirer实现交互式命令</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">module</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">exports</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">projectName</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> repos </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> waitFnloading</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(fetchRepoList, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'fetching template...'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  repos </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> repos.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">map</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">((</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">item</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> item.name)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    repo</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> Inquirer.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">prompt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'repo'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    type: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'list'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    message: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'please choise a template to create project'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    choices: repos</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  })</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> tags </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> waitFnloading</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(fetchTagList, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'fetching tags...'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)(repo)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    tag</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> Inquirer.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">prompt</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'tag'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    type: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'list'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    message: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'please choise a tag'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    choices: tags</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  })</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> resultFile</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> await</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> waitFnloading</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(download, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'downloading...'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)(repo, tag)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  ncp</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(resultFile, path.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">resolve</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(projectName))</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'created project successfully~'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>在控制台输入创建项目后效果（因为网络问题，这里只展示结果）：</p>
+<p>这个是下载在仓库文件保存到本地的临时文件夹内的路径及内容情况：</p>
+<CustomImage src='/growth-record/other/toolGuide/jiaoshoujia13.webp' /><p>这个只是简单的实现了模板的下载，复杂的 CLI 工具还需要处理文件是否存在，ejs 等的模板引擎解析等，等下的就是发布到 npm 上给用户使用了。</p>
+<h4 id="_3-4-starship" tabindex="-1">3.4 starship <a class="header-anchor" href="#_3-4-starship" aria-label="Permalink to &quot;3.4 starship&quot;">&ZeroWidthSpace;</a></h4>
+<p><a href="https://starship.rs/" target="_blank" rel="noreferrer">https://starship.rs/</a></p>
+<h4 id="_3-5-prompts" tabindex="-1">3.5 prompts <a class="header-anchor" href="#_3-5-prompts" aria-label="Permalink to &quot;3.5 prompts&quot;">&ZeroWidthSpace;</a></h4>
+<p><a href="https://github.com/terkelg/prompts" target="_blank" rel="noreferrer">https://github.com/terkelg/prompts</a></p>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[第 3 本《认知觉醒》]]></title>
             <link>https://super456.github.io/posts/read-book/2022/renzhijuexing.html</link>
             <guid>https://super456.github.io/posts/read-book/2022/renzhijuexing.html</guid>
@@ -8756,6 +9213,508 @@ ip:端口号
 <h2 id="四、思维导图" tabindex="-1">四、思维导图 <a class="header-anchor" href="#四、思维导图" aria-label="Permalink to &quot;四、思维导图&quot;">&ZeroWidthSpace;</a></h2>
 <CustomImage src="/growth-record/other/softSkills/yongjishuyanguangkanshijie.png" alt="思维导图" /><h2 id="五、总结" tabindex="-1">五、总结 <a class="header-anchor" href="#五、总结" aria-label="Permalink to &quot;五、总结&quot;">&ZeroWidthSpace;</a></h2>
 <p>看完这个专栏，感悟很深，也视野开阔了很多。从自身姿态出发，看到投资人、技术人、产品经理不同角度的理解。学习到了高效学习的方法和一些知识掌握的境界。最重要的是最自己的人生观产生了很大的冲击，发现之前自己真的见识太少了，很多都不懂，感谢遇到了这门课程，可以让自己变得充实强大。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Webpack 基础语法]]></title>
+            <link>https://super456.github.io/posts/growth-record/engineering/webpack/intro.html</link>
+            <guid>https://super456.github.io/posts/growth-record/engineering/webpack/intro.html</guid>
+            <pubDate>Mon, 04 May 2020 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="webpack-基础语法" tabindex="-1">Webpack 基础语法 <a class="header-anchor" href="#webpack-基础语法" aria-label="Permalink to &quot;Webpack 基础语法&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="一、基本命令" tabindex="-1">一、基本命令 <a class="header-anchor" href="#一、基本命令" aria-label="Permalink to &quot;一、基本命令&quot;">&ZeroWidthSpace;</a></h2>
+<h4 id="_1-1-安装" tabindex="-1">1.1 安装 <a class="header-anchor" href="#_1-1-安装" aria-label="Permalink to &quot;1.1 安装&quot;">&ZeroWidthSpace;</a></h4>
+<p>（1）快速初始化一个项目：<code>npm init -y</code> 其实就是省略了在执行 <code>npm init</code> 下一堆默认 yes 的操作项。</p>
+<p>（2）安装 webpack 及 webpack-cli 命令行脚手架工具（在 webpack 4.0 后分两个项目）：<code>yarn add webpack webpack-cli -D</code></p>
+<p>（3）安装成功后，在根目录建一个 <code>webpack.config.js</code> 文件，这个是默认读取的配置文件：</p>
+<CustomImage src='/growth-record/engineering/webpack/jichuyufa01.webp' /><p>（3）初始化项目文件，根目录新建一个 <code>src</code> 文件夹，在这个文件夹下新建一个 <code>index.js</code> 文件：</p>
+<CustomImage src='/growth-record/engineering/webpack/jichuyufa02.webp' /><p>（4）配置 <code>webpack.config.js</code> 文件打包输出文件：</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> path</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'path'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">module</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">exports</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  entry: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'./src/index.js'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  output: {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    path: path.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">resolve</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(__dirname, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'dist'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">), </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 打包后输出的位置</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    filename: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'my-first-webpack.bundle.js'</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> // 可以自定义，如服务端代码打包后命名：server.bundle.js , 客户端代码：app.bunlde.js</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span></code></pre>
+</div><p>（5）打包，执行 <code>npx webpack</code> 默认根目录生成 <code>dist</code> 文件夹：</p>
+<CustomImage src='/growth-record/engineering/webpack/jichuyufa03.webp' /><p>待更新🚀...</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[异常监控管理工具调研]]></title>
+            <link>https://super456.github.io/posts/growth-record/engineering/tools/anomaly-monitoring-research.html</link>
+            <guid>https://super456.github.io/posts/growth-record/engineering/tools/anomaly-monitoring-research.html</guid>
+            <pubDate>Sun, 22 Mar 2020 20:00:00 GMT</pubDate>
+            <description><![CDATA[# 异常监控管理工具调研
+### 一、需求背景：
+当我们完成一个业务系统的上线时，总是要观察线上的运行情况，查看日志发现问题并进行优化迭代。因为测试永远无法做到 100% 覆盖，用户也不会总是按照我们所预期的进行操作，因此我们需要在系统异常时主动对其进行收集上报，以制定解决方案。
+
+当生产环境中产生了一个 Bug 时，如何做到迅速报警，找到问题原因，修复后又如何在线上验证？此时我们需要一个高效的错误监控系统。
+
+前端监控包括**行为监控**、**异常监控**、**性能监控**等，目前本文主要讨论异常监控实现方式，后续在进行扩展。
+
+<CustomImage src='/growth-record/engineering/tools/monitoring01.webp' />
+
+### 二、异常分析：
+前端异常是指在用户使用 Web 应用时无法快速得到符合预期结果的情况，不同的异常带来的后果程度不同，轻则引起用户使用不悦，重则导致产品无法使用，使用户丧失对产品的认可。
+
+一个监控系统，大致可以分为四个阶段：日志采集、日志存储、统计与分析、报告和警告。
+
+| **分类** | **说明** |
+| ]]></description>
+            <content:encoded><![CDATA[<h1 id="异常监控管理工具调研" tabindex="-1">异常监控管理工具调研 <a class="header-anchor" href="#异常监控管理工具调研" aria-label="Permalink to &quot;异常监控管理工具调研&quot;">&ZeroWidthSpace;</a></h1>
+<h3 id="一、需求背景" tabindex="-1">一、需求背景： <a class="header-anchor" href="#一、需求背景" aria-label="Permalink to &quot;一、需求背景：&quot;">&ZeroWidthSpace;</a></h3>
+<p>当我们完成一个业务系统的上线时，总是要观察线上的运行情况，查看日志发现问题并进行优化迭代。因为测试永远无法做到 100% 覆盖，用户也不会总是按照我们所预期的进行操作，因此我们需要在系统异常时主动对其进行收集上报，以制定解决方案。</p>
+<p>当生产环境中产生了一个 Bug 时，如何做到迅速报警，找到问题原因，修复后又如何在线上验证？此时我们需要一个高效的错误监控系统。</p>
+<p>前端监控包括<strong>行为监控</strong>、<strong>异常监控</strong>、<strong>性能监控</strong>等，目前本文主要讨论异常监控实现方式，后续在进行扩展。</p>
+<CustomImage src='/growth-record/engineering/tools/monitoring01.webp' /><h3 id="二、异常分析" tabindex="-1">二、异常分析： <a class="header-anchor" href="#二、异常分析" aria-label="Permalink to &quot;二、异常分析：&quot;">&ZeroWidthSpace;</a></h3>
+<p>前端异常是指在用户使用 Web 应用时无法快速得到符合预期结果的情况，不同的异常带来的后果程度不同，轻则引起用户使用不悦，重则导致产品无法使用，使用户丧失对产品的认可。</p>
+<p>一个监控系统，大致可以分为四个阶段：日志采集、日志存储、统计与分析、报告和警告。</p>
+<table>
+<thead>
+<tr>
+<th><strong>分类</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>采集阶段</td>
+<td>收集异常日志，先在本地做一定的处理，采取一定的方案上报到服务器。</td>
+</tr>
+<tr>
+<td>存储阶段</td>
+<td>后端接收前端上报的异常日志，经过一定处理，按照一定的存储方案存储。</td>
+</tr>
+<tr>
+<td>分析阶段</td>
+<td>分为机器自动分析和人工分析。机器自动分析，通过预设的条件和算法，对存储的日志信息进行统计和筛选，发现问题，触发报警。人工分析，通过提供一个可视化的数据面板，让系统用户可以看到具体的日志数据，根据信息，发现异常问题根源。</td>
+</tr>
+<tr>
+<td>报警阶段</td>
+<td>分为告警和预警。告警按照一定的级别自动报警，通过设定的渠道，按照一定的触发规则进行。预警则在异常发生前，提前预判，给出警告。</td>
+</tr>
+</tbody>
+</table>
+<p>根据异常代码的后果的程度，对前端异常的表现分为如下几类：出错、呆滞、损坏、假死、崩溃。</p>
+<table>
+<thead>
+<tr>
+<th><strong>分类</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>出错</td>
+<td>界面呈现的内容与用户预期的内容不符，例如点击进入非目标界面，数据不准确，出现的错误提示不可理解，界面错位，提交后跳转到错误界面等情况。这类异常出现时，虽然产品本身功能还能正常使用，但用户无法达成自己目标。</td>
+</tr>
+<tr>
+<td>呆滞</td>
+<td>界面出现操作后没有反应的现象，例如点击按钮无法提交，提示成功后无法继续操作。这类异常出现时，产品已经存在界面级局部不可用现象。</td>
+</tr>
+<tr>
+<td>损坏</td>
+<td>界面出现无法实现操作目的的现象，例如点击无法进入目标界面，点击无法查看详情内容等。这类异常出现时，应用部分功能无法被正常使用。</td>
+</tr>
+<tr>
+<td>假死</td>
+<td>界面出现卡顿，无法对任何功能进行使用的现象。例如用户无法登陆导致无法使用应用内功能，由于某个遮罩层阻挡且不可关闭导致无法进行任何后续操作。这类异常出现时，用户很可能杀死应用。</td>
+</tr>
+<tr>
+<td>崩溃</td>
+<td>应用出现经常性自动退出或无法操作的现象。例如间歇性crash，网页无法正常加载或加载后无法进行任何操作。这类异常持续出现，将直接导致用户流失，影响产品生命力。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="" tabindex="-1"> <a class="header-anchor" href="#" aria-label="Permalink to &quot;&quot;">&ZeroWidthSpace;</a></h4>
+<p>前端产生异常的原因主要分5类：</p>
+<table>
+<thead>
+<tr>
+<th><strong>原因</strong></th>
+<th><strong>案例</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>逻辑错误</td>
+<td>1)    业务逻辑判断条件错误；</td>
+</tr>
+<tr>
+<td>2)    事件绑定顺序错误；</td>
+<td></td>
+</tr>
+<tr>
+<td>3)    调用栈时序错误；</td>
+<td></td>
+</tr>
+<tr>
+<td>4)    错误的操作 js 对象。</td>
+<td></td>
+</tr>
+<tr>
+<td>数据类型错误</td>
+<td>1)    将 Null 视作对象读取 Property；</td>
+</tr>
+<tr>
+<td>2)    将 Undefined 视作数组进行遍历；</td>
+<td></td>
+</tr>
+<tr>
+<td>3)    将字符串形式的数字直接用于加运算；</td>
+<td></td>
+</tr>
+<tr>
+<td>4)    函数参数未传。</td>
+<td></td>
+</tr>
+<tr>
+<td>语法句法错误</td>
+<td></td>
+</tr>
+<tr>
+<td>网络错误</td>
+<td>1)    慢；</td>
+</tr>
+<tr>
+<td>2)    服务端未返回数据但仍 200，前端按正常进行数据遍历；</td>
+<td></td>
+</tr>
+<tr>
+<td>3)    提交数据时网络中断；</td>
+<td></td>
+</tr>
+<tr>
+<td>4)    服务端 500 错误时前端未做任何错误处理。</td>
+<td></td>
+</tr>
+<tr>
+<td>系统错误</td>
+<td>1)    内存不够用；</td>
+</tr>
+<tr>
+<td>2)    磁盘塞满；</td>
+<td></td>
+</tr>
+<tr>
+<td>3)    壳不支持 API；</td>
+<td></td>
+</tr>
+<tr>
+<td>4)    不兼容。</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="三、异常采集" tabindex="-1">三、异常采集： <a class="header-anchor" href="#三、异常采集" aria-label="Permalink to &quot;三、异常采集：&quot;">&ZeroWidthSpace;</a></h3>
+<p>当异常出现的时候，我们需要知道异常的具体信息，根据异常的具体信息来决定采用什么样的解决方案。在采集异常信息时，可以遵循 4W 原则：WHO did WHAT and get WHICH exception in WHICH environment?</p>
+<table>
+<thead>
+<tr>
+<th><strong>分类</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用户信息</td>
+<td>出现异常时该用户的信息，例如该用户在当前时刻的状态、权限等，以及需要区分用户可多终端登录时，异常对应的是哪一个终端。</td>
+</tr>
+<tr>
+<td>行为信息</td>
+<td>用户进行什么操作时产生了异常：所在的界面路径；执行了什么操作；操作时使用了哪些数据；当时的 API 吐了什么数据给客户端；如果是提交操作，提交了什么数据；上一个路径；上一个行为日志记录 ID 等。</td>
+</tr>
+<tr>
+<td>异常信息</td>
+<td>产生异常的代码信息：用户操作的 DOM 元素节点；异常级别；异常类型；异常描述；代码 Stack 信息等。</td>
+</tr>
+<tr>
+<td>环境信息</td>
+<td>网络环境；设备型号和标识码；操作系统版本；客户端版本；API 接口版本等。</td>
+</tr>
+<tr>
+<td>例如：</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<CustomImage src='/growth-record/engineering/tools/monitoring02.webp' /><h3 id="四、异常捕获" tabindex="-1">四、异常捕获： <a class="header-anchor" href="#四、异常捕获" aria-label="Permalink to &quot;四、异常捕获：&quot;">&ZeroWidthSpace;</a></h3>
+<p>前端捕获异常分为全局捕获和单点捕获。全局捕获代码集中，易于管理；单点捕获作为补充，对某些特殊情况进行捕获，但分散，不利于管理。</p>
+<p>a、全局捕获
+通过全局的接口，将捕获代码集中写在一个地方，可以利用的接口有：</p>
+<ul>
+<li>window.addEventListener(‘error’) / window.addEventListener(“unhandledrejection”) / document.addEventListener(‘click’) 等；</li>
+<li>框架级别的全局监听，例如 Aixos 中使用 Interceptor 进行拦截，Vue、React 都有自己的错误采集接口；</li>
+<li>通过对全局函数进行封装包裹，实现在在调用该函数时自动捕获异常；</li>
+<li>对实例方法重写（Patch），在原有功能基础上包裹一层，例如对 console.error 进行重写，在使用方法不变的情况下也可以异常捕获。</li>
+</ul>
+<p>b、单点捕获
+在业务代码中对单个代码块进行包裹，或在逻辑流程中打点，实现有针对性的异常捕获：</p>
+<ul>
+<li>try…catch；</li>
+<li>专门写一个函数来收集异常信息，在异常发生时，调用该函数；</li>
+<li>专门写一个函数来包裹其他函数，得到一个新函数，该新函数运行结果和原函数一模一样，只是在发生异常时可以捕获异常。</li>
+</ul>
+<p>c、跨域脚本异常：
+由于浏览器安全策略限制，跨域脚本报错时，无法直接获取错误的详细信息，只能得到一个 Script Error。例如，我们会引入第三方依赖，或者将自己的脚本放在 CDN 时。解决 Script Error 的方法：</p>
+<p>方案一：</p>
+<ul>
+<li>将 js 内联到 HTML 中；</li>
+<li>将 js 文件与 HTML 放在同域下；</li>
+</ul>
+<p>方案二：</p>
+<ul>
+<li>为页面上 script 标签添加 crossorigin 属性；</li>
+<li>被引入脚本所在服务端响应头中，增加 Access-Control-Allow-Origin 来支持跨域资源共享。</li>
+</ul>
+<h3 id="五、异常整理与上报方案" tabindex="-1">五、异常整理与上报方案： <a class="header-anchor" href="#五、异常整理与上报方案" aria-label="Permalink to &quot;五、异常整理与上报方案：&quot;">&ZeroWidthSpace;</a></h3>
+<h4 id="_5-1-异常级别" tabindex="-1">5.1. 异常级别： <a class="header-anchor" href="#_5-1-异常级别" aria-label="Permalink to &quot;5.1. 异常级别：&quot;">&ZeroWidthSpace;</a></h4>
+<p>一般而言，我们会将收集信息的级别分为 info，warn，error 等，并在此基础上进行扩展。
+当我们监控到异常发生时，可以将该异常划分到“重要——紧急”模型中分为 A、B、C、D 四个等级。有些异常，虽然发生了，但是并不影响用户的正常使用，用户其实并没有感知到，虽然理论上应该修复，但是实际上相对于其他异常而言，可以放在后面进行处理。</p>
+<CustomImage src='/growth-record/engineering/tools/monitoring03.webp' /><p>在收集异常阶段，可根据第二节划分的异常后果来判断异常的严重程度，在发生异常时选择对应的上报方案进行上报。</p>
+<h4 id="_5-2-异常整理" tabindex="-1">5.2. 异常整理： <a class="header-anchor" href="#_5-2-异常整理" aria-label="Permalink to &quot;5.2. 异常整理：&quot;">&ZeroWidthSpace;</a></h4>
+<p>（1）前端日志存储：
+单纯一条异常日志并不能帮助我们快速定位问题根源，找到解决方案。但如果要收集用户的行为日志，又要采取一定的技巧，而不能用户每一个操作后，就立即将该行为日志传到服务器，对于具有大量用户同时在线的应用，如果用户一操作就立即上传日志，无异于对日志服务器进行 DDOS 攻击。因此，我们先将这些日志存储在用户客户端本地，达到一定条件之后，再同时打包上传一组日志。</p>
+<p>我们不可能直接将这些日志用一个变量保存起来，这样会挤爆内存，而且一旦用户进行刷新操作，这些日志就丢失了，因此，我们自然而然想到前端数据持久化方案。</p>
+<p>目前，可用的持久化方案可选项也比较多了，主要有：Cookie、localStorage、sessionStorage、IndexedDB、webSQL 、FileSystem 等等。那么该如何选择呢？我们通过一个表来进行对比：</p>
+<CustomImage src='/growth-record/engineering/tools/monitoring04.webp' /><p>综合之后，IndexedDB 是最好的选择，它具有容量大、异步的优势，异步的特性保证它不会对界面的渲染产生阻塞。而且 IndexedDB 是分库的，每个库又分 store，还能按照索引进行查询，具有完整的数据库管理思维，比localStorage 更适合做结构化数据管理。但是它有一个缺点，就是 API 非常复杂，不像 localStorage 那么简单直接。针对这一点，我们可以使用 hello-indexeddb 这个工具，它用 Promise 对复杂 API 进行来封装，简化操作，使 IndexedDB 的使用也能做到 localStorage 一样便捷。另外，IndexedDB 是被广泛支持的 HTML5 标准，兼容大部分浏览器，因此不用担心它的发展前景。</p>
+<CustomImage src='/growth-record/engineering/tools/monitoring05.webp' /><p>上图展示了前端存储日志的流程和数据库布局。当一个事件、变动、异常被捕获之后，形成一条初始日志，被立即放入暂存区（indexedDB 的一个 store），之后主程序就结束了收集过程，后续的事只在 webworker 中发生。在一个 webworker 中，一个循环任务不断从暂存区中取出日志，对日志进行分类，将分类结果存储到索引区中，并对日志记录的信息进行丰富，将最终将会上报到服务端的日志记录转存到归档区。而当一条日志在归档区中存在的时间超过一定天数之后，它就已经没有价值了，但是为了防止特殊情况，它被转存到回收区，再经历一段时间后，就会被从回收区中清除。</p>
+<p>（2）整理日志：
+主要就是根据日志特征，整理出不同的索引。我们在收集日志时，会给每一条日志打上一个 type，以此进行分类，并创建索引，同时通过 object-hashcode 计算每个 log 对象的 hash 值，作为这个 log 的唯一标志。</p>
+<ul>
+<li>将所有日志记录按时序存放在归档区，并将新入库的日志加入索引；</li>
+<li>BatchIndexes：批量上报索引（包含性能等其他日志），可一次批量上报 100 条；</li>
+<li>MomentIndexes：即时上报索引，一次全部上报；</li>
+<li>FeedbackIndexes：用户反馈索引，一次上报一条；</li>
+<li>BlockIndexes：区块上报索引，按异常/错误（traceId，requestId）分块，一次上报一块；</li>
+<li>上报完成后，被上报过的日志对应的索引删除；</li>
+<li>3 天以上日志进入回收区；</li>
+<li>7 天以上的日志从回收区清除；</li>
+</ul>
+<p>rquestId：同时追踪前后端日志。由于后端也会记录自己的日志，因此，在前端请求 API 的时候，默认带上requestId，后端记录的日志就可以和前端日志对应起来。</p>
+<p>traceId：追踪一个异常发生前后的相关日志。当应用启动时，创建一个 traceId，直到一个异常发生时，刷新traceId。把一个 traceId 相关的 requestId 收集起来，把这些 requestId 相关的日志组合起来，就是最终这个异常相关的所有日志，用来对异常进行复盘。</p>
+<CustomImage src='/growth-record/engineering/tools/monitoring06.webp' /><p>上图举例展示了如何利用 traceId 和 requestId 找出和一个异常相关的所有日志。在上图中，hash4 是一条异常日志，我们找到 hash4 对应的 traceId 为 traceId2，在日志列表中，有两条记录具有该 traceId，但是 hash3 这条记录并不是一个动作的开始，因为 hash3 对应的 requestId 为 reqId2，而 reqId2 开始于 hash2，因此，我们实际上要把 hash2 也加入到该异常发生的整个复盘备选记录中。总结起来就是，我们要找出同一个 traceId 对应的所有 requestId 对应的日志记录。
+我们把这些和一个异常相关的所有日志集合起来，称为一个 block，再利用日志的 hash 集合，得出这个 block 的hash，并在索引区中建立索引，等待上报。</p>
+<p>（3）上报日志：
+上报日志也在 webworker 中进行，为了和整理区分，可以分两个 worker。上报的流程大致为：在每一个循环中，从索引区取出对应条数的索引，通过索引中的 hash，到归档区取出完整的日志记录，再上传到服务器。
+按照上报的频率（重要紧急度）可将上报分为四种：及时上报、批量上报、区块上报、用户主动提交；</p>
+<table>
+<thead>
+<tr>
+<th><strong>类型</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>及时上报</td>
+<td>收集到日志后，立即触发上报函数。仅用于A类异常（异常级别）。而且由于受到网络不确定因素影响，A 类日志上报需要有一个确认机制，只有确认服务端已经成功接收到该上报信息之后，才算完成。否则需要有一个循环机制，确保上报成功。</td>
+</tr>
+<tr>
+<td>批量上报</td>
+<td>将收集到的日志存储在本地，当收集到一定数量之后再打包一次性上报，或者按照一定的频率（时间间隔）打包上传。这相当于把多次合并为一次上报，以降低对服务器的压力。</td>
+</tr>
+<tr>
+<td>区块上报</td>
+<td>将一次异常的场景打包为一个区块后进行上报。它和批量上报不同，批量上报保证了日志的完整性，全面性，但会有无用信息。而区块上报则是针对异常本身的，确保单个异常相关的日志被全部上报。</td>
+</tr>
+<tr>
+<td>用户主动提交</td>
+<td>在界面上提供一个按钮，用户主动反馈 bug。这有利于加强与用户的互动。或者当异常发生时，虽然对用户没有任何影响，但是应用监控到了，弹出一个提示框，让用户选择是否愿意上传日志。这种方案适合涉及用户隐私数据时。</td>
+</tr>
+</tbody>
+</table>
+<CustomImage src='/growth-record/engineering/tools/monitoring07.webp' /><p>上图展示了上报的一个大致流程。对于合并上报这种情况，一次的数据量可能要十几k，对于日 pv 大的站点来说，产生的流量还是很可观的。所以有必要对数据进行压缩上报。lz-string 是一个非常优秀的字符串压缩类库，兼容性好，代码量少，压缩比高，压缩时间短，压缩率达到惊人的 60%。但它基于LZ78压缩，如果后端不支持解压，可选择 gzip 压缩，一般而言后端会默认预装 gzip，因此，选择 gzip 压缩数据也可以，工具包 pako 中自带了 gzip 压缩，可以尝试使用。</p>
+<h3 id="六、异常日志接收、存储与分析" tabindex="-1">六、异常日志接收、存储与分析： <a class="header-anchor" href="#六、异常日志接收、存储与分析" aria-label="Permalink to &quot;六、异常日志接收、存储与分析：&quot;">&ZeroWidthSpace;</a></h3>
+<h4 id="_6-1-接入层与消息队列" tabindex="-1">6.1. 接入层与消息队列： <a class="header-anchor" href="#_6-1-接入层与消息队列" aria-label="Permalink to &quot;6.1. 接入层与消息队列：&quot;">&ZeroWidthSpace;</a></h4>
+<p>一般通过提供独立的日志服务器接收客户端日志，接收过程中，要对客户端日志内容的合法性、安全性等进行甄别，防止被人攻击。而且由于日志提交一般都比较频繁，多客户端同时并发的情况也常见。通过消息队列将日志信息逐一处理后写入到数据库进行保存也是比较常用的方案。</p>
+<CustomImage src='/growth-record/engineering/tools/monitoring08.webp' /><p>上图为腾讯 BetterJS 的架构图，其中“接入层”和“推送中心”就是这里提到的接入层和消息队列。BetterJS 将整个前端监控的各个模块进行拆分，推送中心承担了将日志推送到存储中心进行存储和推送给其他系统（例如告警系统）的角色，但我们可以把接收日志阶段的队列独立出来看，在接入层和存储层之间做一个过渡。</p>
+<h4 id="_6-2-日志存储系统" tabindex="-1">6.2. 日志存储系统： <a class="header-anchor" href="#_6-2-日志存储系统" aria-label="Permalink to &quot;6.2. 日志存储系统：&quot;">&ZeroWidthSpace;</a></h4>
+<p>对于小应用，单库单表加优化就可以应付。一个成规模的应用，如果要提供更标准高效的日志监控服务，常常需要在日志存储架构上下一些功夫。目前业界已经有比较完备的日志存储方案，主要有：Hbase 系，Dremel 系，Lucene 系等。总体而言，日志存储系统主要面对的问题是数据量大，数据结构不规律，写入并发高，查询需求大等。一般一套日志存储系统，要解决上面这些问题，就要解决写入的缓冲，存储介质按日志时间选择，为方便快速读取而设计合理的索引系统等等。</p>
+<h4 id="_6-3-搜索" tabindex="-1">6.3. 搜索： <a class="header-anchor" href="#_6-3-搜索" aria-label="Permalink to &quot;6.3. 搜索：&quot;">&ZeroWidthSpace;</a></h4>
+<p>日志的最终目的是要使用，由于一般日志的体量都非常大，因此，要在庞大的数据中找到需要的日志记录，需要依赖比较好的搜索引擎。Splunk 是一套成熟的日志存储系统，但它是付费使用的。按照 Splunk 的框架，Elk 是 Splunk 的开源实现，Elk 是 ElasticSearch、Logstash、Kibana 的结合，ES 基于 Lucene 的存储、索引的搜索引擎；logstash 是提供输入输出及转化处理插件的日志标准化管道；Kibana 提供可视化和查询统计的用户界面。</p>
+<h3 id="七、异常监控告警及部署方案" tabindex="-1">七、异常监控告警及部署方案： <a class="header-anchor" href="#七、异常监控告警及部署方案" aria-label="Permalink to &quot;七、异常监控告警及部署方案：&quot;">&ZeroWidthSpace;</a></h3>
+<p>对异常进行统计和分析只是基础，而在发现异常时可以推送和告警，甚至做到自动处理，才是一个异常监控系统应该具备的能力。</p>
+<h4 id="_7-1-自定义触发条件的告警" tabindex="-1">7.1. 自定义触发条件的告警： <a class="header-anchor" href="#_7-1-自定义触发条件的告警" aria-label="Permalink to &quot;7.1. 自定义触发条件的告警：&quot;">&ZeroWidthSpace;</a></h4>
+<p>a. 监控实现
+当日志信息进入接入层时，就可以触发监控逻辑。当日志信息中存在较为高级别的异常时，也可以立即出发告警。告警消息队列和日志入库队列可以分开来管理，实现并行。</p>
+<p>对入库日志信息进行统计，对异常信息进行告警。对监控异常进行响应。所谓监控异常，是指：有规律的异常一般而言都比较让人放心，比较麻烦的是突然之间的异常。例如在某一时段突然频繁接收到 D 级异常，虽然 D 级异常是不紧急一般重要，但是当监控本身发生异常时，就要提高警惕。</p>
+<p>b. 自定义触发条件
+除了系统开发时配置的默认告警条件，还应该提供给日志管理员可配置的自定义触发条件。</p>
+<ul>
+<li>日志内含有什么内容时；</li>
+<li>日志统计达到什么度、量时；</li>
+<li>向符合什么条件的用户告警；</li>
+</ul>
+<h4 id="_7-2-推送渠道" tabindex="-1">7.2. 推送渠道： <a class="header-anchor" href="#_7-2-推送渠道" aria-label="Permalink to &quot;7.2. 推送渠道：&quot;">&ZeroWidthSpace;</a></h4>
+<p>可选择的途径有很多，例如邮件、短信、微信、电话、钉钉。</p>
+<h4 id="_7-3-推送频率" tabindex="-1">7.3. 推送频率： <a class="header-anchor" href="#_7-3-推送频率" aria-label="Permalink to &quot;7.3. 推送频率：&quot;">&ZeroWidthSpace;</a></h4>
+<p>针对不同级别的告警，推送的频率也可以进行设定。低风险告警可以以报告的形式一天推送一次，高风险告警 10 分钟循环推送，直到处理人手动关闭告警开关。</p>
+<h4 id="_7-4-自动报表" tabindex="-1">7.4. 自动报表： <a class="header-anchor" href="#_7-4-自动报表" aria-label="Permalink to &quot;7.4. 自动报表：&quot;">&ZeroWidthSpace;</a></h4>
+<p>对于日志统计信息的推送，可以做到自动生成日报、周报、月报、年报并邮件发送给相关群组。</p>
+<h4 id="_7-5-自动产生-bug-工单" tabindex="-1">7.5. 自动产生 Bug 工单： <a class="header-anchor" href="#_7-5-自动产生-bug-工单" aria-label="Permalink to &quot;7.5. 自动产生 Bug 工单：&quot;">&ZeroWidthSpace;</a></h4>
+<p>当异常发生时，系统可以调用工单系统API实现自动生成 Bug 单，工单关闭后反馈给监控系统，形成对异常处理的追踪信息进行记录，在报告中予以展示。</p>
+<h4 id="_7-6-异常修复" tabindex="-1">7.6. 异常修复： <a class="header-anchor" href="#_7-6-异常修复" aria-label="Permalink to &quot;7.6. 异常修复：&quot;">&ZeroWidthSpace;</a></h4>
+<p>SourceMap 使用，前端代码大部分情况都是经过压缩后发布的，上报的 stack 信息需要还原为源码信息，才能快速定位源码进行修改。</p>
+<p>发布时，只部署 js 脚本到服务器上，将 SourceMap 文件上传到监控系统，在监控系统中展示 stack 信息时，利用 SourceMap 文件对 stack 信息进行解码，得到源码中的具体信息。</p>
+<p>但是这里有一个问题，就是 SourceMap 必须和正式环境的版本对应，还必须和 Git 中的某个 commit 节点对应，这样才能保证在查异常的时候可以正确利用 stack 信息，找到出问题所在版本的代码。这些可以通过建立 CI任务，在集成化部署中增加一个部署流程，以实现这一环节。</p>
+<h4 id="_7-7-从告警到预警" tabindex="-1">7.7. 从告警到预警： <a class="header-anchor" href="#_7-7-从告警到预警" aria-label="Permalink to &quot;7.7. 从告警到预警：&quot;">&ZeroWidthSpace;</a></h4>
+<p>预警的本质是，预设可能出现异常的条件，当触发该条件时异常并没有真实发生，因此，可以赶在异常发生之前对用户行为进行检查，及时修复，避免异常或异常扩大。</p>
+<p>其实就是一个统计聚类的过程。将历史中发生异常的情况进行统计，从时间、地域、用户等不同维度加以统计，找出规律，并将这些规律通过算法自动加入到预警条件中，当下次触发时，及时预警。</p>
+<h4 id="_7-8-智能修复" tabindex="-1">7.8. 智能修复： <a class="header-anchor" href="#_7-8-智能修复" aria-label="Permalink to &quot;7.8. 智能修复：&quot;">&ZeroWidthSpace;</a></h4>
+<p>自动修复错误。例如，前端要求接口返回数值，但接口返回了数值型的字符串，那么可以有一种机制，监控系统发送正确数据类型模型给后端，后端在返回数据时，根据该模型控制每个字段的类型。</p>
+<h4 id="_7-9-部署" tabindex="-1">7.9. 部署： <a class="header-anchor" href="#_7-9-部署" aria-label="Permalink to &quot;7.9. 部署：&quot;">&ZeroWidthSpace;</a></h4>
+<ul>
+<li>多客户端：一个用户在不同终端上登录，或者一个用户在登录前和登录后的状态。通过特定算法生成 requestId，通过该 requestId 可以确定某个用户在独立客户端上的一系列操作，根据日志时序，可以梳理出用户产生异常的具体路径。</li>
+<li>集成便捷性：前端写成包，全局引用即可完成大部分日志记录、存储和上报。在特殊逻辑里面，可以调用特定方法记录日志。后端与应用本身的业务代码解耦，可以做成独立的服务，通过接口和第三方应用交互。利用集成部署，可以将系统随时进行扩容、移植等操作。</li>
+<li>管理系统的可扩展：整套系统可扩展，不仅服务单应用，可支持多个应用同时运行。同一个团队下的所有应用都可以利用同一个平台进行管理。</li>
+<li>日志系统权限：不同的人在访问日志系统时权限不同，一个访问者只能查看自己相关的应用，有些统计数据如果比较敏感，可以单独设置权限，敏感数据可脱敏。</li>
+</ul>
+<h3 id="八、其他说明" tabindex="-1">八、其他说明： <a class="header-anchor" href="#八、其他说明" aria-label="Permalink to &quot;八、其他说明：&quot;">&ZeroWidthSpace;</a></h3>
+<h4 id="_8-1-异常录制" tabindex="-1">8.1. 异常录制： <a class="header-anchor" href="#_8-1-异常录制" aria-label="Permalink to &quot;8.1. 异常录制：&quot;">&ZeroWidthSpace;</a></h4>
+<p>对于一个异常，仅仅拥有该异常的信息还不足以完全抓住问题的本质，因为异常发生的位置，并不一定是异常根源所在的位置。我们需要对异常现场进行还原，才能复原问题全貌，甚至避免类似问题在其他界面中发生。这里需要引进一个概念，就是“异常录制”。录制通过“时间”“空间”两个维度记录异常发生前到发生的整个过程，对于找到异常根源更有帮助，可根据需要再去扩展。</p>
+<h4 id="_8-2-日志统计与分析" tabindex="-1">8.2. 日志统计与分析： <a class="header-anchor" href="#_8-2-日志统计与分析" aria-label="Permalink to &quot;8.2. 日志统计与分析：&quot;">&ZeroWidthSpace;</a></h4>
+<p>一个完善的日志统计分析工具需要提供各方面方便的面板，以可视化的方式给日志管理员和开发者反馈信息。根据需要可具体分析实现。</p>
+<h4 id="_8-3-异常测试" tabindex="-1">8.3. 异常测试： <a class="header-anchor" href="#_8-3-异常测试" aria-label="Permalink to &quot;8.3. 异常测试：&quot;">&ZeroWidthSpace;</a></h4>
+<p>主动异常测试和随机异常测试两种，不做详细讨论。</p>
+<h4 id="_8-4-性能监控" tabindex="-1">8.4. 性能监控： <a class="header-anchor" href="#_8-4-性能监控" aria-label="Permalink to &quot;8.4. 性能监控：&quot;">&ZeroWidthSpace;</a></h4>
+<p>异常监控主要针对代码级别的报错，但也应该关注性能异常。性能监控主要包括：</p>
+<ul>
+<li>运行时性能：文件级、模块级、函数级、算法级</li>
+<li>网络请求速率</li>
+<li>系统性能</li>
+</ul>
+<h4 id="_8-5-数据脱敏" tabindex="-1">8.5. 数据脱敏： <a class="header-anchor" href="#_8-5-数据脱敏" aria-label="Permalink to &quot;8.5. 数据脱敏：&quot;">&ZeroWidthSpace;</a></h4>
+<p>敏感数据不被日志系统采集。由于日志系统的保存是比较开放的，虽然里面的数据很重要，但是在存储上大部分日志系统都不是保密级，因此，如果应用涉及了敏感数据，最好做到：</p>
+<ul>
+<li>独立部署，不和其他应用共享监控系统；</li>
+<li>不采集具体数据，只采集用户操作数据，在重现时，通过日志信息可以取出数据 API 结果来展示；</li>
+<li>日志加密，做到软硬件层面的加密防护；</li>
+<li>必要时，可采集具体数据的 ID 用于调试，场景重现时，用 Mock 数据替代，Mock 数据可由后端采用假的数据源生成；</li>
+<li>对敏感数据进行混淆；</li>
+</ul>
+<h3 id="九、主流监控系统对比" tabindex="-1">九、主流监控系统对比： <a class="header-anchor" href="#九、主流监控系统对比" aria-label="Permalink to &quot;九、主流监控系统对比：&quot;">&ZeroWidthSpace;</a></h3>
+<table>
+<thead>
+<tr>
+<th><strong>系统</strong></th>
+<th><strong>简介</strong></th>
+<th><strong>功能</strong></th>
+<th><strong>优点</strong></th>
+<th><strong>缺点</strong></th>
+<th><strong>文档地址（教程、开源库）</strong></th>
+<th><strong>其他说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sentry</td>
+<td>是一个开源的实时错误监控的项目，它支持很多端的配置，包括 Web 前端、服务器端、移动端及其游戏端。支持各种语言，例如 Python、OC、Java、Node、JavaScript 等。也可以应用到各种不同的框架上面，如前端框架中的 Vue 、Angular 、React 等最流行的前端框架。提供了 Github、Slack、Trello 的常见的开发工具的集成。可以自己安装并且搭建 Sentry 应用。</td>
+<td>跨平台支持；围绕错误的丰富上下文；实时，可自定义的错误通知；优先解决问题；清理敏感数据。</td>
+<td>开源（需通过docker安装）对各种前端框架的友好支持 (Vue、React、Angular)；支持 SourceMap;性能强大，可监控全栈异常。易于未来异常监控扩展。还能和 Gitlab ，钉钉等各个平台进行结合，将异常监控上报到 Gitlab 或与钉钉机器人结合，这对于一般公司来说，够用了，这对于线上前端出现的异常能够实时的发现，修复。</td>
+<td></td>
+<td><a href="https://docs.sentry.io/" target="_blank" rel="noreferrer">官方文档</a></td>
+<td>使用者多，有官方文档；</td>
+</tr>
+<tr>
+<td>JSTracker</td>
+<td>通过对 Error 的监听，获取异常的相关信息并添加这些信息到异常信息数组，在达到上限或者一定时间之后做处理(返回服务端保存数据之类)。</td>
+<td>捕获页面 JavaScript 异常报错，捕获异常类型包含:1. JavaScript runtime 异常捕捉 ；2. 静态资源 load faided 异常捕捉 ；3. console.error 的异常捕获。</td>
+<td>使用安装简单方便，满足基本异常监控需求</td>
+<td>监控功能过于基本，没有其他高级操作；没有自带后台管理页面；cnpm 使用人数较少，版本更新也很慢；</td>
+<td><a href="https://cnpmjs.org/package/jstracker" target="_blank" rel="noreferrer">cnpm 使用地址</a></td>
+<td>没有官方文档</td>
+</tr>
+<tr>
+<td>Badjs</td>
+<td>Web 前端脚本错误监控及跟踪解决方案。</td>
+<td>页面脚本错误监控、上报、统计、查看等系统化的跟踪解决方案；支持告警和定时发送邮件报表功能。</td>
+<td>一站式体系化解决方案：业务只需要简单的配置，引入上报文件，即可实现脚本错误上报，每日统计邮件跟踪方便。可视化查询系统，快速定位错误信息：Web 应用程序脚本数量庞大，开发人员在如此之多的脚本中定位某个问题变得困难。BadJS 能够巧妙定位错误脚本代码，进行反馈。通过各种查询条件，快速找到详细错误日志。跨域、Script Error 等棘手问题不再是难题：Try.js 帮你发现一切。真实用户体验监控与分析：通过浏览器端真实用户行为与体验数据监控，为您提供JavaScript、AJAX 请求错误诊断和页面加载深度分析帮助开发人员深入定位每一个问题细节。即使没有用户投诉，依然能发现隐蔽 Bug，主动提升用户体验。用户行为分析：细粒度追踪真实的用户行为操作及流程，前端崩溃、加载缓慢及错误问题，可关联到后端进行深度诊断。产品质量的保障：浏览器百花齐放，用户环境复杂，巨大的差异导致开发人员难以重现用户遇到的问题。无法像后台一样上报所有用户操作日志。通过 BadJS，上报用户端脚本错误，为产品质量保驾护航。</td>
+<td>安装使用及部署需要折腾（有环境要求，安装模块有点多）；异常上报操作用法比较多，需要自定义操作；</td>
+<td><a href="https://github.com/BetterJS/doc" target="_blank" rel="noreferrer">GitHub 地址</a></td>
+<td>有官方文档，还有一个转发给第三方系统的客户端（类似可以转发到钉钉群告警通知）</td>
+</tr>
+<tr>
+<td>FdSafe</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Saijs</td>
+<td>通用前端监控采集脚本</td>
+<td>JavaScript 异常监控；敏感信息监控；DOM 合法性检查；静态资源监控；网站监控等；</td>
+<td></td>
+<td>没有管理后台</td>
+<td><a href="https://github.com/saijs/sai.js" target="_blank" rel="noreferrer">GitHub 地址</a></td>
+<td>使用人数一般，文档也很简单</td>
+</tr>
+<tr>
+<td>Fundebug</td>
+<td>付费暂不考虑</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FrontJS</td>
+<td>付费暂不考虑</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>应用实时监控服务 ARMS</td>
+<td>付费暂不考虑</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TrackJS</td>
+<td>付费暂不考虑</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Instabug</td>
+<td>付费暂不考虑</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="十、最终选择方案" tabindex="-1">十、最终选择方案： <a class="header-anchor" href="#十、最终选择方案" aria-label="Permalink to &quot;十、最终选择方案：&quot;">&ZeroWidthSpace;</a></h3>
+<p><strong>Sentry 监控系统</strong>
+原因如下：</p>
+<ul>
+<li>支持目前主流语言及框架的项目，比较成熟和稳定;</li>
+<li>开源免费和付费版本，免费暂时够用；</li>
+<li>Docker 集成好的 Sentry 安装环境。</li>
+</ul>
+<h3 id="十一、有价值的资料" tabindex="-1">十一、有价值的资料： <a class="header-anchor" href="#十一、有价值的资料" aria-label="Permalink to &quot;十一、有价值的资料：&quot;">&ZeroWidthSpace;</a></h3>
+<ul>
+<li><a href="https://juejin.im/post/5bbc2695e51d4539701e7ea6" target="_blank" rel="noreferrer">手刃前端监控系统</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/51446011" target="_blank" rel="noreferrer">超详细！搭建一个前端错误监控系统</a></li>
+<li><a href="https://docs.sentry.io/" target="_blank" rel="noreferrer">sentry官网</a></li>
+</ul>
 ]]></content:encoded>
         </item>
     </channel>
