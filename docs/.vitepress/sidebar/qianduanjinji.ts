@@ -14,6 +14,7 @@ export default function qianduanjinjiSidebarGuide() {
       collapsed: false,
       items: [
         // { text: '什么是 CSS', link: '/base/css/what-is-css' },
+        { text: 'CSS 实战手册学习', link: '/base/css/practical-manual' },
       ],
     },
     {
@@ -57,10 +58,12 @@ export default function qianduanjinjiSidebarGuide() {
       text: '前端工程化',
       collapsed: false,
       items: [
-        // { text: '什么是前端工程化', link: '/engineering/tools/' },
+        { text: '什么是前端工程化', link: '/engineering/index' },
         // { text: '性能优化', link: '/engineering/performance/' },
         { text: 'Webpack 基础语法', link: '/engineering/webpack/intro' },
         { text: '异常监控管理工具调研', link: '/engineering/tools/anomaly-monitoring-research' },
+        { text: 'DevOps 了解', link: '/engineering/tools/dev-ops' },
+        { text: '框架选型指南', link: '/engineering/other/frame-selection' },
       ],
     },
     {
