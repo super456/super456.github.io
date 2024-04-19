@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Thu, 18 Apr 2024 15:42:13 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Apr 2024 01:13:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -14,6 +14,23 @@
             <link>https://super456.github.io</link>
         </image>
         <copyright>Copyright (c) 2024-present, 纵倾童鞋</copyright>
+        <item>
+            <title><![CDATA[前端导航]]></title>
+            <link>https://super456.github.io/posts/navigator/</link>
+            <guid>https://super456.github.io/posts/navigator/</guid>
+            <pubDate>Fri, 19 Apr 2024 01:12:09 GMT</pubDate>
+            <description><![CDATA[关于前端开发的导航及工具推荐]]></description>
+            <content:encoded><![CDATA[<h1 id="前端导航" tabindex="-1">前端导航 <a class="header-anchor" href="#前端导航" aria-label="Permalink to &quot;前端导航&quot;">&ZeroWidthSpace;</a></h1>
+<div class="tip custom-block"><p class="custom-block-title">TIP</p>
+<p>收集我所用过且觉得好用的前端资源，为了方便后续查找使用，特此分类整理</p>
+<p>共收录资源：分类<strong> {{ navCountInfo.categoryNum }} </strong>个、内容<strong> {{ navCountInfo.total }} </strong>个</p>
+<p>持续更新中🎉🚀...</p>
+<p>欢迎给我提 <a href="https://github.com/super456/super456.github.io/issues" target="_blank" rel="noreferrer">ISSUE</a> 添加资源内容🌺</p>
+</div>
+<MNavLinks v-for="{title, items} in NAV_DATA" :title="title" :items="items"/><hr>
+<p><strong>感谢<a href="https://notes.fe-mm.com/nav" target="_blank" rel="noreferrer">茂茂物语</a>提供支持🌹</strong></p>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[关于我]]></title>
             <link>https://super456.github.io/posts/about/</link>
@@ -61,23 +78,6 @@
 <p><em>愿，我们都在努力，向着光的方向！</em> ☀️</p>
 <hr>
 <p><strong>注：有些内容是我大三暑假写的一个简短的自我介绍，哈哈哈，有被那个时候的自己感动到，所以想留着，想想曾经那个年少的自己，也想给后来的自己一个参考呢</strong></p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[前端导航]]></title>
-            <link>https://super456.github.io/posts/navigator/</link>
-            <guid>https://super456.github.io/posts/navigator/</guid>
-            <pubDate>Tue, 16 Apr 2024 15:57:38 GMT</pubDate>
-            <description><![CDATA[关于前端开发的导航及工具推荐]]></description>
-            <content:encoded><![CDATA[<h1 id="前端导航" tabindex="-1">前端导航 <a class="header-anchor" href="#前端导航" aria-label="Permalink to &quot;前端导航&quot;">&ZeroWidthSpace;</a></h1>
-<div class="tip custom-block"><p class="custom-block-title">TIP</p>
-<p>收集我所用过且觉得有用的前端资源，为了方便后续查找使用，特此分类整理</p>
-<p>共收录资源：分类<strong> {{ navCountInfo.categoryNum }} </strong>个、内容<strong> {{ navCountInfo.total }} </strong>个</p>
-<p>持续更新中🎉🚀...</p>
-<p>欢迎给我提 <a href="https://github.com/super456/super456.github.io/issues" target="_blank" rel="noreferrer">ISSUE</a> 添加资源内容🌺</p>
-</div>
-<MNavLinks v-for="{title, items} in NAV_DATA" :title="title" :items="items"/><hr>
-<p><strong>感谢<a href="https://notes.fe-mm.com/nav" target="_blank" rel="noreferrer">茂茂物语</a>提供支持🌹</strong></p>
 ]]></content:encoded>
         </item>
         <item>
@@ -7776,6 +7776,155 @@ Yolk
             <enclosure url="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064729042-ad1afb3e-00ce-4c54-97aa-16beb85f7034.png#averageHue=%232a2929&clientId=u46e8d9ee-889a-4&from=paste&height=140&id=uf3a04606&originHeight=140&originWidth=692&originalType=binary&ratio=1&rotation=0&showTitle=false&size=26211&status=done&style=none&taskId=ufb0564e6-46cf-4f6a-85cc-ad3008aa9bd&title=&width=692" length="0" type="image/png"/>
         </item>
         <item>
+            <title><![CDATA[工作生活心得]]></title>
+            <link>https://super456.github.io/posts/random-thought/2022/work-life-insights.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2022/work-life-insights.html</guid>
+            <pubDate>Sat, 05 Nov 2022 20:00:00 GMT</pubDate>
+            <description><![CDATA[# 工作生活心得
+## 一、关于工作
+1. 想做好一件事情前，获得上级的认可非常非常重要，这是把一件事情做成、做好的催化剂。
+
+2. 很多时候，源自“事”的困难都可以用态度解决，来自“人”的困难可以用换位思考解决。
+
+3. 对于刚参加工作的同学，如果家中无矿，啥也别说，努力就对了！毕业五年内的表现，可以决定人生很多事情。
+
+4. 如果你和领导发生分歧：拿出你的数据/理由/态度尽最大的努力去说服他，如果充分沟通还形不成共识，那就先听他的 。这不是媚上，而是“在必须达成一致的前提下，相信更有概率做出正确决定的人。”
+
+5. 在工作中，如果某个时间突然发现和往常不一样，陡然压力变大/身心疲惫，别害怕 ，因为，这有可能是你在成长、突破瓶颈前的黑暗期。
+
+6. 专业技能是立身之本。从长期来看，它是性价比最高的投资标的之一。
+
+7. 结合资源，尽最大的努力、用最好的态度，做好手上的工作，也是一种创业。
+
+8. 不要因为背靠大树久了，就误认为自己是颗大树。对客户&用户的尊重和价值创造是我们很大的护城河。
+
+**——阿里舒文**
+
+]]></description>
+            <content:encoded><![CDATA[<h1 id="工作生活心得" tabindex="-1">工作生活心得 <a class="header-anchor" href="#工作生活心得" aria-label="Permalink to &quot;工作生活心得&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="一、关于工作" tabindex="-1">一、关于工作 <a class="header-anchor" href="#一、关于工作" aria-label="Permalink to &quot;一、关于工作&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>
+<p>想做好一件事情前，获得上级的认可非常非常重要，这是把一件事情做成、做好的催化剂。</p>
+</li>
+<li>
+<p>很多时候，源自“事”的困难都可以用态度解决，来自“人”的困难可以用换位思考解决。</p>
+</li>
+<li>
+<p>对于刚参加工作的同学，如果家中无矿，啥也别说，努力就对了！毕业五年内的表现，可以决定人生很多事情。</p>
+</li>
+<li>
+<p>如果你和领导发生分歧：拿出你的数据/理由/态度尽最大的努力去说服他，如果充分沟通还形不成共识，那就先听他的 。这不是媚上，而是“在必须达成一致的前提下，相信更有概率做出正确决定的人。”</p>
+</li>
+<li>
+<p>在工作中，如果某个时间突然发现和往常不一样，陡然压力变大/身心疲惫，别害怕 ，因为，这有可能是你在成长、突破瓶颈前的黑暗期。</p>
+</li>
+<li>
+<p>专业技能是立身之本。从长期来看，它是性价比最高的投资标的之一。</p>
+</li>
+<li>
+<p>结合资源，尽最大的努力、用最好的态度，做好手上的工作，也是一种创业。</p>
+</li>
+<li>
+<p>不要因为背靠大树久了，就误认为自己是颗大树。对客户&amp;用户的尊重和价值创造是我们很大的护城河。</p>
+</li>
+</ol>
+<p><strong>——阿里舒文</strong></p>
+<hr>
+<ol start="9">
+<li>
+<p>学会心平气和的跟产品沟通，尤其是不懂技术的产品。</p>
+</li>
+<li>
+<p>喜欢学习的程序员很少，得过且过才是大多数。</p>
+</li>
+<li>
+<p>每天写业务页面不能让你变强，顶多算是比较熟练的流水线工人，要变强还得靠业余时间。</p>
+</li>
+<li>
+<p>工作不忙时，尽量利用这段时间学习；技术越好，任务完成的越快，摸鱼的时间就越多。</p>
+</li>
+<li>
+<p>少管闲事、少关注八卦新闻、别拍马屁，有时间多学习。</p>
+</li>
+<li>
+<p><strong>时刻反省自己，今天状态怎么样，有没有进步、提高认知、扩展技术广度或深度什么的</strong>。</p>
+</li>
+</ol>
+<hr>
+<ol start="15">
+<li>
+<p><strong>专注</strong> —— 一万小时定律。做任何事都需要持续的专注，我最开始也说了技术是一门手艺活，如果吃不了苦要提前改行。当然现在各种新兴媒体涌现，比如：得到、极客时间、凯叔讲故事、樊登读书、社群圈子等，打破了一万小时定律。你应该庆幸，因为这些媒体的出现，让你有更多的时间获得更多的知识。</p>
+</li>
+<li>
+<p><strong>专家思维</strong>：碰到问题一定要<strong>打破砂锅问到底</strong>。只有这样你才能深刻理解这个问题背后的真实原因，后续再碰到能快速解决，并<strong>沉淀经验帮助其他人</strong>。</p>
+</li>
+<li>
+<p><strong>不要急于证明自己</strong>：频繁跳槽，短时间内薪水看起来会比较高，但可能无法长远。如果你不厚积薄发，突破那个天花板，你的薪水也只会是那个上限，<strong>突破</strong>了才能有更大的未来。</p>
+</li>
+<li>
+<p><strong>建立个人品牌</strong>：不要害怕吃亏，多帮助别人，成为别人口中的靠谱先生。</p>
+</li>
+<li>
+<p><strong>坚持写作</strong>：日课、总结。比如玉伯等大佬都保持写日课的习惯。<strong>经常总结</strong>，<strong>反省得失</strong>。</p>
+</li>
+<li>
+<p><strong>写 PPT</strong>：大家可能会觉得 PPT 大神很虚。我不提倡过度写 PPT，但比如月度、季度等 PPT，你还是要写写。PPT 很能锻炼一个人的结构化和抽象思维，提升你对事情的看法。所以它是个锻炼的工具。</p>
+</li>
+<li>
+<p><strong>以战养兵</strong>：通过在压力下锻炼自己对项目的<strong>把控</strong>，训练自己的项目经验，训练跟别人<strong>协同</strong>把事做好。</p>
+</li>
+<li>
+<p>明白自己这四个阶段的位置及调整：<strong>不知道自己不知道</strong> - <strong>知道自己不知道</strong> - <strong>知道自己知道</strong> - <strong>不知道自己知道</strong>，达到最高的无我境界。</p>
+</li>
+</ol>
+<p><strong>——阿里城池</strong></p>
+<hr>
+<ol start="23">
+<li>只有自己亲身经历的坑才是经验，道听途说或者学习了解到的东西都只是过眼浮云。</li>
+</ol>
+<hr>
+<ol start="24">
+<li>
+<p>每个人都有自己的想法，接受别人的想法是学习，让别人接受你的想法是一种包容，更是一种成长。</p>
+</li>
+<li>
+<p>有争吵才会有结果，有批评才会有进步，有意识才会持续改变。</p>
+</li>
+<li>
+<p>学而不思则罔，思而不学则殆。紧张的节奏压得你没有时间思考，也没有时间总结。你以为你做了很多，学了很多，但是你需要时间静下来思考和总结，这样最终才会变成自己的东西。</p>
+</li>
+<li>
+<p>重要也不重要：你的重要因为你是团队的一份子，你需要用你的光和热鼓舞自己和影响别人，用你的力量去塑造公司的产品，公司的需要就是你的重要。<strong>如果你是来学习的，抱歉，这里并不适合你</strong>。因为公司没有时间和经历花在培养一个人的身上，过多的是看到你的结果，而不是看到你的成长。所以你的个人成长显得又是那么的苍白。然而事情并不是绝对的，创业的成功带来的回报远比你的个人成长带来的回报高得多，比如陌陌、映客的上市，对于那些初期加入的人来说是硕大的丰收。但是这需要你的慧眼。</p>
+</li>
+<li>
+<p>沉淀和成长：沉淀是大厂最宝贵的资源，海量的中间件、内部文献、骨灰级大佬都是你学习的资源。无论是业务还是技术，你都可以学到整个领域的精华，这就是大厂带给你的成长。外企小公司对于技术的沉淀是远远不如国内一线大厂的，这些经验不是你努力学习看书能得到的，周围的环境，整个团队的意识带给你的视野和成长是与众不同的。</p>
+</li>
+</ol>
+<p><strong>——微信公众号Java后端</strong></p>
+<h2 id="二、关于生活" tabindex="-1">二、关于生活 <a class="header-anchor" href="#二、关于生活" aria-label="Permalink to &quot;二、关于生活&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>
+<p>技术人读书工作挣钱养家，一步步成长同时也会一岁岁变老。相比不少行业，互联网行业自身有赛道上的优势，但如果单纯以同比其他行业略高的溢价按年/月出售自己的时间和技能，这不应该是我们做的。坚持不断的思考、通过技术优势带来叠加价值，在过程中不断成长 ， 这兴许会更好。</p>
+</li>
+<li>
+<p>学会奖励自己。如果经受了辛劳、痛苦和压力走了过来，再不好好的、肉痛地奖励自己一把，哪对得起过去和未来的自己。</p>
+</li>
+<li>
+<p>除了在工作中，人生处处皆可学习：学理财、学打球、学拍照、学游泳、学健身、学拍短视频、学习怎么把生活过得更好。</p>
+</li>
+<li>
+<p>最后，咱们技术人可能很忙，有可能没法“<strong>Work-Life Balance</strong>”，这是一种取舍。但健康的身体一定是最宝贵的一笔财富，没有之一，不能舍。</p>
+</li>
+</ol>
+<p><strong>——阿里舒文</strong></p>
+<hr>
+<ol start="5">
+<li>只要不生病，慢慢赚钱就好了，这就是人生。</li>
+</ol>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[第 11 本《福格行为模型》]]></title>
             <link>https://super456.github.io/posts/read-book/2022/fugexingweimoxing.html</link>
             <guid>https://super456.github.io/posts/read-book/2022/fugexingweimoxing.html</guid>
@@ -8025,6 +8174,422 @@ Yolk
             <enclosure url="https://super456.github.io/read-book/2022/hamaxianshengkanxingliyisheng.webp" length="0" type="image/webp"/>
         </item>
         <item>
+            <title><![CDATA[开发常用命令行]]></title>
+            <link>https://super456.github.io/posts/growth-record/other/toolGuide/common-command-line.html</link>
+            <guid>https://super456.github.io/posts/growth-record/other/toolGuide/common-command-line.html</guid>
+            <pubDate>Thu, 07 Jul 2022 20:00:00 GMT</pubDate>
+            <description><![CDATA[# 开发常用命令行
+## 一、Nginx 的常用操作
+- 停止 Nginx： `nginx -s stop`
+- 重载配置文件：`nginx -s reload`
+- 查看文件显示行数：`cat -n xxx.txt`
+- 查看文件的前 N 行：`head -n xxx.txt`
+- 查看文件的后 N 行：`tail -n xxx.txt`
+- 查看指定日志路径下的错误（动态查看日志变化：显示前 500 行）: `tail -500f /root/.pm2/logs/xxx.log`
+
+## 二、后台打印日志
+
+- 连接服务器（Jenkins 该工程下控制台查看部署 IP 地址）
+
+`ssh root@ip`
+
+- 进入日志目录
+
+`cd /目录地址`
+
+- 实时打印操作日志如上面动态查看日志变化
+
+`tail -f 项目文件.log`
+
+## 三、PM2
+
+- 查看 PM2 下的启动应用：`pm2 list`
+- 获取更多这个应用信息：`pm2 show <id|name>`
+- 运行启动指定文件：`pm2 start app.js`
+- 停止某个 ID 应用：`pm2 stop id`
+- 重启某个 ID 应用：`pm2 restart id`
+- 进行监控：`pm2 monit`
+
+## 四、NPM
+
+- 查看 npm 版本：`npm -v`
+- 根据 package 安装所有依赖：`npm install / npm i`
+- 查看所有安装包的版本列表：`npm ls`
+- 查看某个包的安装版本：`npm ls <page name>`
+- 全局安装：`npm i gulp -g`
+- 查看全局安装的包：`npm list -g --depth 0`（`--depth 0`：限制输出模块层级）
+- 查看全局下安装所有的可用npm工具：`npm list --depth=0 -g`
+- 查看全局的包的按照路径：`npm root -g`
+- 快速初始化一个 package.json 的文件：`npm init -y`
+- 安装/卸载到 devDependencies 下：`npm install/uninstall gulp -D/--save-dev`
+- 安装/卸载到 dependencies 下：`npm install/uninstall gulp -S/--save`
+- 删除 node_modules：`npm install rimraf -g` `rimraf node_modules`
+- 查看包版本：`npm ls nuxt`
+
+## 五、Git 操作
+
+- 在本地创建一个空的数据仓库(就会出现一个 .git 的文件)：`git init`
+- 克隆代码,一般都在第一次操作时，将别人的代码克隆下来：`git clone xxx`
+- 查看当前 git 的状态：`git status`
+- 显示文件的详细信息：`ll`
+- 显示文件：`ls`
+- 显示文件包括隐藏的文件：`ls -a`
+- 递归的强制删除：`rm -rf xxx`
+- 查看a.txt文件中内容：`cat a.txt`
+- 全局的配置账户信息：`git config --global user.name "xxx"` `git config --global user.email "xxx@qq.com"`
+- 当前项目中配置账户信息：`git config  user.name "xxx"` `git config  user.email "xxx@qq.com"`
+- 将当前文件下的都添加：`git add .`
+- 切换到上一个分支：`git checkout -`
+- 创建提交版本并填写备注：`git commit -m "此次修改的一些说明"`
+- 修改最近一次提交的 commit message：`git commit --amend -m "Updated commit message" 或 git commit --amend // 后面是vim命令 w: 写入 q: 退出`
+- git 的忽略文件，也就是上传的时候不用管：
+```git
+*.txt    //忽略所有的 .txt 文件
+/util      //忽略这个 util 目录
+/util/*.js      //忽略 util 文件夹下的 .js 文件
+/util/**/*.js    //递归的忽略这个文件夹下所有的 .js 文件
+```
+
+- 查看日志：`git log` `git log --oneline`
+- 分支管理：
+```git
+git branch      //查看所有的分支
+git branch dev  //创建 dev 分支
+git checkout dev  //切换到 dev 分支上(在这个分支上修改后再合并)
+(以上两步简写：git checkout -b dev)
+在这个分支上就可以操作 add  commit 等操作
+
+操作完成后我们就可以与主分支合并
+合并分支
+首先切换到主分支上
+git checkout master
+git merge  分支名
+git merge --abort // 撤销merge合并
+
+删除分支
+git branch -d dev  //删除dev分支
+```
+
+- git 切换仓库操作：`git remote set-url origin http://xxx.git`
+- 查看仓库远程地址：`git remote -v`
+- 暂存区操作：
+```git
+git add . // 先将更改的内容提交到暂存区
+git stash // 将此时更改的内容暂存起来(此时就可以切换到其他分支就行操作了,
+等处理完在切回本分支(git checkout 分支名), 还原以前的,继续操作)
+git stash apply // 恢复却不删除 stash 的内容
+git stash pop  // 恢复并且删除 stash 信息
+git stash list // 查看此时的暂存列表
+git stash drop  // 删除这个分支上的所有的 stash
+```
+
+- 版本回退操作：
+```git
+git checkout .    //将工作区的代码恢复到上一次 commit 之前
+git reset .  //将暂存区的内容恢复到工作区
+git reset --hard 提交信息编号之间的区别  //回到指定的版本
+git add . //将工作区的内容添加到暂存区
+git add . 和 git reset . 是相反的两对
+```
+
+- `git fetch` 和 `git push` 的区别：
+```git
+git fetch 相当于是从远程获取最新到本地，不会自动 merge
+git pull：相当于是从远程获取最新版本并 merge 到本地
+在实际使用中，git fetch 更安全一些
+```
+
+- `git mv` 迁移文件或重命名文件（夹）（[Git Mv | How To Use Git-Mv To Rename And Move Files](https://initialcommit.com/blog/git-mv)）
+```git
+ // 迁移aaaaManage文件夹下的所有文件到「packages/aaaa-manage/views/」路径下（不包括「aaaaManage」文件夹）
+ git mv views/aaaaManage/* packages/aaaa-manage/views/
+
+ // 迁移aaaaManage文件夹下的「index.ts」到「packages/aaaa-manage/views/」路径下
+ git mv views/aaaaManage/index.ts packages/aaaa-manage/views/
+
+ // 重命名文件「index.ts」为「config.ts」
+ git mv views/aaaaManage/index.ts views/aaaaManage/config.ts
+
+ // 注意该命令没有撤回操作，如果迁移错了，在工作区文件或暂存区文件重置改动即可恢复之前状态
+```
+
+- git rm 删除文件或文件夹
+```git
+// 删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 -f
+git rm -f xxx
+
+// 递归删除，即如果后面跟的是一个目录做为参数，则会递归删除整个目录中的所有子目录和文件
+git rm -r xxx
+```
+## 六、SSH 查看 PM2 日志
+前提要有权限：
+```git
+ssh root@ip
+
+启动本地静态文件服务
+python -m SimpleHTTPServer
+
+退出服务器连接
+exit + 回车键
+```
+
+## 七、连接数据库
+通过软件 Sequel Pro:
+```git
+ip:端口号
+账号：root
+密码
+```
+
+## 八、VS Code 快捷键
+| **命令** | **说明** |
+| ]]></description>
+            <content:encoded><![CDATA[<h1 id="开发常用命令行" tabindex="-1">开发常用命令行 <a class="header-anchor" href="#开发常用命令行" aria-label="Permalink to &quot;开发常用命令行&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="一、nginx-的常用操作" tabindex="-1">一、Nginx 的常用操作 <a class="header-anchor" href="#一、nginx-的常用操作" aria-label="Permalink to &quot;一、Nginx 的常用操作&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>停止 Nginx： <code>nginx -s stop</code></li>
+<li>重载配置文件：<code>nginx -s reload</code></li>
+<li>查看文件显示行数：<code>cat -n xxx.txt</code></li>
+<li>查看文件的前 N 行：<code>head -n xxx.txt</code></li>
+<li>查看文件的后 N 行：<code>tail -n xxx.txt</code></li>
+<li>查看指定日志路径下的错误（动态查看日志变化：显示前 500 行）: <code>tail -500f /root/.pm2/logs/xxx.log</code></li>
+</ul>
+<h2 id="二、后台打印日志" tabindex="-1">二、后台打印日志 <a class="header-anchor" href="#二、后台打印日志" aria-label="Permalink to &quot;二、后台打印日志&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>连接服务器（Jenkins 该工程下控制台查看部署 IP 地址）</li>
+</ul>
+<p><code>ssh root@ip</code></p>
+<ul>
+<li>进入日志目录</li>
+</ul>
+<p><code>cd /目录地址</code></p>
+<ul>
+<li>实时打印操作日志如上面动态查看日志变化</li>
+</ul>
+<p><code>tail -f 项目文件.log</code></p>
+<h2 id="三、pm2" tabindex="-1">三、PM2 <a class="header-anchor" href="#三、pm2" aria-label="Permalink to &quot;三、PM2&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>查看 PM2 下的启动应用：<code>pm2 list</code></li>
+<li>获取更多这个应用信息：<code>pm2 show &lt;id|name&gt;</code></li>
+<li>运行启动指定文件：<code>pm2 start app.js</code></li>
+<li>停止某个 ID 应用：<code>pm2 stop id</code></li>
+<li>重启某个 ID 应用：<code>pm2 restart id</code></li>
+<li>进行监控：<code>pm2 monit</code></li>
+</ul>
+<h2 id="四、npm" tabindex="-1">四、NPM <a class="header-anchor" href="#四、npm" aria-label="Permalink to &quot;四、NPM&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>查看 npm 版本：<code>npm -v</code></li>
+<li>根据 package 安装所有依赖：<code>npm install / npm i</code></li>
+<li>查看所有安装包的版本列表：<code>npm ls</code></li>
+<li>查看某个包的安装版本：<code>npm ls &lt;page name&gt;</code></li>
+<li>全局安装：<code>npm i gulp -g</code></li>
+<li>查看全局安装的包：<code>npm list -g --depth 0</code>（<code>--depth 0</code>：限制输出模块层级）</li>
+<li>查看全局下安装所有的可用npm工具：<code>npm list --depth=0 -g</code></li>
+<li>查看全局的包的按照路径：<code>npm root -g</code></li>
+<li>快速初始化一个 package.json 的文件：<code>npm init -y</code></li>
+<li>安装/卸载到 devDependencies 下：<code>npm install/uninstall gulp -D/--save-dev</code></li>
+<li>安装/卸载到 dependencies 下：<code>npm install/uninstall gulp -S/--save</code></li>
+<li>删除 node_modules：<code>npm install rimraf -g</code> <code>rimraf node_modules</code></li>
+<li>查看包版本：<code>npm ls nuxt</code></li>
+</ul>
+<h2 id="五、git-操作" tabindex="-1">五、Git 操作 <a class="header-anchor" href="#五、git-操作" aria-label="Permalink to &quot;五、Git 操作&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>在本地创建一个空的数据仓库(就会出现一个 .git 的文件)：<code>git init</code></li>
+<li>克隆代码,一般都在第一次操作时，将别人的代码克隆下来：<code>git clone xxx</code></li>
+<li>查看当前 git 的状态：<code>git status</code></li>
+<li>显示文件的详细信息：<code>ll</code></li>
+<li>显示文件：<code>ls</code></li>
+<li>显示文件包括隐藏的文件：<code>ls -a</code></li>
+<li>递归的强制删除：<code>rm -rf xxx</code></li>
+<li>查看a.txt文件中内容：<code>cat a.txt</code></li>
+<li>全局的配置账户信息：<code>git config --global user.name &quot;xxx&quot;</code> <code>git config --global user.email &quot;xxx@qq.com&quot;</code></li>
+<li>当前项目中配置账户信息：<code>git config  user.name &quot;xxx&quot;</code> <code>git config  user.email &quot;xxx@qq.com&quot;</code></li>
+<li>将当前文件下的都添加：<code>git add .</code></li>
+<li>切换到上一个分支：<code>git checkout -</code></li>
+<li>创建提交版本并填写备注：<code>git commit -m &quot;此次修改的一些说明&quot;</code></li>
+<li>修改最近一次提交的 commit message：<code>git commit --amend -m &quot;Updated commit message&quot; 或 git commit --amend // 后面是vim命令 w: 写入 q: 退出</code></li>
+<li>git 的忽略文件，也就是上传的时候不用管：</li>
+</ul>
+<div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>*.txt    //忽略所有的 .txt 文件</span></span>
+<span class="line"><span>/util      //忽略这个 util 目录</span></span>
+<span class="line"><span>/util/*.js      //忽略 util 文件夹下的 .js 文件</span></span>
+<span class="line"><span>/util/**/*.js    //递归的忽略这个文件夹下所有的 .js 文件</span></span></code></pre>
+</div><ul>
+<li>查看日志：<code>git log</code> <code>git log --oneline</code></li>
+<li>分支管理：</li>
+</ul>
+<div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>git branch      //查看所有的分支</span></span>
+<span class="line"><span>git branch dev  //创建 dev 分支</span></span>
+<span class="line"><span>git checkout dev  //切换到 dev 分支上(在这个分支上修改后再合并)</span></span>
+<span class="line"><span>(以上两步简写：git checkout -b dev)</span></span>
+<span class="line"><span>在这个分支上就可以操作 add  commit 等操作</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>操作完成后我们就可以与主分支合并</span></span>
+<span class="line"><span>合并分支</span></span>
+<span class="line"><span>首先切换到主分支上</span></span>
+<span class="line"><span>git checkout master</span></span>
+<span class="line"><span>git merge  分支名</span></span>
+<span class="line"><span>git merge --abort // 撤销merge合并</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>删除分支</span></span>
+<span class="line"><span>git branch -d dev  //删除dev分支</span></span></code></pre>
+</div><ul>
+<li>git 切换仓库操作：<code>git remote set-url origin http://xxx.git</code></li>
+<li>查看仓库远程地址：<code>git remote -v</code></li>
+<li>暂存区操作：</li>
+</ul>
+<div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>git add . // 先将更改的内容提交到暂存区</span></span>
+<span class="line"><span>git stash // 将此时更改的内容暂存起来(此时就可以切换到其他分支就行操作了,</span></span>
+<span class="line"><span>等处理完在切回本分支(git checkout 分支名), 还原以前的,继续操作)</span></span>
+<span class="line"><span>git stash apply // 恢复却不删除 stash 的内容</span></span>
+<span class="line"><span>git stash pop  // 恢复并且删除 stash 信息</span></span>
+<span class="line"><span>git stash list // 查看此时的暂存列表</span></span>
+<span class="line"><span>git stash drop  // 删除这个分支上的所有的 stash</span></span></code></pre>
+</div><ul>
+<li>版本回退操作：</li>
+</ul>
+<div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>git checkout .    //将工作区的代码恢复到上一次 commit 之前</span></span>
+<span class="line"><span>git reset .  //将暂存区的内容恢复到工作区</span></span>
+<span class="line"><span>git reset --hard 提交信息编号之间的区别  //回到指定的版本</span></span>
+<span class="line"><span>git add . //将工作区的内容添加到暂存区</span></span>
+<span class="line"><span>git add . 和 git reset . 是相反的两对</span></span></code></pre>
+</div><ul>
+<li><code>git fetch</code> 和 <code>git push</code> 的区别：</li>
+</ul>
+<div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>git fetch 相当于是从远程获取最新到本地，不会自动 merge</span></span>
+<span class="line"><span>git pull：相当于是从远程获取最新版本并 merge 到本地</span></span>
+<span class="line"><span>在实际使用中，git fetch 更安全一些</span></span></code></pre>
+</div><ul>
+<li><code>git mv</code> 迁移文件或重命名文件（夹）（<a href="https://initialcommit.com/blog/git-mv" target="_blank" rel="noreferrer">Git Mv | How To Use Git-Mv To Rename And Move Files</a>）</li>
+</ul>
+<div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span> // 迁移aaaaManage文件夹下的所有文件到「packages/aaaa-manage/views/」路径下（不包括「aaaaManage」文件夹）</span></span>
+<span class="line"><span> git mv views/aaaaManage/* packages/aaaa-manage/views/</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> // 迁移aaaaManage文件夹下的「index.ts」到「packages/aaaa-manage/views/」路径下</span></span>
+<span class="line"><span> git mv views/aaaaManage/index.ts packages/aaaa-manage/views/</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> // 重命名文件「index.ts」为「config.ts」</span></span>
+<span class="line"><span> git mv views/aaaaManage/index.ts views/aaaaManage/config.ts</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> // 注意该命令没有撤回操作，如果迁移错了，在工作区文件或暂存区文件重置改动即可恢复之前状态</span></span></code></pre>
+</div><ul>
+<li>git rm 删除文件或文件夹</li>
+</ul>
+<div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>// 删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 -f</span></span>
+<span class="line"><span>git rm -f xxx</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>// 递归删除，即如果后面跟的是一个目录做为参数，则会递归删除整个目录中的所有子目录和文件</span></span>
+<span class="line"><span>git rm -r xxx</span></span></code></pre>
+</div><h2 id="六、ssh-查看-pm2-日志" tabindex="-1">六、SSH 查看 PM2 日志 <a class="header-anchor" href="#六、ssh-查看-pm2-日志" aria-label="Permalink to &quot;六、SSH 查看 PM2 日志&quot;">&ZeroWidthSpace;</a></h2>
+<p>前提要有权限：</p>
+<div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>ssh root@ip</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>启动本地静态文件服务</span></span>
+<span class="line"><span>python -m SimpleHTTPServer</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>退出服务器连接</span></span>
+<span class="line"><span>exit + 回车键</span></span></code></pre>
+</div><h2 id="七、连接数据库" tabindex="-1">七、连接数据库 <a class="header-anchor" href="#七、连接数据库" aria-label="Permalink to &quot;七、连接数据库&quot;">&ZeroWidthSpace;</a></h2>
+<p>通过软件 Sequel Pro:</p>
+<div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>ip:端口号</span></span>
+<span class="line"><span>账号：root</span></span>
+<span class="line"><span>密码</span></span></code></pre>
+</div><h2 id="八、vs-code-快捷键" tabindex="-1">八、VS Code 快捷键 <a class="header-anchor" href="#八、vs-code-快捷键" aria-label="Permalink to &quot;八、VS Code 快捷键&quot;">&ZeroWidthSpace;</a></h2>
+<table>
+<thead>
+<tr>
+<th><strong>命令</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cmd+左右方向键</code></td>
+<td>行代码左右切换（Win 的快捷键是「Fn + 左右方向键」）</td>
+</tr>
+<tr>
+<td><code>option+左右方向键</code></td>
+<td>单词之间左右切换（Win 快捷键是「Ctrl + 左右方向键」）</td>
+</tr>
+<tr>
+<td><code>cmd+shift+\\</code></td>
+<td>代码块之间上下移动</td>
+</tr>
+<tr>
+<td><code>cmd+delete</code></td>
+<td>删除光标之前的内容</td>
+</tr>
+<tr>
+<td><code>cmd+shift+k</code></td>
+<td>删除整行内容（win：Ctrl + Shift + K）</td>
+</tr>
+<tr>
+<td><code>option+上下方向键</code></td>
+<td>上下移动当前行代码位置（win：Alt + 上下方向键）</td>
+</tr>
+<tr>
+<td><code>option+shif+ 上下方向键</code></td>
+<td>将代码向上下复制（win：Alt + Shift +上下方向键）</td>
+</tr>
+<tr>
+<td><code>cmd+/</code></td>
+<td>单行注释</td>
+</tr>
+<tr>
+<td><code>ctrl+左右方向键</code></td>
+<td>当前屏幕的视图窗口左右切换</td>
+</tr>
+<tr>
+<td><code>ctrl+上下方向键</code></td>
+<td>缩小屏幕窗口进入视图窗口切换</td>
+</tr>
+<tr>
+<td><code>cmd+p</code></td>
+<td>当前项目工程搜索文件（win：Ctrl + P）</td>
+</tr>
+<tr>
+<td><code>ctrl+g</code></td>
+<td>跳转到指定行</td>
+</tr>
+<tr>
+<td><code>cmd+shift+o</code></td>
+<td>在当前文件的各种div元素之间跳转</td>
+</tr>
+<tr>
+<td><code>cmd+f</code></td>
+<td>在当前的文件中搜索，光标在搜索框</td>
+</tr>
+<tr>
+<td><code>cmd+g</code></td>
+<td>在当前的文件中切换匹配搜索项，光标停留在编辑器里（win：f3）</td>
+</tr>
+<tr>
+<td>多光标使用：</td>
+<td>（1）按住 「Option」键（windows 用户是按住「Alt」键） ，然后在页面中希望中现光标的位置点击鼠标。（2）选中某个文本，然后反复按住快捷键「 Cmd + D 」键（windows 用户是按住「Ctrl + D」键）， 即可将全文中与光标当前所在位置的词相同的词逐一加入选择。</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://juejin.im/post/5e2024485188254df874102b" target="_blank" rel="noreferrer">动图演示23个鲜为人知的VSCode快捷键</a></p>
+<h2 id="九、mac-终端" tabindex="-1">九、Mac 终端 <a class="header-anchor" href="#九、mac-终端" aria-label="Permalink to &quot;九、Mac 终端&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>新建文件夹：<code>mkdir xxx</code></li>
+<li>新建构建：<code>touch xxx</code></li>
+<li>切换目录：<code>cd xxx</code></li>
+<li>查看文件内容：<code>cat xxx</code></li>
+<li>复制文件或目录：<code>cp xxx yyy</code></li>
+<li>编辑文件：<code>vi xxx</code></li>
+<li>访达打开文件：<code>open xxx</code></li>
+<li>所列当前目录所有文件：<code>ls</code></li>
+<li>删除文件：<code>rm xxx</code></li>
+<li>清屏：<code>clear</code></li>
+<li>查看当前目录：<code>pwd</code></li>
+<li>退出终端：<code>exit</code></li>
+</ul>
+<h2 id="十、命令行在线查询网站" tabindex="-1">十、命令行在线查询网站 <a class="header-anchor" href="#十、命令行在线查询网站" aria-label="Permalink to &quot;十、命令行在线查询网站&quot;">&ZeroWidthSpace;</a></h2>
+<p><a href="https://explainshell.com" target="_blank" rel="noreferrer">G</a><a href="https://explainshell.com" target="_blank" rel="noreferrer">o Into</a></p>
+<CustomImage src="/growth-record/other/toolGuide/minglingxing.webp" alt="command-line" />]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[第 6 本《男孩、鼹鼠、狐狸和马》]]></title>
             <link>https://super456.github.io/posts/read-book/2022/nanhaiyanshuhulihema.html</link>
             <guid>https://super456.github.io/posts/read-book/2022/nanhaiyanshuhulihema.html</guid>
@@ -8164,6 +8729,34 @@ Yolk
 很温暖，很舒服，很治愈，遇见你真好，希望我们都能遇到那个小🐻或小🐰</p>
 ]]></content:encoded>
             <enclosure url="https://super456.github.io/read-book/2022/yujiannizhenhao.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[用技术的眼光看世界]]></title>
+            <link>https://super456.github.io/posts/growth-record/other/softSkills/technology-for-the-world.html</link>
+            <guid>https://super456.github.io/posts/growth-record/other/softSkills/technology-for-the-world.html</guid>
+            <pubDate>Mon, 25 Jan 2021 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="用技术的眼光看世界" tabindex="-1">用技术的眼光看世界 <a class="header-anchor" href="#用技术的眼光看世界" aria-label="Permalink to &quot;用技术的眼光看世界&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="一、简介" tabindex="-1">一、简介 <a class="header-anchor" href="#一、简介" aria-label="Permalink to &quot;一、简介&quot;">&ZeroWidthSpace;</a></h2>
+<p>这门课程专栏是慕课网的 bobo 老师出品，原课程名叫《用技术人的眼光看世界 • 程序员技术指北》，课程主要讲解是感受技术和这个世界之间的复杂关系。</p>
+<p>本文大部分都是摘抄原文提及的观点内容以及自身的思考，简单的做一些记录，以便翻阅进一步理解升华。</p>
+<p>很喜欢专栏中开头的一句话：</p>
+<blockquote>
+<p>学习这件事不在乎有没有人教你，最重要的是在于你自己有没有觉悟和恒心。--法布尔</p>
+</blockquote>
+<p>很多时候，我自己也会怨天尤人，抱怨环境问题，抱怨自己职业生涯怎么没有遇到一个肯教你的人，可以快速走捷径或者身边怎么没有一帮优秀的人共事。所以，难免学习，坚持不了多久，也很焦虑，很迷茫，不知道自己下一步要怎么走。当然也会抱怨生活过得很槽糕，并没有自己在大学的时候期待的那么美好。可能也许大概是吧，之前没有认清自己，出来工作后才会慢慢看清自己的平凡、自己的平庸，甚至很多事情的无能为力吧。总之，生活还是要继续，无论之前过的怎么的不好，现在开始，重新起航，加油💪~~~</p>
+<p><strong>用户价值（🤔，很值得探究的问题） = 新体验 - 旧体验 - 替换成本。</strong></p>
+<p>看一个人的成长，至少会看三个方面：能力、热情、思维模式。</p>
+<p>一个考量维度是一个人的思维模式。具体到技术岗，很重要的一点，是去看一个同学会不会去思考事情背后的 WHY，会不会去深入了解 WHY 所处的大环境，会不会在想清楚 WHY 后，去分析思考解决路径，在有多条路可选的时候，敢不敢去做取舍权衡，能不能去找到最佳路径和实现策略。WHY - HOW - WHAT - DO 的思维框架下，DO 是最后一步，很关键，但前面三步如果思考不清，光有 DO 是很难拿到优秀结果的。</p>
+<h2 id="一、投资人角度" tabindex="-1">一、投资人角度 <a class="header-anchor" href="#一、投资人角度" aria-label="Permalink to &quot;一、投资人角度&quot;">&ZeroWidthSpace;</a></h2>
+<p>他们知道某个行业发展的历史与现状；知道这个行业的局限性与发展的可能性；知道潜在的机会在哪里；知道技术有可能从哪个侧面能改变一切。因此，他们的创业项目大多有着明确的方向，即便他们的方向是错误的，毕竟谁也不能预测未来。但正因为他们有目的的行动，即使失败，他们也能更有针对性地从中吸取教训，或者及时调头，向着更好的方向前进。</p>
+<h2 id="二、产品角度" tabindex="-1">二、产品角度 <a class="header-anchor" href="#二、产品角度" aria-label="Permalink to &quot;二、产品角度&quot;">&ZeroWidthSpace;</a></h2>
+<p>产品说的需求，实现这样一个功能，，我们能实现出来，却不明白这个功能到底有没有意义，别人为什么需要这个功能，这一切的背后是不是有更深层次的原因。</p>
+<h2 id="三、技术敏感" tabindex="-1">三、技术敏感 <a class="header-anchor" href="#三、技术敏感" aria-label="Permalink to &quot;三、技术敏感&quot;">&ZeroWidthSpace;</a></h2>
+<p>接触的每一个技术，不仅要学习它的方法原理，还要从一个更高的视角去思考——这个技术为什么出现，它出现前世界是怎么样的；它解决了什么样的问题；在这个技术的推动下现状如何；局限性在哪里；改进的方向在哪里，未来又在哪里。</p>
+<h2 id="四、思维导图" tabindex="-1">四、思维导图 <a class="header-anchor" href="#四、思维导图" aria-label="Permalink to &quot;四、思维导图&quot;">&ZeroWidthSpace;</a></h2>
+<CustomImage src="/growth-record/other/softSkills/yongjishuyanguangkanshijie.png" alt="思维导图" /><h2 id="五、总结" tabindex="-1">五、总结 <a class="header-anchor" href="#五、总结" aria-label="Permalink to &quot;五、总结&quot;">&ZeroWidthSpace;</a></h2>
+<p>看完这个专栏，感悟很深，也视野开阔了很多。从自身姿态出发，看到投资人、技术人、产品经理不同角度的理解。学习到了高效学习的方法和一些知识掌握的境界。最重要的是最自己的人生观产生了很大的冲击，发现之前自己真的见识太少了，很多都不懂，感谢遇到了这门课程，可以让自己变得充实强大。</p>
+]]></content:encoded>
         </item>
     </channel>
 </rss>
