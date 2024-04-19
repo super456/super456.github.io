@@ -83,6 +83,7 @@ export default function qianduanjinjiSidebarGuide() {
       collapsed: false,
       items: [
         { text: '开发常用命令行', link: '/other/toolGuide/common-command-line' },
+        { text: '脚手架及 CLI 工具使用', link: '/other/toolGuide/scaffold-cli' },
         { text: 'VS Code 常用快捷键', link: '/other/toolGuide/' },
       ],
     },

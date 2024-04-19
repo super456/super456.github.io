@@ -98,5 +98,11 @@ export default {
       desc: '一款开箱即用的 Vue 中后台管理系统框架，支持多款 UI 组件库，兼容PC、移动端。vue-admin, vue-element-admin, vue后台, 后台系统, 后台框架, 管理后台, 管理系统',
       link: 'https://fantastic-admin.github.io/',
     },
+    {
+      title: 'iView / View Design 一套企业级 UI 组件库和前端解决方案',
+      desc: '基于 Vue.js 3 的企业级 UI 组件库和中后台系统解决方案，为数万开发者服务',
+      icon: 'https://file.iviewui.com/view-design-logo.png',
+      link: 'https://www.iviewui.com/',
+    },
   ],
 }
