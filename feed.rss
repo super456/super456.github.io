@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Fri, 19 Apr 2024 03:14:47 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Apr 2024 15:49:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -9320,6 +9320,209 @@ Vue CLI 官方解释：
             <enclosure url="https://super456.github.io/read-book/2022/yujiannizhenhao.webp" length="0" type="image/webp"/>
         </item>
         <item>
+            <title><![CDATA[CSS BEM 书写规范]]></title>
+            <link>https://super456.github.io/posts/growth-record/base/css/bem-rule.html</link>
+            <guid>https://super456.github.io/posts/growth-record/base/css/bem-rule.html</guid>
+            <pubDate>Sun, 28 Mar 2021 20:00:00 GMT</pubDate>
+            <description><![CDATA[# CSS BEM 书写规范
+## BEM命名约定
+
+使用 [BEM](http://bem.info/) 命名规范，理论上讲，每行 `css` 代码都只有一个选择器。
+
+BEM代表 **“块（block）,元素（element）,修饰符（modifier）”**,我们常用这三个实体开发组件。
+
+在选择器中，由以下三种符号来表示扩展的关系：
+
+```
+-   中划线 ：仅作为连字符使用，表示某个块或者某个子元素的多单词之间的连接记号。
+__  双下划线：双下划线用来连接块和块的子元素
+_   单下划线：单下划线用来描述一个块或者块的子元素的一种状态
+
+type-block__element_modifier
+```
+
+### 块（block）
+
+一个块是设计或布局的一部分，它有具体且唯一地意义 ，要么是语义上的要么是视觉上的。
+
+在大多数情况下，任何独立的页面元素（或复杂或简单）都可以被视作一个块。它的HTML容器会有一个唯一的CSS类名，也就是这个块的名字。
+
+针对块的CSS类名会加一些前缀（ `ui-`），这些前缀在CSS中有类似 [命名空间]() 的作用。
+
+一个块的正式（实际上是半正式的）定义有下面三个基本原则：
+
+1. CSS中只能使用类名（不能是ID）。
+2. 每一个块名应该有一个命名空间（前缀）
+3. 每一条CSS规则必须属于一个块。
+
+例如：一个自定义列表 `.list` 是一个块，通常自定义列表是算在 `mod` 类别的，在这种情况下，一个 `list` 列表的block写法应该为:
+
+```
+.list
+```
+
+### 元素（element）
+
+块中的子元素是块的子元素，并且子元素的子元素在 `bem` 里也被认为是块的直接子元素。**一个块中元素的类名必须用父级块的名称作为前缀。**
+
+如上面的例子，`li.item` 是列表的一个子元素，
+
+```
+.list{}
+.list .item{}
+
+.list{}
+.list__item{}
+```
+
+### 修饰符（modifier）
+
+一个“修饰符”可以理解为一个块的特定状态，标识着它持有一个特定的属性。
+
+用一个例子来解释最好不过了。一个表示按钮的块默认有三个大小：小，中，大。为了避免创建三个不同的块，最好是在块上加修饰符。这个修饰符应该有个名字（比如：`size` ）和值（ `small`，`normal` 或者 `big` ）。
+
+如上面的例子中，表示一个选中的列表，和一个激活的列表项
+
+```
+.list{}
+.list.select{}
+.list .item{}
+.list .item.active{}
+
+.list{}
+.list_select{}
+.list__item{}
+.list__item_active{}
+```
+
+# LESS 书写规范
+
+使用 `.less` 后缀的文件来存储变量、混合代码以及最终合并压缩。
+
+| 子 less | 注解 |
+| ]]></description>
+            <content:encoded><![CDATA[<h1 id="css-bem-书写规范" tabindex="-1">CSS BEM 书写规范 <a class="header-anchor" href="#css-bem-书写规范" aria-label="Permalink to &quot;CSS BEM 书写规范&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="bem命名约定" tabindex="-1">BEM命名约定 <a class="header-anchor" href="#bem命名约定" aria-label="Permalink to &quot;BEM命名约定&quot;">&ZeroWidthSpace;</a></h2>
+<p>使用 <a href="http://bem.info/" target="_blank" rel="noreferrer">BEM</a> 命名规范，理论上讲，每行 <code>css</code> 代码都只有一个选择器。</p>
+<p>BEM代表 <strong>“块（block）,元素（element）,修饰符（modifier）”</strong>,我们常用这三个实体开发组件。</p>
+<p>在选择器中，由以下三种符号来表示扩展的关系：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>-   中划线 ：仅作为连字符使用，表示某个块或者某个子元素的多单词之间的连接记号。</span></span>
+<span class="line"><span>__  双下划线：双下划线用来连接块和块的子元素</span></span>
+<span class="line"><span>_   单下划线：单下划线用来描述一个块或者块的子元素的一种状态</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>type-block__element_modifier</span></span></code></pre>
+</div><h3 id="块-block" tabindex="-1">块（block） <a class="header-anchor" href="#块-block" aria-label="Permalink to &quot;块（block）&quot;">&ZeroWidthSpace;</a></h3>
+<p>一个块是设计或布局的一部分，它有具体且唯一地意义 ，要么是语义上的要么是视觉上的。</p>
+<p>在大多数情况下，任何独立的页面元素（或复杂或简单）都可以被视作一个块。它的HTML容器会有一个唯一的CSS类名，也就是这个块的名字。</p>
+<p>针对块的CSS类名会加一些前缀（ <code>ui-</code>），这些前缀在CSS中有类似 <a href="./.html">命名空间</a> 的作用。</p>
+<p>一个块的正式（实际上是半正式的）定义有下面三个基本原则：</p>
+<ol>
+<li>CSS中只能使用类名（不能是ID）。</li>
+<li>每一个块名应该有一个命名空间（前缀）</li>
+<li>每一条CSS规则必须属于一个块。</li>
+</ol>
+<p>例如：一个自定义列表 <code>.list</code> 是一个块，通常自定义列表是算在 <code>mod</code> 类别的，在这种情况下，一个 <code>list</code> 列表的block写法应该为:</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>.list</span></span></code></pre>
+</div><h3 id="元素-element" tabindex="-1">元素（element） <a class="header-anchor" href="#元素-element" aria-label="Permalink to &quot;元素（element）&quot;">&ZeroWidthSpace;</a></h3>
+<p>块中的子元素是块的子元素，并且子元素的子元素在 <code>bem</code> 里也被认为是块的直接子元素。<strong>一个块中元素的类名必须用父级块的名称作为前缀。</strong></p>
+<p>如上面的例子，<code>li.item</code> 是列表的一个子元素，</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>.list{}</span></span>
+<span class="line"><span>.list .item{}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>.list{}</span></span>
+<span class="line"><span>.list__item{}</span></span></code></pre>
+</div><h3 id="修饰符-modifier" tabindex="-1">修饰符（modifier） <a class="header-anchor" href="#修饰符-modifier" aria-label="Permalink to &quot;修饰符（modifier）&quot;">&ZeroWidthSpace;</a></h3>
+<p>一个“修饰符”可以理解为一个块的特定状态，标识着它持有一个特定的属性。</p>
+<p>用一个例子来解释最好不过了。一个表示按钮的块默认有三个大小：小，中，大。为了避免创建三个不同的块，最好是在块上加修饰符。这个修饰符应该有个名字（比如：<code>size</code> ）和值（ <code>small</code>，<code>normal</code> 或者 <code>big</code> ）。</p>
+<p>如上面的例子中，表示一个选中的列表，和一个激活的列表项</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>.list{}</span></span>
+<span class="line"><span>.list.select{}</span></span>
+<span class="line"><span>.list .item{}</span></span>
+<span class="line"><span>.list .item.active{}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>.list{}</span></span>
+<span class="line"><span>.list_select{}</span></span>
+<span class="line"><span>.list__item{}</span></span>
+<span class="line"><span>.list__item_active{}</span></span></code></pre>
+</div><h1 id="less-书写规范" tabindex="-1">LESS 书写规范 <a class="header-anchor" href="#less-书写规范" aria-label="Permalink to &quot;LESS 书写规范&quot;">&ZeroWidthSpace;</a></h1>
+<p>使用 <code>.less</code> 后缀的文件来存储变量、混合代码以及最终合并压缩。</p>
+<table>
+<thead>
+<tr>
+<th>子 less</th>
+<th>注解</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>lib-base.less</code></td>
+<td>预定义的变量，例如颜色、字号、字体</td>
+</tr>
+<tr>
+<td><code>lib-mixins.less</code></td>
+<td>用于混合的代码，例如渐变、半透明的混合</td>
+</tr>
+<tr>
+<td><code>lib-reset.less</code></td>
+<td>初始化</td>
+</tr>
+<tr>
+<td><code>lib-ui.less</code></td>
+<td>颗粒化ui功能</td>
+</tr>
+<tr>
+<td><code>xxx.less</code></td>
+<td>模块样式</td>
+</tr>
+</tbody>
+</table>
+<p><code>.less</code> 文件的引用顺序会对最终编译的样式的作用域和优先级产生影响，请尽量按照由底层到自定义的顺序来引用。</p>
+<h2 id="书写原则" tabindex="-1">书写原则 <a class="header-anchor" href="#书写原则" aria-label="Permalink to &quot;书写原则&quot;">&ZeroWidthSpace;</a></h2>
+<h5 id="_1-原则上不会出现2层以上选择器嵌套" tabindex="-1">1. 原则上不会出现<code>2层以上</code>选择器嵌套 <a class="header-anchor" href="#_1-原则上不会出现2层以上选择器嵌套" aria-label="Permalink to &quot;1. 原则上不会出现`2层以上`选择器嵌套&quot;">&ZeroWidthSpace;</a></h5>
+<p>使用<code>BEM</code>原则，用命名来解耦，所有类名都为一层，增加效率和复用性</p>
+<h5 id="_2-两层选择器嵌套出现在-mod-xxx-item-current子元素的情况-如下" tabindex="-1">2. 两层选择器嵌套出现在<code>.mod-xxx__item_current</code>子元素的情况，如下： <a class="header-anchor" href="#_2-两层选择器嵌套出现在-mod-xxx-item-current子元素的情况-如下" aria-label="Permalink to &quot;2. 两层选择器嵌套出现在`.mod-xxx__item_current`子元素的情况，如下：&quot;">&ZeroWidthSpace;</a></h5>
+<p>使用<strong>推荐</strong>的嵌套写法</p>
+<p><strong>常规写法：</strong></p>
+<div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.xxx</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.xxx__item</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.xxx__item_current</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">// 嵌套写法</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.xxx__item_current</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> .mod-xxx__link</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{}</span></span></code></pre>
+</div><p><strong>推荐：</strong></p>
+<div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.xxx</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.xxx__item</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.xxx__item_hightlight</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.xxx__product-name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.xxx__link</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{}</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.xxx__ming-zi-ke-yi-hen-chang</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">// 嵌套写法</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.xxx__item_current</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    .</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">xxx</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">__</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">link</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>对应的HTML结构如下：</p>
+<div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">ul</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"xxx"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">li</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"xxx__item"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>第一项</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"xxx__product-name"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>我是名称&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"xxx__ming-zi-ke-yi-hen-chang"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>看类名&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">a</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> href</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"#"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"xxx__link"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>我是link&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">a</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">li</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">li</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"xxx__item xxx__item_current"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>第二项 且 当前选择项</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"xxx__product-name"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>我是名称&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">a</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> href</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"#"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"xxx__item-link"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>我是link&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">a</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">li</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">li</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"xxx__item xxx__item_hightlight"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>第三项 且 特殊高亮</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"xxx__product-name"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>我是名称&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">a</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> href</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"#"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"xxx__item-link"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>我是link&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">a</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">li</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">ul</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><h2 id="bem-解决问题" tabindex="-1">BEM 解决问题 <a class="header-anchor" href="#bem-解决问题" aria-label="Permalink to &quot;BEM 解决问题&quot;">&ZeroWidthSpace;</a></h2>
+<p>组件之间的完全解耦，不会造成命名空间的污染，如：<code>.mod-xxx ul li</code> 的写法带来的潜在的嵌套风险。</p>
+<h2 id="性能" tabindex="-1">性能 <a class="header-anchor" href="#性能" aria-label="Permalink to &quot;性能&quot;">&ZeroWidthSpace;</a></h2>
+<p>BEM 命名会使得 Class 类名变长，但经过 gzip 压缩后这个带宽开销可以忽略不计</p>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[用技术的眼光看世界]]></title>
             <link>https://super456.github.io/posts/growth-record/other/softSkills/technology-for-the-world.html</link>
             <guid>https://super456.github.io/posts/growth-record/other/softSkills/technology-for-the-world.html</guid>
@@ -9345,6 +9548,24 @@ Vue CLI 官方解释：
 <h2 id="四、思维导图" tabindex="-1">四、思维导图 <a class="header-anchor" href="#四、思维导图" aria-label="Permalink to &quot;四、思维导图&quot;">&ZeroWidthSpace;</a></h2>
 <CustomImage src="/growth-record/other/softSkills/yongjishuyanguangkanshijie.png" alt="思维导图" /><h2 id="五、总结" tabindex="-1">五、总结 <a class="header-anchor" href="#五、总结" aria-label="Permalink to &quot;五、总结&quot;">&ZeroWidthSpace;</a></h2>
 <p>看完这个专栏，感悟很深，也视野开阔了很多。从自身姿态出发，看到投资人、技术人、产品经理不同角度的理解。学习到了高效学习的方法和一些知识掌握的境界。最重要的是最自己的人生观产生了很大的冲击，发现之前自己真的见识太少了，很多都不懂，感谢遇到了这门课程，可以让自己变得充实强大。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[绝对定位元素布局遮挡问题]]></title>
+            <link>https://super456.github.io/posts/growth-record/base/css/absolute-element-shelter.html</link>
+            <guid>https://super456.github.io/posts/growth-record/base/css/absolute-element-shelter.html</guid>
+            <pubDate>Thu, 21 May 2020 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="绝对定位元素布局遮挡问题" tabindex="-1">绝对定位元素布局遮挡问题 <a class="header-anchor" href="#绝对定位元素布局遮挡问题" aria-label="Permalink to &quot;绝对定位元素布局遮挡问题&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="一、需求场景" tabindex="-1">一、需求场景 <a class="header-anchor" href="#一、需求场景" aria-label="Permalink to &quot;一、需求场景&quot;">&ZeroWidthSpace;</a></h2>
+<p>实现一个内容排版如下图：</p>
+<CustomImage src='/growth-record/base/css/absolute01.webp' /><h2 id="二、需求分析" tabindex="-1">二、需求分析 <a class="header-anchor" href="#二、需求分析" aria-label="Permalink to &quot;二、需求分析&quot;">&ZeroWidthSpace;</a></h2>
+<p>从内容排版来看，这个是一个内容块，包含三个子内容块，右下角那个是图片，实现方式有两种，第一种是设在父级的背景图上，通过定位解决；第二种是设置在内容块，通过绝对定位设置解决。我们通过第二种方法设置。</p>
+<h2 id="三、问题描述" tabindex="-1">三、问题描述 <a class="header-anchor" href="#三、问题描述" aria-label="Permalink to &quot;三、问题描述&quot;">&ZeroWidthSpace;</a></h2>
+<p>按照第二步分析设置，实现效果如下：</p>
+<CustomImage src='/growth-record/base/css/absolute02.webp' /><p>存在绝对定位图片覆盖了同级内容块问题，加了红色边框就是为了突出被覆盖现象。</p>
+<h2 id="四、解决方法" tabindex="-1">四、解决方法 <a class="header-anchor" href="#四、解决方法" aria-label="Permalink to &quot;四、解决方法&quot;">&ZeroWidthSpace;</a></h2>
+<p>通过设置父级容器的：<code>z-index:1;</code> 然后在设置绝对定位元素层级：<code>z-index:-1;</code> （这里不要单纯设置了这里没有设置父级，不然会不显示的）。这同级红色边框内容就不会被绝对定位元素遮挡了。</p>
+<p>因为同级红色边框层级默认会继承父级的层级属性，而绝对定位元素在继承父级层级的同时设置了比同级低一个层级，所以在显示的同时又不遮挡同级元素了。</p>
 ]]></content:encoded>
         </item>
         <item>
@@ -9408,6 +9629,44 @@ Vue CLI 官方解释：
 <p>根据书籍《CSS 实战手册》总结学习记录：</p>
 <CustomImage src='/growth-record/base/css/cssshizhanshouce.png' /><p>待更新🚀...</p>
 ]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[两个模块列自适应布局问题]]></title>
+            <link>https://super456.github.io/posts/growth-record/base/css/tow-block-adaptive.html</link>
+            <guid>https://super456.github.io/posts/growth-record/base/css/tow-block-adaptive.html</guid>
+            <pubDate>Sat, 28 Mar 2020 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="两个模块列自适应布局问题" tabindex="-1">两个模块列自适应布局问题 <a class="header-anchor" href="#两个模块列自适应布局问题" aria-label="Permalink to &quot;两个模块列自适应布局问题&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="一、实现效果" tabindex="-1">一、实现效果 <a class="header-anchor" href="#一、实现效果" aria-label="Permalink to &quot;一、实现效果&quot;">&ZeroWidthSpace;</a></h2>
+<CustomImage src='/growth-record/base/css/blockadaptive01.webp' /><p>两个模块下排版列分开，左边内容固定宽度，右边内容适配宽度排列。</p>
+<p>在小屏幕排列如下：</p>
+<CustomImage src='/growth-record/base/css/blockadaptive02.webp' /><h2 id="二、实现分析" tabindex="-1">二、实现分析 <a class="header-anchor" href="#二、实现分析" aria-label="Permalink to &quot;二、实现分析&quot;">&ZeroWidthSpace;</a></h2>
+<p>就是利用左右两边模块固定同一父容器（设置：<code>display:flex;</code>），左边模块固定宽度，右边模块自适应可用空间（不考虑适配到移动端屏幕）。</p>
+<h2 id="三、实现代码" tabindex="-1">三、实现代码 <a class="header-anchor" href="#三、实现代码" aria-label="Permalink to &quot;三、实现代码&quot;">&ZeroWidthSpace;</a></h2>
+<p>一开始想用<code>width</code> 自带的两个属性值设置（<code>fill-available</code> 充分利用可用空间，<code>fit-content</code> 收缩到合适），但是兼容性问题不乐观，放弃了这个想法。</p>
+<p>直接使用：</p>
+<div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"contact-content__item"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"contact-content__item__left"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    服务宗旨：</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"contact-content__item__right"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    引导用户快速完成实名认证、开卡、绑定店铺；费率调整、增卡、活动了解，帮助用户增收提效。引导用户快速完成实名认证、开卡、绑定店铺；费率调整、增卡、活动了解，帮助用户增收提效。引导用户快速完成实名认证、开卡、绑定店铺；费率调整、增卡、活动了解，帮助用户增收提效。引导用户快速完成实名认证、开卡、绑定店铺；费率调整、增卡、活动了解，帮助用户增收提效。</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.contact-content__item {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  line-height: 30px;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  display: flex;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  .contact-content__item__left {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  	width: 80px;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  .contact-content__item__right {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  	width: 100%;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span></code></pre>
+</div>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[异常监控管理工具调研]]></title>
