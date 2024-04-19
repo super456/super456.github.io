@@ -3,6 +3,18 @@ export default {
   title: 'AI 工具',
   items: [
     {
+      title: 'Latent Box',
+      desc: 'AI、创意和艺术领域的精选合集，来自 Latent Cat。',
+      icon: 'https://latentbox.com/favicon.ico',
+      link: 'https://latentbox.com/zh',
+    },
+    {
+      title: 'AI工具导航 | 国内外AI工具集导航大全',
+      desc: 'AI导航汇集了数百种国内外优秀的AI工具，包括AI写作工具、AI图像生成和背景处理、AI视频制作、AI音频转录、AI辅助编程、AI音乐生成、AI绘画设计、AI对话聊天等领域的顶尖工具，同时还提供常用的AI学习开发网站、框架和模型库，以助你轻松融入人工智能的世界，高效自动化完成任务！',
+      icon: 'https://nancheng.fun/wp-content/uploads/2024/02/favicon.png',
+      link: 'https://ai.nancheng.fun/',
+    },
+    {
       title: 'WaytoAGI-通往AGI之路，最好的 AI 知识库和工具站',
       desc: '最大最全面的 AI 知识库，汇聚上千个人工智能网站和工具，汇集最新的 AI 工具、GPT 应用和行业资讯。无论您是AI爱好者、研究者还是开发者，WaytoAGI助力您在通往AGI的旅途中开启智能创新的未来。',
       icon: 'https://www.waytoagi.com/favicon.ico',
@@ -103,6 +115,12 @@ export default {
       desc: 'Assemble, configure, and deploy autonomous AI Agents in your browser.',
       icon: 'https://agentgpt.reworkd.ai/favicon.svg',
       link: 'https://agentgpt.reworkd.ai/zh',
+    },
+    {
+      title: '鱼聪明AI，做您强大的AI助手',
+      desc: '机器人聊天,人工智能对话,ChatGPT,OpenAI,编程助手,智能助手,AI绘画,AI模型,AI工具',
+      icon: 'https://www.yucongming.com/favicon.ico',
+      link: 'https://www.yucongming.com/',
     },
   ],
 }

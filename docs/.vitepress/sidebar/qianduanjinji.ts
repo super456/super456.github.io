@@ -3,7 +3,7 @@ export default function qianduanjinjiSidebarGuide() {
   return [
     {
       text: 'HTML',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '什么是 HTML', link: '/base/html/what-is-html' },
         { text: '语义化标签', link: '/base/html/semantic-label' },
@@ -11,42 +11,42 @@ export default function qianduanjinjiSidebarGuide() {
     },
     {
       text: 'CSS',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '什么是 CSS', link: '/base/css/what-is-css' },
       ],
     },
     {
       text: 'JavaScript',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '什么是 JavaScript', link: '/base/javascript/what-is-javascript' },
       ],
     },
     {
       text: 'Vue',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '什么是 Vue', link: '/frame/vue/what-is-vue' },
       ],
     },
     {
       text: 'React',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '什么是 React', link: '/frame/vue/what-is-vue' },
       ],
     },
     {
       text: 'Node',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '什么是 Node', link: '/frame/node/what-is-node' },
       ],
     },
     {
       text: '跨平台',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '什么是小程序', link: '/platform/applet/what-is-applet' },
         { text: '什么是 App', link: '/platform/app/what-is-app' },
@@ -55,7 +55,7 @@ export default function qianduanjinjiSidebarGuide() {
     },
     {
       text: '前端工程化',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '什么是前端工程化', link: '/engineering/tools/' },
         { text: '性能优化', link: '/engineering/performance/' },
@@ -63,7 +63,7 @@ export default function qianduanjinjiSidebarGuide() {
     },
     {
       text: '计算机基础',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '数据结构与算法', link: '/computer/algorithm/' },
         { text: '计算机网络', link: '/computer/network/' },
@@ -72,28 +72,30 @@ export default function qianduanjinjiSidebarGuide() {
     },
     {
       text: '技术复盘',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '从《关于语雀 23 日故障的公告》学习复盘', link: '/other/softSkills/yuque-bug-study' },
+        { text: '用技术的眼光看世界', link: '/other/softSkills/technology-for-the-world' },
       ],
     },
     {
       text: '工具指南',
-      collapsed: true,
+      collapsed: false,
       items: [
+        { text: '开发常用命令行', link: '/other/toolGuide/common-command-line' },
         { text: 'VS Code 常用快捷键', link: '/other/toolGuide/' },
       ],
     },
     {
       text: '产品业务',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '业务思考', link: '/other/productBusiness/' },
       ],
     },
     {
       text: 'UI 设计交互',
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: '设计', link: '/other/productBusiness/' },
       ],

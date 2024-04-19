@@ -9,11 +9,12 @@ export default function yehangxifeiSidebarGuide() {
         { text: '逆向生长，保持路上', link: '/2023/stay-on-road' },
         { text: '自我发展规划觉察', link: '/2023/self-planning-awareness' },
         { text: '浅谈职业规划', link: '/2022/career-planning' },
+        { text: '工作生活心得', link: '/2022/work-life-insights' },
       ],
     },
     {
-      text: '好青年 21 天训练营',
-      collapsed: true,
+      text: '讶羽好青年 21 天训练营',
+      collapsed: false,
       items: [
         { text: '参加 7 期训练营总结', link: '/2023/camp-7-summary' },
         { text: '第十一期训练营茶话会分享', link: '/2023/camp-11th-share' },

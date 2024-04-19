@@ -1,0 +1,17 @@
+{
+	"创建文章最简单的配置模版": {
+		"prefix": "simple",
+		"body": [
+			"---",
+			"title: 文章标题(string)",
+			"date: 单独设置发布时间，默认使用 Git 最后文件修改时间(date|false)",
+			"tag:",
+			" - 标签信息(string)",
+			"categories:",
+			" - 分类信息(string)",
+			"---",
+			"# 这个是文章标题一定要写，不然标题信息不展示"
+		],
+		"description": "创建文章最简单的配置模版"
+	}
+}
