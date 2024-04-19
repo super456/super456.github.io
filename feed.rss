@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Fri, 19 Apr 2024 02:51:28 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Apr 2024 03:14:47 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -14,15 +14,6 @@
             <link>https://super456.github.io</link>
         </image>
         <copyright>Copyright (c) 2024-present, 纵倾童鞋</copyright>
-        <item>
-            <title><![CDATA[前端工程化]]></title>
-            <link>https://super456.github.io/posts/growth-record/engineering/</link>
-            <guid>https://super456.github.io/posts/growth-record/engineering/</guid>
-            <pubDate>Fri, 19 Apr 2024 20:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 id="前端工程化" tabindex="-1">前端工程化 <a class="header-anchor" href="#前端工程化" aria-label="Permalink to &quot;前端工程化&quot;">&ZeroWidthSpace;</a></h1>
-<p>待更新🚀...</p>
-]]></content:encoded>
-        </item>
         <item>
             <title><![CDATA[关于我]]></title>
             <link>https://super456.github.io/posts/about/</link>
@@ -8178,6 +8169,117 @@ Yolk
             <enclosure url="https://super456.github.io/read-book/2022/hamaxianshengkanxingliyisheng.webp" length="0" type="image/webp"/>
         </item>
         <item>
+            <title><![CDATA[什么是前端工程化]]></title>
+            <link>https://super456.github.io/posts/growth-record/engineering/</link>
+            <guid>https://super456.github.io/posts/growth-record/engineering/</guid>
+            <pubDate>Thu, 14 Jul 2022 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="什么是前端工程化" tabindex="-1">什么是前端工程化 <a class="header-anchor" href="#什么是前端工程化" aria-label="Permalink to &quot;什么是前端工程化&quot;">&ZeroWidthSpace;</a></h1>
+<p><strong>什么是前端工程化？</strong></p>
+<p>是指将前端开发的流程<strong>规范化、标准化</strong>、包括开发流程、技术选型、代码规范、构建发布等，用于提升前端工程师的开发效率和代码质量。</p>
+<p><strong>为什么要前端工程化？</strong></p>
+<ul>
+<li>复杂度搞：前端项目的多功能、都页面、多状态、多系统；</li>
+<li>规模大：团队开发，多人协作，代码质量管理；</li>
+<li>要求高：页面性能优化（CDN / 异步加载 / 请求合并），CSS 兼容性、单页面应用、服务端渲染...</li>
+</ul>
+<p><strong>怎么做到前端工程化？</strong></p>
+<ol>
+<li>
+<p>从业务着手：简单的单页面应用，使用 Gulp + 同步工具实现开发全流程。</p>
+</li>
+<li>
+<p>从复杂度考虑：框架最终要服务于我们的项目，而非累死累活的去维护框架。</p>
+</li>
+</ol>
+<ul>
+<li>Jenkins；</li>
+<li>Git/Gitlab;</li>
+<li>Webpack;</li>
+<li>React/Vue/Angular;</li>
+</ul>
+<ol start="3">
+<li>从已知向未知扩展：不同的技术有不同的适应点，选择适合的才是最好的。</li>
+</ol>
+<p><strong>考虑</strong>：</p>
+<ul>
+<li>前后端技术是否更好的融合；</li>
+<li>前后端分离，接口安全性；</li>
+<li>Vue 或 React 是否适合制作静态页面；</li>
+</ul>
+<p>业务、技术上说服<strong>多用数字证据说话。</strong></p>
+<p>团队的吸收能力、学习能力、知识拓展能力。</p>
+<p>往好的方向去考虑事情、往好的方向营造这个氛围、往好的方向扩展我们的知识。</p>
+<h2 id="一、开发流程" tabindex="-1">一、开发流程 <a class="header-anchor" href="#一、开发流程" aria-label="Permalink to &quot;一、开发流程&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>需求分析；</li>
+<li>版本控制；</li>
+<li>缺陷管理；</li>
+<li>文档管理；</li>
+<li>自动化；</li>
+<li>性能测试；</li>
+<li>发布部署；</li>
+</ul>
+<h2 id="二、技术选型" tabindex="-1">二、技术选型 <a class="header-anchor" href="#二、技术选型" aria-label="Permalink to &quot;二、技术选型&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>UI 框架：</li>
+</ol>
+<ul>
+<li>Element UI;</li>
+<li>Ant;</li>
+<li>IView;</li>
+<li>Mint;</li>
+<li>Cube;</li>
+</ul>
+<ol start="2">
+<li>JS 框架：</li>
+</ol>
+<ul>
+<li>MVVM;</li>
+</ul>
+<ol start="3">
+<li>Template:</li>
+</ol>
+<h2 id="三、代码规范" tabindex="-1">三、代码规范 <a class="header-anchor" href="#三、代码规范" aria-label="Permalink to &quot;三、代码规范&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>标准：</li>
+</ol>
+<ul>
+<li>Standard;</li>
+<li>airbnb;</li>
+<li>Prettier;</li>
+</ul>
+<ol start="2">
+<li>公司：</li>
+</ol>
+<ul>
+<li>谷歌；</li>
+<li>百度；</li>
+<li>腾讯；</li>
+<li>美团；</li>
+<li>饿了么；</li>
+</ul>
+<ol start="3">
+<li>模块化：</li>
+</ol>
+<h2 id="四、构建发布" tabindex="-1">四、构建发布 <a class="header-anchor" href="#四、构建发布" aria-label="Permalink to &quot;四、构建发布&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>Jenkins;</li>
+<li>Webpack;</li>
+<li>Gulp;</li>
+<li>Yarn;</li>
+<li>Docker;</li>
+<li>Rancher;</li>
+<li>Kubernetes;</li>
+<li>Harbor;</li>
+<li>ECS;</li>
+</ul>
+<h2 id="五、学习资料" tabindex="-1">五、学习资料 <a class="header-anchor" href="#五、学习资料" aria-label="Permalink to &quot;五、学习资料&quot;">&ZeroWidthSpace;</a></h2>
+<p><a href="https://juejin.cn/live/1659039" target="_blank" rel="noreferrer">前端工程化-掘金</a></p>
+<p><a href="https://www.bilibili.com/video/BV1HY4y1r7rJ?p=3" target="_blank" rel="noreferrer">大前端时代的挑战与机遇（深圳场）_哔哩哔哩_bilibili</a></p>
+<p><a href="https://space.bilibili.com/28696526/channel/collectiondetail?sid=44950" target="_blank" rel="noreferrer">程序员山月的个人空间_哔哩哔哩_Bilibili</a></p>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[开发常用命令行]]></title>
             <link>https://super456.github.io/posts/growth-record/other/toolGuide/common-command-line.html</link>
             <guid>https://super456.github.io/posts/growth-record/other/toolGuide/common-command-line.html</guid>
@@ -8592,6 +8694,36 @@ ip:端口号
 <h2 id="十、命令行在线查询网站" tabindex="-1">十、命令行在线查询网站 <a class="header-anchor" href="#十、命令行在线查询网站" aria-label="Permalink to &quot;十、命令行在线查询网站&quot;">&ZeroWidthSpace;</a></h2>
 <p><a href="https://explainshell.com" target="_blank" rel="noreferrer">G</a><a href="https://explainshell.com" target="_blank" rel="noreferrer">o Into</a></p>
 <CustomImage src="/growth-record/other/toolGuide/minglingxing.webp" alt="command-line" />]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[DevOps 了解]]></title>
+            <link>https://super456.github.io/posts/growth-record/engineering/tools/dev-ops.html</link>
+            <guid>https://super456.github.io/posts/growth-record/engineering/tools/dev-ops.html</guid>
+            <pubDate>Sun, 12 Jun 2022 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="devops-了解" tabindex="-1">DevOps 了解 <a class="header-anchor" href="#devops-了解" aria-label="Permalink to &quot;DevOps 了解&quot;">&ZeroWidthSpace;</a></h1>
+<p>工程化定义：让一堆人做一堆事</p>
+<h2 id="devops-介绍" tabindex="-1">DevOps 介绍 <a class="header-anchor" href="#devops-介绍" aria-label="Permalink to &quot;DevOps 介绍&quot;">&ZeroWidthSpace;</a></h2>
+<blockquote>
+<p>DevOps（Development和Operations的组合词）是一组过程、方法与系统的统称，用于促进开发（应用程序/软件工程）、技术运营和质量保障（QA）部门之间的沟通、协作与整合。</p>
+<p>它是一种重视“软件开发人员（Dev）”和“IT运维技术人员（Ops）”之间沟通合作的文化、运动或惯例。透过自动化“软件交付”和“架构变更”的流程，来使得构建、测试、发布软件能够更加地快捷、频繁和可靠。</p>
+</blockquote>
+<blockquote>
+<p>它的出现是由于软件行业日益清晰地认识到：为了按时交付软件产品和服务，开发和运维工作必须紧密合作。
+——百度百科</p>
+</blockquote>
+<h2 id="devops-流程" tabindex="-1">DevOps 流程 <a class="header-anchor" href="#devops-流程" aria-label="Permalink to &quot;DevOps 流程&quot;">&ZeroWidthSpace;</a></h2>
+<CustomImage src='/growth-record/engineering/tools/devops01.webp' /><ol>
+<li>plan：开发计划或需求评审；</li>
+<li>code：开发编码需求功能；</li>
+<li>build：构建打包需求功能；</li>
+<li>test：测试需求；</li>
+<li>release：发布版本；</li>
+<li>deploy：部署上线；</li>
+<li>operate：操作运维；</li>
+<li>monitor：监控。</li>
+</ol>
+<h2 id="devops-内容" tabindex="-1">DevOps 内容 <a class="header-anchor" href="#devops-内容" aria-label="Permalink to &quot;DevOps 内容&quot;">&ZeroWidthSpace;</a></h2>
+<CustomImage src='/growth-record/engineering/tools/devops02.webp' />]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[第 6 本《男孩、鼹鼠、狐狸和马》]]></title>
@@ -9216,6 +9348,32 @@ Vue CLI 官方解释：
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[框架选型指南]]></title>
+            <link>https://super456.github.io/posts/growth-record/engineering/other/frame-selection.html</link>
+            <guid>https://super456.github.io/posts/growth-record/engineering/other/frame-selection.html</guid>
+            <pubDate>Tue, 05 May 2020 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="框架选型指南" tabindex="-1">框架选型指南 <a class="header-anchor" href="#框架选型指南" aria-label="Permalink to &quot;框架选型指南&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="一、js-框架选型" tabindex="-1">一、JS 框架选型 <a class="header-anchor" href="#一、js-框架选型" aria-label="Permalink to &quot;一、JS 框架选型&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>团队的技术能力；</li>
+<li>应用场景（后台？性能要求？时间要求？）；</li>
+<li>成熟的社区，成熟的生态。</li>
+</ol>
+<p><strong>注意</strong>：</p>
+<ol>
+<li>根据团队技术能力选择框架，按需取用；</li>
+<li>了解框架背后的原理，并思考如何自己实现一个 JS 框架；</li>
+<li>多读文档，求助社区，高效开发。</li>
+</ol>
+<h2 id="二、ui-框架选型" tabindex="-1">二、UI 框架选型 <a class="header-anchor" href="#二、ui-框架选型" aria-label="Permalink to &quot;二、UI 框架选型&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>判断使用场景（PC、移动 Web、小程序、响应式）；</li>
+<li>组件丰富，成熟的模板，方便集成；</li>
+<li>成熟的社区，成熟的生态。</li>
+</ol>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Webpack 基础语法]]></title>
             <link>https://super456.github.io/posts/growth-record/engineering/webpack/intro.html</link>
             <guid>https://super456.github.io/posts/growth-record/engineering/webpack/intro.html</guid>
@@ -9239,6 +9397,16 @@ Vue CLI 官方解释：
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span></code></pre>
 </div><p>（5）打包，执行 <code>npx webpack</code> 默认根目录生成 <code>dist</code> 文件夹：</p>
 <CustomImage src='/growth-record/engineering/webpack/jichuyufa03.webp' /><p>待更新🚀...</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[CSS 实战手册学习]]></title>
+            <link>https://super456.github.io/posts/growth-record/base/css/practical-manual.html</link>
+            <guid>https://super456.github.io/posts/growth-record/base/css/practical-manual.html</guid>
+            <pubDate>Sat, 25 Apr 2020 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="css-实战手册学习" tabindex="-1">CSS 实战手册学习 <a class="header-anchor" href="#css-实战手册学习" aria-label="Permalink to &quot;CSS 实战手册学习&quot;">&ZeroWidthSpace;</a></h1>
+<p>根据书籍《CSS 实战手册》总结学习记录：</p>
+<CustomImage src='/growth-record/base/css/cssshizhanshouce.png' /><p>待更新🚀...</p>
 ]]></content:encoded>
         </item>
         <item>
