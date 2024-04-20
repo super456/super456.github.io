@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Sat, 20 Apr 2024 10:14:52 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 Apr 2024 11:13:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -16591,6 +16591,59 @@ unique symbol 表示单个的、某个具体的 Symbol 值，该类型声明的�
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Vue 优化技巧]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/optimization-tips.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/optimization-tips.html</guid>
+            <pubDate>Sun, 29 Oct 2023 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="vue-优化技巧" tabindex="-1">Vue 优化技巧 <a class="header-anchor" href="#vue-优化技巧" aria-label="Permalink to &quot;Vue 优化技巧&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="基础优化" tabindex="-1">基础优化 <a class="header-anchor" href="#基础优化" aria-label="Permalink to &quot;基础优化&quot;">&ZeroWidthSpace;</a></h2>
+<p>class 动态值为数组时，这个数组可以是字符串值域对象值的组合</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> arr</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   // 字符串</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">   'foo bar'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   // 对象</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">   {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     baz: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">   }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ]</span></span></code></pre>
+</div><p>watch 初始化执行函数替换</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 原代码：</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">created</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">getLimitData</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">},</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> watch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">		refresh</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(val) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">			if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (val) {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">				this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">getLimitData</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">},</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 优化代码：</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">watch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">	refresh</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">	 	// handler: 'getLimitData', // 适合监听值改变就调用（包括空值情况）</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">		// deep: true, // 该回调会在任何被侦听的对象的 property 改变时被调用，不论其被嵌套多深</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">		handler</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">val</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">oldVal</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">			val </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&#x26;&#x26;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">getLimitData</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 前提 val 属于基本类型（数字特殊，已知这个 val 是布尔类型）</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">		},</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">    immediate</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 该回调将会在侦听开始之后被立即调用</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">	}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><h2 id="学习资料" tabindex="-1">学习资料 <a class="header-anchor" href="#学习资料" aria-label="Permalink to &quot;学习资料&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li><a href="https://juejin.cn/post/6844903677262561293" target="_blank" rel="noreferrer">Vue 应用性能优化指南 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7005880217684148231#heading-17" target="_blank" rel="noreferrer">我在项目中用实际用到的22个Vue优化技巧 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7277089907974422588?utm_source=gold_browser_extension" target="_blank" rel="noreferrer">妙用computed拦截v-model，面试管都夸我细 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6902420248851382285" target="_blank" rel="noreferrer">使用Vue自定义指令实现右键菜单</a></li>
+<li><a href="https://juejin.cn/post/6901466994478940168" target="_blank" rel="noreferrer">基于Vue的前端架构，我做了这15点</a></li>
+<li><a href="https://juejin.cn/post/6844903910881116174" target="_blank" rel="noreferrer">vue文档里你没捡起来的宝藏 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7098688018663342111" target="_blank" rel="noreferrer">25个 Vue 技巧,学了这么久才知道还能这么用 - 掘金</a></li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[从《关于语雀 23 日故障的公告》学习复盘]]></title>
             <link>https://super456.github.io/posts/growth-record/other/softSkills/yuque-bug-study.html</link>
             <guid>https://super456.github.io/posts/growth-record/other/softSkills/yuque-bug-study.html</guid>
@@ -17740,6 +17793,101 @@ unique symbol 表示单个的、某个具体的 Symbol 值，该类型声明的�
 <li><strong>每天晚上睡前回顾思考总结</strong>，10-15 分钟时间总结今天所得，哪里有什么不足，哪里需要改善，怎么样可以做的更好；</li>
 <li>开始早睡，11 点 30 分躺床上培养睡意，最迟 12 点睡觉；</li>
 </ol>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vue3 学习参考]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/vue3-learning-reference.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/vue3-learning-reference.html</guid>
+            <pubDate>Sat, 15 Jul 2023 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="vue3-学习参考" tabindex="-1">Vue3 学习参考 <a class="header-anchor" href="#vue3-学习参考" aria-label="Permalink to &quot;Vue3 学习参考&quot;">&ZeroWidthSpace;</a></h1>
+<p>大圣老师的 Vue3 学习知识点及路线：</p>
+<CustomImage src='/growth-record/frame/vue/vue3learning.webp' /><p><a href="https://v3.cn.vuejs.org/" target="_blank" rel="noreferrer">中文官方文档</a></p>
+<p>浏览器在线运行框架环境练习：</p>
+<ul>
+<li><a href="https://stackblitz.com/edit/vitejs-vite-hgrwco?file=index.html,src%2FApp.vue&amp;terminal=dev" target="_blank" rel="noreferrer">Vitejs - Vite (forked) - StackBlitz</a></li>
+</ul>
+<h3 id="一-新增特性" tabindex="-1">（一）新增特性 <a class="header-anchor" href="#一-新增特性" aria-label="Permalink to &quot;（一）新增特性&quot;">&ZeroWidthSpace;</a></h3>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1eK4y1k7BP" target="_blank" rel="noreferrer">Vue.js 作者谈 Vue 3.0 beta 现状_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</a></li>
+<li><a href="https://juejin.cn/post/7077701166397653028#heading-18" target="_blank" rel="noreferrer">焕然一新的 Vue 3 中文文档要来了🎉 - 掘金</a></li>
+</ul>
+<p>其他新特性学习资料：</p>
+<ul>
+<li><a href="https://www.jianshu.com/p/51dc95aa6eea" target="_blank" rel="noreferrer">《Vue3.0抢先学》系列</a></li>
+<li><a href="https://juejin.cn/post/6968094627375087653?utm_source=gold_browser_extension" target="_blank" rel="noreferrer">全面总结Vue3.0的新特性</a></li>
+<li><a href="https://juejin.cn/post/7057325585705467918" target="_blank" rel="noreferrer">2022年必会Vue3.0学习 （强烈建议） - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6966502107230765070" target="_blank" rel="noreferrer"><code>Vue3 + &lt;script setup&gt; + Typescript</code> 使用手册 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7001897686567747598" target="_blank" rel="noreferrer">Vue3 + TS 最佳实践 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7007731144418394149/" target="_blank" rel="noreferrer">Vue3 + TSX 最佳实践？不存在的 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6950487211368251399" target="_blank" rel="noreferrer">https://juejin.cn/post/6950487211368251399</a></li>
+<li><a href="https://juejin.cn/post/6920070789614501896" target="_blank" rel="noreferrer">Vue3 的学习教程汇总、源码解释项目、支持的 UI 组件库、优质实战项目 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6911175470255964174" target="_blank" rel="noreferrer">为什么我推荐使用JSX开发Vue3 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7006518993385160711" target="_blank" rel="noreferrer">还不会Vue3？一篇笔记带你快速入门 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7006108454028836895" target="_blank" rel="noreferrer">Vue3.2 setup语法糖、Composition API、状态库Pinia归纳总结 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6887359442354962445" target="_blank" rel="noreferrer">让你30分钟快速掌握vue 3 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7052531217333223437" target="_blank" rel="noreferrer">Vue3 <code>&lt;script setup lang=“ts”&gt;</code> 使用指南 - 掘金</a></li>
+</ul>
+<h3 id="二-源码学习" tabindex="-1">（二）源码学习 <a class="header-anchor" href="#二-源码学习" aria-label="Permalink to &quot;（二）源码学习&quot;">&ZeroWidthSpace;</a></h3>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000042073070" target="_blank" rel="noreferrer">Vue 源码中的工具函数</a></li>
+<li><a href="https://vueuse.org/" target="_blank" rel="noreferrer">VueUse Collection of Vue Composition Utilities</a></li>
+</ul>
+<h3 id="三-知识点学习" tabindex="-1">（三）知识点学习 <a class="header-anchor" href="#三-知识点学习" aria-label="Permalink to &quot;（三）知识点学习&quot;">&ZeroWidthSpace;</a></h3>
+<p><a href="https://mp.weixin.qq.com/s/dsirWaQHH2EGGG94d58JOg" target="_blank" rel="noreferrer">大爱Vue3.3！从此父子组件双向绑定不再是烦恼！</a></p>
+<div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { computed } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vue'</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> useModel</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">P</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> object</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">K</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> keyof</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> P</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> extends</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>({ </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">props</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">key</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">emit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">props</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> P</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">key</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> K</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">emit</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">...</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">args</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> any</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[])</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  return</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> computed</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">    get</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> props[key]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">    set</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">value</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      emit[</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">`update:${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">key</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">toString</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">()</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}`</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> as</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, value]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  })</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>其他学习资料：</p>
+<ul>
+<li><a href="https://juejin.cn/post/7164159759619194893" target="_blank" rel="noreferrer">花了一天的时间，地板式扫盲了vue3所有API盲点 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7084536432731095048" target="_blank" rel="noreferrer">分享 15 个 Vue3 全家桶开发的避坑经验 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7044077808259170312" target="_blank" rel="noreferrer">Vue3又出新语法 到底何时才能折腾完？ - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7078865301856583717" target="_blank" rel="noreferrer">Vue3拒绝写return，用setup语法糖,让写Vue3更畅快 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7054317318343491615" target="_blank" rel="noreferrer">5个知识点，让 Vue3 开发更加丝滑 - 掘金</a></li>
+<li><a href="https://github.com/su37josephxia/vue3-study" target="_blank" rel="noreferrer">https://github.com/su37josephxia/vue3-study</a></li>
+</ul>
+<h3 id="四-第三方依赖库学习" tabindex="-1">（四）第三方依赖库学习 <a class="header-anchor" href="#四-第三方依赖库学习" aria-label="Permalink to &quot;（四）第三方依赖库学习&quot;">&ZeroWidthSpace;</a></h3>
+<ul>
+<li><a href="https://www.attojs.com/" target="_blank" rel="noreferrer">VueRequest 一个 Vue 请求库</a></li>
+</ul>
+<h3 id="五-第三方组件库学习" tabindex="-1">（五）第三方组件库学习 <a class="header-anchor" href="#五-第三方组件库学习" aria-label="Permalink to &quot;（五）第三方组件库学习&quot;">&ZeroWidthSpace;</a></h3>
+<ul>
+<li><a href="https://www.naiveui.com/zh-CN/os-theme" target="_blank" rel="noreferrer">Naive UI</a></li>
+<li><a href="https://e3.shengxinjing.cn/#/" target="_blank" rel="noreferrer">website</a></li>
+<li><a href="https://tianyuhao.cn/v3/#/" target="_blank" rel="noreferrer">Tyh Ui | Vue3 组件库</a></li>
+<li><a href="https://github.com/Maronato/vue-toastification#readme" target="_blank" rel="noreferrer">GitHub - Maronato/vue-toastification: Vue notifications made easy!</a></li>
+<li><a href="https://juejin.cn/post/7075162881498562590" target="_blank" rel="noreferrer">被尤雨溪推荐，这款开箱即用的Vue3组件库做对了什么 - 掘金</a></li>
+<li><a href="https://histoire.dev/" target="_blank" rel="noreferrer">Histoire</a></li>
+</ul>
+<h3 id="六-项目工程搭建学习" tabindex="-1">（六）项目工程搭建学习 <a class="header-anchor" href="#六-项目工程搭建学习" aria-label="Permalink to &quot;（六）项目工程搭建学习&quot;">&ZeroWidthSpace;</a></h3>
+<ul>
+<li><a href="https://juejin.cn/post/7041188884864040991" target="_blank" rel="noreferrer">vite + vue3 + setup + pinia + ts 项目实战 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7063024498152308750" target="_blank" rel="noreferrer">Vite+Vue3+NaiveUI+Pinia搭建一套优雅的后台管理模板，真香 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6978324260372611080" target="_blank" rel="noreferrer">[项目篇]vue3 + vite + vant + typescript - 第一天 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6881795051492474893" target="_blank" rel="noreferrer">🎉🎉🎉 一个基于vue3+vite+ts的完整项目 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7069315908597973023" target="_blank" rel="noreferrer">万字长文详解从零搭建企业级 vue3 + vite2+ ts4 框架全过程 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6924687052005081095" target="_blank" rel="noreferrer">Vue3 全家桶 + Element Plus + Vite + TypeScript + Eslint 项目配置最佳实践 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7052593172613955614" target="_blank" rel="noreferrer">Vite2+Vue3+TypeScript：搭建企业级轻量框架实践 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6951649464637636622" target="_blank" rel="noreferrer">从 0 开始手把手带你搭建一套规范的 Vue3.x 项目工程环境 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7036745610954801166" target="_blank" rel="noreferrer">Vite2 + Vue3 + TypeScript + Pinia 搭建一套企业级的开发脚手架【值得收藏】 - 掘金</a></li>
+</ul>
+<h3 id="七-面试题学习" tabindex="-1">（七）面试题学习 <a class="header-anchor" href="#七-面试题学习" aria-label="Permalink to &quot;（七）面试题学习&quot;">&ZeroWidthSpace;</a></h3>
+<ul>
+<li><a href="https://juejin.cn/post/7073300624707682317" target="_blank" rel="noreferrer">N个Vue知识点，必会!!! 供复习 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6961222829979697165" target="_blank" rel="noreferrer">最全的 Vue 面试题+详解答案 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7017693252820303903" target="_blank" rel="noreferrer">用vue想要拿20k，面试题要这样回答（源码版） - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6844903895467032589" target="_blank" rel="noreferrer">深入剖析：Vue核心之虚拟DOM - 掘金</a></li>
+</ul>
 ]]></content:encoded>
         </item>
         <item>
@@ -18900,6 +19048,108 @@ unique symbol 表示单个的、某个具体的 Symbol 值，该类型声明的�
             <enclosure url="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064729042-ad1afb3e-00ce-4c54-97aa-16beb85f7034.png#averageHue=%232a2929&clientId=u46e8d9ee-889a-4&from=paste&height=140&id=uf3a04606&originHeight=140&originWidth=692&originalType=binary&ratio=1&rotation=0&showTitle=false&size=26211&status=done&style=none&taskId=ufb0564e6-46cf-4f6a-85cc-ad3008aa9bd&title=&width=692" length="0" type="image/png"/>
         </item>
         <item>
+            <title><![CDATA[大数据虚拟列表优化实战]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/virtual-scrolling-list-practice.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/virtual-scrolling-list-practice.html</guid>
+            <pubDate>Wed, 09 Nov 2022 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="大数据虚拟列表优化实战" tabindex="-1">大数据虚拟列表优化实战 <a class="header-anchor" href="#大数据虚拟列表优化实战" aria-label="Permalink to &quot;大数据虚拟列表优化实战&quot;">&ZeroWidthSpace;</a></h1>
+<p>待更新🚀...</p>
+<h1 id="to-do-list" tabindex="-1">TO DO LIST <a class="header-anchor" href="#to-do-list" aria-label="Permalink to &quot;TO DO LIST&quot;">&ZeroWidthSpace;</a></h1>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> 需求分析（管理后台案场录音详情优化）</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_1" disabled="true"><label for="cbx_1"> STAR 法则分析</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> 市面技术文章案例及原理分析</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_3" disabled="true"><label for="cbx_3"> 制定需求优化分析技术方案</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_4" disabled="true"><label for="cbx_4"> 实践并产出对比分析</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_5" disabled="true"><label for="cbx_5"> 总结并制定分享准备</label></li>
+</ul>
+<h1 id="需求分析" tabindex="-1">需求分析 <a class="header-anchor" href="#需求分析" aria-label="Permalink to &quot;需求分析&quot;">&ZeroWidthSpace;</a></h1>
+<ol>
+<li><strong>技术难点</strong>：</li>
+</ol>
+<ul>
+<li>虚拟滚动技术方案</li>
+<li>自适应列表高度</li>
+<li>分片渲染算法</li>
+<li>分页设置</li>
+<li>图片懒加载</li>
+<li>图片的动态裁剪</li>
+<li>关键词搜索算法</li>
+<li>检索切换算法</li>
+<li>浏览器和代码性能分析优化</li>
+</ul>
+<ol start="2">
+<li>技术选型：</li>
+</ol>
+<ul>
+<li>参考现有的市面实现技术方案</li>
+<li>参考现有的组件库或第三方插件技术实现方案</li>
+<li>记录不同的技术方案实现过程及对比（方案原理及优缺点，特别是代码性能和浏览器性能监控这一块重点说明）</li>
+<li>各个技术实现架构图</li>
+</ul>
+<ol start="3">
+<li>最终实现效果</li>
+</ol>
+<ul>
+<li>几种方案的实现效果对比（重点突出优缺点）</li>
+<li>总结</li>
+</ul>
+<h2 id="situation-背景" tabindex="-1">Situation 背景 <a class="header-anchor" href="#situation-背景" aria-label="Permalink to &quot;Situation 背景&quot;">&ZeroWidthSpace;</a></h2>
+<h2 id="task-任务" tabindex="-1">Task 任务 <a class="header-anchor" href="#task-任务" aria-label="Permalink to &quot;Task 任务&quot;">&ZeroWidthSpace;</a></h2>
+<h2 id="action-行为" tabindex="-1">Action 行为 <a class="header-anchor" href="#action-行为" aria-label="Permalink to &quot;Action 行为&quot;">&ZeroWidthSpace;</a></h2>
+<h2 id="result-结果" tabindex="-1">Result 结果 <a class="header-anchor" href="#result-结果" aria-label="Permalink to &quot;Result 结果&quot;">&ZeroWidthSpace;</a></h2>
+<h1 id="现有案例" tabindex="-1">现有案例 <a class="header-anchor" href="#现有案例" aria-label="Permalink to &quot;现有案例&quot;">&ZeroWidthSpace;</a></h1>
+<ul>
+<li><a href="https://juejin.cn/post/7138070983381876749" target="_blank" rel="noreferrer">基于【虚拟列表】高性能渲染海量数据 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7110588879060598820" target="_blank" rel="noreferrer">渲染十万条数据就把你卡住了？不存在的 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7031923575044964389" target="_blank" rel="noreferrer">后端一次给你10万条数据，如何优雅展示，到底考察我什么? - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6844903982742110216" target="_blank" rel="noreferrer">「前端进阶」高性能渲染十万条数据(虚拟列表) - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7121551701731409934" target="_blank" rel="noreferrer">花三个小时，完全掌握分片渲染和虚拟列表～ - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7085941958228574215" target="_blank" rel="noreferrer">虚拟列表，我真的会了！！！ - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6937939870018961439" target="_blank" rel="noreferrer">Vue 虚拟列表，纵享丝滑【实践篇】 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6844903449297944589#heading-8" target="_blank" rel="noreferrer">Vue.js 一个超长列表无限滚动加载的解决方案 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7086359708507832356" target="_blank" rel="noreferrer">Vue3 实现列表虚拟滚动 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6965675310159233037" target="_blank" rel="noreferrer">前端长列表优化之虚拟滚动vue-virtual-scroller - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7002056556116181000" target="_blank" rel="noreferrer">使用 虚拟列表 对列表大数据进行优化 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7036152951399776264" target="_blank" rel="noreferrer">听说你还不会虚拟列表？原谅我来晚了 - 掘金</a></li>
+<li><a href="https://github.com/dwqs/blog/issues/70" target="_blank" rel="noreferrer">浅说虚拟列表的实现原理 · Issue #70 · dwqs/blog</a></li>
+<li><a href="https://juejin.cn/post/7071993460261126152" target="_blank" rel="noreferrer">前端列表优化重器之虚拟列表 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6844903893441183751" target="_blank" rel="noreferrer">长列表优化之虚拟列表 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6995334008603148295" target="_blank" rel="noreferrer">百万PV商城实践系列 - 前端长列表渲染优化实战 - 掘金</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/34585166" target="_blank" rel="noreferrer">再谈前端虚拟列表的实现</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/26022258" target="_blank" rel="noreferrer">聊聊前端开发中的长列表</a></li>
+<li><a href="https://juejin.cn/post/6877507011769008135" target="_blank" rel="noreferrer">浅谈虚拟列表实现与原理分析 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6844903907387244558" target="_blank" rel="noreferrer">虚拟列表的实现 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6948011958075392036" target="_blank" rel="noreferrer">如何实现一个高度自适应的虚拟列表 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6966179727329460232" target="_blank" rel="noreferrer">「百毒不侵(三)」结合“康熙选秀”，给大家讲讲“虚拟列表” - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6984992069592809480" target="_blank" rel="noreferrer">微信小程序虚拟列表 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6966904317148299271" target="_blank" rel="noreferrer">如何让10万条数据的小程序列表如丝般顺滑 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6844903729460674567" target="_blank" rel="noreferrer">在React项目中，如何优雅的优化长列表 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6844903938894872589" target="_blank" rel="noreferrer">「前端进阶」高性能渲染十万条数据(时间分片) - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6844904184689475592" target="_blank" rel="noreferrer">当后端一次性丢给你10万条数据, 作为前端工程师的你,要怎么处理? - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6855129007990505480" target="_blank" rel="noreferrer">如何处理前端超长列表 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6844904008667103240" target="_blank" rel="noreferrer">前端面经题记：长列表怎么优化？ - 掘金</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/387907431" target="_blank" rel="noreferrer">如何一次性加载10万条数据（虚拟长列表）</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/60610599" target="_blank" rel="noreferrer">虚拟列表组件开发思路和遇到的问题</a></li>
+<li><a href="https://github.com/tangbc/vue-virtual-scroll-list" target="_blank" rel="noreferrer">A vue component support big amount data list with high render performance and efficient.</a></li>
+<li><a href="https://github.com/Akryum/vue-virtual-scroller" target="_blank" rel="noreferrer">GitHub - Akryum/vue-virtual-scroller: ⚡️ Blazing fast scrolling for any amount of data</a></li>
+<li><a href="https://juejin.cn/post/6844904013360529415" target="_blank" rel="noreferrer">DOM 数量固定的无限滚动列表 - 掘金</a></li>
+<li><a href="https://www.bilibili.com/video/BV1Vy4y147SB?spm_id_from=333.337.search-card.all.click&amp;vd_source=59ef88925a159f981edad5ce1c4ec076" target="_blank" rel="noreferrer">Vue长列表优化专题：封装一个Vue长列表虚拟滚动插件_哔哩哔哩_bilibili</a></li>
+<li><a href="https://www.bilibili.com/video/BV1Vy4y147SB?spm_id_from=333.337.search-card.all.click&amp;vd_source=59ef88925a159f981edad5ce1c4ec076" target="_blank" rel="noreferrer">Vue长列表优化专题：封装一个Vue长列表虚拟滚动插件_哔哩哔哩_bilibili</a></li>
+<li><a href="https://www.bilibili.com/video/BV1qU4y197hv?spm_id_from=333.337.search-card.all.click&amp;vd_source=59ef88925a159f981edad5ce1c4ec076" target="_blank" rel="noreferrer">原生 Javascript 实现虚拟列表、无限滚动加载（固定行高）_哔哩哔哩_bilibili</a></li>
+<li><a href="https://www.bilibili.com/video/BV1qz4y1o7QA?spm_id_from=333.337.search-card.all.click&amp;vd_source=59ef88925a159f981edad5ce1c4ec076" target="_blank" rel="noreferrer">通俗易懂的讲解web前端虚拟列表_哔哩哔哩_bilibili</a></li>
+<li><a href="https://www.bilibili.com/video/BV1MZ4y1Y7WM?spm_id_from=333.337.search-card.all.click&amp;vd_source=59ef88925a159f981edad5ce1c4ec076" target="_blank" rel="noreferrer">https://www.bilibili.com/video/BV1MZ4y1Y7WM?spm_id_from=333.337.search-card.all.click&amp;vd_source=59ef88925a159f981edad5ce1c4ec076</a></li>
+<li><a href="https://www.bilibili.com/video/BV1xL411A7yA?spm_id_from=333.337.search-card.all.click&amp;vd_source=59ef88925a159f981edad5ce1c4ec076" target="_blank" rel="noreferrer">理解虚拟列表底层实现原理_哔哩哔哩_bilibili</a></li>
+<li><a href="https://blog.csdn.net/achao_2020/article/details/107607510" target="_blank" rel="noreferrer">vue实现虚拟列表_achao_2020的博客-CSDN博客_iview虚拟列表</a></li>
+<li><a href="https://www.hlwen.com/2021/08/19/324.html" target="_blank" rel="noreferrer">web前端进阶，vue高性能渲染十万条数据(虚拟列表)，告别卡顿 - 新概念技术博客</a></li>
+<li><a href="https://www.jianshu.com/p/622ddf13e707" target="_blank" rel="noreferrer">https://www.jianshu.com/p/622ddf13e707</a></li>
+<li><a href="https://cn.vuejs.org/guide/essentials/list.html#displaying-filtered-sorted-results" target="_blank" rel="noreferrer">列表渲染 | Vue.js</a></li>
+<li><a href="https://mp.weixin.qq.com/s/T3NtJ41oC1GOIT7s2Wtnbg" target="_blank" rel="noreferrer">虚拟列表在哈啰商城H5中的实践</a></li>
+</ul>
+<p>在线演示 1w 表格数据展示：<a href="http://miniui.com/BigTest/10000-datagrid.html" target="_blank" rel="noreferrer">http://miniui.com/BigTest/10000-datagrid.html</a></p>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[工作生活心得]]></title>
             <link>https://super456.github.io/posts/random-thought/2022/work-life-insights.html</link>
             <guid>https://super456.github.io/posts/random-thought/2022/work-life-insights.html</guid>
@@ -19109,6 +19359,199 @@ unique symbol 表示单个的、某个具体的 Symbol 值，该类型声明的�
             <enclosure url="https://super456.github.io/read-book/2022/tiantanglvxingtuan.webp" length="0" type="image/webp"/>
         </item>
         <item>
+            <title><![CDATA[Vue3 语法规范尝鲜]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/vue3-grammatical-norm.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/vue3-grammatical-norm.html</guid>
+            <pubDate>Sat, 08 Oct 2022 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="vue3-语法规范尝鲜" tabindex="-1">Vue3 语法规范尝鲜 <a class="header-anchor" href="#vue3-语法规范尝鲜" aria-label="Permalink to &quot;Vue3 语法规范尝鲜&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="vue3-语法规范" tabindex="-1">Vue3 语法规范 <a class="header-anchor" href="#vue3-语法规范" aria-label="Permalink to &quot;Vue3 语法规范&quot;">&ZeroWidthSpace;</a></h2>
+<p>页面 / 组件开发</p>
+<h4 id="使用-vue3-语法-ts-语法声明-script-标签" tabindex="-1">使用 Vue3 语法 + TS 语法声明 <code>&lt;script&gt;</code> 标签 <a class="header-anchor" href="#使用-vue3-语法-ts-语法声明-script-标签" aria-label="Permalink to &quot;使用 Vue3 语法 + TS 语法声明 `&lt;script&gt;` 标签&quot;">&ZeroWidthSpace;</a></h4>
+<div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">script setup lang</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"ts"</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">>...&#x3C;/</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">script</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span></code></pre>
+</div><h4 id="props-类型声明" tabindex="-1">props 类型声明 <a class="header-anchor" href="#props-类型声明" aria-label="Permalink to &quot;props 类型声明&quot;">&ZeroWidthSpace;</a></h4>
+<div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 写法一，运行时声明，defineProps() 的参数会作为运行时的 props 选项使用，类型声明但没有初始化默认值，支持参数中推导类型</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> props</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> defineProps</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;{</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  foo</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  bar</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> boolean</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">props.foo </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// string | undefiend</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">props.bar </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// boolean | undefiend</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 写法二，类型声明，通过泛型参数定义类型</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Props</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  foo</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[]</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  bar</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">age</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> props</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> defineProps</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Props</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>()</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 支持类型声明并进行初始化默认值，等价于设置了 props 参数值的 default 选项，跟运行时声明定义 default 的格式一样</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> props</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> widthDefaults</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">defintProps</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Props</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>(), {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  foo</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'Hello World'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  bar</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ({ age: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> })</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 非 &#x3C;script setup lang="ts"> 模式，使用 defineComponent() 传入 setup() 的 props 对象类型是从 props 选项中推导而来</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> defineComponent</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  props: {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    foo: boolean</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  setup</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">props</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    props.foo </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// boolean | undefiend</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 写法三，使用 PropType 类型注解，需要额外引入</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Book</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  title</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  author</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  year</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  props: {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    book: {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">      // provide more specific type to `Object`</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      type: Object </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">as</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> PropType</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Book</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      required: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><h4 id="emits-类型声明" tabindex="-1">emits 类型声明 <a class="header-anchor" href="#emits-类型声明" aria-label="Permalink to &quot;emits 类型声明&quot;">&ZeroWidthSpace;</a></h4>
+<div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 写法一，运行时声明，无需写回调参数类型</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> emits</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> defineEmits</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">([</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'input'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'change'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">])</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 写法二，基于类型声明，支持回调参数类型声明，第二个参数的 key 可以随便定义</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> emits</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> defineEmist</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  (e: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'input'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, value: string[]): </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  (e: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'change'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, value: string[]): </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // 声明复杂的回调参数类型</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  (e: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'change'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, { name, age }: { name: string, age: number }): </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  (e: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'change'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, name: string, age: number): </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 非 &#x3C;script setup lang="ts"> 模式，defineComponent() 可以自行推导上下文 emits 选项进行类型检查，但是不能针对回调参数进行类型声明</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> defineComponent</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  emits: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'change'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  setup</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">props</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, { </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">emits</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }) {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">    emits</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'change'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span></code></pre>
+</div><h4 id="ref-类型声明" tabindex="-1">ref 类型声明 <a class="header-anchor" href="#ref-类型声明" aria-label="Permalink to &quot;ref 类型声明&quot;">&ZeroWidthSpace;</a></h4>
+<div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 变量声明</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 写法一，默认推导类型（隐式推导），ref 根据初始化默认自动推导类型</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> age</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">20</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// number</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'hello'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// string</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 写法二，Ref 接口声明复杂类型</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> ageOrName</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> Ref</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">number </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> string</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">20</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">ageOrName.value </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'hello'</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 📢 注意：如果声明一个变量的泛型参数类型声明没有初始化默认值，那么该变量将包含 该泛型参数类型和 undefinend 的联合类型</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> num</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>() </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// const num: Ref&#x3C;number | undefined></span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> num</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">> </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 提示类型错误：不能将类型“Ref&#x3C;number | undefined>”分配给类型“Ref&#x3C;number>”</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// DOM 元素模版引用声明</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 声明 UI 组件库表单 ref 节点（优先使用组件库自带的类型声明）</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> formRef</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">FormModelInstance</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 或这种方式，不推荐，需要重复声明 form 组件实例的 model 属性类型</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> formRef</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">FormModel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">ModelTypes</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">> </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 声明自定义组件的 template 元素 ref 节点及使用该组件内部公开的（defineExpose）属性及方法</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> customerRef</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">InstanceType</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">typeof</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> CustomerList> </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">|</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 声明 template 原生标签 &#x3C;div> 元素 ref 节点</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> divRef</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">HTMLElement</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 声明 template 原生标签 &#x3C;input> 元素 ref 节点</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> inputRef</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">HTMLInputElement</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span></code></pre>
+</div><h4 id="reactive-类型声明" tabindex="-1">reactive 类型声明 <a class="header-anchor" href="#reactive-类型声明" aria-label="Permalink to &quot;reactive 类型声明&quot;">&ZeroWidthSpace;</a></h4>
+<div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 写法一，默认推导类型（隐式推导），不推荐</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 以下类型推导为：const formState: {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//    foo: string;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//    bar: number;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//    info: {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//        name: string;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//        status: boolean;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//    };</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> formState</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> reactive</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  foo: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'hello'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  bar: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 写法二，泛型指定类型</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> FormState</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  foo</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  bar</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 以下类型推导为：type FormState = {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//  foo: string</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//  bar: number</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> formState</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> reactive</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">FormState</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  foo: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'hello'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  bar: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span></code></pre>
+</div><h4 id="computed-类型声明" tabindex="-1">computed 类型声明 <a class="header-anchor" href="#computed-类型声明" aria-label="Permalink to &quot;computed 类型声明&quot;">&ZeroWidthSpace;</a></h4>
+<div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 写法一，默认推导类型（隐式推导），不推荐，以下类型推导为：ComputedRef&#x3C;{</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//    name: string;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//    age: number;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// }></span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> userInfo</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> computed</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ({ name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'hello'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, age: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">20</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }))</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 写法二，泛型指定类型</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> UserInfo</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> string</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  age</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> number</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 以下类型推导为：const userInfo: ComputedRef&#x3C;UserInfo></span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> userInfo</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> computed</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">UserInfo</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>(() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ({ name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'hello'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, age: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">20</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }))</span></span></code></pre>
+</div><h4 id="dom-原生事件类型声明" tabindex="-1">DOM 原生事件类型声明 <a class="header-anchor" href="#dom-原生事件类型声明" aria-label="Permalink to &quot;DOM 原生事件类型声明&quot;">&ZeroWidthSpace;</a></h4>
+<div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">script setup lang</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"ts"</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 默认 event 没有类型声明则为 any 类型，需要标注具体类型</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> onChange</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">event</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(event.target.value)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 修改为</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> onChange</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">event</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Event</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">((event.target </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">as</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> HTMLInputElement</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">).value)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&#x3C;/</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">script</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  &#x3C;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">input type</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"text"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> @change</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"onChange"</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> /></span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&#x3C;/</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">template</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span></code></pre>
+</div><h4 id="provide-inject-类型声明" tabindex="-1">provide / inject 类型声明 <a class="header-anchor" href="#provide-inject-类型声明" aria-label="Permalink to &quot;provide / inject 类型声明&quot;">&ZeroWidthSpace;</a></h4>
+<p>建议使用时候将需要注入的 key 类型单独放在一个文件中，多个组件共同导入使用</p>
+<div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 使用 Vue 提供的工具类型 InjectionKey，它继承 Symbol，可以用来同步 provide() 和 inject() 之间值的类型，使用时需要引入</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> ageKey</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> InjectionKey</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">> </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Symbol</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 值必须为跟上门👆🏻类型声明一致是数字，否则会提示类型错误</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">provide</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(ageKey, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">20</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> age</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> inject</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(ageKey) </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// age 的类型：number | undefined</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 📢 注意：注入值 ageKey 为 unknown 时，可以使用泛型参数显示声明</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> age</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> inject</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>(ageKey) </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// age 的类型：number | undefined</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 注入时使用默认值，防止类型推导默认类型有 undefined</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> age</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> inject</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>(ageKey, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// age 的类型：number</span></span></code></pre>
+</div><h2 id="typescript" tabindex="-1">TypeScript <a class="header-anchor" href="#typescript" aria-label="Permalink to &quot;TypeScript&quot;">&ZeroWidthSpace;</a></h2>
+<h3 id="工具类型" tabindex="-1">工具类型 <a class="header-anchor" href="#工具类型" aria-label="Permalink to &quot;工具类型&quot;">&ZeroWidthSpace;</a></h3>
+<p><code>node_modules/typescript/lib/lib.es5.d.ts</code> 文件有详细的类型说明，可以当做手册查阅</p>
+<h2 id="学习资料" tabindex="-1">学习资料 <a class="header-anchor" href="#学习资料" aria-label="Permalink to &quot;学习资料&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li><a href="https://juejin.cn/post/7127668333565968421" target="_blank" rel="noreferrer">Vue3 + setup + ts 使用总结 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6923523666340741128" target="_blank" rel="noreferrer">TypeScript高级特性 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6844904066103902215" target="_blank" rel="noreferrer">Vue3 Composition API 使用教程 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6950487211368251399" target="_blank" rel="noreferrer">Vue3 + TypeScript 复盘总结 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7121253172013694990#heading-26" target="_blank" rel="noreferrer">最详细的 Vue3 + TypeScript 使用教程【值得收藏】 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6844903865255477261#heading-14" target="_blank" rel="noreferrer">Vue3.0 前的 TypeScript 最佳入门实践 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6937193963405180936#heading-7" target="_blank" rel="noreferrer">vue3 + ts 初体验 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6990682369992704007" target="_blank" rel="noreferrer">vue3 + setup sugar + TS 经验分享 - 掘金</a></li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[第 9 本《认知驱动》]]></title>
             <link>https://super456.github.io/posts/read-book/2022/renzhiqudong.html</link>
             <guid>https://super456.github.io/posts/read-book/2022/renzhiqudong.html</guid>
@@ -19248,6 +19691,68 @@ unique symbol 表示单个的、某个具体的 Symbol 值，该类型声明的�
             <pubDate>Sat, 24 Sep 2022 20:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h1 id="typescript-全面进阶指南学习笔记" tabindex="-1">TypeScript 全面进阶指南学习笔记 <a class="header-anchor" href="#typescript-全面进阶指南学习笔记" aria-label="Permalink to &quot;TypeScript 全面进阶指南学习笔记&quot;">&ZeroWidthSpace;</a></h1>
 <CustomImage src='/growth-record/base/javascript/tsquanmianjinjie.png' /><p>待更新🚀...</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[推荐新手源码学习]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/source-code-learning.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/source-code-learning.html</guid>
+            <pubDate>Thu, 22 Sep 2022 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="推荐新手源码学习" tabindex="-1">推荐新手源码学习 <a class="header-anchor" href="#推荐新手源码学习" aria-label="Permalink to &quot;推荐新手源码学习&quot;">&ZeroWidthSpace;</a></h1>
+<p>主要技术栈 Vue3 + Pinia + TypeScript ...等其他
+阅读源码或 Code Review 真的是最快提高编程能力最快的一种方式，从借鉴 =&gt; 模仿 =&gt; 化为己用，择其善者而从之，推荐学习源码的方向：项目架构设计、公共服务及工具、公共组件、编程写法、代码逻辑设计等，研究代码多了可以写非常多的文章，总结自己的编程能力方法论，比如说，我刚用 Pinia + TS 的时候就找开源项目看别人怎么写的，然后照猫画虎学</p>
+<p>当初只是粗略看了一下，按照我个人的理解做一下分类推荐，但并不一定适合你，可以各取所需哈
+（1）新手：项目比较小、代码量不大、语法通俗易懂接地气</p>
+<ul>
+<li><a href="https://github.com/developer-plus/vue-hbs-admin" target="_blank" rel="noreferrer">https://github.com/developer-plus/vue-hbs-admin</a></li>
+<li><a href="https://github.com/hug-sun/element3" target="_blank" rel="noreferrer">https://github.com/hug-sun/element3</a></li>
+<li><a href="https://github.com/Maronato/vue-toastification" target="_blank" rel="noreferrer">https://github.com/Maronato/vue-toastification</a></li>
+<li><a href="https://github.com/view-design/ViewUIPlus" target="_blank" rel="noreferrer">https://github.com/view-design/ViewUIPlus</a></li>
+<li><a href="https://github.com/chuzhixin/vue-admin-better" target="_blank" rel="noreferrer">https://github.com/chuzhixin/vue-admin-better</a></li>
+<li><a href="https://github.com/vueuse/vueuse" target="_blank" rel="noreferrer">https://github.com/vueuse/vueuse</a></li>
+<li><a href="https://github.com/kailong321200875/vue-element-plus-admin" target="_blank" rel="noreferrer">https://github.com/kailong321200875/vue-element-plus-admin</a></li>
+</ul>
+<p>（2）进阶：项目比较大、代码有一定的复杂度、代码质量高、非常多的地方可以值得学习</p>
+<ul>
+<li>
+<p><a href="https://github.com/histoire-dev/histoire" target="_blank" rel="noreferrer">https://github.com/histoire-dev/histoire</a></p>
+</li>
+<li>
+<p><a href="https://github.com/tusen-ai/naive-ui" target="_blank" rel="noreferrer">https://github.com/tusen-ai/naive-ui</a></p>
+</li>
+<li>
+<p><a href="https://github.com/varletjs/varlet" target="_blank" rel="noreferrer">https://github.com/varletjs/varlet</a></p>
+</li>
+<li>
+<p><a href="https://github.com/HalseySpicy/Geeker-Admin" target="_blank" rel="noreferrer">https://github.com/HalseySpicy/Geeker-Admin</a></p>
+</li>
+<li>
+<p><a href="https://github.com/vbenjs/vue-vben-admin" target="_blank" rel="noreferrer">https://github.com/vbenjs/vue-vben-admin</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Armour/vue-typescript-admin-template" target="_blank" rel="noreferrer">https://github.com/Armour/vue-typescript-admin-template</a></p>
+</li>
+</ul>
+<p>（3）深入：项目代码特别大、架构一定复杂度、拆解模块学习高质量代码</p>
+<ul>
+<li><a href="https://github.com/PanJiaChen/vue-element-admin" target="_blank" rel="noreferrer">https://github.com/PanJiaChen/vue-element-admin</a></li>
+<li><a href="https://github.com/ElemeFE/element" target="_blank" rel="noreferrer">https://github.com/ElemeFE/element</a></li>
+<li><a href="https://github.com/element-plus/element-plus" target="_blank" rel="noreferrer">https://github.com/element-plus/element-plus</a></li>
+<li><a href="https://github.com/vueComponent/ant-design-vue" target="_blank" rel="noreferrer">https://github.com/vueComponent/ant-design-vue</a></li>
+</ul>
+<p>GitHub 上 9 个美观大气的后台管理系统 - 掘金</p>
+<ul>
+<li><a href="https://juejin.cn/post/7052195023311339527" target="_blank" rel="noreferrer">https://juejin.cn/post/7052195023311339527</a></li>
+</ul>
+<p>推荐阅读：</p>
+<ul>
+<li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noreferrer">https://github.com/vuejs/awesome-vue</a></li>
+<li><a href="https://github.com/attojs/vue-request" target="_blank" rel="noreferrer">https://github.com/attojs/vue-request</a></li>
+<li><a href="https://juejin.cn/post/7052195023311339527" target="_blank" rel="noreferrer">https://juejin.cn/post/7052195023311339527</a></li>
+<li><a href="https://github.com/cuixiaorui/mini-vue" target="_blank" rel="noreferrer">https://github.com/cuixiaorui/mini-vue</a></li>
+<li><a href="https://github.com/vuetifyjs/vuetify" target="_blank" rel="noreferrer">https://github.com/vuetifyjs/vuetify</a></li>
+<li><a href="https://github.com/bailicangdu/vue2-elm" target="_blank" rel="noreferrer">https://github.com/bailicangdu/vue2-elm</a></li>
+</ul>
 ]]></content:encoded>
         </item>
         <item>
@@ -20689,6 +21194,21 @@ type-block__element_modifier
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Vue2 学习笔记]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/vue2-study.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/vue2-study.html</guid>
+            <pubDate>Sun, 12 Jul 2020 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="vue2-学习笔记" tabindex="-1">Vue2 学习笔记 <a class="header-anchor" href="#vue2-学习笔记" aria-label="Permalink to &quot;Vue2 学习笔记&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="思维导图" tabindex="-1">思维导图 <a class="header-anchor" href="#思维导图" aria-label="Permalink to &quot;思维导图&quot;">&ZeroWidthSpace;</a></h2>
+<CustomImage src='/growth-record/frame/vue/vue2study01.webp' /><h2 id="学习资料" tabindex="-1">学习资料 <a class="header-anchor" href="#学习资料" aria-label="Permalink to &quot;学习资料&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000015432258" target="_blank" rel="noreferrer">vue分析之template模板解析AST - 个人文章 - SegmentFault 思否</a></li>
+<li><a href="https://segmentfault.com/a/1190000012861862" target="_blank" rel="noreferrer">Vue.nextTick 的原理和用途 - 个人文章 - SegmentFault 思否</a></li>
+<li><a href="https://mp.weixin.qq.com/s/elK87NiYZE4VyIFFO8AgDg" target="_blank" rel="noreferrer">Vue 笔记整理16</a></li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[绝对定位元素布局遮挡问题]]></title>
             <link>https://super456.github.io/posts/growth-record/base/css/absolute-element-shelter.html</link>
             <guid>https://super456.github.io/posts/growth-record/base/css/absolute-element-shelter.html</guid>
@@ -21136,6 +21656,237 @@ console.log(Boolean(Infinity)) // true
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span></code></pre>
 </div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[浏览器兼容性方案调研]]></title>
+            <link>https://super456.github.io/posts/growth-record/engineering/other/browser-compatibility-research.html</link>
+            <guid>https://super456.github.io/posts/growth-record/engineering/other/browser-compatibility-research.html</guid>
+            <pubDate>Sun, 22 Mar 2020 20:00:00 GMT</pubDate>
+            <description><![CDATA[# 浏览器兼容性方案调研
+### 一、背景描述
+所谓的浏览器兼容性问题，是指因为不同的浏览器对同一段代码有不同的解析，造成页面显示效果不统一的情况。在大多数情况下，我们的需求是，无论用户用什么浏览器来查看我们的网站或者登陆我们的系统，都应该是统一的显示效果。所以浏览器的兼容性问题是前端开发人员经常会碰到和必须要解决的问题。
+
+市场上浏览器种类很多，不同浏览器的内核也不尽相同，所以各个浏览器对网页的解析存在一定的差异。浏览器内核主要分为两种，一是渲染引擎，另一个是 JS 引擎，内核更加倾向于说渲染引擎。
+
+常见的浏览器内核可以分四种：Trident、Gecko、Blink、Webkit：
+
+| **浏览器** | **内核** |
+| ]]></description>
+            <content:encoded><![CDATA[<h1 id="浏览器兼容性方案调研" tabindex="-1">浏览器兼容性方案调研 <a class="header-anchor" href="#浏览器兼容性方案调研" aria-label="Permalink to &quot;浏览器兼容性方案调研&quot;">&ZeroWidthSpace;</a></h1>
+<h3 id="一、背景描述" tabindex="-1">一、背景描述 <a class="header-anchor" href="#一、背景描述" aria-label="Permalink to &quot;一、背景描述&quot;">&ZeroWidthSpace;</a></h3>
+<p>所谓的浏览器兼容性问题，是指因为不同的浏览器对同一段代码有不同的解析，造成页面显示效果不统一的情况。在大多数情况下，我们的需求是，无论用户用什么浏览器来查看我们的网站或者登陆我们的系统，都应该是统一的显示效果。所以浏览器的兼容性问题是前端开发人员经常会碰到和必须要解决的问题。</p>
+<p>市场上浏览器种类很多，不同浏览器的内核也不尽相同，所以各个浏览器对网页的解析存在一定的差异。浏览器内核主要分为两种，一是渲染引擎，另一个是 JS 引擎，内核更加倾向于说渲染引擎。</p>
+<p>常见的浏览器内核可以分四种：Trident、Gecko、Blink、Webkit：</p>
+<table>
+<thead>
+<tr>
+<th><strong>浏览器</strong></th>
+<th style="text-align:left"><strong>内核</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IE</td>
+<td style="text-align:left">Trident 内核，也成为 IE 内核</td>
+</tr>
+<tr>
+<td>Chrome</td>
+<td style="text-align:left">Webkit 内核，现在是 Blink 内核</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td style="text-align:left">Gecko 内核，俗称 Firefox 内核</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td style="text-align:left">Webkit 内核</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td style="text-align:left">最初是自己的 Presto 内核，后来加入谷歌大军，从 Webkit 又到了 Blink 内核</td>
+</tr>
+<tr>
+<td>360</td>
+<td style="text-align:left">IE+Chrome 双内核</td>
+</tr>
+<tr>
+<td>猎豹</td>
+<td style="text-align:left">IE+Chrome 双内核</td>
+</tr>
+<tr>
+<td>百度</td>
+<td style="text-align:left">IE 内核</td>
+</tr>
+<tr>
+<td>QQ</td>
+<td style="text-align:left">Trident（兼容模式）+Webkit（高速模式）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="二、问题原因" tabindex="-1">二、问题原因 <a class="header-anchor" href="#二、问题原因" aria-label="Permalink to &quot;二、问题原因&quot;">&ZeroWidthSpace;</a></h3>
+<p>原因一：由于浏览器种类众多，不同的浏览器其内核亦不尽相同，故各个浏览器对网页的解析有一定出入，这也是导致浏览器兼容问题出现的主要原因，我们的网页需要在主流浏览器上正常运行，就需要做好浏览器兼容。</p>
+<p>原因二：鉴于公司当前项目使用的框架为 Vue，而 Vue 不支持 IE8 及以下版本，因为 Vue 使用了 IE8 无法模拟的 ECMAScript 5 特性。但它支持所有<a href="https://caniuse.com/#feat=es5" target="_blank" rel="noreferrer">兼容 ECMAScript 5 的浏览器</a>（注：支持 IE9 ，实际上并不是指的完美兼容 IE9，而是说在版本较低的浏览器，仍然最大限度保证功能完整性）。</p>
+<CustomImage src='/growth-record/engineering/other/browser-compatibility.webp' /><p>所以，从维护成本考虑，减少不必要的开发时间及针对做好兼容性的项目（跨境会员端 PC 和移动端、跨境 Admin 端），集中的解决 IE 上存在的问题（JS 事件处理和 CSS 样式问题，<strong>注：当前所有项目兼容到 IE 10 、IE 11及 Edge 版本，考虑到IE 9 中 JS 和 CSS 部分兼容，而且需要修改的内容太多问题</strong>）。</p>
+<h3 id="三、解决方案" tabindex="-1">三、解决方案 <a class="header-anchor" href="#三、解决方案" aria-label="Permalink to &quot;三、解决方案&quot;">&ZeroWidthSpace;</a></h3>
+<h4 id="_1-常见css兼容性问题" tabindex="-1">1. 常见CSS兼容性问题 <a class="header-anchor" href="#_1-常见css兼容性问题" aria-label="Permalink to &quot;1. 常见CSS兼容性问题&quot;">&ZeroWidthSpace;</a></h4>
+<ul>
+<li>不同浏览器的标签默认的外补丁( margin )和内补丁 (padding) 不同：</li>
+</ul>
+<p>【done】：css 里增加通配符:<code>* { margin: 0; padding: 0; } </code></p>
+<ul>
+<li>IE6 双边距问题；在 IE6 中设置了 float , 同时又设置 margin , 就会出现边距问题：</li>
+</ul>
+<p>【done】：设置 <code>display:inline;</code></p>
+<ul>
+<li>当标签的高度设置小于 10px，在 IE6、IE7 中会超出自己设置的高度：</li>
+</ul>
+<p>【done】：超出高度的标签设置 <code>overflow:hidden;</code>,或者设置 line-height 的值小于你的设置高度。</p>
+<ul>
+<li>图片默认有间距：</li>
+</ul>
+<p>【done】：使用float 为img 布局。</p>
+<ul>
+<li>IE9 以下浏览器不能使用 opacity：</li>
+</ul>
+<p>【done】： <code>opacity: 0.5;filter: alpha(opacity = 50);filter: progid:DXImageTransform.Microsoft.Alpha(style = 0, opacity = 50); </code></p>
+<ul>
+<li>边距重叠问题；当相邻两个元素都设置了margin 边距时，margin 将取最大值，舍弃最小值：</li>
+</ul>
+<p>【done】：为了不让边重叠，可以给子元素增加一个父级元素，并设置父级元素为 <code>overflow:hidden;</code></p>
+<ul>
+<li><code>cursor:hand;</code>  显示手型在 Safari 上不支持：</li>
+</ul>
+<p>【done】：统一使用 <code>cursor:pointer;</code></p>
+<ul>
+<li>两个块级元素，父元素设置了<code>overflow:auto；</code>子元素设置了<code>position:relative ;</code>且高度大于父元素，在IE6、IE7 会被隐藏而不是溢出:</li>
+</ul>
+<p>【done】：父级元素设置<code> position:relative;</code></p>
+<ul>
+<li>BFC 解决边距重叠问题：</li>
+</ul>
+<p>当相邻元素都设置了 <code>margin</code> 边距时，<code>margin</code> 将取最大值，舍弃小值。为了不让边距重叠，可以给子元素加一个父元素，并设置该父元素为 BFC：<code>overflow: hidden;</code></p>
+<div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"box"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"box"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>Lorem ipsum dolor sit.&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> style</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"overflow: hidden;"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>Lorem ipsum dolor sit.&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>Lorem ipsum dolor sit.&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><p>总结：
+（1）浏览器 CSS 样式初始化（推荐使用 Normalize.css）；
+（2）浏览器私有属性（建议使用自动化插件）：</p>
+<ul>
+<li>-moz 代表 Firefox 浏览器私有属性；</li>
+<li>-ms 代表 IE 浏览器私有属性；</li>
+<li>-webkit 代表 Chrome、Safari 私有属性；</li>
+<li>-o 代表 Opera 私有属性；</li>
+</ul>
+<p>对于私有属性的顺序要注意，把标准写法放到最后，兼容性写法放到前面：</p>
+<div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">-webkit-transform: rotate(-3deg); </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">/*为 Chrome/Safari*/</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">-moz-transform: rotate(-3deg); </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">/*为 Firefox*/</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">-ms-transform: rotate(-3deg); </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">/*为 IE*/</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">-o-transform: rotate(-3deg); </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">/*为 Opera*/</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">transform: rotate(-3deg);</span></span></code></pre>
+</div><ul>
+<li>CSS Hack（针对不同的浏览器或不同版本写特定的 CSS 样式，这种针对不同的浏览器/不同版本写相应的CSS code 的过程，<strong>注：IE6/7/8 才需要</strong>）：</li>
+</ul>
+<div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;!--[if &#x3C;keywords>? IE &#x3C;version>?]</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    代码块，可以是 html，css，js</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;![</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">endif</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]--</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">if后面跟的条件共包含6种选择方式：是否、大于、大于或等于、小于、小于或等于、非指定版本</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">是否：指定是否IE或IE某个版本。关键字：空</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">大于：选择大于指定版本的IE版本。关键字：gt（greater than）</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">大于或等于：选择大于或等于指定版本的 IE 版本。关键字：gte（greater than or equal）</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">小于：选择小于指定版本的 IE 版本。关键字：lt（less than）</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">小于或等于：选择小于或等于指定版本的 IE 版本。关键字：lte（less than or equal）</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">非指定版本：选择除指定版本外的所有 IE 版本。关键字：!</span></span></code></pre>
+</div><p>IE10 及以上版本已将条件注释特性移除，使用时需注意：</p>
+<div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;!--[if </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">IE</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">你在非IE中将看不到我的身影&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;![</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">endif</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]--</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;!--[if </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">IE</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">style</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">    .test</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">color</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">red</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">style</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;![</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">endif</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]--</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;!--[if lt IE 9]</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> src="//cdn</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.bootcss</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.com/html5shiv/3</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.7</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.2/html5shiv</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.min</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.js"</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> src="//cdn</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.bootcss</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.com/respond.js/1</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.4</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.2/respond</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.min</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.js"</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;![</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">endif</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]--</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span></span></code></pre>
+</div><p>属性级 Hack：</p>
+<div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">selector{&#x3C;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">hack</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>?</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">property</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:value&#x3C;hack>?;}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">取值：</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">_：选择 IE6 及以下。连接线（中划线）（-）亦可使用，为了避免与某些带中划线的属性混淆，所以使用下划线（_）更为合适。</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">：选择 IE7 及以下。诸如：（</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">）与（</span><span style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic">#）之类的均可使用，不过业界对（*）的认知度更高</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">9：选择 IE6</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">0：选择 IE8</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> 和 Opera15 以下的浏览器</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">如在不同的 IE 浏览器中设置不同的颜色，注意顺序：低版本的兼容性写法放到最后：</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">.test</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  color</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">#090\9</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">/* For IE8+ */</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  *</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">color</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">#f00</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">/* For IE7 and earlier */</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  _</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">color</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">#ff0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;  </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">/* For IE6 and earlier */</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>选择符级 Hack（针对一些页面表现不一致或者需要特殊对待的浏览器，在 CSS 选择器前加上一些只有某些特定浏览器才能识别的前缀进行 Hack。）：</p>
+<div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;hack</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> selector{ </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">sRules</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">常见的选择符级 Hack 有：</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">*html</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D"> *</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">前缀只对 IE6 生效</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">*</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">html</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D"> *</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">前缀只对 IE7 生效</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@media</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> screen</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\9</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{..</span><span style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic">.}只对</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> IE6/7 生效</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@media</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> \0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">screen {</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">body</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">background</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">red</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; }}只对 IE8 有效</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@media</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> \0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">screen</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\,</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">screen</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\9</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">body</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">background</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">blue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; }}只对 IE6/7/8 有效</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@media</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> screen</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">body</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">background</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">green</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; }} 只对 IE8/9/10 有效</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@media</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> screen</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> and</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">min-width</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">\</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">body</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">background</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">gray</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; }} 只对 IE9/10 有效</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@media</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> screen</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> and</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">-ms-high-contrast</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: active), (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">-ms-high-contrast</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: none) {</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">body</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">background</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">orange</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; }} 只对 IE10 有效</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">如：</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">*</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D"> html</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> .test</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">color</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">#090</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; }       </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">/* For IE6 and earlier */</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">*</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> +</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D"> html</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> .test</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">color</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">#ff0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; }     </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">/* For IE7 */</span></span></code></pre>
+</div><ul>
+<li>Element -ui 组件样式问题需要单独解决。</li>
+</ul>
+<h4 id="_2-常见js兼容性问题" tabindex="-1">2. 常见JS兼容性问题 <a class="header-anchor" href="#_2-常见js兼容性问题" aria-label="Permalink to &quot;2. 常见JS兼容性问题&quot;">&ZeroWidthSpace;</a></h4>
+<ul>
+<li>团队编写的文档——<a href="https://www.yuque.com/photonpay_fe/qrq3cg/ie9yr6" target="_blank" rel="noreferrer">主流浏览器 JS 事件兼容写法</a></li>
+</ul>
+<h4 id="_3-引入插件配置编译器或垫片库" tabindex="-1">3. 引入插件配置编译器或垫片库 <a class="header-anchor" href="#_3-引入插件配置编译器或垫片库" aria-label="Permalink to &quot;3. 引入插件配置编译器或垫片库&quot;">&ZeroWidthSpace;</a></h4>
+<p>CSS 样式兼容：</p>
+<ul>
+<li>使用 <a href="http://necolas.github.io/normalize.css/" target="_blank" rel="noreferrer">Normalize.css </a></li>
+<li><a href="https://github.com/postcss/autoprefixer" target="_blank" rel="noreferrer">Autoprefixer</a> 或 <a href="https://www.postcss.com.cn/" target="_blank" rel="noreferrer">PostCSS</a>（<a href="https://zh.nuxtjs.org/api/configuration-build/#postcss" target="_blank" rel="noreferrer">Nuxt 有单独配置</a>）</li>
+</ul>
+<p>JS 兼容：</p>
+<ul>
+<li>使用 babel-polyfil、es6-promisel，<a href="https://zh.nuxtjs.org/api/configuration-build/#babel" target="_blank" rel="noreferrer">注意 Nuxt 有单独的项目配置</a>，但官方建议默认预设，自己安装配置的好;</li>
+<li><a href="https://cli.vuejs.org/zh/guide/browser-compatibility.html#browserslist" target="_blank" rel="noreferrer">Vue-Cli 构建工程配置浏览器兼容性</a>；</li>
+</ul>
+<h3 id="四、参考链接" tabindex="-1">四、参考链接 <a class="header-anchor" href="#四、参考链接" aria-label="Permalink to &quot;四、参考链接&quot;">&ZeroWidthSpace;</a></h3>
+<ul>
+<li><a href="https://yoxjs.github.io/yox/#/" target="_blank" rel="noreferrer">Yox：一个框架搞定所有浏览器（包括低版本 IE 和移动端浏览器），节省学习和人力成本</a></li>
+<li><a href="http://www.uxys.com/html/Vue/20180717/25326.html" target="_blank" rel="noreferrer">Vue 脚手架搭建项目的兼容性配置详解</a></li>
+<li><a href="https://juejin.im/post/5b2868b46fb9a00e6f65f87e" target="_blank" rel="noreferrer">Vue 兼容 IE9 的全面解决方案</a></li>
+<li><a href="https://blog.csdn.net/xustart7720/article/details/73604651?depth_1-utm_source=distribute.pc_relevant.none-task&amp;utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noreferrer">WEB前端开发人员须知的常见浏览器兼容问题及解决技巧</a></li>
+<li><a href="https://www.codercto.com/a/89756.html" target="_blank" rel="noreferrer">Nuxt.js 项目搭建配置踩坑</a></li>
+</ul>
+<p><strong>注：以上内容需要团队成员共同维护、补充内容，与公司业务相辅相成，解决更多实际问题。</strong></p>
+]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[异常监控管理工具调研]]></title>
