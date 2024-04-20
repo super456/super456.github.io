@@ -31,5 +31,11 @@ export default {
       icon: 'https://fesites.netlify.app/favicon.svg',
       link: 'https://fesites.netlify.app/',
     },
+    {
+      title: '书栈网 · BookStack_程序员IT互联网开源编程书籍免费阅读，助您【码】力十足！',
+      desc: '书栈网，IT程序员互联网开源编程书籍阅读分享，囊括小程序、前端、后端、移动端、云计算、大数据、区块链、机器学习、人工智能和面试笔试等相关书籍，助你【码】力十足！',
+      icon: 'https://www.bookstack.cn/favicon.ico',
+      link: 'https://www.bookstack.cn/',
+    },
   ],
 }

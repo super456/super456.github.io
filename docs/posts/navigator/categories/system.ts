@@ -49,5 +49,17 @@ export default {
       icon: 'https://codingfantasy.com/favicon.ico',
       link: 'https://codingfantasy.com/',
     },
+    {
+      title: 'DevDocs API Documentation',
+      desc: 'Fast, offline, and free documentation browser for developers. Search 100+ docs in one web app: HTML, CSS, JavaScript, PHP, Ruby, Python, Go, C, C++…',
+      icon: 'https://devdocs.io/favicon.ico',
+      link: 'https://devdocs.io/',
+    },
+    {
+      title: 'Learn to Code — For Free — Coding Courses for Busy People',
+      desc: 'Learn to Code — For Free',
+      icon: 'https://www.freecodecamp.org/favicon-32x32.png?v=6cba562cbd10e31af925a976f3db73f7',
+      link: 'https://www.freecodecamp.org/learn/',
+    },
   ],
 }

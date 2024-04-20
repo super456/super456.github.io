@@ -21,10 +21,28 @@ export default {
       link: 'https://npm.devtool.tech/',
     },
     {
-      icon: 'https://avatars.githubusercontent.com/u/59452120?s=48&v=4',
       title: 'Excalidraw Editor',
       desc: '手绘风格流程图',
+      icon: 'https://avatars.githubusercontent.com/u/59452120?s=48&v=4',
       link: 'https://excalidraw.com/',
+    },
+    {
+      title: 'tldraw',
+      desc: 'A free and instant collaborative diagramming tool.',
+      icon: 'https://www.tldraw.com/favicon.svg',
+      link: 'https://www.tldraw.com/',
+    },
+    {
+      title: 'draw.io',
+      desc: 'Security-first diagramming for teams',
+      icon: 'https://www.drawio.com/favicon.ico',
+      link: 'https://www.drawio.com/',
+    },
+    {
+      title: '使用简单的文字描述画UML图的开源工具。',
+      desc: '轻松从简单的文字说明创建UML图。也有许多种可用的图表。它也可以以PNG，LaTeX，EPS，SVG格式图像导出。',
+      icon: 'https://plantuml.com/favicon.ico',
+      link: 'https://plantuml.com/zh/#google_vignette',
     },
     {
       icon: 'https://www.processon.com/public_login/favicon.983368c6.ico',
@@ -73,6 +91,24 @@ export default {
       desc: 'Test if Gzip or Brotli is working on your website. Brotli is a better, and newer compression method compared to Gzip.',
       icon: 'https://www.giftofspeed.com/assets/images/favicon.png',
       link: 'https://www.giftofspeed.com/gzip-test/',
+    },
+    {
+      title: 'CODELF-在线取名',
+      desc: 'Codelf,变量命名,函数命名,方法命名,变量命名神器,GitHub 分组,Organize GitHub stars,naming things,naming convention,programming naming',
+      icon: 'https://unbug.github.io/codelf/images/codelf_logo.f4ae25bd.png',
+      link: 'https://unbug.github.io/codelf/',
+    },
+    {
+      title: 'Timeline editor',
+      desc: 'Free online timeline editor. A lot of events, parameters. Upload images, video youtube etc.',
+      icon: 'https://time.graphics/favicon.ico?v=7kbn8X5BAk',
+      link: 'https://time.graphics/editor',
+    },
+    {
+      title: 'Heptabase',
+      desc: 'A note-taking tool for visual learning.',
+      icon: 'https://heptabase.com/assets/images/favicon.png',
+      link: 'https://heptabase.com/',
     },
   ],
 }

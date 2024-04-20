@@ -112,5 +112,11 @@ export default {
       icon: 'https://lhammer.cn/You-need-to-know-css/static/favicon.ico',
       link: 'https://lhammer.cn/You-need-to-know-css/#/zh-cn/',
     },
+    {
+      title: 'Play Grid Attack – CSS Game to learn CSS Grid',
+      desc: 'Learn css grid in a fun and interesting way that works better than boring courses, by playing CSS game!',
+      icon: 'https://codingfantasy.com/favicon.ico',
+      link: 'https://codingfantasy.com/games/css-grid-attack/play',
+    },
   ],
 }

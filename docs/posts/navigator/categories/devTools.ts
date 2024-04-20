@@ -44,5 +44,29 @@ export default {
       desc: '在浏览器控制台中在线运行调试与测试 npm 中的库',
       link: 'https://npm.devtool.tech/',
     },
+    {
+      title: 'StackBlitz |  Instant Dev Environments | Click. Code. Done.',
+      desc: 'StackBlitz is the collaborative browser-based IDE for web developers. StackBlitz eliminates time-consuming local configuration and lets developers spend more time building. ',
+      icon: 'https://stackblitz.com/_astro/favicon.svg',
+      link: 'https://npm.devtool.tech/',
+    },
+    {
+      title: 'CodePen: Online Code Editor and Front End Web Developer Community',
+      desc: 'Build, share, and learn JavaScript, CSS, and HTML with our online code editor.',
+      icon: 'https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico',
+      link: 'https://codepen.io/',
+    },
+    {
+      title: 'Slidev',
+      desc: 'Presentation slides for developers',
+      icon: 'https://sli.dev/favicon.png',
+      link: 'https://sli.dev/',
+    },
+    {
+      title: 'Lightly：轻量且功能强大的集成开发工具(IDE)',
+      desc: 'Lightly IDE支持Python/C/C++/Java/JavaScript/PHP/HTML等多种语言在线编程, 是一款功能强大的集成开发工具, 自动生成环境, 支持web端和桌面客户端代码编辑. 初学者和专业工程师可以在线写代码、编译、运行代码.',
+      icon: 'https://lightly.teamcode.com/favicon.svg',
+      link: 'https://lightly.teamcode.com/',
+    },
   ],
 }
