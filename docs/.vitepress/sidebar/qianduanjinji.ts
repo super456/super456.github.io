@@ -17,7 +17,7 @@ export default function qianduanjinjiSidebarGuide() {
         { text: 'CSS 实战手册学习', link: '/base/css/practical-manual' },
         { text: 'CSS-BEM-书写规范', link: '/base/css/bem-rule' },
         { text: '绝对定位元素布局遮挡问题', link: '/base/css/absolute-element-shelter' },
-        { text: '两个模块列自适应', link: '/base/css/tow-block-adaptive' },
+        { text: '两个模块列自适应布局问题', link: '/base/css/tow-block-adaptive' },
       ],
     },
     {
@@ -25,6 +25,10 @@ export default function qianduanjinjiSidebarGuide() {
       collapsed: false,
       items: [
         // { text: '什么是 JavaScript', link: '/base/javascript/what-is-javascript' },
+        { text: 'TypeScript 学习笔记', link: '/base/javascript/typescript-study' },
+        { text: 'TypeScript 开发实战笔记', link: '/base/javascript/typescript-dev-practice' },
+        { text: 'TypeScript 全面进阶指南学习笔记', link: '/base/javascript/typescript-advanced-guide-study' },
+        { text: 'TypeScript 面试知识点', link: '/base/javascript/typescript-interview' },
       ],
     },
     {
