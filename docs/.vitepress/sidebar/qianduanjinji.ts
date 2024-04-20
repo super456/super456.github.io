@@ -25,8 +25,10 @@ export default function qianduanjinjiSidebarGuide() {
       collapsed: false,
       items: [
         // { text: '什么是 JavaScript', link: '/base/javascript/what-is-javascript' },
-        { text: 'JavaScript 布尔值为 false 的六种情况', link: '/base/javascript/boolean-false-six' },
         { text: 'JavaScript 优化技巧', link: '/base/javascript/javascript-optimization-tips' },
+        { text: '容易被忽略的知识点', link: '/base/javascript/ignore-knowledge' },
+        { text: 'JavaScript 布尔值为 false 的六种情况', link: '/base/javascript/boolean-false-six' },
+        { text: '主流浏览器事件兼容写法', link: '/base/javascript/browser-event-compatible' },
         { text: 'TypeScript 学习笔记', link: '/base/javascript/typescript-study' },
         { text: 'TypeScript 开发实战笔记', link: '/base/javascript/typescript-dev-practice' },
         { text: 'TypeScript 全面进阶指南学习笔记', link: '/base/javascript/typescript-advanced-guide-study' },
@@ -40,6 +42,9 @@ export default function qianduanjinjiSidebarGuide() {
       collapsed: false,
       items: [
         // { text: '什么是 Vue', link: '/frame/vue/what-is-vue' },
+        { text: 'Vue3 学习笔记（一）', link: '/frame/vue/vue3-study-01' },
+        { text: 'Vue3 学习笔记（二）', link: '/frame/vue/vue3-study-02' },
+        { text: 'Vue3 学习笔记（三）', link: '/frame/vue/vue3-study-03' },
       ],
     },
     {

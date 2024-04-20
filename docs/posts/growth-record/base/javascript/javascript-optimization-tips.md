@@ -7,7 +7,7 @@ categories:
  - 前端进击
 ---
 # JavaScript 优化技巧
-## 1、三元运算
+## 1、三元运算符
 精简 if-else 单一操作（赋值表达式）
 ```javascript
 // 方式一

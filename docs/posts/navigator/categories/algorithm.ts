@@ -46,5 +46,11 @@ export default {
       icon: 'https://www.hello-algo.com/assets/images/favicon.png',
       link: 'https://www.hello-algo.com/',
     },
+    {
+      title: 'AlgoMooc算法慕课网_跟着吴师兄，玩转算法好轻松！',
+      desc: '看动画，学算法，认准吴师兄，和吴师兄一起学算法。',
+      icon: 'https://algomooc-1257126549.cos.ap-guangzhou.myqcloud.com/wp-content/uploads/2021/04/1618758606-753bd3a86e6dc96.png',
+      link: 'https://www.algomooc.com/',
+    },
   ],
 }

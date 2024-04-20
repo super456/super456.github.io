@@ -4,7 +4,7 @@ import { withBase } from 'vitepress'
 withDefaults(defineProps<{
   src: string
   title?: string
-  width: number | string
+  width?: number | string
   height?: number | string
 }>(), {
   src: '',
