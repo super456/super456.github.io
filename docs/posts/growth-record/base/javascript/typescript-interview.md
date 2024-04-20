@@ -1,5 +1,6 @@
 ---
 title: TypeScript 面试知识点
+date: 2023-11-02 20:00:00
 tags:
  - JavaScript
  - TypeScript

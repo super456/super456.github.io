@@ -1,6 +1,6 @@
 ---
 title: TypeScript 优化技巧
-date: 2024-12-07 20:00:00
+date: 2023-12-07 20:00:00
 tags:
  - JavaScript
  - TypeScript

@@ -13,7 +13,6 @@ export default function qianduanjinjiSidebarGuide() {
       text: 'CSS',
       collapsed: false,
       items: [
-        // { text: '什么是 CSS', link: '/base/css/what-is-css' },
         { text: 'CSS 实战手册学习', link: '/base/css/practical-manual' },
         { text: 'CSS-BEM-书写规范', link: '/base/css/bem-rule' },
         { text: '绝对定位元素布局遮挡问题', link: '/base/css/absolute-element-shelter' },
@@ -24,7 +23,6 @@ export default function qianduanjinjiSidebarGuide() {
       text: 'JavaScript',
       collapsed: false,
       items: [
-        // { text: '什么是 JavaScript', link: '/base/javascript/what-is-javascript' },
         { text: 'JavaScript 优化技巧', link: '/base/javascript/javascript-optimization-tips' },
         { text: '容易被忽略的知识点', link: '/base/javascript/ignore-knowledge' },
         { text: 'JavaScript 布尔值为 false 的六种情况', link: '/base/javascript/boolean-false-six' },
@@ -35,13 +33,13 @@ export default function qianduanjinjiSidebarGuide() {
         { text: 'TypeScript 面试知识点', link: '/base/javascript/typescript-interview' },
         { text: 'TypeScript 优化技巧', link: '/base/javascript/typescript-optimization-tips' },
         { text: 'TypeScript 常用总结', link: '/base/javascript/typescript-common-summary' },
+        { text: 'Three.js 学习参考', link: '/base/javascript/three-learning-reference' },
       ],
     },
     {
       text: 'Vue',
       collapsed: false,
       items: [
-        // { text: '什么是 Vue', link: '/frame/vue/what-is-vue' },
         { text: 'Vue3 学习笔记（一）', link: '/frame/vue/vue3-study-01' },
         { text: 'Vue3 学习笔记（二）', link: '/frame/vue/vue3-study-02' },
         { text: 'Vue3 学习笔记（三）', link: '/frame/vue/vue3-study-03' },
@@ -62,7 +60,8 @@ export default function qianduanjinjiSidebarGuide() {
       text: 'React',
       collapsed: false,
       items: [
-        // { text: '什么是 React', link: '/frame/vue/what-is-vue' },
+        { text: 'React 学习笔记', link: '/frame/react/react-study' },
+        { text: 'React 学习参考', link: '/frame/react/react-learning-reference' },
       ],
     },
     {
@@ -131,7 +130,7 @@ export default function qianduanjinjiSidebarGuide() {
       text: 'UI 设计交互',
       collapsed: false,
       items: [
-        // { text: '设计', link: '/other/productBusiness/' },
+        { text: 'UI 设计与交互体验', link: '/other/productBusiness/ui-interactive-experience' },
       ],
     },
   ]
