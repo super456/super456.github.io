@@ -25,10 +25,14 @@ export default function qianduanjinjiSidebarGuide() {
       collapsed: false,
       items: [
         // { text: '什么是 JavaScript', link: '/base/javascript/what-is-javascript' },
+        { text: 'JavaScript 布尔值为 false 的六种情况', link: '/base/javascript/boolean-false-six' },
+        { text: 'JavaScript 优化技巧', link: '/base/javascript/javascript-optimization-tips' },
         { text: 'TypeScript 学习笔记', link: '/base/javascript/typescript-study' },
         { text: 'TypeScript 开发实战笔记', link: '/base/javascript/typescript-dev-practice' },
         { text: 'TypeScript 全面进阶指南学习笔记', link: '/base/javascript/typescript-advanced-guide-study' },
         { text: 'TypeScript 面试知识点', link: '/base/javascript/typescript-interview' },
+        { text: 'TypeScript 优化技巧', link: '/base/javascript/typescript-optimization-tips' },
+        { text: 'TypeScript 常用总结', link: '/base/javascript/typescript-common-summary' },
       ],
     },
     {

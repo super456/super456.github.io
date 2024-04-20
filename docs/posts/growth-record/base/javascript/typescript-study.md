@@ -7,9 +7,19 @@ tags:
 categories:
  - 前端进击
 ---
-# TypeScript 学习笔记
+# TypeScript 学习笔记ts
 ## 语言介绍
+TypeScript 与 JavaScript 发展史：
+<CustomImage src='/growth-record/base/javascript/tsstudy03.webp' />
+
+TypeScript 与 JavaScript 对比：
+<CustomImage src='/growth-record/base/javascript/tsstudy04.webp' />
+
 类型的概念：类型就是人为添加的一种编程约束和用户提示
+
+运行时做的叫做**动态类型检查**，运行之前的编译期做的叫做**静态类型检查**
+
+动态类型检查：源码中不保留类型信息，对某个变量赋什么值、做什么操作都是允许的，写代码很灵活，但有类型不安全隐患，⽐如对 string 做了乘除，对 Date 对象调⽤了 exec ⽅法，这些都是运⾏时才能检查出来的错误
 
 静态类型的优点：
 - 有利于代码的静态分析；
@@ -25,10 +35,7 @@ categories:
 - 引入独立的编译步骤；
 - 兼容性问题；
 
-TypeScript 历史：
-- 12 年发布；
-- 13 年 VS Code 开始支持；
-- 23 年 5.0 版本；
+<CustomImage src='/growth-record/base/javascript/tsstudy05.webp' />
 
 ## 基础用法
 ### 类型声明
@@ -2914,6 +2921,104 @@ class DogHouse extends AnimalHouse {
 - protected：修饰符表示该成员是保护成员，只能在类的内部使用该成员，实例无法使用该成员，但是子类内部可以使用；
 
 ### 总结
+
+## 泛型
+使用方式：`类型名<泛型列表>`
+
+#### 1、常见命名规则
+惯例：类型参数名称是单个大写字母：用于区分类型变量和普通类或接口名称之间的区别
+
+- `T(Type)`：类型参数名；
+- `K(Key)`：对象的键类型；
+- `V(Value)`：对象的值类型；
+- `P(Property)`：对象的属性类型；
+- `R(Result)`：类型推导的结果类型；
+
+#### 2、泛型条件
+`T extends U ? X : Y`
+
+```ts
+// 字符串或数字判断
+type IsStr = 'super' extends 'super456' ? true : false
+type IsNum = 123 extends 123456 ? true : false
+
+// 对象类型收窄
+type IsObj = { status: true, age: 18 } extends { status: true } ? true : false
+
+// Exclude
+type Exclude<T, U> = T extends U ? never : T
+
+type T = Exclude<1 | 2, 1 | 3>
+// => (1 extends 1 | 3 ? never : 1) | (2 extends 1 | 3 ? never : 2)
+// => never | 2
+// => 2
+```
+
+#### 3、泛型推断 infer
+```ts
+type FunctionParamType<T> = T extends (...args: infer P) => any ? P : T
+```
+
+实际案例：
+```ts
+interface Person {
+  name: string
+  age: number
+}
+
+type GetAge = (person: Person) => void
+const getAge: GetAge = (person) => {}
+
+type Age = FunctionParamType<GetAge> // Person
+type TestString = FunctionParamType<string> // string
+```
+
+### 分布式条件类型
+_泛型参数与裸类型参数_
+
+#### 1、理解分布式条件类型
+
+#### 2、从 TypeScript 源码层面看分布式判断
+
+#### 3、条件类型在工具类型中的重要作用
+
+### TypeScript 内置工具类型
+<CustomImage src='/growth-record/base/javascript/tsstudy01.webp' />
+
+- `Partial<T>`：将传入属性变成可选；
+- `Required<T>`：将传入属性变成必选；
+- `Readonly<T>`：将传入属性变成只读；
+- `Record<T, U>`：将 T 作为属性，U 作为类型生成新的对象类型；
+- `Pick<T, U>`：从 T 抽取包含 U 的属性；
+- `Omit<T, U>`：从 T 删除包含 U 的属性；
+- `Exclude<T, U>`：从 T 中过滤 U 不存在的属性；
+- `Extract<T, U>`：从 T 中过滤存在 U 的属性；
+
+**函数相关**：
+
+- Parameters：函数参数作为元组类型返回；
+- ReturnType：获取函数的返回类型；
+- ConstructorParameters：把构建函数作为一个元素类型返回；
+
+常见 React 类型：
+<CustomImage src='/growth-record/base/javascript/tsstudy02.png' />
+
+#### 1、TypeScript 内置工具类型的进阶实现
+Partial、Required：
+1. 面向实际项目需求的工具类型；
+2. 递归的 Deep 实现；
+3. 更细粒度的部分修饰；
+
+Pick、Omit：
+1. 通过映射类型与索引类型实现接口裁剪；
+2. 更严格的 Omit；
+3. 基于键值类型的接口与裁剪，以及更严格的类型比较；
+
+Exclude 与 Extract：
+1. 又见分布式条件类型；
+2. 交、并、补、差集；
+3. 对象键名的交、并、补、差集；
+4. 类型层面的对象合并；
 
 待更新🚀...
 
