@@ -45,6 +45,12 @@ export default function qianduanjinjiSidebarGuide() {
         { text: 'Vue3 学习笔记（一）', link: '/frame/vue/vue3-study-01' },
         { text: 'Vue3 学习笔记（二）', link: '/frame/vue/vue3-study-02' },
         { text: 'Vue3 学习笔记（三）', link: '/frame/vue/vue3-study-03' },
+        { text: 'Vue3 学习参考', link: '/frame/vue/vue3-learning-reference' },
+        { text: 'Vue3 语法规范尝鲜', link: '/frame/vue/vue3-grammatical-norm' },
+        { text: '推荐新手源码学习', link: '/frame/vue/source-code-learning' },
+        { text: '大数据虚拟列表优化实战', link: '/frame/vue/virtual-scrolling-list-practice' },
+        { text: 'Vue 优化技巧', link: '/frame/vue/optimization-tips' },
+        { text: 'Vue2 学习笔记', link: '/frame/vue/vue2-study' },
       ],
     },
     {
@@ -80,6 +86,7 @@ export default function qianduanjinjiSidebarGuide() {
         { text: '异常监控管理工具调研', link: '/engineering/tools/anomaly-monitoring-research' },
         { text: 'DevOps 了解', link: '/engineering/tools/dev-ops' },
         { text: '框架选型指南', link: '/engineering/other/frame-selection' },
+        { text: '浏览器兼容性方案调研', link: '/engineering/other/browser-compatibility-research' },
       ],
     },
     {
