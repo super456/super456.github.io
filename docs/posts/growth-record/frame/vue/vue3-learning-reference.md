@@ -37,6 +37,12 @@ categories:
 ### （二）源码学习
 - [Vue 源码中的工具函数](https://segmentfault.com/a/1190000042073070)
 - [VueUse Collection of Vue Composition Utilities](https://vueuse.org/)
+- [Vue源码探秘（一）](https://mp.weixin.qq.com/s/9HWEs-quQufpodWz_6782A)
+- [Vue3](https://vue3js.cn/start/)
+- [介绍 · GitBook](https://kingbultsea.github.io/vue3-analysis/book/index.html)
+- [ 图解 Vue、Vue-Router、Vuex 源码](https://github.com/biaochenxuying/vue-family-mindmap)
+- [前言 | Vue.js 技术揭秘](https://ustbhuangyi.github.io/vue-analysis/)
+- [GitHub - ygs-code/vue: vue源码逐行注释分析+40多m的vue源码程序流程图思维导图](https://github.com/ygs-code/vue)
 
 ### （三）知识点学习
 [大爱Vue3.3！从此父子组件双向绑定不再是烦恼！](https://mp.weixin.qq.com/s/dsirWaQHH2EGGG94d58JOg)
@@ -87,7 +93,15 @@ export const useModel = <P extends object, K extends keyof P, Name extends strin
 - [从 0 开始手把手带你搭建一套规范的 Vue3.x 项目工程环境 - 掘金](https://juejin.cn/post/6951649464637636622)
 - [Vite2 + Vue3 + TypeScript + Pinia 搭建一套企业级的开发脚手架【值得收藏】 - 掘金](https://juejin.cn/post/7036745610954801166)
 
-### （七）面试题学习
+### （七）管理后台模版学习
+- [Vben Admin](https://vvbin.cn/next/#/login)
+- [GitHub 上 9 个美观大气的后台管理系统 - 掘金](https://juejin.cn/post/7052195023311339527)
+- [GitHub - PanJiaChen/vue-element-admin: A magical vue admin https://panjiachen.github.io/vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
+- [http://www.jeecg.com/](http://www.jeecg.com/)
+- [GitHub - HalseySpicy/Geeker-Admin: ✨✨✨ Geeker Admin，基于 Vue3.2、TypeScript、Vite2、Pinia、Element-Plus 开源的一套后台管理框架。](https://github.com/HalseySpicy/Geeker-Admin?utm_source=gold_browser_extension)
+- [vue-element-plus-admin](https://element-plus-admin-doc.cn/)
+
+### （八）面试题学习
 - [N个Vue知识点，必会!!! 供复习 - 掘金](https://juejin.cn/post/7073300624707682317)
 - [最全的 Vue 面试题+详解答案 - 掘金](https://juejin.cn/post/6961222829979697165)
 - [用vue想要拿20k，面试题要这样回答（源码版） - 掘金](https://juejin.cn/post/7017693252820303903)
