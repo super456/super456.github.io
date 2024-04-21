@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Sun, 21 Apr 2024 05:33:06 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 Apr 2024 10:08:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -4417,6 +4417,56 @@ Jedit著绘
 很不错的生活冷知识，愉快阅读的同时，学习生活知识，何乐而不为呢</p>
 ]]></content:encoded>
             <enclosure url="https://super456.github.io/read-book/2023/kuaileyitianshiyitian.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[Node.js Corepack 使⽤指南]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/node/corepack-guide.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/node/corepack-guide.html</guid>
+            <pubDate>Tue, 26 Dec 2023 20:04:06 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="node-js-corepack-使用指南" tabindex="-1">Node.js Corepack 使⽤指南 <a class="header-anchor" href="#node-js-corepack-使用指南" aria-label="Permalink to &quot;Node.js Corepack 使⽤指南&quot;">&ZeroWidthSpace;</a></h1>
+<p>Corepack 是 Node.js 推出的包管理器的管理器。类似于 nvm 可以一行命令安装、切换 Node.js 的版本，Corepack 可以一行命令安装、切换 npm / yarn / pnpm 的版本。Corepack 还有一个特性，就是能够读取项目的 packge.json 中的 pacakgeManager 字段，从而自动切换到对应版本的包管理器，防止⾃动切换包管理器导致依赖⽬版本不⼀致问题</p>
+<h2 id="背景" tabindex="-1">背景 <a class="header-anchor" href="#背景" aria-label="Permalink to &quot;背景&quot;">&ZeroWidthSpace;</a></h2>
+<p>Node.js Corepack 项⽬管理 yarn / npm / pnpm 问题了，推荐⼤家⽤起来，⾮常适合团队杂七杂⼋的
+项⽬各种版本对不⻬问题，导致安装依赖、lock ⽂件参差不⻬问题。⽽且⿎励⼤家项⽬ package.json
+要设置 &quot;packageManager&quot;: &quot;xxx@x.x.x&quot;，避免后续项⽬新⼈维护版本依赖安装问题</p>
+<h2 id="使用" tabindex="-1">使⽤ <a class="header-anchor" href="#使用" aria-label="Permalink to &quot;使⽤&quot;">&ZeroWidthSpace;</a></h2>
+<h3 id="安装" tabindex="-1">安装 <a class="header-anchor" href="#安装" aria-label="Permalink to &quot;安装&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>检查 Node.js 版本，Corepack 默认与 Node.js 14.19.0 和 16.9.0 一起分发，所以保证 Node.js 版本大于等于 16.9.0，无需自行安装 Corepack，终端输入 <code>corepack</code> 成功结果如下：</li>
+</ol>
+<CustomImage src='/growth-record/frame/node/corepack-01.png' /><h3 id="项目使用" tabindex="-1">项目使⽤ <a class="header-anchor" href="#项目使用" aria-label="Permalink to &quot;项目使⽤&quot;">&ZeroWidthSpace;</a></h3>
+<p>⽐如 pnpm 版本：</p>
+<ul>
+<li>
+<p>全局的 pnpm 版本：</p>
+<CustomImage src='/growth-record/frame/node/corepack-02.png' /></li>
+<li>
+<p>针对某个项⽬ package.json 使⽤对应的包管理器版本：</p>
+<CustomImage src='/growth-record/frame/node/corepack-03.png' /><CustomImage src='/growth-record/frame/node/corepack-04.png' /></li>
+<li>
+<p>没有设置的话会默认⾛全局设置的版本：</p>
+<CustomImage src='/growth-record/frame/node/corepack-05.png' /></li>
+</ul>
+<h2 id="其他问题" tabindex="-1">其他问题 <a class="header-anchor" href="#其他问题" aria-label="Permalink to &quot;其他问题&quot;">&ZeroWidthSpace;</a></h2>
+<p>还遇到个问题就是：
+如果有使⽤ nvm 或 n 管理 node 版本的或两者混⽤的（⽐如我），可能会有 pnpm 依赖版本问题，⽐
+如删除pnpm，执⾏命名： npm uninstall -g pnpm，但 pnm 还是会存在，因为 node 管理版本导致
+pnpm 查询全局安装路径不⼀致问题，也就是你删除的是 n 管理下 node 的 pnpm 但是 nvm 下⼜是另
+⼀个的 pnpm 版本路径，你可以删除⼿动删除 pnpm 全局依赖：</p>
+<p>执⾏命令：which pnpm：</p>
+<CustomImage src='/growth-record/frame/node/corepack-06.png' /><p>记得这个也要删除（pnpm pnpx），不然会导致 pnpm ⼀直安装不上：</p>
+<CustomImage src='/growth-record/frame/node/corepack-07.png' /><h2 id="参考资料" tabindex="-1">参考资料 <a class="header-anchor" href="#参考资料" aria-label="Permalink to &quot;参考资料&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li><a href="https://blog.csdn.net/bigPatrickstar/article/details/123600329" target="_blank" rel="noreferrer">pnpm Error: Cannot find module ‘C:\Users\AppData\Roa..\npm\pnpm￾glob\4\node_modules\pnpm\bin\pnpm.js</a></li>
+<li><a href="https://pnpm.io/zh/installation#%E7%96%91%E9%9A%BE%E8%A7%A3%E7%AD%94" target="_blank" rel="noreferrer">安装 | pnpm</a></li>
+<li><a href="https://juejin.cn/post/7111998050184200199" target="_blank" rel="noreferrer">Node.js Corepack - 掘⾦</a></li>
+<li><a href="https://www.cnblogs.com/zhoumingjie/p/15862357.html" target="_blank" rel="noreferrer">前端包管理和 corepack - 周明杰 - 博客园</a></li>
+<li><a href="https://www.cnblogs.com/lessfish/p/16908785.html" target="_blank" rel="noreferrer">pnpm 版本切换 - lessfish - 博客园</a></li>
+<li><a href="https://blog.lyh543.cn/posts/2023-04-28-install-pnpm-by-corepack.html" target="_blank" rel="noreferrer">pnpm2023 年了，该尝试⽤ Corepack 安装 pnpm 了 | ⼩灰灰灰灰的博客</a></li>
+<li><a href="https://segmentfault.com/a/1190000043979300#item-3-6" target="_blank" rel="noreferrer">使⽤ volta 与 corepack 规范团队在不同项⽬中使⽤的 node 版本与 npm 包管理器</a></li>
+<li><a href="https://juejin.cn/post/6948343013529780237" target="_blank" rel="noreferrer">使⽤npm命令⾏更新版本号 - 掘⾦</a></li>
+</ul>
+]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[第 31 本《就是想看你笑的样子》]]></title>
@@ -19201,6 +19251,686 @@ unique symbol 表示单个的、某个具体的 Symbol 值，该类型声明的�
 <p>待补充思维导图笔记🚀...</p>
 ]]></content:encoded>
             <enclosure url="https://super456.github.io/read-book/2023/javascriptgaojichengxusheji4.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[iOS SiriKit 开发指南]]></title>
+            <link>https://super456.github.io/posts/growth-record/platform/app/sirikit.html</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/app/sirikit.html</guid>
+            <pubDate>Fri, 30 Jun 2023 20:07:09 GMT</pubDate>
+            <description><![CDATA[# iOS SiriKit 开发指南
+## 需求背景
+公司业务需求，开发 Hi siri 响应功能数据展示回应需求
+<CustomImage src='/growth-record/platform/app/sirikit-00.png' />
+
+明确需求确定技术实现方案：
+1. 第⼀阶段：通过快捷指令实现，通过指导⽤⼾安装定制的快捷指令即可：
+- 优点：不启动 APP，直接在弹出的扩展进程中处理相关指令操作；
+- 痛点：需要定期替换 token，⼿动体验不是很好，⽽且维护成本⽐较⾼，容易泄露信息；
+
+2. 第⼆阶段：打通应⽤⸺通过 Siri 指令唤起：
+直接启动 APP，在 APP 独⽴进程中处理相关指令操作，⽐如展⽰今天项⽬的报表，直接进⼊
+⻚⾯展⽰；
+
+### 开发准备
+- 我的开发者账号信息：https://appstoreconnect.apple.com/login
+- 官⽅开发者⽂档：https://developer.apple.com/cn/
+- 团队名称：xxx
+- 账⼾ID：xxx
+- Bundle Identifier：xxx
+- uni-app 应⽤后台：https://dev.dcloud.net.cn/pages/common/login
+- SiriKit 开发官⽅说明：https://developer.apple.com/videos/play/wwdc2020/10073/
+
+1. 作为 App 的⼀种扩展插件形式执⾏处理，并不需要打开 App；
+2. 10 秒超时时间限制；
+
+### 前置⽬标
+<CustomImage src='/growth-record/platform/app/sirikit-01.png' />
+
+1. 如果需要开发⼀个原⽣插件包的形式，创建项⽬的时候选择哪个模版？
+2. 信息列表属性可以配置值为中⽂吗？
+3. 怎么打包运⾏到真机上？
+4. 打包构建的配置信息怎么设置？
+<CustomImage src='/growth-record/platform/app/sirikit-02.png' />
+
+5. 信息存储本地化；
+6. 应⽤⽣命周期及⼊⼝⽂件？
+
+a. [Managing your app’s life cycle | Apple Developer Documentation](https://developer.apple.com/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle)<br />
+b. [About the app launch sequence | Apple Developer Documentation](https://developer.apple.com/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence)
+
+7. 是否需要添加 Siri 的访问权限？
+处理应⽤程序 SiriKit 的权限版本：
+https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3548063-application
+<CustomImage src='/growth-record/platform/app/sirikit.png' />
+
+## 操作说明
+1. iOS 系统限制 10.0+/ 12+ custom intent，iOS 13+，因为之前版本仅⽀持快捷⽅式添加到快捷指
+令，不⽀持输⼊询问参数
+
+**在 iOS 13.1 中，Apple 赋予了 SiriKit 更多权限，可以通过 Siri 对话框在⾃定义 Intent 中询问⽤⼾输⼊参数**
+
+2. 确保⼿机有【快捷指令】App 和 iOS 12+；
+
+### 开发说明
+Xcode 开发⼯具版本：V14.3.1
+
+注意：
+• 应⽤运⾏到模拟器并不代表真实的运⾏环境，还是需要真机预览的，但是真机预览需要付费开发者
+会员才可以；
+
+开发环境搭建
+1. Xcode 软件下载：App Store 直接搜索 Xcode 下载即可，**注意有 MacOS 系统版本限制**
+<CustomImage src='/growth-record/platform/app/sirikit-03.png' />
+
+2. 运⾏打开，默认选择运⾏终端选项：Mac 和 iPhone 即可
+<CustomImage src='/growth-record/platform/app/sirikit-04.png' />
+
+提⽰特性：
+<CustomImage src='/growth-record/platform/app/sirikit-05.png' />
+
+1. 创建项⽬：
+<CustomImage src='/growth-record/platform/app/sirikit-06.png' />
+<CustomImage src='/growth-record/platform/app/sirikit-07.png' />
+
+2. Team：
+Organization identifier：
+1. 项⽬添加siri启动配置：
+<CustomImage src='/growth-record/platform/app/sirikit-08.png' />
+<CustomImage src='/growth-record/platform/app/sirikit-09.png' />
+<CustomImage src='/growth-record/platform/app/sirikit-10.png' />
+
+切换运⾏的模拟器：
+<CustomImage src='/growth-record/platform/app/sirikit-11.png' />
+
+运⾏到真机上必须是开发者团队才可以：
+
+⼿机需要开启开发者模式：设置=》隐私与安全性=》开发者模式
+<CustomImage src='/growth-record/platform/app/sirikit-12.png' />
+
+如果没有配置开发者团队的话，需要在这⾥配置设置：
+<CustomImage src='/growth-record/platform/app/sirikit-13.png' />
+
+使⽤Siri默认语⾳提⽰配置：
+<CustomImage src='/growth-record/platform/app/sirikit-14.png' />
+
+使⽤ intent 扩展提⽰报错，需要打钩上这些引⼊包选项：
+<CustomImage src='/growth-record/platform/app/sirikit-15.png' />
+
+给对应的应⽤设置Siri权限：
+<CustomImage src='/growth-record/platform/app/sirikit-16.png' />
+
+快捷指令的应⽤⽆需调⽤访问 Siri 的权限：
+https://developer.apple.com/documentation/sirikit/intent_handling_infrastructure/requesting_
+authorization_to_use_siri
+<CustomImage src='/growth-record/platform/app/sirikit-17.png' />
+
+官⽅创建意图扩展教程：Creating an Intents App Extension | Apple Developer Documentation
+并且：⾸次安装扩展应⽤时，Siri 并不会⽴⻢识别这个快捷指令，需要等待⼏分钟在进⾏测试使⽤，包
+括更新扩展⽂件也是的
+<CustomImage src='/growth-record/platform/app/sirikit-18.png' />
+
+应⽤连不上⽹络问题是：应⽤需要允许⽆线局域⽹开启连接，⾸次安装应⽤会有弹出授权⽆线局域⽹
+的弹窗提⽰，开启的话可以在：设置=》⽆线局域⽹=》使⽤⽆线局域⽹与蜂窝⽹络的 App=》找到该应
+⽤是否存在
+<CustomImage src='/growth-record/platform/app/sirikit-19.png' />
+
+https://www.jianshu.com/p/81d0b7f06eba
+出现这种Siri提⽰直接点击打开这个应⽤即可，跳转到对应的应⽤打开蜂窝⽹络数据或⽆线⽹络权限
+<CustomImage src='/growth-record/platform/app/sirikit-20.png' />
+
+接⼝调⽤成功：
+<CustomImage src='/growth-record/platform/app/sirikit-21.png' />
+
+Xcode 模拟器不⽀持 Siri 功能使⽤：https://developer.apple.com/forums/thread/131319
+<CustomImage src='/growth-record/platform/app/sirikit-22.png' />
+
+开发语法
+1. 打印调试信息⽇志：
+```sh
+print("这个是调试信息")
+```
+
+1. 获取应⽤访问 Siri 权限：
+```swift
+1 import IntentsINPreferences.requestSiriAuthorization {
+2 switch $0 {
+3 case .authorized:
+4 print("⽤⼾已授权")
+5 break
+6 case .notDetermined:
+7 print("未决定")
+8 break
+9 case .restricted:
+10 print("权限受限制")
+11 break
+12 case .denied:
+13 print("拒绝授权")
+14 break
+15 }}
+```
+
+1. 是否需要添加 Siri 的访问权限？
+2. SiriKit ⼊⼝开发说明：
+https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3548063-
+application
+1. 请求接⼝：https://developer.apple.com/documentation/uikit/uiapplication/1648685-open
+
+```swift
+1 func open(
+2 _ url: URL,
+3 options: [UIApplication.OpenExternalURLOptionsKey : Any] = [:],
+4 completionHandler completion: ((Bool) -> Void)? = nil
+5 )
+```
+
+https://developer.apple.com/documentation/uikit/uiapplication/openexternalurloptionskey
+请求后端接⼝：
+https://www.jianshu.com/p/9acee6fdc32d
+Intent info.plist ⽂件说明
+
+```swift
+1 IntentsSupported：⽀持的 Intents 类型列表；
+2 IntentsRestrictedWhileLocked：限制使⽤该 Intents 前必须解锁，也是⼀个列表；
+3 NSExtensionPointIdentifier：必须为apple.intents-service；
+4 NSExtensionPrincipalClass：Intents 扩展的⼊⼝⽂件，默认为
+$(PRODUCT_MODULE_NAME).IntentHandler
+```
+
+官⽅解释：
+https://developer.apple.com/documentation/bundleresources/information_property_list
+
+### 语法上跟 JavaScript 差异
+1. 默认的类型声明推到（Type Inference）；
+2. 变量⽤ var 声明，常量⽤ let 声明；
+3. If/switch/for/while/do while 等循环语句不需要写括号 () ；
+4. Switch 中默认 case 匹配到了就不会往下执⾏，相当于默认写了 break ，匹配多个值⽤逗
+
+```
+1 // JavaScript
+2 case "a":
+3 case "b":
+4 doSomething
+5
+6 // Swift
+7 case "a", "b":
+8 doSomething
+```
+
+5. 打包：
+最新版iOS Xcode如何证书配置和ipa打包(附图⽂教程) - 掘⾦
+⽣成导出的证书：钥匙串访问 =》
+<CustomImage src='/growth-record/platform/app/sirikit-23.png' />
+
+## Uni-app 原⽣插件开发
+
+官⽅⽂档：
+- [uts for iOS | uni-app官⽹](https://uniapp.dcloud.net.cn/)
+- [简介 | uni⼩程序SDK](https://nativesupport.dcloud.net.cn/NativePlugin/)
+
+注意：仅⽀持 iOS11 及以上系统版本
+<CustomImage src='/growth-record/platform/app/sirikit-24.png' />
+
+需要在 package.json ⾥添加如下配置：
+```
+1 "ios": {
+2 "deploymentTarget": "11.0",
+3 "validArchitectures": [
+4 "arm64"
+5 ],
+6 }
+```
+
+本地离线打包测试：
+配置AppKey：
+<CustomImage src='/growth-record/platform/app/sirikit-25.png' />
+
+打包配置：
+<CustomImage src='/growth-record/platform/app/sirikit-26.png' />
+
+注意：要有该应⽤的开发权限
+<CustomImage src='/growth-record/platform/app/sirikit-27.png' />
+
+编译报错：
+<CustomImage src='/growth-record/platform/app/sirikit-28.png' />
+
+取消勾选即可：
+<CustomImage src='/growth-record/platform/app/sirikit-29.png' />
+<CustomImage src='/growth-record/platform/app/sirikit-30.png' />
+
+苹果官⽅管理后台添加应⽤ Siri 能⼒配置：
+<CustomImage src='/growth-record/platform/app/sirikit-31.png' />
+
+打包插件不显⽰ build ⽂件问题：[Xcode 13新建项⽬查看Products⽬录 - 掘⾦](https://juejin.cn/post/7026978788395188237)
+
+因为编译根⽬录⽂件找不到的问题，每次打包需要⼿动添加对应的⽂件到uni-app⾥⾯去：
+<CustomImage src='/growth-record/platform/app/sirikit-32.png' />
+
+⼿动【快捷指令】添加的Siri⽆法触发⾃定义Siri意图指令，需要⼿动添加⽂件映射：
+<CustomImage src='/growth-record/platform/app/sirikit-33.png' />
+<CustomImage src='/growth-record/platform/app/sirikit-34.png' />
+
+添加意图扩展⽂件报错：
+<CustomImage src='/growth-record/platform/app/sirikit-35.png' />
+
+解决复制意图扩展⽂件到跟⽬录：
+<CustomImage src='/growth-record/platform/app/sirikit-36.png' />
+<CustomImage src='/growth-record/platform/app/sirikit-37.png' />
+<CustomImage src='/growth-record/platform/app/sirikit-38.png' />
+<CustomImage src='/growth-record/platform/app/sirikit-39.png' />
+
+查看打包⽂件地址：
+<CustomImage src='/growth-record/platform/app/sirikit-40.png' />
+查看具体包⽂件内容：
+<CustomImage src='/growth-record/platform/app/sirikit-41.png' />
+XBuilder 本地打包 ipa 配置：
+<CustomImage src='/growth-record/platform/app/sirikit-42.png' />
+
+HBuilder-云打包报错：
+<CustomImage src='/growth-record/platform/app/sirikit-43.png' />
+
+升级替换这个⽂件：在苹果开发者后台下载对应的⽂件替换
+<CustomImage src='/growth-record/platform/app/sirikit-44.png' />
+
+下载ipa包到真机iPhone上：
+[iPhone, iPad 安装 ipa ⽂件_爱思助⼿安装ipa⽂件_Hanyang Li的博客-CSDN博客](https://blog.csdn.net/u011193452/article/details/106385352#:~:text=iPhone%2C%20iPad%20%E5%AE%89%E8%A3%85%20ipa%20%E6%96%87%E4%BB%B6%201%201.%20%E7%88%B1%E6%80%9D%E5%8A%A9%E6%89%8B%E5%AE%98%E7%BD%91%E5%9C%B0%E5%9D%80,3.%20%E6%89%93%E5%BC%80%E5%8A%A9%E6%89%8B%EF%BC%8C%E7%82%B9%E5%87%BB%E4%B8%8B%E8%BD%BD%E6%8C%89%E9%92%AE%E5%A6%82%E5%9B%BE%EF%BC%9A%204%204.%20%E7%82%B9%E5%87%BB%E4%B8%8B%E8%BD%BD%E6%8C%89%E9%92%AE%E5%BC%B9%E5%87%BA%E5%AF%B9%E8%AF%9D%E6%A1%86%EF%BC%8C%E7%82%B9%E5%87%BB%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%EF%BC%8C%E9%80%89%E6%8B%A9.ipa%E6%96%87%E4%BB%B6%EF%BC%8C%E7%82%B9%E6%89%93%E5%BC%80%EF%BC%8C%E6%B7%BB%E5%8A%A0%E5%88%B0%E5%BA%94%E7%94%A8%E5%88%97%E8%A1%A8%E4%B8%AD%EF%BC%8C%E7%82%B9%E5%87%BB%E5%88%97%E8%A1%A8%E4%B8%AD%E5%AE%89%E8%A3%85%E6%8C%89%E9%92%AE%EF%BC%8C%E5%A6%82%E5%9B%BE%EF%BC%9A%205%205.%20%E7%82%B9%E5%87%BB%E5%AE%89%E8%A3%85%E6%8C%89%E9%92%AE%E4%B9%8B%E5%90%8E%EF%BC%8C%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%8B%E6%9C%BA%EF%BC%8C%E5%AE%89%E8%A3%85%E8%BF%9B%E5%BA%A6%E6%8F%90%E7%A4%BA%EF%BC%8C%E6%8F%90%E7%A4%BA%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F%EF%BC%8C%E6%AD%A4%E6%97%B6iphone%E6%89%8B%E6%9C%BA%E5%B7%B2%E6%9C%89%E8%AF%A5%E8%BD%AF%E4%BB%B6%EF%BC%8C%E5%AE%8C%E6%88%90%E6%93%8D%E4%BD%9C%E3%80%82)
+
+IPA 解包及导⼊真机
+http://dantheman827.github.io/ios-app-signer/
+<CustomImage src='/growth-record/platform/app/sirikit-45.png' />
+
+将HBuilder⽣成的ipa包进⾏重命名解压（修改后缀格式为：zip）：
+<CustomImage src='/growth-record/platform/app/sirikit-46.png' />
+1. 传输 ipa 包到真机⼯具：苹果官⽅软件，⽐爱思助⼿安全可靠且⽅便
+<CustomImage src='/growth-record/platform/app/sirikit-47.png' />
+
+## 参考资料
+1. Sirikit 开发：
+• 官⽅：在 iPhone 或 iPad 上创建⾃定快捷指令 ✅
+• 学习：快捷指令库✅
+• ⾯向开发者的 Siri✅
+• 通过 Siri、“快捷指令”App 或“Siri 建议”运⾏快捷指令✅
+• SiriKit官⽅⽂档📖
+• SiriKit框架详细解析（⼀）⸺基本概览（⼀）✅
+• 了解如何借助 Apple SiriKit 将 Siri 与您的应⽤程序集成📖
+• Apple Siri接⼊开发 (⼀)✅
+• iOS开发-SiriKit应⽤✅
+• 玩转iOS开发：iOS 10 新特性《Siri Kit》✅
+• iOS 开发：SiriKit 应⽤⼊⻔
+• Introducing SiriKit Media Intents - WWDC19 - Videos - Apple Developer
+• Introducing Parameters for Shortcuts - WWDC19 - Videos - Apple Developer
+• Introduction to Siri Shortcuts - WWDC18 - Videos - Apple Developer
+• 介绍SiriKit · SiriKit编程指南
+• Simulator Help
+• 创作者的 iOS 独⽴开发指南的⽬录 - 少数派
+• Siri快捷指令 - 掘⾦
+• SiriKit预研
+• https://medium.com/@WeAreMobile1st/how-to-handle-and-donate-siri-shortcuts￾ea50f2409086
+• https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
+• Siri，快捷指令以及 SiriKit - 探索 - Apple Developer
+• SiriKit 新变化:让 Intent 更强⼤_普通⽹友的博客-CSDN博客
+• sirikit - o.0...w - 博客园
+• iOS12 Siri Shortcuts详解 - 掘⾦
+• 【腾讯 Bugly ⼲货分享】iOS10 SiriKit QQ 适配详解 - 掘⾦
+
+2. 实践⽂档：
+• 爱奇艺iOS深度实践：SiriKit详解应⽤篇
+• SiriKit 编程指南
+• 使⽤SiriKit在iOS的⽤⼾体验设计⽅法 (UX)
+• SiriKit 知⼀⼆ - Siri 捷径从设计到构建（上）
+• 向远公园⽂章系列
+• 阿⾥云社区⽤⼾关于这个教程开发
+• 阿⾥云sirikit⽂章搜索⻚⾯
+• Google 关于 sirikit的开发搜索
+• https://medium.com/search?q=sirikit
+• Siri Shortcuts intent 扩展开发
+• https://www.jianshu.com/u/be22fcd3469d
+• https://www.jianshu.com/search?q=sirikit&page=1&type=note
+• https://www.jianshu.com/u/0cf7d455eb9e
+• https://juejin.cn/search?
+query=sirikit&utm_source=gold_browser_extension&utm_medium=search&sort=0
+• https://juejin.cn/user/3227821827957710/posts
+• SiriKit 新变化：让 Intent 更强⼤_intent
+• Xamarin.iOS 中的 SiriKit - Xamarin
+• https://s.geekbang.org/search/c=0/k=sirikit/t=
+• 知乎 SiriKit 实战
+• https://www.zhihu.com/search?type=content&q=sirikit
+• https://zzk.cnblogs.com/s?w=sirikit
+• https://medium.com/appcoda-tutorials/building-custom-siri-shortcut-intent-ui-extension-to￾display-remote-data-alfian-losari-efe891a44a70
+
+3. Swift 编程开发：
+• SwiftGG
+• https://swift.gg/
+• The Swift Programming Language (5.9 beta) | Documentation
+• Swift学习笔记
+• Swift知识介绍
+• 调试技巧 - 掘⾦
+• https://developer.apple.com/documentation/swift
+
+4. 社区讨论：
+• 掘⾦对应ios开发：不想做iOS了；
+• Uni-app QQ群；
+
+5. GitHub demo：
+• https://github.com/AbMathur/SirikitDemoApp
+• https://github.com/domeniconicoli/SiriKitIntentsUIExample
+• https://github.com/hanyx1992/SiriKitDemo
+
+6. Xcode ⼯具开发：
+• 1.1 软件简介及准备⼯作 - 少数派
+• Creating an Xcode project for an app | Apple Developer Documentation
+• Xcode⼊⻔秘籍⸺很多iOS开发者都不知道的基本操作
+• 初 识 Xcode · macOS开 发 教 程
+• Xcode - 简体中⽂⽂档 - Apple Developer
+• mac 下 Xcode 真机调试 - 掘⾦
+• iOS⾃制framework总结 - 掘⾦
+
+7. Uni-app 原⽣插件开发资料：
+• ⼋、uni-app 原⽣插件开发04 - 开发原⽣插件
+• ⼀、iOS 中的动态库、静态库和 framework
+• 五年陈的 Weex，聊聊它的过去现在和未来
+• WEEX
+• UNIAPP]]></description>
+            <content:encoded><![CDATA[<h1 id="ios-sirikit-开发指南" tabindex="-1">iOS SiriKit 开发指南 <a class="header-anchor" href="#ios-sirikit-开发指南" aria-label="Permalink to &quot;iOS SiriKit 开发指南&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="需求背景" tabindex="-1">需求背景 <a class="header-anchor" href="#需求背景" aria-label="Permalink to &quot;需求背景&quot;">&ZeroWidthSpace;</a></h2>
+<p>公司业务需求，开发 Hi siri 响应功能数据展示回应需求</p>
+<CustomImage src='/growth-record/platform/app/sirikit-00.png' /><p>明确需求确定技术实现方案：</p>
+<ol>
+<li>第⼀阶段：通过快捷指令实现，通过指导⽤⼾安装定制的快捷指令即可：</li>
+</ol>
+<ul>
+<li>优点：不启动 APP，直接在弹出的扩展进程中处理相关指令操作；</li>
+<li>痛点：需要定期替换 token，⼿动体验不是很好，⽽且维护成本⽐较⾼，容易泄露信息；</li>
+</ul>
+<ol start="2">
+<li>第⼆阶段：打通应⽤⸺通过 Siri 指令唤起：
+直接启动 APP，在 APP 独⽴进程中处理相关指令操作，⽐如展⽰今天项⽬的报表，直接进⼊
+⻚⾯展⽰；</li>
+</ol>
+<h3 id="开发准备" tabindex="-1">开发准备 <a class="header-anchor" href="#开发准备" aria-label="Permalink to &quot;开发准备&quot;">&ZeroWidthSpace;</a></h3>
+<ul>
+<li>我的开发者账号信息：<a href="https://appstoreconnect.apple.com/login" target="_blank" rel="noreferrer">https://appstoreconnect.apple.com/login</a></li>
+<li>官⽅开发者⽂档：<a href="https://developer.apple.com/cn/" target="_blank" rel="noreferrer">https://developer.apple.com/cn/</a></li>
+<li>团队名称：xxx</li>
+<li>账⼾ID：xxx</li>
+<li>Bundle Identifier：xxx</li>
+<li>uni-app 应⽤后台：<a href="https://dev.dcloud.net.cn/pages/common/login" target="_blank" rel="noreferrer">https://dev.dcloud.net.cn/pages/common/login</a></li>
+<li>SiriKit 开发官⽅说明：<a href="https://developer.apple.com/videos/play/wwdc2020/10073/" target="_blank" rel="noreferrer">https://developer.apple.com/videos/play/wwdc2020/10073/</a></li>
+</ul>
+<ol>
+<li>作为 App 的⼀种扩展插件形式执⾏处理，并不需要打开 App；</li>
+<li>10 秒超时时间限制；</li>
+</ol>
+<h3 id="前置目标" tabindex="-1">前置⽬标 <a class="header-anchor" href="#前置目标" aria-label="Permalink to &quot;前置⽬标&quot;">&ZeroWidthSpace;</a></h3>
+<CustomImage src='/growth-record/platform/app/sirikit-01.png' /><ol>
+<li>如果需要开发⼀个原⽣插件包的形式，创建项⽬的时候选择哪个模版？</li>
+<li>信息列表属性可以配置值为中⽂吗？</li>
+<li>怎么打包运⾏到真机上？</li>
+<li>打包构建的配置信息怎么设置？</li>
+</ol>
+<CustomImage src='/growth-record/platform/app/sirikit-02.png' /><ol start="5">
+<li>信息存储本地化；</li>
+<li>应⽤⽣命周期及⼊⼝⽂件？</li>
+</ol>
+<p>a. <a href="https://developer.apple.com/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle" target="_blank" rel="noreferrer">Managing your app’s life cycle | Apple Developer Documentation</a><br />
+b. <a href="https://developer.apple.com/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app/about_the_app_launch_sequence" target="_blank" rel="noreferrer">About the app launch sequence | Apple Developer Documentation</a></p>
+<ol start="7">
+<li>是否需要添加 Siri 的访问权限？
+处理应⽤程序 SiriKit 的权限版本：
+<a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3548063-application" target="_blank" rel="noreferrer">https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3548063-application</a></li>
+</ol>
+<CustomImage src='/growth-record/platform/app/sirikit.png' /><h2 id="操作说明" tabindex="-1">操作说明 <a class="header-anchor" href="#操作说明" aria-label="Permalink to &quot;操作说明&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>iOS 系统限制 10.0+/ 12+ custom intent，iOS 13+，因为之前版本仅⽀持快捷⽅式添加到快捷指
+令，不⽀持输⼊询问参数</li>
+</ol>
+<p><strong>在 iOS 13.1 中，Apple 赋予了 SiriKit 更多权限，可以通过 Siri 对话框在⾃定义 Intent 中询问⽤⼾输⼊参数</strong></p>
+<ol start="2">
+<li>确保⼿机有【快捷指令】App 和 iOS 12+；</li>
+</ol>
+<h3 id="开发说明" tabindex="-1">开发说明 <a class="header-anchor" href="#开发说明" aria-label="Permalink to &quot;开发说明&quot;">&ZeroWidthSpace;</a></h3>
+<p>Xcode 开发⼯具版本：V14.3.1</p>
+<p>注意：
+• 应⽤运⾏到模拟器并不代表真实的运⾏环境，还是需要真机预览的，但是真机预览需要付费开发者
+会员才可以；</p>
+<p>开发环境搭建</p>
+<ol>
+<li>Xcode 软件下载：App Store 直接搜索 Xcode 下载即可，<strong>注意有 MacOS 系统版本限制</strong></li>
+</ol>
+<CustomImage src='/growth-record/platform/app/sirikit-03.png' /><ol start="2">
+<li>运⾏打开，默认选择运⾏终端选项：Mac 和 iPhone 即可</li>
+</ol>
+<CustomImage src='/growth-record/platform/app/sirikit-04.png' /><p>提⽰特性：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-05.png' /><ol>
+<li>创建项⽬：</li>
+</ol>
+<CustomImage src='/growth-record/platform/app/sirikit-06.png' /><CustomImage src='/growth-record/platform/app/sirikit-07.png' /><ol start="2">
+<li>Team：
+Organization identifier：</li>
+<li>项⽬添加siri启动配置：</li>
+</ol>
+<CustomImage src='/growth-record/platform/app/sirikit-08.png' /><CustomImage src='/growth-record/platform/app/sirikit-09.png' /><CustomImage src='/growth-record/platform/app/sirikit-10.png' /><p>切换运⾏的模拟器：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-11.png' /><p>运⾏到真机上必须是开发者团队才可以：</p>
+<p>⼿机需要开启开发者模式：设置=》隐私与安全性=》开发者模式</p>
+<CustomImage src='/growth-record/platform/app/sirikit-12.png' /><p>如果没有配置开发者团队的话，需要在这⾥配置设置：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-13.png' /><p>使⽤Siri默认语⾳提⽰配置：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-14.png' /><p>使⽤ intent 扩展提⽰报错，需要打钩上这些引⼊包选项：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-15.png' /><p>给对应的应⽤设置Siri权限：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-16.png' /><p>快捷指令的应⽤⽆需调⽤访问 Siri 的权限：
+<a href="https://developer.apple.com/documentation/sirikit/intent_handling_infrastructure/requesting_" target="_blank" rel="noreferrer">https://developer.apple.com/documentation/sirikit/intent_handling_infrastructure/requesting_</a>
+authorization_to_use_siri</p>
+<CustomImage src='/growth-record/platform/app/sirikit-17.png' /><p>官⽅创建意图扩展教程：Creating an Intents App Extension | Apple Developer Documentation
+并且：⾸次安装扩展应⽤时，Siri 并不会⽴⻢识别这个快捷指令，需要等待⼏分钟在进⾏测试使⽤，包
+括更新扩展⽂件也是的</p>
+<CustomImage src='/growth-record/platform/app/sirikit-18.png' /><p>应⽤连不上⽹络问题是：应⽤需要允许⽆线局域⽹开启连接，⾸次安装应⽤会有弹出授权⽆线局域⽹
+的弹窗提⽰，开启的话可以在：设置=》⽆线局域⽹=》使⽤⽆线局域⽹与蜂窝⽹络的 App=》找到该应
+⽤是否存在</p>
+<CustomImage src='/growth-record/platform/app/sirikit-19.png' /><p><a href="https://www.jianshu.com/p/81d0b7f06eba" target="_blank" rel="noreferrer">https://www.jianshu.com/p/81d0b7f06eba</a>
+出现这种Siri提⽰直接点击打开这个应⽤即可，跳转到对应的应⽤打开蜂窝⽹络数据或⽆线⽹络权限</p>
+<CustomImage src='/growth-record/platform/app/sirikit-20.png' /><p>接⼝调⽤成功：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-21.png' /><p>Xcode 模拟器不⽀持 Siri 功能使⽤：<a href="https://developer.apple.com/forums/thread/131319" target="_blank" rel="noreferrer">https://developer.apple.com/forums/thread/131319</a></p>
+<CustomImage src='/growth-record/platform/app/sirikit-22.png' /><p>开发语法</p>
+<ol>
+<li>打印调试信息⽇志：</li>
+</ol>
+<div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">"这个是调试信息"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span></code></pre>
+</div><ol>
+<li>获取应⽤访问 Siri 权限：</li>
+</ol>
+<div class="language-swift vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">swift</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> import</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> IntentsINPreferences</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">requestSiriAuthorization</span><span style="--shiki-light:#B31D28;--shiki-dark:#FDAEB7;--shiki-light-font-style:italic;--shiki-dark-font-style:italic"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">2</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> switch</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> $0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">3</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> case</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> .authorized</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">4</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"⽤⼾已授权"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">5</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> break</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">6</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> case</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> .notDetermined</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">7</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"未决定"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">8</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> break</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">9</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> case</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> .restricted</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">10</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"权限受限制"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">11</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> break</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">12</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> case</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> .denied</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">13</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> print</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"拒绝授权"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">14</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> break</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">15</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> }}</span></span></code></pre>
+</div><ol>
+<li>是否需要添加 Siri 的访问权限？</li>
+<li>SiriKit ⼊⼝开发说明：
+<a href="https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3548063-" target="_blank" rel="noreferrer">https://developer.apple.com/documentation/uikit/uiapplicationdelegate/3548063-</a>
+application</li>
+<li>请求接⼝：<a href="https://developer.apple.com/documentation/uikit/uiapplication/1648685-open" target="_blank" rel="noreferrer">https://developer.apple.com/documentation/uikit/uiapplication/1648685-open</a></li>
+</ol>
+<div class="language-swift vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">swift</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> func</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> open</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">2 </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">_</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> url: URL,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">3 </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">options</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: [UIApplication.OpenExternalURLOptionsKey : </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">Any</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">4 </span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">completionHandler</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> completion: ((</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">Bool</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">-></span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> Void</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> nil</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">5</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> )</span></span></code></pre>
+</div><p><a href="https://developer.apple.com/documentation/uikit/uiapplication/openexternalurloptionskey" target="_blank" rel="noreferrer">https://developer.apple.com/documentation/uikit/uiapplication/openexternalurloptionskey</a>
+请求后端接⼝：
+<a href="https://www.jianshu.com/p/9acee6fdc32d" target="_blank" rel="noreferrer">https://www.jianshu.com/p/9acee6fdc32d</a>
+Intent info.plist ⽂件说明</p>
+<div class="language-swift vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">swift</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> IntentsSupported：⽀持的 Intents 类型列表；</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> IntentsRestrictedWhileLocked：限制使⽤该 Intents 前必须解锁，也是⼀个列表；</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">3</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> NSExtensionPointIdentifier：必须为apple.intents</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">service；</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">4</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> NSExtensionPrincipalClass：Intents 扩展的⼊⼝⽂件，默认为</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">$(PRODUCT_MODULE_NAME).IntentHandler</span></span></code></pre>
+</div><p>官⽅解释：
+<a href="https://developer.apple.com/documentation/bundleresources/information_property_list" target="_blank" rel="noreferrer">https://developer.apple.com/documentation/bundleresources/information_property_list</a></p>
+<h3 id="语法上跟-javascript-差异" tabindex="-1">语法上跟 JavaScript 差异 <a class="header-anchor" href="#语法上跟-javascript-差异" aria-label="Permalink to &quot;语法上跟 JavaScript 差异&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>默认的类型声明推到（Type Inference）；</li>
+<li>变量⽤ var 声明，常量⽤ let 声明；</li>
+<li>If/switch/for/while/do while 等循环语句不需要写括号 () ；</li>
+<li>Switch 中默认 case 匹配到了就不会往下执⾏，相当于默认写了 break ，匹配多个值⽤逗</li>
+</ol>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>1 // JavaScript</span></span>
+<span class="line"><span>2 case "a":</span></span>
+<span class="line"><span>3 case "b":</span></span>
+<span class="line"><span>4 doSomething</span></span>
+<span class="line"><span>5</span></span>
+<span class="line"><span>6 // Swift</span></span>
+<span class="line"><span>7 case "a", "b":</span></span>
+<span class="line"><span>8 doSomething</span></span></code></pre>
+</div><ol start="5">
+<li>打包：
+最新版iOS Xcode如何证书配置和ipa打包(附图⽂教程) - 掘⾦
+⽣成导出的证书：钥匙串访问 =》</li>
+</ol>
+<CustomImage src='/growth-record/platform/app/sirikit-23.png' /><h2 id="uni-app-原生插件开发" tabindex="-1">Uni-app 原⽣插件开发 <a class="header-anchor" href="#uni-app-原生插件开发" aria-label="Permalink to &quot;Uni-app 原⽣插件开发&quot;">&ZeroWidthSpace;</a></h2>
+<p>官⽅⽂档：</p>
+<ul>
+<li><a href="https://uniapp.dcloud.net.cn/" target="_blank" rel="noreferrer">uts for iOS | uni-app官⽹</a></li>
+<li><a href="https://nativesupport.dcloud.net.cn/NativePlugin/" target="_blank" rel="noreferrer">简介 | uni⼩程序SDK</a></li>
+</ul>
+<p>注意：仅⽀持 iOS11 及以上系统版本</p>
+<CustomImage src='/growth-record/platform/app/sirikit-24.png' /><p>需要在 package.json ⾥添加如下配置：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>1 "ios": {</span></span>
+<span class="line"><span>2 "deploymentTarget": "11.0",</span></span>
+<span class="line"><span>3 "validArchitectures": [</span></span>
+<span class="line"><span>4 "arm64"</span></span>
+<span class="line"><span>5 ],</span></span>
+<span class="line"><span>6 }</span></span></code></pre>
+</div><p>本地离线打包测试：
+配置AppKey：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-25.png' /><p>打包配置：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-26.png' /><p>注意：要有该应⽤的开发权限</p>
+<CustomImage src='/growth-record/platform/app/sirikit-27.png' /><p>编译报错：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-28.png' /><p>取消勾选即可：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-29.png' /><CustomImage src='/growth-record/platform/app/sirikit-30.png' /><p>苹果官⽅管理后台添加应⽤ Siri 能⼒配置：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-31.png' /><p>打包插件不显⽰ build ⽂件问题：<a href="https://juejin.cn/post/7026978788395188237" target="_blank" rel="noreferrer">Xcode 13新建项⽬查看Products⽬录 - 掘⾦</a></p>
+<p>因为编译根⽬录⽂件找不到的问题，每次打包需要⼿动添加对应的⽂件到uni-app⾥⾯去：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-32.png' /><p>⼿动【快捷指令】添加的Siri⽆法触发⾃定义Siri意图指令，需要⼿动添加⽂件映射：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-33.png' /><CustomImage src='/growth-record/platform/app/sirikit-34.png' /><p>添加意图扩展⽂件报错：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-35.png' /><p>解决复制意图扩展⽂件到跟⽬录：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-36.png' /><CustomImage src='/growth-record/platform/app/sirikit-37.png' /><CustomImage src='/growth-record/platform/app/sirikit-38.png' /><CustomImage src='/growth-record/platform/app/sirikit-39.png' /><p>查看打包⽂件地址：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-40.png' /><p>查看具体包⽂件内容：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-41.png' /><p>XBuilder 本地打包 ipa 配置：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-42.png' /><p>HBuilder-云打包报错：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-43.png' /><p>升级替换这个⽂件：在苹果开发者后台下载对应的⽂件替换</p>
+<CustomImage src='/growth-record/platform/app/sirikit-44.png' /><p>下载ipa包到真机iPhone上：
+<a href="https://blog.csdn.net/u011193452/article/details/106385352#:~:text=iPhone%2C%20iPad%20%E5%AE%89%E8%A3%85%20ipa%20%E6%96%87%E4%BB%B6%201%201.%20%E7%88%B1%E6%80%9D%E5%8A%A9%E6%89%8B%E5%AE%98%E7%BD%91%E5%9C%B0%E5%9D%80,3.%20%E6%89%93%E5%BC%80%E5%8A%A9%E6%89%8B%EF%BC%8C%E7%82%B9%E5%87%BB%E4%B8%8B%E8%BD%BD%E6%8C%89%E9%92%AE%E5%A6%82%E5%9B%BE%EF%BC%9A%204%204.%20%E7%82%B9%E5%87%BB%E4%B8%8B%E8%BD%BD%E6%8C%89%E9%92%AE%E5%BC%B9%E5%87%BA%E5%AF%B9%E8%AF%9D%E6%A1%86%EF%BC%8C%E7%82%B9%E5%87%BB%E6%B7%BB%E5%8A%A0%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%EF%BC%8C%E9%80%89%E6%8B%A9.ipa%E6%96%87%E4%BB%B6%EF%BC%8C%E7%82%B9%E6%89%93%E5%BC%80%EF%BC%8C%E6%B7%BB%E5%8A%A0%E5%88%B0%E5%BA%94%E7%94%A8%E5%88%97%E8%A1%A8%E4%B8%AD%EF%BC%8C%E7%82%B9%E5%87%BB%E5%88%97%E8%A1%A8%E4%B8%AD%E5%AE%89%E8%A3%85%E6%8C%89%E9%92%AE%EF%BC%8C%E5%A6%82%E5%9B%BE%EF%BC%9A%205%205.%20%E7%82%B9%E5%87%BB%E5%AE%89%E8%A3%85%E6%8C%89%E9%92%AE%E4%B9%8B%E5%90%8E%EF%BC%8C%E5%BC%80%E5%A7%8B%E5%AE%89%E8%A3%85%E5%88%B0%E6%89%8B%E6%9C%BA%EF%BC%8C%E5%AE%89%E8%A3%85%E8%BF%9B%E5%BA%A6%E6%8F%90%E7%A4%BA%EF%BC%8C%E6%8F%90%E7%A4%BA%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F%EF%BC%8C%E6%AD%A4%E6%97%B6iphone%E6%89%8B%E6%9C%BA%E5%B7%B2%E6%9C%89%E8%AF%A5%E8%BD%AF%E4%BB%B6%EF%BC%8C%E5%AE%8C%E6%88%90%E6%93%8D%E4%BD%9C%E3%80%82" target="_blank" rel="noreferrer">iPhone, iPad 安装 ipa ⽂件_爱思助⼿安装ipa⽂件_Hanyang Li的博客-CSDN博客</a></p>
+<p>IPA 解包及导⼊真机
+<a href="http://dantheman827.github.io/ios-app-signer/" target="_blank" rel="noreferrer">http://dantheman827.github.io/ios-app-signer/</a></p>
+<CustomImage src='/growth-record/platform/app/sirikit-45.png' /><p>将HBuilder⽣成的ipa包进⾏重命名解压（修改后缀格式为：zip）：</p>
+<CustomImage src='/growth-record/platform/app/sirikit-46.png' /><ol>
+<li>传输 ipa 包到真机⼯具：苹果官⽅软件，⽐爱思助⼿安全可靠且⽅便</li>
+</ol>
+<CustomImage src='/growth-record/platform/app/sirikit-47.png' /><h2 id="参考资料" tabindex="-1">参考资料 <a class="header-anchor" href="#参考资料" aria-label="Permalink to &quot;参考资料&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>
+<p>Sirikit 开发：
+• 官⽅：在 iPhone 或 iPad 上创建⾃定快捷指令 ✅
+• 学习：快捷指令库✅
+• ⾯向开发者的 Siri✅
+• 通过 Siri、“快捷指令”App 或“Siri 建议”运⾏快捷指令✅
+• SiriKit官⽅⽂档📖
+• SiriKit框架详细解析（⼀）⸺基本概览（⼀）✅
+• 了解如何借助 Apple SiriKit 将 Siri 与您的应⽤程序集成📖
+• Apple Siri接⼊开发 (⼀)✅
+• iOS开发-SiriKit应⽤✅
+• 玩转iOS开发：iOS 10 新特性《Siri Kit》✅
+• iOS 开发：SiriKit 应⽤⼊⻔
+• Introducing SiriKit Media Intents - WWDC19 - Videos - Apple Developer
+• Introducing Parameters for Shortcuts - WWDC19 - Videos - Apple Developer
+• Introduction to Siri Shortcuts - WWDC18 - Videos - Apple Developer
+• 介绍SiriKit · SiriKit编程指南
+• Simulator Help
+• 创作者的 iOS 独⽴开发指南的⽬录 - 少数派
+• Siri快捷指令 - 掘⾦
+• SiriKit预研
+• <a href="https://medium.com/@WeAreMobile1st/how-to-handle-and-donate-siri-shortcuts%EF%BF%BEea50f2409086" target="_blank" rel="noreferrer">https://medium.com/@WeAreMobile1st/how-to-handle-and-donate-siri-shortcuts￾ea50f2409086</a>
+• <a href="https://developer.apple.com/tutorials/swiftui/creating-and-combining-views" target="_blank" rel="noreferrer">https://developer.apple.com/tutorials/swiftui/creating-and-combining-views</a>
+• Siri，快捷指令以及 SiriKit - 探索 - Apple Developer
+• SiriKit 新变化:让 Intent 更强⼤_普通⽹友的博客-CSDN博客
+• sirikit - o.0...w - 博客园
+• iOS12 Siri Shortcuts详解 - 掘⾦
+• 【腾讯 Bugly ⼲货分享】iOS10 SiriKit QQ 适配详解 - 掘⾦</p>
+</li>
+<li>
+<p>实践⽂档：
+• 爱奇艺iOS深度实践：SiriKit详解应⽤篇
+• SiriKit 编程指南
+• 使⽤SiriKit在iOS的⽤⼾体验设计⽅法 (UX)
+• SiriKit 知⼀⼆ - Siri 捷径从设计到构建（上）
+• 向远公园⽂章系列
+• 阿⾥云社区⽤⼾关于这个教程开发
+• 阿⾥云sirikit⽂章搜索⻚⾯
+• Google 关于 sirikit的开发搜索
+• <a href="https://medium.com/search?q=sirikit" target="_blank" rel="noreferrer">https://medium.com/search?q=sirikit</a>
+• Siri Shortcuts intent 扩展开发
+• <a href="https://www.jianshu.com/u/be22fcd3469d" target="_blank" rel="noreferrer">https://www.jianshu.com/u/be22fcd3469d</a>
+• <a href="https://www.jianshu.com/search?q=sirikit&amp;page=1&amp;type=note" target="_blank" rel="noreferrer">https://www.jianshu.com/search?q=sirikit&amp;page=1&amp;type=note</a>
+• <a href="https://www.jianshu.com/u/0cf7d455eb9e" target="_blank" rel="noreferrer">https://www.jianshu.com/u/0cf7d455eb9e</a>
+• <a href="https://juejin.cn/search" target="_blank" rel="noreferrer">https://juejin.cn/search</a>?
+query=sirikit&amp;utm_source=gold_browser_extension&amp;utm_medium=search&amp;sort=0
+• <a href="https://juejin.cn/user/3227821827957710/posts" target="_blank" rel="noreferrer">https://juejin.cn/user/3227821827957710/posts</a>
+• SiriKit 新变化：让 Intent 更强⼤_intent
+• Xamarin.iOS 中的 SiriKit - Xamarin
+• <a href="https://s.geekbang.org/search/c=0/k=sirikit/t=" target="_blank" rel="noreferrer">https://s.geekbang.org/search/c=0/k=sirikit/t=</a>
+• 知乎 SiriKit 实战
+• <a href="https://www.zhihu.com/search?type=content&amp;q=sirikit" target="_blank" rel="noreferrer">https://www.zhihu.com/search?type=content&amp;q=sirikit</a>
+• <a href="https://zzk.cnblogs.com/s?w=sirikit" target="_blank" rel="noreferrer">https://zzk.cnblogs.com/s?w=sirikit</a>
+• <a href="https://medium.com/appcoda-tutorials/building-custom-siri-shortcut-intent-ui-extension-to%EF%BF%BEdisplay-remote-data-alfian-losari-efe891a44a70" target="_blank" rel="noreferrer">https://medium.com/appcoda-tutorials/building-custom-siri-shortcut-intent-ui-extension-to￾display-remote-data-alfian-losari-efe891a44a70</a></p>
+</li>
+<li>
+<p>Swift 编程开发：
+• SwiftGG
+• <a href="https://swift.gg/" target="_blank" rel="noreferrer">https://swift.gg/</a>
+• The Swift Programming Language (5.9 beta) | Documentation
+• Swift学习笔记
+• Swift知识介绍
+• 调试技巧 - 掘⾦
+• <a href="https://developer.apple.com/documentation/swift" target="_blank" rel="noreferrer">https://developer.apple.com/documentation/swift</a></p>
+</li>
+<li>
+<p>社区讨论：
+• 掘⾦对应ios开发：不想做iOS了；
+• Uni-app QQ群；</p>
+</li>
+<li>
+<p>GitHub demo：
+• <a href="https://github.com/AbMathur/SirikitDemoApp" target="_blank" rel="noreferrer">https://github.com/AbMathur/SirikitDemoApp</a>
+• <a href="https://github.com/domeniconicoli/SiriKitIntentsUIExample" target="_blank" rel="noreferrer">https://github.com/domeniconicoli/SiriKitIntentsUIExample</a>
+• <a href="https://github.com/hanyx1992/SiriKitDemo" target="_blank" rel="noreferrer">https://github.com/hanyx1992/SiriKitDemo</a></p>
+</li>
+<li>
+<p>Xcode ⼯具开发：
+• 1.1 软件简介及准备⼯作 - 少数派
+• Creating an Xcode project for an app | Apple Developer Documentation
+• Xcode⼊⻔秘籍⸺很多iOS开发者都不知道的基本操作
+• 初 识 Xcode · macOS开 发 教 程
+• Xcode - 简体中⽂⽂档 - Apple Developer
+• mac 下 Xcode 真机调试 - 掘⾦
+• iOS⾃制framework总结 - 掘⾦</p>
+</li>
+<li>
+<p>Uni-app 原⽣插件开发资料：
+• ⼋、uni-app 原⽣插件开发04 - 开发原⽣插件
+• ⼀、iOS 中的动态库、静态库和 framework
+• 五年陈的 Weex，聊聊它的过去现在和未来
+• WEEX
+• UNIAPP---IOS端原⽣插件开发实战(⼀) - 掘⾦</p>
+</li>
+</ol>
+]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[自我发展规划觉察]]></title>
