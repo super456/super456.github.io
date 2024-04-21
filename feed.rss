@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Sun, 21 Apr 2024 03:53:04 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 Apr 2024 04:51:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -24084,6 +24084,32 @@ MDN 给出了以下答案</p>
 <li>权限的设计是否存在问题，目前的模式为没有权限 =&gt; 摧毁，采用有权限 =&gt; 生成是否会更加安全？</li>
 <li>前端自身的告警系统很有必要；</li>
 </ol>
+<h2 id="编译报错问题-you-are-using-the-runtime-only-build-of-vue-where-the-template-compiler-is-not-available" tabindex="-1">编译报错问题：You are using the runtime-only build of Vue where the template compiler is not available <a class="header-anchor" href="#编译报错问题-you-are-using-the-runtime-only-build-of-vue-where-the-template-compiler-is-not-available" aria-label="Permalink to &quot;编译报错问题：You are using the runtime-only build of Vue where the template compiler is not available&quot;">&ZeroWidthSpace;</a></h2>
+<p>相信很多初学者使用vue-cli2.x初始化脚手架项目的时候或者webpack配置的时候会遇到这个问题：</p>
+<CustomImage src='/growth-record/frame/vue/vue-question-06.png' /><p>一开始初始化项目配置的时候，有两个运行环境配置的版本：Compiler版本、Runtime版本。</p>
+<p>简单说一下这两个版本的区别：</p>
+<ol>
+<li>
+<p>当对template模板内容编译是需要对字符串进行模板渲染或者可以绑定的html对象作为模板进行渲染的方式，就需要使用Compiler版本。示例如下：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span> new Vue({</span></span>
+<span class="line"><span>     el:'#vue-app',</span></span>
+<span class="line"><span>     template:'&#x3C;div>&#x3C;h1>{{test}}&#x3C;/h1>&#x3C;/div>',</span></span>
+<span class="line"><span>     data:{</span></span>
+<span class="line"><span>     test:'hello'</span></span>
+<span class="line"><span>     }</span></span>
+<span class="line"><span> });</span></span></code></pre>
+</div></li>
+<li>
+<p>如果使用vue-loader加载.vue文件时（组件文件），webpack在打包对模板进行了渲染，就需要Runtime版本。示例如下：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>new Vue({</span></span>
+<span class="line"><span>  el: '#app',</span></span>
+<span class="line"><span>  components: { App },</span></span>
+<span class="line"><span>  template: '&#x3C;App/>'</span></span>
+<span class="line"><span>})</span></span></code></pre>
+</div></li>
+</ol>
+<p>从Compiler版本修改为Runtime版本。只需如示代码：</p>
+<CustomImage src='/growth-record/frame/vue/vue-question-07.png' /><p>添加一行代码：<code>'vue$': 'vue/dist/vue.esm.js'</code> ，然后重新运行编译就可以了</p>
 ]]></content:encoded>
         </item>
         <item>
@@ -26159,6 +26185,147 @@ deep:true
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Vue-CLI2 中的 Vue-Router 和 Vue-resource 实战]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/router-resource.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/router-resource.html</guid>
+            <pubDate>Mon, 09 Jul 2018 20:04:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="vue-cli2-中的-vue-router-和-vue-resource-实战" tabindex="-1">Vue-CLI2 中的 Vue-Router 和 Vue-Resource 实战 <a class="header-anchor" href="#vue-cli2-中的-vue-router-和-vue-resource-实战" aria-label="Permalink to &quot;Vue-CLI2 中的 Vue-Router 和 Vue-Resource 实战&quot;">&ZeroWidthSpace;</a></h1>
+<p><strong>简单记录一下这两个插件的使用方法，写了一个demo，方便理解及应用。</strong></p>
+<h3 id="一-安装vue-cli2-x脚手架" tabindex="-1">（一）安装vue-cli2.x脚手架 <a class="header-anchor" href="#一-安装vue-cli2-x脚手架" aria-label="Permalink to &quot;（一）安装vue-cli2.x脚手架&quot;">&ZeroWidthSpace;</a></h3>
+<p>如果还没安装的，或安装过程不熟的，可以参考这篇文章教程，写的很详细——<a href="https://www.jianshu.com/p/1626b8643676/" target="_blank" rel="noreferrer">Vue2.0史上最全入坑教程（上）—— 搭建Vue脚手架（vue-cli）</a>，这个文章作者真的很用心，向他学习。</p>
+<h3 id="二-安装vue-router和vue-resource插件" tabindex="-1">（二）安装vue-router和vue-resource插件 <a class="header-anchor" href="#二-安装vue-router和vue-resource插件" aria-label="Permalink to &quot;（二）安装vue-router和vue-resource插件&quot;">&ZeroWidthSpace;</a></h3>
+<p>如果在安装脚手架的时候安装了vue-router，可以直接跳转到安装vue-resource。
+如果不是的，可以使用命令：<code>cd &lt;项目文件夹&gt;</code> 切换到项目文件夹路径下，然后使用命令行安装：<code>npm install vue-router --save</code> 和<code>npm install vue-resource --save</code></p>
+<p>这里说明一下安装<code>npm install 插件 +[参数]</code>，表示的意思：
+1.使用：<code>npm install 插件</code>   ：会把这个插件安装到node_modules目录中，但不会修改package.json内容；</p>
+<p>2.<code>npm install 插件 --save</code>  ：在项目发布上线之后还会依赖用到的插件，没有这个插件，项目不能正常的运行，自动更改package.json内容  ；</p>
+<p>3.<code>npm install 插件 --save-dev </code>：把插件安装到开发依赖中，项目上线之后不会用到的插件，针对个别插件，比如说这个“babel-loader”，是在项目编译解析完成后发布就没用到了的，自动更改package.json内容；</p>
+<h3 id="三-使用vue-router-vue-resource写一个跳转请求页面数据的demo" tabindex="-1">（三）使用vue-router+vue-resource写一个跳转请求页面数据的demo <a class="header-anchor" href="#三-使用vue-router-vue-resource写一个跳转请求页面数据的demo" aria-label="Permalink to &quot;（三）使用vue-router+vue-resource写一个跳转请求页面数据的demo&quot;">&ZeroWidthSpace;</a></h3>
+<p>1.先看一下安装脚手架的时候安装的路由界面及配置：</p>
+<CustomImage src='/growth-record/frame/vue/router-01.png' /><p>2.如果一开始没有的安装vue-router后自己手动安装的，可以参考这个main.js 和router文件夹的index.js配置的配置代码如下：
+main.js代码：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>import Vue from 'vue'</span></span>
+<span class="line"><span>import App from './App'</span></span>
+<span class="line"><span>import router from './router'//引入路由指定文件</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Vue.config.productionTip = false</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/* eslint-disable no-new */</span></span>
+<span class="line"><span>new Vue({</span></span>
+<span class="line"><span>  el: '#app',</span></span>
+<span class="line"><span>  router,//实例化，表示会使用</span></span>
+<span class="line"><span>  render: h => h(App)//vue2.0写法</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  //以下是vue1.0的写法</span></span>
+<span class="line"><span>  //components: { App },//注册组件信息</span></span>
+<span class="line"><span> // template: '&#x3C;App/>'//简写的模板调用组件的标签</span></span>
+<span class="line"><span>})</span></span></code></pre>
+</div><p>如果对代码中的<code>render: h =&gt; h(App)//vue2.0写法</code> 不理解的可以查看我之前写的文章——<a href="https://blog.csdn.net/qq_35324453/article/details/80961128" target="_blank" rel="noreferrer">vue-cli2.x中的render: h =&gt; h(App)解析</a></p>
+<p>router文件夹的index.js代码：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>import Vue from 'vue'</span></span>
+<span class="line"><span>import Router from 'vue-router'//引入路由配置的模块</span></span>
+<span class="line"><span>import HelloWorld from '@/components/HelloWorld'//引入需要路由转址的路径</span></span>
+<span class="line"><span>import Home from '@/components/Home'//引入需要路由转址的路径</span></span>
+<span class="line"><span>import VueResource from 'vue-resource'//引入vue-resource插件http请求</span></span>
+<span class="line"><span>//下面这种方法引用也可以</span></span>
+<span class="line"><span>// import HelloWorld from '../components/HelloWorld'//引入需要路由转址的路径</span></span>
+<span class="line"><span>// import Home from '../components/Home'//引入需要路由转址的路径</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Vue.use(Router)//声明引用，全局使用</span></span>
+<span class="line"><span>Vue.use(VueResource)//声明引用，全局使用</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>export default new Router({</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  // 注意当有多个路由的时候默认使用第一个路由地址</span></span>
+<span class="line"><span>  routes: [//注意routers是一个对象数组</span></span>
+<span class="line"><span>    {//需要跳转的组件需要import引进</span></span>
+<span class="line"><span>      path: '/',//路由的地址，此时表示根路径</span></span>
+<span class="line"><span>      name: 'HelloWorld',</span></span>
+<span class="line"><span>      component: HelloWorld</span></span>
+<span class="line"><span>    },</span></span>
+<span class="line"><span>    {//需要跳转的组件需要import引进</span></span>
+<span class="line"><span>      //路由的地址，此时表示根路径。注意第二个路由地址这里需要添加上组件名</span></span>
+<span class="line"><span>      path: '/Home',</span></span>
+<span class="line"><span>      name: 'Home',</span></span>
+<span class="line"><span>      component: Home</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>  ],</span></span>
+<span class="line"><span>  mode:"history"//去掉url链接中的#符号</span></span>
+<span class="line"><span>})</span></span></code></pre>
+</div><p>3.添加一个组件Home.vue，添加位置如下：</p>
+<CustomImage src='/growth-record/frame/vue/router-02.png' /><p>组件代码为：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>&#x3C;template></span></span>
+<span class="line"><span>  &#x3C;div class="hello"></span></span>
+<span class="line"><span>    &#x3C;h1>{{ msg }}&#x3C;/h1></span></span>
+<span class="line"><span>    test</span></span>
+<span class="line"><span>    &#x3C;p>以下是获取http请求的数据内容&#x3C;/p></span></span>
+<span class="line"><span>    &#x3C;ul></span></span>
+<span class="line"><span>        &#x3C;li v-for="user in users">{{user.id}}. {{user.name}}&#x3C;/li></span></span>
+<span class="line"><span>    &#x3C;/ul></span></span>
+<span class="line"><span>  &#x3C;/div></span></span>
+<span class="line"><span>&#x3C;/template></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;script></span></span>
+<span class="line"><span>export default {</span></span>
+<span class="line"><span>  name: 'home',</span></span>
+<span class="line"><span>  data () {</span></span>
+<span class="line"><span>    return {</span></span>
+<span class="line"><span>      users:[],</span></span>
+<span class="line"><span>      msg: 'hello Home'</span></span>
+<span class="line"><span>    //   使用网络接口</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  created(){</span></span>
+<span class="line"><span>    //   http请求,请求成功调用.then()函数，并将数据传给data</span></span>
+<span class="line"><span>      this.$http.get("http://jsonplaceholder.typicode.com/users").then((data)=>{</span></span>
+<span class="line"><span>        //   console.log(data);//请求成功的数据</span></span>
+<span class="line"><span>        this.users=data.body;//将data数据的的body内容复制给定义的users数据</span></span>
+<span class="line"><span>      })</span></span>
+<span class="line"><span>  }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>&#x3C;/script></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;!-- Add "scoped" attribute to limit CSS to this component only --></span></span>
+<span class="line"><span>&#x3C;style scoped></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;/style></span></span></code></pre>
+</div><p>4.需要在根组件App.vue下添加一下引入组件的内容：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>&#x3C;template></span></span>
+<span class="line"><span>  &#x3C;div id="app"></span></span>
+<span class="line"><span>    &#x3C;img src="./assets/logo.png"></span></span>
+<span class="line"><span>    &#x3C;!--注意a标签会重新加载页面，相当于刷新页面--></span></span>
+<span class="line"><span>    &#x3C;ul></span></span>
+<span class="line"><span>      &#x3C;p>--注意a标签会重新加载页面，相当于刷新页面--&#x3C;/p></span></span>
+<span class="line"><span>      &#x3C;li>&#x3C;a href="/">HelloWorld&#x3C;/a>&#x3C;/li></span></span>
+<span class="line"><span>      &#x3C;li>&#x3C;a href="/Home">Home&#x3C;/a>&#x3C;/li></span></span>
+<span class="line"><span>      &#x3C;p>此处使用router-link，不会刷新页面，相当于局部刷新&#x3C;/p></span></span>
+<span class="line"><span>      &#x3C;li>&#x3C;router-link to="/">HelloWorld&#x3C;/router-link>&#x3C;/li></span></span>
+<span class="line"><span>      &#x3C;li>&#x3C;router-link to="/Home">Home页面&#x3C;/router-link>&#x3C;/li></span></span>
+<span class="line"><span>    &#x3C;/ul></span></span>
+<span class="line"><span>    &#x3C;router-view/></span></span>
+<span class="line"><span>  &#x3C;/div></span></span>
+<span class="line"><span>&#x3C;/template></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;script></span></span>
+<span class="line"><span>export default {</span></span>
+<span class="line"><span>  name: 'App'</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>&#x3C;/script></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;style></span></span>
+<span class="line"><span>#app {</span></span>
+<span class="line"><span>  font-family: 'Avenir', Helvetica, Arial, sans-serif;</span></span>
+<span class="line"><span>  -webkit-font-smoothing: antialiased;</span></span>
+<span class="line"><span>  -moz-osx-font-smoothing: grayscale;</span></span>
+<span class="line"><span>  text-align: center;</span></span>
+<span class="line"><span>  color: #2c3e50;</span></span>
+<span class="line"><span>  margin-top: 60px;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>&#x3C;/style></span></span></code></pre>
+</div><h3 id="四-运行结果" tabindex="-1">（四）运行结果 <a class="header-anchor" href="#四-运行结果" aria-label="Permalink to &quot;（四）运行结果&quot;">&ZeroWidthSpace;</a></h3>
+<CustomImage src='/growth-record/frame/vue/router-03.gif' />]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Vue-CLI2 跨域请求 Demo（fetch、axios、proxyTable）]]></title>
             <link>https://super456.github.io/posts/growth-record/frame/vue/cross-domain-request.html</link>
             <guid>https://super456.github.io/posts/growth-record/frame/vue/cross-domain-request.html</guid>
@@ -26305,6 +26472,891 @@ deep:true
 <span class="line"><span>&#x3C;/style></span></span></code></pre>
 </div><p>4.运行结果：</p>
 <CustomImage src='/growth-record/frame/vue/cross-03.png' />]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vue-CLI2 中的 render: h => h(App) 解析]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/render-app.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/render-app.html</guid>
+            <pubDate>Sun, 08 Jul 2018 20:08:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="vue-cli2-中的-render-h-h-app-解析" tabindex="-1">Vue-CLI2 中的 render: h =&gt; h(App) 解析 <a class="header-anchor" href="#vue-cli2-中的-render-h-h-app-解析" aria-label="Permalink to &quot;Vue-CLI2 中的 render: h =&gt; h(App) 解析&quot;">&ZeroWidthSpace;</a></h1>
+<p><strong>对于这个，可能es6语法不熟的人很容易产生懵懂，因为我也不熟，所以记录一下，毕竟这也是个重要的知识点。</strong></p>
+<h3 id="一-遇到的问题代码" tabindex="-1">（一）遇到的问题代码： <a class="header-anchor" href="#一-遇到的问题代码" aria-label="Permalink to &quot;（一）遇到的问题代码：&quot;">&ZeroWidthSpace;</a></h3>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>new Vue({</span></span>
+<span class="line"><span>  el: '#app',</span></span>
+<span class="line"><span>  router,//实例化，表示会使用</span></span>
+<span class="line"><span>  render: h => h(App)//vue2.0写法</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  //以下是vue1.0的写法</span></span>
+<span class="line"><span>  //components: { App },//注册组件信息</span></span>
+<span class="line"><span> // template: '&#x3C;App/>'//简写的模板调用组件的标签</span></span>
+<span class="line"><span>})</span></span></code></pre>
+</div><p>官方的解释很全面但是不是很容易理解：<a href="https://cn.vuejs.org/v2/guide/render-function.html#%E6%B7%B1%E5%85%A5-data-%E5%AF%B9%E8%B1%A1" target="_blank" rel="noreferrer">createElement 参数</a></p>
+<h3 id="二-代码分解" tabindex="-1">（二）代码分解 <a class="header-anchor" href="#二-代码分解" aria-label="Permalink to &quot;（二）代码分解&quot;">&ZeroWidthSpace;</a></h3>
+<p>将<code>render: h =&gt; h(App)</code> 根据es6语法分解为：</p>
+<h1 id="render-h-h-app" tabindex="-1"><code>render: h =&gt; h(App);</code> <a class="header-anchor" href="#render-h-h-app" aria-label="Permalink to &quot;`render: h =&gt; h(App);`&quot;">&ZeroWidthSpace;</a></h1>
+<p>等价于</p>
+<h1 id="render-h-return-h-app" tabindex="-1"><code>render: h =&gt; {return h(App);}</code> <a class="header-anchor" href="#render-h-return-h-app" aria-label="Permalink to &quot;`render: h =&gt; {return h(App);}`&quot;">&ZeroWidthSpace;</a></h1>
+<p>等价于</p>
+<h1 id="render-function-h-return-h-app" tabindex="-1"><code> render: function(h) { return h(App);}</code> <a class="header-anchor" href="#render-function-h-return-h-app" aria-label="Permalink to &quot;` render: function(h) { return h(App);}`&quot;">&ZeroWidthSpace;</a></h1>
+<h1 id="等价于-render-function-createelement-return-createelement-app" tabindex="-1">等价于
+<code> render: function(createElement) { return createElement(App);  }</code> <a class="header-anchor" href="#等价于-render-function-createelement-return-createelement-app" aria-label="Permalink to &quot;等价于
+` render: function(createElement) { return createElement(App);  }`&quot;">&ZeroWidthSpace;</a></h1>
+<h3 id="三-解析一下这个vue2-0渲染过程" tabindex="-1">（三）解析一下这个vue2.0渲染过程： <a class="header-anchor" href="#三-解析一下这个vue2-0渲染过程" aria-label="Permalink to &quot;（三）解析一下这个vue2.0渲染过程：&quot;">&ZeroWidthSpace;</a></h3>
+<p>render函数用来渲染视图，也提供给<code>el</code>挂载，所以使用render函数就是为了页面显示出来。</p>
+<p>1.render 方法是一个函数，在接受传入的参数 h 函数后，返回 <code>h(App)</code> 的函数调用结果。</p>
+<p>2.在创建 vue 实例时，通过调用 render 方法来渲染实例页面的 DOM 结构。</p>
+<p>3.当vue 在调用 render 方法时，会传入一个 createElement 函数作为参数，h 的实参是 createElement 函数，然后 createElement 会以 <code>App</code>为参数进行调用。</p>
+<h3 id="四-写一个createelement函数的demo" tabindex="-1">（四）写一个createElement函数的demo <a class="header-anchor" href="#四-写一个createelement函数的demo" aria-label="Permalink to &quot;（四）写一个createElement函数的demo&quot;">&ZeroWidthSpace;</a></h3>
+<p>创建一个组件，使用createElement函数调用</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>&#x3C;!DOCTYPE html></span></span>
+<span class="line"><span>&#x3C;html lang="en"></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;head></span></span>
+<span class="line"><span>    &#x3C;meta charset="UTF-8"></span></span>
+<span class="line"><span>    &#x3C;title>createElement方法应用&#x3C;/title></span></span>
+<span class="line"><span>    &#x3C;script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">&#x3C;/script></span></span>
+<span class="line"><span>&#x3C;/head></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;body></span></span>
+<span class="line"><span>    &#x3C;p>下面会使用createElement方法创建DOM结点&#x3C;/p></span></span>
+<span class="line"><span>    &#x3C;div id="vue-app">&#x3C;/div></span></span>
+<span class="line"><span>    &#x3C;script type="text/javascript"></span></span>
+<span class="line"><span>        var app=Vue.component('app',{</span></span>
+<span class="line"><span>            template:'&#x3C;h1>test&#x3C;/h1>'</span></span>
+<span class="line"><span>        })</span></span>
+<span class="line"><span>        new Vue({</span></span>
+<span class="line"><span>            el: '#vue-app',</span></span>
+<span class="line"><span>            render: function (createElement) {</span></span>
+<span class="line"><span>                // return createElement('h1', '一则头条');//这个方式也可以</span></span>
+<span class="line"><span>                return createElement(app);//使用调用组件</span></span>
+<span class="line"><span>            },</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>        });</span></span>
+<span class="line"><span>    &#x3C;/script></span></span>
+<span class="line"><span>&#x3C;/body></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;/html></span></span></code></pre>
+</div><p>运行结果是：</p>
+<CustomImage src='/growth-record/frame/vue/render-app.png' />]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vue2 生命周期的理解与应用]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/vue2-life-cycle.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/vue2-life-cycle.html</guid>
+            <pubDate>Sun, 08 Jul 2018 20:08:08 GMT</pubDate>
+            <description><![CDATA[# Vue2 生命周期的理解与应用
+**在学习 Vue2.x 入门后，开始慢慢熟悉 Vue 的模式和开发脚手架项目实践过程中，需要对生命周期钩子函数一定的理解，多少会用到这些钩子函数，根据自己的理解写了一下，欢迎指正或学习交流。**
+
+### （一）vue2.x生命周期图
+<CustomImage src='/growth-record/frame/vue/vue2-life-01.png' />
+
+### （二）生命周期钩子函数说明
+
+| 生命周期钩子函数     | 	说明    |
+|:]]></description>
+            <content:encoded><![CDATA[<h1 id="vue2-生命周期的理解与应用" tabindex="-1">Vue2 生命周期的理解与应用 <a class="header-anchor" href="#vue2-生命周期的理解与应用" aria-label="Permalink to &quot;Vue2 生命周期的理解与应用&quot;">&ZeroWidthSpace;</a></h1>
+<p><strong>在学习 Vue2.x 入门后，开始慢慢熟悉 Vue 的模式和开发脚手架项目实践过程中，需要对生命周期钩子函数一定的理解，多少会用到这些钩子函数，根据自己的理解写了一下，欢迎指正或学习交流。</strong></p>
+<h3 id="一-vue2-x生命周期图" tabindex="-1">（一）vue2.x生命周期图 <a class="header-anchor" href="#一-vue2-x生命周期图" aria-label="Permalink to &quot;（一）vue2.x生命周期图&quot;">&ZeroWidthSpace;</a></h3>
+<CustomImage src='/growth-record/frame/vue/vue2-life-01.png' /><h3 id="二-生命周期钩子函数说明" tabindex="-1">（二）生命周期钩子函数说明 <a class="header-anchor" href="#二-生命周期钩子函数说明" aria-label="Permalink to &quot;（二）生命周期钩子函数说明&quot;">&ZeroWidthSpace;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">生命周期钩子函数</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">beforeCreate</td>
+<td style="text-align:left">在实例初始化之后，数据观测(data observer) 和 event/watcher 事件配置之前被调用。</td>
+</tr>
+<tr>
+<td style="text-align:left">created</td>
+<td style="text-align:left">实例已经创建完成之后被调用。在这一步，实例已完成以下的配置：数据观测(data observer)属性初始化和方法的运算， watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。</td>
+</tr>
+<tr>
+<td style="text-align:left">beforeMount</td>
+<td style="text-align:left">在挂载开始之前被调用：相关的 render 函数首次被调用。</td>
+</tr>
+<tr>
+<td style="text-align:left">mounted</td>
+<td style="text-align:left"><code>el</code>被新创建的 <code>vm.$el</code> 替换，并挂载到实例上去之后调用该钩子。如果 root实例挂载了一个文档内元素，当mounted被调用时 <code>vm.$el</code> 也在文档内。</td>
+</tr>
+<tr>
+<td style="text-align:left">beforeUpdate</td>
+<td style="text-align:left">数据更新时调用，发生在虚拟 DOM 重新渲染和打补丁之前。你可以在这个钩子中进一步地更改状态，这不会触发附加的重渲染过程。</td>
+</tr>
+<tr>
+<td style="text-align:left">updated</td>
+<td style="text-align:left">由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。当这个钩子被调用时，组件 DOM 已经更新，所以你现在可以执行依赖于 DOM 的操作。</td>
+</tr>
+<tr>
+<td style="text-align:left">beforeDestroy</td>
+<td style="text-align:left">实例销毁之前调用。在这一步，实例仍然完全可用。</td>
+</tr>
+<tr>
+<td style="text-align:left">destroyed</td>
+<td style="text-align:left">Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="三-代码演示" tabindex="-1">（三）代码演示 <a class="header-anchor" href="#三-代码演示" aria-label="Permalink to &quot;（三）代码演示&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>
+<p>通过嵌套组件的页面加载查看显示顺序：
+代码如下(可直接复制使用)：</p>
+<div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;!</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">DOCTYPE</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> html</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">html</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> lang</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"en"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">head</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">meta</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> charset</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"UTF-8"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">meta</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"viewport"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> content</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"width=device-width, initial-scale=1.0"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">meta</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> http-equiv</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"X-UA-Compatible"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> content</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"ie=edge"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">title</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>vue生命周期的理解应用&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">title</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> src</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"https://cdn.jsdelivr.net/npm/vue/dist/vue.js"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">head</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">body</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"vue-app"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>以下是调用组件信息&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"test"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">keep-alive</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">keep-alive</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">test-component</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-bind:msg</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"msg"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-on:msgchange</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"updateMsg($event)"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">test-component</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">keep-alive</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">body</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> child </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         props: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'msg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         template: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'&#x3C;button v-on:click="changeChuanzhi">点击向父组件事件传值--{{msg}}&#x3C;/button>'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         methods: {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             changeChuanzhi</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">                 this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">$emit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"msgchange"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"子组件向父组件传值"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">); </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//注意两个参数：第一个参数是事件名，第二个参数是传递的内容</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         deactivated</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'component deactivated!'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         activated</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'component activated'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     };</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     new</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Vue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         el: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#vue-app'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         data: {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             msg: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'父亲给儿子的信息'</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         methods: {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             updateMsg</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">msg</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">                 this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.msg </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> msg;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         components: {</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">             'test-component'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: child</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">         //生明周期示例</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         beforeCreate</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"组件实例化之前执行的函数：beforeCreate()"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         created</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"组件实例化完毕，但页面还未显示出来:created()"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         beforeMount</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"组件挂载前，页面仍未展示，但虚拟DOM已经配置:beforeMount()"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         mounted</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"组件挂载后，此方法执行后，页面显示:mounted()"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         beforeUpdate</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"组件更新前，页面仍未更新，但虚拟DOM已经配置:beforeUpdate()"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         updated</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"组件更新后，此方法执行后，页面显示:updated()"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         beforeDestroy</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"组件销毁前:beforeDestroy()"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         destroyed</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"组件销毁:destroyed()"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     })</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">html</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><p>运行结果：</p>
+</li>
+</ol>
+<CustomImage src='/growth-record/frame/vue/vue2-life-02.gif' /><ol start="2">
+<li>
+<p>通过控制台查看页面加载显示顺序日志：
+代码如下（可直接复制使用）：</p>
+<div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;!</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">DOCTYPE</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> html</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">html</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> lang</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"en"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">head</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">meta</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> charset</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"UTF-8"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">meta</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"viewport"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> content</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"width=device-width, initial-scale=1.0"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">meta</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> http-equiv</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"X-UA-Compatible"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> content</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"ie=edge"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">title</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>vue生命周期的理解应用&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">title</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> src</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"https://cdn.jsdelivr.net/npm/vue/dist/vue.js"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">head</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">body</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"vue-app"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>以下是调用组件信息&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> class</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"test"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>默认显示的数据：{{msg}}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">test-component</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-bind:msg</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"msg"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-on:msgchange</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"updateMsg($event)"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">test-component</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">body</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> child </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         props: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'msg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         data</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">             return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">                 childtofather: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'子组件向父组件传值'</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         template: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'&#x3C;button v-on:click="changeChuanzhi">点击向父组件事件传值--{{msg}}&#x3C;/button>'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         methods: {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             changeChuanzhi</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">                 this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">$emit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"msgchange"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.childtofather); </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//注意两个参数：第一个参数是事件名，第二个参数是传递的内容</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     };</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> app </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=new</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Vue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         el: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#vue-app'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         data: {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             msg: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'父亲给儿子的信息'</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         methods: {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             updateMsg</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">msg</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">                 this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.msg </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> msg;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         components: {</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">             'test-component'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: child</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">         //生明周期示例</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         beforeCreate</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">             // alert("组件实例化之前执行的函数：beforeCreate()");</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">group</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'beforeCreate 创建前状态===============》'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">             var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> state1 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'el'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'data'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$data,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'msg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.msg</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(state1);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         created</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">             // alert("组件实例化完毕，但页面还未显示出来:created()");</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">group</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'created 创建完毕状态===============》'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">             var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> state2 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'el'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'data'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$data,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'msg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.msg</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(state2);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         beforeMount</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">             // alert("组件挂载前，页面仍未展示，但虚拟DOM已经配置:beforeMount()");</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">group</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'beforeMount 挂载前状态===============》'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">             var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> state3 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'el'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'data'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$data,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'msg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.msg</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(state3);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         mounted</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">             // alert("组件挂载后，此方法执行后，页面显示:mounted()");</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">group</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'mounted 挂载结束状态===============》'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">             var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> state4 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'el'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'data'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$data,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'msg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.msg</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(state4);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         beforeUpdate</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">             // alert("组件更新前，页面仍未更新，但虚拟DOM已经配置:beforeUpdate()");</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">group</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'beforeUpdate 更新前状态===============》'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">             var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> state5 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'el'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'data'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$data,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'msg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.msg</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(state5);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">             debugger</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         updated</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">             // alert("组件更新后，此方法执行后，页面显示:updated()");</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">group</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'updated 更新完成状态===============》'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">             var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> state6 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'el'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'data'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$data,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'msg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.msg</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(state6);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         beforeDestroy</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">             // alert("组件销毁前:beforeDestroy()");</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">group</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'beforeDestroy 销毁前状态===============》'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">             var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> state7 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'el'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'data'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$data,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'msg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.msg</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(state7);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         destroyed</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">             // alert("组件销毁:destroyed()");</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">group</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'destroyed 销毁完成状态===============》'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">             var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> state8 </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'el'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'data'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$data,</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">                 'msg'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.msg</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$el);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(state8);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         },</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     })</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">html</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><p>简单说明一下结构：
+（1）创建了一个 Vue 根实例命名为 vue-app，将其挂载到页面 id 为 vue-app 的 dom 元素上。
+（2）局部注册的一个组件 child 并在根实例中将其注册使其可以在根实例的作用域中使用。
+（3）将子组件用 <code>&lt;keep-alive&gt;</code> 包裹，为接下来的测试作准备。
+（4）打开开发者工具的控制台查看结果：</p>
+</li>
+</ol>
+<CustomImage src='/growth-record/frame/vue/vue2-life-03.png' /><h4 id="结果分析" tabindex="-1">结果分析 <a class="header-anchor" href="#结果分析" aria-label="Permalink to &quot;结果分析&quot;">&ZeroWidthSpace;</a></h4>
+<p>1.beforeCreate 执行时：data和el均未初始化，值为：undefined；</p>
+<CustomImage src='/growth-record/frame/vue/vue2-life-04.png' /><p>2.created 执行时：Vue 实例观察的数据对象 data 已经配置好，已经可以得到 <code>vue-app.msg</code> 的值，但 Vue 实例使用的根 DOM 元素 el 还未初始化；</p>
+<CustomImage src='/growth-record/frame/vue/vue2-life-05.png' /><p>3.beforeMount 执行时：data 和 el 均已经初始化，但从 <code>{{msg}}</code> 等页面展示数据可以看出此时 el 并没有渲染进数据，el 的值为“虚拟” DOM 的元素节点；</p>
+<CustomImage src='/growth-record/frame/vue/vue2-life-06.png' /><p>4.mounted 执行时：此时 el 已经渲染完成并挂载到实例上，页面基本显示完成；</p>
+<CustomImage src='/growth-record/frame/vue/vue2-life-07.png' /><p>5.beforeUpdate 执行时：会更新当前组件数据，但未在页面渲染出来；</p>
+<CustomImage src='/growth-record/frame/vue/vue2-life-08.png' /><p>6.updated 执行时：会更新当前组件数据，并在页面渲染出来；</p>
+<CustomImage src='/growth-record/frame/vue/vue2-life-09.png' /><p>7.beforeDestroy 和 destroyed 执行时：Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。注意：这里的销毁并不指代'抹去'，而是表示'解绑'。</p>
+<CustomImage src='/growth-record/frame/vue/vue2-life-10.png' /><p>验证一下，控制台输入：<code>app.msg='super456'</code> 页面 <code>{{msg}}</code> 并没有显示出来，结果显示：</p>
+<CustomImage src='/growth-record/frame/vue/vue2-life-11.png' /><h3 id="四-一些钩子函数应用" tabindex="-1">（四）一些钩子函数应用 <a class="header-anchor" href="#四-一些钩子函数应用" aria-label="Permalink to &quot;（四）一些钩子函数应用&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>beforeCreate 钩子中可以进行 loading 之类的动画加载；</li>
+<li>在 created 钩子中可以对 data 数据进行操作，这个时候可以进行 ajax 请求将返回的数据赋给 data，还可以进行网络接口的请求操作；</li>
+<li>在 mounted 钩子对挂载的 dom 进行操作，也可以进行后台获取数据操作；</li>
+</ol>
+<h3 id="五-文献参考" tabindex="-1">（五）文献参考 <a class="header-anchor" href="#五-文献参考" aria-label="Permalink to &quot;（五）文献参考&quot;">&ZeroWidthSpace;</a></h3>
+<p><em>特别感谢：作者：hxgzj 的<a href="https://segmentfault.com/a/1190000010336178" target="_blank" rel="noreferrer">关于Vue.js2.0生命周期的研究与理解</a> 这篇文章分析的很详细，看完后参考写了一个案例出来的。内容中也引用了很多。</em></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vue2 基础知识点（一）]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/vue2-basics-knowledge.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/vue2-basics-knowledge.html</guid>
+            <pubDate>Sat, 07 Jul 2018 20:04:01 GMT</pubDate>
+            <description><![CDATA[# Vue2 基础知识点（一）
+**本文针对自己学习官方文档时，总结一些易容易混淆的知识点做一下记录。欢迎指正或学习交流。**
+
+### （一）常用基础知识点
+
+1. `v-on:click=''`、`@click=''`、`:click=''` 三种写法；
+ 注意函数调用：直接使用双花括号调用函数是要使用函数名+括号，其他直接使用函数名即可，或使用函数名+括号（click 事件中）注意传参的函数必须带括号，可以不带参数，不然会报错对象空值；
+
+2.  `v-if=''` 条件渲染与`v-show=''` 的区别：`v-if` 条件：不存在不会占位空间不会被渲染挂载；`v-show` 为真时，去掉 `display：none`，为假时显示`display：none`。默认会占用空间，会被渲染挂载。
+
+3.  `v-for=''` 可以通过两组方式遍历数组（也可以遍历对象）：一种是通过数组下标；另一种是循环遍历；
+  `v-for='user in users' 或 v-for='(user,index) in users'` 第二个参数是数组索引值；
+
+```html
+<p>v-for还可以渲染div</p>
+<div v-for='(user,index) in users'>
+  <h3>{{index+1}}</h3>
+  <span>{{user.name}}]]></description>
+            <content:encoded><![CDATA[<h1 id="vue2-基础知识点-一" tabindex="-1">Vue2 基础知识点（一） <a class="header-anchor" href="#vue2-基础知识点-一" aria-label="Permalink to &quot;Vue2 基础知识点（一）&quot;">&ZeroWidthSpace;</a></h1>
+<p><strong>本文针对自己学习官方文档时，总结一些易容易混淆的知识点做一下记录。欢迎指正或学习交流。</strong></p>
+<h3 id="一-常用基础知识点" tabindex="-1">（一）常用基础知识点 <a class="header-anchor" href="#一-常用基础知识点" aria-label="Permalink to &quot;（一）常用基础知识点&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>
+<p><code>v-on:click=''</code>、<code>@click=''</code>、<code>:click=''</code> 三种写法；
+注意函数调用：直接使用双花括号调用函数是要使用函数名+括号，其他直接使用函数名即可，或使用函数名+括号（click 事件中）注意传参的函数必须带括号，可以不带参数，不然会报错对象空值；</p>
+</li>
+<li>
+<p><code>v-if=''</code> 条件渲染与<code>v-show=''</code> 的区别：<code>v-if</code> 条件：不存在不会占位空间不会被渲染挂载；<code>v-show</code> 为真时，去掉 <code>display：none</code>，为假时显示<code>display：none</code>。默认会占用空间，会被渲染挂载。</p>
+</li>
+<li>
+<p><code>v-for=''</code> 可以通过两组方式遍历数组（也可以遍历对象）：一种是通过数组下标；另一种是循环遍历；
+<code>v-for='user in users' 或 v-for='(user,index) in users'</code> 第二个参数是数组索引值；</p>
+</li>
+</ol>
+<div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>v-for还可以渲染div&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'(user,index) in users'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">h3</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>{{index+1}}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">h3</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>{{user.name}}---{{user.age}}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>v-for使用template标签，这个标签不像div一样会被渲染出来，只渲染template里面的标签&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'(user,index) in users'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">h3</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>{{index+1}}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">h3</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>{{user.name}}---{{user.age}}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>遍历数组里面的对象，遍历两次&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'(user,index) in users'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"(item,key) in user"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">h5</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>{{item}}---{{key}}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">h5</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><ol start="4">
+<li>数据双向绑定的两种方法：</li>
+</ol>
+<div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>双向数据绑定ref/$refs示例：input/select/textarea&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">""</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>姓名&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">label</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">&#x3C;!-- ref属性标记值，可获取 --></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">input</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"text"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-on:keyup</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"logName"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'refName'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>您输入的名字为：{{name}}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">br</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"age"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>年龄&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">label</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">input</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"text"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-on:keyup</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'logAge'</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"age"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"refAge"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>您输入的年龄为：{{age}}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>双向数据绑定v-model示例：input/select/textarea&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">""</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>姓名&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">label</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">&#x3C;!-- ref属性标记值，可获取 --></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">input</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"text"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-model</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'name'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>您输入的名字为：{{name}}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">br</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">label</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"age"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>年龄&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">label</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">input</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"text"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-model</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"age"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>您输入的年龄为：{{age}}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">span</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><pre><code>js部分：
+</code></pre>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">new</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Vue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  el:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#vue-app'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  data:{</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      name:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">''</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      age:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">''</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  },</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  methods:{</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      logName</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(){</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">          // console.log("您正在输入名字~");</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">          // $refs获取标记的值，后面接命名值+value</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">          // console.log(this.$refs.refName.value);</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">          this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.name</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$refs.refName.value;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      logAge</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(){</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">          // console.log("您正在输入年龄~");</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">          this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.age</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.$refs.refAge.value;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span></code></pre>
+</div><ol start="5">
+<li><code>computed</code> 和 <code>methods</code> 方法：只要methods方法之一被调用，其他所有方法都会被渲染执行，很耗费性能；计算属性，只会调用相应的方法体，是应用于搜索，调用比较多的方法体。</li>
+</ol>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vue-CLI2 入门 Demo 游戏]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/newcomer-game.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/newcomer-game.html</guid>
+            <pubDate>Thu, 05 Jul 2018 20:01:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="vue-cli2-入门-demo-游戏" tabindex="-1">Vue-CLI2 入门 Demo 游戏 <a class="header-anchor" href="#vue-cli2-入门-demo-游戏" aria-label="Permalink to &quot;Vue-CLI2 入门 Demo 游戏&quot;">&ZeroWidthSpace;</a></h1>
+<p><strong>第一次使用vue-cli2.x搭建一个小demo游戏。代码文件有很多注释信息，通俗易懂的使用这个脚手架搭建一个入门小项目哈。</strong></p>
+<h2 id="介绍使用" tabindex="-1">介绍使用 <a class="header-anchor" href="#介绍使用" aria-label="Permalink to &quot;介绍使用&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>使用默认创建的脚手架；</li>
+<li>修改App.vue、HelloWorld.vue文件，assets文件夹添加了两张图片；</li>
+<li>然后编译运行；</li>
+</ul>
+<h2 id="运行截图" tabindex="-1">运行截图 <a class="header-anchor" href="#运行截图" aria-label="Permalink to &quot;运行截图&quot;">&ZeroWidthSpace;</a></h2>
+<CustomImage src='/growth-record/frame/vue/game.gif' /><h2 id="参考文献" tabindex="-1">参考文献 <a class="header-anchor" href="#参考文献" aria-label="Permalink to &quot;参考文献&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>Web前端网站教程-米斯特吴</li>
+</ul>
+<p>源码在我的GitHub上：<a href="https://github.com/super456/vue-cli2.x-demo" target="_blank" rel="noreferrer">点击跳转</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vue2 父子组件动态传值]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/vue2-component-props.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/vue2-component-props.html</guid>
+            <pubDate>Tue, 26 Jun 2018 20:02:02 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="vue2-父子组件动态传值" tabindex="-1">Vue2 父子组件动态传值 <a class="header-anchor" href="#vue2-父子组件动态传值" aria-label="Permalink to &quot;Vue2 父子组件动态传值&quot;">&ZeroWidthSpace;</a></h1>
+<p><strong>在学习 Vue2.x 的时候，遇到了一个问题，就是父子组件如何传递动态输入的值，文档介绍都是传递固定值的，比如我想传递一个刚输入的值呢，子组件如何显示？一下就是简单的代码：</strong></p>
+<p>注：本人使用的是官方的<strong>脚手架</strong>学习的，可以通过父级组件向子级组件传递动态输入的值。然后本人重写了一个测试页面，直接复制代码就可以运行的（看懂以下代码，父子组件传递原理也是一样的，此处以对象为例）：</p>
+<div class="language-html vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">html</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;!</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">DOCTYPE</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> html</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">html</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> lang</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"en"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">head</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">meta</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> charset</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"UTF-8"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">meta</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"viewport"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> content</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"width=device-width, initial-scale=1.0"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">meta</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> http-equiv</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"X-UA-Compatible"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> content</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"ie=edge"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">title</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>父组件向子组件动态传值示例&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">title</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">    &#x3C;!-- 导入官方cdn的vue文件--></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> src</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"https://cdn.jsdelivr.net/npm/vue"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">head</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">body</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"app"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">ul</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">            &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">li</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"item in items"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">                {{item}}</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">            &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">li</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">ul</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>添加一个列表项：</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">            &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">input</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"text"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-model</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"newItem"</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> v-on:keyup.enter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'addNew()'</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> placeholder</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"按回车键提交"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>显示输入框传递给子组件的添加内容（对象）：&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">p</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">        &#x3C;!-- 注意这个传递的参数值必须前面有：v-bind:组件获取的变量名='需要传递的变量名' 或 :组件获取的变量名='需要传递的变量名'  ,否则传递的永远是字符串的值--></span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">        &#x3C;!-- 这种方式传递的是字符串 --></span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">        &#x3C;!-- &#x3C;component-a msg1childtofather='msgchildtofather'>&#x3C;/component-a> --></span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">        &#x3C;!-- 以下两种方式都是传递对象 --></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">component-a</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> :msg1childtofather</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'msgchildtofather'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">component-a</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">        &#x3C;!-- &#x3C;component-a v-bind:msg1childtofather='msgchildtofather'>&#x3C;/component-a> --></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">div</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">body</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    Vue.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">component</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'component-a'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        props: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'msg1childtofather'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        template: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'&#x3C;h2 v-text=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\'</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">msg1childtofather</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">\'</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">>&#x3C;/h2>'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        methods: {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">            output</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">                alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'You click button! and submit value:'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> +</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.msg1childtofather);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">            }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    })</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    new</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Vue</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        el: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"#app"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        data: {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">            items: [],</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">            newItem: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">""</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">            msgchildtofather: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">""</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        },</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        methods: {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">            addNew</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">                // 使用v-model和ul li input向数组items添加一个动态项内容，注意添加数组格式</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">                this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.items.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">push</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.newItem);</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">                // 测试传递动态添加对象值</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">                var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> childfather </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">                    label: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.newItem,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">                    label2: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'默认值'</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">                };</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">                this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.msgchildtofather </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> childfather;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">                this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.newItem </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> ""</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">            }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        },</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    })</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">html</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
+</div><p>测试结果如下：</p>
+<CustomImage src='/growth-record/frame/vue/props-01.png' /><CustomImage src='/growth-record/frame/vue/props-02.png' />]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[常用的 Markdown 语法格式来编写文章]]></title>
+            <link>https://super456.github.io/posts/growth-record/other/toolGuide/markdown.html</link>
+            <guid>https://super456.github.io/posts/growth-record/other/toolGuide/markdown.html</guid>
+            <pubDate>Sat, 23 Jun 2018 20:02:01 GMT</pubDate>
+            <description><![CDATA[# 常用的 Markdown 语法格式来编写文章
+**注：本教程需要一点对markdown语法格式的了解，什么都不知道的，请直接看[献给写作者的 Markdown 新手指南][02]的参考资料，再来看本文，会更好的去学习。**
+
+## 基本排版格式
+
+### (一) 目录编辑
+
+1. 导航目录链接制作,一般使用二级、三级标题格式(需要解析)
+
+   第一种方式获取标题：
+
+   ```md
+     * TOC
+     {:toc}
+   ```
+
+2. 小标题无序目录(注意空格)
+
+   ```md
+   * 目录一
+   * 目录二
+   ```
+
+3. 小标题有序目录(注意空格)
+
+   ```md
+   1. 目录一
+   2. 目录二
+   ```
+
+4. 锚点链接(注意英文字符)
+
+   ```md
+   [目录](#目录)
+   [Fork 指南](#fork-指南)
+   ```
+
+### (二) 链接表示
+
+1. 基本插入链接表示：
+   * 网址链接：`[跳转名](https://xxx.github.io)`
+   * 本地图片链接(最好使用图床网站获取图片url)： `![](/images/wiki/eclipse-need-java6.png)`
+   * 待定链接：`[这个链接跳转不了](#)`
+
+2. 统一的的链接跳转方式(为了排版好看一点)：
+
+   ```md
+   参考：[mpv keybindings][0]
+   参考：[OPTIONS][1]
+   参考：[MPV使用小记][2]
+
+   [0]: https://github.com/mpv-player/mpv/blob/master/etc/input.conf
+   [1]: https://github.com/mpv-player/mpv/blob/master/DOCS/man/options.rst
+   [2]: https://segmentfault.com/a/1190000004533079
+   ```
+
+3. 快捷插入网址链接表示形式：`<http://example.com>`
+
+### (三) 表格排版
+
+4. 表格排版参考(注意空行)
+
+   ```md
+    | 功能     | 快捷键 for win  | 快捷键 for mac |
+   |:]]></description>
+            <content:encoded><![CDATA[<h1 id="常用的-markdown-语法格式来编写文章" tabindex="-1">常用的 Markdown 语法格式来编写文章 <a class="header-anchor" href="#常用的-markdown-语法格式来编写文章" aria-label="Permalink to &quot;常用的 Markdown 语法格式来编写文章&quot;">&ZeroWidthSpace;</a></h1>
+<p><strong>注：本教程需要一点对markdown语法格式的了解，什么都不知道的，请直接看<a href="http://www.jianshu.com/p/q81RER" target="_blank" rel="noreferrer">献给写作者的 Markdown 新手指南</a>的参考资料，再来看本文，会更好的去学习。</strong></p>
+<h2 id="基本排版格式" tabindex="-1">基本排版格式 <a class="header-anchor" href="#基本排版格式" aria-label="Permalink to &quot;基本排版格式&quot;">&ZeroWidthSpace;</a></h2>
+<h3 id="一-目录编辑" tabindex="-1">(一) 目录编辑 <a class="header-anchor" href="#一-目录编辑" aria-label="Permalink to &quot;(一) 目录编辑&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>
+<p>导航目录链接制作,一般使用二级、三级标题格式(需要解析)</p>
+<p>第一种方式获取标题：</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">  *</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> TOC</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  {:toc}</span></span></code></pre>
+</div></li>
+<li>
+<p>小标题无序目录(注意空格)</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> 目录一</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> 目录二</span></span></code></pre>
+</div></li>
+<li>
+<p>小标题有序目录(注意空格)</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">1.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> 目录一</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">2.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> 目录二</span></span></code></pre>
+</div></li>
+<li>
+<p>锚点链接(注意英文字符)</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">目录</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">](</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">#目录</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">Fork 指南</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">](</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">#fork-指南</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span></code></pre>
+</div></li>
+</ol>
+<h3 id="二-链接表示" tabindex="-1">(二) 链接表示 <a class="header-anchor" href="#二-链接表示" aria-label="Permalink to &quot;(二) 链接表示&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>
+<p>基本插入链接表示：</p>
+<ul>
+<li>网址链接：<code>[跳转名](https://xxx.github.io)</code></li>
+<li>本地图片链接(最好使用图床网站获取图片url)： <code>![](/images/wiki/eclipse-need-java6.png)</code></li>
+<li>待定链接：<code>[这个链接跳转不了](#)</code></li>
+</ul>
+</li>
+<li>
+<p>统一的的链接跳转方式(为了排版好看一点)：</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">参考：[</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">mpv keybindings</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">][</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">参考：[</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">OPTIONS</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">][</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">参考：[</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">MPV使用小记</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">][</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]: </span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">https://github.com/mpv-player/mpv/blob/master/etc/input.conf</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]: </span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">https://github.com/mpv-player/mpv/blob/master/DOCS/man/options.rst</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]: </span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">https://segmentfault.com/a/1190000004533079</span></span></code></pre>
+</div></li>
+<li>
+<p>快捷插入网址链接表示形式：<code>&lt;http://example.com&gt;</code></p>
+</li>
+</ol>
+<h3 id="三-表格排版" tabindex="-1">(三) 表格排版 <a class="header-anchor" href="#三-表格排版" aria-label="Permalink to &quot;(三) 表格排版&quot;">&ZeroWidthSpace;</a></h3>
+<ol start="4">
+<li>
+<p>表格排版参考(注意空行)</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> | 功能     | 快捷键 for win  | 快捷键 for mac |</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">|:---------|:---------------|:---------------|</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">| Project  | M-1            | Cmd-1          |</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">| Terminal | M-F12          | M-F12          |</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">| Editor   | Esc            | Esc            |</span></span></code></pre>
+</div><p><strong>注意：</strong><code>:---------</code> 表示文字居左显示，<code>:---------:</code> 表示文字居中显示，<code>---------:</code> 表示文字居右显示。</p>
+</li>
+</ol>
+<h3 id="四-文字处理" tabindex="-1">(四) 文字处理 <a class="header-anchor" href="#四-文字处理" aria-label="Permalink to &quot;(四) 文字处理&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>
+<p>分割线</p>
+<ul>
+<li>第一种方式：<code>-----</code></li>
+<li>第二种方式：<code>***</code></li>
+</ul>
+<p>效果展示：</p>
+<hr>
+</li>
+<li>
+<p>删除线：<code>~~删除线~~</code> ，效果展示：<s>删除线</s></p>
+</li>
+<li>
+<p>斜体：<code>*斜体*</code> ，效果展示：<em>斜体</em></p>
+</li>
+<li>
+<p>表情插入(需要解析)</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:camel:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:blush:</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:smile:</span></span></code></pre>
+</div><p><a href="https://www.webpagefx.com/tools/emoji-cheat-sheet/" target="_blank" rel="noreferrer">表情语法专属官网</a></p>
+</li>
+<li>
+<p>脚注提醒(需要解析)</p>
+<p>This is a text with footnote[^1].</p>
+<p>[^1]: Here is the footnote 1 definition.</p>
+</li>
+<li>
+<p>键盘键显示(需要解析)： <code>&lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt;</code></p>
+<p>效果展示：<kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></p>
+</li>
+<li>
+<p>电子邮箱输入：<code>&lt;1111111111@qq.com&gt;</code> ，效果展示：<a href="mailto:1111111111@qq.com" target="_blank" rel="noreferrer">1111111111@qq.com</a></p>
+</li>
+<li>
+<p>代办列表: 表示列表是否勾选状态</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [ ] 不勾选</span></span>
+<span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [</span><span style="--shiki-light:#032F62;--shiki-dark:#DBEDFF;--shiki-light-text-decoration:underline;--shiki-dark-text-decoration:underline">x</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">] 勾选</span></span></code></pre>
+</div></li>
+<li>
+<p>上下标(需要解析)</p>
+<p><code>\^</code> 表示上标, <code>_</code> 表示下标。如果上下标的内容多于一个字符，要用{}把这些内容括起来当成一个整体。上下标是可以嵌套的，也可以同时使用。 例如：</p>
+<p><code>x^{y^z}=(1+{\rm e}^x)^{-2xy^w}</code> ，效果展示：<code>x{yz}=(1+{\rm e}x){-2xy^w}</code>(解析有问题，需要装插件)</p>
+</li>
+<li>
+<p>添加下划线： <code>php\_gd2.dll</code> ，效果展示： php_gd2.dll</p>
+</li>
+<li>
+<p>笔记本和标签(部分编辑器支持)： <code>@(示例笔记本)[标签1|标签2|标签3]</code> 。</p>
+</li>
+</ol>
+<h3 id="五-引用" tabindex="-1">(五) 引用 <a class="header-anchor" href="#五-引用" aria-label="Permalink to &quot;(五) 引用&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>
+<p>区块引用可以嵌套，只要根据层次加上不同数量的 &gt; ：</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">> 这是第一级引用。</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">></span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">> > 这是第二级引用。</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">></span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">> 现在回到第一级引用。</span></span></code></pre>
+</div></li>
+<li>
+<p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">> </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;--shiki-light-font-weight:bold;--shiki-dark-font-weight:bold">## 这是一个标题。</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">></span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">> </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">1.</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D"> 这是第一行列表项。</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">> </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">2.</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D"> 这是第二行列表项。</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">></span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">> 给出一些例子代码：</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">></span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">> return shell_exec("echo $input | $markdown_script");</span></span></code></pre>
+</div></li>
+<li>
+<p>如果要在列表项目内放进引用，那 <code>&gt;</code> 就需要缩进：</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  Coding.net有以下主要功能:</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D"> > 代码托管平台</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D"> > 在线运行环境</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D"> > 代码质量监控</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D"> > 项目管理平台</span></span></code></pre>
+</div></li>
+</ol>
+<h3 id="六-简单的图形" tabindex="-1">(六) 简单的图形 <a class="header-anchor" href="#六-简单的图形" aria-label="Permalink to &quot;(六) 简单的图形&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>
+<p>代码图形</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">+-------------+                    +-------------+</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">|             |        ...         |             |</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">+-------------+                    +-------------+</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">|             |                    |             |</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">+-------------+                    +-------------+</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">| format str1 | &#x3C;-- esp            | format str2 | &#x3C;-- esp</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">+-------------+                    +-------------+</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">| double low  |                    |     int     |</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">+-------------+                    +-------------+</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">| double high |                    | double high |</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">+-------------+  main stack frame  +-------------+</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">|     ...     |                    |     ...     |</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">+-------------+                    +-------------+</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">|             |                    |             |</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">+-------------+                    +-------------+</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">|   (%ebp)    | &#x3C;-- ebp            |   (%ebp)    | &#x3C;-- ebp</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">+-------------+                    +-------------+</span></span></code></pre>
+</div></li>
+<li>
+<p>构建文件夹图形</p>
+<div class="language-md vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">md</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">app/src/main</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">├─assets</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">├─java</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">│  ├─android</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">│  │  └─content</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">│  │      └─pm</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">│  └─org</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">│      └─mazhuang</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">│          └─easycleaner</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">└─res</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">   ├─drawable</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">   ├─layout</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">   ├─menu</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">   ...</span></span></code></pre>
+</div></li>
+</ol>
+<h3 id="七-代码语法" tabindex="-1">(七) 代码语法 <a class="header-anchor" href="#七-代码语法" aria-label="Permalink to &quot;(七) 代码语法&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>
+<p>单行代码语法：两个 `，中间输入内容</p>
+</li>
+<li>
+<p>多行代码语法(注意前后空行)：第一行输入三个 ` 然后最后一行再输入三个</p>
+</li>
+<li>
+<p>简单的语法高亮</p>
+<div class="language-sh vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">git</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> checkout</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> -b</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> test</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 5234ab</span></span></code></pre>
+</div><div class="language-python vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">python</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">print</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'Hello, World!'</span></span></code></pre>
+</div></li>
+<li>
+<p>代码高亮语言标识符支持的语法</p>
+<p>支持的有 <code>javascript（js）、cpp、makefile、vbnet、xml、c、java、cl、vim、sh、yaml、markdown(显示原语法格式)、html、vb、python</code> 等等</p>
+</li>
+</ol>
+<h2 id="参考文献" tabindex="-1">参考文献 <a class="header-anchor" href="#参考文献" aria-label="Permalink to &quot;参考文献&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>(1)、<a href="http://mazhuang.org/wiki/chinese-copywriting-guidelines/" target="_blank" rel="noreferrer">中文文案排版指北（简体中文版）</a></li>
+<li>(2)、<a href="http://www.jianshu.com/p/q81RER" target="_blank" rel="noreferrer">献给写作者的 Markdown 新手指南</a></li>
+<li>(3)、<a href="https://coding.net/help/doc/project/markdown.html#section-2" target="_blank" rel="noreferrer">Markdown语法介绍</a></li>
+<li>(4)、<a href="http://www.appinn.com/markdown/" target="_blank" rel="noreferrer">Markdown 语法说明 (简体中文版)</a></li>
+<li>(5)、<a href="https://maxiang.io/" target="_blank" rel="noreferrer">马克飞象-在线编辑器</a></li>
+</ul>
+]]></content:encoded>
+            <enclosure url="https://super456.github.io/images/wiki/eclipse-need-java6.png" length="0" type="image/png"/>
         </item>
     </channel>
 </rss>
