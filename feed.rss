@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Sun, 21 Apr 2024 02:07:16 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 Apr 2024 03:53:04 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -25465,6 +25465,846 @@ table-footer-group：指定对象作为表格脚注组。类同于html标签<cod
 <span class="line"><span>}</span></span></code></pre>
 </div><p>总的来说，实现过程并不复杂，学会了可以使用很熟练的使用，这个方法实现表格布局还是挺有用的，在一些页面无缝接触的时候很常用。</p>
 ]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[微信小程序之真机键盘弹窗遮挡样式问题]]></title>
+            <link>https://super456.github.io/posts/growth-record/platform/applet/real-keyboard-masking.html</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/applet/real-keyboard-masking.html</guid>
+            <pubDate>Sat, 01 Sep 2018 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="微信小程序之真机键盘弹窗遮挡样式问题" tabindex="-1">微信小程序之真机键盘弹窗遮挡样式问题 <a class="header-anchor" href="#微信小程序之真机键盘弹窗遮挡样式问题" aria-label="Permalink to &quot;微信小程序之真机键盘弹窗遮挡样式问题&quot;">&ZeroWidthSpace;</a></h1>
+<p>遇到了一个比较常见，但不注意就会犯错的问题：小程序里面经常会用到组件input，属性也很丰富，如果在页面排版中，将输入固定在底部作为评论之类的，可能就会遇到一个问题，在真机上测试（移动端），点击input组件默认会将键盘弹起时，自动上推页面，就会发现，因为弹窗很容易遮住input组件相关的内容及样式。</p>
+<h3 id="一-问题详情" tabindex="-1">（一）问题详情 <a class="header-anchor" href="#一-问题详情" aria-label="Permalink to &quot;（一）问题详情&quot;">&ZeroWidthSpace;</a></h3>
+<p>1、默认没有点击input输入框（评论框）的时候：</p>
+<CustomImage src='/growth-record/platform/applet/keyboard-masking-01.jpeg' /><p>2、点击input输入框（评论框）的时候：</p>
+<CustomImage src='/growth-record/platform/applet/keyboard-masking-02.jpeg' /><h3 id="二-问题分析" tabindex="-1">（二）问题分析 <a class="header-anchor" href="#二-问题分析" aria-label="Permalink to &quot;（二）问题分析&quot;">&ZeroWidthSpace;</a></h3>
+<p>**注意：**这个是input组件在页面底部的时候，input在页面其他位置可能效果是不一样的。
+这个是因为点击了input组件，键盘弹起时，自动上推页面，默认键盘弹窗弹出到位置是input组件输入聚焦位置（就是输入框的光标一直闪烁的位置）；所以就是没有设置input组件和键盘的位置距离导致的覆盖相关样式现象。</p>
+<h3 id="三-解决方法" tabindex="-1">（三）解决方法 <a class="header-anchor" href="#三-解决方法" aria-label="Permalink to &quot;（三）解决方法&quot;">&ZeroWidthSpace;</a></h3>
+<p>1、查找了一些网上资料说可以设置<code>cursor-spacing</code> 的属性距离。</p>
+<CustomImage src='/growth-record/platform/applet/keyboard-masking-03.png' /><p>但是我尝试了好几次设置都没有什么作用效果，有点悲催，可能我没有get到这个属性的点。
+没办法，只能使用自己的办法了：</p>
+<CustomImage src='/growth-record/platform/applet/keyboard-masking-04.png' /><p>使用<code>bindfocus</code>、<code>bindblur</code> 操作函数来动态设置底部组件框与底部之间的距离（外边距）：<code>margin-bottom:50rpx;</code></p>
+<p>解决问题流程：</p>
+<ul>
+<li>js data里面设置一个变量：<code>   inputMarBot: false, //评论框聚焦时，让评论框距离底部的距离为50rpx</code></li>
+<li>wxml 页面：使用三元表示设置style input组件的父元素容器与底部外边距：<code>&lt;view class='write-comment' style=&quot;{{inputMarBot?'margin-bottom:50rpx':''}}&quot;&gt;</code>（关键，主要跟input的聚焦和是去焦点有关）及input组件定义属性：<code>bindfocus='settingMbShow' bindblur='settingMbNoShow'</code></li>
+<li>js 定义聚焦和是去焦点函数：</li>
+</ul>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span> // 评论输入框聚焦时，设置与底部的距离</span></span>
+<span class="line"><span>  settingMbShow: function () {</span></span>
+<span class="line"><span>    this.setData({</span></span>
+<span class="line"><span>      inputMarBot: true</span></span>
+<span class="line"><span>    })</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  //  评论输入框失去聚焦时，设置与底部的距离（默认状态）</span></span>
+<span class="line"><span>  settingMbNoShow: function () {</span></span>
+<span class="line"><span>    this.setData({</span></span>
+<span class="line"><span>      inputMarBot: false</span></span>
+<span class="line"><span>    })</span></span>
+<span class="line"><span>  },</span></span></code></pre>
+</div><p><strong>实现效果：</strong></p>
+<CustomImage src='/growth-record/platform/applet/keyboard-masking-05.jpeg' /><p>如果还有其他实现可行方法，欢迎留言交流。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[微信小程序之页面跳转传参数据： JSON 字符串转对象报错]]></title>
+            <link>https://super456.github.io/posts/growth-record/platform/applet/page-url-json-error.html</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/applet/page-url-json-error.html</guid>
+            <pubDate>Fri, 31 Aug 2018 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="微信小程序之页面跳转传参数据-json-字符串转对象报错" tabindex="-1">微信小程序之页面跳转传参数据： JSON 字符串转对象报错 <a class="header-anchor" href="#微信小程序之页面跳转传参数据-json-字符串转对象报错" aria-label="Permalink to &quot;微信小程序之页面跳转传参数据： JSON 字符串转对象报错&quot;">&ZeroWidthSpace;</a></h1>
+<p>工作中遇到了这个问题，之前也有遇到过，只是没有去研究这个问题，接下来简单说明一下。</p>
+<h3 id="一-问题详情" tabindex="-1">（一）问题详情 <a class="header-anchor" href="#一-问题详情" aria-label="Permalink to &quot;（一）问题详情&quot;">&ZeroWidthSpace;</a></h3>
+<p>我们在小程序的A页面向B页面跳转的时候，传了页面参数为param（页面参数值只能是字符串，参数值是根据用户点击的信息而不同的），所以传数组或对象需要使用JSON.stringify()转换，到了B页面需要将param获取到并通过JSON.parse()解析，结果问题是有些传过来json正常解析，有些则报这个错：</p>
+<CustomImage src='/growth-record/platform/applet/page-url-json-error-01.png' /><p>也就是说B页面获取到的参数param值格式不是json格式，但是我是通过JSON.stringify()做数据转换的，格式有问题A页面跳转就会报错了，所以是参数传输过程微信小程序官方工具做了处理。</p>
+<h3 id="二-问题原因" tabindex="-1">（二）问题原因 <a class="header-anchor" href="#二-问题原因" aria-label="Permalink to &quot;（二）问题原因&quot;">&ZeroWidthSpace;</a></h3>
+<p>查了一下，可以正确从A页面跳转到B页面带参数正常显示的，和不正常显示的控制台输出对比一下，发现原来是这个原因造成的。-_-</p>
+<p>1、json解析正常页面获取到的数据格式是完整的：</p>
+<CustomImage src='/growth-record/platform/applet/page-url-json-error-02.png' /><p>2、json解析错误不正常页面显示获取到的数据是不完整的：</p>
+<CustomImage src='/growth-record/platform/applet/page-url-json-error-03.png' /><p><strong>总结：</strong> 由于页面传输的数据太大，导致部分传输的数据内容被截断，导致json格式解析报错，微信官方是有限制页面跳转参数数据大小的，本人忘记了，知道的欢迎留言哈。</p>
+<h3 id="三-解决方法" tabindex="-1">（三）解决方法 <a class="header-anchor" href="#三-解决方法" aria-label="Permalink to &quot;（三）解决方法&quot;">&ZeroWidthSpace;</a></h3>
+<p>1、通过A页面设置缓存数据到B页面获取缓存到的数据格式来传输，不过不推荐，因为缓存数据大小也是有限制的，不适合大数据格式的缓存，小数据是可以的。
+2、通过A页面传一个id到B页面，然后再重新请求接口获取新数据。
+3、可以通过将A页面需要传的数据赋值给全局变量app.js中的全局变量，然后B页面<code>getApp()</code>获取全局变量就可以了（推荐，经常用）。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[微信小程序之下拉菜单的三级联动筛选框]]></title>
+            <link>https://super456.github.io/posts/growth-record/platform/applet/three-tier-screening.html</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/applet/three-tier-screening.html</guid>
+            <pubDate>Sun, 26 Aug 2018 20:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="微信小程序之下拉菜单的三级联动筛选框" tabindex="-1">微信小程序之下拉菜单的三级联动筛选框 <a class="header-anchor" href="#微信小程序之下拉菜单的三级联动筛选框" aria-label="Permalink to &quot;微信小程序之下拉菜单的三级联动筛选框&quot;">&ZeroWidthSpace;</a></h1>
+<p>下拉菜单很常见，网上也有很多例子，自己也根据网上的资料，仿写了一个。感谢作者<a href="https://blog.csdn.net/laokdidiao/article/details/53565679" target="_blank" rel="noreferrer">小小小是我</a>提供了资料，在此做了二次开发，也分享一下。因为自己最近也需要写个小程序的下拉框的三级菜单筛选，分享给有需要的人哈。</p>
+<h3 id="一-、实现效果" tabindex="-1">（一）、实现效果 <a class="header-anchor" href="#一-、实现效果" aria-label="Permalink to &quot;（一）、实现效果&quot;">&ZeroWidthSpace;</a></h3>
+<p>1、原作者资料的实现效果：<a href="https://blog.csdn.net/laokdidiao/article/details/53565679" target="_blank" rel="noreferrer">点击跳转微信小程序仿闲鱼『下拉菜单』</a></p>
+<CustomImage src='/growth-record/platform/applet/three-tier-screening-01.gif' /><p>2、自己二次开发实现效果：</p>
+<CustomImage src='/growth-record/platform/applet/three-tier-screening-02.gif' /><h3 id="二-实现过程" tabindex="-1">（二）实现过程 <a class="header-anchor" href="#二-实现过程" aria-label="Permalink to &quot;（二）实现过程&quot;">&ZeroWidthSpace;</a></h3>
+<p>实现的代码也并不复杂，主要是控制各个容器的显示和隐藏效果以及数组对象选中时激活判断的样式，不过也存在一些小小的样式问题，如果你使用的话会发现的哈。自己也是简单的写了一下，没有花过多的时间在样式上挣扎，哈哈哈。</p>
+<h3 id="三-项目代码" tabindex="-1">（三）项目代码 <a class="header-anchor" href="#三-项目代码" aria-label="Permalink to &quot;（三）项目代码&quot;">&ZeroWidthSpace;</a></h3>
+<p><a href="https://github.com/super456/dropDownBoxFilter" target="_blank" rel="noreferrer">点击跳转下载</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[微信小程序之简单双向调节的 Slider 滑动选择器]]></title>
+            <link>https://super456.github.io/posts/growth-record/platform/applet/slider.html</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/applet/slider.html</guid>
+            <pubDate>Wed, 22 Aug 2018 20:08:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="微信小程序之简单双向调节的-slider-滑动选择器" tabindex="-1">微信小程序之简单双向调节的 Slider 滑动选择器 <a class="header-anchor" href="#微信小程序之简单双向调节的-slider-滑动选择器" aria-label="Permalink to &quot;微信小程序之简单双向调节的 Slider 滑动选择器&quot;">&ZeroWidthSpace;</a></h1>
+<p>简单说明一下，这是用微信官方的slider组件拼接的，没有用到其他框架哈。</p>
+<h3 id="一-实现效果" tabindex="-1">（一）实现效果 <a class="header-anchor" href="#一-实现效果" aria-label="Permalink to &quot;（一）实现效果&quot;">&ZeroWidthSpace;</a></h3>
+<CustomImage src='/growth-record/platform/applet/slider-01.gif' /><h3 id="二-实现过程" tabindex="-1">（二）实现过程 <a class="header-anchor" href="#二-实现过程" aria-label="Permalink to &quot;（二）实现过程&quot;">&ZeroWidthSpace;</a></h3>
+<p>主要是将两个滑动选择器拼接在一起、各自设置所占长度比，就可以实现双向滚动调节了，但是有一个问题，我没有解决到，就是一个固定的滑动区域内，左右滑块可以相互交接互相滑动，尝试了一下没弄出来。
+1、wxml代码：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>&#x3C;view class='sliderHCon'></span></span>
+<span class="line"><span>  &#x3C;view class='showMoney'></span></span>
+<span class="line"><span>    &#x3C;text class='MoneyValue'>￥{{leftValue}}&#x3C;/text></span></span>
+<span class="line"><span>    &#x3C;text class='MoneyValue'>￥{{rightValue}}&#x3C;/text></span></span>
+<span class="line"><span>  &#x3C;/view></span></span>
+<span class="line"><span>  &#x3C;view class='twoSlider'></span></span>
+<span class="line"><span>    &#x3C;slider min='{{leftMin}}' max='{{leftMax}}' value='{{leftValue}}' activeColor='#cecacb' backgroundColor='#f26a36' block-size='20' step='100' style='width:{{leftWidth}}%;margin-right:0rpx;' bindchange="leftChange" /></span></span>
+<span class="line"><span>    &#x3C;slider min='{{rightMin}}' max='{{rightMax}}' value='{{rightValue}}' activeColor='#f26a36' backgroundColor='#cecacb' block-size='20' step='100' style='width:{{rightWidth}}%;margin-left:0rpx;' bindchange="rightChange" /></span></span>
+<span class="line"><span>  &#x3C;/view></span></span>
+<span class="line"><span>&#x3C;/view></span></span></code></pre>
+</div><p>2、wxss代码：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>.sliderHCon {</span></span>
+<span class="line"><span>  margin: 0 40rpx 0 40rpx;</span></span>
+<span class="line"><span>  height: 250rpx;</span></span>
+<span class="line"><span>  border: 1rpx solid red;</span></span>
+<span class="line"><span>  width: 70%;</span></span>
+<span class="line"><span>  margin: auto;</span></span>
+<span class="line"><span>  display: flex;</span></span>
+<span class="line"><span>  justify-content: center;</span></span>
+<span class="line"><span>  align-items: center;</span></span>
+<span class="line"><span>  flex-direction: column;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>.MoneyValue {</span></span>
+<span class="line"><span>  font-size: 30rpx;</span></span>
+<span class="line"><span>  text-align: center;</span></span>
+<span class="line"><span>  color: #999;</span></span>
+<span class="line"><span>  margin-top: 15rpx;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>.showMoney text {</span></span>
+<span class="line"><span>  margin-right: 30rpx;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>.twoSlider {</span></span>
+<span class="line"><span>  width: 100%;</span></span>
+<span class="line"><span>  display: flex;</span></span>
+<span class="line"><span>  flex-direction: row;</span></span>
+<span class="line"><span>  justify-content: center;</span></span>
+<span class="line"><span>  align-items: center;</span></span>
+<span class="line"><span>}</span></span></code></pre>
+</div><p>3、js代码：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>  /**</span></span>
+<span class="line"><span>   * 页面的初始数据</span></span>
+<span class="line"><span>   */</span></span>
+<span class="line"><span>  data: {</span></span>
+<span class="line"><span>    leftMin: 0, //左边滑块最小值</span></span>
+<span class="line"><span>    leftMax: 10000, //左边滑块最大值</span></span>
+<span class="line"><span>    rightMin: 0, //右边滑块的最小值</span></span>
+<span class="line"><span>    rightMax: 10000, //右边滑块最大值</span></span>
+<span class="line"><span>    leftValue: 1000, //左边滑块默认值</span></span>
+<span class="line"><span>    rightValue: 6000, //右边滑块默认值</span></span>
+<span class="line"><span>    leftWidth: '50', //左边滑块可滑动长度：百分比</span></span>
+<span class="line"><span>    rightWidth: '50', //右边滑块可滑动长度：百分比</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  // 左边滑块滑动的值</span></span>
+<span class="line"><span>  leftChange: function(e) {</span></span>
+<span class="line"><span>    console.log('左边改变的值为：' + e.detail.value);</span></span>
+<span class="line"><span>    var that = this;</span></span>
+<span class="line"><span>    that.setData({</span></span>
+<span class="line"><span>      leftValue: e.detail.value //设置左边当前值</span></span>
+<span class="line"><span>    })</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  // 右边滑块滑动的值</span></span>
+<span class="line"><span>  rightChange: function(e) {</span></span>
+<span class="line"><span>    console.log('右边改变的值为：' + e.detail.value);</span></span>
+<span class="line"><span>    var that = this;</span></span>
+<span class="line"><span>    that.setData({</span></span>
+<span class="line"><span>      rightValue: e.detail.value,</span></span>
+<span class="line"><span>    })</span></span>
+<span class="line"><span>  },</span></span></code></pre>
+</div><p>如果想参考其他小程序框架做的，实现效果如下，<a href="https://www.imooc.com/article/34271" target="_blank" rel="noreferrer">可以参考这篇wepy写的介绍文章</a></p>
+<CustomImage src='/growth-record/platform/applet/slider-02.jpeg' />]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[微信小程序之 scroll-view 横向滚动不能显示]]></title>
+            <link>https://super456.github.io/posts/growth-record/platform/applet/scroll-view.html</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/applet/scroll-view.html</guid>
+            <pubDate>Wed, 22 Aug 2018 20:03:07 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="微信小程序之-scroll-view-横向滚动不能显示" tabindex="-1">微信小程序之 scroll-view 横向滚动不能显示 <a class="header-anchor" href="#微信小程序之-scroll-view-横向滚动不能显示" aria-label="Permalink to &quot;微信小程序之 scroll-view 横向滚动不能显示&quot;">&ZeroWidthSpace;</a></h1>
+<p>之前在写scroll-view（可滚动视图区域）遇到一个问题，花一点时间记录分享一下，竖向滚动视图没什么大问题，只需要设置<code>height：rpx;</code> 滚动高度区域，然而横向滚动区域就需要注意两个问题了。</p>
+<h3 id="一-实现效果" tabindex="-1">（一）实现效果 <a class="header-anchor" href="#一-实现效果" aria-label="Permalink to &quot;（一）实现效果&quot;">&ZeroWidthSpace;</a></h3>
+<CustomImage src='/growth-record/platform/applet/scroll-view-01.gif' /><p>###（二）注意设置两个属性
+一开始以为只要照着微信官方的文档介绍就可以想怎么写就怎么写了，结果一直调试不出来，按照官方介绍的属性设置了，子元素容器会各占一行，而且，父元素容器会内容换行，试了很多CSS属性，才发现需要设置的两个属性就可以了：</p>
+<p>1、<code>display:inline-block;</code> 设置子元素容器为行间模块：</p>
+<blockquote>
+<p>解释一下display的几个常用的属性值，inline ， block， inline-block<br /></p>
+<p><strong>inline:</strong>（1） 使元素变成行内元素，拥有行内元素的特性，即可以与其他行内元素共享一行，不会独占一行.<br />
+（2）不能更改元素的height，width的值，大小由内容撑开.<br />
+（3）可以使用padding，margin的left和right产生边距效果，但是top和bottom就不行.<br /></p>
+<p><strong>block:</strong>（1）使元素变成块级元素，独占一行，在不设置自己的宽度的情况下，块级元素会默认填满父级元素的宽度.<br />
+（2）能够改变元素的height，width的值.<br />
+（3） 可以设置padding，margin的各个属性值，top，left，bottom，right都能够产生边距效果.<br />
+<strong>inline-block:</strong> 结合了inline与block的一些特点，结合了上述inline的第1个特点和block的第2,3个特点.<br />
+用通俗的话讲，就是不独占一行的块级元素。<a href="https://www.cnblogs.com/Ry-yuan/p/6848197.html" target="_blank" rel="noreferrer">详细说明可以查看这篇文章</a></p>
+</blockquote>
+<CustomImage src='/growth-record/platform/applet/scroll-view-02.png' /><p>2、设置父元素容器<code>  white-space: nowrap;</code>容器不换行显示：</p>
+<CustomImage src='/growth-record/platform/applet/scroll-view-03.png' /><p>如果还有遇到的其他问题，欢迎留言交流。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[微信小程序之去除 Button 默认样式]]></title>
+            <link>https://super456.github.io/posts/growth-record/platform/applet/button-default-style.html</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/applet/button-default-style.html</guid>
+            <pubDate>Fri, 10 Aug 2018 20:08:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="微信小程序之去除-button-默认样式" tabindex="-1">微信小程序之去除 Button 默认样式 <a class="header-anchor" href="#微信小程序之去除-button-默认样式" aria-label="Permalink to &quot;微信小程序之去除 Button 默认样式&quot;">&ZeroWidthSpace;</a></h1>
+<p>在小程序开发过程中，使用率蛮高的组件button，因为经常要去除默认样式，然后再自定义样式，所以经常写，自己也总结分享一下简单的实现步骤。</p>
+<h3 id="一-实现效果" tabindex="-1">（一）实现效果 <a class="header-anchor" href="#一-实现效果" aria-label="Permalink to &quot;（一）实现效果&quot;">&ZeroWidthSpace;</a></h3>
+<p>1、实现前（默认样式）：</p>
+<CustomImage src='/growth-record/platform/applet/button-default-01.png' /><p>2、实现后（去除默认边框和背景色）：</p>
+<CustomImage src='/growth-record/platform/applet/button-default-02.png' /><h3 id="二-实现过程" tabindex="-1">（二）实现过程 <a class="header-anchor" href="#二-实现过程" aria-label="Permalink to &quot;（二）实现过程&quot;">&ZeroWidthSpace;</a></h3>
+<p>首先了解一下默认的样式有哪些，然后根据自己的UI来实现：</p>
+<div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">button</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">position</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">relative</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">display</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">block</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">margin-left</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">auto</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">margin-right</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">auto</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">padding-left</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">14</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">px</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">padding-right</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">14</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">px</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">box-sizing</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">border-box</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">font-size</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">18</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">px</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">text-align</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">center</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">text-decoration</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">none</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">line-height</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">2.55555556</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">border-radius</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">5</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">px</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">-webkit-tap-highlight-color</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">transparent</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">overflow</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">hidden</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">color</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">#000000</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">background-color</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">#F8F8F8</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>1、使用<code>::after</code> 伪类选择器，因为button的边框样式是通过<code>::after</code>方式实现的，如果在button上定义边框就会出现两条边框线，所以我们可以使用<code>::after</code>的方式去覆盖默认值。</p>
+<div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">button</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">::after</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  border</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">none</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>2、还需要在将按钮背景色设置为白色，因为按钮默认背景色是灰色的。</p>
+<div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">button</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  background-color</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">#fff</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>3、去掉默认的圆角：</p>
+<div class="language-css vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">css</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">button</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">  border-radius</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>这样就可以搞定小程序按钮默认样式了，只是相当于一个文本的样式，还是有很多button的默认样式没有去除的，这个需要根据个人需求来设置的，这里不过多说明，如果需要自定义可以在按钮上一个类选择器就可以搞定。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[微信小程序之图片遮罩层 Demo]]></title>
+            <link>https://super456.github.io/posts/growth-record/platform/applet/image-masking-demo.html</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/applet/image-masking-demo.html</guid>
+            <pubDate>Sun, 29 Jul 2018 20:07:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="微信小程序之图片遮罩层-demo" tabindex="-1">微信小程序之图片遮罩层 Demo <a class="header-anchor" href="#微信小程序之图片遮罩层-demo" aria-label="Permalink to &quot;微信小程序之图片遮罩层 Demo&quot;">&ZeroWidthSpace;</a></h1>
+<p>在工作中经常会用到遮罩层弹窗，所以简单分享一下，之前写过的一个弹出广告图片遮罩层功能demo。</p>
+<h3 id="一-实现效果" tabindex="-1">（一）实现效果 <a class="header-anchor" href="#一-实现效果" aria-label="Permalink to &quot;（一）实现效果&quot;">&ZeroWidthSpace;</a></h3>
+<CustomImage src='/growth-record/platform/applet/image-masking-demo.gif' /><h3 id="二-实现过程" tabindex="-1">（二）实现过程 <a class="header-anchor" href="#二-实现过程" aria-label="Permalink to &quot;（二）实现过程&quot;">&ZeroWidthSpace;</a></h3>
+<p>实现过程主要是设置css样式，比较容易理解。
+1、设置wxml代码布局：设置一个背景布局：用来显示灰色背景；嵌套一个显示展示图片容器，嵌套一个显示闭关按钮的容器。</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>   &#x3C;view class="b1" hidden="{{flag}}"></span></span>
+<span class="line"><span>		&#x3C;view class="b2"></span></span>
+<span class="line"><span>			&#x3C;image src='../../images/test.jpg'/></span></span>
+<span class="line"><span>		&#x3C;/view></span></span>
+<span class="line"><span>		  &#x3C;view class="t_w"></span></span>
+<span class="line"><span>		   &#x3C;cover-view class="t_image" bindtap="closeMask"></span></span>
+<span class="line"><span>		     &#x3C;cover-image  src="../../images/qcm.png">&#x3C;/cover-image></span></span>
+<span class="line"><span>		    &#x3C;/cover-view></span></span>
+<span class="line"><span>		  &#x3C;/view></span></span>
+<span class="line"><span>	&#x3C;/view></span></span></code></pre>
+</div><p>2、wxss样式设置：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>/* 设置背景遮罩层样式 */</span></span>
+<span class="line"><span>.b1 {</span></span>
+<span class="line"><span>  position: fixed;</span></span>
+<span class="line"><span>  width: 100%;</span></span>
+<span class="line"><span>  height: 100%;</span></span>
+<span class="line"><span>  top: 0;</span></span>
+<span class="line"><span>  background: rgba(0, 0, 0, 0.4);</span></span>
+<span class="line"><span>  display: flex;</span></span>
+<span class="line"><span>  justify-content: center;</span></span>
+<span class="line"><span>  align-items: center;</span></span>
+<span class="line"><span>  flex-direction: column;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>/* 设置展示图片大小 */</span></span>
+<span class="line"><span>.b2 {</span></span>
+<span class="line"><span>  width: 50%;</span></span>
+<span class="line"><span>  height: 50%;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>/* 设置展示图片与关闭按钮图片的距离 */</span></span>
+<span class="line"><span>.t_w {</span></span>
+<span class="line"><span>  margin-top: 20rpx;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>/* 设置关闭按钮图片显示的大小 */</span></span>
+<span class="line"><span>.b2 image {</span></span>
+<span class="line"><span>  width: 100%;</span></span>
+<span class="line"><span>  height: 100%;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>/* 设置关闭按钮宽高 */</span></span>
+<span class="line"><span>.t_image {</span></span>
+<span class="line"><span>  width: 60rpx;</span></span>
+<span class="line"><span>  height: 60rpx;</span></span>
+<span class="line"><span>}</span></span></code></pre>
+</div><p>3、 js两个方法控制显示与关闭操作：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span> data: {</span></span>
+<span class="line"><span>    motto: '微信遮罩层显示',</span></span>
+<span class="line"><span>   flag: true,</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  showMask:function(){</span></span>
+<span class="line"><span>    this.setData({ flag: false })</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  closeMask: function () {</span></span>
+<span class="line"><span>    this.setData({ flag: true })</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>})</span></span></code></pre>
+</div><h3 id="三-完整代码" tabindex="-1">（三）完整代码 <a class="header-anchor" href="#三-完整代码" aria-label="Permalink to &quot;（三）完整代码&quot;">&ZeroWidthSpace;</a></h3>
+<p><a href="https://github.com/super456/wechatMask" target="_blank" rel="noreferrer">代码下载</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[微信小程序之登录欢迎页面 Demo]]></title>
+            <link>https://super456.github.io/posts/growth-record/platform/applet/login-welcome-demo.html</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/applet/login-welcome-demo.html</guid>
+            <pubDate>Sun, 29 Jul 2018 20:07:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="微信小程序之登录欢迎页面-demo" tabindex="-1">微信小程序之登录欢迎页面 Demo <a class="header-anchor" href="#微信小程序之登录欢迎页面-demo" aria-label="Permalink to &quot;微信小程序之登录欢迎页面 Demo&quot;">&ZeroWidthSpace;</a></h1>
+<p>之前有用过小程序的欢迎页面，也是GitHub上找到的一个案例。近期有用到，简单的分享一下，可以让有需要的人避免重复造轮子和更好的创新学习。</p>
+<h3 id="一-效果预览" tabindex="-1">（一）效果预览 <a class="header-anchor" href="#一-效果预览" aria-label="Permalink to &quot;（一）效果预览&quot;">&ZeroWidthSpace;</a></h3>
+<p>直接看效果如何，是否符合您的要求，不符合直接结束浏览，避免浪费您的时间。</p>
+<CustomImage src='/growth-record/platform/applet/login-welcome-01.gif' /><h3 id="二-代码目录" tabindex="-1">（二）代码目录 <a class="header-anchor" href="#二-代码目录" aria-label="Permalink to &quot;（二）代码目录&quot;">&ZeroWidthSpace;</a></h3>
+<p>简单实用，直接下载工具打开预览，<a href="https://github.com/super456/wechatWeclomePage" target="_blank" rel="noreferrer">代码下载</a></p>
+<CustomImage src='/growth-record/platform/applet/login-welcome-02.png' /><h3 id="三-参考文献" tabindex="-1">（三）参考文献 <a class="header-anchor" href="#三-参考文献" aria-label="Permalink to &quot;（三）参考文献&quot;">&ZeroWidthSpace;</a></h3>
+<p><a href="https://github.com/EastWorld/wechat-app-mall" target="_blank" rel="noreferrer">微信小程序商城，微信小程序微店</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[DIV + CSS 设置水平垂直居中方法]]></title>
+            <link>https://super456.github.io/posts/growth-record/base/css/center-horizontally-vertically.html</link>
+            <guid>https://super456.github.io/posts/growth-record/base/css/center-horizontally-vertically.html</guid>
+            <pubDate>Sun, 15 Jul 2018 20:09:09 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="div-css-设置水平垂直居中方法" tabindex="-1">DIV + CSS 设置水平垂直居中方法 <a class="header-anchor" href="#div-css-设置水平垂直居中方法" aria-label="Permalink to &quot;DIV + CSS 设置水平垂直居中方法&quot;">&ZeroWidthSpace;</a></h1>
+<p><strong>之前写前端页面经常会遇到这个问题，所以抽了个时间总结了一下这些常用的方法，通常分为两种情况来设置：已知宽高和未知。简单的分享一下经验。</strong></p>
+<h3 id="一-已知宽高情况的设置" tabindex="-1">（一）已知宽高情况的设置 <a class="header-anchor" href="#一-已知宽高情况的设置" aria-label="Permalink to &quot;（一）已知宽高情况的设置&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>
+<p><code>position：absolute;</code>，<code>margin：auto;</code>使用position的绝对定位和margin的居中定位 ，四个方向位置距离设置成一样就行了（通过填充父元素的可用空间 ，子元素设定了宽高，那么多余的空间，被margin：auto平均分配的原理）：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>//html代码</span></span>
+<span class="line"><span>  &#x3C;div class="box1"></span></span>
+<span class="line"><span>         &#x3C;div class="box2">div+css设置水平垂直居中显示&#x3C;/div></span></span>
+<span class="line"><span> &#x3C;/div></span></span>
+<span class="line"><span> //css样式代码</span></span>
+<span class="line"><span>     .box1 {</span></span>
+<span class="line"><span>     width: 400px;</span></span>
+<span class="line"><span>     height: 400px;</span></span>
+<span class="line"><span>     margin: auto;</span></span>
+<span class="line"><span>     border: 1px solid red;</span></span>
+<span class="line"><span>             /* 位置值设置相等即可*/</span></span>
+<span class="line"><span>     top: 0;</span></span>
+<span class="line"><span>     left: 0;</span></span>
+<span class="line"><span>     right: 0;</span></span>
+<span class="line"><span>     bottom: 0;</span></span>
+<span class="line"><span>     position: absolute;</span></span>
+<span class="line"><span> }</span></span></code></pre>
+</div><p>运行结果：</p>
+</li>
+</ol>
+<CustomImage src='/growth-record/base/css/center-01.png' /><ol start="2">
+<li>设置 使用position的绝对定位和margin的居中定位，top和left设置与屏幕相距成50%，然后用transform向左（上）平移它自己宽度（高度）的50%即可：<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>    .box1 {</span></span>
+<span class="line"><span>     width: 400px;</span></span>
+<span class="line"><span>     height: 400px;</span></span>
+<span class="line"><span>     margin: auto;</span></span>
+<span class="line"><span>     border: 1px solid red;</span></span>
+<span class="line"><span>     top: 50%;</span></span>
+<span class="line"><span>     left: 50%;</span></span>
+<span class="line"><span>     position: absolute;</span></span>
+<span class="line"><span>     transform: translate(-50%,-50%);</span></span>
+<span class="line"><span> }</span></span></code></pre>
+</div></li>
+</ol>
+<p>运行结果一样。
+3. 设置 使用position的绝对定位和margin的居中定位，top和left设置与屏幕相距成50%，使用<code>margin:高的一半px 0 0 宽的一半px;</code> 即可：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>    .box1 {</span></span>
+<span class="line"><span>     width: 400px;</span></span>
+<span class="line"><span>     height: 400px;</span></span>
+<span class="line"><span>     margin: auto;</span></span>
+<span class="line"><span>     border: 1px solid red;</span></span>
+<span class="line"><span>     top: 50%;</span></span>
+<span class="line"><span>     left: 50%;</span></span>
+<span class="line"><span>     position: absolute;</span></span>
+<span class="line"><span>     margin: -200px 0 0 -200px;</span></span>
+<span class="line"><span> }</span></span></code></pre>
+</div><h3 id="二-未知元素宽高" tabindex="-1">（二）未知元素宽高 <a class="header-anchor" href="#二-未知元素宽高" aria-label="Permalink to &quot;（二）未知元素宽高&quot;">&ZeroWidthSpace;</a></h3>
+<p>这里是使用了两个div的class为box1和box2，方便区别显示，主要设置box2来显示；</p>
+<ol>
+<li>通过position的绝对定位和固定定位left和top都设置相对屏幕的50%距离，然后使用transform的translate负偏移来显示：<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>//html</span></span>
+<span class="line"><span>    &#x3C;div class="box1"></span></span>
+<span class="line"><span>     &#x3C;div class="box2">div+css设置水平垂直居中显示&#x3C;/div></span></span>
+<span class="line"><span> &#x3C;/div></span></span>
+<span class="line"><span> //css</span></span>
+<span class="line"><span>     .box2 {</span></span>
+<span class="line"><span>     border: 5px solid green;</span></span>
+<span class="line"><span>     position: absolute;</span></span>
+<span class="line"><span>     top: 50%;</span></span>
+<span class="line"><span>     left: 50%;</span></span>
+<span class="line"><span>     transform: translate(-50%,-50%);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> }</span></span></code></pre>
+</div>运行结果：</li>
+</ol>
+<CustomImage src='/growth-record/base/css/center-02.png' /><ol start="2">
+<li>通过css设置父元素为display: table，子元素为 display: table-cell，这种方法是让元素包含的内容居中，但是会占据整个父元素，因为子元素没有设置宽高的，如下所示（红线方框是设置宽高的父元素）：</li>
+</ol>
+<CustomImage src='/growth-record/base/css/center-03.png' /><ol start="3">
+<li>最实用的方法：css3新的布局方法——弹性布局 display: flex。在这个方法中，不管是在已知或未知元素宽高的情况下，都能使元素居中显示（推荐使用）。</li>
+</ol>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>//css</span></span>
+<span class="line"><span>.box1 {</span></span>
+<span class="line"><span>        width: 400px;</span></span>
+<span class="line"><span>        height: 400px;</span></span>
+<span class="line"><span>        margin: auto;</span></span>
+<span class="line"><span>        border: 5px solid red;</span></span>
+<span class="line"><span>        display: flex;</span></span>
+<span class="line"><span>        align-items: center;/*垂直居中*/</span></span>
+<span class="line"><span>        justify-content: center;/*水平居中*/</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>    .box2 {</span></span>
+<span class="line"><span>        border: 5px solid green;</span></span>
+<span class="line"><span>    }</span></span></code></pre>
+</div><p>运行结果：</p>
+<CustomImage src='/growth-record/base/css/center-04.png' />]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vue2 基础知识易错点]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/basics-knowledge.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/basics-knowledge.html</guid>
+            <pubDate>Sat, 14 Jul 2018 20:01:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="vue2-基础知识易错点" tabindex="-1">Vue2 基础知识易错点 <a class="header-anchor" href="#vue2-基础知识易错点" aria-label="Permalink to &quot;Vue2 基础知识易错点&quot;">&ZeroWidthSpace;</a></h1>
+<p><strong>学完vue2.0，在写代码啦官网的<a href="https://xiedaimala.com/courses/0d531a6f-40a7-4120-a8f6-9e816ff9d51c#/common" target="_blank" rel="noreferrer">方方老师的《Vue 自测题》</a>测试了一下，惨不忍睹，记录一下测试中的容易错误知识点及坑。</strong></p>
+<CustomImage src='/growth-record/frame/vue/basic-01.png' /><h3 id="一-安装与介绍" tabindex="-1">（一）安装与介绍 <a class="header-anchor" href="#一-安装与介绍" aria-label="Permalink to &quot;（一）安装与介绍&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>
+<p>v-bind绑定之问题
+html部分：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>    &#x3C;div id="app"></span></span>
+<span class="line"><span>   &#x3C;span ____________???____________></span></span>
+<span class="line"><span>     鼠标悬停几秒钟查看此处动态绑定的提示信息！</span></span>
+<span class="line"><span>   &#x3C;/span></span></span>
+<span class="line"><span> &#x3C;/div></span></span></code></pre>
+</div><p>js部分：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>var app = new Vue({</span></span></code></pre>
+</div></li>
+</ol>
+<p>el: '#app',
+data: {
+message: 'Hello Vue!'
+}
+})</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>问号处应该填入什么，才能使得 span 的 title 为 message 的值？</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>答案是：</span></span>
+<span class="line"><span>(1).`:title="message"`；</span></span>
+<span class="line"><span>(2).`v-bind:title="message"`；</span></span>
+<span class="line"><span>(3).` :title=message`；</span></span>
+<span class="line"><span>(4).`v-bind:title=message`；</span></span>
+<span class="line"><span>后两种方法很迷，没找到解释，知道的小伙伴欢迎留言，建议答案都自己亲测试一下。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>2. 关于不同版本的都是正确的说法：</span></span>
+<span class="line"><span>（1）如果你需要在客户端编译模板 (比如传入一个字符串给 template 选项，或挂载到一个元素上并以其 DOM 内部的 HTML 作为模板)，就将需要加上编译器，即完整版；</span></span>
+<span class="line"><span>（2）当使用 vue-loader 或 vueify 的时候，*.vue 文件内部的模板会在构建时预编译成 JavaScript。你在最终打好的包里实际上是不需要编译器的，所以只用运行时版本即可；</span></span>
+<span class="line"><span>（3）运行时版本相比完整版体积要小约 30%；</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### （二）实例与模板</span></span>
+<span class="line"><span>1. `var vm = new Vue(options)`其中 options 是一个对象，请问文档中说 options 可以包含哪些 key ？</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>答案是：</span></span>
+<span class="line"><span>（1） data props propsData computed methods watch</span></span>
+<span class="line"><span>（2）el template render renderError</span></span>
+<span class="line"><span>（3）beforeCreate created beforeMount mounted beforeUpdate updated activated deactivated beforeDestroy destroyed errorCaptured</span></span>
+<span class="line"><span>（4）directives filters components parent mixins extends provide inject</span></span>
+<span class="line"><span>（5）name delimiters functional model inheritAttrs comments</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>2. data数据问题</span></span>
+<span class="line"><span>    html</span></span>
+<span class="line"><span> ```</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> &#x3C;div id="app"></span></span>
+<span class="line"><span>     &#x3C;span class=span-a></span></span>
+<span class="line"><span>       {{obj.a}}</span></span>
+<span class="line"><span>     &#x3C;/span></span></span>
+<span class="line"><span>     &#x3C;span class=span-b></span></span>
+<span class="line"><span>       {{obj.b}}</span></span>
+<span class="line"><span>     &#x3C;/span></span></span>
+<span class="line"><span>   &#x3C;/div></span></span>
+<span class="line"><span> ```</span></span>
+<span class="line"><span>    js</span></span>
+<span class="line"><span> ```</span></span>
+<span class="line"><span> var app = new Vue({</span></span>
+<span class="line"><span>   el: '#app',</span></span>
+<span class="line"><span>   data: {</span></span>
+<span class="line"><span>     obj: {</span></span>
+<span class="line"><span>       a: 'a',</span></span>
+<span class="line"><span>     }</span></span>
+<span class="line"><span>   },</span></span>
+<span class="line"><span> })</span></span>
+<span class="line"><span> app.obj.a = 'a2'</span></span>
+<span class="line"><span> app.obj.b = 'b'</span></span>
+<span class="line"><span> ```</span></span>
+<span class="line"><span>    请问最终 span-a 和 span-b 中分别展示什么字符串？</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    答案是：` span-a 中显示a2，span-b 中显示b`，注意不是显示undefined。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>3. 文档中建议 Vue 实例的生命周期钩子不要写成箭头函数，给出的理由是什么</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    答：</span></span>
+<span class="line"><span>    （1）箭头函数是和父级上下文绑定在一起的，this 不会是如你所预期的 Vue 实例；</span></span>
+<span class="line"><span>  （2）经常导致 Uncaught TypeError: Cannot read property of undefined 或 Uncaught TypeError: this.myMethod is not a function 之类的错误。</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>### （三）计算属性和侦听器</span></span>
+<span class="line"><span>1. 如果 data属性是对象 obj.count，那么要如何写代码才能监听 obj.count 的变化？</span></span></code></pre>
+</div><p>var app = new Vue({
+el: '#app',
+data: {
+obj:{count: 1},
+modified: 0
+},
+watch:{
+<em><strong><strong><strong>???</strong></strong></strong></em>_
+this.modified += 1
+}
+}
+})</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>答案是：` 'obj.count':function(){`可以监听指定的对象属性</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>2. 如果data中的对象 obj 有 N 个属性，要怎么才能监听所有属性呢？</span></span></code></pre>
+</div><p>var app = new Vue({
+el: '#app',
+data: {
+modified: 0,
+obj: {a:1,b:2,c:3}
+},
+created(){
+this.$watch('obj', ()=&gt;{
+this.modified += 1
+}, __<em><strong><strong><strong><strong>????</strong></strong></strong></strong></em>)
+}
+})</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>答案是：</span></span></code></pre>
+</div><p>watch(){
+obj:{
+handler(oldval,newval){
+console.log()
+},
+deep:true
+}
+}</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>如果想监听obj对象中的b属性变化时才执行handler函数，可以使用计算属性computed做中间层，如：</span></span></code></pre>
+</div><pre><code>   var app = new Vue({
+  el: '#app',
+  data: {
+    modified: 0,
+    obj: {a:1,b:2,c:3}
+  },
+  created(){
+      this.$watch('obj', ()=&gt;{
+        this.modified += 1
+      },
+      computed: {
+　　b() {
+　　　　return this.obj.b
+　　}
+},
+	watch(){
+      b(oldval,newval){
+      console.log()
+		}
+	}
+
+})
+</code></pre>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span></span></span></code></pre>
+</div>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[wux-weapp 的微信小程序筛选框：FilterBar 组件分析]]></title>
+            <link>https://super456.github.io/posts/growth-record/platform/applet/filter-bar.html</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/applet/filter-bar.html</guid>
+            <pubDate>Thu, 12 Jul 2018 20:08:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="wux-weapp-的微信小程序筛选框-filterbar-组件分析" tabindex="-1">wux-weapp 的微信小程序筛选框：FilterBar 组件分析 <a class="header-anchor" href="#wux-weapp-的微信小程序筛选框-filterbar-组件分析" aria-label="Permalink to &quot;wux-weapp 的微信小程序筛选框：FilterBar 组件分析&quot;">&ZeroWidthSpace;</a></h1>
+<p>本来是一个GitHub上wux-weapp组件的筛选框，但是整个项目过于系统化，想提取某个组件都是有点难度的，首先要看得懂某个组件的整个生命逻辑，所以自己也是摸索过来的，便简单的提取了wux-weapp组件的FilterBar筛选框的部分功能，满足个人需求及分享一下。</p>
+<h3 id="一-原组件信息" tabindex="-1">（一）原组件信息 <a class="header-anchor" href="#一-原组件信息" aria-label="Permalink to &quot;（一）原组件信息&quot;">&ZeroWidthSpace;</a></h3>
+<p>原组件是GitHub上的wux - 微信小程序自定义组件可以实现对话框、指示器、五星评分等22种功能。<a href="https://github.com/skyvow/wux" target="_blank" rel="noreferrer">点击这里跳转查看原组件</a>
+<img src="https://img-home.csdnimg.cn/images/20230724024159.png?origin_url=http%3A%2F%2Fpbr0erxxq.bkt.clouddn.com%2Fwux-filterbar%2F01.png&amp;pos_id=img-KhgIsTyo-1713669973542" alt="外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传"></p>
+<h3 id="二-原组件筛选框" tabindex="-1">（二）原组件筛选框 <a class="header-anchor" href="#二-原组件筛选框" aria-label="Permalink to &quot;（二）原组件筛选框&quot;">&ZeroWidthSpace;</a></h3>
+<p><img src="https://img-home.csdnimg.cn/images/20230724024159.png?origin_url=http%3A%2F%2Fpbr0erxxq.bkt.clouddn.com%2Fwux-filterbar%2F02.gif&amp;pos_id=img-pRr6Lhzp-1713669973543" alt="外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传"></p>
+<h3 id="三-提取的组件" tabindex="-1">（三）提取的组件 <a class="header-anchor" href="#三-提取的组件" aria-label="Permalink to &quot;（三）提取的组件&quot;">&ZeroWidthSpace;</a></h3>
+<p>主要提取了筛选框页面中通过点击某个字或按钮右侧弹出的方式，方便个人将该组件放在任意需要的位置。
+<img src="https://img-home.csdnimg.cn/images/20230724024159.png?origin_url=http%3A%2F%2Fpbr0erxxq.bkt.clouddn.com%2Fwux-filterbar%2F03.gif&amp;pos_id=img-P7dyJqz6-1713669973544" alt="外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传"></p>
+<p><a href="https://github.com/super456/simpleFilterbar" target="_blank" rel="noreferrer">下载代码</a></p>
+<p>简单的分享，各取所需吧。</p>
+]]></content:encoded>
+            <enclosure url="https://img-home.csdnimg.cn/images/20230724024159.png?origin_url=http%3A%2F%2Fpbr0erxxq.bkt.clouddn.com%2Fwux-filterbar%2F01.png&pos_id=img-KhgIsTyo-1713669973542" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[Vue2 入门实战项目：快餐系统]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/newcomer-project.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/newcomer-project.html</guid>
+            <pubDate>Thu, 12 Jul 2018 20:01:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="vue2-入门实战项目-快餐系统" tabindex="-1">Vue2 入门实战项目：快餐系统 <a class="header-anchor" href="#vue2-入门实战项目-快餐系统" aria-label="Permalink to &quot;Vue2 入门实战项目：快餐系统&quot;">&ZeroWidthSpace;</a></h1>
+<blockquote>
+<p>最近学习vue看到网上很多学习的资料，就找了一个项目系统练习，主要是想学习了的一些知识点，系统的组合运用一遍。网上根据<strong>技术胖老师</strong>博客的内容自己也实战了一遍，挺实用的，对vue框架有了更深入的了解以及自身能力的提升。</p>
+</blockquote>
+<p>欢迎下载使用或二次开发。</p>
+<h3 id="一-项目分析" tabindex="-1">（一）项目分析 <a class="header-anchor" href="#一-项目分析" aria-label="Permalink to &quot;（一）项目分析&quot;">&ZeroWidthSpace;</a></h3>
+<p>这个项目主要是实现在线的用户点餐以及对点餐列表商品的增删改查等功能；然后使用mockplus工具画出草图，主要是方便开发。</p>
+<CustomImage src='/growth-record/frame/vue/newcomer-01.png' /><h3 id="二-运用到的技术" tabindex="-1">（二）运用到的技术 <a class="header-anchor" href="#二-运用到的技术" aria-label="Permalink to &quot;（二）运用到的技术&quot;">&ZeroWidthSpace;</a></h3>
+<p>1.使用vue-cli2.x搭建的开发环境；</p>
+<p>2.使用vue-router做路由转换；</p>
+<p>3.使用element-ui做界面美化；</p>
+<p>4.使用axios做跨域请求接口数据；</p>
+<p>5.使用icofont在线图标管理；</p>
+<p>6.使用webpack打包管理；</p>
+<p>7.使用vue2.0语法和es6语法；</p>
+<h3 id="三-系统成果" tabindex="-1">（三）系统成果 <a class="header-anchor" href="#三-系统成果" aria-label="Permalink to &quot;（三）系统成果&quot;">&ZeroWidthSpace;</a></h3>
+<CustomImage src='/growth-record/frame/vue/newcomer-02.png' /><h3 id="四-系统使用" tabindex="-1">（四）系统使用 <a class="header-anchor" href="#四-系统使用" aria-label="Permalink to &quot;（四）系统使用&quot;">&ZeroWidthSpace;</a></h3>
+<p>1.前提是要有node.js、npm、vue-cli环境（最好有Git，会方便很多）；</p>
+<p>2.<a href="https://github.com/super456/vue2.0-SellPosSystem" target="_blank" rel="noreferrer">下载项目</a>（git clone最好）；</p>
+<p>3.打开终端切换到该项目名称下，执行以下命令行：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span># install dependencies 安装开发环境的依赖，因为不是直接打包上传的项目</span></span>
+<span class="line"><span>npm install</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># serve with hot reload at localhost:8080 运行项目基本没问题</span></span>
+<span class="line"><span>npm run dev</span></span></code></pre>
+</div><h3 id="参考文献" tabindex="-1">参考文献 <a class="header-anchor" href="#参考文献" aria-label="Permalink to &quot;参考文献&quot;">&ZeroWidthSpace;</a></h3>
+<p>技术胖老师的 <a href="http://jspang.com/2017/05/22/vuedemo/" target="_blank" rel="noreferrer">Vue实战视频-快餐店收银系统</a></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Web 服务器 live-server 的安装及使用]]></title>
+            <link>https://super456.github.io/posts/growth-record/other/toolGuide/live-server.html</link>
+            <guid>https://super456.github.io/posts/growth-record/other/toolGuide/live-server.html</guid>
+            <pubDate>Tue, 10 Jul 2018 20:04:09 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="web-服务器-live-server-的安装及使用" tabindex="-1">Web 服务器 live-server 的安装及使用 <a class="header-anchor" href="#web-服务器-live-server-的安装及使用" aria-label="Permalink to &quot;Web 服务器 live-server 的安装及使用&quot;">&ZeroWidthSpace;</a></h1>
+<p><strong>在写一下简单的项目或学习一些技术的练习，没有服务器的话，每次写的代码都需要手动刷新浏览器。有点无奈，但是如果你安装了这个<code>live-server</code> 服务器就可以不用手动刷新，实时预览自己写的代码了。</strong></p>
+<p>live-server是一个具有实时重载功能的小型开发服务器。用它来热加载HTML / JavaScript / CSS文件，但不能用于部署最终的网站系统。</p>
+<h3 id="一-安装" tabindex="-1">（一）安装 <a class="header-anchor" href="#一-安装" aria-label="Permalink to &quot;（一）安装&quot;">&ZeroWidthSpace;</a></h3>
+<p>1.前提条件需要node.js和npm的依赖（可以自己先搞定，不难）；
+2.使用npm全局安装：<code>npm install -g live-server  </code>（本人使用淘宝镜像安装的）</p>
+<CustomImage src='/growth-record/other/toolGuide/live-server-01.png' /><h3 id="二-使用" tabindex="-1">（二）使用 <a class="header-anchor" href="#二-使用" aria-label="Permalink to &quot;（二）使用&quot;">&ZeroWidthSpace;</a></h3>
+<p>1.需要在你使用的项目根目录下启动：<code>liver-server</code>（本人使用git，在指定目录下右击-&gt;git bash here后使用启动命令即可）</p>
+<CustomImage src='/growth-record/other/toolGuide/live-server-02.png' /><p>2.启动成功，网页自动弹项目目录出来；</p>
+<CustomImage src='/growth-record/other/toolGuide/live-server-03.png' /><p>3.退出该服务器，在命令行使用：<code>ctrl+c</code></p>
+<h3 id="三-简单的配置" tabindex="-1">（三）简单的配置 <a class="header-anchor" href="#三-简单的配置" aria-label="Permalink to &quot;（三）简单的配置&quot;">&ZeroWidthSpace;</a></h3>
+<p>1.默认端口号为8080，如果想修改，最简单的方式是启动的时候添加启动参数：<code>live-server --port=8081</code> 即可</p>
+<CustomImage src='/growth-record/other/toolGuide/live-server-04.png' /><p>2.<code>live-server --参数</code> 列表</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>--port=NUMBER - select port to use, default: PORT env var or 8080</span></span>
+<span class="line"><span>--host=ADDRESS - select host address to bind to, default: IP env var or 0.0.0.0 (“any address”)</span></span>
+<span class="line"><span>--no-browser - suppress automatic web browser launching</span></span>
+<span class="line"><span>--browser=BROWSER - specify browser to use instead of system default</span></span>
+<span class="line"><span>--quiet | -q - suppress logging</span></span>
+<span class="line"><span>--verbose | -V - more logging (logs all requests, shows all listening IPv4 interfaces, etc.)</span></span>
+<span class="line"><span>--open=PATH - launch browser to PATH instead of server root</span></span>
+<span class="line"><span>--watch=PATH - comma-separated string of paths to exclusively watch for changes (default: watch everything)</span></span>
+<span class="line"><span>--ignore=PATH - comma-separated string of paths to ignore (anymatch-compatible definition)</span></span>
+<span class="line"><span>--ignorePattern=RGXP - Regular expression of files to ignore (ie .*\.jade) (DEPRECATED in favor of --ignore)</span></span>
+<span class="line"><span>--middleware=PATH - path to .js file exporting a middleware function to add; can be a name without path nor extension to reference bundled middlewares in middleware folder</span></span>
+<span class="line"><span>--entry-file=PATH - serve this file (server root relative) in place of missing files (useful for single page apps)</span></span>
+<span class="line"><span>--mount=ROUTE:PATH - serve the paths contents under the defined route (multiple definitions possible)</span></span>
+<span class="line"><span>--spa - translate requests from /abc to /#/abc (handy for Single Page Apps)</span></span>
+<span class="line"><span>--wait=MILLISECONDS - (default 100ms) wait for all changes, before reloading</span></span>
+<span class="line"><span>--htpasswd=PATH - Enables http-auth expecting htpasswd file located at PATH</span></span>
+<span class="line"><span>--cors - Enables CORS for any origin (reflects request origin, requests with credentials are supported)</span></span>
+<span class="line"><span>--https=PATH - PATH to a HTTPS configuration module</span></span>
+<span class="line"><span>--proxy=ROUTE:URL - proxy all requests for ROUTE to URL</span></span>
+<span class="line"><span>--help | -h - display terse usage hint and exit</span></span>
+<span class="line"><span>--version | -v - display version and exit</span></span></code></pre>
+</div><p>3.也可以把配置放在package.json的scripts下的server中，这样不用每次都命令行使用参数，然后使用命令行启动：<code>npm run server</code>（如何创建一个带package.json包的项目请看下一步）</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>"scripts": {</span></span>
+<span class="line"><span>  "server": "live-server ./ --port=8081"</span></span>
+<span class="line"><span>}</span></span></code></pre>
+</div><p>4.创建一个带package.json包的项目，在项目根目录下使用命令行：<code>npm init</code>，可以自己设置</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>package name: (0710) demo</span></span>
+<span class="line"><span>version: (1.0.0)</span></span>
+<span class="line"><span>description: live-server的练习</span></span>
+<span class="line"><span>entry point: (index.js)</span></span>
+<span class="line"><span>test command:</span></span>
+<span class="line"><span>git repository:</span></span>
+<span class="line"><span>keywords:</span></span>
+<span class="line"><span>author: 猿来独往</span></span>
+<span class="line"><span>license: (ISC)</span></span>
+<span class="line"><span>About to write to D:\GitHub_Repository\Clone_Files\vue-study\0710\package.json:</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>{</span></span>
+<span class="line"><span>  "name": "demo",</span></span>
+<span class="line"><span>  "version": "1.0.0",</span></span>
+<span class="line"><span>  "description": "live-server的练习",</span></span>
+<span class="line"><span>  "main": "index.js",</span></span>
+<span class="line"><span>  "scripts": {</span></span>
+<span class="line"><span>    "test": "echo \"Error: no test specified\" &#x26;&#x26; exit 1"</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  "author": "猿来独往",</span></span>
+<span class="line"><span>  "license": "ISC"</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Is this OK? (yes)</span></span></code></pre>
+</div><p>然后使用第三步的配置，运行该项目就使用：<code>npm run server</code></p>
+<CustomImage src='/growth-record/other/toolGuide/live-server-04.png' /><p><strong>注意：如果浏览器不能实时自动刷新页面，可以试试用这个命令启动（亲测有效）：<code>live-server</code></strong></p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vue-CLI2 跨域请求 Demo（fetch、axios、proxyTable）]]></title>
+            <link>https://super456.github.io/posts/growth-record/frame/vue/cross-domain-request.html</link>
+            <guid>https://super456.github.io/posts/growth-record/frame/vue/cross-domain-request.html</guid>
+            <pubDate>Mon, 09 Jul 2018 20:02:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="vue-cli2-跨域请求-demo-fetch、axios、proxytable" tabindex="-1">Vue-CLI2 跨域请求 Demo（fetch、axios、proxyTable） <a class="header-anchor" href="#vue-cli2-跨域请求-demo-fetch、axios、proxytable" aria-label="Permalink to &quot;Vue-CLI2 跨域请求 Demo（fetch、axios、proxyTable）&quot;">&ZeroWidthSpace;</a></h1>
+<p><strong>学习中需要应用到跨域请求的问题，找了资料，也自己写了一个简单的demo，应用到fetch方法或axios方法，前提都需要配置proxyTable，特别感谢：Web前端网站教程-米斯特吴老师提供的案例和请求接口。</strong></p>
+<h3 id="一-安装vue-cli2-x脚手架" tabindex="-1">（一）安装vue-cli2.x脚手架 <a class="header-anchor" href="#一-安装vue-cli2-x脚手架" aria-label="Permalink to &quot;（一）安装vue-cli2.x脚手架&quot;">&ZeroWidthSpace;</a></h3>
+<p>如果还没安装的，或安装过程不熟的，可以参考这篇文章教程，写的很详细——<a href="https://www.jianshu.com/p/1626b8643676/" target="_blank" rel="noreferrer">Vue2.0史上最全入坑教程（上）—— 搭建Vue脚手架（vue-cli）</a></p>
+<h3 id="二-配置proxytable跨域请求" tabindex="-1">（二）配置proxyTable跨域请求 <a class="header-anchor" href="#二-配置proxytable跨域请求" aria-label="Permalink to &quot;（二）配置proxyTable跨域请求&quot;">&ZeroWidthSpace;</a></h3>
+<p>1.找到config文件夹下的index.js文件打开，找到proxyTable配置项：</p>
+<CustomImage src='/growth-record/frame/vue/cross-01.png' /><p>2.配置代码参考如下：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>    //配置跨域请求,注意配置完之后需要重启编译该项目</span></span>
+<span class="line"><span>    proxyTable: {</span></span>
+<span class="line"><span>      //请求名字变量可以自己定义</span></span>
+<span class="line"><span>      '/apis': {</span></span>
+<span class="line"><span>        target: 'http://www.thenewstep.cn', // 请求的接口域名或IP地址，开头是http或https</span></span>
+<span class="line"><span>        // secure: false,  // 如果是https接口，需要配置这个参数</span></span>
+<span class="line"><span>        changeOrigin: true, // 是否跨域，如果接口跨域，需要进行这个参数配置</span></span>
+<span class="line"><span>        pathRewrite: {</span></span>
+<span class="line"><span>          '^/apis': ''//表示需要rewrite重写路径</span></span>
+<span class="line"><span>        }</span></span>
+<span class="line"><span>      }</span></span>
+<span class="line"><span>    },</span></span></code></pre>
+</div><p>**注意：**可能你的接口地址原本是 <code>http://www.thenewstep.cn/test/test.html</code>，但是为了匹配代理地址，需要在前面加一个 <code>/apis</code>（自己定义的请求接口变量名）,  因此接口地址需要写成这样的即可生效 <code>/apis/test/test.html</code>。</p>
+<h3 id="三-使用fetch实现跨域请求" tabindex="-1">（三）使用fetch实现跨域请求 <a class="header-anchor" href="#三-使用fetch实现跨域请求" aria-label="Permalink to &quot;（三）使用fetch实现跨域请求&quot;">&ZeroWidthSpace;</a></h3>
+<p>1.在App.vue中添加以下代码即可：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>&#x3C;template></span></span>
+<span class="line"><span>  &#x3C;div id="app"></span></span>
+<span class="line"><span>    &#x3C;img src="./assets/logo.png"></span></span>
+<span class="line"><span>    &#x3C;HelloWorld/></span></span>
+<span class="line"><span>  &#x3C;/div></span></span>
+<span class="line"><span>&#x3C;/template></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;script></span></span>
+<span class="line"><span>import HelloWorld from './components/HelloWorld'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>export default {</span></span>
+<span class="line"><span>  name: 'App',</span></span>
+<span class="line"><span>  components: {</span></span>
+<span class="line"><span>    HelloWorld</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  created(){</span></span>
+<span class="line"><span>    // fetch方法，注意apis对应config/index.js中的proxyTable设置的请求名字变量</span></span>
+<span class="line"><span>    fetch("/apis/test/testToken.php",{</span></span>
+<span class="line"><span>      method:"post",//设置请求类型</span></span>
+<span class="line"><span>      headers:{</span></span>
+<span class="line"><span>        "Content-type":"application/json",</span></span>
+<span class="line"><span>        token:"f4c902c9ae5a2a9d8f84868ad064e706"//请求验证，根据请求方接口需要的</span></span>
+<span class="line"><span>      },</span></span>
+<span class="line"><span>      body:JSON.stringify({username:"test",password:"test"}),//设置发送请求的内容</span></span>
+<span class="line"><span>    }).then(result=>{</span></span>
+<span class="line"><span>      // console.log(result);</span></span>
+<span class="line"><span>      //使用json解析请求成功的body内容</span></span>
+<span class="line"><span>      return result.json();</span></span>
+<span class="line"><span>    }).then(data=>{</span></span>
+<span class="line"><span>      console.log(data);//查看打印出请求成功的内容</span></span>
+<span class="line"><span>      if(data.success==1){</span></span>
+<span class="line"><span>        console.log(data.msg);</span></span>
+<span class="line"><span>      }</span></span>
+<span class="line"><span>    });</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>&#x3C;/script></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;style></span></span>
+<span class="line"><span>#app {</span></span>
+<span class="line"><span>  font-family: 'Avenir', Helvetica, Arial, sans-serif;</span></span>
+<span class="line"><span>  -webkit-font-smoothing: antialiased;</span></span>
+<span class="line"><span>  -moz-osx-font-smoothing: grayscale;</span></span>
+<span class="line"><span>  text-align: center;</span></span>
+<span class="line"><span>  color: #2c3e50;</span></span>
+<span class="line"><span>  margin-top: 60px;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>&#x3C;/style></span></span></code></pre>
+</div><p>2.运行结果</p>
+<CustomImage src='/growth-record/frame/vue/cross-02.png' /><h3 id="四-使用axios方法跨域请求" tabindex="-1">（四）使用axios方法跨域请求 <a class="header-anchor" href="#四-使用axios方法跨域请求" aria-label="Permalink to &quot;（四）使用axios方法跨域请求&quot;">&ZeroWidthSpace;</a></h3>
+<p>1.安装axios：<code>npm install axios</code>；
+2.在main.js文件引入axios模块并全局使用；</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>import Vue from 'vue'</span></span>
+<span class="line"><span>import App from './App'</span></span>
+<span class="line"><span>import axios from 'axios'//引入axios模块文件</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Vue.config.productionTip = false;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Vue.prototype.$axios=axios;//设置全局引用</span></span>
+<span class="line"><span>//配置请求的设置</span></span>
+<span class="line"><span>axios.defaults.headers.post['Content-type']="application/json";</span></span>
+<span class="line"><span>axios.defaults.headers.common['token']="f4c902c9ae5a2a9d8f84868ad064e706";//配置参数，请求验证，根据请求方接口需要的</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>/* eslint-disable no-new */</span></span>
+<span class="line"><span>new Vue({</span></span>
+<span class="line"><span>  el: '#app',</span></span>
+<span class="line"><span>  render: h => h(App)</span></span>
+<span class="line"><span>})</span></span></code></pre>
+</div><p>3.修改App.vue组件代码为：</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>&#x3C;template></span></span>
+<span class="line"><span>&#x3C;div id="app"></span></span>
+<span class="line"><span>    &#x3C;img src="./assets/logo.png"></span></span>
+<span class="line"><span>    &#x3C;HelloWorld/></span></span>
+<span class="line"><span>&#x3C;/div></span></span>
+<span class="line"><span>&#x3C;/template></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;script></span></span>
+<span class="line"><span>import HelloWorld from './components/HelloWorld'</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>export default {</span></span>
+<span class="line"><span>    name: 'App',</span></span>
+<span class="line"><span>    components: {</span></span>
+<span class="line"><span>        HelloWorld</span></span>
+<span class="line"><span>    },</span></span>
+<span class="line"><span>    created() {</span></span>
+<span class="line"><span>        //axios方法</span></span>
+<span class="line"><span>        this.$axios.post("/apis/test/testToken.php", {</span></span>
+<span class="line"><span>            username: "test",</span></span>
+<span class="line"><span>            password: "test"</span></span>
+<span class="line"><span>        }).then(result => {</span></span>
+<span class="line"><span>            // return JSON.parse(JSON.stringify(result));</span></span>
+<span class="line"><span>            return JSON.stringify(result.data);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>            // console.log(data);</span></span>
+<span class="line"><span>        }).then(data => {</span></span>
+<span class="line"><span>            console.log(data);</span></span>
+<span class="line"><span>            console.log("注意此刻的data是一个：" + typeof data);</span></span>
+<span class="line"><span>            data = JSON.parse(data);</span></span>
+<span class="line"><span>            if (data.success == 1) {</span></span>
+<span class="line"><span>                console.log(data.msg);</span></span>
+<span class="line"><span>            }</span></span>
+<span class="line"><span>        });</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>&#x3C;/script></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&#x3C;style></span></span>
+<span class="line"><span>#app {</span></span>
+<span class="line"><span>    font-family: 'Avenir', Helvetica, Arial, sans-serif;</span></span>
+<span class="line"><span>    -webkit-font-smoothing: antialiased;</span></span>
+<span class="line"><span>    -moz-osx-font-smoothing: grayscale;</span></span>
+<span class="line"><span>    text-align: center;</span></span>
+<span class="line"><span>    color: #2c3e50;</span></span>
+<span class="line"><span>    margin-top: 60px;</span></span>
+<span class="line"><span>}</span></span>
+<span class="line"><span>&#x3C;/style></span></span></code></pre>
+</div><p>4.运行结果：</p>
+<CustomImage src='/growth-record/frame/vue/cross-03.png' />]]></content:encoded>
         </item>
     </channel>
 </rss>
