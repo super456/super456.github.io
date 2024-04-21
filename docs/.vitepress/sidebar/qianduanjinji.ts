@@ -14,9 +14,10 @@ export default function qianduanjinjiSidebarGuide() {
       collapsed: false,
       items: [
         { text: 'CSS 实战手册学习', link: '/base/css/practical-manual' },
-        { text: 'CSS-BEM-书写规范', link: '/base/css/bem-rule' },
+        { text: 'CSS BEM 书写规范', link: '/base/css/bem-rule' },
         { text: '绝对定位元素布局遮挡问题', link: '/base/css/absolute-element-shelter' },
         { text: '两个模块列自适应布局问题', link: '/base/css/tow-block-adaptive' },
+        { text: 'CSS 之实现图片叠加的层叠层问题', link: '/base/css/image-index' },
       ],
     },
     {
@@ -75,7 +76,12 @@ export default function qianduanjinjiSidebarGuide() {
       text: '跨平台',
       collapsed: false,
       items: [
-        // { text: '什么是小程序', link: '/platform/applet/what-is-applet' },
+        { text: '微信小程序之自定义对话框组件弹窗动画', link: '/platform/applet/custom-dialog' },
+        { text: '微信小程序之animation底部弹窗动画（两种方法）', link: '/platform/applet/bottom-popup-animation' },
+        { text: '微信小程序之物流状态时间轴', link: '/platform/applet/status-timeline' },
+        { text: '微信小程序之 swiper 组件上传图片删除后其余不显示', link: '/platform/applet/swiper-image-no-display' },
+        { text: '微信小程序之 Grid 表格布局', link: '/platform/applet/grid-table-layout' },
+        { text: '微信小程序之自定义 table 表格布局', link: '/platform/applet/custom-table-layout' },
         // { text: '什么是 App', link: '/platform/app/what-is-app' },
         // { text: '什么是 H5', link: '/platform/h5/what-is-h5' },
       ],

@@ -104,5 +104,11 @@ export default {
       icon: 'https://chakra-ui.com/favicon.png',
       link: 'https://chakra-ui.com/',
     },
+    {
+      title: 'Zent - 好用的React组件库',
+      desc: '有赞 PC 端 WebUI 规范的 React 实现，提供了一整套基础的 UI 组件以及一些常用的业务组件',
+      icon: 'https://youzan.github.io/zent/favico/96246b2325242ceb/favicon.ico',
+      link: 'https://youzan.github.io/zent/zh/guides/install',
+    },
   ],
 }
