@@ -12,7 +12,7 @@ categories:
 Visual Studio Code 是一个运行在桌面上，多平台的轻量级且功能强大的源代码编辑器。内置有JavaScript的，TypeScript和Node.js的支持，其他语言如C ++，C＃，Python和PHP等的可扩展，是一个非常丰富的生态系统。主打 web 开发，也是本人在学习前端过程中主要的使用的编程工具。
 <CustomImage src='/growth-record/other/toolGuide/vscode-01.png' />
 
-# （一）主命令框
+## （一）主命令框
 1. `F1 `或 `Ctrl+Shift+P`: 打开命令面板。在打开的输入框内，可以输入任何命令，例如：按一下` Backspace`会进入到 `Ctrl+P `模式
 <CustomImage src='/growth-record/other/toolGuide/vscode-02.png' />
 
@@ -26,7 +26,8 @@ Visual Studio Code 是一个运行在桌面上，多平台的轻量级且功能�
 -  `@`根据分类跳转`symbol`，查找属性或函数，也可以 `Ctrl+Shift+O `后输入:进入
 -  `#`根据名字查找 `symbol`，也可以 `Ctrl+T`
 
-# （二）常用快捷键
+## （二）常用快捷键
+熟练使⽤ VS Code 快捷键，提⾼⼯作效率，成为编辑器⼯作者中的键盘侠，以 Mac 为例：
 
    |   说明  |   快捷键  |
    |-----------|------------|
@@ -38,10 +39,24 @@ Visual Studio Code 是一个运行在桌面上，多平台的轻量级且功能�
 |编辑器换位置| `Ctrl+k`然后按 `Left`或 `Right`|
 |文件之间切换 |`Ctrl+Tab`|
 |打开集成终端 |`Ctrl+`\`|
+|代码多⾏转⼀⾏ |`Ctrl+j`|
+|折叠/展开代码 |`command + option + [ / ]`|
+|向上/向下复制⾏ |`shift + option + up/down`|
+|单词选中： |`command + d`|
+|跳转到特定⾏ |`crtl +g`|
+|⽂件中字⺟单词等符号跳转 |`command + shift + o`|
+|Todo ⼯作区符号跳转 |`command + t`|
+|删除上⼀个单词 |`option + delete`|
+|选中词 |`option + shift + left/right`|
+| 删除⾏ |`command + shift + k`|
+|添加多个光标 |`command + option + up/down`|
+|删除光标后⾯⼀个字符或全部字符 |`fn + delete` 或 `command + fn + delete`|
+|块代码选择 |`shift + option + ⿏标滑动区域（⽅便删除指定区域的代码）`|
+|聚焦全局搜索框 |`command + shift + f（选中字符再操作快捷键⾃动填充搜索）`|
 
-# （三）代码编辑
+## （三）代码编辑
 
-## 1.格式调整
+### 1.格式调整
 
 **注意：** 对python文件进行代码格式化操作时，会提示安装`autopep8`
 
@@ -52,7 +67,7 @@ Visual Studio Code 是一个运行在桌面上，多平台的轻量级且功能�
 - 上下移动一行： `Alt+Up` 或 `Alt+Down`
 - 向上向下复制一行： `Shift+Alt+Up` 或 `Shift+Alt+Down`
 
-## 2.光标相关
+### 2.光标相关
 
 - 移动到定义处： `F12`
 - 定义处缩略图：只看一眼而不跳转过去:`Alt+F12`
@@ -81,7 +96,7 @@ Visual Studio Code 是一个运行在桌面上，多平台的轻量级且功能�
 - 跳转到symbol的定义处 `F12`
 - 瞥见下symbol的定义出（在该symbol下方展开面板，显示定义处代码，非常有用）`Alt + F12`
 
-## 3.重构代码
+### 3.重构代码
 
 **注意：** 查看函数引用和批量休修改函数名，好用：
 
@@ -91,13 +106,13 @@ Visual Studio Code 是一个运行在桌面上，多平台的轻量级且功能�
 - 跳转到下一个 Error 或 Warning：当有多个错误时可以按 `F8 `逐个跳转
 - 查看 diff： 在 explorer 里选择文件右键 `Set file to compare`，然后需要对比的文件上右键选择 `Compare with file_name_you_chose`
 
-## 4.查找替换
+### 4.查找替换
 
 - 查找:`Ctrl+F`
 - 查找替换:`Ctrl+H`
 - 整个文件夹中查找:`Ctrl+Shift+F`
 
-## 5.显示相关
+### 5.显示相关
 
 - 全屏：`F11`
 - 区域整块放大/缩小：`Ctrl +/-`
@@ -108,11 +123,11 @@ Visual Studio Code 是一个运行在桌面上，多平台的轻量级且功能�
 - 显示 Debug:`Ctrl+Shift+D`
 - 显示 Output:`Ctrl+Shift+U`
 
-## 6.其他
+### 6.其他
 
 文件自动保存设置：`File` -> `AutoSave` ，或者 `Ctrl+Shift+P`，输入 `auto`
 
-# （四）修改默认快捷键
+## （四）修改默认快捷键
 
 打开默认键盘快捷方式设置：
 `File`（文件） -> `Preferences`（首选项） -> `Keyboard Shortcuts`（键盘快捷方式），或者：`Alt+F` ->` p `-> `k`-> 回车。
@@ -139,8 +154,8 @@ Visual Studio Code 是一个运行在桌面上，多平台的轻量级且功能�
         "when": "editorTextFocus"
     },
    ```
-# （五）推荐插件
-## 1.前端插件
+## （五）推荐插件
+### 1.前端插件
 
 - auto close tag 自动关闭HTML标签
 - Auto Rename Tag：自动修改标签
@@ -188,12 +203,12 @@ Visual Studio Code 是一个运行在桌面上，多平台的轻量级且功能�
 - Rainbow Brackets：有颜色的显示括号匹配
 - Settings Sync: 同步配置（需要配置GitHub的本地token key）
 
-## 2.官网推荐插件
+### 2.官网推荐插件
 <CustomImage src='/growth-record/other/toolGuide/vscode-03.png' />
 
 [点击跳转](https://marketplace.visualstudio.com/vscode)
 
-## 3.推荐主题
+### 3.推荐主题
 
 <CustomImage src='/growth-record/other/toolGuide/vscode-04.png' />
 
@@ -208,7 +223,7 @@ Visual Studio Code 是一个运行在桌面上，多平台的轻量级且功能�
 - VSCode Great Icons
 - Dracula Official：主题，推荐
 
-# （六）参考文献
+## （六）参考文献
 
 - [打造性感好用的VS Code编辑器](https://segmentfault.com/a/1190000010750790)
 - [Visual Studio Code 简明使用教程](https://www.w3cschool.cn/visualstudiocode/visualstudiocode-iy3422zb.html)

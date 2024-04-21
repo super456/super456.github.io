@@ -89,6 +89,7 @@ export default function qianduanjinjiSidebarGuide() {
       collapsed: false,
       items: [
         { text: 'iOS SiriKit 开发指南', link: '/platform/app/sirikit' },
+        { text: 'Uni-app 项⽬开发问题及解决⽅案记录', link: '/platform/uni/uni-app-question' },
         { text: '微信小程序之自定义对话框组件弹窗动画', link: '/platform/applet/custom-dialog' },
         { text: '微信小程序之animation底部弹窗动画（两种方法）', link: '/platform/applet/bottom-popup-animation' },
         { text: '微信小程序之物流状态时间轴', link: '/platform/applet/status-timeline' },
