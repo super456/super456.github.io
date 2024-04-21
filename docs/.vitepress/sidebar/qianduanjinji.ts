@@ -26,9 +26,10 @@ export default function qianduanjinjiSidebarGuide() {
       collapsed: false,
       items: [
         { text: 'JavaScript 优化技巧', link: '/base/javascript/javascript-optimization-tips' },
-        { text: '容易被忽略的知识点', link: '/base/javascript/ignore-knowledge' },
+        { text: '容易被忽略的知识点（二）', link: '/base/javascript/ignore-knowledge-02' },
         { text: 'JavaScript 布尔值为 false 的六种情况', link: '/base/javascript/boolean-false-six' },
         { text: '主流浏览器事件兼容写法', link: '/base/javascript/browser-event-compatible' },
+        { text: '容易被忽略的知识点（一）', link: '/base/javascript/ignore-knowledge-01' },
         { text: 'TypeScript 学习笔记', link: '/base/javascript/typescript-study' },
         { text: 'TypeScript 开发实战笔记', link: '/base/javascript/typescript-dev-practice' },
         { text: 'TypeScript 全面进阶指南学习笔记', link: '/base/javascript/typescript-advanced-guide-study' },
@@ -122,6 +123,7 @@ export default function qianduanjinjiSidebarGuide() {
       text: '计算机基础',
       collapsed: false,
       items: [
+        { text: 'HTTP 学习笔记', link: '/computer/network/http' },
         // { text: '数据结构与算法', link: '/computer/algorithm/' },
         // { text: '计算机网络', link: '/computer/network/' },
         // { text: '浏览器', link: '/computer/browser/' },
@@ -143,6 +145,7 @@ export default function qianduanjinjiSidebarGuide() {
         { text: '脚手架及 CLI 工具使用', link: '/other/toolGuide/scaffold-cli' },
         { text: 'Web 服务器 live-server 的安装及使用', link: '/other/toolGuide/live-server' },
         { text: '常用的 Markdown 语法格式来编写文章', link: '/other/toolGuide/markdown' },
+        { text: 'VS Code 编程软件常用技巧', link: '/other/toolGuide/vscode-common' },
         // { text: 'VS Code 常用快捷键', link: '/other/toolGuide/' },
       ],
     },

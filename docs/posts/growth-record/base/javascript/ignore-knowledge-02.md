@@ -1,12 +1,12 @@
 ---
-title: 容易被忽略的知识点
+title: 容易被忽略的知识点（二）
 date: 2020-04-26 20:00:00
 tag:
  - JavaScript
 categories:
  - 前端进击
 ---
-# 容易被忽略的知识点
+# 容易被忽略的知识点（二）
 1. for 循环中的 let 有一个单独的作用域吗？
 ```javascript
 let i = 5;
