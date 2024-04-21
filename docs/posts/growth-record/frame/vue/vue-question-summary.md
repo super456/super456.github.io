@@ -57,3 +57,37 @@ MDN 给出了以下答案
 2. 错误的发现 => 解决的时间是否过长，如何更好的面对线上问题；
 3. 权限的设计是否存在问题，目前的模式为没有权限 => 摧毁，采用有权限 => 生成是否会更加安全？
 4. 前端自身的告警系统很有必要；
+
+## 编译报错问题：You are using the runtime-only build of Vue where the template compiler is not available
+相信很多初学者使用vue-cli2.x初始化脚手架项目的时候或者webpack配置的时候会遇到这个问题：
+<CustomImage src='/growth-record/frame/vue/vue-question-06.png' />
+
+一开始初始化项目配置的时候，有两个运行环境配置的版本：Compiler版本、Runtime版本。
+
+简单说一下这两个版本的区别：
+
+1. 当对template模板内容编译是需要对字符串进行模板渲染或者可以绑定的html对象作为模板进行渲染的方式，就需要使用Compiler版本。示例如下：
+   ```
+	new Vue({
+	    el:'#vue-app',
+	    template:'<div><h1>{{test}}</h1></div>',
+	    data:{
+	    test:'hello'
+	    }
+	});
+	```
+
+2. 如果使用vue-loader加载.vue文件时（组件文件），webpack在打包对模板进行了渲染，就需要Runtime版本。示例如下：
+
+	```
+	new Vue({
+	  el: '#app',
+	  components: { App },
+	  template: '<App/>'
+	})
+	```
+
+从Compiler版本修改为Runtime版本。只需如示代码：
+<CustomImage src='/growth-record/frame/vue/vue-question-07.png' />
+
+添加一行代码：`'vue$': 'vue/dist/vue.esm.js'` ，然后重新运行编译就可以了
