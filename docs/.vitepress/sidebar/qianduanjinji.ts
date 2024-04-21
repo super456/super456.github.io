@@ -81,12 +81,14 @@ export default function qianduanjinjiSidebarGuide() {
       collapsed: false,
       items: [
         // { text: '什么是 Node', link: '/frame/node/what-is-node' },
+        { text: 'Node.js Corepack 使⽤指南', link: '/frame/node/corepack-guide' },
       ],
     },
     {
       text: '跨平台',
       collapsed: false,
       items: [
+        { text: 'iOS SiriKit 开发指南', link: '/platform/app/sirikit' },
         { text: '微信小程序之自定义对话框组件弹窗动画', link: '/platform/applet/custom-dialog' },
         { text: '微信小程序之animation底部弹窗动画（两种方法）', link: '/platform/applet/bottom-popup-animation' },
         { text: '微信小程序之物流状态时间轴', link: '/platform/applet/status-timeline' },
