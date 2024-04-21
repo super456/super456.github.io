@@ -5,8 +5,7 @@ export default function qianduanjinjiSidebarGuide() {
       text: 'HTML',
       collapsed: false,
       items: [
-        // { text: '什么是 HTML', link: '/base/html/what-is-html' },
-        // { text: '语义化标签', link: '/base/html/semantic-label' },
+        { text: 'HTML 知识点', link: '/base/html/basics-knowledge' },
       ],
     },
     {
@@ -80,7 +79,6 @@ export default function qianduanjinjiSidebarGuide() {
       text: 'Node',
       collapsed: false,
       items: [
-        // { text: '什么是 Node', link: '/frame/node/what-is-node' },
         { text: 'Node.js Corepack 使⽤指南', link: '/frame/node/corepack-guide' },
       ],
     },
@@ -90,6 +88,7 @@ export default function qianduanjinjiSidebarGuide() {
       items: [
         { text: 'iOS SiriKit 开发指南', link: '/platform/app/sirikit' },
         { text: 'Uni-app 项⽬开发问题及解决⽅案记录', link: '/platform/uni/uni-app-question' },
+        { text: '微信网页授权开发指南', link: '/platform/applet/weapp-auth-dev' },
         { text: '微信小程序之自定义对话框组件弹窗动画', link: '/platform/applet/custom-dialog' },
         { text: '微信小程序之animation底部弹窗动画（两种方法）', link: '/platform/applet/bottom-popup-animation' },
         { text: '微信小程序之物流状态时间轴', link: '/platform/applet/status-timeline' },
@@ -105,8 +104,6 @@ export default function qianduanjinjiSidebarGuide() {
         { text: '微信小程序之图片遮罩层 Demo', link: '/platform/applet/image-masking-demo' },
         { text: '微信小程序之登录欢迎页面 Demo', link: '/platform/applet/login-welcome-demo' },
         { text: 'wux-weapp 的微信小程序筛选框：FilterBar 组件分析', link: '/platform/applet/filter-bar' },
-        // { text: '什么是 App', link: '/platform/app/what-is-app' },
-        // { text: '什么是 H5', link: '/platform/h5/what-is-h5' },
       ],
     },
     {
@@ -114,7 +111,6 @@ export default function qianduanjinjiSidebarGuide() {
       collapsed: false,
       items: [
         { text: '什么是前端工程化', link: '/engineering/index' },
-        // { text: '性能优化', link: '/engineering/performance/' },
         { text: 'Webpack 基础语法', link: '/engineering/webpack/intro' },
         { text: '异常监控管理工具调研', link: '/engineering/tools/anomaly-monitoring-research' },
         { text: 'DevOps 了解', link: '/engineering/tools/dev-ops' },
@@ -127,9 +123,8 @@ export default function qianduanjinjiSidebarGuide() {
       collapsed: false,
       items: [
         { text: 'HTTP 学习笔记', link: '/computer/network/http' },
-        // { text: '数据结构与算法', link: '/computer/algorithm/' },
-        // { text: '计算机网络', link: '/computer/network/' },
-        // { text: '浏览器', link: '/computer/browser/' },
+        { text: '算法学习心得', link: '/computer/algorithm/experience' },
+        { text: '算法基础学习', link: '/computer/algorithm/basics-knowledge' },
       ],
     },
     {
@@ -149,7 +144,6 @@ export default function qianduanjinjiSidebarGuide() {
         { text: 'Web 服务器 live-server 的安装及使用', link: '/other/toolGuide/live-server' },
         { text: '常用的 Markdown 语法格式来编写文章', link: '/other/toolGuide/markdown' },
         { text: 'VS Code 编程软件常用技巧', link: '/other/toolGuide/vscode-common' },
-        // { text: 'VS Code 常用快捷键', link: '/other/toolGuide/' },
       ],
     },
     {

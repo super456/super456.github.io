@@ -6,6 +6,7 @@ export default function yehangxifeiSidebarGuide() {
       collapsed: false,
       items: [
         { text: '我失业了', link: '/2024/lose-job' },
+        { text: '挑选眼镜心得', link: '/2024/glasses' },
         { text: '逆向生长，保持路上', link: '/2023/stay-on-road' },
         { text: '自我发展规划觉察', link: '/2023/self-planning-awareness' },
         { text: '浅谈职业规划', link: '/2022/career-planning' },

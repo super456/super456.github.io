@@ -53,6 +53,7 @@ categories:
 - 安装/卸载到 dependencies 下：`npm install/uninstall gulp -S/--save`
 - 删除 node_modules：`npm install rimraf -g` `rimraf node_modules`
 - 查看包版本：`npm ls nuxt`
+- 清除缓存数据： `npm cache clean --force`
 
 ## 五、Git 操作
 
@@ -68,8 +69,11 @@ categories:
 - 当前项目中配置账户信息：`git config  user.name "xxx"` `git config  user.email "xxx@qq.com"`
 - 将当前文件下的都添加：`git add .`
 - 切换到上一个分支：`git checkout -`
+- 清空⼯作区修改的内容： `git checkout .` 清空暂存区和⼯作区内容： `git reset --hard`
 - 创建提交版本并填写备注：`git commit -m "此次修改的一些说明"`
 - 修改最近一次提交的 commit message：`git commit --amend -m "Updated commit message" 或 git commit --amend // 后面是vim命令 w: 写入 q: 退出`
+- 使⽤某个分⽀的 commit 到另外⼀个分⽀： `git cherry-pick [commit hash]` ，多个
+commit 包括前⼀个和后⼀个，不包括前⼀个 commit 去掉 `^` ： `git cherry-pick [commit hash]^..[commit hash]`
 - git 的忽略文件，也就是上传的时候不用管：
 ```git
 *.txt    //忽略所有的 .txt 文件
@@ -149,6 +153,27 @@ git rm -f xxx
 // 递归删除，即如果后面跟的是一个目录做为参数，则会递归删除整个目录中的所有子目录和文件
 git rm -r xxx
 ```
+
+- git revrt 回滚 commit 记录，⼀般⽤于回滚分⽀ commit ID 记录层级⽐较深的且不影响其他
+提交的 commit ID 记录：
+```git
+ // ⾮ merge 的 commit
+ git revert [commit hash]
+
+ // merge 类型的 commit，第⼀个 hash 为编号1，第⼆个 hash 为编号 2，以哪个⽗ hash 为主线则保留哪个，删除另⼀个
+ git revert -m [1|2] [commit hash]
+ // 如下图，则回滚 bd86846 的提交，且以 ba25a9d master 分⽀为主线保留，回滚掉 1c7036f 所在分⽀提交
+ git revert -m 1 bd86846
+```
+<CustomImage src='/growth-record/other/toolGuide/command-line-01.png' />
+
+- `git rebase -i` ⼀般⽤于合并分⽀ commit 记录⽇志⽐较混乱情况合并为⼀个 commit 记录或
+修改 commit 记录操作，⽐如丢弃某个 commit 记录：
+```git
+// 调整最近提交的 3 次⽇志修改
+git rebase -i HEAD~3
+```
+
 ## 六、SSH 查看 PM2 日志
 前提要有权限：
 ```git
