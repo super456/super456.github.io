@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Sun, 21 Apr 2024 04:51:28 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 21 Apr 2024 05:33:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -23084,11 +23084,11 @@ console.log(Boolean(Infinity)) // true
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[容易被忽略的知识点]]></title>
-            <link>https://super456.github.io/posts/growth-record/base/javascript/ignore-knowledge.html</link>
-            <guid>https://super456.github.io/posts/growth-record/base/javascript/ignore-knowledge.html</guid>
+            <title><![CDATA[容易被忽略的知识点（二）]]></title>
+            <link>https://super456.github.io/posts/growth-record/base/javascript/ignore-knowledge-02.html</link>
+            <guid>https://super456.github.io/posts/growth-record/base/javascript/ignore-knowledge-02.html</guid>
             <pubDate>Sun, 26 Apr 2020 20:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 id="容易被忽略的知识点" tabindex="-1">容易被忽略的知识点 <a class="header-anchor" href="#容易被忽略的知识点" aria-label="Permalink to &quot;容易被忽略的知识点&quot;">&ZeroWidthSpace;</a></h1>
+            <content:encoded><![CDATA[<h1 id="容易被忽略的知识点-二" tabindex="-1">容易被忽略的知识点（二） <a class="header-anchor" href="#容易被忽略的知识点-二" aria-label="Permalink to &quot;容易被忽略的知识点（二）&quot;">&ZeroWidthSpace;</a></h1>
 <ol>
 <li>for 循环中的 let 有一个单独的作用域吗？</li>
 </ol>
@@ -26991,6 +26991,249 @@ main.js代码：</p>
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[HTTP 学习笔记]]></title>
+            <link>https://super456.github.io/posts/growth-record/computer/network/http.html</link>
+            <guid>https://super456.github.io/posts/growth-record/computer/network/http.html</guid>
+            <pubDate>Tue, 26 Jun 2018 20:07:05 GMT</pubDate>
+            <description><![CDATA[# HTTP 学习笔记
+#### 作为一个开发人员，如果您经常跟客户端、服务器打交道，肯定要懂点HTTP协议内容，对于开发调试至关重要。
+
+>HTTP协议 （HyperText Transfer Protocol，超文本传输协议）是因特网上应用最为广泛的一种网络传输协议，所有的WWW文件都必须遵守这个标准。它是一个基于TCP/IP通信协议来传递数据（HTML 文件, 图片文件, 查询结果等）。
+
+介绍一下内容：
+1.  HTTP的工作原理
+2.  HTTP的消息结构
+3.  HTTP的请求方式
+4.  HTTP的响应信息
+5.  HTTP的状态码类
+6.  HTTP Content-type
+
+## 1. HTTP的工作原理
+
+>HTTP协议工作于客户端-服务端架构为上。浏览器作为HTTP客户端通过URL向HTTP服务端即WEB服务器发送所有请求。
+
+HTTP协议通信流程图：
+
+<CustomImage src='/growth-record/computer/network/http-01.png' />
+
+需要注意的是：
+
+- HTTP无连接状态：无连接的含义是限制每次连接只处理一个请求。服务器处理完客户的请求，并收到客户的应答后，即断开连接。采用这种方式可以节省传输时间。
+- HTTP媒体独立状态：只要客户端和服务器知道如何处理的数据内容，任何类型的数据都可以通过HTTP发送。客户端以及服务器指定使用适合的MIME-type内容类型。
+-  HTTP无状态：无状态是指协议对于事务处理没有记忆能力。缺少状态意味着如果后续处理需要前面的信息，则它必须重传，这样可能导致每次连接传送的数据量增大。另一方面，在服务器不需要先前信息时它的应答就较快。
+
+## 2. HTTP的消息结构
+
+>HTTP是基于客户端/服务端（C/S）的架构模型，通过一个可靠的链接来交换信息，是一个无状态的请求/响应协议。
+>一个HTTP"客户端"是一个应用程序（Web浏览器或其他任何客户端），通过连接到服务器达到向服务器发送一个或多个HTTP的请求的目的，和通过接收客户端的请求并向客户端发送HTTP响应数据。
+>HTTP使用统一资源标识符（Uniform Resource Identifiers, URI）来传输数据和建立连接。一旦建立连接后，数据消息就通过类似Internet邮件所使用的格式[RFC5322]和多用途Internet邮件扩展（MIME）[RFC2045]来传送。
+
+客户端发送请求结构图：
+
+<CustomImage src='/growth-record/computer/network/http-02.png' />
+
+服务器响应消息图：
+
+<CustomImage src='/growth-record/computer/network/http-03.png' />
+
+## 3.  HTTP的请求方式
+
+常用的请求方式列表：
+
+| 序号  | 方法	| 描述 |
+|]]></description>
+            <content:encoded><![CDATA[<h1 id="http-学习笔记" tabindex="-1">HTTP 学习笔记 <a class="header-anchor" href="#http-学习笔记" aria-label="Permalink to &quot;HTTP 学习笔记&quot;">&ZeroWidthSpace;</a></h1>
+<h4 id="作为一个开发人员-如果您经常跟客户端、服务器打交道-肯定要懂点http协议内容-对于开发调试至关重要。" tabindex="-1">作为一个开发人员，如果您经常跟客户端、服务器打交道，肯定要懂点HTTP协议内容，对于开发调试至关重要。 <a class="header-anchor" href="#作为一个开发人员-如果您经常跟客户端、服务器打交道-肯定要懂点http协议内容-对于开发调试至关重要。" aria-label="Permalink to &quot;作为一个开发人员，如果您经常跟客户端、服务器打交道，肯定要懂点HTTP协议内容，对于开发调试至关重要。&quot;">&ZeroWidthSpace;</a></h4>
+<blockquote>
+<p>HTTP协议 （HyperText Transfer Protocol，超文本传输协议）是因特网上应用最为广泛的一种网络传输协议，所有的WWW文件都必须遵守这个标准。它是一个基于TCP/IP通信协议来传递数据（HTML 文件, 图片文件, 查询结果等）。</p>
+</blockquote>
+<p>介绍一下内容：</p>
+<ol>
+<li>HTTP的工作原理</li>
+<li>HTTP的消息结构</li>
+<li>HTTP的请求方式</li>
+<li>HTTP的响应信息</li>
+<li>HTTP的状态码类</li>
+<li>HTTP Content-type</li>
+</ol>
+<h2 id="_1-http的工作原理" tabindex="-1">1. HTTP的工作原理 <a class="header-anchor" href="#_1-http的工作原理" aria-label="Permalink to &quot;1. HTTP的工作原理&quot;">&ZeroWidthSpace;</a></h2>
+<blockquote>
+<p>HTTP协议工作于客户端-服务端架构为上。浏览器作为HTTP客户端通过URL向HTTP服务端即WEB服务器发送所有请求。</p>
+</blockquote>
+<p>HTTP协议通信流程图：</p>
+<CustomImage src='/growth-record/computer/network/http-01.png' /><p>需要注意的是：</p>
+<ul>
+<li>HTTP无连接状态：无连接的含义是限制每次连接只处理一个请求。服务器处理完客户的请求，并收到客户的应答后，即断开连接。采用这种方式可以节省传输时间。</li>
+<li>HTTP媒体独立状态：只要客户端和服务器知道如何处理的数据内容，任何类型的数据都可以通过HTTP发送。客户端以及服务器指定使用适合的MIME-type内容类型。</li>
+<li>HTTP无状态：无状态是指协议对于事务处理没有记忆能力。缺少状态意味着如果后续处理需要前面的信息，则它必须重传，这样可能导致每次连接传送的数据量增大。另一方面，在服务器不需要先前信息时它的应答就较快。</li>
+</ul>
+<h2 id="_2-http的消息结构" tabindex="-1">2. HTTP的消息结构 <a class="header-anchor" href="#_2-http的消息结构" aria-label="Permalink to &quot;2. HTTP的消息结构&quot;">&ZeroWidthSpace;</a></h2>
+<blockquote>
+<p>HTTP是基于客户端/服务端（C/S）的架构模型，通过一个可靠的链接来交换信息，是一个无状态的请求/响应协议。
+一个HTTP&quot;客户端&quot;是一个应用程序（Web浏览器或其他任何客户端），通过连接到服务器达到向服务器发送一个或多个HTTP的请求的目的，和通过接收客户端的请求并向客户端发送HTTP响应数据。
+HTTP使用统一资源标识符（Uniform Resource Identifiers, URI）来传输数据和建立连接。一旦建立连接后，数据消息就通过类似Internet邮件所使用的格式[RFC5322]和多用途Internet邮件扩展（MIME）[RFC2045]来传送。</p>
+</blockquote>
+<p>客户端发送请求结构图：</p>
+<CustomImage src='/growth-record/computer/network/http-02.png' /><p>服务器响应消息图：</p>
+<CustomImage src='/growth-record/computer/network/http-03.png' /><h2 id="_3-http的请求方式" tabindex="-1">3.  HTTP的请求方式 <a class="header-anchor" href="#_3-http的请求方式" aria-label="Permalink to &quot;3.  HTTP的请求方式&quot;">&ZeroWidthSpace;</a></h2>
+<p>常用的请求方式列表：</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th style="text-align:left">方法</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align:left">GET</td>
+<td style="text-align:left">请求指定的页面信息，并返回实体主体。</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align:left">HEAD</td>
+<td style="text-align:left">类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align:left">POST</td>
+<td style="text-align:left">向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改。</td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align:left">PUT</td>
+<td style="text-align:left">从客户端向服务器传送的数据取代指定的文档的内容。</td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align:left">DELETE</td>
+<td style="text-align:left">请求服务器删除指定的页面。</td>
+</tr>
+<tr>
+<td>6</td>
+<td style="text-align:left">CONNECT</td>
+<td style="text-align:left">HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。</td>
+</tr>
+<tr>
+<td>7</td>
+<td style="text-align:left">OPTIONS</td>
+<td style="text-align:left">允许客户端查看服务器的性能。</td>
+</tr>
+<tr>
+<td>8</td>
+<td style="text-align:left">TRACE</td>
+<td style="text-align:left">回显服务器收到的请求，主要用于测试或诊断。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4-http的响应信息" tabindex="-1">4.  HTTP的响应信息 <a class="header-anchor" href="#_4-http的响应信息" aria-label="Permalink to &quot;4.  HTTP的响应信息&quot;">&ZeroWidthSpace;</a></h2>
+<p>参数列表：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">应答头</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Allow</td>
+<td style="text-align:left">服务器支持哪些请求方法（如GET、POST等）。</td>
+</tr>
+<tr>
+<td style="text-align:left">Content-Encoding</td>
+<td style="text-align:left">文档的编码（Encode）方法。</td>
+</tr>
+<tr>
+<td style="text-align:left">Content-Length</td>
+<td style="text-align:left">表示内容长度。</td>
+</tr>
+<tr>
+<td style="text-align:left">Content-Type</td>
+<td style="text-align:left">表示后面的文档属于什么MIME类型。</td>
+</tr>
+<tr>
+<td style="text-align:left">Date</td>
+<td style="text-align:left">当前的GMT时间。</td>
+</tr>
+<tr>
+<td style="text-align:left">Expires</td>
+<td style="text-align:left">应该在什么时候认为文档已经过期，从而不再缓存它？</td>
+</tr>
+<tr>
+<td style="text-align:left">Last-Modified</td>
+<td style="text-align:left">文档的最后改动时间。</td>
+</tr>
+<tr>
+<td style="text-align:left">Location</td>
+<td style="text-align:left">表示客户应当到哪里去提取文档。</td>
+</tr>
+<tr>
+<td style="text-align:left">Refresh</td>
+<td style="text-align:left">表示浏览器应该在多少时间之后刷新文档，以秒计。</td>
+</tr>
+<tr>
+<td style="text-align:left">Server</td>
+<td style="text-align:left">服务器名字。Servlet一般不设置这个值，而是由Web服务器自己设置。</td>
+</tr>
+<tr>
+<td style="text-align:left">Set-Cookie</td>
+<td style="text-align:left">设置和页面关联的Cookie。</td>
+</tr>
+<tr>
+<td style="text-align:left">WWW-Authenticate</td>
+<td style="text-align:left">客户应该在Authorization头中提供什么类型的授权信息？</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5-http的状态码类" tabindex="-1">5.  HTTP的状态码类 <a class="header-anchor" href="#_5-http的状态码类" aria-label="Permalink to &quot;5.  HTTP的状态码类&quot;">&ZeroWidthSpace;</a></h2>
+<p>这是常见的HTTP状态码：</p>
+<ul>
+<li>200 - 请求成功</li>
+<li>301 - 资源（网页等）被永久转移到其它URL</li>
+<li>404 - 请求的资源（网页等）不存在</li>
+<li>500 - 内部服务器错误</li>
+</ul>
+<p>具体分类表：</p>
+<table>
+<thead>
+<tr>
+<th>分类</th>
+<th style="text-align:left">分类描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1**</td>
+<td style="text-align:left">信息，服务器收到请求，需要请求者继续执行操作</td>
+</tr>
+<tr>
+<td>2**</td>
+<td style="text-align:left">成功，操作被成功接收并处理</td>
+</tr>
+<tr>
+<td>3**</td>
+<td style="text-align:left">重定向，需要进一步的操作以完成请求</td>
+</tr>
+<tr>
+<td>4**</td>
+<td style="text-align:left">客户端错误，请求包含语法错误或无法完成请求</td>
+</tr>
+<tr>
+<td>5**</td>
+<td style="text-align:left">服务器错误，服务器在处理请求的过程中发生了错误</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6-http-content-type" tabindex="-1">6.  HTTP Content-type <a class="header-anchor" href="#_6-http-content-type" aria-label="Permalink to &quot;6.  HTTP Content-type&quot;">&ZeroWidthSpace;</a></h2>
+<blockquote>
+<p>Content-Type，内容类型，一般是指网页中存在的Content-Type，用于定义网络文件的类型和网页的编码，决定浏览器将以什么形式、什么编码读取这个文件，这就是经常看到一些Asp网页点击的结果却是下载到的一个文件或一张图片的原因。</p>
+</blockquote>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Vue2 父子组件动态传值]]></title>
             <link>https://super456.github.io/posts/growth-record/frame/vue/vue2-component-props.html</link>
             <guid>https://super456.github.io/posts/growth-record/frame/vue/vue2-component-props.html</guid>
@@ -27071,6 +27314,302 @@ main.js代码：</p>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">html</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre>
 </div><p>测试结果如下：</p>
 <CustomImage src='/growth-record/frame/vue/props-01.png' /><CustomImage src='/growth-record/frame/vue/props-02.png' />]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[容易被忽略的知识点（一）]]></title>
+            <link>https://super456.github.io/posts/growth-record/base/javascript/ignore-knowledge-01.html</link>
+            <guid>https://super456.github.io/posts/growth-record/base/javascript/ignore-knowledge-01.html</guid>
+            <pubDate>Sat, 23 Jun 2018 20:05:01 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="容易被忽略的知识点-一" tabindex="-1">容易被忽略的知识点（一） <a class="header-anchor" href="#容易被忽略的知识点-一" aria-label="Permalink to &quot;容易被忽略的知识点（一）&quot;">&ZeroWidthSpace;</a></h1>
+<p>学习JavaScript也有一段时间了，但是总有一些基础知识点容易搞混或者忘记，所以当自己回顾这些这些知识点的时候会模糊不清，又要重新看一遍资料，为了以后方便，所以这里记录一下，也是为了更深入的理解透彻。</p>
+<h2 id="一-、函数" tabindex="-1">（一）、函数 <a class="header-anchor" href="#一-、函数" aria-label="Permalink to &quot;（一）、函数&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>
+<p>使用未声明的变量时，它将自动被视为全局变量，即便你在函数中首次使用它亦如此。</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">   function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> playTurn</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">player</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">location</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">){</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> //    使用变量points前，我们忘了关键字var声明它，因此它被自动视为全局变量</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    points</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(location</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">==</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">){</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        points</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">points</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">100</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> points;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span></code></pre>
+</div></li>
+<li>
+<p>如果局部变量与全局变量同名，它将“遮住”全局变量。</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> beanCounter</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">10</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//全局变量</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> getNumberOfItems</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">ordertype</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">){</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> beanCounter</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//局部变量</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(ordertype</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">==</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"order"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">){</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">     //</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> beanCounter;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>因此每次调用函数使用的是局部变量beanCounter时，都会遮住全局变量，但是全局变量和局部变量不会相互影响：如果你修改其中的一个，对另一个不会有任何影响，它们是彼此独立的变量。</p>
+</li>
+<li>
+<p>如果形参与全局变量同名，它会遮住全局变量。</p>
+</li>
+<li>
+<p>函数声明和函数表达式区别：</p>
+<ul>
+<li>
+<p>使用函数声明时，函数将在执行代码前创建；而使用函数表达式时，函数将在运行阶段执行代码时创建。（简单的说浏览器执行代码分两遍时，第一遍分析所有的函数声明，并定义函数声明创建的函数，第二遍浏览器从上到下顺序执行代码，并定义函数表达式创建的函数。）</p>
+</li>
+<li>
+<p>使用函数声明时，将创建一个与函数同名的变量，并让它指向函数；而使用函数表达式时，通常不给函数指定名称，因此你要么在代码中将函数赋给一个变量，要么以其他方式使用函数表达式。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>函数用法：可以将函数赋给变量；可以将函数传递给函数；可以从函数返回函数。</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   //可以将函数传递给函数</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  //定义一个对象变量</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">        var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> passengers </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [{</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"dudu"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         paid: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         ticket: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"firstclass"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }, {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"jane"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         paid: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         ticket: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"coach"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }, {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Sue"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         paid: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         ticket: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"firstclass"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }, {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Fujia"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         paid: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         ticket: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"caoach"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }];</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">     //创建一个传递函数，参数一个是对象一个是函数</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> processPassengers</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">passengers</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">testFunction</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">         for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> i </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; i </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> passengers.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">length</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; i</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">++</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">             if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">testFunction</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(passengers[i].name)) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">                 return</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> false</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">         return</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">     //创建需要作为参数传递的函数</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> checkNoFlyList</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">passenger</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">         return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (passenger.name </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">===</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "dudu"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">     // 向函数传递函数</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> allCanFly </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> processPassengers</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(passengers, checkNoFlyList);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//第一个参数是对象，第二个参数是函数</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (allCanFly) {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"这架飞机不能起飞，因为有乘客在禁飞名单里面"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }</span></span></code></pre>
+</div><div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//可以从函数返回函数</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//定义一个对象变量</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">   var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> passengers </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [{</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"dudu"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         paid: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         ticket: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"firstclass"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }, {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"jane"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         paid: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         ticket: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"coach"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }, {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Sue"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         paid: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         ticket: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"firstclass"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }, {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         name: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Fujia"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         paid: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         ticket: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"caoach"</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }];</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> createDrinkOrder</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">passenger</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">         var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> orderFunction;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//创建一个变量用于存储要返回的函数</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">         if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (passenger.ticket </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">===</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "firstclass"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             orderFunction</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//定义返回的函数代码</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">                 alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Would you like a cocktail or wine?"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             };</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">else</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             orderFunction</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//定义返回的函数代码</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">                 alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Your choice is cola or water."</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             };</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">         return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> orderFunction;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//返回创建的函数</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> serveCustomer</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">passenger</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">         var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> getDrinkOrderFunction </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> createDrinkOrder</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(passenger);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//注意这里是将返回的函数赋给变量引用</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">         getDrinkOrderFunction</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">();</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//引用变量指向返回的函数</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> servePassengers</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">passengers</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">         for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> i </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; i </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> passengers.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">length</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; i</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">++</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">             serveCustomer</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(passengers[i]);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">     servePassengers</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(passengers);</span></span></code></pre>
+</div></li>
+</ol>
+<h2 id="二-、对象" tabindex="-1">（二）、对象 <a class="header-anchor" href="#二-、对象" aria-label="Permalink to &quot;（二）、对象&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>
+<p>可以随时增删属性： <code>fido.dogYears=35;</code>就新增对象fido的一个属性dogYears，并赋值为35 , <code>delete fido.dogYears;</code>删除了一个对象fido的属性dogYears，如果成功删除了属性，delete表达式将返回true，仅当属性无法删除时，delete才返回false。如果对象属于浏览器而受到保护，即便你要删除的属性在对象中不存在，delete也将返回true。</p>
+</li>
+<li>
+<p>对象变量存储的不是对象本身，而是指向对象的引用，因此对象变量也被称为引用变量。</p>
+</li>
+<li>
+<p>向函数传递对象时，函数获得的是指向该对象的引用的副本，而不是对象本身的副本。因此，如果在函数中修改属性的值，修改的将是原始对象的值。</p>
+</li>
+<li>
+<p>调用对象的方法时，关键字this指向其方法被调用的对象。要在对象的方法中访问对象的属性，必须使用句点表示法，但使用关键字this而不是对象名。</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> fiat</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    make:</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Fiat"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    started:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">,</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">    start</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(){</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">        this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.started</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">    stop</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(){</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">        this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.started</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">false</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    },</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">    drive</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(){</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">        if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.started){</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">            alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Zoom Zoom"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        }</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">else</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">{</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">            alert</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"You need to start the engine first."</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span></code></pre>
+</div></li>
+<li>
+<p>需要创建大量类似的对象时，适合使用构造函数。注意<code>new</code>和<code>this</code>的使用。</p>
+</li>
+</ol>
+<h2 id="三-、类型" tabindex="-1">（三）、类型 <a class="header-anchor" href="#三-、类型" aria-label="Permalink to &quot;（三）、类型&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>
+<p><code>undefined</code>类型:</p>
+<ul>
+<li>没有return语句的函数返回的值。</li>
+<li>未赋值的变量的值。</li>
+<li>稀疏数组中不存在的数组元素的值。</li>
+<li>已删除的属性的值。</li>
+<li>创建对象时没有赋给属性的值。</li>
+</ul>
+</li>
+<li>
+<p><code>null</code>表示对象不存在，跟<code>undefined</code>的区别是：在应该提供一个对象，但无法创建或找到时，将提供<code>null</code>；在变量未初始化、对象没有指定属性或数组没有指定元素时，将返回<code>undefined</code>。</p>
+</li>
+<li>
+<p><code>NaN</code>表示无法用数字表示的数值结果，但它的类型仍是数字，注意：<code>NaN!=NaN</code>。判断一个数是不是<code>NaN</code>，使用<code>isNaN()</code>。</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> test</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">/</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">typeof</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> test);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//number</span></span></code></pre>
+</div></li>
+<li>
+<p>在JavaScript中总共有5个假值：<code>undefined</code>，<code>null</code>，<code>0</code>，<code>&quot;&quot;</code>和<code>false</code>；其他值都是真值。</p>
+</li>
+</ol>
+<h2 id="四-、闭包" tabindex="-1">（四）、闭包 <a class="header-anchor" href="#四-、闭包" aria-label="Permalink to &quot;（四）、闭包&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>
+<p>闭包：名词，指的是函数和引用环境。包含自由变量的函数与为所有这些自由变量提供了变量绑定的环境一起，被称为闭包。</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">        function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> makeCounter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">         var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> count </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">         function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Counter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             count </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> count </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">             return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> count;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">         return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> Counter;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//这是一个闭包</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> doCount </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> makeCounter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">();</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//调用函数试，获得的是一个闭包：一个函数及其环境</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">doCount</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">());</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">doCount</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">());</span></span></code></pre>
+</div></li>
+</ol>
+<h2 id="五-、原型" tabindex="-1">（五）、原型 <a class="header-anchor" href="#五-、原型" aria-label="Permalink to &quot;（五）、原型&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>
+<p>原型：对象可以从其他对象那里继承属性和行为。更具体地说，js使用原型式继承，其中其行为被继承的对象称为原型（对象继承另一个对象后，就可以访问其多有的方法和属性）。</p>
+</li>
+<li>
+<p>给构造函数的原型添加属性后，使用这个构造函数创建的实例都将继承这些属性。即便是以前创建的实例也不例外。</p>
+</li>
+<li>
+<p>使用自定义的原型对象时，务必将原型的属性<code>constructor</code>设置为相应的构造函数，以保持一致。</p>
+</li>
+<li>
+<p>要调用函数并指定函数体中<code>this</code>指向的对象，可调用其方法<code>call()</code>；</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> //定义一个构造函数</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Dog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">breed</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">weight</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">         this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.name </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> name;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">         this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.breed </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> breed;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">         this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.weight </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> weight;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">     //给构造函数原型添加属性</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">     Dog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">prototype</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.species </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "Canine"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">     //给构造函数原型添加方法</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">     Dog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">prototype</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">bark</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">         if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.weight </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">></span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 25</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.name </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "Says Woof"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">else</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">             console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.name </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "says Yip"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     };</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">     Dog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">prototype</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">run</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Run"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     };</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">     Dog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">prototype</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">wag</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"wag"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     };</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">     //定义一个继承Dog构造函数的新的构造函数</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ShowDog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">name</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">breed</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">weight</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">handler</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">         // this.name = name;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">         // this.breed = breed;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">         // this.weight = weight;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">         // Dog(name, breed, weight);  后面调用Dog原型属性会返回undefined</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         Dog.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">call</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, name, breed, weight);</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//注意这里要使用this</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">         this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.handler </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> handler;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">     //</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">     //ShowDog.prototype = new Dog();</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">     ShowDog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">prototype</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">constructor</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> ShowDog;</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//设置构造函数ShowDog的原型指向自己本身</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">     ShowDog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">prototype</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.league </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "Webville"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">     ShowDog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">prototype</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">stack</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Stack"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     };</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">     ShowDog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">prototype</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">bait</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Bait"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     };</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">     ShowDog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">prototype</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">gait</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">kind</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(kind </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> "ing"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">     ShowDog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">prototype</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">groom</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> function</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">         console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Groom"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">     var</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> scotty </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> new</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ShowDog</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Scotty"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Scottish Terrish"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">15</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"Cookie"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(scotty.name); </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//undefined，原因是showDog中使用的是：        Dog(name, breed, weight);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     scotty.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">stack</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">();</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     scotty.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">bark</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">();</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(scotty.league);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(scotty.species);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">     console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"scotty constructor is:"</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> +</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> scotty.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">constructor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">); </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//showDog</span></span></code></pre>
+</div></li>
+</ol>
+<h2 id="参考文献" tabindex="-1">参考文献 <a class="header-anchor" href="#参考文献" aria-label="Permalink to &quot;参考文献&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>《Head First JavaScript 程序设计》</li>
+</ul>
+]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[常用的 Markdown 语法格式来编写文章]]></title>
@@ -27357,6 +27896,260 @@ main.js代码：</p>
 </ul>
 ]]></content:encoded>
             <enclosure url="https://super456.github.io/images/wiki/eclipse-need-java6.png" length="0" type="image/png"/>
+        </item>
+        <item>
+            <title><![CDATA[VS Code 编程软件常用技巧]]></title>
+            <link>https://super456.github.io/posts/growth-record/other/toolGuide/vscode-common.html</link>
+            <guid>https://super456.github.io/posts/growth-record/other/toolGuide/vscode-common.html</guid>
+            <pubDate>Sat, 23 Jun 2018 20:02:01 GMT</pubDate>
+            <description><![CDATA[# VS Code 编程软件常用技巧
+由于经常使用这个编程软件，之前使用一些功能老是过段时间就忘记，只记住一些基本的操作。俗话说：工欲善其事，必先利其器。所以打算整理一下，以便忘记的时候可以温习一下，不至于浪费编码时间。
+
+Visual Studio Code 是一个运行在桌面上，多平台的轻量级且功能强大的源代码编辑器。内置有JavaScript的，TypeScript和Node.js的支持，其他语言如C ++，C＃，Python和PHP等的可扩展，是一个非常丰富的生态系统。主打 web 开发，也是本人在学习前端过程中主要的使用的编程工具。
+<CustomImage src='/growth-record/other/toolGuide/vscode-01.png' />
+
+# （一）主命令框
+1. `F1 `或 `Ctrl+Shift+P`: 打开命令面板。在打开的输入框内，可以输入任何命令，例如：按一下` Backspace`会进入到 `Ctrl+P `模式
+<CustomImage src='/growth-record/other/toolGuide/vscode-02.png' />
+
+2. 在`Ctrl+P`下输入>可以进入`Ctrl+Shift+P`模式
+3. 在 `Ctrl+P `窗口下还可以:
+-  直接输入文件名，跳转到文件
+-  `?`列出当前可执行的动作
+-  `!`显示 Errors或 Warnings，也可以`Ctrl+Shift+M`
+-  `:`跳转到行数，也可以 `Ctrl+G `直接进入
+-  `@`跳转到symbol（搜索变量或者函数），也可以 `Ctrl+Shift+O `直接进入
+-  `@`根据分类跳转`symbol`，查找属性或函数，也可以 `Ctrl+Shift+O `后输入:进入
+-  `#`根据名字查找 `symbol`，也可以 `Ctrl+T`
+
+# （二）常用快捷键
+
+   |   说明  |   快捷键  |
+   |]]></description>
+            <content:encoded><![CDATA[<h1 id="vs-code-编程软件常用技巧" tabindex="-1">VS Code 编程软件常用技巧 <a class="header-anchor" href="#vs-code-编程软件常用技巧" aria-label="Permalink to &quot;VS Code 编程软件常用技巧&quot;">&ZeroWidthSpace;</a></h1>
+<p>由于经常使用这个编程软件，之前使用一些功能老是过段时间就忘记，只记住一些基本的操作。俗话说：工欲善其事，必先利其器。所以打算整理一下，以便忘记的时候可以温习一下，不至于浪费编码时间。</p>
+<p>Visual Studio Code 是一个运行在桌面上，多平台的轻量级且功能强大的源代码编辑器。内置有JavaScript的，TypeScript和Node.js的支持，其他语言如C ++，C＃，Python和PHP等的可扩展，是一个非常丰富的生态系统。主打 web 开发，也是本人在学习前端过程中主要的使用的编程工具。</p>
+<CustomImage src='/growth-record/other/toolGuide/vscode-01.png' /><h1 id="一-主命令框" tabindex="-1">（一）主命令框 <a class="header-anchor" href="#一-主命令框" aria-label="Permalink to &quot;（一）主命令框&quot;">&ZeroWidthSpace;</a></h1>
+<ol>
+<li><code>F1 </code>或 <code>Ctrl+Shift+P</code>: 打开命令面板。在打开的输入框内，可以输入任何命令，例如：按一下<code> Backspace</code>会进入到 <code>Ctrl+P </code>模式</li>
+</ol>
+<CustomImage src='/growth-record/other/toolGuide/vscode-02.png' /><ol start="2">
+<li>在<code>Ctrl+P</code>下输入&gt;可以进入<code>Ctrl+Shift+P</code>模式</li>
+<li>在 <code>Ctrl+P </code>窗口下还可以:</li>
+</ol>
+<ul>
+<li>直接输入文件名，跳转到文件</li>
+<li><code>?</code>列出当前可执行的动作</li>
+<li><code>!</code>显示 Errors或 Warnings，也可以<code>Ctrl+Shift+M</code></li>
+<li><code>:</code>跳转到行数，也可以 <code>Ctrl+G </code>直接进入</li>
+<li><code>@</code>跳转到symbol（搜索变量或者函数），也可以 <code>Ctrl+Shift+O </code>直接进入</li>
+<li><code>@</code>根据分类跳转<code>symbol</code>，查找属性或函数，也可以 <code>Ctrl+Shift+O </code>后输入:进入</li>
+<li><code>#</code>根据名字查找 <code>symbol</code>，也可以 <code>Ctrl+T</code></li>
+</ul>
+<h1 id="二-常用快捷键" tabindex="-1">（二）常用快捷键 <a class="header-anchor" href="#二-常用快捷键" aria-label="Permalink to &quot;（二）常用快捷键&quot;">&ZeroWidthSpace;</a></h1>
+<table>
+<thead>
+<tr>
+<th>说明</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>打开一个新窗口：</td>
+<td><code>Ctrl+Shift+N</code></td>
+</tr>
+<tr>
+<td>关闭窗口：</td>
+<td><code>Ctrl+Shift+W</code></td>
+</tr>
+<tr>
+<td>同时打开多个编辑器（查看多个文件）</td>
+<td></td>
+</tr>
+<tr>
+<td>切出一个新的编辑器（最多 3 个）</td>
+<td><code>Ctrl+\</code>，也可以按住 <code>Ctrl</code> 鼠标点击 Explorer 里的文件名</td>
+</tr>
+<tr>
+<td>左中右 3 个编辑器的快捷键</td>
+<td><code>Ctrl+1</code> <code>Ctrl+2</code> <code>Ctrl+3</code></td>
+</tr>
+<tr>
+<td>编辑器换位置</td>
+<td><code>Ctrl+k</code>然后按 <code>Left</code>或 <code>Right</code></td>
+</tr>
+<tr>
+<td>文件之间切换</td>
+<td><code>Ctrl+Tab</code></td>
+</tr>
+<tr>
+<td>打开集成终端</td>
+<td><code>Ctrl+</code>`</td>
+</tr>
+</tbody>
+</table>
+<h1 id="三-代码编辑" tabindex="-1">（三）代码编辑 <a class="header-anchor" href="#三-代码编辑" aria-label="Permalink to &quot;（三）代码编辑&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="_1-格式调整" tabindex="-1">1.格式调整 <a class="header-anchor" href="#_1-格式调整" aria-label="Permalink to &quot;1.格式调整&quot;">&ZeroWidthSpace;</a></h2>
+<p><strong>注意：</strong> 对python文件进行代码格式化操作时，会提示安装<code>autopep8</code></p>
+<ul>
+<li>代码格式化： <code>Shift+Alt+F</code>，或 <code>Ctrl+Shift+P</code> 后输入 <code>format code</code></li>
+<li>代码行缩进: <code>Ctrl+[</code> 、 <code>Ctrl+]</code></li>
+<li>在当前行下边插入一行 <code>Ctrl+Enter</code></li>
+<li>在当前行上方插入一行 <code>Ctrl+Shift+Enter</code></li>
+<li>上下移动一行： <code>Alt+Up</code> 或 <code>Alt+Down</code></li>
+<li>向上向下复制一行： <code>Shift+Alt+Up</code> 或 <code>Shift+Alt+Down</code></li>
+</ul>
+<h2 id="_2-光标相关" tabindex="-1">2.光标相关 <a class="header-anchor" href="#_2-光标相关" aria-label="Permalink to &quot;2.光标相关&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>移动到定义处： <code>F12</code></li>
+<li>定义处缩略图：只看一眼而不跳转过去:<code>Alt+F12</code></li>
+<li>移动到文件结尾： <code>Ctrl+End</code></li>
+<li>移动到文件开头： <code>Ctrl+Home</code></li>
+<li>跳转到光标上一次(下一次)位置（误操作的回退方案，非常有用）<code> ctrl + Left / Ctrl + Right</code></li>
+</ul>
+<p><strong>注意：</strong> 下面两个功能和alt+↑/↓配合，很方便的移动代码块：</p>
+<ul>
+<li>选择从光标到行尾：<code>Shift+End</code></li>
+<li>选择从行首到光标处：<code>Shift+Home</code></li>
+</ul>
+<p><strong>注意：</strong> 这两个功能很爽，可以同时编辑一些变量名：</p>
+<ul>
+<li>多行编辑(列编辑)：<code>Ctrl+Alt+Down/Up</code>或者<code>Alt+Shift</code>+鼠标左键，可以批量选中文本并编辑</li>
+<li>同时选中所有匹配： <code>Ctrl+Shift+L</code></li>
+<li><code>Ctrl+D</code> 下一个匹配的也被选中 (在 sublime 中是删除当前行，后面自定义快键键中，设置与 <code>Ctrl+Shift+K</code> 互换了)</li>
+<li>回退上一个光标操作： <code>Ctrl+U</code></li>
+<li>删除光标右侧的所有字： <code>Ctrl+Delete</code></li>
+<li>扩展/缩小选取范围： <code>Shift+Alt+Left</code> 和 <code>Shift+Alt+Right</code></li>
+<li>多光标选取<code> Alt + 鼠标单击</code></li>
+<li>逐步选中其它相同的symbol <code>Ctrl + D</code>(已更改快捷方式为：<code>Ctrl+Shift+K</code>)</li>
+<li>全选相同symbol<code> Ctrl + F12</code></li>
+<li>重构（重命名）Symbol <code>F2</code></li>
+<li>查找所有引用了选中symbol的代码 <code>Shift + F12</code></li>
+<li>跳转到symbol的定义处 <code>F12</code></li>
+<li>瞥见下symbol的定义出（在该symbol下方展开面板，显示定义处代码，非常有用）<code>Alt + F12</code></li>
+</ul>
+<h2 id="_3-重构代码" tabindex="-1">3.重构代码 <a class="header-anchor" href="#_3-重构代码" aria-label="Permalink to &quot;3.重构代码&quot;">&ZeroWidthSpace;</a></h2>
+<p><strong>注意：</strong> 查看函数引用和批量休修改函数名，好用：</p>
+<ul>
+<li>重命名：比如要修改一个方法名，可以选中后按 <code>F2</code>，输入新的名字，回车，会发现所有的文件都修改了</li>
+<li>找到所有的引用： <code>Shift+F12</code></li>
+<li>同时修改本文件中所有匹配的： <code>Ctrl+F12</code></li>
+<li>跳转到下一个 Error 或 Warning：当有多个错误时可以按 <code>F8 </code>逐个跳转</li>
+<li>查看 diff： 在 explorer 里选择文件右键 <code>Set file to compare</code>，然后需要对比的文件上右键选择 <code>Compare with file_name_you_chose</code></li>
+</ul>
+<h2 id="_4-查找替换" tabindex="-1">4.查找替换 <a class="header-anchor" href="#_4-查找替换" aria-label="Permalink to &quot;4.查找替换&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>查找:<code>Ctrl+F</code></li>
+<li>查找替换:<code>Ctrl+H</code></li>
+<li>整个文件夹中查找:<code>Ctrl+Shift+F</code></li>
+</ul>
+<h2 id="_5-显示相关" tabindex="-1">5.显示相关 <a class="header-anchor" href="#_5-显示相关" aria-label="Permalink to &quot;5.显示相关&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>全屏：<code>F11</code></li>
+<li>区域整块放大/缩小：<code>Ctrl +/-</code></li>
+<li>侧边栏显/隐：<code>Ctrl+B</code></li>
+<li>显示资源管理器:<code>Ctrl+Shift+E</code></li>
+<li>显示搜索:<code>Ctrl+Shift+F</code></li>
+<li>显示 Git:<code>Ctrl+Shift+G</code></li>
+<li>显示 Debug:<code>Ctrl+Shift+D</code></li>
+<li>显示 Output:<code>Ctrl+Shift+U</code></li>
+</ul>
+<h2 id="_6-其他" tabindex="-1">6.其他 <a class="header-anchor" href="#_6-其他" aria-label="Permalink to &quot;6.其他&quot;">&ZeroWidthSpace;</a></h2>
+<p>文件自动保存设置：<code>File</code> -&gt; <code>AutoSave</code> ，或者 <code>Ctrl+Shift+P</code>，输入 <code>auto</code></p>
+<h1 id="四-修改默认快捷键" tabindex="-1">（四）修改默认快捷键 <a class="header-anchor" href="#四-修改默认快捷键" aria-label="Permalink to &quot;（四）修改默认快捷键&quot;">&ZeroWidthSpace;</a></h1>
+<p>打开默认键盘快捷方式设置：
+<code>File</code>（文件） -&gt; <code>Preferences</code>（首选项） -&gt; <code>Keyboard Shortcuts</code>（键盘快捷方式），或者：<code>Alt+F</code> -&gt;<code>p</code>-&gt; <code>k</code>-&gt; 回车。</p>
+<p>修改<code> keybindings.json</code>：(这个是当时自己添加的)</p>
+<div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>// ctrl+d 删除一行</span></span>
+<span class="line"><span> {</span></span>
+<span class="line"><span>     "key": "ctrl+d",</span></span>
+<span class="line"><span>     "command": "editor.action.deleteLines",</span></span>
+<span class="line"><span>     "when": "editorTextFocus"</span></span>
+<span class="line"><span> },</span></span>
+<span class="line"><span> // 与删除一行的快捷键互换</span></span>
+<span class="line"><span> {</span></span>
+<span class="line"><span>     "key": "ctrl+shift+k",</span></span>
+<span class="line"><span>     "command": "editor.action.addSelectionToNextFindMatch",</span></span>
+<span class="line"><span>     "when": "editorFocus"</span></span>
+<span class="line"><span> },</span></span>
+<span class="line"><span> // ctrl+shift+/多行注释</span></span>
+<span class="line"><span> {</span></span>
+<span class="line"><span>     "key":"ctrl+shift+/",</span></span>
+<span class="line"><span>     "command": "editor.action.blockComment",</span></span>
+<span class="line"><span>     "when": "editorTextFocus"</span></span>
+<span class="line"><span> },</span></span></code></pre>
+</div><h1 id="五-推荐插件" tabindex="-1">（五）推荐插件 <a class="header-anchor" href="#五-推荐插件" aria-label="Permalink to &quot;（五）推荐插件&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="_1-前端插件" tabindex="-1">1.前端插件 <a class="header-anchor" href="#_1-前端插件" aria-label="Permalink to &quot;1.前端插件&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li>auto close tag 自动关闭HTML标签</li>
+<li>Auto Rename Tag：自动修改标签</li>
+<li>AutoFileNmae:auto complete file name，自动补全文件的名字</li>
+<li>Beautify:显示js/json/css美化，按<code>F1</code></li>
+<li>Bracket Pair Colorizer 标记显示不同颜色的关联括号</li>
+<li>Color Info 显示颜色信息</li>
+<li>CSS Formatter css格式化工具</li>
+<li>Debugger for Chrome 谷歌调试工具（需要配置launch.json）</li>
+<li>Document This  添加备注信息（only supports JavaScript and TypeScript）<code>Ctrl+Alt+D</code> and again <code>Ctrl+Alt+D</code></li>
+<li>filesize 文件大小提示</li>
+<li>GitLens 提示文件修改信息，具体到代码行</li>
+<li>Guides:显示代码对其辅助线</li>
+<li>HTML CSS Support css文件支持HTML标签提示</li>
+<li>HTML Preview 预览编译HTML文件</li>
+<li>HTML SCSS Support scss文件支持HTML标签提示</li>
+<li>HTML Snippets 支持HTML标签提示</li>
+<li>HTMLHint</li>
+<li>intellisense for css class names in html 支持HTML文件中类名提示</li>
+<li>JavaScript (ES6) snippets</li>
+<li>jQuery Code Snippets</li>
+<li>JS, CSS, HTML Formatting</li>
+<li>Live HTML Previewer</li>
+<li>markdownlint</li>
+<li>Npm Intellisense</li>
+<li>Path Intellisense: 路径匹配</li>
+<li>Path Autocomplete</li>
+<li>Vetur：VUE扩展</li>
+<li>PostCSS Sorting</li>
+<li>stylelint</li>
+<li>stylefmt</li>
+<li>ESLint</li>
+<li>javascript standard format</li>
+<li>Babel ES6/ES7</li>
+<li>Add jsdoc comments</li>
+<li>vue</li>
+<li>weex</li>
+<li>Reactjs code snippets</li>
+<li>React Native Tools</li>
+<li>Instant Markdown</li>
+<li>Markdown Shortcuts</li>
+<li>TextTransform</li>
+<li>Color Highlight:写csss时，颜色值会增加对应的颜色背景显示</li>
+<li>open in browser:  <code>alt+b</code>选择浏览器预览文件</li>
+<li>Rainbow Brackets：有颜色的显示括号匹配</li>
+<li>Settings Sync: 同步配置（需要配置GitHub的本地token key）</li>
+</ul>
+<h2 id="_2-官网推荐插件" tabindex="-1">2.官网推荐插件 <a class="header-anchor" href="#_2-官网推荐插件" aria-label="Permalink to &quot;2.官网推荐插件&quot;">&ZeroWidthSpace;</a></h2>
+<CustomImage src='/growth-record/other/toolGuide/vscode-03.png' /><p><a href="https://marketplace.visualstudio.com/vscode" target="_blank" rel="noreferrer">点击跳转</a></p>
+<h2 id="_3-推荐主题" tabindex="-1">3.推荐主题 <a class="header-anchor" href="#_3-推荐主题" aria-label="Permalink to &quot;3.推荐主题&quot;">&ZeroWidthSpace;</a></h2>
+<CustomImage src='/growth-record/other/toolGuide/vscode-04.png' /><p><a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Themes&amp;sortBy=Downloads" target="_blank" rel="noreferrer">点击跳转</a></p>
+<p><strong>注：</strong> 切换主题的快捷键：<code>f1</code> 或<code>ctrl+shift+p </code>输入theme 回车,上下切换：<code>ctrl+k</code>,<code>ctrl+t</code>。</p>
+<ul>
+<li>One Dark Pro</li>
+<li>Atom One Dark</li>
+<li>FlatUI</li>
+<li>Material Icon Theme: 图标主题</li>
+<li>vscode-icons</li>
+<li>VSCode Great Icons</li>
+<li>Dracula Official：主题，推荐</li>
+</ul>
+<h1 id="六-参考文献" tabindex="-1">（六）参考文献 <a class="header-anchor" href="#六-参考文献" aria-label="Permalink to &quot;（六）参考文献&quot;">&ZeroWidthSpace;</a></h1>
+<ul>
+<li><a href="https://segmentfault.com/a/1190000010750790" target="_blank" rel="noreferrer">打造性感好用的VS Code编辑器</a></li>
+<li><a href="https://www.w3cschool.cn/visualstudiocode/visualstudiocode-iy3422zb.html" target="_blank" rel="noreferrer">Visual Studio Code 简明使用教程</a></li>
+<li><a href="https://jeasonstudio.gitbooks.io/vscode-cn-doc/content/md/Overview.html" target="_blank" rel="noreferrer">VScode中文文档</a></li>
+<li><a href="http://mrpeak.github.io/2015/07/02/vscode-guide/#%E4%BB%8D%E6%9C%89%E4%B8%8D%E8%B6%B3" target="_blank" rel="noreferrer">Visual Studio Code 不完全使用指南</a></li>
+</ul>
+]]></content:encoded>
         </item>
     </channel>
 </rss>
