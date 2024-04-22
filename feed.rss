@@ -4,7 +4,7 @@
         <title>纵倾童鞋</title>
         <link>https://super456.github.io</link>
         <description>纵倾童鞋的博客，分享前端技术知识、阅读思考、生活心得等内容</description>
-        <lastBuildDate>Sun, 21 Apr 2024 10:37:48 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 22 Apr 2024 00:58:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-cn</language>
@@ -644,51 +644,6 @@
             <content:encoded><![CDATA[<h1 id="夜航西飞" tabindex="-1">夜航西飞 <a class="header-anchor" href="#夜航西飞" aria-label="Permalink to &quot;夜航西飞&quot;">&ZeroWidthSpace;</a></h1>
 <p>专栏名字来源我很喜欢的《夜航西飞》这本书，希望我能跟作者一样拥有无畏精神和对生活的热爱。“未来藏在迷雾之中，隔着距离，叫人看来胆怯。但当你踏足其中，就会云开雾散”。我热爱我现在的生活，也很愿意去探索新的事物，步履铿锵，吭哧吭哧埋头干，向前冲咯~</p>
 <p>主要记录这一路走来，自己生活的真相和工作的心得体会，想着未来某一天回头看，会觉得怎么看待当初的自己，会心一笑，感慨万千呢？还是当时只道是寻常吧？</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[CSS]]></title>
-            <link>https://super456.github.io/posts/growth-record/base/css/</link>
-            <guid>https://super456.github.io/posts/growth-record/base/css/</guid>
-            <pubDate>Sun, 14 Apr 2024 15:00:23 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 id="css" tabindex="-1">CSS <a class="header-anchor" href="#css" aria-label="Permalink to &quot;CSS&quot;">&ZeroWidthSpace;</a></h1>
-<p>待更新🚀...</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[什么是 CSS]]></title>
-            <link>https://super456.github.io/posts/growth-record/base/css/what-is-css.html</link>
-            <guid>https://super456.github.io/posts/growth-record/base/css/what-is-css.html</guid>
-            <pubDate>Sun, 14 Apr 2024 15:00:23 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 id="什么是-css" tabindex="-1">什么是 CSS <a class="header-anchor" href="#什么是-css" aria-label="Permalink to &quot;什么是 CSS&quot;">&ZeroWidthSpace;</a></h1>
-<p>待更新🚀...</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[HTML]]></title>
-            <link>https://super456.github.io/posts/growth-record/base/html/</link>
-            <guid>https://super456.github.io/posts/growth-record/base/html/</guid>
-            <pubDate>Sun, 14 Apr 2024 15:00:23 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 id="html" tabindex="-1">HTML <a class="header-anchor" href="#html" aria-label="Permalink to &quot;HTML&quot;">&ZeroWidthSpace;</a></h1>
-<p>待更新🚀...</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[语义化标签]]></title>
-            <link>https://super456.github.io/posts/growth-record/base/html/semantic-label.html</link>
-            <guid>https://super456.github.io/posts/growth-record/base/html/semantic-label.html</guid>
-            <pubDate>Sun, 14 Apr 2024 15:00:23 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 id="语义化标签" tabindex="-1">语义化标签 <a class="header-anchor" href="#语义化标签" aria-label="Permalink to &quot;语义化标签&quot;">&ZeroWidthSpace;</a></h1>
-<p>介绍语义化标签及作用等，待更新🚀...</p>
-]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[什么是 HTML]]></title>
-            <link>https://super456.github.io/posts/growth-record/base/html/what-is-html.html</link>
-            <guid>https://super456.github.io/posts/growth-record/base/html/what-is-html.html</guid>
-            <pubDate>Sun, 14 Apr 2024 15:00:23 GMT</pubDate>
-            <content:encoded><![CDATA[<h1 id="什么是-html" tabindex="-1">什么是 HTML <a class="header-anchor" href="#什么是-html" aria-label="Permalink to &quot;什么是 HTML&quot;">&ZeroWidthSpace;</a></h1>
-<p>介绍 HTML 的前世今生。待更新🚀。。。</p>
 ]]></content:encoded>
         </item>
         <item>
@@ -3491,6 +3446,198 @@ Jedit著绘
 </blockquote>
 ]]></content:encoded>
             <enclosure url="https://super456.github.io/read-book/2024/xiaowangzi.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[挑选眼镜心得]]></title>
+            <link>https://super456.github.io/posts/random-thought/2024/glasses.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2024/glasses.html</guid>
+            <pubDate>Mon, 22 Jan 2024 20:00:00 GMT</pubDate>
+            <description><![CDATA[# 挑选眼镜心得
+:::info
+💡自己是从 12 年初三下学期开始戴眼镜的，至今也有 11 年了，换眼镜也有四五次了吧，记录自己眼镜的经历
+:::
+## 医院检查视力
+24 年 1 月 20 日周六上午，去了南山医院做了视力检查，戴眼镜 11 年了，第一次去医院做视力检查，哈哈哈。感觉自己之前太不重视自己的眼睛了，还好结果还算满意，没有出乎意料的事情，只不过医生建议不要做剧烈运动和每隔一年做个眼底检查，不过有一点散光，算轻微吧，影响不是很大
+
+大概做的视力检查流程是：
+
+1. 门诊挂号（因为阴差阳错的关系，挂错号了，所以在医院人工现场挂了个医生的号）；
+2. 视力检查（普通视力检查、裂隙灯检查、散瞳、眼压检查、验光、试镜、镜片检查、眼部 A 超）；
+3. 复诊；
+4. 眼底检查；
+5. 复诊；
+
+其中：检查散瞳时候，需要使用【复方托吡卡胺滴眼液】滴 4 次，每 5 分种滴一次，第 4 次之后修复 20 分钟去找护士验光，会有 4-6 小时眼镜感光很不舒服，就是户外感觉眼睛受不了刺激，只能眯着眼看，很难受，看手机和近处东西很不方便
+
+结果：
+
+- 轻微散光：75 度；
+- 重度近视：右眼 600 度、左眼 650 度（上次配眼镜：右眼 575 度、左眼 600 度）；
+- 隔年复查右眼眼底
+
+22 号周一上午：复光检查，确定最终的眼睛度数
+复光结果：
+
+- 左眼提高了 25 度，是 675 度；
+- 其他跟之前一样
+
+## 挑选眼镜
+意向：
+
+- 镜框：**优先纯钛材质**，半框，偏成熟风一点，不要太学生气和中年大叔气质就好（注意⚠️：镜框外边缘颜色区域不能会掉色、镜框支架不能生锈、不能流汗腐蚀、镜框支架不能有铜绿），材质很重要：合金容易变形、掉漆、褪色；纯钛经久耐用，舒适度高；电镀工艺比水镀的好，确认是不是深圳产的镜框？；
+- 镜片：**蔡司（泽锐，性价比高）➕钻立方➕防蓝光**，用惯会好很多；
+- 折射率：**1.67** 或 1.74 （内行阿贝数-清晰度，可以问下阿贝数有多少，40 ），看价格再定；
+- 售后服务：确保半年到一年保修或更换、确认是否是厂家加工（眼镜在哪里加工完成的？）；
+
+查阅相关资料了解各个眼镜店情况：小红书、抖音（直播）、B 站、语雀、微信群、
+
+| 眼镜店名称 | 眼镜风格 | 价格 | 备注 |
+| ]]></description>
+            <content:encoded><![CDATA[<h1 id="挑选眼镜心得" tabindex="-1">挑选眼镜心得 <a class="header-anchor" href="#挑选眼镜心得" aria-label="Permalink to &quot;挑选眼镜心得&quot;">&ZeroWidthSpace;</a></h1>
+<div class="info custom-block"><p class="custom-block-title">INFO</p>
+<p>💡自己是从 12 年初三下学期开始戴眼镜的，至今也有 11 年了，换眼镜也有四五次了吧，记录自己眼镜的经历</p>
+</div>
+<h2 id="医院检查视力" tabindex="-1">医院检查视力 <a class="header-anchor" href="#医院检查视力" aria-label="Permalink to &quot;医院检查视力&quot;">&ZeroWidthSpace;</a></h2>
+<p>24 年 1 月 20 日周六上午，去了南山医院做了视力检查，戴眼镜 11 年了，第一次去医院做视力检查，哈哈哈。感觉自己之前太不重视自己的眼睛了，还好结果还算满意，没有出乎意料的事情，只不过医生建议不要做剧烈运动和每隔一年做个眼底检查，不过有一点散光，算轻微吧，影响不是很大</p>
+<p>大概做的视力检查流程是：</p>
+<ol>
+<li>门诊挂号（因为阴差阳错的关系，挂错号了，所以在医院人工现场挂了个医生的号）；</li>
+<li>视力检查（普通视力检查、裂隙灯检查、散瞳、眼压检查、验光、试镜、镜片检查、眼部 A 超）；</li>
+<li>复诊；</li>
+<li>眼底检查；</li>
+<li>复诊；</li>
+</ol>
+<p>其中：检查散瞳时候，需要使用【复方托吡卡胺滴眼液】滴 4 次，每 5 分种滴一次，第 4 次之后修复 20 分钟去找护士验光，会有 4-6 小时眼镜感光很不舒服，就是户外感觉眼睛受不了刺激，只能眯着眼看，很难受，看手机和近处东西很不方便</p>
+<p>结果：</p>
+<ul>
+<li>轻微散光：75 度；</li>
+<li>重度近视：右眼 600 度、左眼 650 度（上次配眼镜：右眼 575 度、左眼 600 度）；</li>
+<li>隔年复查右眼眼底</li>
+</ul>
+<p>22 号周一上午：复光检查，确定最终的眼睛度数
+复光结果：</p>
+<ul>
+<li>左眼提高了 25 度，是 675 度；</li>
+<li>其他跟之前一样</li>
+</ul>
+<h2 id="挑选眼镜" tabindex="-1">挑选眼镜 <a class="header-anchor" href="#挑选眼镜" aria-label="Permalink to &quot;挑选眼镜&quot;">&ZeroWidthSpace;</a></h2>
+<p>意向：</p>
+<ul>
+<li>镜框：<strong>优先纯钛材质</strong>，半框，偏成熟风一点，不要太学生气和中年大叔气质就好（注意⚠️：镜框外边缘颜色区域不能会掉色、镜框支架不能生锈、不能流汗腐蚀、镜框支架不能有铜绿），材质很重要：合金容易变形、掉漆、褪色；纯钛经久耐用，舒适度高；电镀工艺比水镀的好，确认是不是深圳产的镜框？；</li>
+<li>镜片：<strong>蔡司（泽锐，性价比高）➕钻立方➕防蓝光</strong>，用惯会好很多；</li>
+<li>折射率：<strong>1.67</strong> 或 1.74 （内行阿贝数-清晰度，可以问下阿贝数有多少，40 ），看价格再定；</li>
+<li>售后服务：确保半年到一年保修或更换、确认是否是厂家加工（眼镜在哪里加工完成的？）；</li>
+</ul>
+<p>查阅相关资料了解各个眼镜店情况：小红书、抖音（直播）、B 站、语雀、微信群、</p>
+<table>
+<thead>
+<tr>
+<th>眼镜店名称</th>
+<th>眼镜风格</th>
+<th>价格</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LOHO</td>
+<td></td>
+<td></td>
+<td>小红书测评不太好，吐槽很多；质量差、售后保修时间短、沟通有问题；</td>
+</tr>
+<tr>
+<td>亚洲眼镜</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>博士眼镜</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>AOJO</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>木九十</td>
+<td></td>
+<td></td>
+<td>贵、镜框容易掉漆；质量差；</td>
+</tr>
+<tr>
+<td>暴龙</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>zoff</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>jins</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>睛资</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>LOOK 眼镜</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>宝岛眼镜</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>奥睐眼镜</td>
+<td></td>
+<td></td>
+<td>GUCCI 古驰爆款胶囊系列复古男士商务框；清灰椰子</td>
+</tr>
+<tr>
+<td>深圳聚星眼镜</td>
+<td></td>
+<td></td>
+<td>龙岗有点远；眼镜款式一般，没发现有特色；</td>
+</tr>
+<tr>
+<td>横岗眼镜城、嘉宝眼镜城、王潮眼镜城、新马眼镜城</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>A 甲目视光</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="镜框品牌" tabindex="-1">镜框品牌 <a class="header-anchor" href="#镜框品牌" aria-label="Permalink to &quot;镜框品牌&quot;">&ZeroWidthSpace;</a></h4>
+<p>推荐：陌森、暴龙
+钛标志：纯钛——TITANIUM、半钛——TIANIUM</p>
+<CustomImage src='/random-thought/2024/yanjing-01.webp' /><h4 id="镜片品牌" tabindex="-1">镜片品牌 <a class="header-anchor" href="#镜片品牌" aria-label="Permalink to &quot;镜片品牌&quot;">&ZeroWidthSpace;</a></h4>
+<CustomImage src='/random-thought/2024/yanjing-02.webp' /><h2 id="总结" tabindex="-1">总结 <a class="header-anchor" href="#总结" aria-label="Permalink to &quot;总结&quot;">&ZeroWidthSpace;</a></h2>
+<p>最终挑选了奥睐眼镜，服务和配镜体验很棒，价格有点超心理预期，但是镜框和镜片质量都是选了比较好的了</p>
+]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[第 37 本《半小时漫画中国史 0》]]></title>
@@ -18315,6 +18462,331 @@ unique symbol 表示单个的、某个具体的 Symbol 值，该类型声明的�
             <enclosure url="https://super456.github.io/read-book/2023/banxiaoshimanhuazhongguodili.jpeg" length="0" type="image/jpeg"/>
         </item>
         <item>
+            <title><![CDATA[微信网页授权开发指南]]></title>
+            <link>https://super456.github.io/posts/growth-record/platform/applet/weapp-auth-dev.html</link>
+            <guid>https://super456.github.io/posts/growth-record/platform/applet/weapp-auth-dev.html</guid>
+            <pubDate>Fri, 01 Sep 2023 20:03:04 GMT</pubDate>
+            <description><![CDATA[# 微信网页授权开发指南
+## 开发背景
+一般用于分享到微信环境（微信应用内打开，比如单聊、群聊、朋友圈等路径进入的链接）的网页需要获取当前访问用户信息，并处理相应的业务逻辑功能及跟踪埋点信息上报等操作
+
+## 开发前提
+1. 需要授权的应用是一个网页应用（一般是H5应用），类似微信公众号开发；
+2. 需要微信公众平台账号，也就是 appId，需要官方微信公众平台配置信息；
+
+确认具体需求：
+1. 只需要微信公众号授权即可，无需借助微信能力；
+2. 需要访问链接用户进行微信公众号授权及调用微信能力，比如分享好友、分享朋友圈等权限；
+
+## 授权流程
+<CustomImage src='/growth-record/platform/applet/weapp-01.png' />
+
+授权链接
+
+```javascript
+https://open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&redirect_uri=REDIRECT_URL&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect
+```
+
+| 字段	| 是否必填	| 含义 |	说明 |
+|:]]></description>
+            <content:encoded><![CDATA[<h1 id="微信网页授权开发指南" tabindex="-1">微信网页授权开发指南 <a class="header-anchor" href="#微信网页授权开发指南" aria-label="Permalink to &quot;微信网页授权开发指南&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="开发背景" tabindex="-1">开发背景 <a class="header-anchor" href="#开发背景" aria-label="Permalink to &quot;开发背景&quot;">&ZeroWidthSpace;</a></h2>
+<p>一般用于分享到微信环境（微信应用内打开，比如单聊、群聊、朋友圈等路径进入的链接）的网页需要获取当前访问用户信息，并处理相应的业务逻辑功能及跟踪埋点信息上报等操作</p>
+<h2 id="开发前提" tabindex="-1">开发前提 <a class="header-anchor" href="#开发前提" aria-label="Permalink to &quot;开发前提&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>需要授权的应用是一个网页应用（一般是H5应用），类似微信公众号开发；</li>
+<li>需要微信公众平台账号，也就是 appId，需要官方微信公众平台配置信息；</li>
+</ol>
+<p>确认具体需求：</p>
+<ol>
+<li>只需要微信公众号授权即可，无需借助微信能力；</li>
+<li>需要访问链接用户进行微信公众号授权及调用微信能力，比如分享好友、分享朋友圈等权限；</li>
+</ol>
+<h2 id="授权流程" tabindex="-1">授权流程 <a class="header-anchor" href="#授权流程" aria-label="Permalink to &quot;授权流程&quot;">&ZeroWidthSpace;</a></h2>
+<CustomImage src='/growth-record/platform/applet/weapp-01.png' /><p>授权链接</p>
+<div class="language-javascript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">javascript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">https</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">//open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&#x26;redirect_uri=REDIRECT_URL&#x26;response_type=code&#x26;scope=snsapi_userinfo&#x26;state=STATE#wechat_redirect</span></span></code></pre>
+</div><table>
+<thead>
+<tr>
+<th style="text-align:center">字段</th>
+<th style="text-align:center">是否必填</th>
+<th style="text-align:center">含义</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">APPID</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">公众号唯一的APPID</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">REDIRECT_URL</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">回调地址，需要进行urlEncode处理</td>
+<td style="text-align:center">授权完后微信将会跳到该地址，如无特殊说明，该回调地址是后台接口，负责接收code，code以?code=123456的参数形式接在回调地址后面</td>
+</tr>
+<tr>
+<td style="text-align:center">STATE</td>
+<td style="text-align:center">否</td>
+<td style="text-align:center">重定向后会带上state参数，开发者可以填写a-zA-Z0-9的参数值，最多128字节</td>
+<td style="text-align:center">一般可以是前端告诉后台跳转授权前的页面地址，让后台获取code之后重定向到该地址，并且在该地址后带上token数据</td>
+</tr>
+<tr>
+<td style="text-align:center">response_type</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">返回类型，此处填写code</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">scope</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">应用授权作用域：snsapi_base （不弹出授权页面，直接跳转，只能获取用户openid），snsapi_userinfo （弹出授权页面，可通过openid拿到昵称、性别、所在地。并且，即使在未关注的情况下，只要用户授权，也能获取其信息）</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">#wechat_redirect</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">无论直接打开还是做页面302重定向时候，必须带此参数</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="开发规范" tabindex="-1">开发规范 <a class="header-anchor" href="#开发规范" aria-label="Permalink to &quot;开发规范&quot;">&ZeroWidthSpace;</a></h2>
+<h3 id="开发注意事项" tabindex="-1">开发注意事项 <a class="header-anchor" href="#开发注意事项" aria-label="Permalink to &quot;开发注意事项&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>是否限制链接打开路径来源：
+当非微信平台打开链接时，使用微信官方提示：</li>
+</ol>
+<CustomImage src='/growth-record/platform/applet/weapp-02.png' /><ol start="2">
+<li>是否需要占位符提示语控制</li>
+</ol>
+<h3 id="编码规范" tabindex="-1">编码规范 <a class="header-anchor" href="#编码规范" aria-label="Permalink to &quot;编码规范&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>授权方法</li>
+</ol>
+<div class="language-JavaScript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">JavaScript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { getStore, setStore } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@/utils/util'</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> qs</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'qs'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 应用授权作用域，snsapi_base （不弹出授权页面，直接跳转，只能获取用户openid），snsapi_userinfo （弹出授权页面，可通过openid拿到昵称、性别、所在地。并且，即使在未关注的情况下，只要用户授权，也能获取其信息）</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> SCOPES</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'snsapi_base'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'snsapi_userinfo'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">/**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@param</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> { string }</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> appid</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> 公众号的唯一标识</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@param</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> { string }</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> redirect_uri</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> 授权后重定向的回调链接地址， 请使用 urlEncode 对链接进行处理</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@param</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> { string }</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> scope</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> 应用授权作用域，snsapi_base （不弹出授权页面，直接跳转，只能获取用户openid），snsapi_userinfo （弹出授权页面，可通过openid拿到昵称、性别、所在地。并且， 即使在未关注的情况下，只要用户授权，也能获取其信息 ）</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@param</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> { string }</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> state</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> 非必须 重定向后会带上state参数，开发者可以填写a-zA-Z0-9的参数值，最多128字节</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@param</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> #wechat_redirect 无论直接打开还是做页面302重定向时候，必须带此参数</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> WechatAuthPlugin</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  constructor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.appid </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.redirect_uri </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">._scope </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> SCOPES</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">] </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 授权类型，默认使用静默授权</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">._code </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">._redirect_uri </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // 设置随机state参数</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  static</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> makeState</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      Math.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">random</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        .</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">toString</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">36</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        .</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">substring</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">15</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      Math.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">random</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        .</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">toString</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">36</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        .</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">substring</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">15</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    )</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // 公众号的唯一标识</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  setAppId</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">appid</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.appid </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> appid</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@description</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> 设置授权后重定向的回调链接地址， 使用 urlEncode 对链接进行处理</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@param</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> { * }</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> redirect_uri</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> 访问的redirect_uri，非必须，不传自动获取当前url</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  set</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> redirect_uri</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">redirect_uri</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">._redirect_uri </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> encodeURIComponent</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(redirect_uri)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // 获取redirect_uri</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  get</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> redirect_uri</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">._redirect_uri</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@description</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> 设置授权状态</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@param</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> { * }</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> idx</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> 0 - 静默授权，1 - 非静默授权</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  set</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> scope</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">idx</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">._scope </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> SCOPES</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[idx]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // 获取scope</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  get</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> scope</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">._scope</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // 获取缓存中state,否则返回默认值'STATE'</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  get</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> state</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'null'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'undefined'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">''</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">undefined</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">].</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">includes</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">getStore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'wechat_auth:state'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">?</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'STATE'</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> :</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> getStore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'wechat_auth:state'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // state存储在缓存中</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  set</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> state</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">state</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">    setStore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'wechat_auth:state'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, state)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // 设置state值</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  setState</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">value</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.state </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> value </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">||</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> WechatAuthPlugin.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">makeState</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@description</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D"> 获取引导关注着打开访问链接</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  get</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> authUrl</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.appid </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">===</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      throw</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> new</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Error</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'appid must not be null'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.redirect_uri </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">===</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      throw</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> new</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Error</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'redirect uri must not be null'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">appid</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}&#x26;redirect_uri=${</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">redirect_uri</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}&#x26;response_type=code&#x26;scope=${</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">scope</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}&#x26;state=${</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">state</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}#wechat_redirect`</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // 用户同意授权，页面将跳转至 redirect_uri/?code=CODE&#x26;state=STATE，获取code参数</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  returnFromWechat</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">redirect_uri</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> baseWithSearch</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> redirect_uri.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">split</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'#'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)[</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">]</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> parsedUrl </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> ''</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">    // 本地环境</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (process.env.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">NODE_ENV</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> ===</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'development'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      parsedUrl </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> qs.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">parse</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(redirect_uri.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">split</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'?'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)[</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">])</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">      this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.state </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">      this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">._code </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> parsedUrl.code</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">else</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      parsedUrl </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> qs.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">parse</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(baseWithSearch.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">split</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'?'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)[</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">])</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (parsedUrl.code) {</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">        this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">._code </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> parsedUrl.code</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  get</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> code</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">._code </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">===</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      throw</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> new</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> Error</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'Not get the code from wechat server!'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> code</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">._code</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">    this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">._code </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> code</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  /**</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * 处理url链接</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   * </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">@returns</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> {string}</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">   */</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  processUrl</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> url</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> window.location.href</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">    // 解决多次登录url添加重复的code与state问题</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> urlParams</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> qs.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">parse</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(url.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">split</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'?'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)[</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">])</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> redirectUrl </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> url</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (urlParams.code </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&#x26;&#x26;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> urlParams.state) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      delete</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> urlParams.code</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      delete</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> urlParams.state</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> query</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> qs.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">stringify</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(urlParams)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (query.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">length</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        redirectUrl </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> `${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">url</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">split</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'?'</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">)[</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">]</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}?${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">query</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}`</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">else</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        redirectUrl </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> `${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">url</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">split</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'?'</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">)[</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">]</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}`</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> redirectUrl</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> wechatAuthPlugin</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> new</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> WechatAuthPlugin</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> wechatAuthPlugin</span></span></code></pre>
+</div><p>2.调用方法：</p>
+<div class="language-JavaScript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">JavaScript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> router </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@/router'</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> wechatAuth </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@/utils/wechatAuth'</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { getStore, setStore } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@/utils/util'</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { CONFIG_STORAGE } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@/utils/configs'</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> API </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '@/api'</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 设置APPID</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> WX_APPID</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'xxx'</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">wechatAuth.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">setAppId</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">WX_APPID</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">router.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">beforeEach</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">async</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">to</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">from</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">next</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">  // 授权态 0为未授权 1为授权返回code 2为使用code获取openid成功</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> authStatus </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> getStore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">CONFIG_STORAGE</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.AuthStatusKey) </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 微信授权状态</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  authStatus </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> authStatus </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">===</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> null</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> ||</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> undefined</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> ?</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> :</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> authStatus</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">  switch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">Number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(authStatus)) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    case</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">      // 获取h5页面地址赋值给redirect_uri</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      wechatAuth.redirect_uri </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> wechatAuth.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">processUrl</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">      // 更改授权状态为1</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">      setStore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">CONFIG_STORAGE</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.AuthStatusKey, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">      // 跳转到获取code访问链接</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      window.location.href </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> wechatAuth.authUrl</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      break</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    case</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">: {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">      // 获取code值</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      wechatAuth.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">returnFromWechat</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(window.location.href)</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> code</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> wechatAuth.code</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">      // 判断code是否存在</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">!</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">code) {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        setStore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">CONFIG_STORAGE</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.AuthStatusKey, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">      // 使用cod换取eopenId</span></span>
+<span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">      API</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">getWxTokenApi</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">({code})</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        .</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">then</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">res</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">          if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (res.code </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">===</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> '0'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">            // 获取openId之后存储，并将状态更改为2</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">            setStore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">CONFIG_STORAGE</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.openId, res.data)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">            setStore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">CONFIG_STORAGE</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.AuthStatusKey, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">            // 对路由重定向</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">            window.location.href </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> `${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">window</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">location</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">origin</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">window</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">location</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">pathname</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}/${</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">window</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">location</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">hash</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">}`</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">          } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">else</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">            setStore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">CONFIG_STORAGE</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.AuthStatusKey, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">          }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        })</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        .</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">catch</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">err</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">          console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(err)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">          setStore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">CONFIG_STORAGE</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.AuthStatusKey, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">        })</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      break</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    case</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">      // 若openId缺失，状态置为0，去首页重新授权</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      if</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">!</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">getStore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">CONFIG_STORAGE</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.openId)) {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        setStore</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">CONFIG_STORAGE</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">.AuthStatusKey, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        next</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">'/'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">)</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">else</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">        next</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">()</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      break</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">:</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">      break</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">})</span></span></code></pre>
+</div><h2 id="参考资料" tabindex="-1">参考资料 <a class="header-anchor" href="#参考资料" aria-label="Permalink to &quot;参考资料&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li><a href="https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html" target="_blank" rel="noreferrer">微信网页开发 /JS-SDK说明文档</a></li>
+<li><a href="https://www.npmjs.com/package/wechat-jssdk" target="_blank" rel="noreferrer">npm官方依赖包：wechat-jssdk</a></li>
+<li><a href="https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/Wechat_webpage_authorization.html" target="_blank" rel="noreferrer">微信网页授权官方文档</a></li>
+<li><a href="https://juejin.cn/post/6990423707214676005" target="_blank" rel="noreferrer">花了两小时完成微信公众号授权 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/6844903743507398670" target="_blank" rel="noreferrer">微信公众号开发 —— 微信网页授权小记 - 掘金</a></li>
+<li><a href="https://juejin.cn/post/7011546266924482591" target="_blank" rel="noreferrer">微信公众号服务号H5前端授权方法 - 掘金</a></li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[第 17 本《鲜衣怒马少年时》]]></title>
             <link>https://super456.github.io/posts/read-book/2023/xianyinumashaonianshi.html</link>
             <guid>https://super456.github.io/posts/read-book/2023/xianyinumashaonianshi.html</guid>
@@ -19099,6 +19571,19 @@ unique symbol 表示单个的、某个具体的 Symbol 值，该类型声明的�
 </blockquote>
 ]]></content:encoded>
             <enclosure url="https://super456.github.io/read-book/2023/xiandaiJavaScriptkukaifa.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[今日察觉（三）]]></title>
+            <link>https://super456.github.io/posts/random-thought/2023/self-reflection-03.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2023/self-reflection-03.html</guid>
+            <pubDate>Sun, 23 Jul 2023 20:03:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="今日察觉-三" tabindex="-1">今日察觉（三） <a class="header-anchor" href="#今日察觉-三" aria-label="Permalink to &quot;今日察觉（三）&quot;">&ZeroWidthSpace;</a></h1>
+<p>不知道为啥，感觉今天特别心累，生活没有啥动力，也没有激情，不知道生活和工作的意义在哪里，有点迷茫了。今天一直在地铁上想这个问题，是不是我生活和工作出问题了，还是我自己出问题了</p>
+<p>细想一下起因，也许最近工作的压力真的改变我太多了，我有点讨厌现在的工作环境，也有点讨厌现在的家庭环境。可能原因都是让我感觉不舒服了。难道是因为我个人问题吗，是不是因为我变得不适应当下生活与工作了，或者对生活与工作生无可恋了呢？</p>
+<p>从工作方面上讲， 6 月中旬左右搞公司 iOS 需求 Siri 开发之后，经常晚上加班到十点，早上也是十点上班，因为第一次接触这个东西，很多不懂的，时间比较紧，所以希望自己有更多的时间在上面学习和开发。虽然原生开发一个星期时间折腾搞出来了，但 uni-app 项目的原生插件开发又需要时间单独学习上手，还需要搞它们的 SDK 开发操作，又折腾了一个星期搞出来了，但 App 打包集成又遇到环境参数报错，无权限处理。又陆续搞了一个星期，没有结果，只能被动放弃。最后寻求帮助处理，让部门新老大接手处理集成云打包问题，可以打包成功，但因为项目特殊，我需要处理解包，集成对应 Siri 扩展的代码，重新签包安装一直不成功，尝试了很多种方法都不是不行的，太折磨人了。搞了 3 个星期，一个需求，结果失败了，没成功，也不知道怎么解决，毕竟网上资料少。回想做这个项目，一路走来全都是靠自己摸索出来的开发及解决方案，包括一开始苹果官方英文开发文档也是硬着头皮看的，直接上手写项目。虽然很辛苦但也是没办法的事，改变不了什么，只能不断地鼓励自己可以做出来的，自己可以成功的。确实是，自己对原生开发上的投入和最终结果是满意的，即使最终没有集成在 uni-app 的 iOS 端上解决这个问题。就算我说尽力了，部门的人也不会信的，因为大家都只看结果，不会在乎你怎么努力，加班多晚的问题，事实证明可能真的自己的能力不行，让我有点怀疑自己的职业生涯还能走多远。所以那个时候到现在，已知对公司工作都有畏惧和干不下去的想法。最近也发现自己手头没啥活可以做了，简单来说没有大需求了，也没有主营的业务模块可以一直长久的做下去了，都是零零碎碎的小需求或者改 bug，觉得挺没意思的，没啥干劲，虽然自己也会找事情做，只是为了可以为团队做贡献的同时，也让自己多成长成长吧。公司上半年业绩和部门的业务前景都不太好，不知道自己还能坚持干多久，也早已经打算开始做两手准备了，希望到时候不要太被动就好了，加油持续学习吧</p>
+<p>关于生活方面吧，不知道为啥，真感觉自己挺无助的，也得不到任何的理解和温暖。也挺感觉生活没有乐趣或者找不到意义何在，这样的生活到底是自己想要的吗？我想不是的，我到底怎么啦！一是家庭，现在的样子真的是我想要的状态吗？虽然不是很好，也过得去，但我感觉没有乐趣，没有情绪价值，没有生活的意义，感觉还不如之前一个人的生活状态好，起码自由。为什么呢？因为平时各种琐事太多，而我又是喜欢清净做事的人。我虽然喜欢跟朋友应酬之类的，那是因为可以有共同话题吹水，可以释放自己，特别在喝酒之后感觉自己特别的轻松，无拘无束的跟朋友扯东扯西，聊人生，谈生活之类的，挺好的，舒服的。反而家人的那些事，让我不自在，总感觉被枷锁了一样，不做得罪人，做了自己又很不自在，很不舒服，但有只能假装很开心，笑脸相迎，很不习惯这样的自己。就算我的身份变了，但是有些事我真的不想去做，我会承担应尽的责任和义务，但可以避免的我真的不想参与，我也不是为了逃避什么，我只是想给自己多点独处的时间，想想自己未来及做好手头的事。还有...</p>
+<p>哎，我只能希望我的生活和工作就是，好事多磨吧。生活一团糟，工作不如意，哎，艰难的一年。只能不断地努力、奋斗，期待明年的惊喜，生活跟工作，总得有一样对自己是好的吧</p>
+]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[逆向生长，保持路上]]></title>
@@ -21124,6 +21609,111 @@ query=sirikit&amp;utm_source=gold_browser_extension&amp;utm_medium=search&amp;so
             <enclosure url="https://cdn.nlark.com/yuque/0/2022/png/245110/1670064729042-ad1afb3e-00ce-4c54-97aa-16beb85f7034.png#averageHue=%232a2929&clientId=u46e8d9ee-889a-4&from=paste&height=140&id=uf3a04606&originHeight=140&originWidth=692&originalType=binary&ratio=1&rotation=0&showTitle=false&size=26211&status=done&style=none&taskId=ufb0564e6-46cf-4f6a-85cc-ad3008aa9bd&title=&width=692" length="0" type="image/png"/>
         </item>
         <item>
+            <title><![CDATA[转岗选择]]></title>
+            <link>https://super456.github.io/posts/random-thought/2022/job-transfer-selection.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2022/job-transfer-selection.html</guid>
+            <pubDate>Fri, 02 Dec 2022 20:09:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="转岗选择" tabindex="-1">转岗选择 <a class="header-anchor" href="#转岗选择" aria-label="Permalink to &quot;转岗选择&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="面临选择" tabindex="-1">面临选择 <a class="header-anchor" href="#面临选择" aria-label="Permalink to &quot;面临选择&quot;">&ZeroWidthSpace;</a></h2>
+<p>我面临选择的是否转岗问题：周五大领导找我谈话，希望我去另一个部门前端组当负责人，那个组前端有 3 个人，我是去还是不去？</p>
+<p>影响点：</p>
+<ul>
+<li>那个部门是定制化甲方项目，长期战略合作的，有点类似外包项目，工作很多回比较受限。相对我现在部门是工作比较忙；</li>
+<li>前端组负责人相对我现在部门只是一个业务开发前端，去了之后对个人成长会提升很多，相对的技术学习和专注肯定会有损失，工作 &amp; 生活时间需要重新平衡；</li>
+<li>需要面对的挑战更多和未知的因素，需要学会管理和团队协作，不止是关注自己的手头上的事了；</li>
+</ul>
+<p>我犹豫的几个点：</p>
+<ul>
+<li>现在部门工作轻松，有更多的时间做自己想做的事情（花了很多业余时间在学习成长上，收获非常多）。如果一旦过去了之后学习时间相对很少且肯定会牺牲很多自己的时间；</li>
+<li>现在工作快三年半了，我是想工作 5 年内更专注自己的技术深度上，毕竟想着靠技术这条路可以走的更长远一点，如果太早转管理岗，会有点影响的；</li>
+<li>我一直有个大厂梦，也就是希望在自己 5 年内可以进入梦想的大厂，所以需要付出很多时间和精力在个人技术成长上，所以懂得都懂，哈哈哈；</li>
+</ul>
+<h2 id="结果" tabindex="-1">结果 <a class="header-anchor" href="#结果" aria-label="Permalink to &quot;结果&quot;">&ZeroWidthSpace;</a></h2>
+<CustomImage src='/random-thought/2022/zhuangang.png' /><p>领导说的挺好的，我也认可。但有点失望，并不是不能转岗，而是对方这个口语表达，他好像并不理解我说的刷题意思，哈哈哈，可能语言真的是门艺术吧</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[算法基础学习]]></title>
+            <link>https://super456.github.io/posts/growth-record/computer/algorithm/basics-knowledge.html</link>
+            <guid>https://super456.github.io/posts/growth-record/computer/algorithm/basics-knowledge.html</guid>
+            <pubDate>Sun, 13 Nov 2022 20:04:09 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="算法基础学习" tabindex="-1">算法基础学习 <a class="header-anchor" href="#算法基础学习" aria-label="Permalink to &quot;算法基础学习&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="数据结构的存储方式" tabindex="-1">数据结构的存储方式 <a class="header-anchor" href="#数据结构的存储方式" aria-label="Permalink to &quot;数据结构的存储方式&quot;">&ZeroWidthSpace;</a></h2>
+<p><strong>数据结果的存储方式只有两种：数组（顺序存储）和链表（链式存储）。属于底层存储的数据结构类型，其余的数据结构多是基于这两种进行延伸实现的</strong></p>
+<blockquote>
+<p><strong>分析问题要有递归思想，自顶向下，从抽象到具体</strong></p>
+</blockquote>
+<p>数组特点：</p>
+<ul>
+<li>元素紧凑连续存储，可以随机访问：通过索引快速找到对应的元素，优点：相对节约存储空间</li>
+<li>如果要动态扩容存储数据，需要重新分配一块更大的空间，再把数据全部复制过去，时间复杂度为 O(N)</li>
+<li>对数组的 API 操作，比如插入或删除，需要迁移后面的所有元素数据保持连续存储，时间复杂度 O(N)</li>
+</ul>
+<p>链表特点：</p>
+<ul>
+<li>元素不连续存储，靠指针指向下一个元素的位置，所以不存在数组中的动态扩容问题</li>
+<li>因为存储空间不连续，所以无法根据索引算出对应元素的地址，不能随机访问</li>
+<li>如果知道某一元素的前驱和后驱，操作指针即可删除该元素或者插入新元素，时间复杂度 O(1)</li>
+<li>由于每个元素必须存储指向前后元素位置的指针，会消耗更多的存储空间</li>
+</ul>
+<h2 id="数据结构的基本操作" tabindex="-1">数据结构的基本操作 <a class="header-anchor" href="#数据结构的基本操作" aria-label="Permalink to &quot;数据结构的基本操作&quot;">&ZeroWidthSpace;</a></h2>
+<p>对于任何数据结构的基本操作都是遍历 + 访问，简单的说就是：增删改查</p>
+<blockquote>
+<p>各种数据结构的遍历 + 访问无非两种形式：线性的和非线性的</p>
+</blockquote>
+<p>线性的：for/while
+非线性的：递归</p>
+<p>数组遍历框架：典型的线性迭代结构</p>
+<div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> traverse</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70">arr</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> any</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">[]) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">	for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> i </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; i </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">&#x3C;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> arr.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">length</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">; i</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">++</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    ...</span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 访问arr[i]</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">}</span></span></code></pre>
+</div><p>链表遍历框架：兼具迭代和递归结构</p>
+<div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 待补充ing</span></span></code></pre>
+</div><p>二叉树遍历框架：典型的非线性递归遍历结构</p>
+<div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D">// 待补充ing</span></span></code></pre>
+</div><blockquote>
+<p>所谓框架，就是套路。不管增删改查，这些代码都是永远无法脱离的结构</p>
+</blockquote>
+<h2 id="参考学习资料" tabindex="-1">参考学习资料 <a class="header-anchor" href="#参考学习资料" aria-label="Permalink to &quot;参考学习资料&quot;">&ZeroWidthSpace;</a></h2>
+<ul>
+<li><a href="https://labuladong.github.io/algo/1/2/" target="_blank" rel="noreferrer">学习算法和刷题的框架思维 :: labuladong的算法小抄</a></li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[算法学习心得]]></title>
+            <link>https://super456.github.io/posts/growth-record/computer/algorithm/experience.html</link>
+            <guid>https://super456.github.io/posts/growth-record/computer/algorithm/experience.html</guid>
+            <pubDate>Sun, 13 Nov 2022 20:04:04 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="算法学习心得" tabindex="-1">算法学习心得 <a class="header-anchor" href="#算法学习心得" aria-label="Permalink to &quot;算法学习心得&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="labuladong" tabindex="-1">labuladong <a class="header-anchor" href="#labuladong" aria-label="Permalink to &quot;labuladong&quot;">&ZeroWidthSpace;</a></h2>
+<blockquote>
+<p>算法的本质是穷举</p>
+</blockquote>
+<p>部分我们所了解的算法是这样的，至于特殊的部分算法偏数学或脑筋急转弯类的需要一定的观察、规律、原理才能解决</p>
+<p>穷举也不简单：无遗漏、无冗余</p>
+<ul>
+<li>遗漏，会直接导致答案出错</li>
+<li>冗余，会拖慢算法的运行速度</li>
+</ul>
+<p>当你看到一道算法题，可以从这两个维度去思考：</p>
+<ul>
+<li>如何穷举？即无遗漏地穷举所有可能解</li>
+<li>如何聪明地穷举？即避免所有冗余的计算，消耗尽可能少的资源求出答案</li>
+</ul>
+<p>不同类型的题目，难点不同，有的难在「如何穷举」上（递归类），有的难在「如何聪明地穷举」上（非递归算法类，本质是优化算法的时间、空间复杂度）</p>
+<blockquote>
+<p>正确的刷题方式应该是刷一道题能获得刷十道题的效果，不然力扣现在 2000 道题目，你都打算刷完么？</p>
+</blockquote>
+<blockquote>
+<p>要有框架思维，学会提炼重点，一个算法技巧可以包装出一百道题，如果你能一眼看穿它的本质，那就没必要浪费时间刷了。同时，在做题的时候要思考，联想，进而培养举一反三的能力</p>
+</blockquote>
+<p><a href="https://labuladong.github.io/algo/1/3/" target="_blank" rel="noreferrer">原文链接🔗</a></p>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[大数据虚拟列表优化实战]]></title>
             <link>https://super456.github.io/posts/growth-record/frame/vue/virtual-scrolling-list-practice.html</link>
             <guid>https://super456.github.io/posts/growth-record/frame/vue/virtual-scrolling-list-practice.html</guid>
@@ -21478,6 +22068,157 @@ query=sirikit&amp;utm_source=gold_browser_extension&amp;utm_medium=search&amp;so
 </ul>
 ]]></content:encoded>
             <enclosure url="https://super456.github.io/read-book/2022/tiantanglvxingtuan.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[摘抄语录💎]]></title>
+            <link>https://super456.github.io/posts/random-thought/2022/extract-quotes.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2022/extract-quotes.html</guid>
+            <pubDate>Tue, 11 Oct 2022 20:08:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="摘抄语录💎" tabindex="-1">摘抄语录💎 <a class="header-anchor" href="#摘抄语录💎" aria-label="Permalink to &quot;摘抄语录💎&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="书籍" tabindex="-1">书籍 <a class="header-anchor" href="#书籍" aria-label="Permalink to &quot;书籍&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>荞麦——《当一切在我们周围暗下里》</li>
+</ol>
+<blockquote>
+<p>我们暂时拥有，随后失去。从每一段失去中，我越来越懂得人生究竟是怎么一回事。</p>
+</blockquote>
+<ol start="2">
+<li>莫泊桑</li>
+</ol>
+<blockquote>
+<p>生活永远不像我们想象的那样好，但也不会像我们想象的那样糟。</p>
+</blockquote>
+<ol start="3">
+<li>思想聚焦</li>
+</ol>
+<blockquote>
+<p>再小的努力，乘以 365 天都很伟大。</p>
+</blockquote>
+<ol start="4">
+<li>胡适</li>
+</ol>
+<blockquote>
+<p>人生应该有梦，否则人生不是太不丰富吗?
+现在你们都有理想，但出了社会便可能不同了。
+那时各奔前程，各种打击，各种现实的考虑，
+都可能使你把崇高的理想收敛起来。
+这就是现实在考验我们的道德力、我们的理想性。
+我们对真、对善、对美的追求是否迫切。</p>
+</blockquote>
+<blockquote>
+<p>在世界上每一个角落都是如此的。 我们是否能撑得住，就在这个关头，现在是考验我们的时候了。</p>
+</blockquote>
+<ol start="5">
+<li>太宰治——《人间失格》</li>
+</ol>
+<blockquote>
+<p>胆小鬼连幸福都会害怕，碰到棉花都会受伤。</p>
+</blockquote>
+<ol start="6">
+<li>
+<p>就像我高攀不起的优秀，担待不起的夸奖，拒绝不了的请求，对号入座的批评。这所有的一切，不过是那颗敏感脆肉又自卑的心，带给我的无能为力而已。</p>
+</li>
+<li>
+<p>王尔德</p>
+</li>
+</ol>
+<blockquote>
+<p>过自己想要的生活不是自私，要求别人按照自己的意愿生活才是。</p>
+</blockquote>
+<ol start="8">
+<li>张一鸣</li>
+</ol>
+<blockquote>
+<p>一个人，如果有想法，想突破想挑战，其实成长型公司或者成长型部门更适合。或许成长型公司工资低，会死掉，但是它的成长空间带给你的成长经历是不可磨灭的，也是最宝贵的。前提是你真的想上进哦。</p>
+</blockquote>
+<h2 id="影视" tabindex="-1">影视 <a class="header-anchor" href="#影视" aria-label="Permalink to &quot;影视&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>戴猛——《猎心者》</li>
+</ol>
+<blockquote>
+<p>自私的人呢，只会在意自己的感受，从来不管别人真正的需求，其实我要的挺简单的，只要他能在我身边...我就觉得挺幸福的。
+说到底啊，人与人之间最难的就是理解与沟通问题，每个人做决定呢，只能依靠自己的想法和认知，很难设身处地的为别人着想的。
+就想这次，他以为一走了之是为了我好，但却从来没问过我，究竟想要的是什么。
+别抗拒新鲜事物，人生嘛总是要学习和进步的。</p>
+</blockquote>
+<ol start="2">
+<li>男二——《我的莫格利男孩》</li>
+</ol>
+<blockquote>
+<p>但失败的经验让我学会了珍惜眼前人，你在我心中的印记，会慢慢褪去。总有一天，我对她的爱，会超过曾经对你的爱。
+我们不一样，你想要的，是瞬间绽放的烟花，我想要的，是陪伴窗前的灯火。
+你不爱任何人，只是不想输而已。</p>
+</blockquote>
+<ol start="3">
+<li>罗翔老师-B站</li>
+</ol>
+<blockquote>
+<p>一个知识越贫乏的人，越是拥有一种莫名其妙的勇气和一种莫名其妙的自豪感。</p>
+</blockquote>
+<ol start="4">
+<li>
+<p>总以自己的想法为中心，恶意揣测别人的善举，并在没有充足证据的情况下就对别人进行言语攻击的人，内心能有多干净？</p>
+</li>
+<li>
+<p>你的想象力在哪里，你的触角就能伸到哪里。</p>
+</li>
+<li>
+<p>《士兵突击》</p>
+</li>
+</ol>
+<blockquote>
+<p>他每做一件小事的时候，都好像抓住一根救命稻草，到最后你才发现，他抱住的已经是一棵参天大树了。</p>
+</blockquote>
+<ol start="7">
+<li>抖音</li>
+</ol>
+<blockquote>
+<p>（1）做你没做过的事情叫成长，做你不愿意做的事情叫改变，做你不敢做的事情叫突破。</p>
+<p>（2）永远不要去做伸手就能完成的事，你跳一下才能够得着的事才能带来成就感和提高。</p>
+<p>情商差表现：
+（1）公开和领导闹矛盾；
+（2）总是把情绪挂在脸上；
+（3）埋头苦干等赏识；
+（4）想凭借能力被提拔；
+（5）不懂示弱喜欢逞强；
+（6）把面子看得很重，死要面子；
+（7）喜欢把话说透，还觉得自己挺聪明；
+（8）多愁善感，容易被小恩小惠感动。</p>
+</blockquote>
+<h2 id="百科" tabindex="-1">百科 <a class="header-anchor" href="#百科" aria-label="Permalink to &quot;百科&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>飞轮效应</li>
+</ol>
+<p>指为了使静止的飞轮转动起来，一开始你必须使很大的力气，一圈一圈反复地推，每转一圈都很费力，但是每一圈的努力都不会白费，飞轮会转动得越来越快。当达到一个很高的速度后飞轮所具有的动量矩和动能就会很大，使其短时间内停下来所需的的外力便会很大，便能够克服较大的阻力维持原有运动。</p>
+<p>举例：类似不断推动一个沉重的巨轮，一圈圈旋转，最终终于产生突破，自己开始转起来。</p>
+<ol start="2">
+<li>费曼学习法</li>
+</ol>
+<p>就是学任何东西，如果你能用简单的话，用自己的话，不带行业术语，说给八十岁的老太太听，说给八岁的小孩听。当这些人都听懂了，你就把这个概念搞明白了。</p>
+<h2 id="歌曲" tabindex="-1">歌曲 <a class="header-anchor" href="#歌曲" aria-label="Permalink to &quot;歌曲&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>蔡健雅-《红色高跟鞋》</li>
+</ol>
+<blockquote>
+<p>该怎么去形容你最贴切 拿什么跟你作比较才算特别</p>
+</blockquote>
+<ol start="2">
+<li>《绿色》</li>
+</ol>
+<blockquote>
+<p>若不是你，突然闯进我生活，我怎么会把，死守的寂寞放任了</p>
+</blockquote>
+<h2 id="随机" tabindex="-1">随机 <a class="header-anchor" href="#随机" aria-label="Permalink to &quot;随机&quot;">&ZeroWidthSpace;</a></h2>
+<ol>
+<li>这个夏天很长，但转眼就立秋了，我们总是在错过一些事情，有很多东西，只能在相机里再次相见</li>
+<li>落日跌进昭昭星野，人间忽晚，山河已秋</li>
+<li>究竟是怎样的结局，才配得上这一路的颠沛流离</li>
+<li>我终将落俗，但浪漫不死</li>
+<li>我们总惦记着被财米油盐掩盖的心动，却忘了，在那些生活琐事中藏着无处不在的心安</li>
+<li>命，即性格和能力，运，即所作所为，命不可违，但运可造</li>
+<li>我们总是喜欢拿顺其自然来敷衍人生道路上的荆刺坎坷，却很少承认，真正的顺其自然，其实是竭尽所能之后的不强求，而非两手一摊的不作为</li>
+</ol>
+]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Vue3 语法规范尝鲜]]></title>
@@ -22095,6 +22836,7 @@ query=sirikit&amp;utm_source=gold_browser_extension&amp;utm_medium=search&amp;so
 - 安装/卸载到 dependencies 下：`npm install/uninstall gulp -S/--save`
 - 删除 node_modules：`npm install rimraf -g` `rimraf node_modules`
 - 查看包版本：`npm ls nuxt`
+- 清除缓存数据： `npm cache clean --force`
 
 ## 五、Git 操作
 
@@ -22110,8 +22852,11 @@ query=sirikit&amp;utm_source=gold_browser_extension&amp;utm_medium=search&amp;so
 - 当前项目中配置账户信息：`git config  user.name "xxx"` `git config  user.email "xxx@qq.com"`
 - 将当前文件下的都添加：`git add .`
 - 切换到上一个分支：`git checkout -`
+- 清空⼯作区修改的内容： `git checkout .` 清空暂存区和⼯作区内容： `git reset --hard`
 - 创建提交版本并填写备注：`git commit -m "此次修改的一些说明"`
 - 修改最近一次提交的 commit message：`git commit --amend -m "Updated commit message" 或 git commit --amend // 后面是vim命令 w: 写入 q: 退出`
+- 使⽤某个分⽀的 commit 到另外⼀个分⽀： `git cherry-pick [commit hash]` ，多个
+commit 包括前⼀个和后⼀个，不包括前⼀个 commit 去掉 `^` ： `git cherry-pick [commit hash]^..[commit hash]`
 - git 的忽略文件，也就是上传的时候不用管：
 ```git
 *.txt    //忽略所有的 .txt 文件
@@ -22191,6 +22936,27 @@ git rm -f xxx
 // 递归删除，即如果后面跟的是一个目录做为参数，则会递归删除整个目录中的所有子目录和文件
 git rm -r xxx
 ```
+
+- git revrt 回滚 commit 记录，⼀般⽤于回滚分⽀ commit ID 记录层级⽐较深的且不影响其他
+提交的 commit ID 记录：
+```git
+ // ⾮ merge 的 commit
+ git revert [commit hash]
+
+ // merge 类型的 commit，第⼀个 hash 为编号1，第⼆个 hash 为编号 2，以哪个⽗ hash 为主线则保留哪个，删除另⼀个
+ git revert -m [1|2] [commit hash]
+ // 如下图，则回滚 bd86846 的提交，且以 ba25a9d master 分⽀为主线保留，回滚掉 1c7036f 所在分⽀提交
+ git revert -m 1 bd86846
+```
+<CustomImage src='/growth-record/other/toolGuide/command-line-01.png' />
+
+- `git rebase -i` ⼀般⽤于合并分⽀ commit 记录⽇志⽐较混乱情况合并为⼀个 commit 记录或
+修改 commit 记录操作，⽐如丢弃某个 commit 记录：
+```git
+// 调整最近提交的 3 次⽇志修改
+git rebase -i HEAD~3
+```
+
 ## 六、SSH 查看 PM2 日志
 前提要有权限：
 ```git
@@ -22261,6 +23027,7 @@ ip:端口号
 <li>安装/卸载到 dependencies 下：<code>npm install/uninstall gulp -S/--save</code></li>
 <li>删除 node_modules：<code>npm install rimraf -g</code> <code>rimraf node_modules</code></li>
 <li>查看包版本：<code>npm ls nuxt</code></li>
+<li>清除缓存数据： <code>npm cache clean --force</code></li>
 </ul>
 <h2 id="五、git-操作" tabindex="-1">五、Git 操作 <a class="header-anchor" href="#五、git-操作" aria-label="Permalink to &quot;五、Git 操作&quot;">&ZeroWidthSpace;</a></h2>
 <ul>
@@ -22276,8 +23043,11 @@ ip:端口号
 <li>当前项目中配置账户信息：<code>git config  user.name &quot;xxx&quot;</code> <code>git config  user.email &quot;xxx@qq.com&quot;</code></li>
 <li>将当前文件下的都添加：<code>git add .</code></li>
 <li>切换到上一个分支：<code>git checkout -</code></li>
+<li>清空⼯作区修改的内容： <code>git checkout .</code> 清空暂存区和⼯作区内容： <code>git reset --hard</code></li>
 <li>创建提交版本并填写备注：<code>git commit -m &quot;此次修改的一些说明&quot;</code></li>
 <li>修改最近一次提交的 commit message：<code>git commit --amend -m &quot;Updated commit message&quot; 或 git commit --amend // 后面是vim命令 w: 写入 q: 退出</code></li>
+<li>使⽤某个分⽀的 commit 到另外⼀个分⽀： <code>git cherry-pick [commit hash]</code> ，多个
+commit 包括前⼀个和后⼀个，不包括前⼀个 commit 去掉 <code>^</code> ： <code>git cherry-pick [commit hash]^..[commit hash]</code></li>
 <li>git 的忽略文件，也就是上传的时候不用管：</li>
 </ul>
 <div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>*.txt    //忽略所有的 .txt 文件</span></span>
@@ -22350,6 +23120,23 @@ ip:端口号
 <span class="line"><span></span></span>
 <span class="line"><span>// 递归删除，即如果后面跟的是一个目录做为参数，则会递归删除整个目录中的所有子目录和文件</span></span>
 <span class="line"><span>git rm -r xxx</span></span></code></pre>
+</div><ul>
+<li>git revrt 回滚 commit 记录，⼀般⽤于回滚分⽀ commit ID 记录层级⽐较深的且不影响其他
+提交的 commit ID 记录：</li>
+</ul>
+<div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span> // ⾮ merge 的 commit</span></span>
+<span class="line"><span> git revert [commit hash]</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span> // merge 类型的 commit，第⼀个 hash 为编号1，第⼆个 hash 为编号 2，以哪个⽗ hash 为主线则保留哪个，删除另⼀个</span></span>
+<span class="line"><span> git revert -m [1|2] [commit hash]</span></span>
+<span class="line"><span> // 如下图，则回滚 bd86846 的提交，且以 ba25a9d master 分⽀为主线保留，回滚掉 1c7036f 所在分⽀提交</span></span>
+<span class="line"><span> git revert -m 1 bd86846</span></span></code></pre>
+</div><CustomImage src='/growth-record/other/toolGuide/command-line-01.png' /><ul>
+<li><code>git rebase -i</code> ⼀般⽤于合并分⽀ commit 记录⽇志⽐较混乱情况合并为⼀个 commit 记录或
+修改 commit 记录操作，⽐如丢弃某个 commit 记录：</li>
+</ul>
+<div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>// 调整最近提交的 3 次⽇志修改</span></span>
+<span class="line"><span>git rebase -i HEAD~3</span></span></code></pre>
 </div><h2 id="六、ssh-查看-pm2-日志" tabindex="-1">六、SSH 查看 PM2 日志 <a class="header-anchor" href="#六、ssh-查看-pm2-日志" aria-label="Permalink to &quot;六、SSH 查看 PM2 日志&quot;">&ZeroWidthSpace;</a></h2>
 <p>前提要有权限：</p>
 <div class="language-git vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">git</span><pre class="shiki shiki-themes github-light github-dark vp-code" v-pre=""><code><span class="line"><span>ssh root@ip</span></span>
@@ -22460,6 +23247,25 @@ ip:端口号
 <CustomImage src="/growth-record/other/toolGuide/minglingxing.webp" alt="command-line" />]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[今日察觉（二）]]></title>
+            <link>https://super456.github.io/posts/random-thought/2022/self-reflection-02.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2022/self-reflection-02.html</guid>
+            <pubDate>Mon, 04 Jul 2022 20:07:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="今日察觉-二" tabindex="-1">今日察觉（二） <a class="header-anchor" href="#今日察觉-二" aria-label="Permalink to &quot;今日察觉（二）&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="_20220704" tabindex="-1">20220704 <a class="header-anchor" href="#_20220704" aria-label="Permalink to &quot;20220704&quot;">&ZeroWidthSpace;</a></h2>
+<p>今天心情很不爽，感觉很失落，很伤心。在这家公司，第一次感觉上班上到心累了，可能真的会影响我以后在这家公司的状态了，简单记录下吧~</p>
+<p>原因有两个吧：</p>
+<ol>
+<li>第一件事：早上坐我旁边的女生，跟她争吵了一个她做的需求上线权限问题，事情是这样子的，本来她新增一个模块菜单，把原来的菜单名称给占用了，其实应该同步迁移过来的，结果她没做。她不做，虽然上线没影响，但是就是很容易误导别人看到同名菜单，而且本来就是最好一起改了的问题，她非要说不要改，不用去做之类的。我就跟她一直在谈，不是你的问题，但我们应该做好的，为什么老是纠结你没改动到，你做的没影响呢。就是死活没有 get 到我的点，说白了，就是怕事，就是怕麻烦，不想做了。她工作的心态一直是这样子的，我也认了，本来就是混吃等死，不想学习，不想进步，不想挑战自己。但最后一句真的气到我了，说：“要做，你来迁移”。瞬间让我火冒三丈，但还是忍住了没有对她发火。哎，我是时候该反思自己了，感觉真的自己有时候说话太急躁了，而且这些事情，完全跟自己没关系的，真的没有必要去较真，我只是好意提醒她而已，真的没必要跟她扯太多，太浪费时间了，关键是你永远也很难改变一个人，哪怕你尽心尽力为她好，职场就是这样子的，以后真的不要再这样子了。对自己好一点，<strong>把时间和精力放在自己认为对的事情和值的人上去付出</strong>，<strong>其他的，呵呵，无可奉告，多学习，你要努力成长的哈</strong>，对了，最后还是强忍头皮，假装跟她和好，主动发消息跟她道歉了（👇🏻 图），算了，该低头还是要低头。</li>
+</ol>
+<CustomImage src='/random-thought/2022/chajue-01.png' /><ol start="2">
+<li>第二件事：下午需求评审，里面扯到了一个细节问题，我以为是我前端去做的事情，就把这事拿出来聊了下，结果被一个人很不耐烦的口气，说：“不是你做的，你不要再说了，我不想听到 xxx 的事”，场面很尴尬，感觉就是很被嫌弃的样子，当时真的有被气到了，感觉真的没必要这样口气说吧，别人也只是拿出来讨论而已，这么。。。😌，心酸，打工真的累，职场各种乱七八糟的糟心事，感觉就是很被嫌弃一样</li>
+</ol>
+<p>可能真的我的脾气有时候太急了，总是给别人感觉脾气很不好一样，我也是醉了😔。也有可能职场太黑暗了，因为人心难测，你想着为别人好，别人并不一定领情，并不一定觉得你对他好，并不一定觉得你是真心的，或者说别人根本不想你帮忙，别人就想混着，不要给我整事情最好，我也是真的醉了，以后真的要小心一点了，不过该保持积极向上 🌻 的，还是要做的，眼里还是要有光的，还是要有希望的，做好本职的工作，然后，👆🏻 所说的：<strong>把时间和精力放在自己认为对的事情和值的人上去付出。</strong></p>
+<p>总之，好好加油，别管太多了，保持好自己的状态，保持好自己的热情，一直努力做好自己的事情哈，记得写下半年职业规划哈~</p>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[DevOps 了解]]></title>
             <link>https://super456.github.io/posts/growth-record/engineering/tools/dev-ops.html</link>
             <guid>https://super456.github.io/posts/growth-record/engineering/tools/dev-ops.html</guid>
@@ -22505,6 +23311,30 @@ ip:端口号
 <p>待补充点评🚀...</p>
 ]]></content:encoded>
             <enclosure url="https://super456.github.io/read-book/2022/nanhaiyanshuhulihema.webp" length="0" type="image/webp"/>
+        </item>
+        <item>
+            <title><![CDATA[坚持要做好的事情 🆙]]></title>
+            <link>https://super456.github.io/posts/random-thought/2022/persist-doing.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2022/persist-doing.html</guid>
+            <pubDate>Sun, 22 May 2022 20:03:06 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="坚持要做好的事情-🆙" tabindex="-1">坚持要做好的事情 🆙 <a class="header-anchor" href="#坚持要做好的事情-🆙" aria-label="Permalink to &quot;坚持要做好的事情 🆙&quot;">&ZeroWidthSpace;</a></h1>
+<p>1、每天晚上都要坚持做好一个复盘总结：</p>
+<ul>
+<li>今天都把时间精力花在哪里了；</li>
+<li>有哪些事情没有意义，浪费时间了；</li>
+<li>你对自己有哪里不满意的地方，有没有什么解决办法。</li>
+</ul>
+<p><strong>建议使用思维导图或者笔记本上。</strong></p>
+<p>2、每天给自己设定小目标：</p>
+<ul>
+<li>每天早上起来呢，制定好今天要完成的所有任务，12345，你全部记录下来；</li>
+<li>把这些任务规定好一个完成的时间，制造一个紧迫感，完成一项任务你就打一个勾；</li>
+</ul>
+<p>这样子你整天下来思路就不会混乱，会感觉做的事情特别的有效率。</p>
+<p>3、每天认真的学习一项技能；把它去变成你的能力，每天不用多久，就是一个小时就够了；<strong>其实我们不用跟别人去比天赋，因为你光坚持就能打败很多人了。</strong></p>
+<p>4、尝试用心的去看完一本书；如果你能每天坚持半个小时，三个月之后，你会发现你的气质谈吐都不一样，你慢慢去培养自己的阅读习惯就好；</p>
+<p>5、定期给自己存一笔钱，学会理财。</p>
+]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[浅谈职业规划]]></title>
@@ -22992,6 +23822,27 @@ Vue CLI 官方解释：
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[今日察觉（一）]]></title>
+            <link>https://super456.github.io/posts/random-thought/2022/self-reflection-01.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2022/self-reflection-01.html</guid>
+            <pubDate>Sat, 19 Mar 2022 20:07:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="今日察觉-一" tabindex="-1">今日察觉（一） <a class="header-anchor" href="#今日察觉-一" aria-label="Permalink to &quot;今日察觉（一）&quot;">&ZeroWidthSpace;</a></h1>
+<h2 id="_20220319" tabindex="-1">20220319 <a class="header-anchor" href="#_20220319" aria-label="Permalink to &quot;20220319&quot;">&ZeroWidthSpace;</a></h2>
+<p>1、平时工作聊天过于急躁：</p>
+<ul>
+<li>喜欢跟别人争对错，讨论是非，而不是注重解决问题。</li>
+<li>聊天语气过于强硬且说话方式低级，显得情商很低，不够循循善诱。</li>
+</ul>
+<p>2、解决问题时的思考方式有待提高：</p>
+<ul>
+<li>当陷入一个 bug 解决推到几个 bug 之后，解决过程时间耗费超过 2~3 个小时还一直纠结怎么解决导致无法根治问题；</li>
+<li>陷入解决问题时间过久（❌  不要超过 2 个小时）应该立即停下，喝口水或者转移一下注意力，放松一下脑子🧠  深呼吸，看看风景。</li>
+<li>然后在用纸笔整理思路，把要解决的问题过程及遇到的其他问题之间的关系条件记录画图，这样很方便、清晰的整理思路，<strong>不会一团槽</strong>。</li>
+<li>不要长时间聚焦在解决问题上，很容易让人心累，且失去耐心，可以做点容易提高成就感的东西弥补一下，或者做其他放松脑子的事情（比如刷抖音、皮皮虾）。</li>
+</ul>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[第 3 本《认知觉醒》]]></title>
             <link>https://super456.github.io/posts/read-book/2022/renzhijuexing.html</link>
             <guid>https://super456.github.io/posts/read-book/2022/renzhijuexing.html</guid>
@@ -23302,6 +24153,62 @@ type-block__element_modifier
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[HTML 知识点]]></title>
+            <link>https://super456.github.io/posts/growth-record/base/html/basics-knowledge.html</link>
+            <guid>https://super456.github.io/posts/growth-record/base/html/basics-knowledge.html</guid>
+            <pubDate>Mon, 22 Mar 2021 20:04:05 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="html-知识点" tabindex="-1">HTML 知识点 <a class="header-anchor" href="#html-知识点" aria-label="Permalink to &quot;HTML 知识点&quot;">&ZeroWidthSpace;</a></h1>
+<CustomImage src='/growth-record/base/html/html-00.png' /><h2 id="概要" tabindex="-1">概要 <a class="header-anchor" href="#概要" aria-label="Permalink to &quot;概要&quot;">&ZeroWidthSpace;</a></h2>
+<CustomImage src='/growth-record/base/html/html-01.png' /><ul>
+<li><a href="http://www.html5star.com/manual/html5label-meaning/" target="_blank" rel="noreferrer">HTML5 标签含义之元素周期表在线版</a></li>
+<li>资源学习网站：<a href="http://www.html5star.com/" target="_blank" rel="noreferrer">HTML5 星空</a></li>
+</ul>
+<h2 id="语义化" tabindex="-1">语义化 <a class="header-anchor" href="#语义化" aria-label="Permalink to &quot;语义化&quot;">&ZeroWidthSpace;</a></h2>
+<h3 id="概述" tabindex="-1">概述 <a class="header-anchor" href="#概述" aria-label="Permalink to &quot;概述&quot;">&ZeroWidthSpace;</a></h3>
+<ol>
+<li>语义化的标签：说明让标签有自己的含义</li>
+<li>存在的意义：让前端开发人员，在开发过程中，更容易去阅读代码，以及明白这些代码的意义</li>
+<li>建议</li>
+</ol>
+<ul>
+<li>少使用无意义的 <code>&lt;div&gt;/&lt;span&gt;</code> 标签等</li>
+<li>在 <code>&lt;label&gt;</code> 标签中设置 for 属性和对应的 <code>&lt;input&gt;</code> 关联起来</li>
+<li>在设置 <code>&lt;img&gt;</code> 标签的 alt 属性，给 <code>&lt;a&gt;</code> 标签设置 title 属性，利于 SEO</li>
+<li>在页面的标题部分使用 <code>&lt;h1&gt;~&lt;h6&gt;</code> 标签，不需要给它们加多余的样式</li>
+<li>与表单、有序列表、无序列表相关的标签不要单独使用</li>
+</ul>
+<ol start="4">
+<li>好处</li>
+</ol>
+<ul>
+<li>能够更好的展示内容结构</li>
+<li>便于团队的维护与开发</li>
+<li>有利于 SEO</li>
+<li>爬虫可以分析每个关键词的权重</li>
+<li>方便其他设备解析（如屏幕阅读器）</li>
+</ul>
+<h3 id="示例" tabindex="-1">示例 <a class="header-anchor" href="#示例" aria-label="Permalink to &quot;示例&quot;">&ZeroWidthSpace;</a></h3>
+<CustomImage src='/growth-record/base/html/html-02.png' /><ul>
+<li><code>&lt;header&gt;</code> 标签通常放在页面或页面某个区域的顶部，用来设置页眉</li>
+<li><code>&lt;nav&gt;</code> 标签可以用来定义导航链接的集合，点击链接可以跳转到其他页面</li>
+<li><code>&lt;article&gt;</code> 标签中的内容比较独立，可以是一篇新闻报道，一篇博客，它可以独立于页面的其他内容进行阅读</li>
+<li><code>&lt;section&gt;</code> 标签表示页面中的一个区域，通常对页面进行分块或对内容进行分段，<code>&lt;section&gt;</code> 标签和 <code>&lt;article&gt;</code> 标签可以互相嵌套</li>
+<li><code>&lt;aside&gt;</code> 标签用来表示除页面主要内容之外的内容，比如侧边栏</li>
+<li><code>&lt;footer&gt;</code> 标签位于页面或页面某个区域的底部，用来设置页脚，通常包含版权信息，联系方式等</li>
+</ul>
+<h2 id="seo" tabindex="-1">SEO <a class="header-anchor" href="#seo" aria-label="Permalink to &quot;SEO&quot;">&ZeroWidthSpace;</a></h2>
+<h2 id="doctype" tabindex="-1">DOCTYPE <a class="header-anchor" href="#doctype" aria-label="Permalink to &quot;DOCTYPE&quot;">&ZeroWidthSpace;</a></h2>
+<h2 id="link-与-import" tabindex="-1">link 与 @import <a class="header-anchor" href="#link-与-import" aria-label="Permalink to &quot;link 与 @import&quot;">&ZeroWidthSpace;</a></h2>
+<h2 id="async-与-defer" tabindex="-1">async 与 defer <a class="header-anchor" href="#async-与-defer" aria-label="Permalink to &quot;async 与 defer&quot;">&ZeroWidthSpace;</a></h2>
+<h2 id="捕捉、冒泡与委托" tabindex="-1">捕捉、冒泡与委托 <a class="header-anchor" href="#捕捉、冒泡与委托" aria-label="Permalink to &quot;捕捉、冒泡与委托&quot;">&ZeroWidthSpace;</a></h2>
+<h2 id="渐进增强与优雅降级" tabindex="-1">渐进增强与优雅降级 <a class="header-anchor" href="#渐进增强与优雅降级" aria-label="Permalink to &quot;渐进增强与优雅降级&quot;">&ZeroWidthSpace;</a></h2>
+<h2 id="标签元素" tabindex="-1">标签元素 <a class="header-anchor" href="#标签元素" aria-label="Permalink to &quot;标签元素&quot;">&ZeroWidthSpace;</a></h2>
+<h2 id="html5-常用基础-api" tabindex="-1">HTML5 常用基础 API <a class="header-anchor" href="#html5-常用基础-api" aria-label="Permalink to &quot;HTML5 常用基础 API&quot;">&ZeroWidthSpace;</a></h2>
+<h2 id="参考资料" tabindex="-1">参考资料 <a class="header-anchor" href="#参考资料" aria-label="Permalink to &quot;参考资料&quot;">&ZeroWidthSpace;</a></h2>
+<h2 id="刷题" tabindex="-1">刷题 <a class="header-anchor" href="#刷题" aria-label="Permalink to &quot;刷题&quot;">&ZeroWidthSpace;</a></h2>
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[用技术的眼光看世界]]></title>
             <link>https://super456.github.io/posts/growth-record/other/softSkills/technology-for-the-world.html</link>
             <guid>https://super456.github.io/posts/growth-record/other/softSkills/technology-for-the-world.html</guid>
@@ -23408,6 +24315,16 @@ TypeError:n.setAttribute is not a function</p>
 <li>可以通过判断 <strong>process.client</strong>，来让一些事件只在客户端执行；</li>
 </ol>
 <p>额外内容可以看上面 Github 博文</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[来自陌生人的温暖]]></title>
+            <link>https://super456.github.io/posts/random-thought/2020/stranger-warmth.html</link>
+            <guid>https://super456.github.io/posts/random-thought/2020/stranger-warmth.html</guid>
+            <pubDate>Tue, 02 Jun 2020 20:06:08 GMT</pubDate>
+            <content:encoded><![CDATA[<h1 id="来自陌生人的温暖" tabindex="-1">来自陌生人的温暖 <a class="header-anchor" href="#来自陌生人的温暖" aria-label="Permalink to &quot;来自陌生人的温暖&quot;">&ZeroWidthSpace;</a></h1>
+<p>今天上午像往常一样赶着去乘地铁，为了赶上八点二十九分的，真的煞费苦心（就是走了有点快），终于赶上了，代价也是不停的猛流汗吧😅，下意识的，已经习惯了，因为不是第一次了，家常便饭吧，这个时候站在门口的阿姨掏出了纸巾便问了我一句：“需要纸巾吗？”，真的瞬间内心凉快好多，没想到一个陌生人的一次温暖的举动就可以感动到我，虽然还是不要脸的要了😃，但是真的很感谢她，可能有些习以为常的事情，对于一个陌生人来说可以做到这样，确实需要一点勇气和爱心的，愿她以后都被人所爱，向阳花开。</p>
+<p>有时候也觉得，是不是自己对身边的人奢求太多了，或者一些都觉得该做的东西，还是我对身边的人要求太高了，导致很多事情，并没有那么的重视或者忽略了身边人的感受，是我太自私了吧，我应该好好让他们开心才是，大家都好好的，就好了。</p>
 ]]></content:encoded>
         </item>
         <item>
