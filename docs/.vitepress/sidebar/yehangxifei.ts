@@ -6,7 +6,7 @@ export default function yehangxifeiSidebarGuide() {
       text: '念念不忘，必有回响',
       collapsed: false,
       items: [
-        { text: '我失业了', link: '/2024/lose-job' },
+        { text: '重新出发', link: '/2024/lose-job' },
         { text: '挑选眼镜心得', link: '/2024/glasses' },
         { text: '逆向生长，保持路上', link: '/2023/stay-on-road' },
         { text: '自我发展规划觉察', link: '/2023/self-planning-awareness' },
