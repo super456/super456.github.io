@@ -125,6 +125,7 @@ export default function qianduanjinjiSidebarGuide() {
         { text: 'HTTP 学习笔记', link: '/computer/network/http' },
         { text: '算法学习心得', link: '/computer/algorithm/experience' },
         { text: '算法基础学习', link: '/computer/algorithm/basics-knowledge' },
+        { text: '算法学习记录', link: '/computer/algorithm/learning-reference' },
       ],
     },
     {
