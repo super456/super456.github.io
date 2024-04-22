@@ -27,7 +27,7 @@ blog:
  # 设置 inspiringTimeout 可以实现自动切换
  inspiringTimeout: 5000
  # 设置首页列表每页展示数量
- pageSize: 6
+ pageSize: 8
  # 设置头像分离展示模式
  avatarMode: split
  # 移动端隐藏头部头像展示
