@@ -67,6 +67,12 @@ const blogTheme = getThemeConfig({
   // 友链设置
   friend: [
     {
+      nickname: '讶羽',
+      des: '6 个系列上百篇文章，做一个持续原创，输出干货的博主',
+      avatar: '/icons/mqyqingfeng.jpeg',
+      url: 'https://github.com/mqyqingfeng/Blog',
+    },
+    {
       nickname: '粥里有勺糖',
       des: '你的指尖，拥有改变世界的力量',
       avatar:

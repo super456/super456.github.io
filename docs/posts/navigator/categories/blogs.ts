@@ -10,7 +10,7 @@ export default {
     },
     {
       title: '讶羽博客',
-      desc: '四个系列：JavaScript 深入系列、JavaScript 专题系列、ES6 系列、React 系列',
+      desc: '6 个系列上百篇文章，做一个持续原创，输出干货的博主',
       icon: '/icons/mqyqingfeng.jpeg',
       link: 'https://github.com/mqyqingfeng/Blog',
     },
