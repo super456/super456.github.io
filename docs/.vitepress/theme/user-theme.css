@@ -3,18 +3,18 @@
 
 /* 浅色模式使用的变量 */
 html[theme] {
-  --vp-c-user-1:red;
-  --vp-c-user-2:blue;
-  --vp-c-user-3:green;
-  --vp-c-user-soft:rgba(255,0,0,.5);
+  --vp-c-user-1: var(--vp-c-brand);
+  --vp-c-user-2: var(--vp-c-brand-light);
+  --vp-c-user-3: var(--vp-c-brand-lighter);
+  --vp-c-user-soft: var(--vp-c-brand-lighter);
 }
 
 /* 深色模式使用的变量 */
 html[theme].dark {
-  --vp-c-user-1:yellow;
-  --vp-c-user-2:purple;
-  --vp-c-user-3:orange;
-  --vp-c-user-soft:rgba(255,255,0,.5);
+  --vp-c-user-1: var(--vp-c-brand-dark);
+  --vp-c-user-2: var(--vp-c-brand-darker);
+  --vp-c-user-3: var(--vp-c-brand-darker);
+  --vp-c-user-soft: var(--vp-c-brand-darker);
 }
 
 /* 覆盖默认变量 */
