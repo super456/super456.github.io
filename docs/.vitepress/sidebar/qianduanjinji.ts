@@ -42,9 +42,9 @@ export default function qianduanjinjiSidebarGuide() {
       text: 'Vue',
       collapsed: false,
       items: [
-        { text: 'Vue3 学习笔记（一）', link: '/posts/growth-record/frame/vue/vue3-study-01' },
-        { text: 'Vue3 学习笔记（二）', link: '/posts/growth-record/frame/vue/vue3-study-02' },
         { text: 'Vue3 学习笔记（三）', link: '/posts/growth-record/frame/vue/vue3-study-03' },
+        { text: 'Vue3 学习笔记（二）', link: '/posts/growth-record/frame/vue/vue3-study-02' },
+        { text: 'Vue3 学习笔记（一）', link: '/posts/growth-record/frame/vue/vue3-study-01' },
         { text: 'Vue3 学习参考', link: '/posts/growth-record/frame/vue/vue3-learning-reference' },
         { text: 'Naive UI 组件库源码分析', link: '/posts/growth-record/frame/vue/naive-ui-source-code' },
         { text: 'Vue3 语法规范尝鲜', link: '/posts/growth-record/frame/vue/vue3-grammatical-norm' },

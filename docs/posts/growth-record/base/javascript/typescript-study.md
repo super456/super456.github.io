@@ -7,7 +7,7 @@ tags:
 categories:
  - 前端进击
 ---
-# TypeScript 学习笔记ts
+# TypeScript 学习笔记
 ## 语言介绍
 TypeScript 与 JavaScript 发展史：
 <CustomImage src='/growth-record/base/javascript/tsstudy03.webp' />
