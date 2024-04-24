@@ -4,6 +4,7 @@ import { inBrowser, useData } from 'vitepress'
 import BlogTheme from '@sugarat/theme'
 import googleAnalytics from 'vitepress-plugin-google-analytics'
 import busuanzi from 'busuanzi.pure.js'
+import MyLayout from './components/MyLayout.vue'
 import MNavLinks from './components/MNavLinks.vue'
 import CustomImage from './components/CustomImage.vue'
 import LayoutBottom from './components/LayoutBottom.vue'
@@ -24,7 +25,7 @@ export default {
     if (frontmatter.value?.layoutClass)
       props.class = frontmatter.value.layoutClass
 
-    return h(BlogTheme.Layout, props, {
+    return h(MyLayout, props, {
       'layout-bottom': () => h(LayoutBottom),
     })
   },
