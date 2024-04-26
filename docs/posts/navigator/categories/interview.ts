@@ -26,6 +26,12 @@ export default {
       link: 'https://wangtunan.github.io/blog/interview/',
     },
     {
+      title: 'web前端面试 - 面试官系列',
+      desc: '用心收录大厂面试题，高频面试题，知识点面试题，用心做好每一道题值得参考的题解',
+      link: 'https://vue3js.cn/interview/',
+    },
+    // 以下👇🏻是简历制作工具 ---------------------
+    {
       icon: 'https://masoneast.github.io/favicon.ico',
       title: 'Cool Resume 简历制作',
       desc: '只有2%的简历能通过第一轮。跻身前2%',
@@ -80,9 +86,9 @@ export default {
       link: 'https://www.open-resume.com/',
     },
     {
-      icon: '',
       title: 'Resume Generator',
       desc: '内置 3 套模板，支持自定义主题颜色、自定义模块标题、国际化(中/英) 等.',
+      icon: '',
       link: 'https://visiky.github.io/resume/?template=template2&user=visiky',
     },
   ],

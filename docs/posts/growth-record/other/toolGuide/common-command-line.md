@@ -174,6 +174,8 @@ git rm -r xxx
 git rebase -i HEAD~3
 ```
 
+- 删除项目 Git 所有记录信息：`rm -rf .git`
+
 ## 六、SSH 查看 PM2 日志
 前提要有权限：
 ```git

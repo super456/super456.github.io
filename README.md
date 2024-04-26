@@ -14,28 +14,28 @@
 *本博客由简约风的 VitePress [@sugarat/theme](https://theme.sugarat.top) 提供主题模版支持*
 
 ## 使用
-先安装 `pnpm`
+1. 先安装 `pnpm`
 
 ```sh
 npm i -g pnpm
 ```
 
-安装依赖
+2. 安装依赖
 ```sh
 pnpm install
 ```
 
-开发启动
+3. 开发启动
 ```sh
 pnpm dev
 ```
 
-构建
+4. 构建
 ```sh
 pnpm build
 ```
 
-预览产物
+5. 预览产物
 ```sh
 pnpm preview
 ```
