@@ -2,6 +2,11 @@
 export default function qianduanjinjiSidebarGuide() {
   return [
     {
+      text: '前端知识图谱',
+      collapsed: false,
+      link: '/posts/growth-record/knowledge-graph',
+    },
+    {
       text: 'HTML',
       collapsed: false,
       items: [
