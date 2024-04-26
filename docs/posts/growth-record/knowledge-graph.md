@@ -223,7 +223,7 @@ _说明：感谢[茂茂的知识图谱模版](https://github.com/maomao1996/FE-M
 - [x] [20200914 前端基础设施 <img alt="" height="16" src="https://img.shields.io/github/size/super456/FE-MindMap/xmind/20200914%20%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD.xmind" align="center" />](https://github.com/super456/FE-MindMap/blob/main/xmind/20200914%20%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD.xmind)
   - 💡 创建时间: 2024-04-26
   - 🛠️ 更新时间: 2024-04-26
-- [x] [20200913 Nuxt.js API (2.14.0) <img alt="" height="16" src="https://img.shields.io/github/size/super456/FE-MindMap/xmind/20200913%20Nuxt.js%20API%20(2.14.0).xmind" align="center" />](</xmind/20200913%20Nuxt.js%20API%20(2.14.0).xmind>)
+- [x] [20200913 Nuxt.js API (2.14.0) <img alt="" height="16" src="https://img.shields.io/github/size/super456/FE-MindMap/xmind/20200913%20Nuxt.js%20API%20(2.14.0).xmind" align="center" />](https://github.com/super456/FE-MindMap/blob/main/xmind/20200913%20Nuxt.js%20API%20(2.14.0).xmind>)
   - 💡 创建时间: 2024-04-26
   - 🛠️ 更新时间: 2024-04-26
 - [x] [20200910 Vuex <img alt="" height="16" src="https://img.shields.io/github/size/super456/FE-MindMap/xmind/20200910%20Vuex.xmind" align="center" />](https://github.com/super456/FE-MindMap/blob/main/xmind/20200910%20Vuex.xmind)
