@@ -12,9 +12,6 @@ import LayoutBottom from './components/LayoutBottom.vue'
 // 自定义样式重载
 import './styles/index.scss'
 
-// 自定义主题色
-import './user-theme.css'
-
 let homePageStyle: HTMLStyleElement | undefined
 
 export default {

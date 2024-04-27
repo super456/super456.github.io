@@ -81,7 +81,7 @@ const blogTheme = getThemeConfig({
     },
   ],
 
-  // 页脚，注意⚠️：已弃用
+  // 页脚，注意⚠️：已弃用，使用自定义
   // footer: {
   // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
   // copyright: 'MIT License | 纵倾童鞋',

@@ -18,9 +18,17 @@ html[theme].dark {
 }
 
 /* 覆盖默认变量 */
-html[theme],html[theme].dark {
+html[theme], html[theme].dark {
   --vp-c-brand-1: var(--vp-c-user-1);
   --vp-c-brand-2: var(--vp-c-user-2);
   --vp-c-brand-3: var(--vp-c-user-3);
   --vp-c-brand-soft: var(--vp-c-user-soft);
+
+  // FIXME:临时解决导航栏和侧边栏主题色不显示问题
+  .VPNavBarMenuLink.active {
+    color: var(--el-color-primary);
+  }
+  .VPSidebarItem.level-1.is-active > .item .link > .text {
+    color: var(--el-color-primary);
+  }
 }
