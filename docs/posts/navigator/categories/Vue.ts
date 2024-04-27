@@ -27,6 +27,12 @@ export default {
       link: 'https://pinia.vuejs.org/zh',
     },
     {
+      title: 'Vuex',
+      desc: '一个专为 Vue.js 应用程序开发的状态管理模式 + 库。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化',
+      icon: 'https://cn.vuejs.org/logo.svg',
+      link: 'https://vuex.vuejs.org/zh/',
+    },
+    {
       icon: 'https://nuxt.com/icon.png',
       title: 'Nuxt.js',
       desc: '一个基于 Vue.js 的通用应用框架',
@@ -55,6 +61,12 @@ export default {
       title: 'Ant Design Vue',
       desc: 'Ant Design 的 Vue 实现，开发和服务于企业级后台产品',
       link: 'https://antdv.com',
+    },
+    {
+      title: 'Arco Design Vue',
+      desc: '基于 Arco Design 的 Vue UI 组件库，60多个开箱即用的高质量组件, 可以覆盖绝大部份的业务场景',
+      icon: 'https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico',
+      link: 'https://arco.design/vue/docs/start',
     },
     {
       icon: 'https://fastly.jsdelivr.net/npm/@vant/assets/logo.png',

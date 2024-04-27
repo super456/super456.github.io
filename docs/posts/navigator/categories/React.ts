@@ -81,6 +81,12 @@ export default {
       link: 'https://ahooks.js.org/zh-CN',
     },
     {
+      title: 'Arco Design',
+      desc: '基于 Arco Design 的 React UI 组件库，60多个开箱即用的高质量组件, 可以覆盖绝大部分的业务场景',
+      icon: 'https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico',
+      link: 'https://arco.design/react/docs/start',
+    },
+    {
       icon: 'https://mui.com/static/favicon.ico',
       title: 'Material UI',
       desc: '基于 Google Material Design 设计语言的 React 组件库',

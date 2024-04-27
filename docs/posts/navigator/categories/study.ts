@@ -20,5 +20,11 @@ export default {
       desc: '用思维导图的方式总结个人所学知识',
       link: 'https://mindmap.fe-mm.com/',
     },
+    {
+      title: '纵倾童鞋的前端知识图谱',
+      desc: '根据前端领域学习过程总结，用思维导图的方式总结个人所学知识和整个技能体系，方便梳理知识点、结构化输出、总结核心技术点等',
+      icon: '/logo.jpg',
+      link: 'https://super456.github.io/FE-MindMap/',
+    },
   ],
 }
