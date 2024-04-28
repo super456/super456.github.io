@@ -91,6 +91,7 @@ export default function qianduanjinjiSidebarGuide() {
       text: '跨平台',
       collapsed: false,
       items: [
+        { text: 'uni-app 框架项目模版', link: '/posts/growth-record/platform/uni/project-template' },
         { text: 'iOS SiriKit 开发指南', link: '/posts/growth-record/platform/app/sirikit' },
         { text: 'Uni-app 项⽬开发问题及解决⽅案记录', link: '/posts/growth-record/platform/uni/uni-app-question' },
         { text: '微信网页授权开发指南', link: '/posts/growth-record/platform/applet/weapp-auth-dev' },
