@@ -52,5 +52,11 @@ export default {
       icon: 'https://algomooc-1257126549.cos.ap-guangzhou.myqcloud.com/wp-content/uploads/2021/04/1618758606-753bd3a86e6dc96.png',
       link: 'https://www.algomooc.com/',
     },
+    {
+      title: 'LinWu 的算法笔记',
+      desc: '写给前端同学的算法笔记📒，这是去腾讯之前整理的算法笔记，跟着刷一遍，去面试字节、腾讯等其它大厂就轻松多了',
+      icon: 'https://www.coding-time.cn/logo.svg',
+      link: 'https://www.coding-time.cn/lc/preamble.html',
+    },
   ],
 }

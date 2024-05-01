@@ -86,5 +86,17 @@ export default {
       desc: 'TypeScript 是具有类型语法的 JavaScript',
       link: 'https://www.typescriptlang.org/zh/',
     },
+    {
+      title: '现代 JavaScript 高级教程',
+      desc: 'LinWu 编写，可能是市面上比较好的 Javascript 高级教程，适合有一定 Javascript 基础的同学学习',
+      icon: 'https://www.coding-time.cn/logo.svg',
+      link: 'https://www.coding-time.cn/js/preamble.html',
+    },
+    {
+      title: '现代 TypeScript 高级教程',
+      desc: 'LinWu 编写，可能是市面上比较好的 Typescript 高级教程，适合有一定 Typescipt 基础的同学学习',
+      icon: 'https://www.coding-time.cn/logo.svg',
+      link: 'https://www.coding-time.cn/ts/preamble.html',
+    },
   ],
 }
