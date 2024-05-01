@@ -448,6 +448,9 @@ setTimeout(() => {
 **`onMounted` 的调用不必须放在 `setup()` 或 `<script setup>` 内的词法上下文中。`onMounted()` 也可以在一个外部函数中调用，只要调用栈是同步的，且最终起源自 `setup()` 就可以**
 <CustomImage src='/growth-record/frame/vue/vue3study02.webp' />
 
+详细解释版：
+<CustomImage src='/growth-record/frame/vue/vue3study18.png' />
+
 ### 侦听器
 **注意⚠️：watch 可以直接监听一个 ref**
 ```typescript

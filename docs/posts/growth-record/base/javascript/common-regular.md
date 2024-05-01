@@ -7,6 +7,9 @@ categories:
  - 前端进击
 ---
 # JavaScript 常用正则表达式
+## 概览
+<CustomImage src='/growth-record/base/javascript/regular-01.png' />
+
 ## （一）校验数字的表达式
 
 - 整数：`^-?\d+$`
