@@ -5,6 +5,7 @@ export default function zhaohuaxishiSidebarGuide() {
       text: '2024 年',
       collapsed: false,
       items: [
+        { text: '第 49 本《React Hooks 开发实战》', link: '/posts/read-book/2024/react-hooks' },
         { text: '第 48 本《我想偶尔停一会儿》', link: '/posts/read-book/2024/woxiangouertingyihuier' },
         { text: '第 47 本《牧羊少年奇幻之旅》', link: '/posts/read-book/2024/muyangshaonianqihuanzhilu' },
         { text: '第 46 本《悉达多》', link: '/posts/read-book/2024/xidaduo' },
