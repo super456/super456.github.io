@@ -19,8 +19,6 @@ import fish from './fish'
 import interesting from './interesting'
 import blogs from './blogs'
 import weekly from './weekly'
-
-// import wxopen from './wxopen'
 import crossPlatform from './crossPlatform'
 import sameCategories from './sameCategories'
 import interview from './interview'
@@ -29,26 +27,27 @@ import github from './github'
 import devTools from './devTools'
 import algorithm from './algorithm'
 import team from './team'
+import lowCode from './lowCode'
 
 export const NAV_DATA: NavData[] = [
   // common,
   AI,
-  Vue,
-  React,
-  JavaScript,
   HTML,
   CSS,
+  JavaScript,
+  Vue,
+  React,
   Node,
+  packaging,
+  devTools,
+  lowCode,
   system,
+  study,
   interview,
   algorithm,
   blogs,
-  // wxopen,
   team,
   weekly,
-  study,
-  packaging,
-  devTools,
   community,
   applet,
   crossPlatform,
