@@ -6,7 +6,7 @@ export default function yehangxifeiSidebarGuide() {
       text: '念念不忘，必有回响',
       collapsed: false,
       items: [
-        { text: '为什么要写博客', link: '/posts/random-thought/2024/why-write-blog' },
+        { text: '为什么要写作', link: '/posts/random-thought/2024/why-write-blog' },
         { text: '重新出发', link: '/posts/random-thought/2024/lose-job' },
         { text: '挑选眼镜心得', link: '/posts/random-thought/2024/glasses' },
         { text: '逆向生长，保持路上', link: '/posts/random-thought/2023/stay-on-road' },
