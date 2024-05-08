@@ -87,6 +87,12 @@ export default {
       link: 'https://www.typescriptlang.org/zh/',
     },
     {
+      title: 'TypeScript 使用指南手册',
+      desc: '该工程是对 TypeScript 官方及开源社区书写的编程手册、版本发布说明等综合内容的中文翻译。 感谢 Microsoft 和开源社区的工程师们的工作，为 JavaScript 开发带来了全新的体验！',
+      icon: 'http://www.patrickzhong.com/TypeScript/favicon.svg',
+      link: 'http://www.patrickzhong.com/TypeScript/PREFACE.html',
+    },
+    {
       title: '现代 JavaScript 高级教程',
       desc: 'LinWu 编写，可能是市面上比较好的 Javascript 高级教程，适合有一定 Javascript 基础的同学学习',
       icon: 'https://www.coding-time.cn/logo.svg',

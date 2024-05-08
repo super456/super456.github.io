@@ -45,6 +45,12 @@ export default {
       link: 'https://vueuse.org',
     },
     {
+      title: 'Vue Macros',
+      desc: '探索更多宏和语法糖到 Vue 中',
+      icon: 'https://vue-macros.dev/favicon.svg',
+      link: 'https://vue-macros.dev/zh-CN/',
+    },
+    {
       title: 'Vue.js 挑战',
       desc: '一个 Vue.js 在线挑战平台',
       icon: 'https://cn-vuejs-challenges.netlify.app/logo.png',
