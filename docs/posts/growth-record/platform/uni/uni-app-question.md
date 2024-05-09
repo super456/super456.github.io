@@ -1,12 +1,12 @@
 ---
-title: Uni-app 项⽬开发问题及解决⽅案记录
+title: uni-app 项⽬开发问题及解决⽅案记录
 date: 2023-07-08 20:07:08
 tag:
  - uni-app
 categories:
  - 前端进击
 ---
-# Uni-app 项⽬开发问题及解决⽅案记录
+# uni-app 项⽬开发问题及解决⽅案记录
 ## 基础问题
 1. `<template>` 模板：
 - 使⽤ `v-for` 或其他语法，命名 `key` 赋值时候不能使⽤字符串模板，⽐如

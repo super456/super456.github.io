@@ -96,7 +96,7 @@ export default function qianduanjinjiSidebarGuide() {
       items: [
         { text: 'uni-app 框架项目模版', link: '/posts/growth-record/platform/uni/project-template' },
         { text: 'iOS SiriKit 开发指南', link: '/posts/growth-record/platform/app/sirikit' },
-        { text: 'Uni-app 项⽬开发问题及解决⽅案记录', link: '/posts/growth-record/platform/uni/uni-app-question' },
+        { text: 'uni-app 项⽬开发问题及解决⽅案记录', link: '/posts/growth-record/platform/uni/uni-app-question' },
         { text: '微信网页授权开发指南', link: '/posts/growth-record/platform/applet/weapp-auth-dev' },
         { text: 'H5 开发常用技巧', link: '/posts/growth-record/platform/h5/common-skill' },
         { text: '微信小程序常见功能解决方案', link: '/posts/growth-record/platform/applet/common-feature-resolve' },
