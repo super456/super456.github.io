@@ -68,5 +68,11 @@ export default {
       icon: 'https://lightly.teamcode.com/favicon.svg',
       link: 'https://lightly.teamcode.com/',
     },
+    {
+      title: 'StackBlitz',
+      desc: '针对 Web 开发者的在线 IDE',
+      icon: 'https://c.staticblitz.com/assets/favicon_sb-861fe1b85c0dc928750c62de15fed96fc75e57ee366bd937bad17a3938917b3f.svg',
+      link: 'https://stackblitz.com/',
+    },
   ],
 }

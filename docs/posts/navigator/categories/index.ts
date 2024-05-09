@@ -28,6 +28,7 @@ import devTools from './devTools'
 import algorithm from './algorithm'
 import team from './team'
 import lowCode from './lowCode'
+import knowledgePlatform from './knowledgePlatform'
 
 export const NAV_DATA: NavData[] = [
   // common,
@@ -57,6 +58,7 @@ export const NAV_DATA: NavData[] = [
   interesting,
   github,
   sameCategories,
+  knowledgePlatform,
   fish,
 ]
 
