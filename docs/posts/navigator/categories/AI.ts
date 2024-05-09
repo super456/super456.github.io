@@ -27,10 +27,16 @@ export default {
       link: 'https://chat.openai.com/chat',
     },
     {
+      title: 'Kimi.ai - 帮你看更大的世界',
+      desc: 'Kimi 是一个有着超大“内存”的智能助手，可以一口气读完二十万字的小说，还会上网冲浪，快来跟他聊聊吧 | Kimi.ai - Moonshot AI 出品的智能助手',
       icon: 'https://statics.moonshot.cn/kimi-chat/favicon.ico',
-      title: 'KIMI',
-      desc: '帮你看更大的世界',
       link: 'https://kimi.moonshot.cn/',
+    },
+    {
+      title: '扣子 - AI 智能体开发平台',
+      desc: '扣子是新一代 AI 大模型智能体开发平台。整合了插件、长短期记忆、工作流、卡片等丰富能力，扣子能帮你低门槛、快速搭建个性化或具备商业价值的智能体，并发布到豆包、飞书等各个平台。',
+      icon: 'https://lf-coze-web-cdn.coze.cn/obj/coze-web-cn/obric/coze/favicon.1970.png',
+      link: 'https://www.coze.cn/',
     },
     {
       icon: 'https://metaso.cn/favicon.ico',
