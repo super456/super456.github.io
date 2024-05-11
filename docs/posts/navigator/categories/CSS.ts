@@ -118,5 +118,17 @@ export default {
       icon: 'https://codingfantasy.com/favicon.ico',
       link: 'https://codingfantasy.com/games/css-grid-attack/play',
     },
+    {
+      title: 'cubic-bezier(.17,.67,.83,.67) ✿ cubic-bezier.com',
+      desc: '贝塞尔曲线在线制作动画工具',
+      icon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAuRJREFUWEftl2tIU3EYxp9z5v0y3XR5nbpsMzN1TpyGkkIJhSF9CSIKJJAIRAj81D2/ZEQEYZ/FikijqKDSliiRxfJKWZukOO+bt9kkdbrNOAeUdOecrbXND3W+Hv7v83svz/+8h0BD81UQ5BV4+yFghs1WQ6BRteZt7Q09AubtBQDw7wAoBKHoNi7YddsrFUgKDkRvcS4u9g2idmB0E4THAbIFfLwskEO/bIZcpfZuBQ5HR6BemQbjigXF77oxsrjsHYAQHx6q05JRKRWjZWoOD0f0qNdNMrrdrS0gAORFhOG+ci/4vjxc6hvE2JIZXUYT9MsrrgFQQZ25qahBuyOX4UisCM36WZR1fKUFi0QCNIwaWO86zgrEB/rjtCQOTfoZfJozMQbxJQmckybgRoYUP1YtKHnfi/aZeSiFfFSlJKJGq2O033owToCs8FCcT5WgcdSAx2P2WeQI+XiyLwPioADaYjf7h7Fis9Gxj8VH0e14MDyJnnl7/zsFEMAjURorwrPx6Y3A6wcf5aXjaJwILYY5lHdpMLFk3lQhP5JEsA8PplULrGvsTeSsgDw8FH4ksan8h6IjUJu1G9SkV/RoaTgLh4CjDx0nQElMJFqnjFi0WkENY8UuMW7LZXg6PoXKnn7WyXYk+vt7ToATCdG0h/1JErWKFJQlxaK8U4N7w5Ow/UXWTgHwCAIHdgjxxjCLW5kynE2OR0FrB+dE/0nmDocwPSyELnuhSEADnOnSoE434YoG5xnWFhwXR8GfR6IuJw0XvgzgulbndnEqICvAqcQYXN4joR1wUt3n1G3oCiErwPP8TORHhiO16SOmzcz3uCuCW88wAuQKw9BWlI2qz99xd8sC4Q5Rhy54kZ+JVH4wFCo1FixWd2s63ogMpftR/W3I49kzDiG1QnUeVGLnq3YM/VzyaPZ2AJTv3xYq6K+b7PUHj4uz2jAhKIBxf/MEkVtXMlcA/wMQ2/Z7TvVrzXbtF2jXMKaZHOQEAAAAAElFTkSuQmCC',
+      link: 'https://cubic-bezier.com/#.17,.67,.83,.67',
+    },
+    {
+      title: 'Animate.css | A cross-browser library of CSS animations.',
+      desc: 'Animate.css is a library of ready-to-use, cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and attention-guiding hints.',
+      icon: 'https://animate.style/img/favicon.ico',
+      link: 'https://animate.style/',
+    },
   ],
 }
