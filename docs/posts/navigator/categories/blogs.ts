@@ -61,9 +61,9 @@ export default {
       link: 'https://www.yuque.com/cuggz',
     },
     {
-      icon: 'https://lxchuan12.gitee.io/logo.jpg',
       title: '若川的博客',
       desc: '专注前端技术分享',
+      icon: 'https://lxchuan12.gitee.io/logo.jpg',
       link: 'https://lxchuan12.gitee.io/',
     },
     {
@@ -88,6 +88,12 @@ export default {
       desc: '小丞同学的博客，致力于分享高质量的 React,JS 相关博文',
       icon: 'https://linjuncheng.cn/avatar.jpg',
       link: 'https://linjuncheng.cn/',
+    },
+    {
+      title: '被删的博客',
+      desc: 'Love ice cream. Love sunshine. Love life. Love the world. Love myself. Love you.',
+      icon: 'https://godbasin.github.io/img/sun.png',
+      link: 'https://godbasin.github.io/',
     },
     {
       title: 'Web Worker 播客',
