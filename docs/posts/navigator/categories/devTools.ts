@@ -3,6 +3,12 @@ export default {
   title: '开发工具',
   items: [
     {
+      title: 'MarsCode - Code and Innovate Faster with Al',
+      desc: 'MarsCode provides an IDE with a built-in AI Assistant and extensions that support over 100 languages and mainstream IDEs.',
+      icon: 'https://lf-cdn.marscode.com/obj/marscode-bucket-sg/marscode-favicon.ico',
+      link: 'https://www.marscode.com/',
+    },
+    {
       icon: 'https://caniuse.com/img/favicon-128.png',
       title: 'Can I use',
       desc: '前端 API 兼容性查询',
@@ -73,6 +79,12 @@ export default {
       desc: '针对 Web 开发者的在线 IDE',
       icon: 'https://c.staticblitz.com/assets/favicon_sb-861fe1b85c0dc928750c62de15fed96fc75e57ee366bd937bad17a3938917b3f.svg',
       link: 'https://stackblitz.com/',
+    },
+    {
+      title: 'Color Picker',
+      desc: 'Color Picker – Effortlessly extract vibrant colors from images in RGB, HEX, and HSL formats. Save, share, and export your favorite colors seamlessly. Automatic color naming adds convenience. Explore the world of color with this user-friendly web app.',
+      icon: 'https://imgcolorpicker.vercel.app/assets/favicon.png',
+      link: 'https://imgcolorpicker.vercel.app/',
     },
   ],
 }
