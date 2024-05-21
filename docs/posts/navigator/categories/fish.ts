@@ -14,5 +14,11 @@ export default {
       desc: '国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。',
       link: 'https://www.bilibili.com',
     },
+    {
+      title: '今日热榜',
+      desc: '汇聚全网热点，热门尽览无余',
+      icon: 'https://hot.imsyy.top/ico/favicon.png',
+      link: 'https://hot.imsyy.top/#/',
+    },
   ],
 }
