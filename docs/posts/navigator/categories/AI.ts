@@ -93,6 +93,12 @@ export default {
       link: 'https://tongyi.aliyun.com/',
     },
     {
+      title: '腾讯云 AI 代码助手',
+      desc: '腾讯云 AI 代码助手是由腾讯云自研的一款开发编程提效辅助工具，开发者可以通过插件的方式将 AI 代码助手安装到编辑器中辅助编程工作（VSCode 或者 JetBrian 系列 IDE）；而 AI 代码助手插件将提供：自动补全代码、根据注释生成代码、代码解释、生成测试代码、转换代码语言、技术对话等能力。通过腾讯云 AI 代码助手，开发者可以更高效地解决实际编程问题，提高编程效率和代码质量。',
+      icon: 'https://cloudcache.tencent-cloud.com/qcloud/favicon.ico',
+      link: 'https://cloud.tencent.com/product/acc',
+    },
+    {
       icon: 'https://comate.baidu.com/images/favicon.ico',
       title: 'Baidu Comate',
       desc: '由百度基于文心大模型研发的编程辅助工具，可提供自动代码生成、单元测试生成、注释生成以及智能问答等功能。支持上百种编程语言，旨在帮助开发者大幅提升编码效率。使用Comate，让编程更加高效和便捷。',
