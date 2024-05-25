@@ -5,6 +5,7 @@ export default function zhaohuaxishiSidebarGuide() {
       text: '2024 年',
       collapsed: false,
       items: [
+        { text: '第 52 本《聪明的老板不苛责摸鱼的人》', link: '/posts/read-book/2024/clever-boss' },
         { text: '第 51 本《大前端三剑客——Vue+React+Flutter》', link: '/posts/read-book/2024/three-frame' },
         { text: '第 50 本《35 岁后，我无路可退？》', link: '/posts/read-book/2024/35-years-old' },
         { text: '第 49 本《React Hooks 开发实战》', link: '/posts/read-book/2024/react-hooks' },
