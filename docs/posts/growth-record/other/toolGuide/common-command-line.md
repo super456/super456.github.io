@@ -41,17 +41,18 @@ categories:
 ## 四、NPM
 
 - 查看 npm 版本：`npm -v`
+- 快速初始化一个 package.json 的文件：`npm init -y`
 - 根据 package 安装所有依赖：`npm install / npm i`
+- 显示安装依赖下载进度：`npm install --verbose xxx`
 - 查看所有安装包的版本列表：`npm ls`
 - 查看某个包的安装版本：`npm ls <page name>`
 - 全局安装：`npm i gulp -g`
 - 查看全局安装的包：`npm list -g --depth 0`（`--depth 0`：限制输出模块层级）
 - 查看全局下安装所有的可用npm工具：`npm list --depth=0 -g`
 - 查看全局的包的按照路径：`npm root -g`
-- 快速初始化一个 package.json 的文件：`npm init -y`
 - 安装/卸载到 devDependencies 下：`npm install/uninstall gulp -D/--save-dev`
 - 安装/卸载到 dependencies 下：`npm install/uninstall gulp -S/--save`
-- 删除 node_modules：`npm install rimraf -g` `rimraf node_modules`
+- 删除 node_modules：`npm install rimraf -g`，执行：`rimraf node_modules`
 - 查看包版本：`npm ls nuxt`
 - 清除缓存数据： `npm cache clean --force`
 
