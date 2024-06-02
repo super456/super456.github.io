@@ -21,6 +21,12 @@ export default {
       link: 'https://tinypng.com',
     },
     {
+      title: 'Pic Smaller – Compress JPEG, PNG, WEBP, AVIF, SVG and GIF images intelligently',
+      desc: '一个图片压缩工具，基于 Vite+React 技术栈开发，它可以完全取代类似 TinyPNG 之类的在线图片压缩工具，且压缩之后视觉表现效果往往更好。但图小小有个更大的优势：通过图小小进行图片压缩完全是基于浏览器本地的，没有任何服务端交互，图片不会上传到远程服务器，所以非常安全，不用担心隐私图片被泄露',
+      icon: 'https://picsmaller.com/logo.svg',
+      link: 'https://picsmaller.com/',
+    },
+    {
       icon: 'https://devtool.tech/logo.svg',
       title: '开发者武器库',
       desc: '开发者武器库，做开发者最专业最好用的专业工具箱',

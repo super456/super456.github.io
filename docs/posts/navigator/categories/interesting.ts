@@ -3,6 +3,12 @@ export default {
   title: '有趣工具',
   items: [
     {
+      title: 'Koishi',
+      desc: '创建跨平台、可扩展、高性能的机器人',
+      icon: 'https://koishi.chat/logo.png',
+      link: 'https://koishi.chat/zh-CN/',
+    },
+    {
       title: 'Quick Reference',
       desc: '为开发人员分享快速参考备忘清单【速查表】',
       link: 'https://wangchujiang.com/reference/index.html',
@@ -109,6 +115,17 @@ export default {
       desc: 'A note-taking tool for visual learning.',
       icon: 'https://heptabase.com/assets/images/favicon.png',
       link: 'https://heptabase.com/',
+    },
+    {
+      title: 'Inpaint-web在线工具——永久免费一键去除照片中不想要的对象 & 修复瑕疵',
+      desc: '只需一点击，轻松去除照片中的不想要的对象。Inpaint提供了令人难以置信的照片去除和修复功能。',
+      link: 'https://inpaintweb.lxfater.com/',
+    },
+    {
+      title: '易采集EasySpider：无代码可视化爬虫/浏览器自动化测试软件',
+      desc: '易采集EasySpider，又称Easy Spider，是一个可视化爬虫/浏览器自动化测试软件，可以使用图形化界面，无代码可视化的设计和执行爬虫/浏览器自动化测试任务。只需要在网页上选择自己想要爬的内容并根据提示框操作即可完成爬虫/浏览器自动化测试任务的设计和执行。同时软件还可以单独以命令行的方式进行执行，从而可以很方便的嵌入到其他系统中。',
+      icon: 'https://www.easyspider.net/favicon.ico',
+      link: 'https://www.easyspider.net/',
     },
   ],
 }
