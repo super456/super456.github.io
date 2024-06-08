@@ -3,6 +3,12 @@ export default {
   title: '资源聚合平台',
   items: [
     {
+      title: '星云导航 - 打破认知壁垒，导航你的网站世界',
+      desc: '一个集合网上优质网站网址导航。网站内容包括：摸鱼热榜，全栈知识技术体系，星云API，热门推荐，AI智能，在线工具，技术文档，开发工具，学习充电，视频影视，模板图库，媒体运营，设计美化，休闲娱乐，音乐MV，必备软件，导航网站，搜索引擎，其他相关等。致力于打破认知壁垒，导航你的网站世界。',
+      icon: 'https://www.xygalaxy.com/favicon.ico',
+      link: 'https://www.xygalaxy.com/',
+    },
+    {
       title: '前端导航 | 程序员poetry',
       desc: '前端导航 | 专为前端开发、设计、产品、自媒体人员打造，最全面的网址导航！',
       link: 'https://nav.poetries.top/',
