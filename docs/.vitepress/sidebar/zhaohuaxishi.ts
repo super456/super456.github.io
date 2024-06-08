@@ -5,6 +5,7 @@ export default function zhaohuaxishiSidebarGuide() {
       text: '2024 年',
       collapsed: false,
       items: [
+        { text: '第 54 本《我离开之后》', link: '/posts/read-book/2024/after-leaving' },
         { text: '第 53 本《习惯逆袭》', link: '/posts/read-book/2024/habit-counterattack' },
         { text: '第 52 本《聪明的老板不苛责摸鱼的人》', link: '/posts/read-book/2024/clever-boss' },
         { text: '第 51 本《大前端三剑客——Vue+React+Flutter》', link: '/posts/read-book/2024/three-frame' },
