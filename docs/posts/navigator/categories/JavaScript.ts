@@ -3,6 +3,12 @@ export default {
   title: 'JavaScript',
   items: [
     {
+      title: 'Best of JS',
+      desc: 'Check out the most popular open-source projects and the latest trends about the web platform: React, Vue.js, Node.js, Deno, Bun... The best of JavaScript, TypeScript and friends!',
+      icon: 'https://bestofjs.org/favicon.ico',
+      link: 'https://bestofjs.org/',
+    },
+    {
       title: 'ECMAScript® 2025 Language Specification',
       desc: 'TC39',
       icon: 'https://tc39.es/ecma262/img/favicon.ico',
@@ -103,6 +109,12 @@ export default {
       desc: 'LinWu 编写，可能是市面上比较好的 Typescript 高级教程，适合有一定 Typescipt 基础的同学学习',
       icon: 'https://www.coding-time.cn/logo.svg',
       link: 'https://www.coding-time.cn/ts/preamble.html',
+    },
+    {
+      title: 'TypeScript Book',
+      desc: '全面而简洁地概述了 TypeScript 的功能。它提供了清晰的解释，涵盖了该语言最新版本中的所有方面，从强大的类型系统到高级功能。无论您是初学者还是经验丰富的开发人员，本书都是增强您对 TypeScript 的理解和熟练程度的宝贵资源',
+      icon: 'https://gibbok.github.io/typescript-book/favicon.svg',
+      link: 'https://gibbok.github.io/typescript-book/zh-cn/',
     },
   ],
 }
