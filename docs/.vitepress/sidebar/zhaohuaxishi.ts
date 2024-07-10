@@ -5,6 +5,7 @@ export default function zhaohuaxishiSidebarGuide() {
       text: '2024 年',
       collapsed: false,
       items: [
+        { text: '第 56 本《了凡四训》', link: '/posts/read-book/2024/four-training' },
         { text: '第 55 本《你的直觉会出错》', link: '/posts/read-book/2024/intuition-error' },
         { text: '第 54 本《我离开之后》', link: '/posts/read-book/2024/after-leaving' },
         { text: '第 53 本《习惯逆袭》', link: '/posts/read-book/2024/habit-counterattack' },
