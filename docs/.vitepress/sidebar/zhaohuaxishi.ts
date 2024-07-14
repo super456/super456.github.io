@@ -22,7 +22,7 @@ export default function zhaohuaxishiSidebarGuide() {
         { text: '第 42 本《程序员的 README》', link: '/posts/read-book/2024/chengxuyuandeREADME' },
         { text: '第 41 本《没事，一起都会好起来的》', link: '/posts/read-book/2024/meishiyiqidouhuihaoqilaide' },
         { text: '第 40 本《雪中悍刀行》', link: '/posts/read-book/2024/xuezhonghandaoxing' },
-        { text: '第 39 本《小王子》', link: '/posts/read-book/2024/xiaowangzi' },
+        { text: '第 39 本《小王子》', link: '/posts/read-book/2024/the-little-prince' },
         { text: '第 38 本《憋说话，吻我》', link: '/posts/read-book/2024/bieshuohuawenwo' },
         { text: '第 37 本《半小时漫画中国史 0》', link: '/posts/read-book/2024/banxiaoshimanhuazhongguoshi0' },
         { text: '第 36 本《第一次活，请多指教》', link: '/posts/read-book/2024/diyicihuoqingduozhijiao' },
