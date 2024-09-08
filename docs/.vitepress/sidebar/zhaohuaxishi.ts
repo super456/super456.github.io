@@ -5,6 +5,7 @@ export default function zhaohuaxishiSidebarGuide() {
       text: '2024 年',
       collapsed: false,
       items: [
+        { text: '第 58 本《这就是中国：走向世界的中国力量》', link: '/posts/read-book/2024/this-is-china' },
         { text: '第 57 本《夜航西飞》', link: '/posts/read-book/2024/west-with-the-night' },
         { text: '第 56 本《了凡四训》', link: '/posts/read-book/2024/four-training' },
         { text: '第 55 本《你的直觉会出错》', link: '/posts/read-book/2024/intuition-error' },
