@@ -5,6 +5,7 @@ export default function zhaohuaxishiSidebarGuide() {
       text: '2024 年',
       collapsed: false,
       items: [
+        { text: '第 61 本《深入浅出 Vue.js》', link: '/posts/read-book/2024/simple-easy-understand-vue' },
         { text: '第 60 本《深入浅出 Electron 原理、工程与实践》', link: '/posts/read-book/2024/simple-easy-understand-electron' },
         { text: '第 59 本《食南之徒》', link: '/posts/read-book/2024/the-southern-eater' },
         { text: '第 58 本《这就是中国：走向世界的中国力量》', link: '/posts/read-book/2024/this-is-china' },
