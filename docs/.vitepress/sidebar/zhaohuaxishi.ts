@@ -5,6 +5,7 @@ export default function zhaohuaxishiSidebarGuide() {
       text: '2024 年',
       collapsed: false,
       items: [
+        { text: '第 64 本《前端架构师：基础建设与架构设计思想》', link: '/posts/read-book/2024/front-end-architect' },
         { text: '第 63 本《埃隆·马斯克传》', link: '/posts/read-book/2024/elon-musk' },
         { text: '第 62 本《Electron 实战：入门、进阶与性能优化》', link: '/posts/read-book/2024/electron-tutorial' },
         { text: '第 61 本《深入浅出 Vue.js》', link: '/posts/read-book/2024/simple-easy-understand-vue' },
